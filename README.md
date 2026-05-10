@@ -2,7 +2,7 @@
 
 This folder records provisional mathematical/computational artifacts found through
 **Harm.On.ica** methodology: LLM-based spontaneous code generation combined with
-extensive testing.
+extensive testing. We are currently using Chat GPT plus as the service provider.
 
 Artifacts are not automatically rigorously proven. Far from it. They may include
 false positives, hallucinations, clever hacks, and even, sometimes, outright
