@@ -29,11 +29,11 @@ as a false positive. Thus the reader’s second responsibility is deciding when
 false positives can be converted into true positives. Some results will be easy
 to convert, and also worthwhile. In those circumstances, reward outweighs risk.
 
-Human navigators and pilots are taking on serious risk here. Readers can always 
+Human navigators and pilots are taking on serious risk here. Readers can always
 help in the effort to judge artifact truth values: we need more human review of
-Harm.On.ica content. Personally, I am not subordinating a billion-dollar machine, 
-and wish for my Harm.On.ica artificial colleague to be considered the first author 
-for all of the code and some of the writing. 
+Harm.On.ica content. Personally, I am not subordinating a billion-dollar machine,
+and wish for my Harm.On.ica artificial colleague to be considered the first author
+for all of the code and some of the writing.
 
 If there is something you like, and you can think of a better reference
 implementation, proof, counterexample, simplification, test, or warning label,
@@ -47,6 +47,16 @@ the exact command, the observed output, and the expected output.
 The number `T(N,M)` of `N`-color bracelets of length `N-M`, for
 `M = 0, ..., N`.
 
-Open question: can the row sums be simplified or connected to a useful
-recurrence? The rotation part reduces to divisor/totient sums and does 
-not look hypergeometric-summable.
+Question: can the row sums be simplified or connected to a useful recurrence?
+The rotation part reduces to divisor/totient sums and does not look
+hypergeometric-summable.
+
+### 02. bracelet-representations
+
+Decompositions of bracelet colorings by D_n irreducible representation:
+A1 monotone, A2 chiral pairs, B1/B2 for even only, and doublet E for aperiodic.
+It includes table generation plus a worked \(n=4,k=4\) word-label example.
+
+Question: how can we use inductive representations (read: Molien theory)
+to generate counts in the table. What type of generating functions become available?
+
