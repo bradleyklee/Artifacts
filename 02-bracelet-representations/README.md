@@ -125,9 +125,9 @@ The `B1/B2` word labels in `dihedral_4_4_words.dat` use one chosen convention:
 right-rotation B-pool, then greedy projector-rank split with B1 first. 
 
 For construction of the projectors, we referred to William Harter's book
-"Principles of Symmetry, Dynamics, and Spectroscopy". Online here: 
+"Principles of Symmetry, Dynamics, and Spectroscopy". 
 
-https://modphys.hosted.uark.edu/markup/PSDS_Info.html
+Online here: https://modphys.hosted.uark.edu/markup/PSDS_Info.html
 
 
 
