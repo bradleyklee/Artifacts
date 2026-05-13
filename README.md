@@ -60,3 +60,14 @@ It includes table generation plus a worked \(n=4,k=4\) word-label example.
 Question: how can we use inductive representations (read: Molien theory)
 to generate counts in the table. What type of generating functions become available?
 
+### 03. knight-quadrants
+
+Sequential knight-cover images inspired by an OEIS red/black picture, then varied
+by scan order (`spiral`, `dist-atan`), number of colors (`b`, `br`, `brg`,
+`brgy`), and geometry (`square`, `hex`). The current implementation caches
+geometry/order data, renders large square PNGs and hex SVGs, and includes debug
+views for all cases.
+
+Question: what large-scale structures are genuine, and how do they change when
+we alter the ordering rule or pass from square knights to six-move short hex
+knights?

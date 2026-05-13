@@ -1,0 +1,368 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="443.2" height="398.0" viewBox="0 0 443.2 398.0">
+<rect width="100%" height="100%" fill="white"/>
+<style>.num{font-family:monospace;font-size:8px;text-anchor:middle;dominant-baseline:central}.small{font-family:monospace;font-size:7px;fill:#555;text-anchor:end}</style>
+<polygon points="240.63,188.00 221.58,177.00 202.53,188.00 202.53,210.00 221.58,221.00 240.63,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="221.58" cy="199.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="233.68" y="206.70">1</text>
+<text class="num" x="221.58" y="199.00">0</text>
+<polygon points="259.68,155.00 240.63,144.00 221.58,155.00 221.58,177.00 240.63,188.00 259.68,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="240.63" cy="166.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="252.73" y="173.70">2</text>
+<text class="num" x="240.63" y="166.00">1</text>
+<polygon points="221.58,155.00 202.53,144.00 183.47,155.00 183.47,177.00 202.53,188.00 221.58,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="202.53" cy="166.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="214.63" y="173.70">3</text>
+<text class="num" x="202.53" y="166.00">2</text>
+<polygon points="202.53,188.00 183.47,177.00 164.42,188.00 164.42,210.00 183.47,221.00 202.53,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="183.47" cy="199.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="195.57" y="206.70">5</text>
+<text class="num" x="183.47" y="199.00">3</text>
+<polygon points="221.58,221.00 202.53,210.00 183.47,221.00 183.47,243.00 202.53,254.00 221.58,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="202.53" cy="232.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="214.63" y="239.70">6</text>
+<text class="num" x="202.53" y="232.00">4</text>
+<polygon points="259.68,221.00 240.63,210.00 221.58,221.00 221.58,243.00 240.63,254.00 259.68,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="240.63" cy="232.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="252.73" y="239.70">8</text>
+<text class="num" x="240.63" y="232.00">5</text>
+<polygon points="278.74,188.00 259.68,177.00 240.63,188.00 240.63,210.00 259.68,221.00 278.74,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="259.68" cy="199.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="271.78" y="206.70">9</text>
+<text class="num" x="259.68" y="199.00">6</text>
+<polygon points="297.79,155.00 278.74,144.00 259.68,155.00 259.68,177.00 278.74,188.00 297.79,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="278.74" cy="166.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="290.84" y="173.70">4</text>
+<text class="num" x="278.74" y="166.00">7</text>
+<polygon points="278.74,122.00 259.68,111.00 240.63,122.00 240.63,144.00 259.68,155.00 278.74,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="259.68" cy="133.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="271.78" y="140.70">12</text>
+<text class="num" x="259.68" y="133.00">8</text>
+<polygon points="240.63,122.00 221.58,111.00 202.53,122.00 202.53,144.00 221.58,155.00 240.63,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="221.58" cy="133.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="233.68" y="140.70">7</text>
+<text class="num" x="221.58" y="133.00">9</text>
+<polygon points="202.53,122.00 183.47,111.00 164.42,122.00 164.42,144.00 183.47,155.00 202.53,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="183.47" cy="133.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="195.57" y="140.70">11</text>
+<text class="num" x="183.47" y="133.00">10</text>
+<polygon points="183.47,155.00 164.42,144.00 145.37,155.00 145.37,177.00 164.42,188.00 183.47,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="164.42" cy="166.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="176.52" y="173.70">10</text>
+<text class="num" x="164.42" y="166.00">11</text>
+<polygon points="164.42,188.00 145.37,177.00 126.32,188.00 126.32,210.00 145.37,221.00 164.42,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="145.37" cy="199.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="157.47" y="206.70">15</text>
+<text class="num" x="145.37" y="199.00">12</text>
+<polygon points="183.47,221.00 164.42,210.00 145.37,221.00 145.37,243.00 164.42,254.00 183.47,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="164.42" cy="232.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="176.52" y="239.70">13</text>
+<text class="num" x="164.42" y="232.00">13</text>
+<polygon points="202.53,254.00 183.47,243.00 164.42,254.00 164.42,276.00 183.47,287.00 202.53,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="183.47" cy="265.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="195.57" y="272.70">14</text>
+<text class="num" x="183.47" y="265.00">14</text>
+<polygon points="240.63,254.00 221.58,243.00 202.53,254.00 202.53,276.00 221.58,287.00 240.63,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="221.58" cy="265.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="233.68" y="272.70">16</text>
+<text class="num" x="221.58" y="265.00">15</text>
+<polygon points="278.74,254.00 259.68,243.00 240.63,254.00 240.63,276.00 259.68,287.00 278.74,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="259.68" cy="265.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="271.78" y="272.70">18</text>
+<text class="num" x="259.68" y="265.00">16</text>
+<polygon points="297.79,221.00 278.74,210.00 259.68,221.00 259.68,243.00 278.74,254.00 297.79,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="278.74" cy="232.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="290.84" y="239.70">19</text>
+<text class="num" x="278.74" y="232.00">17</text>
+<polygon points="316.84,188.00 297.79,177.00 278.74,188.00 278.74,210.00 297.79,221.00 316.84,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="297.79" cy="199.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="309.89" y="206.70">17</text>
+<text class="num" x="297.79" y="199.00">18</text>
+<polygon points="335.89,155.00 316.84,144.00 297.79,155.00 297.79,177.00 316.84,188.00 335.89,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="316.84" cy="166.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="328.94" y="173.70">21</text>
+<text class="num" x="316.84" y="166.00">19</text>
+<polygon points="316.84,122.00 297.79,111.00 278.74,122.00 278.74,144.00 297.79,155.00 316.84,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="297.79" cy="133.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="309.89" y="140.70">20</text>
+<text class="num" x="297.79" y="133.00">20</text>
+<polygon points="297.79,89.00 278.74,78.00 259.68,89.00 259.68,111.00 278.74,122.00 297.79,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="278.74" cy="100.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="290.84" y="107.70">22</text>
+<text class="num" x="278.74" y="100.00">21</text>
+<polygon points="259.68,89.00 240.63,78.00 221.58,89.00 221.58,111.00 240.63,122.00 259.68,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="240.63" cy="100.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="252.73" y="107.70">23</text>
+<text class="num" x="240.63" y="100.00">22</text>
+<polygon points="221.58,89.00 202.53,78.00 183.47,89.00 183.47,111.00 202.53,122.00 221.58,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="202.53" cy="100.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="214.63" y="107.70">24</text>
+<text class="num" x="202.53" y="100.00">23</text>
+<polygon points="183.47,89.00 164.42,78.00 145.37,89.00 145.37,111.00 164.42,122.00 183.47,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="164.42" cy="100.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="176.52" y="107.70">25</text>
+<text class="num" x="164.42" y="100.00">24</text>
+<polygon points="164.42,122.00 145.37,111.00 126.32,122.00 126.32,144.00 145.37,155.00 164.42,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="145.37" cy="133.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="157.47" y="140.70">27</text>
+<text class="num" x="145.37" y="133.00">25</text>
+<polygon points="145.37,155.00 126.32,144.00 107.26,155.00 107.26,177.00 126.32,188.00 145.37,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="126.32" cy="166.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="138.42" y="173.70">26</text>
+<text class="num" x="126.32" y="166.00">26</text>
+<polygon points="126.32,188.00 107.26,177.00 88.21,188.00 88.21,210.00 107.26,221.00 126.32,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="107.26" cy="199.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="119.36" y="206.70">28</text>
+<text class="num" x="107.26" y="199.00">27</text>
+<polygon points="145.37,221.00 126.32,210.00 107.26,221.00 107.26,243.00 126.32,254.00 145.37,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="126.32" cy="232.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="138.42" y="239.70">29</text>
+<text class="num" x="126.32" y="232.00">28</text>
+<polygon points="164.42,254.00 145.37,243.00 126.32,254.00 126.32,276.00 145.37,287.00 164.42,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="145.37" cy="265.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="157.47" y="272.70">30</text>
+<text class="num" x="145.37" y="265.00">29</text>
+<polygon points="183.47,287.00 164.42,276.00 145.37,287.00 145.37,309.00 164.42,320.00 183.47,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="164.42" cy="298.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="176.52" y="305.70">31</text>
+<text class="num" x="164.42" y="298.00">30</text>
+<polygon points="221.58,287.00 202.53,276.00 183.47,287.00 183.47,309.00 202.53,320.00 221.58,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="202.53" cy="298.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="214.63" y="305.70">33</text>
+<text class="num" x="202.53" y="298.00">31</text>
+<polygon points="259.68,287.00 240.63,276.00 221.58,287.00 221.58,309.00 240.63,320.00 259.68,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="240.63" cy="298.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="252.73" y="305.70">32</text>
+<text class="num" x="240.63" y="298.00">32</text>
+<polygon points="297.79,287.00 278.74,276.00 259.68,287.00 259.68,309.00 278.74,320.00 297.79,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="278.74" cy="298.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="290.84" y="305.70">34</text>
+<text class="num" x="278.74" y="298.00">33</text>
+<polygon points="316.84,254.00 297.79,243.00 278.74,254.00 278.74,276.00 297.79,287.00 316.84,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="297.79" cy="265.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="309.89" y="272.70">35</text>
+<text class="num" x="297.79" y="265.00">34</text>
+<polygon points="335.89,221.00 316.84,210.00 297.79,221.00 297.79,243.00 316.84,254.00 335.89,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="316.84" cy="232.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="328.94" y="239.70">36</text>
+<text class="num" x="316.84" y="232.00">35</text>
+<polygon points="354.95,188.00 335.89,177.00 316.84,188.00 316.84,210.00 335.89,221.00 354.95,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="335.89" cy="199.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="347.99" y="206.70">37</text>
+<text class="num" x="335.89" y="199.00">36</text>
+<polygon points="374.00,155.00 354.95,144.00 335.89,155.00 335.89,177.00 354.95,188.00 374.00,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="354.95" cy="166.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="367.05" y="173.70">38</text>
+<text class="num" x="354.95" y="166.00">37</text>
+<polygon points="354.95,122.00 335.89,111.00 316.84,122.00 316.84,144.00 335.89,155.00 354.95,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="335.89" cy="133.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="347.99" y="140.70">40</text>
+<text class="num" x="335.89" y="133.00">38</text>
+<polygon points="335.89,89.00 316.84,78.00 297.79,89.00 297.79,111.00 316.84,122.00 335.89,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="316.84" cy="100.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="328.94" y="107.70">39</text>
+<text class="num" x="316.84" y="100.00">39</text>
+<polygon points="316.84,56.00 297.79,45.00 278.74,56.00 278.74,78.00 297.79,89.00 316.84,78.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="297.79" cy="67.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="309.89" y="74.70">41</text>
+<text class="num" x="297.79" y="67.00">40</text>
+<polygon points="278.74,56.00 259.68,45.00 240.63,56.00 240.63,78.00 259.68,89.00 278.74,78.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="259.68" cy="67.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="271.78" y="74.70">42</text>
+<text class="num" x="259.68" y="67.00">41</text>
+<polygon points="240.63,56.00 221.58,45.00 202.53,56.00 202.53,78.00 221.58,89.00 240.63,78.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="221.58" cy="67.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="233.68" y="74.70">43</text>
+<text class="num" x="221.58" y="67.00">42</text>
+<polygon points="202.53,56.00 183.47,45.00 164.42,56.00 164.42,78.00 183.47,89.00 202.53,78.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="183.47" cy="67.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="195.57" y="74.70">44</text>
+<text class="num" x="183.47" y="67.00">43</text>
+<polygon points="164.42,56.00 145.37,45.00 126.32,56.00 126.32,78.00 145.37,89.00 164.42,78.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="145.37" cy="67.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="157.47" y="74.70">45</text>
+<text class="num" x="145.37" y="67.00">44</text>
+<polygon points="145.37,89.00 126.32,78.00 107.26,89.00 107.26,111.00 126.32,122.00 145.37,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="126.32" cy="100.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="138.42" y="107.70">47</text>
+<text class="num" x="126.32" y="100.00">45</text>
+<polygon points="126.32,122.00 107.26,111.00 88.21,122.00 88.21,144.00 107.26,155.00 126.32,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="107.26" cy="133.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="119.36" y="140.70">46</text>
+<text class="num" x="107.26" y="133.00">46</text>
+<polygon points="107.26,155.00 88.21,144.00 69.16,155.00 69.16,177.00 88.21,188.00 107.26,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="88.21" cy="166.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="100.31" y="173.70">48</text>
+<text class="num" x="88.21" y="166.00">47</text>
+<polygon points="88.21,188.00 69.16,177.00 50.11,188.00 50.11,210.00 69.16,221.00 88.21,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="69.16" cy="199.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="81.26" y="206.70">50</text>
+<text class="num" x="69.16" y="199.00">48</text>
+<polygon points="107.26,221.00 88.21,210.00 69.16,221.00 69.16,243.00 88.21,254.00 107.26,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="88.21" cy="232.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="100.31" y="239.70">51</text>
+<text class="num" x="88.21" y="232.00">49</text>
+<polygon points="126.32,254.00 107.26,243.00 88.21,254.00 88.21,276.00 107.26,287.00 126.32,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="107.26" cy="265.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="119.36" y="272.70">49</text>
+<text class="num" x="107.26" y="265.00">50</text>
+<polygon points="145.37,287.00 126.32,276.00 107.26,287.00 107.26,309.00 126.32,320.00 145.37,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="126.32" cy="298.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="138.42" y="305.70">53</text>
+<text class="num" x="126.32" y="298.00">51</text>
+<polygon points="164.42,320.00 145.37,309.00 126.32,320.00 126.32,342.00 145.37,353.00 164.42,342.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="145.37" cy="331.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="157.47" y="338.70">54</text>
+<text class="num" x="145.37" y="331.00">52</text>
+<polygon points="202.53,320.00 183.47,309.00 164.42,320.00 164.42,342.00 183.47,353.00 202.53,342.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="183.47" cy="331.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="195.57" y="338.70">56</text>
+<text class="num" x="183.47" y="331.00">53</text>
+<polygon points="240.63,320.00 221.58,309.00 202.53,320.00 202.53,342.00 221.58,353.00 240.63,342.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="221.58" cy="331.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="233.68" y="338.70">52</text>
+<text class="num" x="221.58" y="331.00">54</text>
+<polygon points="278.74,320.00 259.68,309.00 240.63,320.00 240.63,342.00 259.68,353.00 278.74,342.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="259.68" cy="331.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="271.78" y="338.70">57</text>
+<text class="num" x="259.68" y="331.00">55</text>
+<polygon points="316.84,320.00 297.79,309.00 278.74,320.00 278.74,342.00 297.79,353.00 316.84,342.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="297.79" cy="331.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="309.89" y="338.70">59</text>
+<text class="num" x="297.79" y="331.00">56</text>
+<polygon points="335.89,287.00 316.84,276.00 297.79,287.00 297.79,309.00 316.84,320.00 335.89,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="316.84" cy="298.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="328.94" y="305.70">60</text>
+<text class="num" x="316.84" y="298.00">57</text>
+<polygon points="354.95,254.00 335.89,243.00 316.84,254.00 316.84,276.00 335.89,287.00 354.95,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="335.89" cy="265.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="347.99" y="272.70">55</text>
+<text class="num" x="335.89" y="265.00">58</text>
+<polygon points="374.00,221.00 354.95,210.00 335.89,221.00 335.89,243.00 354.95,254.00 374.00,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="354.95" cy="232.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="367.05" y="239.70">62</text>
+<text class="num" x="354.95" y="232.00">59</text>
+<polygon points="393.05,188.00 374.00,177.00 354.95,188.00 354.95,210.00 374.00,221.00 393.05,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="374.00" cy="199.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="386.10" y="206.70">63</text>
+<text class="num" x="374.00" y="199.00">60</text>
+<polygon points="412.10,155.00 393.05,144.00 374.00,155.00 374.00,177.00 393.05,188.00 412.10,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="393.05" cy="166.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="405.15" y="173.70">58</text>
+<text class="num" x="393.05" y="166.00">61</text>
+<polygon points="393.05,122.00 374.00,111.00 354.95,122.00 354.95,144.00 374.00,155.00 393.05,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="374.00" cy="133.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="386.10" y="140.70">66</text>
+<text class="num" x="374.00" y="133.00">62</text>
+<polygon points="374.00,89.00 354.95,78.00 335.89,89.00 335.89,111.00 354.95,122.00 374.00,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="354.95" cy="100.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="367.05" y="107.70">65</text>
+<text class="num" x="354.95" y="100.00">63</text>
+<polygon points="354.95,56.00 335.89,45.00 316.84,56.00 316.84,78.00 335.89,89.00 354.95,78.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="335.89" cy="67.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="347.99" y="74.70">61</text>
+<text class="num" x="335.89" y="67.00">64</text>
+<polygon points="335.89,23.00 316.84,12.00 297.79,23.00 297.79,45.00 316.84,56.00 335.89,45.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="316.84" cy="34.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="328.94" y="41.70">69</text>
+<text class="num" x="316.84" y="34.00">65</text>
+<polygon points="297.79,23.00 278.74,12.00 259.68,23.00 259.68,45.00 278.74,56.00 297.79,45.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="278.74" cy="34.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="290.84" y="41.70">64</text>
+<text class="num" x="278.74" y="34.00">66</text>
+<polygon points="259.68,23.00 240.63,12.00 221.58,23.00 221.58,45.00 240.63,56.00 259.68,45.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="240.63" cy="34.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="252.73" y="41.70">68</text>
+<text class="num" x="240.63" y="34.00">67</text>
+<polygon points="221.58,23.00 202.53,12.00 183.47,23.00 183.47,45.00 202.53,56.00 221.58,45.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="202.53" cy="34.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="214.63" y="41.70">72</text>
+<text class="num" x="202.53" y="34.00">68</text>
+<polygon points="183.47,23.00 164.42,12.00 145.37,23.00 145.37,45.00 164.42,56.00 183.47,45.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="164.42" cy="34.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="176.52" y="41.70">67</text>
+<text class="num" x="164.42" y="34.00">69</text>
+<polygon points="145.37,23.00 126.32,12.00 107.26,23.00 107.26,45.00 126.32,56.00 145.37,45.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="126.32" cy="34.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="138.42" y="41.70">71</text>
+<text class="num" x="126.32" y="34.00">70</text>
+<polygon points="126.32,56.00 107.26,45.00 88.21,56.00 88.21,78.00 107.26,89.00 126.32,78.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="107.26" cy="67.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="119.36" y="74.70">70</text>
+<text class="num" x="107.26" y="67.00">71</text>
+<polygon points="107.26,89.00 88.21,78.00 69.16,89.00 69.16,111.00 88.21,122.00 107.26,111.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="88.21" cy="100.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="100.31" y="107.70">75</text>
+<text class="num" x="88.21" y="100.00">72</text>
+<polygon points="88.21,122.00 69.16,111.00 50.11,122.00 50.11,144.00 69.16,155.00 88.21,144.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="69.16" cy="133.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="81.26" y="140.70">74</text>
+<text class="num" x="69.16" y="133.00">73</text>
+<polygon points="69.16,155.00 50.11,144.00 31.05,155.00 31.05,177.00 50.11,188.00 69.16,177.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="50.11" cy="166.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="62.21" y="173.70">73</text>
+<text class="num" x="50.11" y="166.00">74</text>
+<polygon points="50.11,188.00 31.05,177.00 12.00,188.00 12.00,210.00 31.05,221.00 50.11,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="31.05" cy="199.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="43.15" y="206.70">78</text>
+<text class="num" x="31.05" y="199.00">75</text>
+<polygon points="69.16,221.00 50.11,210.00 31.05,221.00 31.05,243.00 50.11,254.00 69.16,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="50.11" cy="232.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="62.21" y="239.70">76</text>
+<text class="num" x="50.11" y="232.00">76</text>
+<polygon points="88.21,254.00 69.16,243.00 50.11,254.00 50.11,276.00 69.16,287.00 88.21,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="69.16" cy="265.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="81.26" y="272.70">77</text>
+<text class="num" x="69.16" y="265.00">77</text>
+<polygon points="107.26,287.00 88.21,276.00 69.16,287.00 69.16,309.00 88.21,320.00 107.26,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="88.21" cy="298.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="100.31" y="305.70">81</text>
+<text class="num" x="88.21" y="298.00">78</text>
+<polygon points="126.32,320.00 107.26,309.00 88.21,320.00 88.21,342.00 107.26,353.00 126.32,342.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="107.26" cy="331.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="119.36" y="338.70">79</text>
+<text class="num" x="107.26" y="331.00">79</text>
+<polygon points="145.37,353.00 126.32,342.00 107.26,353.00 107.26,375.00 126.32,386.00 145.37,375.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="126.32" cy="364.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="138.42" y="371.70">80</text>
+<text class="num" x="126.32" y="364.00">80</text>
+<polygon points="183.47,353.00 164.42,342.00 145.37,353.00 145.37,375.00 164.42,386.00 183.47,375.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="164.42" cy="364.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="176.52" y="371.70">82</text>
+<text class="num" x="164.42" y="364.00">81</text>
+<polygon points="221.58,353.00 202.53,342.00 183.47,353.00 183.47,375.00 202.53,386.00 221.58,375.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="202.53" cy="364.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="214.63" y="371.70">84</text>
+<text class="num" x="202.53" y="364.00">82</text>
+<polygon points="259.68,353.00 240.63,342.00 221.58,353.00 221.58,375.00 240.63,386.00 259.68,375.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="240.63" cy="364.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="252.73" y="371.70">83</text>
+<text class="num" x="240.63" y="364.00">83</text>
+<polygon points="297.79,353.00 278.74,342.00 259.68,353.00 259.68,375.00 278.74,386.00 297.79,375.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="278.74" cy="364.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="290.84" y="371.70">85</text>
+<text class="num" x="278.74" y="364.00">84</text>
+<polygon points="335.89,353.00 316.84,342.00 297.79,353.00 297.79,375.00 316.84,386.00 335.89,375.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="316.84" cy="364.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="328.94" y="371.70">87</text>
+<text class="num" x="316.84" y="364.00">85</text>
+<polygon points="354.95,320.00 335.89,309.00 316.84,320.00 316.84,342.00 335.89,353.00 354.95,342.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="335.89" cy="331.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="347.99" y="338.70">88</text>
+<text class="num" x="335.89" y="331.00">86</text>
+<polygon points="374.00,287.00 354.95,276.00 335.89,287.00 335.89,309.00 354.95,320.00 374.00,309.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="354.95" cy="298.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="367.05" y="305.70">86</text>
+<text class="num" x="354.95" y="298.00">87</text>
+<polygon points="393.05,254.00 374.00,243.00 354.95,254.00 354.95,276.00 374.00,287.00 393.05,276.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="374.00" cy="265.00" r="12.8" fill="none" stroke="#138a13" stroke-width="2.5"/>
+<text class="small" x="386.10" y="272.70">90</text>
+<text class="num" x="374.00" y="265.00">88</text>
+<polygon points="412.10,221.00 393.05,210.00 374.00,221.00 374.00,243.00 393.05,254.00 412.10,243.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="393.05" cy="232.00" r="12.8" fill="none" stroke="#000000" stroke-width="2.5"/>
+<text class="small" x="405.15" y="239.70">91</text>
+<text class="num" x="393.05" y="232.00">89</text>
+<polygon points="431.16,188.00 412.10,177.00 393.05,188.00 393.05,210.00 412.10,221.00 431.16,210.00" fill="white" stroke="#ccc" stroke-width="1"/>
+<circle cx="412.10" cy="199.00" r="12.8" fill="none" stroke="#d11c24" stroke-width="2.5"/>
+<text class="small" x="424.20" y="206.70">89</text>
+<text class="num" x="412.10" y="199.00">90</text>
+</svg>
