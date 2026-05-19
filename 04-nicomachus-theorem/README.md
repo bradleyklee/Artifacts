@@ -8,9 +8,9 @@ differential calculus on polynomials, which is useful to the sciences.
 
 In the discrete case the step is fixed at $\delta=1$, so the scalar term
 remains: $(x+1)^2-x^2=2x+1$. We are confined to a sub-ring $K[x]$, with
-easier grading. The identity is essentially just completing the square
-in reverse. Asking when the gap is an odd square, $2x+1=(2n+1)^2$, gives
-$x=2n^2+2n=4T_n$, hence
+easier grading. The identity is essentially just some variant form of
+completing the square. Asking when the gap is an odd square,
+$2x+1=(2n+1)^2$, gives $x=2n^2+2n=4T_n$, hence
 
 $$
 (2n+1)^2+(4T_n)^2=(4T_n+1)^2.
