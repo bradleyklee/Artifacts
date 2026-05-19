@@ -1,6 +1,6 @@
 Start with the square itself, inside the ordinary polynomial ring $K[x]$:
 $(x+\delta)^2-x^2=2x\delta+\delta^2$. The maximum degree is two, so the 
-grading of $K[x]$ allows three terms to form a zero sum or equality. 
+grading of $K[x]$ allows four terms to form a zero sum or equality. 
 
 In calculus we divide by $\delta$ and send $\delta\to0$. The scalar term 
 disappears and we recover $\partial_x(x^2)=2x$. In the discrete case the 
