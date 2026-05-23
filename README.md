@@ -83,6 +83,6 @@ the proof using telescoping sums?
 
 A recent Deep Mind paper mentions a conjecture on OEIS A108 Catalan Numberrs. 
 OEIS makes the result look more mysterious than it is; Google makes the proof 
-look more impressive than it is. The real theorem is a short tail-dominance 
+look more impressive than it is. The theorem only needs a short tail-dominance 
 argument, which we'd prefer to write as a five way case split.
 
