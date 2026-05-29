@@ -1,0 +1,74 @@
+source_tiles 9
+source_edge_rules 33
+source_vertex_rules 18
+source_free_wang_rows 23
+search_acceptance exact: row_injective matrix_preserved rebuild_exact no_extra_rows
+exhaustive_two_tile_search
+  states 32
+  pair_trials 2746
+  accepted_merges 80
+  seen_states 32
+  rejection_counts {'matrix_changed': 88, 'no_tile_drop': 2578, 'ok': 80}
+  unique_two_tile_terminals 1
+  terminal 0: path_len=5 path=X=b13 b1=b2 b10=b11 b5=b6 b8=b9
+    T0: X b1 b4 b5 b8 b10
+    T1: X b16 b19 b1 b5 b7
+unique_two_tile_terminals ok
+accept depth=1 tiles=8 path=X=b13
+best tiles=8 depth=1 path=X=b13
+accept depth=1 tiles=6 path=b1=b2
+best tiles=6 depth=1 path=b1=b2
+accept depth=1 tiles=8 path=b10=b11
+accept depth=1 tiles=7 path=b5=b6
+accept depth=1 tiles=7 path=b8=b9
+accept depth=2 tiles=5 path=X=b13 b1=b2
+best tiles=5 depth=2 path=X=b13 b1=b2
+accept depth=2 tiles=7 path=X=b13 b10=b11
+accept depth=2 tiles=6 path=X=b13 b5=b6
+accept depth=2 tiles=6 path=X=b13 b8=b9
+accept depth=2 tiles=5 path=b1=b2 b10=b11
+accept depth=2 tiles=5 path=b1=b2 b5=b6
+accept depth=2 tiles=5 path=b1=b2 b8=b9
+accept depth=2 tiles=6 path=b10=b11 b5=b6
+accept depth=2 tiles=6 path=b10=b11 b8=b9
+accept depth=2 tiles=5 path=b5=b6 b8=b9
+accept depth=3 tiles=4 path=X=b13 b1=b2 b10=b11
+best tiles=4 depth=3 path=X=b13 b1=b2 b10=b11
+accept depth=3 tiles=4 path=X=b13 b1=b2 b5=b6
+accept depth=3 tiles=4 path=X=b13 b1=b2 b8=b9
+accept depth=3 tiles=5 path=X=b13 b10=b11 b5=b6
+accept depth=3 tiles=5 path=X=b13 b10=b11 b8=b9
+accept depth=3 tiles=4 path=X=b13 b5=b6 b8=b9
+accept depth=3 tiles=4 path=b1=b2 b10=b11 b5=b6
+accept depth=3 tiles=4 path=b1=b2 b10=b11 b8=b9
+accept depth=3 tiles=4 path=b1=b2 b5=b6 b8=b9
+accept depth=3 tiles=4 path=b10=b11 b5=b6 b8=b9
+accept depth=4 tiles=3 path=X=b13 b1=b2 b10=b11 b5=b6
+best tiles=3 depth=4 path=X=b13 b1=b2 b10=b11 b5=b6
+accept depth=4 tiles=3 path=X=b13 b1=b2 b10=b11 b8=b9
+accept depth=4 tiles=3 path=X=b13 b1=b2 b5=b6 b8=b9
+accept depth=4 tiles=3 path=X=b13 b10=b11 b5=b6 b8=b9
+accept depth=4 tiles=3 path=b1=b2 b10=b11 b5=b6 b8=b9
+accept depth=5 tiles=2 path=X=b13 b1=b2 b10=b11 b5=b6 b8=b9
+best tiles=2 depth=5 path=X=b13 b1=b2 b10=b11 b5=b6 b8=b9
+summary
+  states 32
+  pair_trials 1952
+  accepted_merges 80
+  seen_states 32
+  rejection_counts {'matrix_changed': 64, 'no_tile_drop': 1808, 'ok': 80}
+  best_tiles 2
+  best_path X=b13 b1=b2 b10=b11 b5=b6 b8=b9
+reduced_tiles
+  H0: X b1 b4 b5 b8 b10
+  H1: X b16 b19 b1 b5 b7
+reduced_edge_rules 33
+reduced_vertex_rules 18
+remembered_rows 23
+check_path note: found a 2-tile path, but not the stored order
+write_reduced data/reduced_spectre_model.dat
+verify_reduced ok
+  tiles 2
+  directed_edge_rules 33
+  vertex_triples 18
+  singular_H1_edges 3

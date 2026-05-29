@@ -1,0 +1,8 @@
+Weak closure scan over all legal adjacent oriented two-hex seeds
+
+legal_adjacent_oriented_seeds 198
+weak_closure_size_histogram {2: 66, 3: 12, 4: 12, 5: 48, 6: 14, 7: 28, 8: 14, 9: 4}
+max_tiles 9
+forced_after_seed 7
+seed H1 rot 0 --dir 3-- H1 rot 2
+status ('dead_boundary', [(-2, -1)])

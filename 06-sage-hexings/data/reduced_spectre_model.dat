@@ -1,0 +1,61 @@
+# Reduced Spectre 2-hex model, diagram orientation.
+# Hex cycles are listed in the orientation used by the generated figures.
+
+[tiles]
+H1: H A D E B G
+H0: C A B F G I
+
+[edge_rules]
+A,B = B,G
+A,B = C,A
+A,B = G,H
+A,B = G,I
+A,B = I,C
+A,D = C,A
+B,F = C,A
+B,F = D,E
+B,F = F,G
+B,G = A,B
+B,G = E,B
+C,A = A,B
+C,A = A,D
+C,A = B,F
+C,A = G,I
+C,A = H,A
+D,E = B,F
+D,E = G,I
+E,B = B,G
+E,B = G,I
+F,G = B,F
+F,G = G,I
+F,G = I,C
+G,H = A,B
+G,I = A,B
+G,I = C,A
+G,I = D,E
+G,I = E,B
+G,I = F,G
+H,A = C,A
+I,C = A,B
+I,C = F,G
+I,C = I,C
+
+[vertex_rules]
+A A C
+A A H
+A B C
+A B G
+A B I
+A G I
+B B B
+B B G
+B G E
+B G G
+B I E
+C F D
+C F F
+C I D
+C I F
+E G I
+F F F
+G G G

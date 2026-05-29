@@ -85,4 +85,11 @@ A recent Deep Mind paper mentions a conjecture on OEIS A108 Catalan Numberrs.
 OEIS makes the result look more mysterious than it is; Google makes the proof 
 look more impressive than it is. The theorem only needs a short tail-dominance 
 argument, which we'd prefer to write as a five way case split.
+### 06. sage-hexings
+
+Obtain a reduced two-hex Spectre-style model with executable directed edge rules, 
+cyclic vertex rules, and local forcing properties. The artifact prints a compact 
+fact sheet and a strong-forcing diagram for the seven-tile configuration obtained 
+from singular H1 edges plus one branch-killed alternative. Thanks to Bowen Ping
+for the original data, which was parsed and reformatted by Harm.On.ica. 
 

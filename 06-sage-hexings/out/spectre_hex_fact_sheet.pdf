@@ -1,0 +1,237 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [6 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+5 0 obj
+<< /Length 6454 >>
+stream
+0.000 0.000 0.000 rg
+BT /F2 16.0 Tf 30.00 585.00 Td (Reduced Spectre 2-hex fact sheet) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 30.00 565.00 Td (Diagram orientation: H1 = H A D E B G ; H0 = C A B F G I) Tj ET
+0.860 0.910 0.970 rg
+0.000 0.000 0.000 RG
+1.50 w
+143.30 445.00 m
+143.30 495.00 l
+100.00 520.00 l
+56.70 495.00 l
+56.70 445.00 l
+100.00 420.00 l
+h B
+0.000 0.000 0.000 RG
+3.20 w
+143.30 445.00 m 143.30 495.00 l S
+0.000 0.000 0.000 RG
+3.20 w
+143.30 495.00 m 100.00 520.00 l S
+0.000 0.000 0.000 RG
+3.20 w
+100.00 420.00 m 143.30 445.00 l S
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 122.93 449.50 Td (H) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 122.93 480.50 Td (A) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 96.08 496.00 Td (D) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 69.23 480.50 Td (E) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 69.23 449.50 Td (B) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 96.08 434.00 Td (G) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 10.0 Tf 94.40 466.00 Td (H1) Tj ET
+0.870 0.930 0.850 rg
+0.000 0.000 0.000 RG
+1.50 w
+268.30 445.00 m
+268.30 495.00 l
+225.00 520.00 l
+181.70 495.00 l
+181.70 445.00 l
+225.00 420.00 l
+h B
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 247.93 449.50 Td (C) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 247.93 480.50 Td (A) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 221.08 496.00 Td (B) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 194.23 480.50 Td (F) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 194.23 449.50 Td (G) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 14.0 Tf 221.08 434.00 Td (I) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 10.0 Tf 219.40 466.00 Td (H0) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 11.0 Tf 35.00 390.00 Td (Singular H1 edges) Tj ET
+1.000 0.950 0.700 rg
+33 370 78 13 re f
+0.000 0.000 0.000 rg
+BT /F1 8.5 Tf 36.00 372.00 Td (H,A = C,A) Tj ET
+1.000 0.950 0.700 rg
+33 354 78 13 re f
+0.000 0.000 0.000 rg
+BT /F1 8.5 Tf 36.00 356.00 Td (A,D = C,A) Tj ET
+1.000 0.950 0.700 rg
+33 338 78 13 re f
+0.000 0.000 0.000 rg
+BT /F1 8.5 Tf 36.00 340.00 Td (G,H = A,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 12.0 Tf 330.00 585.00 Td (Directed edge rules) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 565.00 Td (A,B = B,G) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 552.00 Td (A,B = C,A) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 539.00 Td (A,B = G,H) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 526.00 Td (A,B = G,I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 513.00 Td (A,B = I,C) Tj ET
+1.000 0.950 0.700 rg
+328 498 72 12 re f
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 500.00 Td (A,D = C,A) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 487.00 Td (B,F = C,A) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 474.00 Td (B,F = D,E) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 461.00 Td (B,F = F,G) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 448.00 Td (B,G = A,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 435.00 Td (B,G = E,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 422.00 Td (C,A = A,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 409.00 Td (C,A = A,D) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 396.00 Td (C,A = B,F) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 383.00 Td (C,A = G,I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 370.00 Td (C,A = H,A) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 330.00 357.00 Td (D,E = B,F) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 565.00 Td (D,E = G,I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 552.00 Td (E,B = B,G) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 539.00 Td (E,B = G,I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 526.00 Td (F,G = B,F) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 513.00 Td (F,G = G,I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 500.00 Td (F,G = I,C) Tj ET
+1.000 0.950 0.700 rg
+458 485 72 12 re f
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 487.00 Td (G,H = A,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 474.00 Td (G,I = A,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 461.00 Td (G,I = C,A) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 448.00 Td (G,I = D,E) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 435.00 Td (G,I = E,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 422.00 Td (G,I = F,G) Tj ET
+1.000 0.950 0.700 rg
+458 407 72 12 re f
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 409.00 Td (H,A = C,A) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 396.00 Td (I,C = A,B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 383.00 Td (I,C = F,G) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 8.0 Tf 460.00 370.00 Td (I,C = I,C) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 12.0 Tf 30.00 300.00 Td (Valid vertex triples) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 30.00 280.00 Td (A A C) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 30.00 265.00 Td (A A H) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 30.00 250.00 Td (A B C) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 30.00 235.00 Td (A B G) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 30.00 220.00 Td (A B I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 30.00 205.00 Td (A G I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 110.00 280.00 Td (B B B) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 110.00 265.00 Td (B B G) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 110.00 250.00 Td (B G E) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 110.00 235.00 Td (B G G) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 110.00 220.00 Td (B I E) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 110.00 205.00 Td (C F D) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 190.00 280.00 Td (C F F) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 190.00 265.00 Td (C I D) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 190.00 250.00 Td (C I F) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 190.00 235.00 Td (E G I) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 190.00 220.00 Td (F F F) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 190.00 205.00 Td (G G G) Tj ET
+0.000 0.000 0.000 rg
+BT /F2 12.0 Tf 330.00 300.00 Td (Current checks) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 330.00 280.00 Td (tiles: 2) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 330.00 265.00 Td (directed edge rules: 33) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 330.00 250.00 Td (vertex triples: 18) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 330.00 235.00 Td (oriented hexes: 12) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 330.00 220.00 Td (weak closure scan: 198 legal adjacent oriented seeds) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 330.00 205.00 Td (max weak closure: 9 tiles \(dead boundary witness\)) Tj ET
+0.000 0.000 0.000 rg
+BT /F1 9.0 Tf 330.00 190.00 Td (strong demo: 7-tile live fixed point) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 792 612] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000185 00000 n 
+0000000260 00000 n 
+0000006766 00000 n 
+trailer << /Size 7 /Root 1 0 R >>
+startxref
+6902
+%%EOF

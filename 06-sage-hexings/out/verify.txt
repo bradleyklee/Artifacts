@@ -1,0 +1,7 @@
+tiles 2
+edge_rules 33
+vertex_rules 18
+oriented_tiles 12
+strong_demo_tiles 7
+strong_demo_status None
+strong_demo_boundary_histogram {2: 6, 3: 2, 5: 5}

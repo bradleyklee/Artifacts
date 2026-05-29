@@ -1,0 +1,20 @@
+Strong closure demo report
+
+Definition: weak singles plus the local branch test where the H1 rot 4 alternative dies, forcing H0 rot 0.
+status: None
+tiles: 7
+boundary histogram: {2: 6, 3: 2, 5: 5}
+
+placements:
+  (-1, 0): H0 rot 2 labels=G I C A B F
+  (0, -1): H0 rot 0 labels=C A B F G I
+  (0, 0): H1 rot 0 labels=H A D E B G
+  (0, 1): H0 rot 4 labels=B F G I C A
+  (1, -1): H0 rot 1 labels=I C A B F G
+  (1, 0): H0 rot 3 labels=F G I C A B
+  (2, -1): H0 rot 2 labels=G I C A B F
+
+closure log:
+  weak (2, -1): H0 rot 2 labels=G I C A B F
+  strong (0, -1): H0 rot 0 labels=C A B F G I; H1 rot 4 branch dies at boundary (2,-2)
+  weak (-1, 0): H0 rot 2 labels=G I C A B F
