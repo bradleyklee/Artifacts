@@ -12,16 +12,16 @@ import html
 import math
 import textwrap
 from dataclasses import dataclass
-from itertools import permutations
 from pathlib import Path
+from itertools import permutations
 from typing import Dict, Iterable, List, Sequence, Tuple
 
 Point = Tuple[float, float]
 PAGE_W, PAGE_H = 792.0, 612.0  # US letter landscape, points
 PANEL_W, PANEL_H = 420.0, 290.0
 EDGE_COLOR = "#202020"
-ABC_FILL = "#e8f1ff"
-DEF_FILL = "#fff1e3"
+ABC_FILL = "#e8f6e8"
+DEF_FILL = "#e8f0ff"
 FRAME_COLOR = "#666666"
 TEXT_COLOR = "#111111"
 
@@ -47,6 +47,14 @@ class Poly:
 
 
 @dataclass(frozen=True)
+class StrokePath:
+    points: Tuple[Point, ...]
+    stroke: str
+    stroke_width: float
+    dash: Tuple[float, ...] = ()
+
+
+@dataclass(frozen=True)
 class Text:
     x: float
     y: float
@@ -57,7 +65,7 @@ class Text:
     fill: str = TEXT_COLOR
 
 
-Op = Rect | Poly | Text
+Op = Rect | Poly | StrokePath | Text
 
 
 def parse_records(path: Path) -> Tuple[dict, List[dict]]:
@@ -119,20 +127,31 @@ def tri_vertices(cell: dict) -> List[Tuple[int, int]]:
     return [(i + 1, j), (i + 1, j + 1), (i, j + 1)]
 
 
-def infer_vertex_labels(edges: Tuple[str, str, str]) -> Tuple[str, str, str]:
-    vertices = sorted(set("".join(edges)))
-    for v0, v1, v2 in permutations(vertices):
-        if ({v0, v1} == set(edges[0]) and
-                {v1, v2} == set(edges[1]) and
-                {v2, v0} == set(edges[2])):
-            return (v0, v1, v2)
-    raise ValueError(f"could not infer vertex labels for edges={edges}")
-
-
 def poly_bounds(polygons: Sequence[Sequence[Point]]) -> Tuple[float, float, float, float]:
     xs = [point[0] for polygon in polygons for point in polygon]
     ys = [point[1] for polygon in polygons for point in polygon]
     return min(xs), min(ys), max(xs), max(ys)
+
+
+def infer_vertex_labels(edges: Tuple[str, str, str]) -> Tuple[str, str, str]:
+    verts = sorted(set("".join(edges)))
+    for v0, v1, v2 in permutations(verts):
+        if {v0, v1} == set(edges[0]) and {v1, v2} == set(edges[1]) and {v2, v0} == set(edges[2]):
+            return (v0, v1, v2)
+    raise ValueError(f"could not infer vertex labels for edges={edges}")
+
+
+def distinguished_notch(vertices: Sequence[Point], edges: Tuple[str, str, str]) -> Tuple[Point, Point, Point]:
+    target = "AB" if any(edge == "AB" for edge in edges) else "DE"
+    k = edges.index(target)
+    a = vertices[k]
+    b = vertices[(k + 1) % 3]
+    centroid = (sum(x for x, _ in vertices) / 3.0, sum(y for _, y in vertices) / 3.0)
+    q1 = (0.62 * a[0] + 0.38 * b[0], 0.62 * a[1] + 0.38 * b[1])
+    q2 = (0.38 * a[0] + 0.62 * b[0], 0.38 * a[1] + 0.62 * b[1])
+    mid = ((a[0] + b[0]) / 2.0, (a[1] + b[1]) / 2.0)
+    q3 = (0.56 * mid[0] + 0.44 * centroid[0], 0.56 * mid[1] + 0.44 * centroid[1])
+    return (q1, q2, q3)
 
 
 def panel_ops(rec: dict) -> List[Op]:
@@ -178,6 +197,8 @@ def panel_ops(rec: dict) -> List[Op]:
                 ty + scale * (maxy - point[1]))
 
     ops.append(Poly(tuple(map_point(p) for p in frame), None, FRAME_COLOR, 1.4, (5.0, 4.0)))
+    label_size = max(6.0, min(15.0, 0.19 * scale))
+    y_shift = 0.34 * label_size
     for cell, vertices, centroid in cell_polys:
         is_abc = any(edge == "AB" for edge in cell["edges"])
         fill = ABC_FILL if is_abc else DEF_FILL
@@ -188,7 +209,7 @@ def panel_ops(rec: dict) -> List[Op]:
             lx = 0.68 * vx + 0.32 * centroid[0]
             ly = 0.68 * vy + 0.32 * centroid[1]
             px, py = map_point((lx, ly))
-            ops.append(Text(px, py + 5, label, 15, bold=True, anchor="middle"))
+            ops.append(Text(px, py + y_shift, label, label_size, bold=True, anchor="middle"))
     return ops
 
 
@@ -242,6 +263,10 @@ def transformed_ops(ops: Iterable[Op], x: float, y: float, scale: float) -> List
             result.append(Poly(tuple((x + scale * px, y + scale * py) for px, py in op.points),
                                op.fill, op.stroke, scale * op.stroke_width,
                                tuple(scale * d for d in op.dash)))
+        elif isinstance(op, StrokePath):
+            result.append(StrokePath(tuple((x + scale * px, y + scale * py) for px, py in op.points),
+                                     op.stroke, scale * op.stroke_width,
+                                     tuple(scale * d for d in op.dash)))
         else:
             result.append(Text(x + scale * op.x, y + scale * op.y, op.value,
                                scale * op.size, op.bold, op.anchor, op.fill))
@@ -258,6 +283,10 @@ def svg_for_ops(ops: Iterable[Op], width: float, height: float) -> str:
             fill = op.fill if op.fill else "none"
             dash = f' stroke-dasharray="{",".join(f"{d:g}" for d in op.dash)}"' if op.dash else ""
             lines.append(f'<polygon points="{points}" fill="{fill}" stroke="{op.stroke}" stroke-width="{op.stroke_width:g}"{dash}/>')
+        elif isinstance(op, StrokePath):
+            points = " ".join(f"{x:g},{y:g}" for x, y in op.points)
+            dash = f' stroke-dasharray="{",".join(f"{d:g}" for d in op.dash)}"' if op.dash else ""
+            lines.append(f'<polyline points="{points}" fill="none" stroke="{op.stroke}" stroke-width="{op.stroke_width:g}" stroke-linecap="round" stroke-linejoin="round"{dash}/>')
         else:
             anchor = "middle" if op.anchor == "middle" else "start"
             weight = "bold" if op.bold else "normal"
@@ -288,6 +317,14 @@ def pdf_stream_for_ops(ops: Iterable[Op]) -> bytes:
                 commands.append(f"q {fr:.4f} {fg:.4f} {fb:.4f} rg {sr:.4f} {sg:.4f} {sb:.4f} RG {op.stroke_width:.3f} w {dash} {' '.join(path)} B Q")
             else:
                 commands.append(f"q {sr:.4f} {sg:.4f} {sb:.4f} RG {op.stroke_width:.3f} w {dash} {' '.join(path)} S Q")
+        elif isinstance(op, StrokePath):
+            sr, sg, sb = color_rgb(op.stroke)
+            dash = ("[" + " ".join(f"{d:.3f}" for d in op.dash) + "] 0 d") if op.dash else "[] 0 d"
+            first_x, first_y = op.points[0]
+            path = [f"{first_x:.3f} {PAGE_H - first_y:.3f} m"]
+            for px, py in op.points[1:]:
+                path.append(f"{px:.3f} {PAGE_H - py:.3f} l")
+            commands.append(f"q 1 J 1 j {sr:.4f} {sg:.4f} {sb:.4f} RG {op.stroke_width:.3f} w {dash} {' '.join(path)} S Q")
         else:
             r, g, b = color_rgb(op.fill)
             font = "F2" if op.bold else "F1"
@@ -351,7 +388,7 @@ def assemble_pdf(records: List[dict], output: Path, meta: dict) -> None:
     margin, title_h, gap = 16.0, 28.0, 8.0
     for page_number, (title, recs, cols, rows) in enumerate(chunked_layout(records), start=1):
         ops: List[Op] = [Text(margin, margin, f"Triangle periodic certificates - {title}", 16, bold=True)]
-        summary = f"mandatory anchor AB=DE; periodic_area={meta.get('periodic_area', '?')}; solver={meta.get('solver', '?')}; page {page_number}"
+        summary = f"family={meta.get('family', 'anchored')}; mandatory join AB=DE; periodic_area={meta.get('periodic_area', '?')}; solver={meta.get('solver', '?')}; page {page_number}"
         ops.append(Text(margin, margin + 13, summary, 10))
         usable_w = PAGE_W - 2 * margin
         usable_h = PAGE_H - 2 * margin - title_h

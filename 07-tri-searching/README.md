@@ -1,34 +1,42 @@
 # 07. tri-searching
 
-This artifact searches a restricted family of equilateral-triangle matching
-rules.  There are two triangle prototiles, `ABC` and `DEF`.  The edge join
-`AB=DE` is mandatory and is the only permitted join involving `AB`.  The
-remaining symmetric joins on `{BC, CA, DE, EF, FD}` supply 15 optional bits, so
-there are `2^15 = 32768` rule masks.
+This artifact searches equilateral-triangle matching-rule families.  There are
+two CCW triangle prototiles, `ABC` and `DEF`; reflected copies are forbidden.
+The default `anchored` family requires `AB=DE` and forbids every other join
+involving `AB`.  The remaining symmetric joins on `{BC, CA, DE, EF, FD}` supply
+15 optional bits, so there are `2^15 = 32768` default rule masks.
 
-The current result is a bounded no-go calculation for this anchored family:
-every mask is either witnessed periodic on a small torus or cannot complete a
-small finite growth patch.
+A second `unrestricted` family retains mandatory `AB=DE` but permits every
+other symmetric edge join, including joins involving `AB`, as one of 20
+optional bits.  That follow-up space has `2^20 = 1048576` masks.
+
+The current result is a bounded filtering calculation for this anchored family.
+Reflections are forbidden: only the three cyclic CCW rotations of each
+prototile are allowed.  At the default bounds, 40 masks remain for further
+search.  In addition to the periodic-certificate report, the artifact now also
+generates a second PDF showing one depth-7 completion witness for each surviving
+mask.
 
 ## Result at the default bounds
 
-The default command tests all ordered periodic parallelograms `W x H` with
-`W*H <= 10`, then tests finite completion through depth 7:
+The Make interface uses a side-scale parameter `PERIODIC_DEPTH=N`; it tests all
+ordered periodic parallelograms `W x H` with `W*H <= N^2`.  The default is
+`PERIODIC_DEPTH=3`, hence periodic area at most 9, followed by finite completion
+through depth 7:
 
 ```text
-minimal_periodic_certificates = 49
-periodically_pruned            = 28531
-dead at completion depth 1     = 2863
-dead at completion depth 2     = 1054
-dead at completion depth 3     = 320
-survivors                       = 0
+minimal_periodic_certificates = 43
+periodically_pruned            = 27504
+dead at completion depth 1     = 4148
+dead at completion depth 2     = 936
+dead at completion depth 3     = 140
+survivors through depth 7      = 40
 ```
 
-Thus, within this 15-bit anchored search space, every rule mask either contains
-a periodic certificate with torus area at most 10, or fails to fill the
-completion-depth-3 patch.  This is a bounded computational result for this
-specific rule family, not a no-go theorem for triangle matching systems in
-general.
+Thus, within this 15-bit anchored search space and at these bounds, 27,504
+masks contain a periodic certificate with torus area at most 9, and 5,224
+additional masks fail finite completion by depth 3.  The remaining 40 masks
+complete depth 7 and are not eliminated by the tested periodic tori.
 
 ## Build
 
@@ -44,27 +52,43 @@ Generated files are:
 ```text
 data/periodic_certificates.txt          canonical periodic witness records
 triangle_periodic_certificates.pdf      illustrated certificate report
+triangle_survivor_configurations.pdf   survivor depth-completion report
+data/periodic_certificates.txt          canonical periodic witness records
+data/survivor_configurations.txt        surviving depth-completion witness records
 out/periodic_certificate_svgs/          one SVG panel per certificate
-out/search_summary.txt                   SAT pruning and completion counts
-out/survivors.txt                        surviving masks; empty at default bounds
+out/survivor_configuration_svgs/        one SVG panel per survivor
+out/search_summary.txt                  SAT pruning and completion counts
+out/survivors.txt                       surviving masks at the chosen bounds
 ```
 
 The search bounds and SAT backend are parameterizable:
 
 ```bash
-make all PERIODIC_DEPTH=10 COMPLETION_DEPTH=7 SOLVER=glucose4
+make all PERIODIC_DEPTH=3 COMPLETION_DEPTH=7 SOLVER=glucose4
+
+# for example, test every torus with area at most 5^2 = 25
+make all PERIODIC_DEPTH=5 COMPLETION_DEPTH=7 SOLVER=glucose4
+
+# run the 20-bit follow-up search without generating a potentially huge survivor PDF
+make unrestricted PERIODIC_DEPTH=3 COMPLETION_DEPTH=7 SOLVER=glucose4
+
+# explicitly generate separate unrestricted reports after choosing useful bounds
+make unrestricted-reports PERIODIC_DEPTH=3 COMPLETION_DEPTH=7 SOLVER=glucose4
 ```
 
-`make verify` checks the recorded default result: 49 minimal periodic
-certificates and zero masks surviving the periodic and finite-completion tests.
+`make verify` checks the recorded default result: 43 minimal periodic
+certificates and 40 masks surviving the periodic and finite-completion tests.
 
 ## Code organization
 
 `src/triangle_sat_search.py` is the direct geometric SAT search.  Each
-triangular cell chooses one of twelve oriented states: six orientations of
-`ABC` and six of `DEF`.  Shared edges impose either the mandatory join,
-a forbidden join involving `AB`, or one of the 15 optional rule variables.
-A particular rule mask is passed to a reusable SAT instance by assumptions.
+triangular cell chooses one of six orientation-preserving states: the three
+cyclic rotations of CCW `ABC` and the three cyclic rotations of CCW `DEF`.
+Reflected tiles such as `ACB` or `DFE` are not permitted.  Shared edges impose either the mandatory join, a join disallowed in the chosen
+family, or one of that family's optional rule variables.  A particular rule
+mask is passed to a reusable SAT instance by assumptions.  Use
+`--family anchored` or `--family unrestricted` when invoking the script
+directly.
 
 Periodic testing uses wrapped triangular parallelograms.  From each satisfying
 torus the program extracts the optional joins actually used; this smaller mask
@@ -78,9 +102,19 @@ and writes a plain-text record file.  Witness placements are canonicalized by
 torus translation before writing.
 
 `src/triangle_render_periodic_report.py` reads those records, generates SVG
-panels using triangle geometry and interior vertex labels, and composes them
-into the PDF report using only the Python standard library.  The report groups panels by witness torus type so that
-the larger `3x3` witnesses remain readable.
+panels using triangle geometry and a small triangular marker on each marked `AB` / `DE` edge, and composes them
+into the PDF report using only the Python standard library.  The report groups
+panels by witness torus type so that the larger `3x3` witnesses remain
+readable.
+
+`src/triangle_export_survivor_records.py` reruns the periodic and finite
+completion filters, then reconstructs one depth-`D` completion witness for each
+surviving mask.  It writes a second plain-text record file describing those
+largest currently retained finite configurations.
+
+`src/triangle_render_survivor_report.py` reads the survivor records, renders one
+panel per surviving mask using the same marked-edge triangle convention, and assembles a multi-page PDF
+showing the largest retained configurations at the chosen completion depth.
 
 ## Reading the records
 

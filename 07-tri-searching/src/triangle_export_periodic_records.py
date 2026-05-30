@@ -57,10 +57,10 @@ def canonicalize_witness(width: int, height: int, states: Tuple[int, ...]) -> Tu
     return best
 
 
-def write_records(out_path: Path, records: List[dict], periodic_area: int, solver: str) -> None:
+def write_records(out_path: Path, records: List[dict], periodic_area: int, solver: str, family: str) -> None:
     with out_path.open("w", encoding="utf-8") as f:
         f.write("# triangle-periodic-certificates v1\n")
-        f.write(f"meta periodic_area={periodic_area} solver={solver} count={len(records)}\n")
+        f.write(f"meta family={family} periodic_area={periodic_area} solver={solver} count={len(records)}\n")
         for idx, rec in enumerate(records, start=1):
             f.write(f"record {idx}\n")
             f.write(f"mask {rec['mask_hex']}\n")
@@ -79,17 +79,19 @@ def main() -> None:
     parser.add_argument("--search-script", default="triangle_sat_search.py", help="path to triangle_sat_search.py")
     parser.add_argument("--periodic-depth", type=int, default=10, help="test ordered W×H tori with W*H <= this area")
     parser.add_argument("--solver", default="glucose4", help="PySAT solver backend")
+    parser.add_argument("--family", choices=("anchored", "unrestricted"), default="anchored", help="rule family; default anchored")
     parser.add_argument("--output", required=True, help="output text record path")
     args = parser.parse_args()
 
     mod = load_triangle_module(Path(args.search_script))
     dims = mod.tori_through_area(args.periodic_depth)
-    certs, _ = mod.periodic_certificates(dims, args.solver)
+    space = mod.rule_space(args.family)
+    certs, _ = mod.periodic_certificates(dims, args.solver, space)
     certs = sorted(certs, key=lambda x: (x[0].bit_count(), x[0], x[1] * x[2], x[1], x[2]))
 
     records = []
     for cert, width, height in certs:
-        encoding = mod.EncodedGeometry(mod.torus(width, height), args.solver)
+        encoding = mod.EncodedGeometry(mod.torus(width, height), args.solver, space)
         try:
             witness = encoding.solve(cert, want_witness=True)
         finally:
@@ -113,16 +115,16 @@ def main() -> None:
                     })
         records.append({
             "mask": cert,
-            "mask_hex": f"0x{cert:04x}",
+            "mask_hex": f"0x{cert:0{max(4, (space.bits + 3) // 4)}x}",
             "bits": cert.bit_count(),
             "width": width,
             "height": height,
-            "rules": mod.mask_rules(cert),
+            "rules": mod.mask_rules(space, cert),
             "cells": cells,
         })
 
     out_path = Path(args.output)
-    write_records(out_path, records, args.periodic_depth, args.solver)
+    write_records(out_path, records, args.periodic_depth, args.solver, args.family)
     print(f"wrote {len(records)} records to {out_path}")
 
 
