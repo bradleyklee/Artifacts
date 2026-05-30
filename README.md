@@ -91,5 +91,13 @@ Obtain a reduced two-hex Spectre-style model with executable directed edge rules
 cyclic vertex rules, and local forcing properties. The artifact prints a compact 
 fact sheet and a strong-forcing diagram for the seven-tile configuration obtained 
 from singular H1 edges plus one branch-killed alternative. Thanks to Bowen Ping
-for the original data, which was parsed and reformatted by Harm.On.ica. 
+for the original data, which was parsed and reformatted by Harm.On.ica.
 
+### 07. tri-searching
+
+An exhaustive SAT search over a 15-bit anchored equilateral-triangle rule family:
+`AB=DE` is mandatory and uniquely distinguished, while the remaining symmetric
+edge joins are optional.  At the recorded bounds, all 32,768 masks are either
+pruned by one of 49 small periodic certificates or die by finite completion
+depth 3; the artifact includes a generated illustrated PDF of the periodic
+witnesses.
