@@ -1,0 +1,29 @@
+# triangle-periodic-certificates v1
+meta family=free periodic_area=1 solver=glucose4 count=3
+record 1
+mask 0x000086
+bits 3
+torus 1 1
+rules AB=BC,AB=CA,BC=CA
+cells 2
+state U 0 0 AB BC CA
+state D 0 0 AB BC CA
+end
+record 2
+mask 0x000841
+bits 3
+torus 1 1
+rules AB=AB,BC=BC,CA=CA
+cells 2
+state U 0 0 BC CA AB
+state D 0 0 AB BC CA
+end
+record 3
+mask 0x001410
+bits 3
+torus 1 1
+rules AB=EF,BC=FD,CA=DE
+cells 2
+state U 0 0 FD DE EF
+state D 0 0 AB BC CA
+end

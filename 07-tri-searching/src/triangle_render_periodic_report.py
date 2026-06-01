@@ -112,6 +112,8 @@ def parse_records(path: Path) -> Tuple[dict, List[dict]]:
                     })
                 else:
                     raise ValueError(f"unknown key {key}")
+    for record in records:
+        record["family"] = meta.get("family", "anchored")
     return meta, records
 
 
@@ -160,7 +162,8 @@ def panel_ops(rec: dict) -> List[Op]:
     ops.append(Text(12, 18, title, 14, bold=True))
     rule_text = rec["rules"] if rec["rules"] != "-" else "(none)"
     y = 36
-    for line in textwrap.wrap("AB=DE; " + rule_text, width=42)[:3]:
+    rule_prefix = "AB=DE; " if rec.get("family", "anchored") != "free" else ""
+    for line in textwrap.wrap(rule_prefix + rule_text, width=42)[:3]:
         ops.append(Text(12, y, line, 11))
         y += 13
 
@@ -388,7 +391,8 @@ def assemble_pdf(records: List[dict], output: Path, meta: dict) -> None:
     margin, title_h, gap = 16.0, 28.0, 8.0
     for page_number, (title, recs, cols, rows) in enumerate(chunked_layout(records), start=1):
         ops: List[Op] = [Text(margin, margin, f"Triangle periodic certificates - {title}", 16, bold=True)]
-        summary = f"family={meta.get('family', 'anchored')}; mandatory join AB=DE; periodic_area={meta.get('periodic_area', '?')}; solver={meta.get('solver', '?')}; page {page_number}"
+        family_note = "all joins optional" if meta.get("family", "anchored") == "free" else "mandatory join AB=DE"
+        summary = f"family={meta.get('family', 'anchored')}; {family_note}; periodic_area={meta.get('periodic_area', '?')}; solver={meta.get('solver', '?')}; page {page_number}"
         ops.append(Text(margin, margin + 13, summary, 10))
         usable_w = PAGE_W - 2 * margin
         usable_h = PAGE_H - 2 * margin - title_h

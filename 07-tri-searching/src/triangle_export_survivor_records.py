@@ -20,7 +20,7 @@ def load_triangle_module(path: Path):
 
 def periodic_filter(mod, space, periodic_depth: int, solver: str) -> List[int]:
     dims = mod.tori_through_area(periodic_depth)
-    certs, _ = mod.periodic_certificates(dims, solver, space)
+    certs, _, _ = mod.periodic_certificates(dims, solver, space)
     periodic_masks = {mask for mask in range(space.full_mask + 1)
                       if any(mod.covers(mask, cert) for cert, _, _ in certs)}
     return [mask for mask in range(space.full_mask + 1) if mask not in periodic_masks]
@@ -67,7 +67,7 @@ def main() -> None:
     parser.add_argument("--completion-depth", type=int, default=7,
                         help="require completion through this depth")
     parser.add_argument("--solver", default="glucose4", help="PySAT solver backend")
-    parser.add_argument("--family", choices=("anchored", "unrestricted"), default="anchored", help="rule family; default anchored")
+    parser.add_argument("--family", choices=("anchored", "unrestricted", "free"), default="anchored", help="rule family; default anchored")
     parser.add_argument("--output", required=True, help="output text record path")
     args = parser.parse_args()
 

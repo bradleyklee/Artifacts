@@ -16,7 +16,7 @@ SURVIVOR_SVG_DIR := $(OUT)/survivor_configuration_svgs
 SUMMARY := $(OUT)/search_summary.txt
 SURVIVORS := $(OUT)/survivors.txt
 
-.PHONY: all search records pdf survivor-records survivor-pdf unrestricted unrestricted-reports verify clean
+.PHONY: all search records pdf survivor-records survivor-pdf unrestricted unrestricted-reports free free-periodic-pdf free-survivor-pdf verify clean
 
 all: search pdf survivor-pdf
 
@@ -84,6 +84,34 @@ unrestricted-reports:
 		SURVIVORS=out/unrestricted/survivors.txt \
 		PERIODIC_DEPTH=$(PERIODIC_DEPTH) COMPLETION_DEPTH=$(COMPLETION_DEPTH) SOLVER=$(SOLVER)
 
+# The fully free 21-bit family quotients masks by independent cyclic relabeling
+# of ABC and DEF plus swapping the two prototiles (18 symmetry actions).
+# A weak bound can leave many survivor panels, so PDF generation is explicit.
+free:
+	$(MAKE) search FAMILY=free \
+		OUT=out/free \
+		SUMMARY=out/free/search_summary.txt \
+		SURVIVORS=out/free/survivors.txt \
+		PERIODIC_DEPTH=$(PERIODIC_DEPTH) COMPLETION_DEPTH=$(COMPLETION_DEPTH) SOLVER=$(SOLVER)
+
+free-periodic-pdf:
+	$(MAKE) pdf FAMILY=free \
+		OUT=out/free \
+		DATA=data/free_periodic_certificates.txt \
+		PDF=triangle_free_periodic_certificates.pdf \
+		SVG_DIR=out/free/periodic_certificate_svgs \
+		PERIODIC_DEPTH=$(PERIODIC_DEPTH) SOLVER=$(SOLVER)
+
+free-survivor-pdf:
+	$(MAKE) survivor-pdf FAMILY=free \
+		OUT=out/free \
+		SURVIVOR_DATA=data/free_survivor_configurations.txt \
+		SURVIVOR_PDF=triangle_free_survivor_configurations.pdf \
+		SURVIVOR_SVG_DIR=out/free/survivor_configuration_svgs \
+		SUMMARY=out/free/search_summary.txt \
+		SURVIVORS=out/free/survivors.txt \
+		PERIODIC_DEPTH=$(PERIODIC_DEPTH) COMPLETION_DEPTH=$(COMPLETION_DEPTH) SOLVER=$(SOLVER)
+
 verify: FAMILY=anchored
 verify: SOLVER=glucose4
 verify: PERIODIC_DEPTH=3
@@ -99,4 +127,6 @@ verify: search pdf survivor-pdf
 clean:
 	rm -rf out $(DATA) $(SURVIVOR_DATA) $(PDF) $(SURVIVOR_PDF) \
 		data/unrestricted_periodic_certificates.txt data/unrestricted_survivor_configurations.txt \
-		triangle_unrestricted_periodic_certificates.pdf triangle_unrestricted_survivor_configurations.pdf
+		triangle_unrestricted_periodic_certificates.pdf triangle_unrestricted_survivor_configurations.pdf \
+		data/free_periodic_certificates.txt data/free_survivor_configurations.txt \
+		triangle_free_periodic_certificates.pdf triangle_free_survivor_configurations.pdf

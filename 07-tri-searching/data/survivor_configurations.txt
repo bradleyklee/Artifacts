@@ -1,0 +1,2 @@
+# triangle-survivor-configurations v1
+meta family=anchored periodic_area=36 completion_depth=7 solver=glucose4 count=0

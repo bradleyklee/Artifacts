@@ -79,18 +79,19 @@ def main() -> None:
     parser.add_argument("--search-script", default="triangle_sat_search.py", help="path to triangle_sat_search.py")
     parser.add_argument("--periodic-depth", type=int, default=10, help="test ordered W×H tori with W*H <= this area")
     parser.add_argument("--solver", default="glucose4", help="PySAT solver backend")
-    parser.add_argument("--family", choices=("anchored", "unrestricted"), default="anchored", help="rule family; default anchored")
+    parser.add_argument("--family", choices=("anchored", "unrestricted", "free"), default="anchored", help="rule family; default anchored")
     parser.add_argument("--output", required=True, help="output text record path")
     args = parser.parse_args()
 
     mod = load_triangle_module(Path(args.search_script))
     dims = mod.tori_through_area(args.periodic_depth)
     space = mod.rule_space(args.family)
-    certs, _ = mod.periodic_certificates(dims, args.solver, space)
+    certs, _, _ = mod.periodic_certificates(dims, args.solver, space)
     certs = sorted(certs, key=lambda x: (x[0].bit_count(), x[0], x[1] * x[2], x[1], x[2]))
 
     records = []
     for cert, width, height in certs:
+        cert = mod.canonical_mask(space, cert)
         encoding = mod.EncodedGeometry(mod.torus(width, height), args.solver, space)
         try:
             witness = encoding.solve(cert, want_witness=True)
