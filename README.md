@@ -101,3 +101,17 @@ edge joins are optional.  At the recorded bounds, all 32,768 masks are either
 pruned by one of 49 small periodic certificates or die by finite completion
 depth 3; the artifact includes a generated illustrated PDF of the periodic
 witnesses.
+
+### 08. spectre-straight-breaks
+
+A source-derived audit of straight positioned paths in the Spectre substitution
+from minimal excerpts of Figures 4.2 and 5.1. The program extracts 76
+positioned straight-path records, audits all 288 valid positioned joins, and
+finds that every straight-only join breaks under inflation. This is a
+straight-only structure theorem: bent-path records may repair the breaks and
+remain to be analyzed.
+
+Bad news for OEIS: the straight-line sequence refuses to stay straight.
+Good news for OEIS: we might be able to bend some axes into existence.
+
+Rebuild and verify this artifact with `cd 08-spectre-straight-breaks && make smoke`.

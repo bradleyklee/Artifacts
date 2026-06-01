@@ -1,0 +1,14 @@
+{
+  "records_per_supertile": {
+    "Gamma": 8,
+    "Delta": 10,
+    "Theta": 6,
+    "Lambda": 8,
+    "Xi": 8,
+    "Pi": 10,
+    "Sigma": 8,
+    "Phi": 8,
+    "Psi": 10
+  },
+  "total_straight_records": 76
+}

@@ -1,0 +1,176 @@
+% Source excerpt required for Figure 4.2 signed-edge extraction.
+% Extracted from 00_macros.tex; unrelated paper content omitted.
+
+\newcommand{\edgealphaplus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \fill[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-2}{1.25} -- \vcoords{-2.5}{1.25} -- cycle
+}
+\newcommand{\edgealphaminus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \fill[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-2}{1.25} -- \vcoords{-1.5}{0.75} -- cycle
+}
+\newcommand{\edgebetaplus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \fill[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1.25} arc[start angle=90,delta angle=180,radius=0.25] -- cycle
+}
+\newcommand{\edgebetaminus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \fill[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} arc[start angle=-90,delta angle=180,radius=0.25] -- cycle
+}
+\newcommand{\edgegammaplus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-2}{1.25} -- \vcoords{-2.5}{1.25} -- cycle
+}
+\newcommand{\edgegammaminus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-2}{1.25} -- \vcoords{-1.5}{0.75} -- cycle
+}
+\newcommand{\edgedeltaplus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1.25} -- \vcoords{-2.5}{1.5};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-2.5}{1}
+}
+\newcommand{\edgedeltaminus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1.25} -- \vcoords{-1.5}{1};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-1.5}{0.5}
+}
+\newcommand{\edgeepsilonplus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1} -- \vcoords{-2.5}{1.25}
+}
+\newcommand{\edgeepsilonminus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1} -- \vcoords{-1.5}{0.75}
+}
+\newcommand{\edgezetaplus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1.25} -- \vcoords{-2.5}{1.5};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1} -- \vcoords{-2.5}{1.25};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-2.5}{1}
+}
+\newcommand{\edgezetaminus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1.25} -- \vcoords{-1.5}{1};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1} -- \vcoords{-1.5}{0.75};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} -- \vcoords{-1.5}{0.5}
+}
+\newcommand{\edgeeta}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2}
+}
+\newcommand{\edgethetaplus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{1.25} arc[start angle=90,delta angle=180,radius=0.25] -- cycle
+}
+\newcommand{\edgethetaminus}[4]{%
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0} -- \vcoords{-2}{2};
+  \draw[shift={\hcoords{#3}{#4}},rotate=#1] [rotate=#2] \vcoords{-2}{0.75} arc[start angle=-90,delta angle=180,radius=0.25] -- cycle
+}
+\newcommand{\hexGamma}[3]{%
+\fill[gammacolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgealphaminus{#1}{0}{#2}{#3};
+  \edgealphaplus{#1}{60}{#2}{#3};
+  \edgegammaminus{#1}{120}{#2}{#3};
+  \edgedeltaminus{#1}{180}{#2}{#3};
+  \edgebetaplus{#1}{240}{#2}{#3};
+  \edgebetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\Gamma$}
+}
+\newcommand{\hexDelta}[3]{%
+  \fill[deltacolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgegammaplus{#1}{0}{#2}{#3};
+  \edgebetaplus{#1}{60}{#2}{#3};
+  \edgeepsilonminus{#1}{120}{#2}{#3};
+  \edgealphaplus{#1}{180}{#2}{#3};
+  \edgegammaminus{#1}{240}{#2}{#3};
+  \edgezetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\Delta$}
+}
+\newcommand{\hexTheta}[3]{%
+  \fill[thetacolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgegammaplus{#1}{0}{#2}{#3};
+  \edgebetaplus{#1}{60}{#2}{#3};
+  \edgethetaplus{#1}{120}{#2}{#3};
+  \edgebetaplus{#1}{180}{#2}{#3};
+  \edgeeta{#1}{240}{#2}{#3};
+  \edgebetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\underline{\Theta}$}
+}
+\newcommand{\hexLambda}[3]{%
+  \fill[lambdacolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgegammaplus{#1}{0}{#2}{#3};
+  \edgebetaplus{#1}{60}{#2}{#3};
+  \edgeepsilonminus{#1}{120}{#2}{#3};
+  \edgealphaplus{#1}{180}{#2}{#3};
+  \edgethetaminus{#1}{240}{#2}{#3};
+  \edgebetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\Lambda$}
+}
+\newcommand{\hexXi}[3]{%
+  \fill[xicolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgealphaminus{#1}{0}{#2}{#3};
+  \edgeepsilonplus{#1}{60}{#2}{#3};
+  \edgethetaplus{#1}{120}{#2}{#3};
+  \edgebetaplus{#1}{180}{#2}{#3};
+  \edgeeta{#1}{240}{#2}{#3};
+  \edgebetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\underline{\Xi}$}
+}
+\newcommand{\hexPi}[3]{%
+  \fill[picolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgealphaminus{#1}{0}{#2}{#3};
+  \edgeepsilonplus{#1}{60}{#2}{#3};
+  \edgeepsilonminus{#1}{120}{#2}{#3};
+  \edgealphaplus{#1}{180}{#2}{#3};
+  \edgethetaminus{#1}{240}{#2}{#3};
+  \edgebetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\Pi$}
+}
+\newcommand{\hexSigma}[3]{%
+  \fill[sigmacolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgezetaplus{#1}{0}{#2}{#3};
+  \edgebetaplus{#1}{60}{#2}{#3};
+  \edgeepsilonminus{#1}{120}{#2}{#3};
+  \edgealphaplus{#1}{180}{#2}{#3};
+  \edgegammaminus{#1}{240}{#2}{#3};
+  \edgedeltaplus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\Sigma$}
+}
+\newcommand{\hexPhi}[3]{%
+  \fill[phicolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgegammaplus{#1}{0}{#2}{#3};
+  \edgebetaplus{#1}{60}{#2}{#3};
+  \edgeepsilonminus{#1}{120}{#2}{#3};
+  \edgeepsilonplus{#1}{180}{#2}{#3};
+  \edgeeta{#1}{240}{#2}{#3};
+  \edgebetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\underline{\Phi}$}
+}
+\newcommand{\hexPsi}[3]{%
+  \fill[psicolor,shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{-2}{2} --
+    \vcoords{-2}{0} -- \vcoords{0}{-2} -- \vcoords{2}{-2} --
+    \vcoords{2}{0} -- \vcoords{0}{2} -- cycle;
+  \edgealphaminus{#1}{0}{#2}{#3};
+  \edgeepsilonplus{#1}{60}{#2}{#3};
+  \edgeepsilonminus{#1}{120}{#2}{#3};
+  \edgeepsilonplus{#1}{180}{#2}{#3};
+  \edgeeta{#1}{240}{#2}{#3};
+  \edgebetaminus{#1}{300}{#2}{#3};
+  \draw[shift={\hcoords{#2}{#3}},rotate=#1] \vcoords{0}{0} node[transform shape] {$\Psi$}
+}

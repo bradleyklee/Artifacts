@@ -1,0 +1,25 @@
+{
+  "straight_path_records": 76,
+  "valid_positioned_joins": 288,
+  "breaking_inflated_joins": 288,
+  "nonbreaking_inflated_joins": 0,
+  "immediate_breaks": 25,
+  "break_locations": {
+    "right word": 248,
+    "image join": 25,
+    "left word": 15
+  },
+  "break_symbols": {
+    "\\Sigma_{1}": 58,
+    "\\Sigma_{3}": 53,
+    "\\Gamma_{4}": 39,
+    "\\Gamma_{3}": 35,
+    "\\Sigma_{2}": 25,
+    "\\Phi_{4}": 25,
+    "\\Gamma_{5}": 17,
+    "\\Sigma_{0}": 14,
+    "\\Xi_{0}": 12,
+    "\\Delta_{2}": 10
+  },
+  "pathology_groups": 48
+}
