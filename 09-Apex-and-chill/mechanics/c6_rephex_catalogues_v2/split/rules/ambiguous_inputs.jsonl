@@ -1,0 +1,460 @@
+{"keep_mask": 0, "key": [null, null, null, null, null, null], "outputs": ["CAP.0", "D0.0", "D1.0", "PAR.0", "PASS.0", "TRI.0"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "CAP.2"], "outputs": ["D1.5", "PAR.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "CAP.3"], "outputs": ["CAP.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "D0.0"], "outputs": ["PAR.5", "PASS.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "D0.1"], "outputs": ["PAR.5", "PASS.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "D1.0"], "outputs": ["PAR.5", "PASS.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "D1.1"], "outputs": ["PAR.5", "PASS.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "D1.2"], "outputs": ["CAP.5", "D0.5", "PASS.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "PAR.1"], "outputs": ["D0.5", "D1.5", "PAR.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "PAR.2"], "outputs": ["CAP.5", "PAR.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "PAR.4"], "outputs": ["D0.5", "D1.5", "PASS.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "PASS.0"], "outputs": ["CAP.5", "PAR.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "PASS.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "PASS.3"], "outputs": ["CAP.5", "PASS.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "PASS.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "TRI.1"], "outputs": ["D0.5", "D1.5", "TRI.5"]}
+{"keep_mask": 1, "key": [null, null, null, null, null, "TRI.4"], "outputs": ["D0.5", "D1.5", "PASS.5"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "CAP.0"], "outputs": ["CAP.4", "PASS.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "CAP.3"], "outputs": ["D0.4", "D1.4", "PAR.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "D0.2"], "outputs": ["PAR.4", "PASS.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "D0.3"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "D0.5"], "outputs": ["CAP.4", "PAR.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "D1.2"], "outputs": ["PAR.4", "PASS.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "D1.3"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "D1.5"], "outputs": ["CAP.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "PAR.2"], "outputs": ["D0.4", "D1.4", "PAR.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "PAR.3"], "outputs": ["D0.4", "PAR.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "PAR.5"], "outputs": ["CAP.4", "D0.4", "D1.4", "PAR.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "PASS.0"], "outputs": ["PAR.4", "PASS.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "PASS.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "PASS.3"], "outputs": ["PASS.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "TRI.0"], "outputs": ["CAP.4", "PASS.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "TRI.2"], "outputs": ["D0.4", "D1.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "TRI.3"], "outputs": ["D0.4", "D1.4", "TRI.4"]}
+{"keep_mask": 2, "key": [null, null, null, null, null, "TRI.5"], "outputs": ["D0.4", "D1.4", "PASS.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "CAP.2", "D1.5"], "outputs": ["CAP.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "D0.0", "D1.3"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "D0.0", "PASS.0"], "outputs": ["PAR.4", "PASS.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "D1.0", "D0.3"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "D1.0", "PASS.3"], "outputs": ["PASS.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "D1.1", "CAP.0"], "outputs": ["CAP.4", "PASS.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "D1.1", "TRI.0"], "outputs": ["CAP.4", "PASS.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "PAR.0", "CAP.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "PAR.1", "PAR.5"], "outputs": ["CAP.4", "PAR.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "PASS.0", "PAR.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "PASS.0", "TRI.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "PASS.2", "D1.5"], "outputs": ["CAP.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "PASS.5", "D0.5"], "outputs": ["CAP.4", "PAR.4", "TRI.4"]}
+{"keep_mask": 3, "key": [null, null, null, null, "TRI.0", "TRI.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "CAP.0"], "outputs": ["D1.3", "PAR.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "CAP.1"], "outputs": ["CAP.3", "TRI.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "D0.4"], "outputs": ["PAR.3", "PASS.3", "TRI.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "D0.5"], "outputs": ["PAR.3", "PASS.3", "TRI.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "D1.0"], "outputs": ["CAP.3", "D0.3", "PASS.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "D1.4"], "outputs": ["PAR.3", "PASS.3", "TRI.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "D1.5"], "outputs": ["PAR.3", "PASS.3", "TRI.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "PAR.0"], "outputs": ["CAP.3", "PAR.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "PAR.2"], "outputs": ["D0.3", "D1.3", "PASS.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "PAR.5"], "outputs": ["D0.3", "D1.3", "PAR.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "PASS.1"], "outputs": ["CAP.3", "PASS.3", "TRI.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "PASS.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "PASS.4"], "outputs": ["CAP.3", "PAR.3", "TRI.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "PASS.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "TRI.2"], "outputs": ["D0.3", "D1.3", "PASS.3"]}
+{"keep_mask": 4, "key": [null, null, null, null, null, "TRI.5"], "outputs": ["D0.3", "D1.3", "TRI.3"]}
+{"keep_mask": 5, "key": [null, null, null, "D0.5", null, "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 5, "key": [null, null, null, "D1.0", null, "PASS.1"], "outputs": ["CAP.3", "PASS.3"]}
+{"keep_mask": 5, "key": [null, null, null, "D1.5", null, "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 5, "key": [null, null, null, "PAR.2", null, "PAR.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 5, "key": [null, null, null, "PAR.2", null, "PASS.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 5, "key": [null, null, null, "PAR.5", null, "CAP.0"], "outputs": ["D1.3", "PAR.3"]}
+{"keep_mask": 5, "key": [null, null, null, "PASS.2", null, "PAR.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 5, "key": [null, null, null, "PASS.2", null, "TRI.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 5, "key": [null, null, null, "PASS.4", null, "PAR.0"], "outputs": ["CAP.3", "PAR.3"]}
+{"keep_mask": 5, "key": [null, null, null, "TRI.2", null, "PASS.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 5, "key": [null, null, null, "TRI.2", null, "TRI.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "D0.1", "D1.4"], "outputs": ["PAR.3", "PASS.3", "TRI.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "D0.2", "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "D0.4", "PAR.0"], "outputs": ["CAP.3", "PAR.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "D1.1", "D0.4"], "outputs": ["PAR.3", "PASS.3", "TRI.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "D1.2", "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "PAR.1", "PAR.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "PAR.4", "D1.0"], "outputs": ["CAP.3", "D0.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "PASS.1", "PASS.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "PASS.5", "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "TRI.1", "TRI.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "TRI.4", "D1.0"], "outputs": ["D0.3", "PASS.3"]}
+{"keep_mask": 6, "key": [null, null, null, null, "TRI.5", "PASS.1"], "outputs": ["CAP.3", "PASS.3"]}
+{"keep_mask": 7, "key": [null, null, null, "D0.5", "D1.2", "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 7, "key": [null, null, null, "D0.5", "PASS.5", "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 7, "key": [null, null, null, "D1.0", "TRI.5", "PASS.1"], "outputs": ["CAP.3", "PASS.3"]}
+{"keep_mask": 7, "key": [null, null, null, "D1.5", "D0.2", "PASS.4"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 7, "key": [null, null, null, "PASS.4", "D0.4", "PAR.0"], "outputs": ["CAP.3", "PAR.3"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "CAP.1"], "outputs": ["D0.2", "D1.2", "PAR.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "CAP.4"], "outputs": ["CAP.2", "PASS.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "D0.0"], "outputs": ["PAR.2", "PASS.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "D0.1"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "D0.3"], "outputs": ["CAP.2", "PAR.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "D1.0"], "outputs": ["PAR.2", "PASS.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "D1.1"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "D1.3"], "outputs": ["CAP.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "PAR.0"], "outputs": ["D0.2", "D1.2", "PAR.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "PAR.1"], "outputs": ["D0.2", "PAR.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "PAR.3"], "outputs": ["CAP.2", "D0.2", "D1.2", "PAR.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "PASS.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "PASS.1"], "outputs": ["PASS.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "PASS.4"], "outputs": ["PAR.2", "PASS.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "TRI.0"], "outputs": ["D0.2", "D1.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "TRI.1"], "outputs": ["D0.2", "D1.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "TRI.3"], "outputs": ["D0.2", "D1.2", "PASS.2", "TRI.2"]}
+{"keep_mask": 8, "key": [null, null, null, null, null, "TRI.4"], "outputs": ["CAP.2", "PASS.2"]}
+{"keep_mask": 9, "key": [null, null, "CAP.1", null, null, "TRI.4"], "outputs": ["PASS.2", "PASS.5"]}
+{"keep_mask": 9, "key": [null, null, "CAP.4", null, null, "PASS.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 9, "key": [null, null, "D0.0", null, null, "D0.1"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 9, "key": [null, null, "D0.0", null, null, "D1.1"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 9, "key": [null, null, "PAR.0", null, null, "PAR.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 9, "key": [null, null, "PAR.0", null, null, "PASS.0"], "outputs": ["CAP.5", "PAR.5"]}
+{"keep_mask": 9, "key": [null, null, "PAR.0", null, null, "PASS.3"], "outputs": ["CAP.5", "PASS.2"]}
+{"keep_mask": 9, "key": [null, null, "PAR.0", null, null, "TRI.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 9, "key": [null, null, "PAR.1", null, null, "TRI.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 9, "key": [null, null, "PAR.3", null, null, "PAR.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 9, "key": [null, null, "PAR.3", null, null, "PASS.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 9, "key": [null, null, "PAR.4", null, null, "PASS.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 9, "key": [null, null, "PASS.0", null, null, "TRI.3"], "outputs": ["PASS.2", "PASS.5", "TRI.2"]}
+{"keep_mask": 9, "key": [null, null, "PASS.1", null, null, "TRI.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 9, "key": [null, null, "PASS.3", null, null, "TRI.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 9, "key": [null, null, "PASS.4", null, null, "TRI.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 9, "key": [null, null, "TRI.1", null, null, "TRI.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 9, "key": [null, null, "TRI.3", null, null, "TRI.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 10, "key": [null, null, null, "CAP.1", null, "PAR.0"], "outputs": ["D1.2", "PAR.2"]}
+{"keep_mask": 10, "key": [null, null, null, "CAP.1", null, "PASS.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 10, "key": [null, null, null, "D0.1", null, "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 10, "key": [null, null, null, "D0.3", null, "PAR.3"], "outputs": ["CAP.2", "PAR.2"]}
+{"keep_mask": 10, "key": [null, null, null, "D1.1", null, "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 10, "key": [null, null, null, "PAR.1", null, "PAR.0"], "outputs": ["D0.2", "PAR.2"]}
+{"keep_mask": 10, "key": [null, null, null, "PAR.3", null, "PAR.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 10, "key": [null, null, null, "PAR.3", null, "TRI.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 10, "key": [null, null, null, "PASS.4", null, "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 10, "key": [null, null, null, "TRI.1", null, "PASS.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 10, "key": [null, null, null, "TRI.1", null, "TRI.0"], "outputs": ["D0.2", "D1.2", "TRI.2"]}
+{"keep_mask": 10, "key": [null, null, null, "TRI.3", null, "PAR.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 11, "key": [null, null, "D0.4", "D1.1", null, "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 11, "key": [null, null, "D0.4", "PASS.4", null, "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 11, "key": [null, null, "D1.4", "D0.1", null, "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 11, "key": [null, null, "PAR.4", "CAP.1", null, "PASS.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 11, "key": [null, null, "PASS.3", "D0.3", null, "PAR.3"], "outputs": ["CAP.2", "PAR.2"]}
+{"keep_mask": 11, "key": [null, null, "PASS.4", "PAR.3", null, "PAR.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 11, "key": [null, null, "PASS.4", "PAR.3", null, "TRI.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 11, "key": [null, null, "PASS.4", "TRI.3", null, "PAR.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 11, "key": [null, null, "TRI.4", "TRI.1", null, "PASS.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 11, "key": [null, null, "TRI.4", "TRI.1", null, "TRI.0"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "CAP.0", "D1.3"], "outputs": ["CAP.2", "TRI.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "D0.4", "D1.1"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "D0.4", "PASS.4"], "outputs": ["PAR.2", "PASS.2", "TRI.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "D1.4", "D0.1"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "D1.4", "PASS.1"], "outputs": ["PASS.2", "TRI.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "D1.5", "CAP.4"], "outputs": ["CAP.2", "PASS.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "D1.5", "TRI.4"], "outputs": ["CAP.2", "PASS.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "PAR.4", "CAP.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "PAR.5", "PAR.3"], "outputs": ["CAP.2", "PAR.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "PASS.0", "D1.3"], "outputs": ["CAP.2", "TRI.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "PASS.3", "D0.3"], "outputs": ["CAP.2", "PAR.2", "TRI.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "PASS.4", "PAR.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "PASS.4", "TRI.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 12, "key": [null, null, null, null, "TRI.4", "TRI.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 13, "key": [null, null, "D0.4", null, "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 13, "key": [null, null, "D1.4", null, "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 13, "key": [null, null, "PAR.1", null, "PASS.4", "PAR.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 13, "key": [null, null, "PAR.1", null, "PASS.4", "TRI.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 13, "key": [null, null, "PASS.1", null, "PAR.4", "CAP.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 13, "key": [null, null, "PASS.1", null, "TRI.4", "TRI.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 13, "key": [null, null, "PASS.3", null, "PAR.5", "PAR.3"], "outputs": ["CAP.2", "PAR.2"]}
+{"keep_mask": 13, "key": [null, null, "TRI.1", null, "PASS.4", "PAR.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 13, "key": [null, null, "TRI.1", null, "TRI.4", "TRI.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 14, "key": [null, null, null, "D0.1", "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 14, "key": [null, null, null, "D0.3", "PAR.5", "PAR.3"], "outputs": ["CAP.2", "PAR.2"]}
+{"keep_mask": 14, "key": [null, null, null, "D1.1", "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 14, "key": [null, null, null, "PASS.4", "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 15, "key": [null, null, "D0.4", "D1.1", "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 15, "key": [null, null, "D0.4", "PASS.4", "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 15, "key": [null, null, "D1.4", "D0.1", "PASS.3", "D0.3"], "outputs": ["PAR.2", "TRI.2"]}
+{"keep_mask": 15, "key": [null, null, "PASS.3", "D0.3", "PAR.5", "PAR.3"], "outputs": ["CAP.2", "PAR.2"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "CAP.4"], "outputs": ["D1.1", "PAR.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "CAP.5"], "outputs": ["CAP.1", "TRI.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "D0.2"], "outputs": ["PAR.1", "PASS.1", "TRI.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "D0.3"], "outputs": ["PAR.1", "PASS.1", "TRI.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "D1.2"], "outputs": ["PAR.1", "PASS.1", "TRI.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "D1.3"], "outputs": ["PAR.1", "PASS.1", "TRI.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "D1.4"], "outputs": ["CAP.1", "D0.1", "PASS.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "PAR.0"], "outputs": ["D0.1", "D1.1", "PASS.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "PAR.3"], "outputs": ["D0.1", "D1.1", "PAR.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "PAR.4"], "outputs": ["CAP.1", "PAR.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "PASS.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "PASS.2"], "outputs": ["CAP.1", "PAR.1", "TRI.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "PASS.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "PASS.5"], "outputs": ["CAP.1", "PASS.1", "TRI.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "TRI.0"], "outputs": ["D0.1", "D1.1", "PASS.1"]}
+{"keep_mask": 16, "key": [null, null, null, null, null, "TRI.3"], "outputs": ["D0.1", "D1.1", "TRI.1"]}
+{"keep_mask": 17, "key": [null, null, null, "D0.1", null, "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 17, "key": [null, null, null, "D1.1", null, "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 17, "key": [null, null, null, "D1.2", null, "PASS.3"], "outputs": ["CAP.5", "PASS.5"]}
+{"keep_mask": 17, "key": [null, null, null, "PAR.1", null, "CAP.2"], "outputs": ["D1.5", "PAR.5"]}
+{"keep_mask": 17, "key": [null, null, null, "PAR.4", null, "PAR.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 17, "key": [null, null, null, "PAR.4", null, "PASS.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 17, "key": [null, null, null, "PASS.0", null, "PAR.2"], "outputs": ["CAP.5", "PAR.5"]}
+{"keep_mask": 17, "key": [null, null, null, "PASS.4", null, "PAR.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 17, "key": [null, null, null, "PASS.4", null, "TRI.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 17, "key": [null, null, null, "TRI.4", null, "PASS.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 17, "key": [null, null, null, "TRI.4", null, "TRI.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 18, "key": [null, null, "CAP.0", null, null, "PASS.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 18, "key": [null, null, "CAP.3", null, null, "TRI.0"], "outputs": ["PASS.1", "PASS.4"]}
+{"keep_mask": 18, "key": [null, null, "D0.0", null, null, "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 18, "key": [null, null, "D0.2", null, null, "D1.3"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 18, "key": [null, null, "PAR.0", null, null, "PAR.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 18, "key": [null, null, "PAR.0", null, null, "PASS.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 18, "key": [null, null, "PAR.2", null, null, "PAR.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 18, "key": [null, null, "PAR.2", null, null, "PASS.2"], "outputs": ["CAP.1", "PAR.1"]}
+{"keep_mask": 18, "key": [null, null, "PAR.2", null, null, "PASS.5"], "outputs": ["CAP.1", "PASS.4"]}
+{"keep_mask": 18, "key": [null, null, "PAR.2", null, null, "TRI.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 18, "key": [null, null, "PAR.3", null, null, "TRI.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 18, "key": [null, null, "PAR.5", null, null, "PASS.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 18, "key": [null, null, "PASS.0", null, null, "TRI.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 18, "key": [null, null, "PASS.2", null, null, "TRI.5"], "outputs": ["PASS.1", "PASS.4", "TRI.4"]}
+{"keep_mask": 18, "key": [null, null, "PASS.3", null, null, "TRI.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 18, "key": [null, null, "PASS.5", null, null, "TRI.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 18, "key": [null, null, "TRI.0", null, null, "TRI.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 18, "key": [null, null, "TRI.0", null, null, "TRI.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 19, "key": [null, null, "D0.0", null, "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 19, "key": [null, null, "D1.0", null, "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 19, "key": [null, null, "PAR.3", null, "PASS.0", "PAR.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 19, "key": [null, null, "PAR.3", null, "PASS.0", "TRI.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 19, "key": [null, null, "PASS.3", null, "PAR.0", "CAP.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 19, "key": [null, null, "PASS.3", null, "TRI.0", "TRI.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 19, "key": [null, null, "PASS.5", null, "PAR.1", "PAR.5"], "outputs": ["CAP.4", "PAR.4"]}
+{"keep_mask": 19, "key": [null, null, "TRI.3", null, "PASS.0", "PAR.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 19, "key": [null, null, "TRI.3", null, "TRI.0", "TRI.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 20, "key": [null, null, null, "D0.3", null, "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 20, "key": [null, null, null, "D1.3", null, "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 20, "key": [null, null, null, "D1.4", null, "PASS.5"], "outputs": ["CAP.1", "PASS.1"]}
+{"keep_mask": 20, "key": [null, null, null, "PAR.0", null, "PAR.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 20, "key": [null, null, null, "PAR.0", null, "PASS.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 20, "key": [null, null, null, "PAR.3", null, "CAP.4"], "outputs": ["D1.1", "PAR.1"]}
+{"keep_mask": 20, "key": [null, null, null, "PASS.0", null, "PAR.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 20, "key": [null, null, null, "PASS.0", null, "TRI.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 20, "key": [null, null, null, "PASS.2", null, "PAR.4"], "outputs": ["CAP.1", "PAR.1"]}
+{"keep_mask": 20, "key": [null, null, null, "TRI.0", null, "PASS.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 20, "key": [null, null, null, "TRI.0", null, "TRI.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 21, "key": [null, "D1.0", null, "TRI.1", null, "TRI.2"], "outputs": ["PASS.3", "TRI.5"]}
+{"keep_mask": 21, "key": [null, "D1.2", null, "TRI.3", null, "TRI.4"], "outputs": ["PASS.5", "TRI.1"]}
+{"keep_mask": 21, "key": [null, "D1.4", null, "TRI.5", null, "TRI.0"], "outputs": ["PASS.1", "TRI.3"]}
+{"keep_mask": 22, "key": [null, null, "PAR.5", "PAR.0", null, "PAR.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 22, "key": [null, null, "PAR.5", "PAR.0", null, "PASS.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 22, "key": [null, null, "PASS.5", "PASS.0", null, "PAR.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 22, "key": [null, null, "PASS.5", "PASS.0", null, "TRI.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 22, "key": [null, null, "TRI.5", "TRI.0", null, "PASS.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 22, "key": [null, null, "TRI.5", "TRI.0", null, "TRI.3"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "D0.0", "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "D0.2", "PAR.4"], "outputs": ["CAP.1", "PAR.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "D0.5", "D1.2"], "outputs": ["PAR.1", "PASS.1", "TRI.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "D1.0", "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "D1.5", "D0.2"], "outputs": ["PAR.1", "PASS.1", "TRI.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "PAR.2", "D1.4"], "outputs": ["CAP.1", "D0.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "PAR.5", "PAR.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "PASS.3", "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "PASS.5", "PASS.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "TRI.2", "D1.4"], "outputs": ["D0.1", "PASS.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "TRI.3", "PASS.5"], "outputs": ["CAP.1", "PASS.1"]}
+{"keep_mask": 24, "key": [null, null, null, null, "TRI.5", "TRI.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 25, "key": [null, null, "PAR.3", "PAR.4", null, "PAR.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 25, "key": [null, null, "PAR.3", "PAR.4", null, "PASS.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 25, "key": [null, null, "PASS.3", "PASS.4", null, "PAR.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 25, "key": [null, null, "PASS.3", "PASS.4", null, "TRI.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 25, "key": [null, null, "TRI.3", "TRI.4", null, "PASS.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 25, "key": [null, null, "TRI.3", "TRI.4", null, "TRI.1"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 26, "key": [null, null, "CAP.0", null, "PASS.5", "PASS.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 26, "key": [null, null, "PAR.2", null, "PAR.5", "PAR.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 26, "key": [null, null, "PAR.2", null, "TRI.5", "TRI.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 26, "key": [null, null, "TRI.0", null, "PASS.5", "PASS.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 26, "key": [null, null, "TRI.0", null, "TRI.5", "TRI.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 26, "key": [null, null, "TRI.2", null, "PAR.5", "PAR.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 27, "key": [null, "CAP.0", "TRI.2", null, "TRI.3", "PASS.5"], "outputs": ["PASS.1", "PASS.4"]}
+{"keep_mask": 27, "key": [null, "PAR.2", "PAR.3", null, "PASS.0", "PAR.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 27, "key": [null, "PAR.2", "PAR.3", null, "PASS.0", "TRI.5"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 27, "key": [null, "PAR.3", "CAP.0", null, "PASS.5", "PASS.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 27, "key": [null, "PASS.2", "PASS.3", null, "TRI.0", "TRI.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 27, "key": [null, "PASS.3", "PAR.2", null, "TRI.5", "TRI.0"], "outputs": ["D0.1", "D1.1"]}
+{"keep_mask": 27, "key": [null, "TRI.2", "TRI.3", null, "TRI.0", "TRI.3"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 28, "key": [null, null, null, "D0.3", "D1.0", "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 28, "key": [null, null, null, "D0.3", "PASS.3", "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 28, "key": [null, null, null, "D1.3", "D0.0", "PASS.2"], "outputs": ["PAR.1", "TRI.1"]}
+{"keep_mask": 28, "key": [null, null, null, "D1.4", "TRI.3", "PASS.5"], "outputs": ["CAP.1", "PASS.1"]}
+{"keep_mask": 28, "key": [null, null, null, "PASS.2", "D0.2", "PAR.4"], "outputs": ["CAP.1", "PAR.1"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "CAP.2"], "outputs": ["CAP.0", "PASS.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "CAP.5"], "outputs": ["D0.0", "D1.0", "PAR.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "D0.1"], "outputs": ["CAP.0", "PAR.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "D0.4"], "outputs": ["PAR.0", "PASS.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "D0.5"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "D1.1"], "outputs": ["CAP.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "D1.4"], "outputs": ["PAR.0", "PASS.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "D1.5"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "PAR.1"], "outputs": ["CAP.0", "D0.0", "D1.0", "PAR.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "PAR.4"], "outputs": ["D0.0", "D1.0", "PAR.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "PAR.5"], "outputs": ["D0.0", "PAR.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "PASS.2"], "outputs": ["PAR.0", "PASS.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "PASS.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "PASS.5"], "outputs": ["PASS.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "TRI.1"], "outputs": ["D0.0", "D1.0", "PASS.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "TRI.2"], "outputs": ["CAP.0", "PASS.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "TRI.4"], "outputs": ["D0.0", "D1.0", "TRI.0"]}
+{"keep_mask": 32, "key": [null, null, null, null, null, "TRI.5"], "outputs": ["D0.0", "D1.0", "TRI.0"]}
+{"keep_mask": 33, "key": [null, null, null, null, "D0.0", "PAR.2"], "outputs": ["CAP.5", "PAR.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "D0.3", "D1.0"], "outputs": ["PAR.5", "PASS.5", "TRI.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "D0.4", "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "D1.3", "D0.0"], "outputs": ["PAR.5", "PASS.5", "TRI.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "D1.4", "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "PAR.0", "D1.2"], "outputs": ["CAP.5", "D0.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "PAR.3", "PAR.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "PASS.1", "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "PASS.3", "PASS.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "TRI.0", "D1.2"], "outputs": ["D0.5", "PASS.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "TRI.1", "PASS.3"], "outputs": ["CAP.5", "PASS.5"]}
+{"keep_mask": 33, "key": [null, null, null, null, "TRI.3", "TRI.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 34, "key": [null, null, null, "CAP.3", null, "PAR.2"], "outputs": ["D1.4", "PAR.4"]}
+{"keep_mask": 34, "key": [null, null, null, "CAP.3", null, "PASS.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 34, "key": [null, null, null, "D0.3", null, "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 34, "key": [null, null, null, "D0.5", null, "PAR.5"], "outputs": ["CAP.4", "PAR.4"]}
+{"keep_mask": 34, "key": [null, null, null, "D1.3", null, "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 34, "key": [null, null, null, "PAR.3", null, "PAR.2"], "outputs": ["D0.4", "PAR.4"]}
+{"keep_mask": 34, "key": [null, null, null, "PAR.5", null, "PAR.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 34, "key": [null, null, null, "PAR.5", null, "TRI.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 34, "key": [null, null, null, "PASS.0", null, "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 34, "key": [null, null, null, "TRI.3", null, "PASS.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 34, "key": [null, null, null, "TRI.3", null, "TRI.2"], "outputs": ["D0.4", "D1.4", "TRI.4"]}
+{"keep_mask": 34, "key": [null, null, null, "TRI.5", null, "PAR.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 35, "key": [null, null, null, "D0.3", "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 35, "key": [null, null, null, "D0.5", "PAR.1", "PAR.5"], "outputs": ["CAP.4", "PAR.4"]}
+{"keep_mask": 35, "key": [null, null, null, "D1.3", "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 35, "key": [null, null, null, "PASS.0", "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 36, "key": [null, null, "CAP.2", null, null, "PASS.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 36, "key": [null, null, "CAP.5", null, null, "TRI.2"], "outputs": ["PASS.0", "PASS.3"]}
+{"keep_mask": 36, "key": [null, null, "D0.2", null, null, "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 36, "key": [null, null, "D0.4", null, null, "D1.5"], "outputs": ["PAR.3", "TRI.3"]}
+{"keep_mask": 36, "key": [null, null, "PAR.1", null, null, "PAR.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 36, "key": [null, null, "PAR.1", null, null, "PASS.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 36, "key": [null, null, "PAR.2", null, null, "PASS.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 36, "key": [null, null, "PAR.4", null, null, "PAR.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 36, "key": [null, null, "PAR.4", null, null, "PASS.1"], "outputs": ["CAP.3", "PASS.0"]}
+{"keep_mask": 36, "key": [null, null, "PAR.4", null, null, "PASS.4"], "outputs": ["CAP.3", "PAR.3"]}
+{"keep_mask": 36, "key": [null, null, "PAR.4", null, null, "TRI.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 36, "key": [null, null, "PAR.5", null, null, "TRI.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 36, "key": [null, null, "PASS.1", null, null, "TRI.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 36, "key": [null, null, "PASS.2", null, null, "TRI.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 36, "key": [null, null, "PASS.4", null, null, "TRI.1"], "outputs": ["PASS.0", "PASS.3", "TRI.0"]}
+{"keep_mask": 36, "key": [null, null, "PASS.5", null, null, "TRI.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 36, "key": [null, null, "TRI.1", null, null, "TRI.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 36, "key": [null, null, "TRI.2", null, null, "TRI.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 37, "key": [null, null, "PAR.1", "PAR.2", null, "PAR.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 37, "key": [null, null, "PAR.1", "PAR.2", null, "PASS.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 37, "key": [null, null, "PASS.1", "PASS.2", null, "PAR.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 37, "key": [null, null, "PASS.1", "PASS.2", null, "TRI.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 37, "key": [null, null, "TRI.1", "TRI.2", null, "PASS.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 37, "key": [null, null, "TRI.1", "TRI.2", null, "TRI.5"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 38, "key": [null, null, "CAP.2", null, "PASS.1", "PASS.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 38, "key": [null, null, "PAR.4", null, "PAR.1", "PAR.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 38, "key": [null, null, "PAR.4", null, "TRI.1", "TRI.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 38, "key": [null, null, "TRI.2", null, "PASS.1", "PASS.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 38, "key": [null, null, "TRI.2", null, "TRI.1", "TRI.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 38, "key": [null, null, "TRI.4", null, "PAR.1", "PAR.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 40, "key": [null, null, null, "CAP.5", null, "PAR.4"], "outputs": ["D1.0", "PAR.0"]}
+{"keep_mask": 40, "key": [null, null, null, "CAP.5", null, "PASS.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 40, "key": [null, null, null, "D0.1", null, "PAR.1"], "outputs": ["CAP.0", "PAR.0"]}
+{"keep_mask": 40, "key": [null, null, null, "D0.5", null, "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 40, "key": [null, null, null, "D1.5", null, "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 40, "key": [null, null, null, "PAR.1", null, "PAR.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 40, "key": [null, null, null, "PAR.1", null, "TRI.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 40, "key": [null, null, null, "PAR.5", null, "PAR.4"], "outputs": ["D0.0", "PAR.0"]}
+{"keep_mask": 40, "key": [null, null, null, "PASS.2", null, "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 40, "key": [null, null, null, "TRI.1", null, "PAR.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 40, "key": [null, null, null, "TRI.5", null, "PASS.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 40, "key": [null, null, null, "TRI.5", null, "TRI.4"], "outputs": ["D0.0", "D1.0", "TRI.0"]}
+{"keep_mask": 41, "key": [null, null, "CAP.4", null, "PASS.3", "PASS.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 41, "key": [null, null, "PAR.0", null, "PAR.3", "PAR.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 41, "key": [null, null, "PAR.0", null, "TRI.3", "TRI.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 41, "key": [null, null, "TRI.0", null, "PAR.3", "PAR.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 41, "key": [null, null, "TRI.4", null, "PASS.3", "PASS.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 41, "key": [null, null, "TRI.4", null, "TRI.3", "TRI.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 44, "key": [null, null, "D0.2", "D1.5", null, "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 44, "key": [null, null, "D0.2", "PASS.2", null, "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 44, "key": [null, null, "D1.2", "D0.5", null, "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 44, "key": [null, null, "PAR.2", "CAP.5", null, "PASS.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 44, "key": [null, null, "PASS.1", "D0.1", null, "PAR.1"], "outputs": ["CAP.0", "PAR.0"]}
+{"keep_mask": 44, "key": [null, null, "PASS.2", "PAR.1", null, "PAR.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 44, "key": [null, null, "PASS.2", "PAR.1", null, "TRI.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 44, "key": [null, null, "PASS.2", "TRI.1", null, "PAR.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 44, "key": [null, null, "TRI.2", "TRI.5", null, "PASS.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 44, "key": [null, null, "TRI.2", "TRI.5", null, "TRI.4"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 45, "key": [null, "CAP.4", "TRI.0", null, "TRI.1", "PASS.3"], "outputs": ["PASS.2", "PASS.5"]}
+{"keep_mask": 45, "key": [null, "PAR.0", "PAR.1", null, "PASS.4", "PAR.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 45, "key": [null, "PAR.0", "PAR.1", null, "PASS.4", "TRI.3"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 45, "key": [null, "PAR.1", "CAP.4", null, "PASS.3", "PASS.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 45, "key": [null, "PASS.0", "PASS.1", null, "TRI.4", "TRI.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 45, "key": [null, "PASS.1", "PAR.0", null, "TRI.3", "TRI.4"], "outputs": ["D0.5", "D1.5"]}
+{"keep_mask": 45, "key": [null, "TRI.0", "TRI.1", null, "TRI.4", "TRI.1"], "outputs": ["D0.2", "D1.2"]}
+{"keep_mask": 48, "key": [null, null, null, null, "CAP.4", "D1.1"], "outputs": ["CAP.0", "TRI.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "D0.2", "D1.5"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "D0.2", "PASS.2"], "outputs": ["PAR.0", "PASS.0", "TRI.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "D1.2", "D0.5"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "D1.2", "PASS.5"], "outputs": ["PASS.0", "TRI.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "D1.3", "CAP.2"], "outputs": ["CAP.0", "PASS.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "D1.3", "TRI.2"], "outputs": ["CAP.0", "PASS.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "PAR.2", "CAP.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "PAR.3", "PAR.1"], "outputs": ["CAP.0", "PAR.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "PASS.1", "D0.1"], "outputs": ["CAP.0", "PAR.0", "TRI.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "PASS.2", "PAR.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "PASS.2", "TRI.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "PASS.4", "D1.1"], "outputs": ["CAP.0", "TRI.0"]}
+{"keep_mask": 48, "key": [null, null, null, null, "TRI.2", "TRI.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 49, "key": [null, null, null, "D0.1", "D1.4", "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 49, "key": [null, null, null, "D0.1", "PASS.1", "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 49, "key": [null, null, null, "D1.1", "D0.4", "PASS.0"], "outputs": ["PAR.5", "TRI.5"]}
+{"keep_mask": 49, "key": [null, null, null, "D1.2", "TRI.1", "PASS.3"], "outputs": ["CAP.5", "PASS.5"]}
+{"keep_mask": 49, "key": [null, null, null, "PASS.0", "D0.0", "PAR.2"], "outputs": ["CAP.5", "PAR.5"]}
+{"keep_mask": 50, "key": [null, null, "D0.0", "D1.3", null, "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 50, "key": [null, null, "D0.0", "PASS.0", null, "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 50, "key": [null, null, "D1.0", "D0.3", null, "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 50, "key": [null, null, "PAR.0", "CAP.3", null, "PASS.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 50, "key": [null, null, "PASS.0", "PAR.5", null, "PAR.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 50, "key": [null, null, "PASS.0", "PAR.5", null, "TRI.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 50, "key": [null, null, "PASS.0", "TRI.5", null, "PAR.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 50, "key": [null, null, "PASS.5", "D0.5", null, "PAR.5"], "outputs": ["CAP.4", "PAR.4"]}
+{"keep_mask": 50, "key": [null, null, "TRI.0", "TRI.3", null, "PASS.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 50, "key": [null, null, "TRI.0", "TRI.3", null, "TRI.2"], "outputs": ["D0.4", "D1.4"]}
+{"keep_mask": 51, "key": [null, null, "D0.0", "D1.3", "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 51, "key": [null, null, "D0.0", "PASS.0", "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 51, "key": [null, null, "D1.0", "D0.3", "PASS.5", "D0.5"], "outputs": ["PAR.4", "TRI.4"]}
+{"keep_mask": 51, "key": [null, null, "PASS.5", "D0.5", "PAR.1", "PAR.5"], "outputs": ["CAP.4", "PAR.4"]}
+{"keep_mask": 52, "key": [null, null, "D0.2", null, "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 52, "key": [null, null, "D1.2", null, "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 52, "key": [null, null, "PAR.5", null, "PASS.2", "PAR.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 52, "key": [null, null, "PAR.5", null, "PASS.2", "TRI.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 52, "key": [null, null, "PASS.1", null, "PAR.3", "PAR.1"], "outputs": ["CAP.0", "PAR.0"]}
+{"keep_mask": 52, "key": [null, null, "PASS.5", null, "PAR.2", "CAP.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 52, "key": [null, null, "PASS.5", null, "TRI.2", "TRI.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 52, "key": [null, null, "TRI.5", null, "PASS.2", "PAR.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 52, "key": [null, null, "TRI.5", null, "TRI.2", "TRI.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 54, "key": [null, "CAP.2", "TRI.4", null, "TRI.5", "PASS.1"], "outputs": ["PASS.0", "PASS.3"]}
+{"keep_mask": 54, "key": [null, "PAR.4", "PAR.5", null, "PASS.2", "PAR.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 54, "key": [null, "PAR.4", "PAR.5", null, "PASS.2", "TRI.1"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 54, "key": [null, "PAR.5", "CAP.2", null, "PASS.1", "PASS.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 54, "key": [null, "PASS.4", "PASS.5", null, "TRI.2", "TRI.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 54, "key": [null, "PASS.5", "PAR.4", null, "TRI.1", "TRI.2"], "outputs": ["D0.3", "D1.3"]}
+{"keep_mask": 54, "key": [null, "TRI.4", "TRI.5", null, "TRI.2", "TRI.5"], "outputs": ["D0.0", "D1.0"]}
+{"keep_mask": 56, "key": [null, null, null, "D0.1", "PAR.3", "PAR.1"], "outputs": ["CAP.0", "PAR.0"]}
+{"keep_mask": 56, "key": [null, null, null, "D0.5", "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 56, "key": [null, null, null, "D1.5", "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 56, "key": [null, null, null, "PASS.2", "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 60, "key": [null, null, "D0.2", "D1.5", "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 60, "key": [null, null, "D0.2", "PASS.2", "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 60, "key": [null, null, "D1.2", "D0.5", "PASS.1", "D0.1"], "outputs": ["PAR.0", "TRI.0"]}
+{"keep_mask": 60, "key": [null, null, "PASS.1", "D0.1", "PAR.3", "PAR.1"], "outputs": ["CAP.0", "PAR.0"]}

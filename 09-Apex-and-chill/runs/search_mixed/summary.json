@@ -1,0 +1,31 @@
+{
+  "trials": 100,
+  "best_cells": 852,
+  "best_depth": 59,
+  "best_hash": "a6230cca9d5aaa5a",
+  "records_ge_852": 54,
+  "seconds": 8.179,
+  "by_method": {
+    "mate": {
+      "n": 35,
+      "best": 852,
+      "best_depth": 59,
+      "ge852": 29,
+      "dead": 5
+    },
+    "mutate": {
+      "n": 40,
+      "best": 132,
+      "best_depth": 11,
+      "ge852": 0,
+      "dead": 17
+    },
+    "anti-mate": {
+      "n": 25,
+      "best": 852,
+      "best_depth": 59,
+      "ge852": 25,
+      "dead": 0
+    }
+  }
+}
