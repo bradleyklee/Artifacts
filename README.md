@@ -115,3 +115,21 @@ Bad news for OEIS: the straight-line sequence refuses to stay straight.
 Good news for OEIS: we might be able to bend some axes into existence.
 
 Rebuild and verify this artifact with `cd 08-spectre-straight-breaks && make smoke`.
+
+
+### 09. apex-and-chill
+
+Apex 852 is the current summit record in our DH12 / C6 local-rule mountain
+climbing sport: a finite growth record reaching a(∞) = 142, the highest apex
+we have found so far in this artifact line. The folder preserves the climb in
+checkable form, including front-page figures, extracted growth data, replay
+checks, audits, priors, and the sparse-search machinery used to find and improve
+candidate records. Can you set a new record?
+
+### 10. golden-hex
+
+A reconstruction artifact for the Golden-Ratio Hex Tree / Mountain-and-Valley
+sequence using binary REPHEX-style Lindenmayer rules. The folder contains a
+small data-and-rendering pipeline for expanding the tree, assigning the parity
+coloring, producing the visible hex-tree figures, and printing the associated
+growth sequence and first differences.

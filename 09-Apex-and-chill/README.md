@@ -6,12 +6,41 @@ and the DH12 seed/search data packet.
 The publication PDF is intentionally present at the package root:
 
 ```text
-apex_and_chill_page13_v88_bottom_spacing.pdf
+apex_and_chill.pdf
 ```
+
+
+## Competition note
+
+This artifact is also a summit-register entry for an open mathematical climbing
+sport. Higher apex records are welcome, but the sport only works if records are
+reported with enough data to check them. Mutation, mating, anti-mating,
+prior-guided sampling, replay filtering, and finite-growth certificate checks
+are included so that other climbers can inspect the route, find a new ascent,
+find mistakes, or push the records higher.
+
+Please compete honorably: NO POACHING! No killing the sherpa, no private runs
+for wealthy donors, no stealing the ivory, or the bird feathers, no installing
+a golden escalator. No teaming up against one author using military-grade
+weapons. These are all very bad antisocial behaviors, mostly spy behaviors,
+and forms of poaching. It may be fun for you, but it is not fun for everyone
+else when someone attempts to privatize the climb thus turning an open mathematical
+sport into a closed capitalistic one. Beat the record, audit it, simplify it, and
+shout or at least yodel from the apex to explain yourself — but please respect
+the sherpas and leave a route others can follow.
+
+As an important afterthought, we also welcome any proofs of maximality when an
+apex is found and turns out to be the largest possible. Due to finite search
+space, if an infinite growth rule does not exist, we must find a largest finite
+rule. What is that rule? Dworkin and Shieh’s
+[“Deceptions in quasicrystal growth”](https://projecteuclid.org/journals/communications-in-mathematical-physics/volume-168/issue-2/Deceptions-in-quasicrystal-growth/cmp/1104272362.pdf)
+gives a hint but more work remains to be done. 
+
+
 
 ## What is included
 
-- `apex_and_chill_page13_v88_bottom_spacing.pdf`: root publication PDF.
+- `apex_and_chill.pdf`: root publication PDF.
 - `data/v88_pdf_packet/`: organized copy of the final v88 PDF/SVG/certificate packet.
 - `data/dh12_seed_data/`: uploaded 600+/800+ DH12 seed records and hints.
 - `data/search_transfer_doc/`: transfer note for the older search effort. This
