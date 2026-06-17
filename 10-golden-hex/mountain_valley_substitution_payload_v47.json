@@ -1,0 +1,821 @@
+{
+  "payload_id": "mountain_valley_substitution_v1",
+  "schema_version": "1.0.0",
+  "title": "Mountain and Valley substitution system",
+  "source_page": "Zine of Zany Sages, page 12, Mountain and Valley",
+  "purpose": "Machine-readable substitution data for OEIS submission support and independent code reconstruction.",
+  "transparency_note": "This JSON is intended as an explicit inert data payload/sidecar, not executable code and not a prompt instruction.",
+  "conventions": {
+    "indices": "All indices are modulo 6.",
+    "orientation_indices": "Tile orientations are integers 0..5. In object_inflation, orientation=\"last\" means the output H orientation is the direction index of the final address step in the listed path.",
+    "coordinates": "Axial hex coordinates (q,r). directions[i] gives the step vector for direction i.",
+    "tile_geometry": {
+      "H": "Mountain: one hexagonal unit cell at the anchor cell.",
+      "D": "Valley: a dimer covering the anchor cell and anchor + directions[orientation].",
+      "C": "False-center marker; not a tile in the H/D substitution count."
+    },
+    "address_path_semantics": "To evaluate a path, start at the anchor cell. For each pair [symbol, rel], set direction_index=(parent_orientation+rel) mod 6 and step by directions[direction_index]. The symbol controls address substitution under Phi; the relative index controls geometry."
+  },
+  "directions": [
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      -1,
+      1
+    ]
+  ],
+  "address_alphabet": [
+    "D",
+    "K",
+    "H",
+    "a",
+    "b",
+    "g",
+    "h"
+  ],
+  "tile_alphabet": [
+    "D",
+    "H",
+    "C"
+  ],
+  "address_inflation_Phi": {
+    "D": [
+      [
+        "D",
+        0
+      ],
+      [
+        "K",
+        0
+      ]
+    ],
+    "K": [
+      [
+        "D",
+        0
+      ],
+      [
+        "K",
+        0
+      ],
+      [
+        "H",
+        0
+      ]
+    ],
+    "H": [
+      [
+        "D",
+        0
+      ],
+      [
+        "K",
+        0
+      ],
+      [
+        "H",
+        0
+      ]
+    ],
+    "a": [
+      [
+        "D",
+        -2
+      ],
+      [
+        "a",
+        0
+      ],
+      [
+        "H",
+        0
+      ]
+    ],
+    "b": [
+      [
+        "D",
+        -1
+      ],
+      [
+        "b",
+        0
+      ],
+      [
+        "H",
+        0
+      ]
+    ],
+    "g": [
+      [
+        "g",
+        0
+      ],
+      [
+        "H",
+        0
+      ]
+    ],
+    "h": [
+      [
+        "h",
+        0
+      ],
+      [
+        "H",
+        0
+      ]
+    ]
+  },
+  "object_inflation": {
+    "H": [
+      {
+        "kind": "D",
+        "orientation": 0,
+        "path": []
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "a",
+            2
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "g",
+            -1
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "h",
+            -2
+          ]
+        ]
+      }
+    ],
+    "D": [
+      {
+        "kind": "D",
+        "orientation": 0,
+        "path": []
+      },
+      {
+        "kind": "D",
+        "orientation": 0,
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ],
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "a",
+            2
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ],
+          [
+            "D",
+            0
+          ],
+          [
+            "a",
+            2
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ],
+          [
+            "D",
+            0
+          ],
+          [
+            "b",
+            1
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "g",
+            -1
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "h",
+            -2
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ],
+          [
+            "g",
+            -1
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": "last",
+        "path": [
+          [
+            "D",
+            0
+          ],
+          [
+            "K",
+            0
+          ],
+          [
+            "h",
+            -2
+          ]
+        ]
+      }
+    ]
+  },
+  "false_center_rule": {
+    "C@0": "C@0 plus H_i at g_i for i=0..5",
+    "ring": [
+      {
+        "kind": "H",
+        "orientation": 0,
+        "path": [
+          [
+            "g",
+            0
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": 1,
+        "path": [
+          [
+            "g",
+            1
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": 2,
+        "path": [
+          [
+            "g",
+            2
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": 3,
+        "path": [
+          [
+            "g",
+            3
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": 4,
+        "path": [
+          [
+            "g",
+            4
+          ]
+        ]
+      },
+      {
+        "kind": "H",
+        "orientation": 5,
+        "path": [
+          [
+            "g",
+            5
+          ]
+        ]
+      }
+    ]
+  },
+  "axioms": [
+    {
+      "name": "Single dimer",
+      "axiom": "D_i@0"
+    },
+    {
+      "name": "Single hexagon",
+      "axiom": "H_i@0"
+    },
+    {
+      "name": "Fixed-point seed",
+      "axiom": "D \\mid H"
+    },
+    {
+      "name": "Branch $C_3$",
+      "axiom": "[\\,H_4@e,\\ H_0@D_1K_3,\\ H_2@D_2K_4\\,]"
+    },
+    {
+      "name": "Leaf $C_3$",
+      "axiom": "[\\,H_3@e,\\ H_5@D_0K_2K_3,\\ H_1@D_1K_3K_4\\,]"
+    },
+    {
+      "name": "False center",
+      "axiom": "C@0"
+    }
+  ],
+  "oeis_candidate_sequence": {
+    "name": "Number of hexagonal unit cells in the nth Mountain-and-Valley inflation of the D|H fixed-point seed.",
+    "offset": [
+      0,
+      1
+    ],
+    "seed": {
+      "D_dimers": 1,
+      "H_hexagons": 1
+    },
+    "substitution_matrix_for_counts_order_D_H": [
+      [
+        2,
+        1
+      ],
+      [
+        9,
+        5
+      ]
+    ],
+    "count_recurrence": {
+      "D_next": "2*D + H",
+      "H_next": "9*D + 5*H",
+      "cell_count": "a(n)=2*D(n)+H(n)",
+      "scalar_recurrence": "a(0)=3, a(1)=20, a(n)=7*a(n-1)-a(n-2) for n>=2",
+      "ordinary_generating_function": "(3 - x)/(1 - 7*x + x^2)"
+    },
+    "terms": [
+      3,
+      20,
+      137,
+      939,
+      6436,
+      44113,
+      302355,
+      2072372,
+      14204249,
+      97357371,
+      667297348,
+      4573724065,
+      31348771107,
+      214867673684,
+      1472724944681,
+      10094206939083,
+      69186723628900,
+      474212858463217,
+      3250303285613619,
+      22277910140832116,
+      152695067700211193,
+      1046587563760646235,
+      7173417878624312452,
+      49167337586609540929,
+      336997945227642474051,
+      2309818279006887777428,
+      15831730007820571967945,
+      108512291775737115998187,
+      743754312422339240019364,
+      5097767895180637564137361,
+      34940620953842123708942163,
+      239486578781714228398457780,
+      1641465430518157475080262297,
+      11250771434845388097163378299,
+      77113934613399559205063385796,
+      528546770858951526338280322273,
+      3622713461399261125162898870115,
+      24830447458935876349802011768532,
+      170190418751151873323451183509609,
+      1166502483799127236914356272798731
+    ],
+    "count_table": [
+      {
+        "n": 0,
+        "D_dimers": 1,
+        "H_hexagons": 1,
+        "objects": 2,
+        "hexagonal_cells": 3
+      },
+      {
+        "n": 1,
+        "D_dimers": 3,
+        "H_hexagons": 14,
+        "objects": 17,
+        "hexagonal_cells": 20
+      },
+      {
+        "n": 2,
+        "D_dimers": 20,
+        "H_hexagons": 97,
+        "objects": 117,
+        "hexagonal_cells": 137
+      },
+      {
+        "n": 3,
+        "D_dimers": 137,
+        "H_hexagons": 665,
+        "objects": 802,
+        "hexagonal_cells": 939
+      },
+      {
+        "n": 4,
+        "D_dimers": 939,
+        "H_hexagons": 4558,
+        "objects": 5497,
+        "hexagonal_cells": 6436
+      },
+      {
+        "n": 5,
+        "D_dimers": 6436,
+        "H_hexagons": 31241,
+        "objects": 37677,
+        "hexagonal_cells": 44113
+      },
+      {
+        "n": 6,
+        "D_dimers": 44113,
+        "H_hexagons": 214129,
+        "objects": 258242,
+        "hexagonal_cells": 302355
+      },
+      {
+        "n": 7,
+        "D_dimers": 302355,
+        "H_hexagons": 1467662,
+        "objects": 1770017,
+        "hexagonal_cells": 2072372
+      },
+      {
+        "n": 8,
+        "D_dimers": 2072372,
+        "H_hexagons": 10059505,
+        "objects": 12131877,
+        "hexagonal_cells": 14204249
+      },
+      {
+        "n": 9,
+        "D_dimers": 14204249,
+        "H_hexagons": 68948873,
+        "objects": 83153122,
+        "hexagonal_cells": 97357371
+      },
+      {
+        "n": 10,
+        "D_dimers": 97357371,
+        "H_hexagons": 472582606,
+        "objects": 569939977,
+        "hexagonal_cells": 667297348
+      },
+      {
+        "n": 11,
+        "D_dimers": 667297348,
+        "H_hexagons": 3239129369,
+        "objects": 3906426717,
+        "hexagonal_cells": 4573724065
+      },
+      {
+        "n": 12,
+        "D_dimers": 4573724065,
+        "H_hexagons": 22201322977,
+        "objects": 26775047042,
+        "hexagonal_cells": 31348771107
+      },
+      {
+        "n": 13,
+        "D_dimers": 31348771107,
+        "H_hexagons": 152170131470,
+        "objects": 183518902577,
+        "hexagonal_cells": 214867673684
+      },
+      {
+        "n": 14,
+        "D_dimers": 214867673684,
+        "H_hexagons": 1042989597313,
+        "objects": 1257857270997,
+        "hexagonal_cells": 1472724944681
+      },
+      {
+        "n": 15,
+        "D_dimers": 1472724944681,
+        "H_hexagons": 7148757049721,
+        "objects": 8621481994402,
+        "hexagonal_cells": 10094206939083
+      },
+      {
+        "n": 16,
+        "D_dimers": 10094206939083,
+        "H_hexagons": 48998309750734,
+        "objects": 59092516689817,
+        "hexagonal_cells": 69186723628900
+      },
+      {
+        "n": 17,
+        "D_dimers": 69186723628900,
+        "H_hexagons": 335839411205417,
+        "objects": 405026134834317,
+        "hexagonal_cells": 474212858463217
+      },
+      {
+        "n": 18,
+        "D_dimers": 474212858463217,
+        "H_hexagons": 2301877568687185,
+        "objects": 2776090427150402,
+        "hexagonal_cells": 3250303285613619
+      },
+      {
+        "n": 19,
+        "D_dimers": 3250303285613619,
+        "H_hexagons": 15777303569604878,
+        "objects": 19027606855218497,
+        "hexagonal_cells": 22277910140832116
+      },
+      {
+        "n": 20,
+        "D_dimers": 22277910140832116,
+        "H_hexagons": 108139247418546961,
+        "objects": 130417157559379077,
+        "hexagonal_cells": 152695067700211193
+      },
+      {
+        "n": 21,
+        "D_dimers": 152695067700211193,
+        "H_hexagons": 741197428360223849,
+        "objects": 893892496060435042,
+        "hexagonal_cells": 1046587563760646235
+      },
+      {
+        "n": 22,
+        "D_dimers": 1046587563760646235,
+        "H_hexagons": 5080242751103019982,
+        "objects": 6126830314863666217,
+        "hexagonal_cells": 7173417878624312452
+      },
+      {
+        "n": 23,
+        "D_dimers": 7173417878624312452,
+        "H_hexagons": 34820501829360916025,
+        "objects": 41993919707985228477,
+        "hexagonal_cells": 49167337586609540929
+      },
+      {
+        "n": 24,
+        "D_dimers": 49167337586609540929,
+        "H_hexagons": 238663270054423392193,
+        "objects": 287830607641032933122,
+        "hexagonal_cells": 336997945227642474051
+      }
+    ],
+    "auxiliary_sequences": {
+      "D_dimers": [
+        1,
+        3,
+        20,
+        137,
+        939,
+        6436,
+        44113,
+        302355,
+        2072372,
+        14204249,
+        97357371,
+        667297348,
+        4573724065,
+        31348771107,
+        214867673684,
+        1472724944681,
+        10094206939083,
+        69186723628900,
+        474212858463217,
+        3250303285613619,
+        22277910140832116,
+        152695067700211193,
+        1046587563760646235,
+        7173417878624312452,
+        49167337586609540929
+      ],
+      "H_hexagons": [
+        1,
+        14,
+        97,
+        665,
+        4558,
+        31241,
+        214129,
+        1467662,
+        10059505,
+        68948873,
+        472582606,
+        3239129369,
+        22201322977,
+        152170131470,
+        1042989597313,
+        7148757049721,
+        48998309750734,
+        335839411205417,
+        2301877568687185,
+        15777303569604878,
+        108139247418546961,
+        741197428360223849,
+        5080242751103019982,
+        34820501829360916025,
+        238663270054423392193
+      ],
+      "objects_D_plus_H": [
+        2,
+        17,
+        117,
+        802,
+        5497,
+        37677,
+        258242,
+        1770017,
+        12131877,
+        83153122,
+        569939977,
+        3906426717,
+        26775047042,
+        183518902577,
+        1257857270997,
+        8621481994402,
+        59092516689817,
+        405026134834317,
+        2776090427150402,
+        19027606855218497,
+        130417157559379077,
+        893892496060435042,
+        6126830314863666217,
+        41993919707985228477,
+        287830607641032933122
+      ]
+    }
+  },
+  "reference_python_3": "# Mountain and Valley substitution counts for the D|H fixed-point seed.\n# a(n) = number of hexagonal unit cells after n inflations.\ndef terms(N):\n    D, H = 1, 1   # n=0: one Valley dimer D and one Mountain hexagon H\n    out = []\n    for n in range(N):\n        out.append(2*D + H)      # a Valley dimer covers 2 hexagons; H covers 1\n        D, H = 2*D + H, 9*D + 5*H\n    return out\n\nprint(terms(20))\n# Equivalently: a(0)=3, a(1)=20, a(n)=7*a(n-1)-a(n-2) for n>=2.",
+  "source_hashes_sha256": {
+    "data/rules.json": "33edd428b151d8169651be874f381715862d3efff8a25a5d6258fa92f32ccf2e",
+    "src/build_page.py": "01313da0670ce97b4d24603c7b95807ed06b02c5657afdc448e6a893f572e243",
+    "src/build_publication_linear_dh.py": "10075674610930800c1af0467ce0b45b80bb494bc5ee11d5fffc24f2579f6e56",
+    "src/build_page12_yflip_display.py": "8dc948ef4f38fd25136a3ea87c2b319da385f0ac1cfc143ded4956e689ec84d0",
+    "current_checkpoint/mountain_and_valley_page12_YFLIP_v46.tex": "59127f3dfdf19bab662e3935da2b40d20f82b9d544c715fc36a99412e1fac0e3",
+    "current_checkpoint/mountain_and_valley_page12_PREVIEW_Q_v46.tex": "e215ee9367a5e840d6e446913028782d27c99e15e6ef82fa90d7f8ce810aa968"
+  },
+  "payload_sha256": "d64b39ff71ea3960487155b6643935b9ee2289db008ff3a0e33f1555a7b97514",
+  "payload_sha256_note": "The payload_sha256 above is the hash before adding this note; use sidecar file checksum for exact file bytes."
+}

@@ -1,0 +1,6080 @@
+{
+  "adopt_pairs_equal": 292,
+  "adopt_pairs_updown": 933,
+  "all_operator_blocks_entered": true,
+  "best_by_operator": {
+    "ADOPT_DOWN": {
+      "births": 0,
+      "cells": 852,
+      "hash": "c03bac3bd883b960",
+      "status": "CLOSED_CHILL",
+      "unknown": 0
+    },
+    "ADOPT_EQUAL": {
+      "births": 0,
+      "cells": 852,
+      "hash": "40da6cb637eb7f16",
+      "status": "CLOSED_CHILL",
+      "unknown": 0
+    },
+    "ADOPT_UP": {
+      "births": 0,
+      "cells": 852,
+      "hash": "3676fff9392b7746",
+      "status": "CLOSED_CHILL",
+      "unknown": 0
+    },
+    "MATE": {
+      "births": 24,
+      "cells": 924,
+      "hash": "93d334de47e46b55",
+      "status": "OPEN_OR_CONFLICT",
+      "unknown": 30
+    },
+    "MUTATE": {
+      "births": 72,
+      "cells": 942,
+      "hash": "866a914bd082a0cd",
+      "status": "OPEN_OR_CONFLICT",
+      "unknown": 780
+    }
+  },
+  "best_closed_chill_candidate": {
+    "cells": 852,
+    "hash": "ff5490878ea60f45",
+    "operator": "MUTATE",
+    "state_hash": "767c67346a1994cb"
+  },
+  "best_new_cells": 852,
+  "best_trial_seen_even_if_open": {
+    "cells": 942,
+    "hash": "866a914bd082a0cd",
+    "operator": "MUTATE",
+    "state_hash": "79ddfd4a8176400c",
+    "status": "OPEN_OR_CONFLICT"
+  },
+  "candidate_dir": "build/search/policy_long/candidates",
+  "duplicate_rule_skips": {
+    "ADOPT_DOWN": 10,
+    "ADOPT_EQUAL": 10,
+    "ADOPT_UP": 79,
+    "MATE": 3,
+    "MUTATE": 11
+  },
+  "duplicate_terminal_state_skips": {},
+  "found_by_cells": {
+    "804": 3,
+    "810": 3,
+    "816": 2,
+    "822": 3,
+    "828": 2,
+    "834": 14,
+    "840": 4,
+    "846": 22,
+    "852": 55
+  },
+  "found_by_operator_cells": {
+    "ADOPT_DOWN": {
+      "810": 1,
+      "816": 1,
+      "852": 2
+    },
+    "ADOPT_EQUAL": {
+      "810": 1,
+      "846": 2,
+      "852": 5
+    },
+    "ADOPT_UP": {
+      "810": 1,
+      "834": 7,
+      "846": 4,
+      "852": 9
+    },
+    "MATE": {
+      "804": 1,
+      "822": 3,
+      "828": 2,
+      "834": 5,
+      "840": 4,
+      "846": 11,
+      "852": 24
+    },
+    "MUTATE": {
+      "804": 2,
+      "816": 1,
+      "834": 2,
+      "846": 5,
+      "852": 15
+    }
+  },
+  "found_index": [
+    {
+      "accept": 103,
+      "cells": 852,
+      "file": "candidates/candidate_0001_MUTATE_00852_ff5490878ea60f45.json",
+      "hash": "ff5490878ea60f45",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 49,
+      "used_reject": 39
+    },
+    {
+      "accept": 108,
+      "cells": 846,
+      "file": "candidates/candidate_0002_MUTATE_00846_0e8925359003f92e.json",
+      "hash": "0e8925359003f92e",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 54,
+      "state_hash": "1578574a623932d7",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 112,
+      "cells": 846,
+      "file": "candidates/candidate_0003_MUTATE_00846_d860b00bf1a6c3a7.json",
+      "hash": "d860b00bf1a6c3a7",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "0dcd17c2256c7949"
+      ],
+      "reject": 52,
+      "state_hash": "03db197d14d33e12",
+      "step": 55,
+      "used_accept": 49,
+      "used_reject": 35
+    },
+    {
+      "accept": 106,
+      "cells": 852,
+      "file": "candidates/candidate_0004_MUTATE_00852_04715fd5ba37ea13.json",
+      "hash": "04715fd5ba37ea13",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 110,
+      "cells": 846,
+      "file": "candidates/candidate_0005_MUTATE_00846_316ccfb2e99f7cc2.json",
+      "hash": "316ccfb2e99f7cc2",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 53,
+      "state_hash": "1578574a623932d7",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 80,
+      "cells": 852,
+      "file": "candidates/candidate_0006_MUTATE_00852_ac59ec8e2caa992f.json",
+      "hash": "ac59ec8e2caa992f",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 91,
+      "cells": 852,
+      "file": "candidates/candidate_0007_MUTATE_00852_5b643b8cc721a261.json",
+      "hash": "5b643b8cc721a261",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "c20427a3ed293464"
+      ],
+      "reject": 54,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 36
+    },
+    {
+      "accept": 87,
+      "cells": 834,
+      "file": "candidates/candidate_0008_MUTATE_00834_5ddca78e3f5d1efe.json",
+      "hash": "5ddca78e3f5d1efe",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "37bfa6e5dae12ded"
+      ],
+      "reject": 59,
+      "state_hash": "85d61e659346cb0b",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 41
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "file": "candidates/candidate_0009_MUTATE_00852_b84ca59063156d7d.json",
+      "hash": "b84ca59063156d7d",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "47fda41c579ef71e"
+      ],
+      "reject": 59,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 48,
+      "used_reject": 41
+    },
+    {
+      "accept": 105,
+      "cells": 852,
+      "file": "candidates/candidate_0010_MUTATE_00852_746274650e30c828.json",
+      "hash": "746274650e30c828",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 50,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 71,
+      "cells": 804,
+      "file": "candidates/candidate_0011_MUTATE_00804_1012148e1fcc027f.json",
+      "hash": "1012148e1fcc027f",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "64633e4da4511e36"
+      ],
+      "reject": 99,
+      "state_hash": "e6cfe4baef43eafa",
+      "step": 57,
+      "used_accept": 41,
+      "used_reject": 45
+    },
+    {
+      "accept": 109,
+      "cells": 852,
+      "file": "candidates/candidate_0012_MUTATE_00852_aef87d81aa216a34.json",
+      "hash": "aef87d81aa216a34",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 54,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 88,
+      "cells": 846,
+      "file": "candidates/candidate_0013_MUTATE_00846_faf38cc378bb6ca5.json",
+      "hash": "faf38cc378bb6ca5",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "3734778a5ca54325"
+      ],
+      "reject": 60,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 59,
+      "used_accept": 47,
+      "used_reject": 42
+    },
+    {
+      "accept": 75,
+      "cells": 834,
+      "file": "candidates/candidate_0014_MUTATE_00834_b86678d3fe61f719.json",
+      "hash": "b86678d3fe61f719",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "f8cb2e63009b9df7"
+      ],
+      "reject": 55,
+      "state_hash": "1ad8a3958d63c3f7",
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 116,
+      "cells": 852,
+      "file": "candidates/candidate_0015_MUTATE_00852_560b2cf95a0d682b.json",
+      "hash": "560b2cf95a0d682b",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "0c247be617e91ee2"
+      ],
+      "reject": 53,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 73,
+      "cells": 804,
+      "file": "candidates/candidate_0016_MUTATE_00804_cefdafc93c6269b6.json",
+      "hash": "cefdafc93c6269b6",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "64633e4da4511e36"
+      ],
+      "reject": 99,
+      "state_hash": "e6cfe4baef43eafa",
+      "step": 57,
+      "used_accept": 41,
+      "used_reject": 45
+    },
+    {
+      "accept": 114,
+      "cells": 852,
+      "file": "candidates/candidate_0017_MUTATE_00852_d10b81a38e0488fb.json",
+      "hash": "d10b81a38e0488fb",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "95165584ec5de221"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 101,
+      "cells": 852,
+      "file": "candidates/candidate_0018_MUTATE_00852_9375e2c34e428365.json",
+      "hash": "9375e2c34e428365",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 48,
+      "used_reject": 40
+    },
+    {
+      "accept": 111,
+      "cells": 852,
+      "file": "candidates/candidate_0019_MUTATE_00852_1c2a306d911baea3.json",
+      "hash": "1c2a306d911baea3",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "ee59bc94042f1a0e"
+      ],
+      "reject": 50,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 90,
+      "cells": 846,
+      "file": "candidates/candidate_0020_MUTATE_00846_c5b73f82c223fed5.json",
+      "hash": "c5b73f82c223fed5",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "c71476ef63a9e0cc"
+      ],
+      "reject": 56,
+      "state_hash": "1578574a623932d7",
+      "step": 57,
+      "used_accept": 46,
+      "used_reject": 40
+    },
+    {
+      "accept": 72,
+      "cells": 816,
+      "file": "candidates/candidate_0021_MUTATE_00816_91fc7c0dd8bfb977.json",
+      "hash": "91fc7c0dd8bfb977",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "bd20ebcec2116ef9"
+      ],
+      "reject": 59,
+      "state_hash": "da2171022154ad1c",
+      "step": 56,
+      "used_accept": 42,
+      "used_reject": 41
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "file": "candidates/candidate_0022_MUTATE_00852_833ddfdcfe2fee3b.json",
+      "hash": "833ddfdcfe2fee3b",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "bb9f47367b53dac0"
+      ],
+      "reject": 52,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "file": "candidates/candidate_0023_MUTATE_00852_c6382c9907e6768e.json",
+      "hash": "c6382c9907e6768e",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "37696ac1b1ee732f"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "step": 57,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 101,
+      "cells": 852,
+      "file": "candidates/candidate_0024_MUTATE_00852_3bebad8d93fcc977.json",
+      "hash": "3bebad8d93fcc977",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "7470d683b89cc750"
+      ],
+      "reject": 55,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 80,
+      "cells": 852,
+      "file": "candidates/candidate_0025_MUTATE_00852_44725675b648feb3.json",
+      "hash": "44725675b648feb3",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 87,
+      "cells": 852,
+      "file": "candidates/candidate_0026_MATE_00852_dc0508d7e7c6e43d.json",
+      "hash": "dc0508d7e7c6e43d",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "c20427a3ed293464"
+      ],
+      "reject": 58,
+      "state_hash": "786cb6128ce278fd",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 40
+    },
+    {
+      "accept": 103,
+      "cells": 834,
+      "file": "candidates/candidate_0027_MATE_00834_57204abeae9519f1.json",
+      "hash": "57204abeae9519f1",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "3268861d4641ad34",
+        "3b54688dc4290814"
+      ],
+      "reject": 58,
+      "state_hash": "85d61e659346cb0b",
+      "step": 58,
+      "used_accept": 45,
+      "used_reject": 41
+    },
+    {
+      "accept": 92,
+      "cells": 852,
+      "file": "candidates/candidate_0028_MATE_00852_59b4e9daccbf5761.json",
+      "hash": "59b4e9daccbf5761",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "f4ff8e03fbf65665",
+        "abd07da154d18eb0"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "step": 57,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 82,
+      "cells": 822,
+      "file": "candidates/candidate_0029_MATE_00822_dda8e909f7a46e2f.json",
+      "hash": "dda8e909f7a46e2f",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "bd20ebcec2116ef9",
+        "95165584ec5de221"
+      ],
+      "reject": 58,
+      "state_hash": "ebf56477e2a63ffd",
+      "step": 55,
+      "used_accept": 41,
+      "used_reject": 40
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "file": "candidates/candidate_0030_MATE_00852_49115b6c3345617e.json",
+      "hash": "49115b6c3345617e",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "bb9f47367b53dac0",
+        "95165584ec5de221"
+      ],
+      "reject": 50,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 107,
+      "cells": 852,
+      "file": "candidates/candidate_0031_MATE_00852_945543722c400cc7.json",
+      "hash": "945543722c400cc7",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 54,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 95,
+      "cells": 852,
+      "file": "candidates/candidate_0032_MATE_00852_4d543ab1c456b862.json",
+      "hash": "4d543ab1c456b862",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "c20427a3ed293464",
+        "0c247be617e91ee2"
+      ],
+      "reject": 52,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 76,
+      "cells": 804,
+      "file": "candidates/candidate_0033_MATE_00804_79bdee05bddffdd8.json",
+      "hash": "79bdee05bddffdd8",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "64633e4da4511e36",
+        "f8cb2e63009b9df7"
+      ],
+      "reject": 93,
+      "state_hash": "e6cfe4baef43eafa",
+      "step": 57,
+      "used_accept": 41,
+      "used_reject": 44
+    },
+    {
+      "accept": 85,
+      "cells": 846,
+      "file": "candidates/candidate_0034_MATE_00846_c3d6ec9809003ba7.json",
+      "hash": "c3d6ec9809003ba7",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "47fda41c579ef71e",
+        "c65dc6a1176884d0"
+      ],
+      "reject": 60,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 60,
+      "used_accept": 48,
+      "used_reject": 42
+    },
+    {
+      "accept": 89,
+      "cells": 852,
+      "file": "candidates/candidate_0035_MATE_00852_0a9ed1f3c1ab53f9.json",
+      "hash": "0a9ed1f3c1ab53f9",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "bd20ebcec2116ef9"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 46,
+      "used_reject": 37
+    },
+    {
+      "accept": 98,
+      "cells": 834,
+      "file": "candidates/candidate_0036_MATE_00834_ff9dac383a256766.json",
+      "hash": "ff9dac383a256766",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "3268861d4641ad34",
+        "c65dc6a1176884d0"
+      ],
+      "reject": 57,
+      "state_hash": "85d61e659346cb0b",
+      "step": 59,
+      "used_accept": 43,
+      "used_reject": 40
+    },
+    {
+      "accept": 89,
+      "cells": 852,
+      "file": "candidates/candidate_0037_MATE_00852_7668e00a4a8ef7a1.json",
+      "hash": "7668e00a4a8ef7a1",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 106,
+      "cells": 852,
+      "file": "candidates/candidate_0038_MATE_00852_c4548bc7fd6f50ed.json",
+      "hash": "c4548bc7fd6f50ed",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "70a962d222f1cb0e",
+        "7470d683b89cc750"
+      ],
+      "reject": 53,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 95,
+      "cells": 852,
+      "file": "candidates/candidate_0039_MATE_00852_9e6cb5a883211708.json",
+      "hash": "9e6cb5a883211708",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "3268861d4641ad34",
+        "c0a6be53311d6536"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "step": 59,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 115,
+      "cells": 852,
+      "file": "candidates/candidate_0040_MATE_00852_28f24923f49e9c22.json",
+      "hash": "28f24923f49e9c22",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "0c247be617e91ee2",
+        "3734778a5ca54325"
+      ],
+      "reject": 51,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 109,
+      "cells": 852,
+      "file": "candidates/candidate_0041_MATE_00852_07477297fec9f5d3.json",
+      "hash": "07477297fec9f5d3",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "0dcd17c2256c7949"
+      ],
+      "reject": 53,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 74,
+      "cells": 822,
+      "file": "candidates/candidate_0042_MATE_00822_e8c22640b0fe0d09.json",
+      "hash": "e8c22640b0fe0d09",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "bd20ebcec2116ef9",
+        "4bb34c3a2b97f57c"
+      ],
+      "reject": 58,
+      "state_hash": "ebf56477e2a63ffd",
+      "step": 56,
+      "used_accept": 41,
+      "used_reject": 41
+    },
+    {
+      "accept": 99,
+      "cells": 852,
+      "file": "candidates/candidate_0043_MATE_00852_6f952550d517f30e.json",
+      "hash": "6f952550d517f30e",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "c20427a3ed293464",
+        "95165584ec5de221"
+      ],
+      "reject": 51,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 104,
+      "cells": 834,
+      "file": "candidates/candidate_0044_MATE_00834_7c550cf7f67c3228.json",
+      "hash": "7c550cf7f67c3228",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "3268861d4641ad34",
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 55,
+      "state_hash": "85d61e659346cb0b",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 39
+    },
+    {
+      "accept": 76,
+      "cells": 834,
+      "file": "candidates/candidate_0045_MATE_00834_c031aa78ccf9ff84.json",
+      "hash": "c031aa78ccf9ff84",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "f8cb2e63009b9df7",
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 57,
+      "state_hash": "e08bfc7513e48416",
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 88,
+      "cells": 840,
+      "file": "candidates/candidate_0046_MATE_00840_10f4335bafbff1f7.json",
+      "hash": "10f4335bafbff1f7",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "c71476ef63a9e0cc",
+        "3734778a5ca54325"
+      ],
+      "reject": 59,
+      "state_hash": "c7ac46e3ce0ee04a",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 43
+    },
+    {
+      "accept": 104,
+      "cells": 846,
+      "file": "candidates/candidate_0047_MATE_00846_e678f64b97231ef8.json",
+      "hash": "e678f64b97231ef8",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "729358f609f67d75"
+      ],
+      "reject": 56,
+      "state_hash": "03db197d14d33e12",
+      "step": 59,
+      "used_accept": 50,
+      "used_reject": 36
+    },
+    {
+      "accept": 80,
+      "cells": 846,
+      "file": "candidates/candidate_0048_MATE_00846_b58a953641d0e5d6.json",
+      "hash": "b58a953641d0e5d6",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "c65dc6a1176884d0",
+        "0dcd17c2256c7949"
+      ],
+      "reject": 56,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 85,
+      "cells": 834,
+      "file": "candidates/candidate_0049_MATE_00834_bf6662e0d6cee3f7.json",
+      "hash": "bf6662e0d6cee3f7",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "37bfa6e5dae12ded",
+        "64633e4da4511e36"
+      ],
+      "reject": 62,
+      "state_hash": "85d61e659346cb0b",
+      "step": 58,
+      "used_accept": 45,
+      "used_reject": 42
+    },
+    {
+      "accept": 83,
+      "cells": 828,
+      "file": "candidates/candidate_0050_MATE_00828_78dc5f61db952664.json",
+      "hash": "78dc5f61db952664",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "ce02fe3295689625",
+        "95165584ec5de221"
+      ],
+      "reject": 57,
+      "state_hash": "15862e5132d2ec14",
+      "step": 56,
+      "used_accept": 42,
+      "used_reject": 41
+    },
+    {
+      "accept": 103,
+      "cells": 846,
+      "file": "candidates/candidate_0051_MATE_00846_48249c2e273e9d81.json",
+      "hash": "48249c2e273e9d81",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "95165584ec5de221",
+        "c65dc6a1176884d0"
+      ],
+      "reject": 58,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 110,
+      "cells": 852,
+      "file": "candidates/candidate_0052_MATE_00852_579b1fde3f12d419.json",
+      "hash": "579b1fde3f12d419",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "0dcd17c2256c7949",
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 52,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 100,
+      "cells": 852,
+      "file": "candidates/candidate_0053_MATE_00852_3ad81d85bf53b8de.json",
+      "hash": "3ad81d85bf53b8de",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "7c74dca6ad8b1053",
+        "bb9f47367b53dac0"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 110,
+      "cells": 852,
+      "file": "candidates/candidate_0054_MATE_00852_3b387f3a08c5c930.json",
+      "hash": "3b387f3a08c5c930",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "0c247be617e91ee2",
+        "17340261fbb94eef"
+      ],
+      "reject": 54,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 101,
+      "cells": 840,
+      "file": "candidates/candidate_0055_MATE_00840_5655ba4c5412ea1e.json",
+      "hash": "5655ba4c5412ea1e",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "3b54688dc4290814",
+        "64633e4da4511e36"
+      ],
+      "reject": 63,
+      "state_hash": "95477079d794a7d6",
+      "step": 55,
+      "used_accept": 46,
+      "used_reject": 40
+    },
+    {
+      "accept": 86,
+      "cells": 852,
+      "file": "candidates/candidate_0056_MATE_00852_389f4c76fd1297f7.json",
+      "hash": "389f4c76fd1297f7",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "c0a6be53311d6536"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "file": "candidates/candidate_0057_MATE_00852_b3795793ee778b2c.json",
+      "hash": "b3795793ee778b2c",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "c0a6be53311d6536",
+        "ee59bc94042f1a0e"
+      ],
+      "reject": 54,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 82,
+      "cells": 846,
+      "file": "candidates/candidate_0058_MATE_00846_3e398149e5c11d50.json",
+      "hash": "3e398149e5c11d50",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "bb9f47367b53dac0",
+        "bd20ebcec2116ef9"
+      ],
+      "reject": 53,
+      "state_hash": "a122b9cb60ad237f",
+      "step": 55,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 93,
+      "cells": 828,
+      "file": "candidates/candidate_0059_MATE_00828_01a9380c83065ce0.json",
+      "hash": "01a9380c83065ce0",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "a5acd12ea1ff946f",
+        "bd20ebcec2116ef9"
+      ],
+      "reject": 55,
+      "state_hash": "fc3784ea0ceb3e88",
+      "step": 56,
+      "used_accept": 42,
+      "used_reject": 39
+    },
+    {
+      "accept": 95,
+      "cells": 846,
+      "file": "candidates/candidate_0060_MATE_00846_07c3e80ece54be7a.json",
+      "hash": "07c3e80ece54be7a",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "cc11d947affc03ba"
+      ],
+      "reject": 60,
+      "state_hash": "03db197d14d33e12",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 101,
+      "cells": 852,
+      "file": "candidates/candidate_0061_MATE_00852_cbee151df11ba2c4.json",
+      "hash": "cbee151df11ba2c4",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "cc11d947affc03ba",
+        "70a962d222f1cb0e"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 92,
+      "cells": 846,
+      "file": "candidates/candidate_0062_MATE_00846_45c4aca8c9112a28.json",
+      "hash": "45c4aca8c9112a28",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "3734778a5ca54325",
+        "37696ac1b1ee732f"
+      ],
+      "reject": 57,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 59,
+      "used_accept": 47,
+      "used_reject": 42
+    },
+    {
+      "accept": 88,
+      "cells": 840,
+      "file": "candidates/candidate_0063_MATE_00840_5718b26d0db77f16.json",
+      "hash": "5718b26d0db77f16",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "c71476ef63a9e0cc",
+        "cc11d947affc03ba"
+      ],
+      "reject": 57,
+      "state_hash": "57abe9e46962ee92",
+      "step": 57,
+      "used_accept": 47,
+      "used_reject": 39
+    },
+    {
+      "accept": 81,
+      "cells": 840,
+      "file": "candidates/candidate_0064_MATE_00840_f7c6073610c58460.json",
+      "hash": "f7c6073610c58460",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "c65dc6a1176884d0",
+        "cc11d947affc03ba"
+      ],
+      "reject": 59,
+      "state_hash": "95c7d3d1aad2d80e",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 95,
+      "cells": 852,
+      "file": "candidates/candidate_0065_MATE_00852_6391d6b6c3ab7bdb.json",
+      "hash": "6391d6b6c3ab7bdb",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "3734778a5ca54325",
+        "7470d683b89cc750"
+      ],
+      "reject": 58,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 48,
+      "used_reject": 41
+    },
+    {
+      "accept": 95,
+      "cells": 846,
+      "file": "candidates/candidate_0066_MATE_00846_9cfdf8adf0f6005e.json",
+      "hash": "9cfdf8adf0f6005e",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "cc11d947affc03ba",
+        "3268861d4641ad34"
+      ],
+      "reject": 61,
+      "state_hash": "03db197d14d33e12",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 38
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "file": "candidates/candidate_0067_MATE_00852_d50e7309fbfd8a75.json",
+      "hash": "d50e7309fbfd8a75",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 70,
+      "cells": 822,
+      "file": "candidates/candidate_0068_MATE_00822_c9c50cde5db11c28.json",
+      "hash": "c9c50cde5db11c28",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "bd20ebcec2116ef9",
+        "17340261fbb94eef"
+      ],
+      "reject": 62,
+      "state_hash": "ebf56477e2a63ffd",
+      "step": 56,
+      "used_accept": 40,
+      "used_reject": 43
+    },
+    {
+      "accept": 102,
+      "cells": 852,
+      "file": "candidates/candidate_0069_MATE_00852_228480b8b7475671.json",
+      "hash": "228480b8b7475671",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "a5acd12ea1ff946f",
+        "c20427a3ed293464"
+      ],
+      "reject": 49,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 36
+    },
+    {
+      "accept": 87,
+      "cells": 846,
+      "file": "candidates/candidate_0070_MATE_00846_5f1a5894114ccc30.json",
+      "hash": "5f1a5894114ccc30",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "c71476ef63a9e0cc",
+        "f8cb2e63009b9df7"
+      ],
+      "reject": 56,
+      "state_hash": "1578574a623932d7",
+      "step": 57,
+      "used_accept": 46,
+      "used_reject": 40
+    },
+    {
+      "accept": 92,
+      "cells": 852,
+      "file": "candidates/candidate_0071_MATE_00852_b93818ff3a06fff6.json",
+      "hash": "b93818ff3a06fff6",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "f4ff8e03fbf65665",
+        "abd07da154d18eb0"
+      ],
+      "reject": 55,
+      "state_hash": "786cb6128ce278fd",
+      "step": 57,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 99,
+      "cells": 846,
+      "file": "candidates/candidate_0072_MATE_00846_7c6007d010403261.json",
+      "hash": "7c6007d010403261",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "c71476ef63a9e0cc",
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 55,
+      "state_hash": "1578574a623932d7",
+      "step": 55,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 100,
+      "cells": 852,
+      "file": "candidates/candidate_0073_MATE_00852_10c6530425f3d95a.json",
+      "hash": "10c6530425f3d95a",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "3268861d4641ad34",
+        "7470d683b89cc750"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "step": 59,
+      "used_accept": 48,
+      "used_reject": 39
+    },
+    {
+      "accept": 105,
+      "cells": 852,
+      "file": "candidates/candidate_0074_MATE_00852_ef9ec42e9ce06061.json",
+      "hash": "ef9ec42e9ce06061",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "a5acd12ea1ff946f",
+        "3268861d4641ad34"
+      ],
+      "reject": 50,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 95,
+      "cells": 846,
+      "file": "candidates/candidate_0075_MATE_00846_6b7db11e0c79bce7.json",
+      "hash": "6b7db11e0c79bce7",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "c71476ef63a9e0cc",
+        "70a962d222f1cb0e"
+      ],
+      "reject": 54,
+      "state_hash": "1578574a623932d7",
+      "step": 55,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 74,
+      "cells": 834,
+      "file": "candidates/candidate_0076_ADOPT_UP_00834_12049509e3c0a550.json",
+      "hash": "12049509e3c0a550",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "0dcd17c2256c7949",
+        "f8cb2e63009b9df7"
+      ],
+      "reject": 59,
+      "state_hash": "1ad8a3958d63c3f7",
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "file": "candidates/candidate_0077_ADOPT_UP_00852_3676fff9392b7746.json",
+      "hash": "3676fff9392b7746",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "a5acd12ea1ff946f",
+        "17340261fbb94eef"
+      ],
+      "reject": 58,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 90,
+      "cells": 846,
+      "file": "candidates/candidate_0078_ADOPT_UP_00846_9746eaf238bf61d6.json",
+      "hash": "9746eaf238bf61d6",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "3b54688dc4290814",
+        "3734778a5ca54325"
+      ],
+      "reject": 60,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 59,
+      "used_accept": 47,
+      "used_reject": 42
+    },
+    {
+      "accept": 82,
+      "cells": 852,
+      "file": "candidates/candidate_0079_ADOPT_UP_00852_635e3ebb4560963a.json",
+      "hash": "635e3ebb4560963a",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "0c247be617e91ee2",
+        "c0a6be53311d6536"
+      ],
+      "reject": 58,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 88,
+      "cells": 834,
+      "file": "candidates/candidate_0080_ADOPT_UP_00834_f118632a4f97aecd.json",
+      "hash": "f118632a4f97aecd",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "a5acd12ea1ff946f",
+        "37bfa6e5dae12ded"
+      ],
+      "reject": 59,
+      "state_hash": "85d61e659346cb0b",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 41
+    },
+    {
+      "accept": 108,
+      "cells": 852,
+      "file": "candidates/candidate_0081_ADOPT_UP_00852_0e9ac3b25335915d.json",
+      "hash": "0e9ac3b25335915d",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "0dcd17c2256c7949",
+        "abd07da154d18eb0"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 70,
+      "cells": 810,
+      "file": "candidates/candidate_0082_ADOPT_UP_00810_33096275af58d9fb.json",
+      "hash": "33096275af58d9fb",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "0dcd17c2256c7949",
+        "ce02fe3295689625"
+      ],
+      "reject": 61,
+      "state_hash": "3ba1ef336249b753",
+      "step": 56,
+      "used_accept": 41,
+      "used_reject": 42
+    },
+    {
+      "accept": 91,
+      "cells": 852,
+      "file": "candidates/candidate_0083_ADOPT_UP_00852_8f0046cf9123277d.json",
+      "hash": "8f0046cf9123277d",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "70a962d222f1cb0e",
+        "47fda41c579ef71e"
+      ],
+      "reject": 60,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 48,
+      "used_reject": 41
+    },
+    {
+      "accept": 74,
+      "cells": 834,
+      "file": "candidates/candidate_0084_ADOPT_UP_00834_cd49490125fe0867.json",
+      "hash": "cd49490125fe0867",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "3b54688dc4290814",
+        "f8cb2e63009b9df7"
+      ],
+      "reject": 57,
+      "state_hash": "1ad8a3958d63c3f7",
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 90,
+      "cells": 846,
+      "file": "candidates/candidate_0085_ADOPT_UP_00846_083dd7ba55329855.json",
+      "hash": "083dd7ba55329855",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "a5acd12ea1ff946f",
+        "3734778a5ca54325"
+      ],
+      "reject": 61,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 59,
+      "used_accept": 47,
+      "used_reject": 42
+    },
+    {
+      "accept": 102,
+      "cells": 852,
+      "file": "candidates/candidate_0086_ADOPT_UP_00852_fe11e33bb011f183.json",
+      "hash": "fe11e33bb011f183",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "7c74dca6ad8b1053",
+        "c71476ef63a9e0cc"
+      ],
+      "reject": 57,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 49,
+      "used_reject": 39
+    },
+    {
+      "accept": 94,
+      "cells": 846,
+      "file": "candidates/candidate_0087_ADOPT_UP_00846_1460232c72b7990c.json",
+      "hash": "1460232c72b7990c",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "cc11d947affc03ba",
+        "7037797b4a1c6491"
+      ],
+      "reject": 61,
+      "state_hash": "03db197d14d33e12",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 99,
+      "cells": 852,
+      "file": "candidates/candidate_0088_ADOPT_UP_00852_ba371ab62e604234.json",
+      "hash": "ba371ab62e604234",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "0c247be617e91ee2",
+        "7470d683b89cc750"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 102,
+      "cells": 852,
+      "file": "candidates/candidate_0089_ADOPT_UP_00852_8a4e17477cbc6777.json",
+      "hash": "8a4e17477cbc6777",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "7c74dca6ad8b1053",
+        "e7006075d216440b"
+      ],
+      "reject": 57,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 49,
+      "used_reject": 39
+    },
+    {
+      "accept": 86,
+      "cells": 852,
+      "file": "candidates/candidate_0090_ADOPT_UP_00852_687b74eecaa52d54.json",
+      "hash": "687b74eecaa52d54",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "0dcd17c2256c7949",
+        "37696ac1b1ee732f"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "step": 57,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 90,
+      "cells": 834,
+      "file": "candidates/candidate_0091_ADOPT_UP_00834_d1f366cd77413f14.json",
+      "hash": "d1f366cd77413f14",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "17340261fbb94eef",
+        "37bfa6e5dae12ded"
+      ],
+      "reject": 59,
+      "state_hash": "85d61e659346cb0b",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 41
+    },
+    {
+      "accept": 74,
+      "cells": 834,
+      "file": "candidates/candidate_0092_ADOPT_UP_00834_2dba42a5e7e59db6.json",
+      "hash": "2dba42a5e7e59db6",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "b99c3c6f93423df4",
+        "f8cb2e63009b9df7"
+      ],
+      "reject": 64,
+      "state_hash": "1ad8a3958d63c3f7",
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 93,
+      "cells": 846,
+      "file": "candidates/candidate_0093_ADOPT_UP_00846_52b1f488a36ab5d1.json",
+      "hash": "52b1f488a36ab5d1",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "3b54688dc4290814",
+        "cc11d947affc03ba"
+      ],
+      "reject": 62,
+      "state_hash": "03db197d14d33e12",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 102,
+      "cells": 834,
+      "file": "candidates/candidate_0094_ADOPT_UP_00834_31f61971ddb827ac.json",
+      "hash": "31f61971ddb827ac",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "3268861d4641ad34",
+        "be4c66135ab54070"
+      ],
+      "reject": 56,
+      "state_hash": "85d61e659346cb0b",
+      "step": 58,
+      "used_accept": 45,
+      "used_reject": 40
+    },
+    {
+      "accept": 74,
+      "cells": 834,
+      "file": "candidates/candidate_0095_ADOPT_UP_00834_093018e80f4d5033.json",
+      "hash": "093018e80f4d5033",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "f8cb2e63009b9df7",
+        "ce84df49243fb694"
+      ],
+      "reject": 57,
+      "state_hash": "1ad8a3958d63c3f7",
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 102,
+      "cells": 852,
+      "file": "candidates/candidate_0096_ADOPT_UP_00852_14dedc9baac97989.json",
+      "hash": "14dedc9baac97989",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "a5acd12ea1ff946f",
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 57,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 49,
+      "used_reject": 39
+    },
+    {
+      "accept": 70,
+      "cells": 810,
+      "file": "candidates/candidate_0097_ADOPT_DOWN_00810_b68c935cd96869d4.json",
+      "hash": "b68c935cd96869d4",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "ce02fe3295689625",
+        "64633e4da4511e36"
+      ],
+      "reject": 61,
+      "state_hash": "3ba1ef336249b753",
+      "step": 56,
+      "used_accept": 41,
+      "used_reject": 42
+    },
+    {
+      "accept": 109,
+      "cells": 852,
+      "file": "candidates/candidate_0098_ADOPT_DOWN_00852_c03bac3bd883b960.json",
+      "hash": "c03bac3bd883b960",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "ee59bc94042f1a0e",
+        "c20427a3ed293464"
+      ],
+      "reject": 53,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 106,
+      "cells": 852,
+      "file": "candidates/candidate_0099_ADOPT_DOWN_00852_373dad20f31648b6.json",
+      "hash": "373dad20f31648b6",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "70a962d222f1cb0e",
+        "64633e4da4511e36"
+      ],
+      "reject": 53,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 72,
+      "cells": 816,
+      "file": "candidates/candidate_0100_ADOPT_DOWN_00816_f08714805d2d88fe.json",
+      "hash": "f08714805d2d88fe",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "47fda41c579ef71e",
+        "bd20ebcec2116ef9"
+      ],
+      "reject": 59,
+      "state_hash": "da2171022154ad1c",
+      "step": 56,
+      "used_accept": 42,
+      "used_reject": 41
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "file": "candidates/candidate_0101_ADOPT_EQUAL_00852_40da6cb637eb7f16.json",
+      "hash": "40da6cb637eb7f16",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "95165584ec5de221",
+        "bb9f47367b53dac0"
+      ],
+      "reject": 53,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "file": "candidates/candidate_0102_ADOPT_EQUAL_00852_8263996373940059.json",
+      "hash": "8263996373940059",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "bb9f47367b53dac0",
+        "3b54688dc4290814"
+      ],
+      "reject": 53,
+      "state_hash": "786cb6128ce278fd",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 93,
+      "cells": 852,
+      "file": "candidates/candidate_0103_ADOPT_EQUAL_00852_712fd3fa9e060a94.json",
+      "hash": "712fd3fa9e060a94",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "c20427a3ed293464",
+        "4bb34c3a2b97f57c"
+      ],
+      "reject": 55,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 36
+    },
+    {
+      "accept": 94,
+      "cells": 846,
+      "file": "candidates/candidate_0104_ADOPT_EQUAL_00846_0843fb2597ccff57.json",
+      "hash": "0843fb2597ccff57",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "cc11d947affc03ba",
+        "64633e4da4511e36"
+      ],
+      "reject": 62,
+      "state_hash": "03db197d14d33e12",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 94,
+      "cells": 846,
+      "file": "candidates/candidate_0105_ADOPT_EQUAL_00846_d5981e98128a20ac.json",
+      "hash": "d5981e98128a20ac",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "cc11d947affc03ba",
+        "64633e4da4511e36"
+      ],
+      "reject": 61,
+      "state_hash": "03db197d14d33e12",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 88,
+      "cells": 852,
+      "file": "candidates/candidate_0106_ADOPT_EQUAL_00852_7ddf80ce6a91d1e8.json",
+      "hash": "7ddf80ce6a91d1e8",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "abd07da154d18eb0",
+        "f4ff8e03fbf65665"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "step": 57,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 71,
+      "cells": 810,
+      "file": "candidates/candidate_0107_ADOPT_EQUAL_00810_2b66a11b2ac3a251.json",
+      "hash": "2b66a11b2ac3a251",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "c20427a3ed293464",
+        "ce02fe3295689625"
+      ],
+      "reject": 60,
+      "state_hash": "3ba1ef336249b753",
+      "step": 56,
+      "used_accept": 41,
+      "used_reject": 42
+    },
+    {
+      "accept": 99,
+      "cells": 852,
+      "file": "candidates/candidate_0108_ADOPT_EQUAL_00852_e2f397e05c353dab.json",
+      "hash": "e2f397e05c353dab",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "7470d683b89cc750",
+        "4bb34c3a2b97f57c"
+      ],
+      "reject": 58,
+      "state_hash": "786cb6128ce278fd",
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 37
+    }
+  ],
+  "keep_min": 800,
+  "known_seed_terminal_states": 12,
+  "known_terminal_state_candidates": 99,
+  "loaded_records": 52,
+  "max_cells": 900,
+  "max_replay_steps": 62,
+  "min_trials_before_stop": 20,
+  "new_closed_chill_ge_keep_min": 108,
+  "new_distinct_terminal_states_ge_keep_min": 9,
+  "ok": true,
+  "operator_trials": {
+    "ADOPT_DOWN": 30,
+    "ADOPT_EQUAL": 20,
+    "ADOPT_UP": 100,
+    "MATE": 130,
+    "MUTATE": 110
+  },
+  "prior_universe_keys": 179,
+  "purpose": "mutate / mate / lifetime-oriented adopt-up / adopt-down / adopt-equal DH12 policy search for more same-family closed-chill records",
+  "replay_cache_entries": 277,
+  "seed": 2026061709,
+  "signpost_genes": 12,
+  "stop_after_max_found": true,
+  "target_found": 100,
+  "top_trials": [
+    {
+      "accept": 94,
+      "cells": 942,
+      "hash": "866a914bd082a0cd",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "edits": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.4"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.3"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "walk_length": 4
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "47fda41c579ef71e"
+      ],
+      "reject": 55,
+      "state_hash": "79ddfd4a8176400c",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 72,
+      "terminal_step": 23,
+      "terminal_unknown_frontier": 780,
+      "trial_index": 67,
+      "used_accept": 8,
+      "used_reject": 4
+    },
+    {
+      "accept": 79,
+      "cells": 924,
+      "hash": "93d334de47e46b55",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.3617,
+        "axis": [
+          "c20427a3ed293464",
+          "712d7b2c8d24ee6f"
+        ],
+        "axis_disagreements": 43,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "H.4",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 13
+      },
+      "operator": "MATE",
+      "parents": [
+        "c20427a3ed293464",
+        "712d7b2c8d24ee6f"
+      ],
+      "reject": 61,
+      "state_hash": "9f7ceccfe9bbe799",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 24,
+      "terminal_step": 49,
+      "terminal_unknown_frontier": 30,
+      "trial_index": 84,
+      "used_accept": 41,
+      "used_reject": 37
+    },
+    {
+      "accept": 91,
+      "cells": 918,
+      "hash": "f9fdbfcfe07ed234",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.4298,
+        "axis": [
+          "f4ff8e03fbf65665",
+          "4bb34c3a2b97f57c"
+        ],
+        "axis_disagreements": 36,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.5",
+              "H.1",
+              "H.0",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          }
+        ],
+        "moves": 15
+      },
+      "operator": "MATE",
+      "parents": [
+        "f4ff8e03fbf65665",
+        "4bb34c3a2b97f57c"
+      ],
+      "reject": 57,
+      "state_hash": "a57ca412bdb4946a",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 24,
+      "terminal_step": 46,
+      "terminal_unknown_frontier": 36,
+      "trial_index": 29,
+      "used_accept": 41,
+      "used_reject": 34
+    },
+    {
+      "accept": 55,
+      "cells": 918,
+      "hash": "8f5990b010a8d251",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          }
+        ],
+        "walk_length": 4
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "b1f77381e2b5a9bb"
+      ],
+      "reject": 62,
+      "state_hash": "d1871691132251b4",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 18,
+      "terminal_step": 51,
+      "terminal_unknown_frontier": 48,
+      "trial_index": 15,
+      "used_accept": 40,
+      "used_reject": 40
+    },
+    {
+      "accept": 94,
+      "cells": 918,
+      "hash": "491b97e82de7e22f",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.2974,
+        "axis": [
+          "abd07da154d18eb0",
+          "849c0684397d1107"
+        ],
+        "axis_disagreements": 60,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 14
+      },
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "849c0684397d1107"
+      ],
+      "reject": 58,
+      "state_hash": "48991240ff6b1260",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 30,
+      "terminal_step": 48,
+      "terminal_unknown_frontier": 48,
+      "trial_index": 28,
+      "used_accept": 41,
+      "used_reject": 36
+    },
+    {
+      "accept": 63,
+      "cells": 918,
+      "hash": "14f9aa0b9b1d4838",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.2969,
+        "axis": [
+          "37bd1b5dcee04027",
+          "17340261fbb94eef"
+        ],
+        "axis_disagreements": 43,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "H.4",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 9
+      },
+      "operator": "MATE",
+      "parents": [
+        "37bd1b5dcee04027",
+        "17340261fbb94eef"
+      ],
+      "reject": 57,
+      "state_hash": "d1871691132251b4",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 18,
+      "terminal_step": 50,
+      "terminal_unknown_frontier": 48,
+      "trial_index": 121,
+      "used_accept": 40,
+      "used_reject": 37
+    },
+    {
+      "accept": 69,
+      "cells": 912,
+      "hash": "d5c44d1dcba502c8",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.3221,
+        "axis": [
+          "86e96a462a8ab562",
+          "b99c3c6f93423df4"
+        ],
+        "axis_disagreements": 68,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->D.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "H.4",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 16
+      },
+      "operator": "MATE",
+      "parents": [
+        "86e96a462a8ab562",
+        "b99c3c6f93423df4"
+      ],
+      "reject": 56,
+      "state_hash": "3d50e128f2c3be59",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 18,
+      "terminal_step": 47,
+      "terminal_unknown_frontier": 36,
+      "trial_index": 54,
+      "used_accept": 42,
+      "used_reject": 38
+    },
+    {
+      "accept": 67,
+      "cells": 912,
+      "hash": "954e27167c2f5e17",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.3841,
+        "axis": [
+          "ce02fe3295689625",
+          "64633e4da4511e36"
+        ],
+        "axis_disagreements": 63,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.0",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "*",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.5",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 18
+      },
+      "operator": "MATE",
+      "parents": [
+        "ce02fe3295689625",
+        "64633e4da4511e36"
+      ],
+      "reject": 71,
+      "state_hash": "fb02e41cdae11443",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 18,
+      "terminal_step": 49,
+      "terminal_unknown_frontier": 48,
+      "trial_index": 18,
+      "used_accept": 42,
+      "used_reject": 39
+    },
+    {
+      "accept": 99,
+      "cells": 912,
+      "hash": "142b6c12f8a859d0",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.2733,
+        "axis": [
+          "b99c3c6f93423df4",
+          "86e96a462a8ab562"
+        ],
+        "axis_disagreements": 68,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.4",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "D.5",
+              "H.1",
+              "H.0",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 17
+      },
+      "operator": "MATE",
+      "parents": [
+        "b99c3c6f93423df4",
+        "86e96a462a8ab562"
+      ],
+      "reject": 58,
+      "state_hash": "fb02e41cdae11443",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 18,
+      "terminal_step": 49,
+      "terminal_unknown_frontier": 48,
+      "trial_index": 75,
+      "used_accept": 42,
+      "used_reject": 37
+    },
+    {
+      "accept": 100,
+      "cells": 912,
+      "hash": "7319f48c11cb717c",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.383,
+        "axis": [
+          "17340261fbb94eef",
+          "95165584ec5de221"
+        ],
+        "axis_disagreements": 32,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          }
+        ],
+        "moves": 12
+      },
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "95165584ec5de221"
+      ],
+      "reject": 53,
+      "state_hash": "8fe403b6fb278933",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 30,
+      "terminal_step": 59,
+      "terminal_unknown_frontier": 54,
+      "trial_index": 32,
+      "used_accept": 40,
+      "used_reject": 31
+    },
+    {
+      "accept": 86,
+      "cells": 912,
+      "hash": "4532e22dbce9dba3",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.1018,
+        "axis": [
+          "c71476ef63a9e0cc",
+          "73e1d0360b6bb522"
+        ],
+        "axis_disagreements": 41,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 3
+      },
+      "operator": "MATE",
+      "parents": [
+        "c71476ef63a9e0cc",
+        "73e1d0360b6bb522"
+      ],
+      "reject": 56,
+      "state_hash": "8fe403b6fb278933",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 30,
+      "terminal_step": 60,
+      "terminal_unknown_frontier": 54,
+      "trial_index": 36,
+      "used_accept": 39,
+      "used_reject": 31
+    },
+    {
+      "accept": 79,
+      "cells": 912,
+      "hash": "4ddfd50f37c6dbfa",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.2093,
+        "axis": [
+          "f8cb2e63009b9df7",
+          "7470d683b89cc750"
+        ],
+        "axis_disagreements": 40,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 7
+      },
+      "operator": "MATE",
+      "parents": [
+        "f8cb2e63009b9df7",
+        "7470d683b89cc750"
+      ],
+      "reject": 54,
+      "state_hash": "8fe403b6fb278933",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 30,
+      "terminal_step": 60,
+      "terminal_unknown_frontier": 54,
+      "trial_index": 50,
+      "used_accept": 41,
+      "used_reject": 32
+    },
+    {
+      "accept": 57,
+      "cells": 906,
+      "hash": "fa4e430f2ab3d3a3",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "*",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          }
+        ],
+        "walk_length": 8
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "712d7b2c8d24ee6f"
+      ],
+      "reject": 59,
+      "state_hash": "7392be18ad54c066",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 18,
+      "terminal_step": 51,
+      "terminal_unknown_frontier": 54,
+      "trial_index": 103,
+      "used_accept": 38,
+      "used_reject": 35
+    },
+    {
+      "accept": 107,
+      "cells": 906,
+      "hash": "08bb82035aae9d13",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.2753,
+        "axis": [
+          "b99c3c6f93423df4",
+          "7d672150a883ab74"
+        ],
+        "axis_disagreements": 65,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->D.0",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 9
+      },
+      "operator": "MATE",
+      "parents": [
+        "b99c3c6f93423df4",
+        "7d672150a883ab74"
+      ],
+      "reject": 53,
+      "state_hash": "fa944840524aa0aa",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 30,
+      "terminal_step": 59,
+      "terminal_unknown_frontier": 54,
+      "trial_index": 77,
+      "used_accept": 41,
+      "used_reject": 33
+    },
+    {
+      "accept": 58,
+      "cells": 864,
+      "hash": "b089302a54102f38",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.1451,
+        "axis": [
+          "849c0684397d1107",
+          "c71476ef63a9e0cc"
+        ],
+        "axis_disagreements": 43,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 5
+      },
+      "operator": "MATE",
+      "parents": [
+        "849c0684397d1107",
+        "c71476ef63a9e0cc"
+      ],
+      "reject": 62,
+      "state_hash": "aba8fd3e23892068",
+      "status": "STALLED_UNKNOWN",
+      "terminal_births": 0,
+      "terminal_step": 50,
+      "terminal_unknown_frontier": 42,
+      "trial_index": 112,
+      "used_accept": 40,
+      "used_reject": 40
+    },
+    {
+      "accept": 103,
+      "cells": 852,
+      "hash": "ff5490878ea60f45",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 60,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 2,
+      "used_accept": 49,
+      "used_reject": 39
+    },
+    {
+      "accept": 106,
+      "cells": 852,
+      "hash": "04715fd5ba37ea13",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "walk_length": 2
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 6,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 80,
+      "cells": 852,
+      "hash": "ac59ec8e2caa992f",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 4
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 42,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 91,
+      "cells": 852,
+      "hash": "5b643b8cc721a261",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->D.4",
+            "key": [
+              "*",
+              "H.2",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.1"
+            ],
+            "to": "blank"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "c20427a3ed293464"
+      ],
+      "reject": 54,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 45,
+      "used_accept": 46,
+      "used_reject": 36
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "hash": "b84ca59063156d7d",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->D.3",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "47fda41c579ef71e"
+      ],
+      "reject": 59,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 60,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 55,
+      "used_accept": 48,
+      "used_reject": 41
+    },
+    {
+      "accept": 105,
+      "cells": 852,
+      "hash": "746274650e30c828",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "*",
+              "H.0"
+            ],
+            "to": "blank"
+          }
+        ],
+        "walk_length": 2
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 50,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 63,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 109,
+      "cells": 852,
+      "hash": "aef87d81aa216a34",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 54,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 76,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 116,
+      "cells": 852,
+      "hash": "560b2cf95a0d682b",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "0c247be617e91ee2"
+      ],
+      "reject": 53,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 81,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 114,
+      "cells": 852,
+      "hash": "d10b81a38e0488fb",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "H.3",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 2
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "95165584ec5de221"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 86,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 101,
+      "cells": 852,
+      "hash": "9375e2c34e428365",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 60,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 87,
+      "used_accept": 48,
+      "used_reject": 40
+    },
+    {
+      "accept": 111,
+      "cells": 852,
+      "hash": "1c2a306d911baea3",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.3",
+              "*",
+              "H.4"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "walk_length": 2
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "ee59bc94042f1a0e"
+      ],
+      "reject": 50,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 88,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "hash": "833ddfdcfe2fee3b",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.5",
+              "D.2",
+              "H.1",
+              "H.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          }
+        ],
+        "walk_length": 4
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "bb9f47367b53dac0"
+      ],
+      "reject": 52,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 105,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "hash": "c6382c9907e6768e",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.0",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 2
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "37696ac1b1ee732f"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 107,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 101,
+      "cells": 852,
+      "hash": "3bebad8d93fcc977",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "*",
+              "H.1"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "A->D.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "*",
+              "H.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "walk_length": 8
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "7470d683b89cc750"
+      ],
+      "reject": 55,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 108,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 80,
+      "cells": 852,
+      "hash": "44725675b648feb3",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->D.4",
+            "key": [
+              "*",
+              "H.2",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 2
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 109,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 87,
+      "cells": 852,
+      "hash": "dc0508d7e7c6e43d",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.372,
+        "axis": [
+          "17340261fbb94eef",
+          "c20427a3ed293464"
+        ],
+        "axis_disagreements": 30,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->D.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 7
+      },
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "c20427a3ed293464"
+      ],
+      "reject": 58,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 1,
+      "used_accept": 45,
+      "used_reject": 40
+    },
+    {
+      "accept": 92,
+      "cells": 852,
+      "hash": "59b4e9daccbf5761",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.4343,
+        "axis": [
+          "f4ff8e03fbf65665",
+          "abd07da154d18eb0"
+        ],
+        "axis_disagreements": 33,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "*",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->D.5"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 12
+      },
+      "operator": "MATE",
+      "parents": [
+        "f4ff8e03fbf65665",
+        "abd07da154d18eb0"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 11,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "hash": "49115b6c3345617e",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.36,
+        "axis": [
+          "bb9f47367b53dac0",
+          "95165584ec5de221"
+        ],
+        "axis_disagreements": 39,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          }
+        ],
+        "moves": 5
+      },
+      "operator": "MATE",
+      "parents": [
+        "bb9f47367b53dac0",
+        "95165584ec5de221"
+      ],
+      "reject": 50,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 15,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 107,
+      "cells": 852,
+      "hash": "945543722c400cc7",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.4478,
+        "axis": [
+          "abd07da154d18eb0",
+          "a5acd12ea1ff946f"
+        ],
+        "axis_disagreements": 23,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "A->D.4",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "D.3",
+              "H.3",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 5
+      },
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 54,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 16,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 95,
+      "cells": 852,
+      "hash": "4d543ab1c456b862",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.1376,
+        "axis": [
+          "c20427a3ed293464",
+          "0c247be617e91ee2"
+        ],
+        "axis_disagreements": 39,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 3
+      },
+      "operator": "MATE",
+      "parents": [
+        "c20427a3ed293464",
+        "0c247be617e91ee2"
+      ],
+      "reject": 52,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 17,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 89,
+      "cells": 852,
+      "hash": "0a9ed1f3c1ab53f9",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.2247,
+        "axis": [
+          "17340261fbb94eef",
+          "bd20ebcec2116ef9"
+        ],
+        "axis_disagreements": 41,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 4
+      },
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "bd20ebcec2116ef9"
+      ],
+      "reject": 56,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 25,
+      "used_accept": 46,
+      "used_reject": 37
+    },
+    {
+      "accept": 89,
+      "cells": 852,
+      "hash": "7668e00a4a8ef7a1",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.4382,
+        "axis": [
+          "17340261fbb94eef",
+          "7c74dca6ad8b1053"
+        ],
+        "axis_disagreements": 36,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 3
+      },
+      "operator": "MATE",
+      "parents": [
+        "17340261fbb94eef",
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 35,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 106,
+      "cells": 852,
+      "hash": "c4548bc7fd6f50ed",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.2448,
+        "axis": [
+          "70a962d222f1cb0e",
+          "7470d683b89cc750"
+        ],
+        "axis_disagreements": 26,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.1",
+              "H.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "H.4",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 5
+      },
+      "operator": "MATE",
+      "parents": [
+        "70a962d222f1cb0e",
+        "7470d683b89cc750"
+      ],
+      "reject": 53,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 37,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 95,
+      "cells": 852,
+      "hash": "9e6cb5a883211708",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.3932,
+        "axis": [
+          "3268861d4641ad34",
+          "c0a6be53311d6536"
+        ],
+        "axis_disagreements": 40,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 11
+      },
+      "operator": "MATE",
+      "parents": [
+        "3268861d4641ad34",
+        "c0a6be53311d6536"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 59,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 46,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 115,
+      "cells": 852,
+      "hash": "28f24923f49e9c22",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.1554,
+        "axis": [
+          "0c247be617e91ee2",
+          "3734778a5ca54325"
+        ],
+        "axis_disagreements": 38,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.3",
+              "*",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "D.3",
+              "H.3",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 3
+      },
+      "operator": "MATE",
+      "parents": [
+        "0c247be617e91ee2",
+        "3734778a5ca54325"
+      ],
+      "reject": 51,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 47,
+      "used_accept": 48,
+      "used_reject": 35
+    }
+  ],
+  "trials": 277,
+  "unique_rule_hashes_tried": 328,
+  "valid_parent_records": 50
+}

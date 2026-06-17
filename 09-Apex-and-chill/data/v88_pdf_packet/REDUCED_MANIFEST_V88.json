@@ -1,0 +1,27 @@
+{
+  "packet": "apex852_v88_minimal_artifact_packet_complete_counts_patch",
+  "purpose": "Minimal package copy of the final v88 artifact, patched only to show the complete wrapped bottom-pane growth counts; source_packets/actual_v88_packet.zip preserves the original reduced transfer packet.",
+  "final_artifact": "artifact/apex_and_chill_page13_v88_bottom_spacing.pdf",
+  "certificate": "certificate/apex852_pdf_payload_v88_reduced_certificate.json",
+  "verifier": "verify/verify_reduced_certificate_from_payload_v88.py",
+  "verifier_ok": true,
+  "excluded": "broad search/prior history, original upload zip, full release09 extraction, all top-level scratch scripts",
+  "files": [
+    "README_REDUCED_TRANSFER_V88.md",
+    "REDUCED_MANIFEST_V88.json",
+    "apex_and_chill_page13_v88_bottom_spacing.pdf",
+    "artifact/apex_and_chill_page13_v88_bottom_spacing.pdf",
+    "artifact/apex_and_chill_page13_v88_bottom_spacing.svg",
+    "artifact/apex_and_chill_page13_v88_bottom_spacing_report.json",
+    "certificate/apex852_pdf_payload_v88_reduced_certificate.json",
+    "docs/VISUAL_TO_JSON_CERTIFICATE_EXPLANATION.md",
+    "verify/pdf_structure_v88.json",
+    "verify/verify_payload_stdout_v88.json",
+    "verify/verify_reduced_certificate_from_payload_v88.py",
+    "checksums_sha256.txt"
+  ],
+  "main_output_pdf_at_root": "apex_and_chill_page13_v88_bottom_spacing.pdf",
+  "note_root_pdf": "The main PDF is duplicated at packet root for next-window discoverability; artifact/ also contains the organized copy.",
+  "file_count": 12,
+  "bottom_panel_patch": "complete wrapped a_t plateau-preview line restored; PDF-visible reconstruction still passes."
+}

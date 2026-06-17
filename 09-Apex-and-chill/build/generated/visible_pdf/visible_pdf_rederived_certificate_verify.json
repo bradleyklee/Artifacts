@@ -1,0 +1,21 @@
+{
+  "a_sequence_matches_payload": true,
+  "final_cells": 852,
+  "first_differences_matches_payload": true,
+  "matches_declared_verification": {
+    "final_cells_is_852": true,
+    "terminal_births": true,
+    "terminal_step": true,
+    "terminal_unknown_frontier": true,
+    "used_accept_outputs": true,
+    "used_reject_rules": true
+  },
+  "ok": true,
+  "payload": "build/generated/visible_pdf/visible_pdf_rederived_compatible_certificate.json",
+  "terminal_births": 0,
+  "terminal_step": 60,
+  "terminal_unknown_frontier": 0,
+  "unknown_sample": [],
+  "used_accept_rules": 48,
+  "used_reject_rules": 41
+}

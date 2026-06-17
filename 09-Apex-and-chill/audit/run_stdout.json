@@ -1,0 +1,447 @@
+{
+  "ok": true,
+  "pdf": "/mnt/data/actual_v88_packet_unzipped/actual_v88_packet/artifact/apex_and_chill_page13_v88_bottom_spacing.pdf",
+  "embedded_json_used": false,
+  "p7_templates": [
+    {
+      "rep_index": 0,
+      "center": "H.3",
+      "slots": [
+        "H.5",
+        "H.1",
+        "H.4",
+        "D.5",
+        "D.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 1,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.5",
+        "H.1",
+        "D.3",
+        "H.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 2,
+      "center": "H.3",
+      "slots": [
+        "H.5",
+        "H.1",
+        "H.4",
+        "D.4",
+        "H.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 3,
+      "center": "D.0",
+      "slots": [
+        "D.3",
+        "H.4",
+        "H.5",
+        "H.0",
+        "H.4",
+        "H.1"
+      ]
+    },
+    {
+      "rep_index": 4,
+      "center": "D.0",
+      "slots": [
+        "D.3",
+        "H.4",
+        "H.5",
+        "H.3",
+        "H.4",
+        "H.1"
+      ]
+    },
+    {
+      "rep_index": 5,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.2",
+        "H.1",
+        "D.4",
+        "H.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 6,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.4",
+        "D.4",
+        "H.2",
+        "H.4"
+      ]
+    },
+    {
+      "rep_index": 7,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.4",
+        "D.5",
+        "D.2",
+        "H.4"
+      ]
+    },
+    {
+      "rep_index": 8,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.2",
+        "D.1",
+        "D.4",
+        "H.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 9,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.2",
+        "H.1",
+        "D.3",
+        "H.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 10,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.1",
+        "D.3",
+        "H.2",
+        "H.4"
+      ]
+    },
+    {
+      "rep_index": 11,
+      "center": "D.0",
+      "slots": [
+        "D.3",
+        "H.4",
+        "H.5",
+        "D.3",
+        "H.2",
+        "H.1"
+      ]
+    },
+    {
+      "rep_index": 12,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.5",
+        "H.4",
+        "D.4",
+        "H.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 13,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.5",
+        "H.1",
+        "D.4",
+        "H.2",
+        "H.0"
+      ]
+    },
+    {
+      "rep_index": 14,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.1",
+        "D.4",
+        "H.2",
+        "H.4"
+      ]
+    }
+  ],
+  "matrix_geometry": {
+    "x0": 47.81999969482422,
+    "y0": 363.6289978027344,
+    "step_x": 5.339999999999989,
+    "step_y": 5.339999999999975,
+    "counts": {
+      "blank": 447,
+      "reject": 41,
+      "accept": 48,
+      "pad": 4
+    }
+  },
+  "matrix_counts": {
+    "blank": 447,
+    "reject": 41,
+    "accept": 48,
+    "pad": 4
+  },
+  "matrix_unique_contexts": 536,
+  "accept_text_count": 48,
+  "main_state_geometry_raw_scrape": {
+    "component_sizes": [
+      852,
+      6
+    ],
+    "origin_pdf_xy": [
+      177.75,
+      223.5
+    ],
+    "dx": 6.2655029296875,
+    "dy": 5.425994873046875,
+    "max_grid_error": 0.0022866429481219544,
+    "axiom_from_visible_main": {
+      "1,0": "H.3",
+      "1,-1": "H.4",
+      "0,-1": "H.5",
+      "-1,0": "H.0",
+      "-1,1": "H.1",
+      "0,1": "H.2"
+    },
+    "counts": {
+      "D.4": 44,
+      "H.2": 98,
+      "H.4": 98,
+      "H.3": 98,
+      "H.0": 98,
+      "D.3": 44,
+      "D.1": 44,
+      "D.0": 44,
+      "H.1": 98,
+      "D.2": 44,
+      "D.5": 44,
+      "H.5": 98
+    }
+  },
+  "main_panel_transform_used_for_growth_check": {
+    "k": 0,
+    "sense": 1,
+    "transform_labels": false,
+    "ok": true,
+    "reason": "terminal",
+    "state_cells": 852,
+    "outputs_assigned": 48,
+    "last_history_row": {
+      "t": 60,
+      "births": 0,
+      "placed": 852,
+      "rejected_frontier": 132,
+      "unknown_frontier": 0,
+      "conflicts": 0
+    },
+    "conflict_sample": [],
+    "unknown_terminal": 0,
+    "compare_to_target": {
+      "exact": true,
+      "missing_count": 0,
+      "extra_count": 0,
+      "wrong_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "wrong_sample": []
+    }
+  },
+  "transform_attempts_summary": [
+    {
+      "k": 0,
+      "sense": 1,
+      "transform_labels": false,
+      "ok": true,
+      "reason": "terminal",
+      "state_cells": 852,
+      "outputs_assigned": 48,
+      "last_history_row": {
+        "t": 60,
+        "births": 0,
+        "placed": 852,
+        "rejected_frontier": 132,
+        "unknown_frontier": 0,
+        "conflicts": 0
+      },
+      "conflict_sample": [],
+      "unknown_terminal": 0,
+      "compare_to_target": {
+        "exact": true,
+        "missing_count": 0,
+        "extra_count": 0,
+        "wrong_count": 0,
+        "missing_sample": [],
+        "extra_sample": [],
+        "wrong_sample": []
+      }
+    }
+  ],
+  "raw_visible_state_cells": 852,
+  "target_state_cells_after_transform": 852,
+  "target_state_counts_after_transform": {
+    "D.4": 44,
+    "H.2": 98,
+    "H.4": 98,
+    "H.3": 98,
+    "H.0": 98,
+    "D.3": 44,
+    "D.1": 44,
+    "D.0": 44,
+    "H.1": 98,
+    "D.2": 44,
+    "D.5": 44,
+    "H.5": 98
+  },
+  "rederived_rule_counts": {
+    "accept": 48,
+    "reject": 41
+  },
+  "forced_output_derivation": {
+    "outputs_assigned": 48,
+    "accept_count": 48,
+    "history_len": 61,
+    "last_history_row": {
+      "t": 60,
+      "births": 0,
+      "placed": 852,
+      "rejected_frontier": 132,
+      "unknown_frontier": 0,
+      "conflicts": 0
+    },
+    "unknown_terminal": 0,
+    "compare_to_target": {
+      "exact": true,
+      "missing_count": 0,
+      "extra_count": 0,
+      "wrong_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "wrong_sample": []
+    }
+  },
+  "independent_replay_from_rederived_payload": {
+    "final_cells": 852,
+    "history_len": 61,
+    "last_history_row": {
+      "t": 60,
+      "births": 0,
+      "placed": 852,
+      "rejected_frontier": 132,
+      "unknown_frontier": 0
+    },
+    "unknown_terminal": 0,
+    "compare_to_transformed_visible_main": {
+      "exact": true,
+      "missing_count": 0,
+      "extra_count": 0,
+      "wrong_count": 0,
+      "missing_sample": [],
+      "extra_sample": [],
+      "wrong_sample": []
+    }
+  },
+  "first_history_rows": [
+    {
+      "t": 0,
+      "births": 6,
+      "placed": 12,
+      "rejected_frontier": 6,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 1,
+      "births": 12,
+      "placed": 24,
+      "rejected_frontier": 6,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 2,
+      "births": 12,
+      "placed": 36,
+      "rejected_frontier": 12,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 3,
+      "births": 6,
+      "placed": 42,
+      "rejected_frontier": 18,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 4,
+      "births": 6,
+      "placed": 48,
+      "rejected_frontier": 24,
+      "unknown_frontier": 0
+    }
+  ],
+  "last_history_rows": [
+    {
+      "t": 56,
+      "births": 12,
+      "placed": 834,
+      "rejected_frontier": 150,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 57,
+      "births": 6,
+      "placed": 840,
+      "rejected_frontier": 144,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 58,
+      "births": 6,
+      "placed": 846,
+      "rejected_frontier": 138,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 59,
+      "births": 6,
+      "placed": 852,
+      "rejected_frontier": 132,
+      "unknown_frontier": 0
+    },
+    {
+      "t": 60,
+      "births": 0,
+      "placed": 852,
+      "rejected_frontier": 132,
+      "unknown_frontier": 0
+    }
+  ],
+  "output_source": "forced replay into complete visible main-frame pattern; each accepted birth fixes canonical output orientation from the target cell and rotation k",
+  "audit_against_payload_json_not_used_for_derivation": {
+    "accept_exact": true,
+    "reject_exact": true,
+    "accept_wrong_count": 0,
+    "reject_wrong_count": 0,
+    "accept_wrong_sample": [],
+    "reject_wrong_sample": []
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "a_sequence_len": 61,
+  "final_cells": 852,
+  "ok": true,
+  "out_json": "build/generated/visible_pdf/visible_pdf_rederived_compatible_certificate.json",
+  "terminal_births": 0,
+  "terminal_step": 60,
+  "terminal_unknown_frontier": 0,
+  "used_accept_outputs": 48,
+  "used_reject_rules": 41
+}

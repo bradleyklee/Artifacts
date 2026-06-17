@@ -1,0 +1,12 @@
+Manual release checks run in this environment:
+
+PASS make compile
+PASS make test-pdf-visible
+PASS make test-official-cert
+PASS make test-seeds
+PASS make generate-smoke
+
+Notes:
+- Full `make test` covers compile, PDF-visible reconstruction, official certificate verification, and seed validation.
+- `make generate-smoke` is kept as a separate data-generation target so release tests stay focused and reproducible.
+- The deterministic smoke generator produced 5 new 852-cell closed-chill variants in build/generated/search_smoke during this packaging pass.

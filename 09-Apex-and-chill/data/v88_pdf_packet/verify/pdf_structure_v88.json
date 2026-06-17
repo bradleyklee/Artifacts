@@ -1,0 +1,31 @@
+{
+  "file": "apex_and_chill_page13_v88_bottom_spacing.pdf",
+  "pages": 1,
+  "page_rect": [
+    0.0,
+    0.0,
+    506.25,
+    675.0
+  ],
+  "links": [
+    "https://www.youtube.com/watch?v=z5_rz6x4m3s"
+  ],
+  "embedded_files": [
+    "apex852_pdf_payload_v88_reduced_certificate.json",
+    "pseudocode_style_object_v40.json"
+  ],
+  "image_xobjects": 0,
+  "metadata": {
+    "format": "PDF 1.7",
+    "title": "",
+    "author": "",
+    "subject": "",
+    "keywords": "",
+    "creator": "",
+    "producer": "cairo 1.18.4 (https://cairographics.org)",
+    "creationDate": "D:20260616232458Z",
+    "modDate": "",
+    "trapped": "",
+    "encryption": null
+  }
+}

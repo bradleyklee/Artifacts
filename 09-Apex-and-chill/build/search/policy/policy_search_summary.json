@@ -1,0 +1,8073 @@
+{
+  "adopt_pairs_equal": 292,
+  "adopt_pairs_updown": 933,
+  "all_operator_blocks_entered": true,
+  "best_by_operator": {
+    "ADOPT_DOWN": {
+      "births": 0,
+      "cells": 852,
+      "hash": "805e7dfbce7bf786",
+      "status": "CLOSED_CHILL",
+      "unknown": 0
+    },
+    "ADOPT_EQUAL": {
+      "births": 0,
+      "cells": 834,
+      "hash": "04d42e6c8760aad2",
+      "status": "CLOSED_CHILL",
+      "unknown": 0
+    },
+    "ADOPT_UP": {
+      "births": 0,
+      "cells": 846,
+      "hash": "4942627cca5fae58",
+      "status": "CLOSED_CHILL",
+      "unknown": 0
+    },
+    "MATE": {
+      "births": 48,
+      "cells": 1236,
+      "hash": "95652c1b7bdba6aa",
+      "status": "OPEN_OR_CONFLICT",
+      "unknown": 90
+    },
+    "MUTATE": {
+      "births": 12,
+      "cells": 1194,
+      "hash": "8f5990b010a8d251",
+      "status": "OPEN_OR_CONFLICT",
+      "unknown": 66
+    }
+  },
+  "best_closed_chill_candidate": {
+    "cells": 852,
+    "hash": "ff5490878ea60f45",
+    "operator": "MUTATE",
+    "state_hash": "767c67346a1994cb"
+  },
+  "best_new_cells": 852,
+  "best_trial_seen_even_if_open": {
+    "cells": 1236,
+    "hash": "95652c1b7bdba6aa",
+    "operator": "MATE",
+    "state_hash": "4d2ffc0991a68d4d",
+    "status": "OPEN_OR_CONFLICT"
+  },
+  "candidate_dir": "build/search/policy/candidates",
+  "duplicate_rule_skips": {
+    "ADOPT_DOWN": 2,
+    "ADOPT_EQUAL": 5,
+    "ADOPT_UP": 13,
+    "MUTATE": 1
+  },
+  "duplicate_terminal_state_skips": {},
+  "found_by_cells": {
+    "810": 2,
+    "834": 2,
+    "846": 4,
+    "852": 6
+  },
+  "found_by_operator_cells": {
+    "ADOPT_DOWN": {
+      "852": 1
+    },
+    "ADOPT_EQUAL": {
+      "834": 1
+    },
+    "ADOPT_UP": {
+      "810": 1,
+      "846": 1
+    },
+    "MATE": {
+      "810": 1,
+      "834": 1,
+      "846": 1,
+      "852": 3
+    },
+    "MUTATE": {
+      "846": 2,
+      "852": 2
+    }
+  },
+  "found_index": [
+    {
+      "accept": 103,
+      "cells": 852,
+      "file": "candidates/candidate_0001_MUTATE_00852_ff5490878ea60f45.json",
+      "hash": "ff5490878ea60f45",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 49,
+      "used_reject": 39
+    },
+    {
+      "accept": 108,
+      "cells": 846,
+      "file": "candidates/candidate_0002_MUTATE_00846_0e8925359003f92e.json",
+      "hash": "0e8925359003f92e",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 54,
+      "state_hash": "1578574a623932d7",
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 112,
+      "cells": 846,
+      "file": "candidates/candidate_0003_MUTATE_00846_d860b00bf1a6c3a7.json",
+      "hash": "d860b00bf1a6c3a7",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "0dcd17c2256c7949"
+      ],
+      "reject": 52,
+      "state_hash": "03db197d14d33e12",
+      "step": 55,
+      "used_accept": 49,
+      "used_reject": 35
+    },
+    {
+      "accept": 106,
+      "cells": 852,
+      "file": "candidates/candidate_0004_MUTATE_00852_04715fd5ba37ea13.json",
+      "hash": "04715fd5ba37ea13",
+      "is_new_terminal_state": false,
+      "operator": "MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 99,
+      "cells": 846,
+      "file": "candidates/candidate_0005_MATE_00846_5da7e885f1116841.json",
+      "hash": "5da7e885f1116841",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "cc11d947affc03ba",
+        "3b54688dc4290814"
+      ],
+      "reject": 57,
+      "state_hash": "03db197d14d33e12",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 101,
+      "cells": 852,
+      "file": "candidates/candidate_0006_MATE_00852_b369d6232de617c7.json",
+      "hash": "b369d6232de617c7",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "7470d683b89cc750",
+        "abd07da154d18eb0"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 82,
+      "cells": 810,
+      "file": "candidates/candidate_0007_MATE_00810_2380d75e322bd0b2.json",
+      "hash": "2380d75e322bd0b2",
+      "is_new_terminal_state": true,
+      "operator": "MATE",
+      "parents": [
+        "64633e4da4511e36",
+        "17340261fbb94eef"
+      ],
+      "reject": 84,
+      "state_hash": "a2b7d7e99421c594",
+      "step": 56,
+      "used_accept": 40,
+      "used_reject": 44
+    },
+    {
+      "accept": 74,
+      "cells": 834,
+      "file": "candidates/candidate_0008_MATE_00834_01160ad0ab61a364.json",
+      "hash": "01160ad0ab61a364",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "f8cb2e63009b9df7",
+        "cc11d947affc03ba"
+      ],
+      "reject": 57,
+      "state_hash": "1ad8a3958d63c3f7",
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 92,
+      "cells": 852,
+      "file": "candidates/candidate_0009_MATE_00852_af390f75045e8a1d.json",
+      "hash": "af390f75045e8a1d",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "47fda41c579ef71e",
+        "70a962d222f1cb0e"
+      ],
+      "reject": 58,
+      "state_hash": "767c67346a1994cb",
+      "step": 60,
+      "used_accept": 48,
+      "used_reject": 41
+    },
+    {
+      "accept": 104,
+      "cells": 852,
+      "file": "candidates/candidate_0010_MATE_00852_8c05fcf334d16cbf.json",
+      "hash": "8c05fcf334d16cbf",
+      "is_new_terminal_state": false,
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "c71476ef63a9e0cc"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 79,
+      "cells": 846,
+      "file": "candidates/candidate_0011_ADOPT_UP_00846_4942627cca5fae58.json",
+      "hash": "4942627cca5fae58",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "3b54688dc4290814",
+        "c65dc6a1176884d0"
+      ],
+      "reject": 56,
+      "state_hash": "d8cb42ded83ae88e",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 71,
+      "cells": 810,
+      "file": "candidates/candidate_0012_ADOPT_UP_00810_87243c3f451a9a7e.json",
+      "hash": "87243c3f451a9a7e",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_UP",
+      "parents": [
+        "55bf67887ae9ef9e",
+        "ce02fe3295689625"
+      ],
+      "reject": 63,
+      "state_hash": "3ba1ef336249b753",
+      "step": 56,
+      "used_accept": 41,
+      "used_reject": 42
+    },
+    {
+      "accept": 110,
+      "cells": 852,
+      "file": "candidates/candidate_0013_ADOPT_DOWN_00852_805e7dfbce7bf786.json",
+      "hash": "805e7dfbce7bf786",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "ee59bc94042f1a0e",
+        "7470d683b89cc750"
+      ],
+      "reject": 52,
+      "state_hash": "767c67346a1994cb",
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 89,
+      "cells": 834,
+      "file": "candidates/candidate_0014_ADOPT_EQUAL_00834_04d42e6c8760aad2.json",
+      "hash": "04d42e6c8760aad2",
+      "is_new_terminal_state": false,
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "f4ff8e03fbf65665",
+        "37bfa6e5dae12ded"
+      ],
+      "reject": 58,
+      "state_hash": "85d61e659346cb0b",
+      "step": 57,
+      "used_accept": 45,
+      "used_reject": 41
+    }
+  ],
+  "keep_min": 800,
+  "known_seed_terminal_states": 12,
+  "known_terminal_state_candidates": 13,
+  "loaded_records": 52,
+  "max_cells": 1200,
+  "max_replay_steps": 70,
+  "min_trials_before_stop": 0,
+  "new_closed_chill_ge_keep_min": 14,
+  "new_distinct_terminal_states_ge_keep_min": 1,
+  "ok": true,
+  "operator_trials": {
+    "ADOPT_DOWN": 15,
+    "ADOPT_EQUAL": 6,
+    "ADOPT_UP": 15,
+    "MATE": 15,
+    "MUTATE": 15
+  },
+  "prior_universe_keys": 179,
+  "purpose": "mutate / mate / lifetime-oriented adopt-up / adopt-down / adopt-equal DH12 policy search for more same-family closed-chill records",
+  "replay_cache_entries": 45,
+  "seed": 2026061709,
+  "signpost_genes": 12,
+  "stop_after_max_found": false,
+  "target_found": 25,
+  "top_trials": [
+    {
+      "accept": 75,
+      "cells": 1236,
+      "hash": "95652c1b7bdba6aa",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.4915,
+        "axis": [
+          "bd20ebcec2116ef9",
+          "3734778a5ca54325"
+        ],
+        "axis_disagreements": 38,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.2",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 10
+      },
+      "operator": "MATE",
+      "parents": [
+        "bd20ebcec2116ef9",
+        "3734778a5ca54325"
+      ],
+      "reject": 58,
+      "state_hash": "4d2ffc0991a68d4d",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 48,
+      "terminal_step": 69,
+      "terminal_unknown_frontier": 90,
+      "trial_index": 12,
+      "used_accept": 41,
+      "used_reject": 33
+    },
+    {
+      "accept": 55,
+      "cells": 1194,
+      "hash": "8f5990b010a8d251",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          }
+        ],
+        "walk_length": 4
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "b1f77381e2b5a9bb"
+      ],
+      "reject": 62,
+      "state_hash": "b1f63ccc87f6acea",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 12,
+      "terminal_step": 69,
+      "terminal_unknown_frontier": 66,
+      "trial_index": 15,
+      "used_accept": 40,
+      "used_reject": 40
+    },
+    {
+      "accept": 79,
+      "cells": 1194,
+      "hash": "871e3cb2af85df19",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.4782,
+        "axis": [
+          "28fb1f02aa737d01",
+          "abd07da154d18eb0"
+        ],
+        "axis_disagreements": 61,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "D.4",
+              "H.3"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 27
+      },
+      "operator": "MATE",
+      "parents": [
+        "28fb1f02aa737d01",
+        "abd07da154d18eb0"
+      ],
+      "reject": 51,
+      "state_hash": "c9e69e21080e7005",
+      "status": "OPEN_OR_CONFLICT",
+      "terminal_births": 42,
+      "terminal_step": 69,
+      "terminal_unknown_frontier": 90,
+      "trial_index": 1,
+      "used_accept": 40,
+      "used_reject": 32
+    },
+    {
+      "accept": 103,
+      "cells": 852,
+      "hash": "ff5490878ea60f45",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 60,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 2,
+      "used_accept": 49,
+      "used_reject": 39
+    },
+    {
+      "accept": 106,
+      "cells": 852,
+      "hash": "04715fd5ba37ea13",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "walk_length": 2
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 55,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 6,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 101,
+      "cells": 852,
+      "hash": "b369d6232de617c7",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.3252,
+        "axis": [
+          "7470d683b89cc750",
+          "abd07da154d18eb0"
+        ],
+        "axis_disagreements": 33,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.3",
+              "*",
+              "H.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->D.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 7
+      },
+      "operator": "MATE",
+      "parents": [
+        "7470d683b89cc750",
+        "abd07da154d18eb0"
+      ],
+      "reject": 57,
+      "state_hash": "786cb6128ce278fd",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 4,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 92,
+      "cells": 852,
+      "hash": "af390f75045e8a1d",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.145,
+        "axis": [
+          "47fda41c579ef71e",
+          "70a962d222f1cb0e"
+        ],
+        "axis_disagreements": 29,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          }
+        ],
+        "moves": 1
+      },
+      "operator": "MATE",
+      "parents": [
+        "47fda41c579ef71e",
+        "70a962d222f1cb0e"
+      ],
+      "reject": 58,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 60,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 11,
+      "used_accept": 48,
+      "used_reject": 41
+    },
+    {
+      "accept": 104,
+      "cells": 852,
+      "hash": "8c05fcf334d16cbf",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.4296,
+        "axis": [
+          "abd07da154d18eb0",
+          "c71476ef63a9e0cc"
+        ],
+        "axis_disagreements": 31,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 6
+      },
+      "operator": "MATE",
+      "parents": [
+        "abd07da154d18eb0",
+        "c71476ef63a9e0cc"
+      ],
+      "reject": 56,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 13,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 110,
+      "cells": 852,
+      "hash": "805e7dfbce7bf786",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "ee59bc94042f1a0e",
+          "7470d683b89cc750"
+        ],
+        "axis_disagreements": 30,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.607,
+        "exterior_parent": "ee59bc94042f1a0e",
+        "exterior_parent_lifetime": 55,
+        "lifetime_a": 55,
+        "lifetime_b": 56,
+        "lifetime_relation": "A_LOW_B_HIGH",
+        "moved": [
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.4",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "A->D.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->D.5"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.1",
+              "D.4",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          }
+        ],
+        "moves": 12,
+        "opposite_parent": "7470d683b89cc750",
+        "opposite_parent_lifetime": 56,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "ee59bc94042f1a0e",
+        "7470d683b89cc750"
+      ],
+      "reject": 52,
+      "state_hash": "767c67346a1994cb",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 5,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 108,
+      "cells": 846,
+      "hash": "0e8925359003f92e",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "walk_length": 3
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 54,
+      "state_hash": "1578574a623932d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 3,
+      "used_accept": 47,
+      "used_reject": 38
+    },
+    {
+      "accept": 112,
+      "cells": 846,
+      "hash": "d860b00bf1a6c3a7",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "0dcd17c2256c7949"
+      ],
+      "reject": 52,
+      "state_hash": "03db197d14d33e12",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 5,
+      "used_accept": 49,
+      "used_reject": 35
+    },
+    {
+      "accept": 99,
+      "cells": 846,
+      "hash": "5da7e885f1116841",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.3049,
+        "axis": [
+          "cc11d947affc03ba",
+          "3b54688dc4290814"
+        ],
+        "axis_disagreements": 38,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 8
+      },
+      "operator": "MATE",
+      "parents": [
+        "cc11d947affc03ba",
+        "3b54688dc4290814"
+      ],
+      "reject": 57,
+      "state_hash": "03db197d14d33e12",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 2,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 79,
+      "cells": 846,
+      "hash": "4942627cca5fae58",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "UP",
+        "axis": [
+          "3b54688dc4290814",
+          "c65dc6a1176884d0"
+        ],
+        "axis_disagreements": 45,
+        "axis_mode": "exterior_lifetime_up",
+        "exterior_fraction": 0.5684,
+        "exterior_parent": "c65dc6a1176884d0",
+        "exterior_parent_lifetime": 57,
+        "lifetime_a": 55,
+        "lifetime_b": 57,
+        "lifetime_relation": "A_LOW_B_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.1",
+              "H.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "*",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 21,
+        "opposite_parent": "3b54688dc4290814",
+        "opposite_parent_lifetime": 55,
+        "requested_direction": "UP"
+      },
+      "operator": "ADOPT_UP",
+      "parents": [
+        "3b54688dc4290814",
+        "c65dc6a1176884d0"
+      ],
+      "reject": 56,
+      "state_hash": "d8cb42ded83ae88e",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 2,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 74,
+      "cells": 834,
+      "hash": "01160ad0ab61a364",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.1302,
+        "axis": [
+          "f8cb2e63009b9df7",
+          "cc11d947affc03ba"
+        ],
+        "axis_disagreements": 37,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          }
+        ],
+        "moves": 2
+      },
+      "operator": "MATE",
+      "parents": [
+        "f8cb2e63009b9df7",
+        "cc11d947affc03ba"
+      ],
+      "reject": 57,
+      "state_hash": "1ad8a3958d63c3f7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 10,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 89,
+      "cells": 834,
+      "hash": "04d42e6c8760aad2",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "EQUAL",
+        "axis": [
+          "f4ff8e03fbf65665",
+          "37bfa6e5dae12ded"
+        ],
+        "axis_disagreements": 34,
+        "axis_mode": "exterior_lifetime_equal",
+        "exterior_fraction": 0.671,
+        "exterior_parent": "37bfa6e5dae12ded",
+        "exterior_parent_lifetime": 57,
+        "lifetime_a": 57,
+        "lifetime_b": 57,
+        "lifetime_relation": "EQUAL_LIFETIME",
+        "moved": [
+          {
+            "from": "A->D.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "A->D.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.4",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.3",
+              "*",
+              "H.4"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 17,
+        "opposite_parent": "f4ff8e03fbf65665",
+        "opposite_parent_lifetime": 57,
+        "requested_direction": "EQUAL"
+      },
+      "operator": "ADOPT_EQUAL",
+      "parents": [
+        "f4ff8e03fbf65665",
+        "37bfa6e5dae12ded"
+      ],
+      "reject": 58,
+      "state_hash": "85d61e659346cb0b",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 3,
+      "used_accept": 45,
+      "used_reject": 41
+    },
+    {
+      "accept": 102,
+      "cells": 834,
+      "hash": "72623becd6ee4169",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.2707,
+        "axis": [
+          "95165584ec5de221",
+          "73e1d0360b6bb522"
+        ],
+        "axis_disagreements": 67,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.4",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.4",
+            "key": [
+              "*",
+              "H.2",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 13
+      },
+      "operator": "MATE",
+      "parents": [
+        "95165584ec5de221",
+        "73e1d0360b6bb522"
+      ],
+      "reject": 58,
+      "state_hash": "3ed0977de63c91d5",
+      "status": "STALLED_UNKNOWN",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 12,
+      "trial_index": 15,
+      "used_accept": 45,
+      "used_reject": 36
+    },
+    {
+      "accept": 92,
+      "cells": 828,
+      "hash": "1d6815546f03ccb0",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "edits": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          }
+        ],
+        "walk_length": 1
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "47fda41c579ef71e"
+      ],
+      "reject": 57,
+      "state_hash": "230bc18e171315b6",
+      "status": "STALLED_UNKNOWN",
+      "terminal_births": 0,
+      "terminal_step": 57,
+      "terminal_unknown_frontier": 12,
+      "trial_index": 12,
+      "used_accept": 44,
+      "used_reject": 38
+    },
+    {
+      "accept": 82,
+      "cells": 810,
+      "hash": "2380d75e322bd0b2",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.4202,
+        "axis": [
+          "64633e4da4511e36",
+          "17340261fbb94eef"
+        ],
+        "axis_disagreements": 49,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->D.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.5",
+              "H.1",
+              "H.0",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.2"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.1",
+              "H.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 16
+      },
+      "operator": "MATE",
+      "parents": [
+        "64633e4da4511e36",
+        "17340261fbb94eef"
+      ],
+      "reject": 84,
+      "state_hash": "a2b7d7e99421c594",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 9,
+      "used_accept": 40,
+      "used_reject": 44
+    },
+    {
+      "accept": 71,
+      "cells": 810,
+      "hash": "87243c3f451a9a7e",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "UP",
+        "axis": [
+          "55bf67887ae9ef9e",
+          "ce02fe3295689625"
+        ],
+        "axis_disagreements": 52,
+        "axis_mode": "exterior_lifetime_up",
+        "exterior_fraction": 0.603,
+        "exterior_parent": "ce02fe3295689625",
+        "exterior_parent_lifetime": 56,
+        "lifetime_a": 55,
+        "lifetime_b": 56,
+        "lifetime_relation": "A_LOW_B_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "H.3",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 23,
+        "opposite_parent": "55bf67887ae9ef9e",
+        "opposite_parent_lifetime": 55,
+        "requested_direction": "UP"
+      },
+      "operator": "ADOPT_UP",
+      "parents": [
+        "55bf67887ae9ef9e",
+        "ce02fe3295689625"
+      ],
+      "reject": 63,
+      "state_hash": "3ba1ef336249b753",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 7,
+      "used_accept": 41,
+      "used_reject": 42
+    },
+    {
+      "accept": 68,
+      "cells": 810,
+      "hash": "2fa5b1144b0fac72",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "edits": [
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "R"
+          }
+        ],
+        "walk_length": 3
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "bd20ebcec2116ef9"
+      ],
+      "reject": 62,
+      "state_hash": "4f09ca1ed2bdc4a1",
+      "status": "STALLED_UNKNOWN",
+      "terminal_births": 0,
+      "terminal_step": 59,
+      "terminal_unknown_frontier": 12,
+      "trial_index": 11,
+      "used_accept": 41,
+      "used_reject": 41
+    },
+    {
+      "accept": 74,
+      "cells": 804,
+      "hash": "03572214cd61d969",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.3271,
+        "axis": [
+          "64633e4da4511e36",
+          "c65dc6a1176884d0"
+        ],
+        "axis_disagreements": 61,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "*",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.3",
+              "H.3",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 20
+      },
+      "operator": "MATE",
+      "parents": [
+        "64633e4da4511e36",
+        "c65dc6a1176884d0"
+      ],
+      "reject": 85,
+      "state_hash": "e6cfe4baef43eafa",
+      "status": "STALLED_UNKNOWN",
+      "terminal_births": 0,
+      "terminal_step": 56,
+      "terminal_unknown_frontier": 6,
+      "trial_index": 8,
+      "used_accept": 41,
+      "used_reject": 43
+    },
+    {
+      "accept": 91,
+      "cells": 804,
+      "hash": "a165a7c524387434",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.4791,
+        "axis": [
+          "7470d683b89cc750",
+          "3734778a5ca54325"
+        ],
+        "axis_disagreements": 28,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->D.5",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "*",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "D.3",
+              "H.3",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.2",
+            "key": [
+              "*",
+              "D.5",
+              "H.1",
+              "H.0",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->D.3",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 9
+      },
+      "operator": "MATE",
+      "parents": [
+        "7470d683b89cc750",
+        "3734778a5ca54325"
+      ],
+      "reject": 61,
+      "state_hash": "0e04e83e8a83b93f",
+      "status": "STALLED_UNKNOWN",
+      "terminal_births": 0,
+      "terminal_step": 55,
+      "terminal_unknown_frontier": 24,
+      "trial_index": 14,
+      "used_accept": 40,
+      "used_reject": 38
+    },
+    {
+      "accept": 59,
+      "cells": 696,
+      "hash": "0980cc1be4562c45",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "H.4",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.5",
+              "D.2",
+              "H.1",
+              "H.2"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "A->H.5"
+          }
+        ],
+        "walk_length": 8
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "b1f77381e2b5a9bb"
+      ],
+      "reject": 61,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 8,
+      "used_accept": 38,
+      "used_reject": 44
+    },
+    {
+      "accept": 59,
+      "cells": 696,
+      "hash": "85859c3020ad7983",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "edits": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "A->H.2",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "D.3",
+              "D.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "A->D.5"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          }
+        ],
+        "walk_length": 4
+      },
+      "operator": "MUTATE",
+      "parents": [
+        "be4c66135ab54070"
+      ],
+      "reject": 59,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 9,
+      "used_accept": 38,
+      "used_reject": 43
+    },
+    {
+      "accept": 62,
+      "cells": 696,
+      "hash": "d4a35e871bfa4767",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.2043,
+        "axis": [
+          "86e96a462a8ab562",
+          "a5acd12ea1ff946f"
+        ],
+        "axis_disagreements": 56,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 10
+      },
+      "operator": "MATE",
+      "parents": [
+        "86e96a462a8ab562",
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 56,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 50,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 3,
+      "used_accept": 38,
+      "used_reject": 43
+    },
+    {
+      "accept": 61,
+      "cells": 696,
+      "hash": "939241136457a0a3",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.3789,
+        "axis": [
+          "5e0b3b266f2a6d24",
+          "c65dc6a1176884d0"
+        ],
+        "axis_disagreements": 30,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "D.4",
+              "H.3"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "A->H.0",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 9
+      },
+      "operator": "MATE",
+      "parents": [
+        "5e0b3b266f2a6d24",
+        "c65dc6a1176884d0"
+      ],
+      "reject": 59,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 52,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 6,
+      "used_accept": 38,
+      "used_reject": 42
+    },
+    {
+      "accept": 66,
+      "cells": 696,
+      "hash": "063b9d68fce45a8c",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "alpha": 0.4527,
+        "axis": [
+          "86e96a462a8ab562",
+          "17340261fbb94eef"
+        ],
+        "axis_disagreements": 43,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "A->D.5",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 17
+      },
+      "operator": "MATE",
+      "parents": [
+        "86e96a462a8ab562",
+        "17340261fbb94eef"
+      ],
+      "reject": 55,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 48,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 7,
+      "used_accept": 37,
+      "used_reject": 39
+    },
+    {
+      "accept": 59,
+      "cells": 696,
+      "hash": "2a38476708e002a8",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "ce02fe3295689625",
+          "be4c66135ab54070"
+        ],
+        "axis_disagreements": 26,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.4978,
+        "exterior_parent": "be4c66135ab54070",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 56,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 14,
+        "opposite_parent": "ce02fe3295689625",
+        "opposite_parent_lifetime": 56,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "ce02fe3295689625",
+        "be4c66135ab54070"
+      ],
+      "reject": 60,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 2,
+      "used_accept": 38,
+      "used_reject": 45
+    },
+    {
+      "accept": 53,
+      "cells": 696,
+      "hash": "dfef409f35fd37c3",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "c20427a3ed293464",
+          "849c0684397d1107"
+        ],
+        "axis_disagreements": 44,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.3561,
+        "exterior_parent": "849c0684397d1107",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 56,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "H.4",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 16,
+        "opposite_parent": "c20427a3ed293464",
+        "opposite_parent_lifetime": 56,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "c20427a3ed293464",
+        "849c0684397d1107"
+      ],
+      "reject": 66,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 3,
+      "used_accept": 37,
+      "used_reject": 45
+    },
+    {
+      "accept": 53,
+      "cells": 696,
+      "hash": "6eda4eb7af63e6cc",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "55bf67887ae9ef9e",
+          "a58e32f735436c9e"
+        ],
+        "axis_disagreements": 67,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.5113,
+        "exterior_parent": "a58e32f735436c9e",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 55,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "*",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "*",
+              "H.3",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 31,
+        "opposite_parent": "55bf67887ae9ef9e",
+        "opposite_parent_lifetime": 55,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "55bf67887ae9ef9e",
+        "a58e32f735436c9e"
+      ],
+      "reject": 65,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 4,
+      "used_accept": 38,
+      "used_reject": 44
+    },
+    {
+      "accept": 57,
+      "cells": 696,
+      "hash": "c49f6fc9c495eb57",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "3734778a5ca54325",
+          "e7006075d216440b"
+        ],
+        "axis_disagreements": 47,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.6465,
+        "exterior_parent": "e7006075d216440b",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 59,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.2",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.1",
+              "H.2"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 24,
+        "opposite_parent": "3734778a5ca54325",
+        "opposite_parent_lifetime": 59,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "3734778a5ca54325",
+        "e7006075d216440b"
+      ],
+      "reject": 63,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 6,
+      "used_accept": 37,
+      "used_reject": 43
+    },
+    {
+      "accept": 56,
+      "cells": 696,
+      "hash": "d99d8cffe08e7963",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "3734778a5ca54325",
+          "86e96a462a8ab562"
+        ],
+        "axis_disagreements": 47,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.3626,
+        "exterior_parent": "86e96a462a8ab562",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 59,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 22,
+        "opposite_parent": "3734778a5ca54325",
+        "opposite_parent_lifetime": 59,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "3734778a5ca54325",
+        "86e96a462a8ab562"
+      ],
+      "reject": 62,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 7,
+      "used_accept": 38,
+      "used_reject": 44
+    },
+    {
+      "accept": 53,
+      "cells": 696,
+      "hash": "a74be06ee3bccac5",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "70a962d222f1cb0e",
+          "b1f77381e2b5a9bb"
+        ],
+        "axis_disagreements": 59,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.2094,
+        "exterior_parent": "b1f77381e2b5a9bb",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 55,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.5",
+              "H.1",
+              "H.0",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.4",
+              "H.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 18,
+        "opposite_parent": "70a962d222f1cb0e",
+        "opposite_parent_lifetime": 55,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "70a962d222f1cb0e",
+        "b1f77381e2b5a9bb"
+      ],
+      "reject": 64,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 8,
+      "used_accept": 38,
+      "used_reject": 44
+    },
+    {
+      "accept": 58,
+      "cells": 696,
+      "hash": "68450bff16fe7374",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "f4ff8e03fbf65665",
+          "5e0b3b266f2a6d24"
+        ],
+        "axis_disagreements": 33,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.6697,
+        "exterior_parent": "5e0b3b266f2a6d24",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 57,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.1",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.2",
+              "D.1",
+              "H.5",
+              "H.0",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.3",
+              "H.1",
+              "H.3",
+              "D.1",
+              "H.1",
+              "H.2"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 20,
+        "opposite_parent": "f4ff8e03fbf65665",
+        "opposite_parent_lifetime": 57,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "f4ff8e03fbf65665",
+        "5e0b3b266f2a6d24"
+      ],
+      "reject": 63,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 9,
+      "used_accept": 38,
+      "used_reject": 44
+    },
+    {
+      "accept": 53,
+      "cells": 696,
+      "hash": "27cee13df227165d",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "55bf67887ae9ef9e",
+          "849c0684397d1107"
+        ],
+        "axis_disagreements": 64,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.4941,
+        "exterior_parent": "849c0684397d1107",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 55,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.3",
+              "*",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "*",
+              "H.3",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 31,
+        "opposite_parent": "55bf67887ae9ef9e",
+        "opposite_parent_lifetime": 55,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "55bf67887ae9ef9e",
+        "849c0684397d1107"
+      ],
+      "reject": 69,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 10,
+      "used_accept": 37,
+      "used_reject": 45
+    },
+    {
+      "accept": 54,
+      "cells": 696,
+      "hash": "be338398d2fc0382",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "47fda41c579ef71e",
+          "712d7b2c8d24ee6f"
+        ],
+        "axis_disagreements": 49,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.4471,
+        "exterior_parent": "712d7b2c8d24ee6f",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 60,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "*",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "*",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.4",
+              "H.3",
+              "H.4",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.0",
+              "H.2",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "D.2",
+              "H.1",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.5"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 22,
+        "opposite_parent": "47fda41c579ef71e",
+        "opposite_parent_lifetime": 60,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "47fda41c579ef71e",
+        "712d7b2c8d24ee6f"
+      ],
+      "reject": 66,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 11,
+      "used_accept": 37,
+      "used_reject": 43
+    },
+    {
+      "accept": 58,
+      "cells": 696,
+      "hash": "ad52c8ca4443e8e5",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "64633e4da4511e36",
+          "cb849bc314300e78"
+        ],
+        "axis_disagreements": 64,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.5785,
+        "exterior_parent": "cb849bc314300e78",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 57,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.3",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.2"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "A->H.1",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "H.3",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.2",
+              "D.0",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          }
+        ],
+        "moves": 35,
+        "opposite_parent": "64633e4da4511e36",
+        "opposite_parent_lifetime": 57,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "64633e4da4511e36",
+        "cb849bc314300e78"
+      ],
+      "reject": 61,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 12,
+      "used_accept": 38,
+      "used_reject": 45
+    },
+    {
+      "accept": 57,
+      "cells": 696,
+      "hash": "c482e1b63d8c5dc9",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "abd07da154d18eb0",
+          "73e1d0360b6bb522"
+        ],
+        "axis_disagreements": 59,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.4219,
+        "exterior_parent": "73e1d0360b6bb522",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 57,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.5"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.1",
+              "D.2",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.2",
+              "H.0",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "*",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "H.3",
+              "H.4",
+              "D.4",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.0"
+          }
+        ],
+        "moves": 25,
+        "opposite_parent": "abd07da154d18eb0",
+        "opposite_parent_lifetime": 57,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "abd07da154d18eb0",
+        "73e1d0360b6bb522"
+      ],
+      "reject": 66,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 13,
+      "used_accept": 38,
+      "used_reject": 44
+    },
+    {
+      "accept": 53,
+      "cells": 696,
+      "hash": "566587ef6baba660",
+      "is_new": true,
+      "is_new_terminal_state": false,
+      "meta": {
+        "actual_direction": "DOWN",
+        "axis": [
+          "3b54688dc4290814",
+          "ba9b196b11bc050e"
+        ],
+        "axis_disagreements": 65,
+        "axis_mode": "exterior_lifetime_down",
+        "exterior_fraction": 0.5396,
+        "exterior_parent": "ba9b196b11bc050e",
+        "exterior_parent_lifetime": 53,
+        "lifetime_a": 55,
+        "lifetime_b": 53,
+        "lifetime_relation": "B_LOW_A_HIGH",
+        "moved": [
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "D.2"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.4",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.2",
+              "D.0",
+              "H.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "A->H.0"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.1",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "*",
+              "*",
+              "H.0"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "*",
+              "D.3"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.2",
+              "H.5",
+              "H.0",
+              "D.3"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "*",
+              "H.2",
+              "H.1"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.3",
+              "*",
+              "H.4"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.2",
+              "D.4",
+              "D.1",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "H.3",
+              "D.1",
+              "*",
+              "D.5"
+            ],
+            "to": "blank"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "D.0",
+              "H.4",
+              "H.0"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "R"
+          }
+        ],
+        "moves": 35,
+        "opposite_parent": "3b54688dc4290814",
+        "opposite_parent_lifetime": 55,
+        "requested_direction": "DOWN"
+      },
+      "operator": "ADOPT_DOWN",
+      "parents": [
+        "3b54688dc4290814",
+        "ba9b196b11bc050e"
+      ],
+      "reject": 66,
+      "state_hash": "5bd5d0b2241e94d7",
+      "status": "CLOSED_CHILL",
+      "terminal_births": 0,
+      "terminal_step": 53,
+      "terminal_unknown_frontier": 0,
+      "trial_index": 14,
+      "used_accept": 38,
+      "used_reject": 44
+    },
+    {
+      "accept": 71,
+      "cells": 582,
+      "hash": "8e6b93de0a192599",
+      "is_new": true,
+      "is_new_terminal_state": true,
+      "meta": {
+        "alpha": 0.5433,
+        "axis": [
+          "73e1d0360b6bb522",
+          "47fda41c579ef71e"
+        ],
+        "axis_disagreements": 45,
+        "axis_mode": "interior_average",
+        "moved": [
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "D.1",
+              "H.0"
+            ],
+            "to": "A->H.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "*",
+              "H.5",
+              "D.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.2",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "D.3",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.0"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.1"
+            ],
+            "to": "A->D.2"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.0",
+              "H.5",
+              "H.4"
+            ],
+            "to": "A->D.1"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "*",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.0",
+              "*",
+              "*",
+              "D.5"
+            ],
+            "to": "A->H.4"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.1",
+              "*",
+              "H.3",
+              "D.4"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "*",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.1",
+              "H.3",
+              "H.2",
+              "H.5"
+            ],
+            "to": "A->D.3"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.4",
+              "H.1",
+              "*",
+              "D.0"
+            ],
+            "to": "A->H.2"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "*",
+              "H.5",
+              "*",
+              "H.0",
+              "D.3"
+            ],
+            "to": "A->H.1"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.0",
+              "D.3",
+              "H.2",
+              "H.3",
+              "H.1"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.1",
+              "*",
+              "H.4",
+              "D.5",
+              "H.3"
+            ],
+            "to": "A->H.5"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "D.3",
+              "D.0",
+              "*",
+              "H.1",
+              "D.5"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "blank",
+            "key": [
+              "*",
+              "H.0",
+              "D.1",
+              "H.5",
+              "H.3",
+              "D.4"
+            ],
+            "to": "R"
+          },
+          {
+            "from": "R",
+            "key": [
+              "*",
+              "H.2",
+              "H.4",
+              "H.3",
+              "H.0",
+              "D.1"
+            ],
+            "to": "A->D.4"
+          }
+        ],
+        "moves": 19
+      },
+      "operator": "MATE",
+      "parents": [
+        "73e1d0360b6bb522",
+        "47fda41c579ef71e"
+      ],
+      "reject": 53,
+      "state_hash": "fabe7cdae4c67a68",
+      "status": "STALLED_UNKNOWN",
+      "terminal_births": 0,
+      "terminal_step": 38,
+      "terminal_unknown_frontier": 18,
+      "trial_index": 5,
+      "used_accept": 36,
+      "used_reject": 31
+    }
+  ],
+  "trials": 45,
+  "unique_rule_hashes_tried": 96,
+  "valid_parent_records": 50
+}

@@ -1,0 +1,6358 @@
+{
+  "artifact": "apex852_pdf_payload_v88_reduced_certificate",
+  "source_rule_record": "/mnt/data/apex_v43/release09/data_image/apex_852_slowest_depth60.json",
+  "derivation": "known-good source accept/reject status orbits transformed into current visible frame, then reduced to rules actually touched by verified finite growth; current visible-frame canonicalization uses slot p->p+k and state index i->i+k",
+  "mask_order": "mask string positions are visible slots 1..6 = E,NE,NW,W,SW,SE; e.g. 011000 keeps slots 2 and 3",
+  "canonicalization": "visual-frame C6: rotate key by k with slot p -> p+k and state index i -> i+k; choose lexicographic minimum",
+  "counts": {
+    "accept": 48,
+    "reject": 41,
+    "blank": 447,
+    "pad_to_540": 4,
+    "unique_canonical_neighbor_contexts": 536
+  },
+  "seed_axiom": {
+    "-1,0": "H.0",
+    "-1,1": "H.1",
+    "0,-1": "H.5",
+    "0,1": "H.2",
+    "1,-1": "H.4",
+    "1,0": "H.3"
+  },
+  "p7_templates": [
+    {
+      "rep_index": 0,
+      "center": "H.3",
+      "slots": [
+        "H.5",
+        "H.1",
+        "H.4",
+        "D.5",
+        "D.2",
+        "H.0"
+      ],
+      "center_xy": [
+        222.0,
+        44.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 233.172,
+          "cy": 44.5,
+          "state": "H.5"
+        },
+        {
+          "cx": 227.586,
+          "cy": 34.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 216.414,
+          "cy": 34.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 210.828,
+          "cy": 44.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 216.414,
+          "cy": 54.175,
+          "state": "D.2"
+        },
+        {
+          "cx": 227.586,
+          "cy": 54.175,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 1,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.5",
+        "H.1",
+        "D.3",
+        "H.2",
+        "H.0"
+      ],
+      "center_xy": [
+        278.0,
+        44.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 289.172,
+          "cy": 44.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 283.586,
+          "cy": 34.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 272.414,
+          "cy": 34.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 266.828,
+          "cy": 44.5,
+          "state": "D.3"
+        },
+        {
+          "cx": 272.414,
+          "cy": 54.175,
+          "state": "H.2"
+        },
+        {
+          "cx": 283.586,
+          "cy": 54.175,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 2,
+      "center": "H.3",
+      "slots": [
+        "H.5",
+        "H.1",
+        "H.4",
+        "D.4",
+        "H.2",
+        "H.0"
+      ],
+      "center_xy": [
+        334.0,
+        44.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 345.172,
+          "cy": 44.5,
+          "state": "H.5"
+        },
+        {
+          "cx": 339.586,
+          "cy": 34.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 328.414,
+          "cy": 34.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 322.828,
+          "cy": 44.5,
+          "state": "D.4"
+        },
+        {
+          "cx": 328.414,
+          "cy": 54.175,
+          "state": "H.2"
+        },
+        {
+          "cx": 339.586,
+          "cy": 54.175,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 3,
+      "center": "D.0",
+      "slots": [
+        "D.3",
+        "H.4",
+        "H.5",
+        "H.0",
+        "H.4",
+        "H.1"
+      ],
+      "center_xy": [
+        390.0,
+        44.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 401.172,
+          "cy": 44.5,
+          "state": "D.3"
+        },
+        {
+          "cx": 395.586,
+          "cy": 34.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 384.414,
+          "cy": 34.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 378.828,
+          "cy": 44.5,
+          "state": "H.0"
+        },
+        {
+          "cx": 384.414,
+          "cy": 54.175,
+          "state": "H.4"
+        },
+        {
+          "cx": 395.586,
+          "cy": 54.175,
+          "state": "H.1"
+        }
+      ]
+    },
+    {
+      "rep_index": 4,
+      "center": "D.0",
+      "slots": [
+        "D.3",
+        "H.4",
+        "H.5",
+        "H.3",
+        "H.4",
+        "H.1"
+      ],
+      "center_xy": [
+        222.0,
+        96.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 233.172,
+          "cy": 96.5,
+          "state": "D.3"
+        },
+        {
+          "cx": 227.586,
+          "cy": 86.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 216.414,
+          "cy": 86.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 210.828,
+          "cy": 96.5,
+          "state": "H.3"
+        },
+        {
+          "cx": 216.414,
+          "cy": 106.175,
+          "state": "H.4"
+        },
+        {
+          "cx": 227.586,
+          "cy": 106.175,
+          "state": "H.1"
+        }
+      ]
+    },
+    {
+      "rep_index": 5,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.2",
+        "H.1",
+        "D.4",
+        "H.2",
+        "H.0"
+      ],
+      "center_xy": [
+        278.0,
+        96.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 289.172,
+          "cy": 96.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 283.586,
+          "cy": 86.825,
+          "state": "H.2"
+        },
+        {
+          "cx": 272.414,
+          "cy": 86.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 266.828,
+          "cy": 96.5,
+          "state": "D.4"
+        },
+        {
+          "cx": 272.414,
+          "cy": 106.175,
+          "state": "H.2"
+        },
+        {
+          "cx": 283.586,
+          "cy": 106.175,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 6,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.4",
+        "D.4",
+        "H.2",
+        "H.4"
+      ],
+      "center_xy": [
+        334.0,
+        96.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 345.172,
+          "cy": 96.5,
+          "state": "D.0"
+        },
+        {
+          "cx": 339.586,
+          "cy": 86.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 328.414,
+          "cy": 86.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 322.828,
+          "cy": 96.5,
+          "state": "D.4"
+        },
+        {
+          "cx": 328.414,
+          "cy": 106.175,
+          "state": "H.2"
+        },
+        {
+          "cx": 339.586,
+          "cy": 106.175,
+          "state": "H.4"
+        }
+      ]
+    },
+    {
+      "rep_index": 7,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.4",
+        "D.5",
+        "D.2",
+        "H.4"
+      ],
+      "center_xy": [
+        390.0,
+        96.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 401.172,
+          "cy": 96.5,
+          "state": "D.0"
+        },
+        {
+          "cx": 395.586,
+          "cy": 86.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 384.414,
+          "cy": 86.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 378.828,
+          "cy": 96.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 384.414,
+          "cy": 106.175,
+          "state": "D.2"
+        },
+        {
+          "cx": 395.586,
+          "cy": 106.175,
+          "state": "H.4"
+        }
+      ]
+    },
+    {
+      "rep_index": 8,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.2",
+        "D.1",
+        "D.4",
+        "H.2",
+        "H.0"
+      ],
+      "center_xy": [
+        222.0,
+        148.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 233.172,
+          "cy": 148.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 227.586,
+          "cy": 138.825,
+          "state": "H.2"
+        },
+        {
+          "cx": 216.414,
+          "cy": 138.825,
+          "state": "D.1"
+        },
+        {
+          "cx": 210.828,
+          "cy": 148.5,
+          "state": "D.4"
+        },
+        {
+          "cx": 216.414,
+          "cy": 158.176,
+          "state": "H.2"
+        },
+        {
+          "cx": 227.586,
+          "cy": 158.176,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 9,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.2",
+        "H.1",
+        "D.3",
+        "H.2",
+        "H.0"
+      ],
+      "center_xy": [
+        278.0,
+        148.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 289.172,
+          "cy": 148.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 283.586,
+          "cy": 138.825,
+          "state": "H.2"
+        },
+        {
+          "cx": 272.414,
+          "cy": 138.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 266.828,
+          "cy": 148.5,
+          "state": "D.3"
+        },
+        {
+          "cx": 272.414,
+          "cy": 158.176,
+          "state": "H.2"
+        },
+        {
+          "cx": 283.586,
+          "cy": 158.176,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 10,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.1",
+        "D.3",
+        "H.2",
+        "H.4"
+      ],
+      "center_xy": [
+        334.0,
+        148.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 345.172,
+          "cy": 148.5,
+          "state": "D.0"
+        },
+        {
+          "cx": 339.586,
+          "cy": 138.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 328.414,
+          "cy": 138.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 322.828,
+          "cy": 148.5,
+          "state": "D.3"
+        },
+        {
+          "cx": 328.414,
+          "cy": 158.176,
+          "state": "H.2"
+        },
+        {
+          "cx": 339.586,
+          "cy": 158.176,
+          "state": "H.4"
+        }
+      ]
+    },
+    {
+      "rep_index": 11,
+      "center": "D.0",
+      "slots": [
+        "D.3",
+        "H.4",
+        "H.5",
+        "D.3",
+        "H.2",
+        "H.1"
+      ],
+      "center_xy": [
+        390.0,
+        148.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 401.172,
+          "cy": 148.5,
+          "state": "D.3"
+        },
+        {
+          "cx": 395.586,
+          "cy": 138.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 384.414,
+          "cy": 138.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 378.828,
+          "cy": 148.5,
+          "state": "D.3"
+        },
+        {
+          "cx": 384.414,
+          "cy": 158.176,
+          "state": "H.2"
+        },
+        {
+          "cx": 395.586,
+          "cy": 158.176,
+          "state": "H.1"
+        }
+      ]
+    },
+    {
+      "rep_index": 12,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.5",
+        "H.4",
+        "D.4",
+        "H.2",
+        "H.0"
+      ],
+      "center_xy": [
+        222.0,
+        200.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 233.172,
+          "cy": 200.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 227.586,
+          "cy": 190.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 216.414,
+          "cy": 190.825,
+          "state": "H.4"
+        },
+        {
+          "cx": 210.828,
+          "cy": 200.5,
+          "state": "D.4"
+        },
+        {
+          "cx": 216.414,
+          "cy": 210.176,
+          "state": "H.2"
+        },
+        {
+          "cx": 227.586,
+          "cy": 210.176,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 13,
+      "center": "H.3",
+      "slots": [
+        "D.5",
+        "H.5",
+        "H.1",
+        "D.4",
+        "H.2",
+        "H.0"
+      ],
+      "center_xy": [
+        278.0,
+        200.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 289.172,
+          "cy": 200.5,
+          "state": "D.5"
+        },
+        {
+          "cx": 283.586,
+          "cy": 190.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 272.414,
+          "cy": 190.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 266.828,
+          "cy": 200.5,
+          "state": "D.4"
+        },
+        {
+          "cx": 272.414,
+          "cy": 210.176,
+          "state": "H.2"
+        },
+        {
+          "cx": 283.586,
+          "cy": 210.176,
+          "state": "H.0"
+        }
+      ]
+    },
+    {
+      "rep_index": 14,
+      "center": "H.3",
+      "slots": [
+        "D.0",
+        "H.5",
+        "H.1",
+        "D.4",
+        "H.2",
+        "H.4"
+      ],
+      "center_xy": [
+        334.0,
+        200.5
+      ],
+      "slot_geom": [
+        {
+          "cx": 345.172,
+          "cy": 200.5,
+          "state": "D.0"
+        },
+        {
+          "cx": 339.586,
+          "cy": 190.825,
+          "state": "H.5"
+        },
+        {
+          "cx": 328.414,
+          "cy": 190.825,
+          "state": "H.1"
+        },
+        {
+          "cx": 322.828,
+          "cy": 200.5,
+          "state": "D.4"
+        },
+        {
+          "cx": 328.414,
+          "cy": 210.176,
+          "state": "H.2"
+        },
+        {
+          "cx": 339.586,
+          "cy": 210.176,
+          "state": "H.4"
+        }
+      ]
+    }
+  ],
+  "matrix_rows": [
+    {
+      "matrix_index": 0,
+      "outer_index": 0,
+      "rep_index": 0,
+      "mask": 0,
+      "mask_bits_slot1_to_slot6": "000000",
+      "canonical_neighbor_key": "*|*|*|*|*|*",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 1,
+      "outer_index": 1,
+      "rep_index": 0,
+      "mask": 1,
+      "mask_bits_slot1_to_slot6": "100000",
+      "canonical_neighbor_key": "*|*|*|*|*|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 2,
+      "outer_index": 2,
+      "rep_index": 0,
+      "mask": 2,
+      "mask_bits_slot1_to_slot6": "010000",
+      "canonical_neighbor_key": "*|*|*|*|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 3,
+      "outer_index": 3,
+      "rep_index": 0,
+      "mask": 3,
+      "mask_bits_slot1_to_slot6": "110000",
+      "canonical_neighbor_key": "*|*|*|*|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 4,
+      "outer_index": 4,
+      "rep_index": 0,
+      "mask": 4,
+      "mask_bits_slot1_to_slot6": "001000",
+      "canonical_neighbor_key": "*|*|*|*|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 5,
+      "outer_index": 5,
+      "rep_index": 0,
+      "mask": 5,
+      "mask_bits_slot1_to_slot6": "101000",
+      "canonical_neighbor_key": "*|*|*|H.2|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 6,
+      "outer_index": 6,
+      "rep_index": 0,
+      "mask": 6,
+      "mask_bits_slot1_to_slot6": "011000",
+      "canonical_neighbor_key": "*|*|*|*|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 7,
+      "outer_index": 7,
+      "rep_index": 0,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|H.2|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 8,
+      "outer_index": 8,
+      "rep_index": 0,
+      "mask": 8,
+      "mask_bits_slot1_to_slot6": "000100",
+      "canonical_neighbor_key": "*|*|*|*|*|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 9,
+      "outer_index": 9,
+      "rep_index": 0,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.4|*|*|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 10,
+      "outer_index": 10,
+      "rep_index": 0,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.3|*|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 11,
+      "outer_index": 11,
+      "rep_index": 0,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|H.1|H.3|*|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 12,
+      "outer_index": 12,
+      "rep_index": 0,
+      "mask": 12,
+      "mask_bits_slot1_to_slot6": "001100",
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 13,
+      "outer_index": 13,
+      "rep_index": 0,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|H.1|*|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 14,
+      "outer_index": 14,
+      "rep_index": 0,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 15,
+      "outer_index": 15,
+      "rep_index": 0,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|H.1|H.3|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 16,
+      "outer_index": 16,
+      "rep_index": 0,
+      "mask": 16,
+      "mask_bits_slot1_to_slot6": "000010",
+      "canonical_neighbor_key": "*|*|*|*|*|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 17,
+      "outer_index": 17,
+      "rep_index": 0,
+      "mask": 17,
+      "mask_bits_slot1_to_slot6": "100010",
+      "canonical_neighbor_key": "*|*|*|D.1|*|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 18,
+      "outer_index": 18,
+      "rep_index": 0,
+      "mask": 18,
+      "mask_bits_slot1_to_slot6": "010010",
+      "canonical_neighbor_key": "*|*|D.0|*|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 19,
+      "outer_index": 19,
+      "rep_index": 0,
+      "mask": 19,
+      "mask_bits_slot1_to_slot6": "110010",
+      "canonical_neighbor_key": "*|*|D.0|*|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 20,
+      "outer_index": 20,
+      "rep_index": 0,
+      "mask": 20,
+      "mask_bits_slot1_to_slot6": "001010",
+      "canonical_neighbor_key": "*|*|*|H.5|*|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 21,
+      "outer_index": 21,
+      "rep_index": 0,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.5|*|H.2|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 22,
+      "outer_index": 22,
+      "rep_index": 0,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.2|H.5|*|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 23,
+      "outer_index": 23,
+      "rep_index": 0,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.5|*|H.2|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 24,
+      "outer_index": 24,
+      "rep_index": 0,
+      "mask": 24,
+      "mask_bits_slot1_to_slot6": "000110",
+      "canonical_neighbor_key": "*|*|*|*|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 25,
+      "outer_index": 25,
+      "rep_index": 0,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|D.4|D.1|*|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 26,
+      "outer_index": 26,
+      "rep_index": 0,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.2|*|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 27,
+      "outer_index": 27,
+      "rep_index": 0,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.3|D.0|*|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 28,
+      "outer_index": 28,
+      "rep_index": 0,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|H.5|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 29,
+      "outer_index": 29,
+      "rep_index": 0,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|H.0|*|H.5|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 30,
+      "outer_index": 30,
+      "rep_index": 0,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.2|H.5|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 31,
+      "outer_index": 31,
+      "rep_index": 0,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|H.0|H.2|H.5|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 32,
+      "outer_index": 32,
+      "rep_index": 0,
+      "mask": 32,
+      "mask_bits_slot1_to_slot6": "000001",
+      "canonical_neighbor_key": "*|*|*|*|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 33,
+      "outer_index": 33,
+      "rep_index": 0,
+      "mask": 33,
+      "mask_bits_slot1_to_slot6": "100001",
+      "canonical_neighbor_key": "*|*|*|*|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 34,
+      "outer_index": 34,
+      "rep_index": 0,
+      "mask": 34,
+      "mask_bits_slot1_to_slot6": "010001",
+      "canonical_neighbor_key": "*|*|*|H.4|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 35,
+      "outer_index": 35,
+      "rep_index": 0,
+      "mask": 35,
+      "mask_bits_slot1_to_slot6": "110001",
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 36,
+      "outer_index": 36,
+      "rep_index": 0,
+      "mask": 36,
+      "mask_bits_slot1_to_slot6": "001001",
+      "canonical_neighbor_key": "*|*|H.3|*|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 37,
+      "outer_index": 37,
+      "rep_index": 0,
+      "mask": 37,
+      "mask_bits_slot1_to_slot6": "101001",
+      "canonical_neighbor_key": "*|*|H.3|H.2|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 38,
+      "outer_index": 38,
+      "rep_index": 0,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.3|*|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 39,
+      "outer_index": 39,
+      "rep_index": 0,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.3|H.2|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 40,
+      "outer_index": 40,
+      "rep_index": 0,
+      "mask": 40,
+      "mask_bits_slot1_to_slot6": "000101",
+      "canonical_neighbor_key": "*|*|*|D.5|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 41,
+      "outer_index": 41,
+      "rep_index": 0,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|D.4|*|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 42,
+      "outer_index": 42,
+      "rep_index": 0,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.3|*|H.4|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 43,
+      "outer_index": 43,
+      "rep_index": 0,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.3|*|H.4|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 44,
+      "outer_index": 44,
+      "rep_index": 0,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.4|D.5|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 45,
+      "outer_index": 45,
+      "rep_index": 0,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.2|H.1|*|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 46,
+      "outer_index": 46,
+      "rep_index": 0,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.1|H.4|D.5|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 47,
+      "outer_index": 47,
+      "rep_index": 0,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|H.1|H.3|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 48,
+      "outer_index": 48,
+      "rep_index": 0,
+      "mask": 48,
+      "mask_bits_slot1_to_slot6": "000011",
+      "canonical_neighbor_key": "*|*|*|*|D.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 49,
+      "outer_index": 49,
+      "rep_index": 0,
+      "mask": 49,
+      "mask_bits_slot1_to_slot6": "100011",
+      "canonical_neighbor_key": "*|*|*|D.1|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 50,
+      "outer_index": 50,
+      "rep_index": 0,
+      "mask": 50,
+      "mask_bits_slot1_to_slot6": "010011",
+      "canonical_neighbor_key": "*|*|D.0|H.4|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 51,
+      "outer_index": 51,
+      "rep_index": 0,
+      "mask": 51,
+      "mask_bits_slot1_to_slot6": "110011",
+      "canonical_neighbor_key": "*|*|D.0|H.4|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 52,
+      "outer_index": 52,
+      "rep_index": 0,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|H.4|*|D.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 53,
+      "outer_index": 53,
+      "rep_index": 0,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|D.5|H.3|H.2|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 54,
+      "outer_index": 54,
+      "rep_index": 0,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|D.5|H.3|*|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 55,
+      "outer_index": 55,
+      "rep_index": 0,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|D.5|H.3|H.2|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 56,
+      "outer_index": 56,
+      "rep_index": 0,
+      "mask": 56,
+      "mask_bits_slot1_to_slot6": "000111",
+      "canonical_neighbor_key": "*|*|*|D.5|D.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 57,
+      "outer_index": 57,
+      "rep_index": 0,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|D.4|D.1|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 58,
+      "outer_index": 58,
+      "rep_index": 0,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.3|D.0|H.4|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 59,
+      "outer_index": 59,
+      "rep_index": 0,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.3|D.0|H.4|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 60,
+      "outer_index": 60,
+      "rep_index": 0,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.4|D.5|D.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 61,
+      "outer_index": 61,
+      "rep_index": 0,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.3|D.4|D.1|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 62,
+      "outer_index": 62,
+      "rep_index": 0,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.1|H.4|D.5|D.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 63,
+      "outer_index": 63,
+      "rep_index": 0,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.2|D.5|H.3|H.2|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 64,
+      "outer_index": 65,
+      "rep_index": 1,
+      "mask": 1,
+      "mask_bits_slot1_to_slot6": "100000",
+      "canonical_neighbor_key": "*|*|*|*|*|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 65,
+      "outer_index": 66,
+      "rep_index": 1,
+      "mask": 2,
+      "mask_bits_slot1_to_slot6": "010000",
+      "canonical_neighbor_key": "*|*|*|*|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 66,
+      "outer_index": 67,
+      "rep_index": 1,
+      "mask": 3,
+      "mask_bits_slot1_to_slot6": "110000",
+      "canonical_neighbor_key": "*|*|*|*|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 67,
+      "outer_index": 69,
+      "rep_index": 1,
+      "mask": 5,
+      "mask_bits_slot1_to_slot6": "101000",
+      "canonical_neighbor_key": "*|*|*|D.2|*|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 68,
+      "outer_index": 70,
+      "rep_index": 1,
+      "mask": 6,
+      "mask_bits_slot1_to_slot6": "011000",
+      "canonical_neighbor_key": "*|*|*|*|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 69,
+      "outer_index": 71,
+      "rep_index": 1,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|D.2|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 70,
+      "outer_index": 72,
+      "rep_index": 1,
+      "mask": 8,
+      "mask_bits_slot1_to_slot6": "000100",
+      "canonical_neighbor_key": "*|*|*|*|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 71,
+      "outer_index": 73,
+      "rep_index": 1,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.1|*|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 72,
+      "outer_index": 74,
+      "rep_index": 1,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.1|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 73,
+      "outer_index": 75,
+      "rep_index": 1,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.1|H.1|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 74,
+      "outer_index": 76,
+      "rep_index": 1,
+      "mask": 12,
+      "mask_bits_slot1_to_slot6": "001100",
+      "canonical_neighbor_key": "*|*|*|*|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 75,
+      "outer_index": 77,
+      "rep_index": 1,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.1|*|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 76,
+      "outer_index": 78,
+      "rep_index": 1,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.1|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 77,
+      "outer_index": 79,
+      "rep_index": 1,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.1|H.1|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 78,
+      "outer_index": 81,
+      "rep_index": 1,
+      "mask": 17,
+      "mask_bits_slot1_to_slot6": "100010",
+      "canonical_neighbor_key": "*|*|*|H.1|*|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 79,
+      "outer_index": 82,
+      "rep_index": 1,
+      "mask": 18,
+      "mask_bits_slot1_to_slot6": "010010",
+      "canonical_neighbor_key": "*|*|H.0|*|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 80,
+      "outer_index": 83,
+      "rep_index": 1,
+      "mask": 19,
+      "mask_bits_slot1_to_slot6": "110010",
+      "canonical_neighbor_key": "*|*|H.0|*|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 81,
+      "outer_index": 84,
+      "rep_index": 1,
+      "mask": 20,
+      "mask_bits_slot1_to_slot6": "001010",
+      "canonical_neighbor_key": "*|*|*|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 82,
+      "outer_index": 85,
+      "rep_index": 1,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.0|*|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 83,
+      "outer_index": 86,
+      "rep_index": 1,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.0|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 84,
+      "outer_index": 87,
+      "rep_index": 1,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.0|H.0|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 85,
+      "outer_index": 88,
+      "rep_index": 1,
+      "mask": 24,
+      "mask_bits_slot1_to_slot6": "000110",
+      "canonical_neighbor_key": "*|*|*|*|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 86,
+      "outer_index": 89,
+      "rep_index": 1,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|D.2|H.1|*|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 87,
+      "outer_index": 90,
+      "rep_index": 1,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.0|*|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 88,
+      "outer_index": 91,
+      "rep_index": 1,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.0|H.0|*|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 89,
+      "outer_index": 92,
+      "rep_index": 1,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 90,
+      "outer_index": 93,
+      "rep_index": 1,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.0|*|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 91,
+      "outer_index": 94,
+      "rep_index": 1,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.0|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 92,
+      "outer_index": 95,
+      "rep_index": 1,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.0|H.0|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 93,
+      "outer_index": 97,
+      "rep_index": 1,
+      "mask": 33,
+      "mask_bits_slot1_to_slot6": "100001",
+      "canonical_neighbor_key": "*|*|*|*|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 94,
+      "outer_index": 98,
+      "rep_index": 1,
+      "mask": 34,
+      "mask_bits_slot1_to_slot6": "010001",
+      "canonical_neighbor_key": "*|*|*|H.4|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 95,
+      "outer_index": 99,
+      "rep_index": 1,
+      "mask": 35,
+      "mask_bits_slot1_to_slot6": "110001",
+      "canonical_neighbor_key": "*|*|*|H.4|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 96,
+      "outer_index": 100,
+      "rep_index": 1,
+      "mask": 36,
+      "mask_bits_slot1_to_slot6": "001001",
+      "canonical_neighbor_key": "*|*|H.1|*|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 97,
+      "outer_index": 101,
+      "rep_index": 1,
+      "mask": 37,
+      "mask_bits_slot1_to_slot6": "101001",
+      "canonical_neighbor_key": "*|*|H.3|D.2|*|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 98,
+      "outer_index": 102,
+      "rep_index": 1,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.3|*|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 99,
+      "outer_index": 103,
+      "rep_index": 1,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.3|D.2|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 100,
+      "outer_index": 104,
+      "rep_index": 1,
+      "mask": 40,
+      "mask_bits_slot1_to_slot6": "000101",
+      "canonical_neighbor_key": "*|*|*|D.3|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 101,
+      "outer_index": 105,
+      "rep_index": 1,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|D.2|*|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 102,
+      "outer_index": 106,
+      "rep_index": 1,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.1|*|H.4|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 103,
+      "outer_index": 107,
+      "rep_index": 1,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.1|*|H.4|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 104,
+      "outer_index": 108,
+      "rep_index": 1,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.1|D.3|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 105,
+      "outer_index": 109,
+      "rep_index": 1,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.0|D.2|*|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 106,
+      "outer_index": 110,
+      "rep_index": 1,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.2|*|H.1|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 107,
+      "outer_index": 111,
+      "rep_index": 1,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|D.1|H.1|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 108,
+      "outer_index": 112,
+      "rep_index": 1,
+      "mask": 48,
+      "mask_bits_slot1_to_slot6": "000011",
+      "canonical_neighbor_key": "*|*|*|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 109,
+      "outer_index": 113,
+      "rep_index": 1,
+      "mask": 49,
+      "mask_bits_slot1_to_slot6": "100011",
+      "canonical_neighbor_key": "*|*|*|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 110,
+      "outer_index": 114,
+      "rep_index": 1,
+      "mask": 50,
+      "mask_bits_slot1_to_slot6": "010011",
+      "canonical_neighbor_key": "*|*|H.0|H.4|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 111,
+      "outer_index": 115,
+      "rep_index": 1,
+      "mask": 51,
+      "mask_bits_slot1_to_slot6": "110011",
+      "canonical_neighbor_key": "*|*|H.0|H.4|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 112,
+      "outer_index": 116,
+      "rep_index": 1,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|H.1|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 113,
+      "outer_index": 117,
+      "rep_index": 1,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|H.0|*|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 114,
+      "outer_index": 118,
+      "rep_index": 1,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.5|H.1|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 115,
+      "outer_index": 119,
+      "rep_index": 1,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.3|D.2|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 116,
+      "outer_index": 120,
+      "rep_index": 1,
+      "mask": 56,
+      "mask_bits_slot1_to_slot6": "000111",
+      "canonical_neighbor_key": "*|*|*|D.3|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 117,
+      "outer_index": 121,
+      "rep_index": 1,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 118,
+      "outer_index": 122,
+      "rep_index": 1,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.1|H.0|H.4|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 119,
+      "outer_index": 123,
+      "rep_index": 1,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.1|H.0|H.4|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 120,
+      "outer_index": 124,
+      "rep_index": 1,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.1|D.3|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 121,
+      "outer_index": 125,
+      "rep_index": 1,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.0|D.2|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 122,
+      "outer_index": 126,
+      "rep_index": 1,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.5|H.1|D.3|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 123,
+      "outer_index": 127,
+      "rep_index": 1,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.0|H.5|H.3|D.2|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 124,
+      "outer_index": 136,
+      "rep_index": 2,
+      "mask": 8,
+      "mask_bits_slot1_to_slot6": "000100",
+      "canonical_neighbor_key": "*|*|*|*|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 125,
+      "outer_index": 137,
+      "rep_index": 2,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.3|*|*|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 126,
+      "outer_index": 138,
+      "rep_index": 2,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.3|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 127,
+      "outer_index": 139,
+      "rep_index": 2,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|H.1|H.3|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 128,
+      "outer_index": 140,
+      "rep_index": 2,
+      "mask": 12,
+      "mask_bits_slot1_to_slot6": "001100",
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 129,
+      "outer_index": 141,
+      "rep_index": 2,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|H.1|*|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 130,
+      "outer_index": 142,
+      "rep_index": 2,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 131,
+      "outer_index": 143,
+      "rep_index": 2,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|H.1|H.3|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 132,
+      "outer_index": 145,
+      "rep_index": 2,
+      "mask": 17,
+      "mask_bits_slot1_to_slot6": "100010",
+      "canonical_neighbor_key": "*|*|*|H.1|*|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 133,
+      "outer_index": 146,
+      "rep_index": 2,
+      "mask": 18,
+      "mask_bits_slot1_to_slot6": "010010",
+      "canonical_neighbor_key": "*|*|H.0|*|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 134,
+      "outer_index": 147,
+      "rep_index": 2,
+      "mask": 19,
+      "mask_bits_slot1_to_slot6": "110010",
+      "canonical_neighbor_key": "*|*|H.0|*|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 135,
+      "outer_index": 148,
+      "rep_index": 2,
+      "mask": 20,
+      "mask_bits_slot1_to_slot6": "001010",
+      "canonical_neighbor_key": "*|*|*|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 136,
+      "outer_index": 149,
+      "rep_index": 2,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|H.0|*|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 137,
+      "outer_index": 150,
+      "rep_index": 2,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.2|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 138,
+      "outer_index": 151,
+      "rep_index": 2,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|H.0|H.2|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 139,
+      "outer_index": 152,
+      "rep_index": 2,
+      "mask": 24,
+      "mask_bits_slot1_to_slot6": "000110",
+      "canonical_neighbor_key": "*|*|*|*|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 140,
+      "outer_index": 153,
+      "rep_index": 2,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|D.3|H.1|*|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 141,
+      "outer_index": 154,
+      "rep_index": 2,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.2|*|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 142,
+      "outer_index": 155,
+      "rep_index": 2,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.2|H.0|*|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 143,
+      "outer_index": 156,
+      "rep_index": 2,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 144,
+      "outer_index": 157,
+      "rep_index": 2,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|H.0|*|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 145,
+      "outer_index": 158,
+      "rep_index": 2,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.2|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 146,
+      "outer_index": 159,
+      "rep_index": 2,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|H.0|H.2|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 147,
+      "outer_index": 168,
+      "rep_index": 2,
+      "mask": 40,
+      "mask_bits_slot1_to_slot6": "000101",
+      "canonical_neighbor_key": "*|*|*|D.4|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 148,
+      "outer_index": 169,
+      "rep_index": 2,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|D.3|*|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 149,
+      "outer_index": 170,
+      "rep_index": 2,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.2|*|H.4|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 150,
+      "outer_index": 171,
+      "rep_index": 2,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.2|*|H.4|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 151,
+      "outer_index": 172,
+      "rep_index": 2,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.4|D.4|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 152,
+      "outer_index": 173,
+      "rep_index": 2,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.2|H.1|*|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 153,
+      "outer_index": 174,
+      "rep_index": 2,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.1|H.4|D.4|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 154,
+      "outer_index": 175,
+      "rep_index": 2,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|H.1|H.3|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 155,
+      "outer_index": 177,
+      "rep_index": 2,
+      "mask": 49,
+      "mask_bits_slot1_to_slot6": "100011",
+      "canonical_neighbor_key": "*|*|*|H.1|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 156,
+      "outer_index": 178,
+      "rep_index": 2,
+      "mask": 50,
+      "mask_bits_slot1_to_slot6": "010011",
+      "canonical_neighbor_key": "*|*|H.0|H.4|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 157,
+      "outer_index": 179,
+      "rep_index": 2,
+      "mask": 51,
+      "mask_bits_slot1_to_slot6": "110011",
+      "canonical_neighbor_key": "*|*|H.0|H.4|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 158,
+      "outer_index": 180,
+      "rep_index": 2,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|H.4|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 159,
+      "outer_index": 181,
+      "rep_index": 2,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|H.3|*|H.1|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 160,
+      "outer_index": 182,
+      "rep_index": 2,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.1|H.4|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 161,
+      "outer_index": 183,
+      "rep_index": 2,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.3|H.2|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 162,
+      "outer_index": 184,
+      "rep_index": 2,
+      "mask": 56,
+      "mask_bits_slot1_to_slot6": "000111",
+      "canonical_neighbor_key": "*|*|*|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 163,
+      "outer_index": 185,
+      "rep_index": 2,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|D.3|H.1|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 164,
+      "outer_index": 186,
+      "rep_index": 2,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.4|*|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 165,
+      "outer_index": 187,
+      "rep_index": 2,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.4|H.3|H.5",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 166,
+      "outer_index": 188,
+      "rep_index": 2,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.4|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 167,
+      "outer_index": 189,
+      "rep_index": 2,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.3|D.3|H.1|H.5|H.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 168,
+      "outer_index": 190,
+      "rep_index": 2,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.1|H.4|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 169,
+      "outer_index": 191,
+      "rep_index": 2,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.1|H.5|H.3|H.2|H.4|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 170,
+      "outer_index": 193,
+      "rep_index": 3,
+      "mask": 1,
+      "mask_bits_slot1_to_slot6": "100000",
+      "canonical_neighbor_key": "*|*|*|*|*|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 171,
+      "outer_index": 194,
+      "rep_index": 3,
+      "mask": 2,
+      "mask_bits_slot1_to_slot6": "010000",
+      "canonical_neighbor_key": "*|*|*|*|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 172,
+      "outer_index": 195,
+      "rep_index": 3,
+      "mask": 3,
+      "mask_bits_slot1_to_slot6": "110000",
+      "canonical_neighbor_key": "*|*|*|*|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 173,
+      "outer_index": 197,
+      "rep_index": 3,
+      "mask": 5,
+      "mask_bits_slot1_to_slot6": "101000",
+      "canonical_neighbor_key": "*|*|*|D.0|*|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 174,
+      "outer_index": 198,
+      "rep_index": 3,
+      "mask": 6,
+      "mask_bits_slot1_to_slot6": "011000",
+      "canonical_neighbor_key": "*|*|*|*|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 175,
+      "outer_index": 199,
+      "rep_index": 3,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|D.0|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 176,
+      "outer_index": 201,
+      "rep_index": 3,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.5|*|*|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 177,
+      "outer_index": 202,
+      "rep_index": 3,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.0|*|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 178,
+      "outer_index": 203,
+      "rep_index": 3,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.5|H.0|*|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 179,
+      "outer_index": 205,
+      "rep_index": 3,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.5|*|H.1|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 180,
+      "outer_index": 206,
+      "rep_index": 3,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.0|H.1|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 181,
+      "outer_index": 207,
+      "rep_index": 3,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.5|H.0|H.1|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 182,
+      "outer_index": 209,
+      "rep_index": 3,
+      "mask": 17,
+      "mask_bits_slot1_to_slot6": "100010",
+      "canonical_neighbor_key": "*|*|*|H.3|*|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 183,
+      "outer_index": 210,
+      "rep_index": 3,
+      "mask": 18,
+      "mask_bits_slot1_to_slot6": "010010",
+      "canonical_neighbor_key": "*|*|H.2|*|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 184,
+      "outer_index": 211,
+      "rep_index": 3,
+      "mask": 19,
+      "mask_bits_slot1_to_slot6": "110010",
+      "canonical_neighbor_key": "*|*|H.2|*|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 185,
+      "outer_index": 212,
+      "rep_index": 3,
+      "mask": 20,
+      "mask_bits_slot1_to_slot6": "001010",
+      "canonical_neighbor_key": "*|*|*|H.0|*|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 186,
+      "outer_index": 213,
+      "rep_index": 3,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.4|*|H.0|*|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 187,
+      "outer_index": 214,
+      "rep_index": 3,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.5|H.0|*|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 188,
+      "outer_index": 215,
+      "rep_index": 3,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.4|H.5|H.0|*|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 189,
+      "outer_index": 216,
+      "rep_index": 3,
+      "mask": 24,
+      "mask_bits_slot1_to_slot6": "000110",
+      "canonical_neighbor_key": "*|*|*|*|H.1|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 190,
+      "outer_index": 217,
+      "rep_index": 3,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|H.5|H.3|*|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 191,
+      "outer_index": 218,
+      "rep_index": 3,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.5|*|H.1|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 192,
+      "outer_index": 219,
+      "rep_index": 3,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.4|H.5|*|H.1|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 193,
+      "outer_index": 220,
+      "rep_index": 3,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|H.0|H.1|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 194,
+      "outer_index": 221,
+      "rep_index": 3,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.4|*|H.0|H.1|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 195,
+      "outer_index": 222,
+      "rep_index": 3,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.5|H.0|H.1|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 196,
+      "outer_index": 223,
+      "rep_index": 3,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.4|H.5|H.0|H.1|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 197,
+      "outer_index": 225,
+      "rep_index": 3,
+      "mask": 33,
+      "mask_bits_slot1_to_slot6": "100001",
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 198,
+      "outer_index": 226,
+      "rep_index": 3,
+      "mask": 34,
+      "mask_bits_slot1_to_slot6": "010001",
+      "canonical_neighbor_key": "*|*|*|H.5|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 199,
+      "outer_index": 227,
+      "rep_index": 3,
+      "mask": 35,
+      "mask_bits_slot1_to_slot6": "110001",
+      "canonical_neighbor_key": "*|*|*|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 200,
+      "outer_index": 228,
+      "rep_index": 3,
+      "mask": 36,
+      "mask_bits_slot1_to_slot6": "001001",
+      "canonical_neighbor_key": "*|*|H.4|*|*|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 201,
+      "outer_index": 229,
+      "rep_index": 3,
+      "mask": 37,
+      "mask_bits_slot1_to_slot6": "101001",
+      "canonical_neighbor_key": "*|*|H.4|D.0|*|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 202,
+      "outer_index": 230,
+      "rep_index": 3,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.4|*|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 203,
+      "outer_index": 231,
+      "rep_index": 3,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.4|D.0|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 204,
+      "outer_index": 232,
+      "rep_index": 3,
+      "mask": 40,
+      "mask_bits_slot1_to_slot6": "000101",
+      "canonical_neighbor_key": "*|*|*|H.0|*|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 205,
+      "outer_index": 233,
+      "rep_index": 3,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|H.5|*|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 206,
+      "outer_index": 234,
+      "rep_index": 3,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|H.3|*|H.0|*|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 207,
+      "outer_index": 235,
+      "rep_index": 3,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|H.3|D.5|H.0|*|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 208,
+      "outer_index": 236,
+      "rep_index": 3,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.5|H.0|*|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 209,
+      "outer_index": 237,
+      "rep_index": 3,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.3|D.5|*|H.1|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 210,
+      "outer_index": 238,
+      "rep_index": 3,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.3|*|H.0|H.1|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 211,
+      "outer_index": 239,
+      "rep_index": 3,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.3|D.5|H.0|H.1|H.2",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 212,
+      "outer_index": 241,
+      "rep_index": 3,
+      "mask": 49,
+      "mask_bits_slot1_to_slot6": "100011",
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 213,
+      "outer_index": 242,
+      "rep_index": 3,
+      "mask": 50,
+      "mask_bits_slot1_to_slot6": "010011",
+      "canonical_neighbor_key": "*|*|H.2|H.5|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 214,
+      "outer_index": 243,
+      "rep_index": 3,
+      "mask": 51,
+      "mask_bits_slot1_to_slot6": "110011",
+      "canonical_neighbor_key": "*|*|H.2|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 215,
+      "outer_index": 244,
+      "rep_index": 3,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|H.5|*|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 216,
+      "outer_index": 245,
+      "rep_index": 3,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|H.1|H.4|D.0|*|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 217,
+      "outer_index": 246,
+      "rep_index": 3,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.1|H.4|*|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 218,
+      "outer_index": 247,
+      "rep_index": 3,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.1|H.4|D.0|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 219,
+      "outer_index": 248,
+      "rep_index": 3,
+      "mask": 56,
+      "mask_bits_slot1_to_slot6": "000111",
+      "canonical_neighbor_key": "*|*|*|H.0|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 220,
+      "outer_index": 249,
+      "rep_index": 3,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|H.5|H.3|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 221,
+      "outer_index": 250,
+      "rep_index": 3,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|H.4|*|H.0|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 222,
+      "outer_index": 251,
+      "rep_index": 3,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|H.4|H.2|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 223,
+      "outer_index": 252,
+      "rep_index": 3,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.5|H.0|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 224,
+      "outer_index": 253,
+      "rep_index": 3,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.4|H.5|H.3|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 225,
+      "outer_index": 254,
+      "rep_index": 3,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.4|H.5|H.0|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 226,
+      "outer_index": 255,
+      "rep_index": 3,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.3|H.4|H.5|H.0|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 227,
+      "outer_index": 265,
+      "rep_index": 4,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.5|*|*|H.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 228,
+      "outer_index": 267,
+      "rep_index": 4,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.5|H.0|*|H.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 229,
+      "outer_index": 269,
+      "rep_index": 4,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.5|*|H.1|H.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 230,
+      "outer_index": 271,
+      "rep_index": 4,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.5|H.0|H.1|H.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 231,
+      "outer_index": 280,
+      "rep_index": 4,
+      "mask": 24,
+      "mask_bits_slot1_to_slot6": "000110",
+      "canonical_neighbor_key": "*|*|*|*|H.4|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 232,
+      "outer_index": 281,
+      "rep_index": 4,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|H.2|H.3|*|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 233,
+      "outer_index": 282,
+      "rep_index": 4,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.5|*|H.4|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 234,
+      "outer_index": 283,
+      "rep_index": 4,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.4|H.5|*|H.4|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 235,
+      "outer_index": 284,
+      "rep_index": 4,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|H.0|H.4|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 236,
+      "outer_index": 285,
+      "rep_index": 4,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.4|*|H.0|H.4|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 237,
+      "outer_index": 286,
+      "rep_index": 4,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.5|H.0|H.4|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 238,
+      "outer_index": 287,
+      "rep_index": 4,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.4|H.5|H.0|H.4|H.5",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 239,
+      "outer_index": 296,
+      "rep_index": 4,
+      "mask": 40,
+      "mask_bits_slot1_to_slot6": "000101",
+      "canonical_neighbor_key": "*|*|*|H.3|*|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 240,
+      "outer_index": 297,
+      "rep_index": 4,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|H.2|*|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 241,
+      "outer_index": 298,
+      "rep_index": 4,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|H.1|*|H.5|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 242,
+      "outer_index": 299,
+      "rep_index": 4,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|H.1|*|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 243,
+      "outer_index": 300,
+      "rep_index": 4,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.5|H.3|*|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 244,
+      "outer_index": 301,
+      "rep_index": 4,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.3|D.5|*|H.1|H.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 245,
+      "outer_index": 302,
+      "rep_index": 4,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.3|*|H.0|H.1|H.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 246,
+      "outer_index": 303,
+      "rep_index": 4,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.3|D.5|H.0|H.1|H.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 247,
+      "outer_index": 312,
+      "rep_index": 4,
+      "mask": 56,
+      "mask_bits_slot1_to_slot6": "000111",
+      "canonical_neighbor_key": "*|*|*|H.3|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 248,
+      "outer_index": 313,
+      "rep_index": 4,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|H.2|H.3|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 249,
+      "outer_index": 314,
+      "rep_index": 4,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|H.1|H.2|H.5|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 250,
+      "outer_index": 315,
+      "rep_index": 4,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|H.1|H.2|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 251,
+      "outer_index": 316,
+      "rep_index": 4,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.5|H.3|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 252,
+      "outer_index": 317,
+      "rep_index": 4,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.4|H.2|H.3|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 253,
+      "outer_index": 318,
+      "rep_index": 4,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.4|H.5|H.3|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 254,
+      "outer_index": 319,
+      "rep_index": 4,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.3|H.4|H.5|H.3|H.4|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 255,
+      "outer_index": 323,
+      "rep_index": 5,
+      "mask": 3,
+      "mask_bits_slot1_to_slot6": "110000",
+      "canonical_neighbor_key": "*|*|*|*|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 256,
+      "outer_index": 327,
+      "rep_index": 5,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|D.2|H.5|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 257,
+      "outer_index": 329,
+      "rep_index": 5,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.1|*|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 258,
+      "outer_index": 330,
+      "rep_index": 5,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.4|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 259,
+      "outer_index": 331,
+      "rep_index": 5,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.1|H.4|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 260,
+      "outer_index": 332,
+      "rep_index": 5,
+      "mask": 12,
+      "mask_bits_slot1_to_slot6": "001100",
+      "canonical_neighbor_key": "*|*|*|*|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 261,
+      "outer_index": 333,
+      "rep_index": 5,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.1|*|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 262,
+      "outer_index": 334,
+      "rep_index": 5,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 263,
+      "outer_index": 335,
+      "rep_index": 5,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.1|H.4|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 264,
+      "outer_index": 338,
+      "rep_index": 5,
+      "mask": 18,
+      "mask_bits_slot1_to_slot6": "010010",
+      "canonical_neighbor_key": "*|*|H.0|*|*|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 265,
+      "outer_index": 339,
+      "rep_index": 5,
+      "mask": 19,
+      "mask_bits_slot1_to_slot6": "110010",
+      "canonical_neighbor_key": "*|*|H.0|*|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 266,
+      "outer_index": 342,
+      "rep_index": 5,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.3|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 267,
+      "outer_index": 343,
+      "rep_index": 5,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.0|H.3|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 268,
+      "outer_index": 345,
+      "rep_index": 5,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|D.3|H.1|*|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 269,
+      "outer_index": 346,
+      "rep_index": 5,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.3|*|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 270,
+      "outer_index": 347,
+      "rep_index": 5,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.0|H.3|*|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 271,
+      "outer_index": 348,
+      "rep_index": 5,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 272,
+      "outer_index": 349,
+      "rep_index": 5,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.0|*|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 273,
+      "outer_index": 350,
+      "rep_index": 5,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.3|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 274,
+      "outer_index": 351,
+      "rep_index": 5,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.0|H.3|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 275,
+      "outer_index": 354,
+      "rep_index": 5,
+      "mask": 34,
+      "mask_bits_slot1_to_slot6": "010001",
+      "canonical_neighbor_key": "*|*|*|H.4|*|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 276,
+      "outer_index": 355,
+      "rep_index": 5,
+      "mask": 35,
+      "mask_bits_slot1_to_slot6": "110001",
+      "canonical_neighbor_key": "*|*|*|H.4|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 277,
+      "outer_index": 358,
+      "rep_index": 5,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.3|*|H.5|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 278,
+      "outer_index": 359,
+      "rep_index": 5,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.3|D.2|H.5|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 279,
+      "outer_index": 361,
+      "rep_index": 5,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|D.3|*|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 280,
+      "outer_index": 362,
+      "rep_index": 5,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.2|*|H.4|*|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 281,
+      "outer_index": 363,
+      "rep_index": 5,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.2|*|H.4|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 282,
+      "outer_index": 364,
+      "rep_index": 5,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.1|D.4|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 283,
+      "outer_index": 365,
+      "rep_index": 5,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.0|D.3|*|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 284,
+      "outer_index": 366,
+      "rep_index": 5,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.2|*|H.4|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 285,
+      "outer_index": 367,
+      "rep_index": 5,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|D.1|H.4|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 286,
+      "outer_index": 370,
+      "rep_index": 5,
+      "mask": 50,
+      "mask_bits_slot1_to_slot6": "010011",
+      "canonical_neighbor_key": "*|*|H.0|H.4|*|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 287,
+      "outer_index": 371,
+      "rep_index": 5,
+      "mask": 51,
+      "mask_bits_slot1_to_slot6": "110011",
+      "canonical_neighbor_key": "*|*|H.0|H.4|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 288,
+      "outer_index": 374,
+      "rep_index": 5,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.2|H.1|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 289,
+      "outer_index": 375,
+      "rep_index": 5,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.3|D.2|H.5|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 290,
+      "outer_index": 377,
+      "rep_index": 5,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|D.3|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 291,
+      "outer_index": 378,
+      "rep_index": 5,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.4|*|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 292,
+      "outer_index": 379,
+      "rep_index": 5,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.4|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 293,
+      "outer_index": 380,
+      "rep_index": 5,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.1|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 294,
+      "outer_index": 381,
+      "rep_index": 5,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.0|D.3|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 295,
+      "outer_index": 382,
+      "rep_index": 5,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.2|H.1|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 296,
+      "outer_index": 383,
+      "rep_index": 5,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.1|H.5|H.3|D.2|H.5|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 297,
+      "outer_index": 389,
+      "rep_index": 6,
+      "mask": 5,
+      "mask_bits_slot1_to_slot6": "101000",
+      "canonical_neighbor_key": "*|*|*|D.3|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 298,
+      "outer_index": 390,
+      "rep_index": 6,
+      "mask": 6,
+      "mask_bits_slot1_to_slot6": "011000",
+      "canonical_neighbor_key": "*|*|*|*|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 299,
+      "outer_index": 391,
+      "rep_index": 6,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|D.3|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 300,
+      "outer_index": 393,
+      "rep_index": 6,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.2|*|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 301,
+      "outer_index": 394,
+      "rep_index": 6,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.1|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 302,
+      "outer_index": 395,
+      "rep_index": 6,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.2|H.1|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 303,
+      "outer_index": 397,
+      "rep_index": 6,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.2|*|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 304,
+      "outer_index": 398,
+      "rep_index": 6,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.1|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 305,
+      "outer_index": 399,
+      "rep_index": 6,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 306,
+      "outer_index": 405,
+      "rep_index": 6,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.1|*|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 307,
+      "outer_index": 406,
+      "rep_index": 6,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.0|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 308,
+      "outer_index": 407,
+      "rep_index": 6,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 309,
+      "outer_index": 409,
+      "rep_index": 6,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|D.3|H.1|*|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 310,
+      "outer_index": 410,
+      "rep_index": 6,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.0|*|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 311,
+      "outer_index": 411,
+      "rep_index": 6,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.1|H.0|*|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 312,
+      "outer_index": 413,
+      "rep_index": 6,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.1|*|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 313,
+      "outer_index": 414,
+      "rep_index": 6,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.0|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 314,
+      "outer_index": 415,
+      "rep_index": 6,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 315,
+      "outer_index": 420,
+      "rep_index": 6,
+      "mask": 36,
+      "mask_bits_slot1_to_slot6": "001001",
+      "canonical_neighbor_key": "*|*|H.1|*|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 316,
+      "outer_index": 421,
+      "rep_index": 6,
+      "mask": 37,
+      "mask_bits_slot1_to_slot6": "101001",
+      "canonical_neighbor_key": "*|*|H.1|D.3|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 317,
+      "outer_index": 422,
+      "rep_index": 6,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.1|*|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 318,
+      "outer_index": 423,
+      "rep_index": 6,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.1|D.3|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 319,
+      "outer_index": 424,
+      "rep_index": 6,
+      "mask": 40,
+      "mask_bits_slot1_to_slot6": "000101",
+      "canonical_neighbor_key": "*|*|*|D.4|*|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 320,
+      "outer_index": 425,
+      "rep_index": 6,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|D.3|*|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 321,
+      "outer_index": 426,
+      "rep_index": 6,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.2|*|H.2|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 322,
+      "outer_index": 427,
+      "rep_index": 6,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.2|*|H.2|D.4|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 323,
+      "outer_index": 428,
+      "rep_index": 6,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.4|D.4|*|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 324,
+      "outer_index": 429,
+      "rep_index": 6,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.0|D.2|*|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 325,
+      "outer_index": 430,
+      "rep_index": 6,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.0|*|H.1|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 326,
+      "outer_index": 431,
+      "rep_index": 6,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.0|D.2|H.1|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 327,
+      "outer_index": 436,
+      "rep_index": 6,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|H.4|*|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 328,
+      "outer_index": 437,
+      "rep_index": 6,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|H.3|*|H.1|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 329,
+      "outer_index": 438,
+      "rep_index": 6,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.5|H.1|*|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 330,
+      "outer_index": 439,
+      "rep_index": 6,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.1|D.3|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 331,
+      "outer_index": 440,
+      "rep_index": 6,
+      "mask": 56,
+      "mask_bits_slot1_to_slot6": "000111",
+      "canonical_neighbor_key": "*|*|*|D.4|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 332,
+      "outer_index": 441,
+      "rep_index": 6,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|D.3|H.1|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 333,
+      "outer_index": 442,
+      "rep_index": 6,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.2|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 334,
+      "outer_index": 443,
+      "rep_index": 6,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.2|D.4|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 335,
+      "outer_index": 444,
+      "rep_index": 6,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.4|D.4|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 336,
+      "outer_index": 445,
+      "rep_index": 6,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.3|D.3|H.1|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 337,
+      "outer_index": 446,
+      "rep_index": 6,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.5|H.4|D.4|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 338,
+      "outer_index": 447,
+      "rep_index": 6,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.0|H.5|H.4|D.4|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 339,
+      "outer_index": 457,
+      "rep_index": 7,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.2|*|*|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 340,
+      "outer_index": 458,
+      "rep_index": 7,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.1|*|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 341,
+      "outer_index": 459,
+      "rep_index": 7,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.2|H.1|*|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 342,
+      "outer_index": 461,
+      "rep_index": 7,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.2|*|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 343,
+      "outer_index": 462,
+      "rep_index": 7,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.1|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 344,
+      "outer_index": 463,
+      "rep_index": 7,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 345,
+      "outer_index": 465,
+      "rep_index": 7,
+      "mask": 17,
+      "mask_bits_slot1_to_slot6": "100010",
+      "canonical_neighbor_key": "*|*|*|D.1|*|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 346,
+      "outer_index": 466,
+      "rep_index": 7,
+      "mask": 18,
+      "mask_bits_slot1_to_slot6": "010010",
+      "canonical_neighbor_key": "*|*|D.0|*|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 347,
+      "outer_index": 467,
+      "rep_index": 7,
+      "mask": 19,
+      "mask_bits_slot1_to_slot6": "110010",
+      "canonical_neighbor_key": "*|*|D.0|*|D.4|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 348,
+      "outer_index": 469,
+      "rep_index": 7,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.1|*|H.5|*|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 349,
+      "outer_index": 470,
+      "rep_index": 7,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.0|H.5|*|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 350,
+      "outer_index": 471,
+      "rep_index": 7,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|*|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 351,
+      "outer_index": 473,
+      "rep_index": 7,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|D.4|D.1|*|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 352,
+      "outer_index": 474,
+      "rep_index": 7,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.0|*|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 353,
+      "outer_index": 475,
+      "rep_index": 7,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.1|H.0|*|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 354,
+      "outer_index": 477,
+      "rep_index": 7,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.1|*|H.5|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 355,
+      "outer_index": 478,
+      "rep_index": 7,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.0|H.5|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 356,
+      "outer_index": 479,
+      "rep_index": 7,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|D.0|D.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 357,
+      "outer_index": 488,
+      "rep_index": 7,
+      "mask": 40,
+      "mask_bits_slot1_to_slot6": "000101",
+      "canonical_neighbor_key": "*|*|*|D.5|*|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 358,
+      "outer_index": 489,
+      "rep_index": 7,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|D.4|*|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 359,
+      "outer_index": 490,
+      "rep_index": 7,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.3|*|H.2|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 360,
+      "outer_index": 491,
+      "rep_index": 7,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.3|*|H.2|D.4|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 361,
+      "outer_index": 492,
+      "rep_index": 7,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.4|D.5|*|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 362,
+      "outer_index": 493,
+      "rep_index": 7,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.0|D.2|*|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 363,
+      "outer_index": 494,
+      "rep_index": 7,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.0|*|H.1|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 364,
+      "outer_index": 495,
+      "rep_index": 7,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.0|D.2|H.1|H.0|D.1",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 365,
+      "outer_index": 496,
+      "rep_index": 7,
+      "mask": 48,
+      "mask_bits_slot1_to_slot6": "000011",
+      "canonical_neighbor_key": "*|*|*|*|D.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 366,
+      "outer_index": 497,
+      "rep_index": 7,
+      "mask": 49,
+      "mask_bits_slot1_to_slot6": "100011",
+      "canonical_neighbor_key": "*|*|*|D.1|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 367,
+      "outer_index": 498,
+      "rep_index": 7,
+      "mask": 50,
+      "mask_bits_slot1_to_slot6": "010011",
+      "canonical_neighbor_key": "*|*|D.0|H.2|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 368,
+      "outer_index": 499,
+      "rep_index": 7,
+      "mask": 51,
+      "mask_bits_slot1_to_slot6": "110011",
+      "canonical_neighbor_key": "*|*|D.0|H.2|D.4|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 369,
+      "outer_index": 500,
+      "rep_index": 7,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|H.4|*|D.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 370,
+      "outer_index": 501,
+      "rep_index": 7,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|D.5|H.1|D.3|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 371,
+      "outer_index": 502,
+      "rep_index": 7,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|D.5|H.1|*|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 372,
+      "outer_index": 503,
+      "rep_index": 7,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|D.5|H.1|D.3|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 373,
+      "outer_index": 504,
+      "rep_index": 7,
+      "mask": 56,
+      "mask_bits_slot1_to_slot6": "000111",
+      "canonical_neighbor_key": "*|*|*|D.5|D.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 374,
+      "outer_index": 505,
+      "rep_index": 7,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|D.4|D.1|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 375,
+      "outer_index": 506,
+      "rep_index": 7,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.3|D.0|H.2|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 376,
+      "outer_index": 507,
+      "rep_index": 7,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.3|D.0|H.2|D.4|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 377,
+      "outer_index": 508,
+      "rep_index": 7,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.4|D.5|D.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 378,
+      "outer_index": 509,
+      "rep_index": 7,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.3|D.4|D.1|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 379,
+      "outer_index": 510,
+      "rep_index": 7,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.5|H.4|D.5|D.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 380,
+      "outer_index": 511,
+      "rep_index": 7,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.0|H.5|H.4|D.5|D.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 381,
+      "outer_index": 517,
+      "rep_index": 8,
+      "mask": 5,
+      "mask_bits_slot1_to_slot6": "101000",
+      "canonical_neighbor_key": "*|*|*|D.2|*|D.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 382,
+      "outer_index": 519,
+      "rep_index": 8,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|D.2|H.5|D.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 383,
+      "outer_index": 524,
+      "rep_index": 8,
+      "mask": 12,
+      "mask_bits_slot1_to_slot6": "001100",
+      "canonical_neighbor_key": "*|*|*|*|D.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 384,
+      "outer_index": 525,
+      "rep_index": 8,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.1|*|D.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 385,
+      "outer_index": 526,
+      "rep_index": 8,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.4|D.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 386,
+      "outer_index": 527,
+      "rep_index": 8,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.1|H.4|D.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 387,
+      "outer_index": 532,
+      "rep_index": 8,
+      "mask": 20,
+      "mask_bits_slot1_to_slot6": "001010",
+      "canonical_neighbor_key": "*|*|*|D.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 388,
+      "outer_index": 533,
+      "rep_index": 8,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.0|*|D.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 389,
+      "outer_index": 534,
+      "rep_index": 8,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.3|D.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 390,
+      "outer_index": 535,
+      "rep_index": 8,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.0|H.3|D.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 391,
+      "outer_index": 540,
+      "rep_index": 8,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|D.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 392,
+      "outer_index": 541,
+      "rep_index": 8,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.0|*|D.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 393,
+      "outer_index": 542,
+      "rep_index": 8,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.3|D.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 394,
+      "outer_index": 543,
+      "rep_index": 8,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.0|H.3|D.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 395,
+      "outer_index": 548,
+      "rep_index": 8,
+      "mask": 36,
+      "mask_bits_slot1_to_slot6": "001001",
+      "canonical_neighbor_key": "*|*|D.1|*|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 396,
+      "outer_index": 549,
+      "rep_index": 8,
+      "mask": 37,
+      "mask_bits_slot1_to_slot6": "101001",
+      "canonical_neighbor_key": "*|*|H.3|D.2|*|D.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 397,
+      "outer_index": 550,
+      "rep_index": 8,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.3|*|H.5|D.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 398,
+      "outer_index": 551,
+      "rep_index": 8,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.3|D.2|H.5|D.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 399,
+      "outer_index": 556,
+      "rep_index": 8,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|D.1|D.4|*|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 400,
+      "outer_index": 557,
+      "rep_index": 8,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|D.0|D.3|*|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 401,
+      "outer_index": 558,
+      "rep_index": 8,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.2|*|H.4|D.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 402,
+      "outer_index": 559,
+      "rep_index": 8,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|D.1|H.4|D.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 403,
+      "outer_index": 564,
+      "rep_index": 8,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|D.1|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 404,
+      "outer_index": 565,
+      "rep_index": 8,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|D.0|*|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 405,
+      "outer_index": 566,
+      "rep_index": 8,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.2|D.1|*|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 406,
+      "outer_index": 567,
+      "rep_index": 8,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.3|D.2|H.5|D.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 407,
+      "outer_index": 572,
+      "rep_index": 8,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|D.1|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 408,
+      "outer_index": 573,
+      "rep_index": 8,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|D.0|D.3|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 409,
+      "outer_index": 574,
+      "rep_index": 8,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.2|D.1|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 410,
+      "outer_index": 575,
+      "rep_index": 8,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.1|H.5|H.3|D.2|H.5|D.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 411,
+      "outer_index": 586,
+      "rep_index": 9,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.4|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 412,
+      "outer_index": 587,
+      "rep_index": 9,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.1|H.4|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 413,
+      "outer_index": 590,
+      "rep_index": 9,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 414,
+      "outer_index": 591,
+      "rep_index": 9,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.1|H.4|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 415,
+      "outer_index": 602,
+      "rep_index": 9,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.3|*|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 416,
+      "outer_index": 603,
+      "rep_index": 9,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.0|H.3|*|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 417,
+      "outer_index": 606,
+      "rep_index": 9,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.3|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 418,
+      "outer_index": 607,
+      "rep_index": 9,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.0|H.3|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 419,
+      "outer_index": 618,
+      "rep_index": 9,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.1|*|H.4|*|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 420,
+      "outer_index": 619,
+      "rep_index": 9,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.1|*|H.4|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 421,
+      "outer_index": 622,
+      "rep_index": 9,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.2|*|H.4|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 422,
+      "outer_index": 623,
+      "rep_index": 9,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|D.1|H.4|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 423,
+      "outer_index": 634,
+      "rep_index": 9,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.1|H.0|H.4|*|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 424,
+      "outer_index": 635,
+      "rep_index": 9,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.1|H.0|H.4|D.3|H.0",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 425,
+      "outer_index": 638,
+      "rep_index": 9,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.2|H.1|D.3|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 426,
+      "outer_index": 639,
+      "rep_index": 9,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.0|H.5|H.3|D.2|H.5|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 427,
+      "outer_index": 645,
+      "rep_index": 10,
+      "mask": 5,
+      "mask_bits_slot1_to_slot6": "101000",
+      "canonical_neighbor_key": "*|*|*|D.3|*|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 428,
+      "outer_index": 647,
+      "rep_index": 10,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|D.3|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 429,
+      "outer_index": 649,
+      "rep_index": 10,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.2|*|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 430,
+      "outer_index": 651,
+      "rep_index": 10,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.2|H.1|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 431,
+      "outer_index": 653,
+      "rep_index": 10,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.2|*|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 432,
+      "outer_index": 655,
+      "rep_index": 10,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 433,
+      "outer_index": 661,
+      "rep_index": 10,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.1|*|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 434,
+      "outer_index": 663,
+      "rep_index": 10,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.1|H.0|H.2|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 435,
+      "outer_index": 667,
+      "rep_index": 10,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.1|H.0|*|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 436,
+      "outer_index": 669,
+      "rep_index": 10,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.1|*|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 437,
+      "outer_index": 671,
+      "rep_index": 10,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.1|H.0|H.2|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 438,
+      "outer_index": 676,
+      "rep_index": 10,
+      "mask": 36,
+      "mask_bits_slot1_to_slot6": "001001",
+      "canonical_neighbor_key": "*|*|H.1|*|*|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 439,
+      "outer_index": 677,
+      "rep_index": 10,
+      "mask": 37,
+      "mask_bits_slot1_to_slot6": "101001",
+      "canonical_neighbor_key": "*|*|H.1|D.3|*|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 440,
+      "outer_index": 678,
+      "rep_index": 10,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.1|*|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 441,
+      "outer_index": 679,
+      "rep_index": 10,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.1|D.3|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 442,
+      "outer_index": 685,
+      "rep_index": 10,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.0|D.2|*|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 443,
+      "outer_index": 686,
+      "rep_index": 10,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.0|*|H.1|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 444,
+      "outer_index": 687,
+      "rep_index": 10,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.0|D.2|H.1|H.3|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 445,
+      "outer_index": 694,
+      "rep_index": 10,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.5|H.1|*|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 446,
+      "outer_index": 695,
+      "rep_index": 10,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.1|D.3|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 447,
+      "outer_index": 703,
+      "rep_index": 10,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.0|H.5|H.1|D.3|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 448,
+      "outer_index": 713,
+      "rep_index": 11,
+      "mask": 9,
+      "mask_bits_slot1_to_slot6": "100100",
+      "canonical_neighbor_key": "*|*|D.2|*|*|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 449,
+      "outer_index": 714,
+      "rep_index": 11,
+      "mask": 10,
+      "mask_bits_slot1_to_slot6": "010100",
+      "canonical_neighbor_key": "*|*|*|H.0|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 450,
+      "outer_index": 715,
+      "rep_index": 11,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.5|H.0|*|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 451,
+      "outer_index": 716,
+      "rep_index": 11,
+      "mask": 12,
+      "mask_bits_slot1_to_slot6": "001100",
+      "canonical_neighbor_key": "*|*|*|*|H.1|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 452,
+      "outer_index": 717,
+      "rep_index": 11,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.5|*|H.1|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 453,
+      "outer_index": 718,
+      "rep_index": 11,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.0|H.1|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 454,
+      "outer_index": 719,
+      "rep_index": 11,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.5|H.0|H.1|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 455,
+      "outer_index": 721,
+      "rep_index": 11,
+      "mask": 17,
+      "mask_bits_slot1_to_slot6": "100010",
+      "canonical_neighbor_key": "*|*|*|H.1|*|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 456,
+      "outer_index": 722,
+      "rep_index": 11,
+      "mask": 18,
+      "mask_bits_slot1_to_slot6": "010010",
+      "canonical_neighbor_key": "*|*|H.0|*|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 457,
+      "outer_index": 723,
+      "rep_index": 11,
+      "mask": 19,
+      "mask_bits_slot1_to_slot6": "110010",
+      "canonical_neighbor_key": "*|*|H.0|*|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 458,
+      "outer_index": 724,
+      "rep_index": 11,
+      "mask": 20,
+      "mask_bits_slot1_to_slot6": "001010",
+      "canonical_neighbor_key": "*|*|*|H.0|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 459,
+      "outer_index": 725,
+      "rep_index": 11,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.4|*|H.0|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 460,
+      "outer_index": 726,
+      "rep_index": 11,
+      "mask": 22,
+      "mask_bits_slot1_to_slot6": "011010",
+      "canonical_neighbor_key": "*|*|H.5|H.0|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 461,
+      "outer_index": 727,
+      "rep_index": 11,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.4|H.5|H.0|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 462,
+      "outer_index": 729,
+      "rep_index": 11,
+      "mask": 25,
+      "mask_bits_slot1_to_slot6": "100110",
+      "canonical_neighbor_key": "*|*|D.2|H.1|*|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 463,
+      "outer_index": 730,
+      "rep_index": 11,
+      "mask": 26,
+      "mask_bits_slot1_to_slot6": "010110",
+      "canonical_neighbor_key": "*|*|H.5|*|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 464,
+      "outer_index": 731,
+      "rep_index": 11,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.1|H.0|*|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 465,
+      "outer_index": 732,
+      "rep_index": 11,
+      "mask": 28,
+      "mask_bits_slot1_to_slot6": "001110",
+      "canonical_neighbor_key": "*|*|*|H.0|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 466,
+      "outer_index": 733,
+      "rep_index": 11,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.4|*|H.0|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 467,
+      "outer_index": 734,
+      "rep_index": 11,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.5|H.0|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 468,
+      "outer_index": 735,
+      "rep_index": 11,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.4|H.5|H.0|D.4|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 469,
+      "outer_index": 745,
+      "rep_index": 11,
+      "mask": 41,
+      "mask_bits_slot1_to_slot6": "100101",
+      "canonical_neighbor_key": "*|*|D.2|*|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 470,
+      "outer_index": 746,
+      "rep_index": 11,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.1|*|H.5|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 471,
+      "outer_index": 747,
+      "rep_index": 11,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.1|*|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 472,
+      "outer_index": 748,
+      "rep_index": 11,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.5|D.3|*|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 473,
+      "outer_index": 749,
+      "rep_index": 11,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.3|D.5|*|H.1|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 474,
+      "outer_index": 750,
+      "rep_index": 11,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.3|*|H.0|H.1|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 475,
+      "outer_index": 751,
+      "rep_index": 11,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.3|D.5|H.0|H.1|D.5",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 476,
+      "outer_index": 753,
+      "rep_index": 11,
+      "mask": 49,
+      "mask_bits_slot1_to_slot6": "100011",
+      "canonical_neighbor_key": "*|*|*|H.1|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 477,
+      "outer_index": 754,
+      "rep_index": 11,
+      "mask": 50,
+      "mask_bits_slot1_to_slot6": "010011",
+      "canonical_neighbor_key": "*|*|H.0|H.5|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 478,
+      "outer_index": 755,
+      "rep_index": 11,
+      "mask": 51,
+      "mask_bits_slot1_to_slot6": "110011",
+      "canonical_neighbor_key": "*|*|H.0|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 479,
+      "outer_index": 756,
+      "rep_index": 11,
+      "mask": 52,
+      "mask_bits_slot1_to_slot6": "001011",
+      "canonical_neighbor_key": "*|*|H.5|*|H.2|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 480,
+      "outer_index": 757,
+      "rep_index": 11,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|H.4|*|H.1|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 481,
+      "outer_index": 758,
+      "rep_index": 11,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.4|H.5|*|H.2|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 482,
+      "outer_index": 759,
+      "rep_index": 11,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.4|D.0|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 483,
+      "outer_index": 761,
+      "rep_index": 11,
+      "mask": 57,
+      "mask_bits_slot1_to_slot6": "100111",
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 484,
+      "outer_index": 762,
+      "rep_index": 11,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|*|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 485,
+      "outer_index": 763,
+      "rep_index": 11,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|D.1|H.2",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 486,
+      "outer_index": 764,
+      "rep_index": 11,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.5|D.3|H.2|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 487,
+      "outer_index": 765,
+      "rep_index": 11,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.4|D.2|H.1|H.0|D.2",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 488,
+      "outer_index": 766,
+      "rep_index": 11,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.4|H.5|D.3|H.2|H.1",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 489,
+      "outer_index": 767,
+      "rep_index": 11,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.0|H.5|H.4|D.0|H.1|H.2",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 490,
+      "outer_index": 773,
+      "rep_index": 12,
+      "mask": 5,
+      "mask_bits_slot1_to_slot6": "101000",
+      "canonical_neighbor_key": "*|*|*|D.2|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 491,
+      "outer_index": 775,
+      "rep_index": 12,
+      "mask": 7,
+      "mask_bits_slot1_to_slot6": "111000",
+      "canonical_neighbor_key": "*|*|*|D.2|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 492,
+      "outer_index": 779,
+      "rep_index": 12,
+      "mask": 11,
+      "mask_bits_slot1_to_slot6": "110100",
+      "canonical_neighbor_key": "*|*|D.1|H.1|*|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 493,
+      "outer_index": 781,
+      "rep_index": 12,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.1|*|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 494,
+      "outer_index": 783,
+      "rep_index": 12,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.1|H.1|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 495,
+      "outer_index": 789,
+      "rep_index": 12,
+      "mask": 21,
+      "mask_bits_slot1_to_slot6": "101010",
+      "canonical_neighbor_key": "*|D.0|*|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 496,
+      "outer_index": 791,
+      "rep_index": 12,
+      "mask": 23,
+      "mask_bits_slot1_to_slot6": "111010",
+      "canonical_neighbor_key": "*|D.0|H.0|H.5|*|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 497,
+      "outer_index": 795,
+      "rep_index": 12,
+      "mask": 27,
+      "mask_bits_slot1_to_slot6": "110110",
+      "canonical_neighbor_key": "*|D.0|H.0|*|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 498,
+      "outer_index": 797,
+      "rep_index": 12,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.0|*|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 499,
+      "outer_index": 799,
+      "rep_index": 12,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.0|H.0|H.5|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 500,
+      "outer_index": 805,
+      "rep_index": 12,
+      "mask": 37,
+      "mask_bits_slot1_to_slot6": "101001",
+      "canonical_neighbor_key": "*|*|H.3|D.2|*|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 501,
+      "outer_index": 806,
+      "rep_index": 12,
+      "mask": 38,
+      "mask_bits_slot1_to_slot6": "011001",
+      "canonical_neighbor_key": "*|*|H.3|*|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 502,
+      "outer_index": 807,
+      "rep_index": 12,
+      "mask": 39,
+      "mask_bits_slot1_to_slot6": "111001",
+      "canonical_neighbor_key": "*|*|H.3|D.2|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 503,
+      "outer_index": 810,
+      "rep_index": 12,
+      "mask": 42,
+      "mask_bits_slot1_to_slot6": "010101",
+      "canonical_neighbor_key": "*|D.2|*|H.4|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 504,
+      "outer_index": 811,
+      "rep_index": 12,
+      "mask": 43,
+      "mask_bits_slot1_to_slot6": "110101",
+      "canonical_neighbor_key": "*|D.2|*|H.4|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 505,
+      "outer_index": 813,
+      "rep_index": 12,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.2|D.1|*|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 506,
+      "outer_index": 814,
+      "rep_index": 12,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.2|*|H.1|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 507,
+      "outer_index": 815,
+      "rep_index": 12,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|D.1|H.1|H.0|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 508,
+      "outer_index": 821,
+      "rep_index": 12,
+      "mask": 53,
+      "mask_bits_slot1_to_slot6": "101011",
+      "canonical_neighbor_key": "*|H.3|*|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 509,
+      "outer_index": 822,
+      "rep_index": 12,
+      "mask": 54,
+      "mask_bits_slot1_to_slot6": "011011",
+      "canonical_neighbor_key": "*|H.5|H.3|*|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 510,
+      "outer_index": 823,
+      "rep_index": 12,
+      "mask": 55,
+      "mask_bits_slot1_to_slot6": "111011",
+      "canonical_neighbor_key": "*|H.5|H.3|D.2|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 511,
+      "outer_index": 826,
+      "rep_index": 12,
+      "mask": 58,
+      "mask_bits_slot1_to_slot6": "010111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.4|*|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 512,
+      "outer_index": 827,
+      "rep_index": 12,
+      "mask": 59,
+      "mask_bits_slot1_to_slot6": "110111",
+      "canonical_neighbor_key": "*|D.2|H.0|H.4|D.3|H.3",
+      "canonical_rotation_k": 4
+    },
+    {
+      "matrix_index": 513,
+      "outer_index": 829,
+      "rep_index": 12,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.3|D.3|H.1|H.5|D.4",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 514,
+      "outer_index": 830,
+      "rep_index": 12,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.5|H.4|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 515,
+      "outer_index": 831,
+      "rep_index": 12,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.1|H.5|H.3|D.2|H.2|H.1",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 516,
+      "outer_index": 846,
+      "rep_index": 13,
+      "mask": 14,
+      "mask_bits_slot1_to_slot6": "011100",
+      "canonical_neighbor_key": "*|*|*|H.1|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 517,
+      "outer_index": 847,
+      "rep_index": 13,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.1|H.1|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 518,
+      "outer_index": 862,
+      "rep_index": 13,
+      "mask": 30,
+      "mask_bits_slot1_to_slot6": "011110",
+      "canonical_neighbor_key": "*|*|H.0|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 519,
+      "outer_index": 863,
+      "rep_index": 13,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.0|H.0|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 520,
+      "outer_index": 878,
+      "rep_index": 13,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.2|*|H.1|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 521,
+      "outer_index": 879,
+      "rep_index": 13,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.2|D.1|H.1|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 522,
+      "outer_index": 894,
+      "rep_index": 13,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.5|H.1|D.4|H.2|H.0",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 523,
+      "outer_index": 895,
+      "rep_index": 13,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.1|H.5|H.3|D.2|H.2|H.4",
+      "canonical_rotation_k": 3
+    },
+    {
+      "matrix_index": 524,
+      "outer_index": 909,
+      "rep_index": 14,
+      "mask": 13,
+      "mask_bits_slot1_to_slot6": "101100",
+      "canonical_neighbor_key": "*|*|D.2|*|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 525,
+      "outer_index": 911,
+      "rep_index": 14,
+      "mask": 15,
+      "mask_bits_slot1_to_slot6": "111100",
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 526,
+      "outer_index": 925,
+      "rep_index": 14,
+      "mask": 29,
+      "mask_bits_slot1_to_slot6": "101110",
+      "canonical_neighbor_key": "*|D.1|*|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 527,
+      "outer_index": 927,
+      "rep_index": 14,
+      "mask": 31,
+      "mask_bits_slot1_to_slot6": "111110",
+      "canonical_neighbor_key": "*|D.1|H.0|H.2|D.5|H.3",
+      "canonical_rotation_k": 1
+    },
+    {
+      "matrix_index": 528,
+      "outer_index": 940,
+      "rep_index": 14,
+      "mask": 44,
+      "mask_bits_slot1_to_slot6": "001101",
+      "canonical_neighbor_key": "*|*|H.1|D.4|*|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 529,
+      "outer_index": 941,
+      "rep_index": 14,
+      "mask": 45,
+      "mask_bits_slot1_to_slot6": "101101",
+      "canonical_neighbor_key": "*|H.0|D.2|*|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 530,
+      "outer_index": 942,
+      "rep_index": 14,
+      "mask": 46,
+      "mask_bits_slot1_to_slot6": "011101",
+      "canonical_neighbor_key": "*|H.0|*|H.1|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 531,
+      "outer_index": 943,
+      "rep_index": 14,
+      "mask": 47,
+      "mask_bits_slot1_to_slot6": "111101",
+      "canonical_neighbor_key": "*|H.0|D.2|H.1|H.3|D.0",
+      "canonical_rotation_k": 2
+    },
+    {
+      "matrix_index": 532,
+      "outer_index": 956,
+      "rep_index": 14,
+      "mask": 60,
+      "mask_bits_slot1_to_slot6": "001111",
+      "canonical_neighbor_key": "*|*|H.1|D.4|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 533,
+      "outer_index": 957,
+      "rep_index": 14,
+      "mask": 61,
+      "mask_bits_slot1_to_slot6": "101111",
+      "canonical_neighbor_key": "*|H.0|D.3|H.1|H.3|D.5",
+      "canonical_rotation_k": 5
+    },
+    {
+      "matrix_index": 534,
+      "outer_index": 958,
+      "rep_index": 14,
+      "mask": 62,
+      "mask_bits_slot1_to_slot6": "011111",
+      "canonical_neighbor_key": "*|H.5|H.1|D.4|H.2|H.4",
+      "canonical_rotation_k": 0
+    },
+    {
+      "matrix_index": 535,
+      "outer_index": 959,
+      "rep_index": 14,
+      "mask": 63,
+      "mask_bits_slot1_to_slot6": "111111",
+      "canonical_neighbor_key": "D.0|H.5|H.1|D.4|H.2|H.4",
+      "canonical_rotation_k": 0
+    }
+  ],
+  "accept_rules": [
+    {
+      "matrix_index": 7,
+      "canonical_neighbor_key": "*|*|*|H.2|H.4|H.1",
+      "output": "H.0",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 14,
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.1",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 28,
+      "canonical_neighbor_key": "*|*|*|H.5|D.0|D.3",
+      "output": "H.4",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 32,
+      "canonical_neighbor_key": "*|*|*|*|*|H.0",
+      "output": "H.3",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 33,
+      "canonical_neighbor_key": "*|*|*|*|H.5|H.4",
+      "output": "H.0",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 51,
+      "canonical_neighbor_key": "*|*|D.0|H.4|H.3|H.5",
+      "output": "H.1",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 60,
+      "canonical_neighbor_key": "*|*|H.4|D.5|D.2|H.0",
+      "output": "H.3",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 61,
+      "canonical_neighbor_key": "*|H.3|D.4|D.1|H.5|H.4",
+      "output": "H.2",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 63,
+      "canonical_neighbor_key": "D.2|D.5|H.3|H.2|H.4|H.1",
+      "output": "H.0",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 66,
+      "canonical_neighbor_key": "*|*|*|*|D.3|H.3",
+      "output": "H.1",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 76,
+      "canonical_neighbor_key": "*|*|*|H.1|H.3|D.5",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 89,
+      "canonical_neighbor_key": "*|*|*|H.2|D.4|H.3",
+      "output": "H.4",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 93,
+      "canonical_neighbor_key": "*|*|*|*|H.5|D.4",
+      "output": "H.2",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 116,
+      "canonical_neighbor_key": "*|*|*|D.3|H.2|H.0",
+      "output": "H.3",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 120,
+      "canonical_neighbor_key": "*|*|H.1|D.3|H.2|H.0",
+      "output": "H.3",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 130,
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.0",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 131,
+      "canonical_neighbor_key": "*|*|H.1|H.3|H.0|D.0",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 154,
+      "canonical_neighbor_key": "*|H.2|H.1|H.3|H.0|D.0",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 163,
+      "canonical_neighbor_key": "*|*|D.3|H.1|H.5|H.4",
+      "output": "H.2",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 170,
+      "canonical_neighbor_key": "*|*|*|*|*|D.2",
+      "output": "D.5",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 172,
+      "canonical_neighbor_key": "*|*|*|*|D.1|H.2",
+      "output": "D.4",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 174,
+      "canonical_neighbor_key": "*|*|*|*|H.1|H.2",
+      "output": "D.3",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 197,
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.2",
+      "output": "D.5",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 212,
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.2",
+      "output": "D.5",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 219,
+      "canonical_neighbor_key": "*|*|*|H.0|H.4|H.1",
+      "output": "D.0",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 231,
+      "canonical_neighbor_key": "*|*|*|*|H.4|H.5",
+      "output": "D.1",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 235,
+      "canonical_neighbor_key": "*|*|*|H.0|H.4|H.5",
+      "output": "D.1",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 247,
+      "canonical_neighbor_key": "*|*|*|H.3|H.4|H.1",
+      "output": "D.0",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 255,
+      "canonical_neighbor_key": "*|*|*|*|D.3|H.0",
+      "output": "H.1",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 257,
+      "canonical_neighbor_key": "*|*|D.1|*|*|D.0",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 260,
+      "canonical_neighbor_key": "*|*|*|*|H.3|D.0",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 262,
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|D.0",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 270,
+      "canonical_neighbor_key": "*|D.0|H.3|*|D.5|H.3",
+      "output": "H.4",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 290,
+      "canonical_neighbor_key": "*|*|D.3|H.1|H.5|D.4",
+      "output": "H.2",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 331,
+      "canonical_neighbor_key": "*|*|*|D.4|H.2|H.4",
+      "output": "H.3",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 338,
+      "canonical_neighbor_key": "D.0|H.5|H.4|D.4|H.2|H.4",
+      "output": "H.3",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 356,
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|D.0|D.3",
+      "output": "H.4",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 362,
+      "canonical_neighbor_key": "*|H.0|D.2|*|H.0|D.1",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 366,
+      "canonical_neighbor_key": "*|*|*|D.1|H.3|D.5",
+      "output": "H.2",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 376,
+      "canonical_neighbor_key": "*|D.3|D.0|H.2|D.4|H.3",
+      "output": "H.1",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 382,
+      "canonical_neighbor_key": "*|*|*|D.2|H.5|D.4",
+      "output": "H.0",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 408,
+      "canonical_neighbor_key": "*|D.0|D.3|H.1|H.5|D.4",
+      "output": "H.2",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 413,
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|D.5",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 428,
+      "canonical_neighbor_key": "*|*|*|D.3|H.2|H.4",
+      "output": "H.0",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 432,
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.3|D.5",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 465,
+      "canonical_neighbor_key": "*|*|*|H.0|D.4|H.3",
+      "output": "D.1",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 485,
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|D.1|H.2",
+      "output": "D.4",
+      "output_type": "D",
+      "used_in_growth": true
+    },
+    {
+      "matrix_index": 516,
+      "canonical_neighbor_key": "*|*|*|H.1|H.3|D.0",
+      "output": "H.5",
+      "output_type": "H",
+      "used_in_growth": true
+    }
+  ],
+  "reject_rules": [
+    {
+      "matrix_index": 1,
+      "canonical_neighbor_key": "*|*|*|*|*|H.4"
+    },
+    {
+      "matrix_index": 2,
+      "canonical_neighbor_key": "*|*|*|*|*|H.5"
+    },
+    {
+      "matrix_index": 3,
+      "canonical_neighbor_key": "*|*|*|*|H.3|H.5"
+    },
+    {
+      "matrix_index": 4,
+      "canonical_neighbor_key": "*|*|*|*|*|H.1"
+    },
+    {
+      "matrix_index": 6,
+      "canonical_neighbor_key": "*|*|*|*|H.4|H.1"
+    },
+    {
+      "matrix_index": 8,
+      "canonical_neighbor_key": "*|*|*|*|*|D.1"
+    },
+    {
+      "matrix_index": 11,
+      "canonical_neighbor_key": "*|*|H.1|H.3|*|D.1"
+    },
+    {
+      "matrix_index": 12,
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.1"
+    },
+    {
+      "matrix_index": 16,
+      "canonical_neighbor_key": "*|*|*|*|*|D.3"
+    },
+    {
+      "matrix_index": 24,
+      "canonical_neighbor_key": "*|*|*|*|D.0|D.3"
+    },
+    {
+      "matrix_index": 31,
+      "canonical_neighbor_key": "*|H.0|H.2|H.5|D.0|D.3"
+    },
+    {
+      "matrix_index": 34,
+      "canonical_neighbor_key": "*|*|*|H.4|*|H.5"
+    },
+    {
+      "matrix_index": 35,
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|H.5"
+    },
+    {
+      "matrix_index": 39,
+      "canonical_neighbor_key": "*|*|H.3|H.2|H.4|H.1"
+    },
+    {
+      "matrix_index": 56,
+      "canonical_neighbor_key": "*|*|*|D.5|D.2|H.0"
+    },
+    {
+      "matrix_index": 57,
+      "canonical_neighbor_key": "*|*|D.4|D.1|H.5|H.4"
+    },
+    {
+      "matrix_index": 64,
+      "canonical_neighbor_key": "*|*|*|*|*|D.4"
+    },
+    {
+      "matrix_index": 65,
+      "canonical_neighbor_key": "*|*|*|*|*|H.3"
+    },
+    {
+      "matrix_index": 68,
+      "canonical_neighbor_key": "*|*|*|*|H.2|H.4"
+    },
+    {
+      "matrix_index": 70,
+      "canonical_neighbor_key": "*|*|*|*|*|D.5"
+    },
+    {
+      "matrix_index": 74,
+      "canonical_neighbor_key": "*|*|*|*|H.3|D.5"
+    },
+    {
+      "matrix_index": 85,
+      "canonical_neighbor_key": "*|*|*|*|D.4|H.3"
+    },
+    {
+      "matrix_index": 108,
+      "canonical_neighbor_key": "*|*|*|*|H.2|H.0"
+    },
+    {
+      "matrix_index": 124,
+      "canonical_neighbor_key": "*|*|*|*|*|D.0"
+    },
+    {
+      "matrix_index": 128,
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.0"
+    },
+    {
+      "matrix_index": 139,
+      "canonical_neighbor_key": "*|*|*|*|D.5|H.3"
+    },
+    {
+      "matrix_index": 162,
+      "canonical_neighbor_key": "*|*|*|D.4|H.2|H.0"
+    },
+    {
+      "matrix_index": 171,
+      "canonical_neighbor_key": "*|*|*|*|*|H.2"
+    },
+    {
+      "matrix_index": 189,
+      "canonical_neighbor_key": "*|*|*|*|H.1|H.5"
+    },
+    {
+      "matrix_index": 268,
+      "canonical_neighbor_key": "*|*|D.3|H.1|*|D.4"
+    },
+    {
+      "matrix_index": 304,
+      "canonical_neighbor_key": "*|*|*|H.1|H.0|D.0"
+    },
+    {
+      "matrix_index": 305,
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.0|D.0"
+    },
+    {
+      "matrix_index": 326,
+      "canonical_neighbor_key": "*|H.0|D.2|H.1|H.0|D.0"
+    },
+    {
+      "matrix_index": 343,
+      "canonical_neighbor_key": "*|*|*|H.1|H.0|D.1"
+    },
+    {
+      "matrix_index": 352,
+      "canonical_neighbor_key": "*|*|H.0|*|D.0|D.3"
+    },
+    {
+      "matrix_index": 353,
+      "canonical_neighbor_key": "*|D.1|H.0|*|D.0|D.3"
+    },
+    {
+      "matrix_index": 355,
+      "canonical_neighbor_key": "*|*|H.0|H.5|D.0|D.3"
+    },
+    {
+      "matrix_index": 381,
+      "canonical_neighbor_key": "*|*|*|D.2|*|D.4"
+    },
+    {
+      "matrix_index": 396,
+      "canonical_neighbor_key": "*|*|H.3|D.2|*|D.4"
+    },
+    {
+      "matrix_index": 404,
+      "canonical_neighbor_key": "*|D.0|*|H.1|H.5|D.4"
+    },
+    {
+      "matrix_index": 462,
+      "canonical_neighbor_key": "*|*|D.2|H.1|*|D.2"
+    }
+  ],
+  "verification": {
+    "exact": true,
+    "missing_count": 0,
+    "extra_count": 0,
+    "wrong_count": 0,
+    "missing_sample": [],
+    "extra_sample": [],
+    "wrong_sample": [],
+    "terminal_step": 60,
+    "terminal_births": 0,
+    "terminal_unknown_frontier": 0,
+    "used_accept_outputs": 48,
+    "used_reject_rules": 41
+  },
+  "growth_counts": {
+    "definition": "a_t = placed_cells / 6, with the six-cell seed recorded as a_0 = 1; the blocked center is not counted as a placed cell.",
+    "a_sequence": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      17,
+      19,
+      21,
+      23,
+      25,
+      29,
+      32,
+      34,
+      37,
+      41,
+      47,
+      50,
+      53,
+      58,
+      62,
+      67,
+      71,
+      76,
+      79,
+      81,
+      84,
+      87,
+      89,
+      91,
+      93,
+      95,
+      98,
+      100,
+      101,
+      102,
+      104,
+      107,
+      109,
+      111,
+      114,
+      117,
+      118,
+      119,
+      121,
+      124,
+      125,
+      126,
+      128,
+      132,
+      134,
+      137,
+      139,
+      140,
+      141,
+      142
+    ],
+    "first_differences": [
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      3,
+      2,
+      2,
+      2,
+      2,
+      4,
+      3,
+      2,
+      3,
+      4,
+      6,
+      3,
+      3,
+      5,
+      4,
+      5,
+      4,
+      5,
+      3,
+      2,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      3,
+      2,
+      1,
+      1,
+      2,
+      3,
+      2,
+      2,
+      3,
+      3,
+      1,
+      1,
+      2,
+      3,
+      1,
+      1,
+      2,
+      4,
+      2,
+      3,
+      2,
+      1,
+      1,
+      1
+    ],
+    "final_a": 142,
+    "final_placed_cells": 852,
+    "history_length_after_seed": 60,
+    "plateau_preview_extra_terms": 6,
+    "a_sequence_plateau_preview": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      17,
+      19,
+      21,
+      23,
+      25,
+      29,
+      32,
+      34,
+      37,
+      41,
+      47,
+      50,
+      53,
+      58,
+      62,
+      67,
+      71,
+      76,
+      79,
+      81,
+      84,
+      87,
+      89,
+      91,
+      93,
+      95,
+      98,
+      100,
+      101,
+      102,
+      104,
+      107,
+      109,
+      111,
+      114,
+      117,
+      118,
+      119,
+      121,
+      124,
+      125,
+      126,
+      128,
+      132,
+      134,
+      137,
+      139,
+      140,
+      141,
+      142,
+      142,
+      142,
+      142,
+      142,
+      142,
+      142
+    ],
+    "first_differences_plateau_preview": [
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      3,
+      2,
+      2,
+      2,
+      2,
+      4,
+      3,
+      2,
+      3,
+      4,
+      6,
+      3,
+      3,
+      5,
+      4,
+      5,
+      4,
+      5,
+      3,
+      2,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      3,
+      2,
+      1,
+      1,
+      2,
+      3,
+      2,
+      2,
+      3,
+      3,
+      1,
+      1,
+      2,
+      3,
+      1,
+      1,
+      2,
+      4,
+      2,
+      3,
+      2,
+      1,
+      1,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "plateau_preview_note": "Finite preview of the terminal plateau appended for display: repeated final a_t value with zero first differences."
+  }
+}

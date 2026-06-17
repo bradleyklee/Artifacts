@@ -1,0 +1,612 @@
+{
+  "best_new_cells": 852,
+  "best_trial_cells": 6870,
+  "found_by_cells": {
+    "804": 1,
+    "834": 1,
+    "846": 5,
+    "852": 13
+  },
+  "found_index": [
+    {
+      "accept": 103,
+      "cells": 852,
+      "file": "candidate_0001_00852_b5ea80304380c077.json",
+      "hash": "b5ea80304380c077",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 50,
+      "step": 56,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 98,
+      "cells": 852,
+      "file": "candidate_0002_00852_959a4b0b919b7f32.json",
+      "hash": "959a4b0b919b7f32",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "7470d683b89cc750"
+      ],
+      "reject": 57,
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 113,
+      "cells": 852,
+      "file": "candidate_0003_00852_f8872f2537c2a340.json",
+      "hash": "f8872f2537c2a340",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "0dcd17c2256c7949"
+      ],
+      "reject": 50,
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 108,
+      "cells": 852,
+      "file": "candidate_0004_00852_079361e29506776e.json",
+      "hash": "079361e29506776e",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 54,
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 99,
+      "cells": 852,
+      "file": "candidate_0005_00852_ec2b582020c3b109.json",
+      "hash": "ec2b582020c3b109",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "7470d683b89cc750"
+      ],
+      "reject": 55,
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "file": "candidate_0006_00852_380d7b76f82f6d65.json",
+      "hash": "380d7b76f82f6d65",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "bb9f47367b53dac0"
+      ],
+      "reject": 50,
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 35
+    },
+    {
+      "accept": 117,
+      "cells": 852,
+      "file": "candidate_0007_00852_19f7447c96e21f80.json",
+      "hash": "19f7447c96e21f80",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "0c247be617e91ee2"
+      ],
+      "reject": 49,
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 73,
+      "cells": 834,
+      "file": "candidate_0008_00834_cc061ad83f9c8c5e.json",
+      "hash": "cc061ad83f9c8c5e",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "f8cb2e63009b9df7"
+      ],
+      "reject": 57,
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 38
+    },
+    {
+      "accept": 92,
+      "cells": 846,
+      "file": "candidate_0009_00846_ce49ed4c805518ae.json",
+      "hash": "ce49ed4c805518ae",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "cc11d947affc03ba"
+      ],
+      "reject": 61,
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 105,
+      "cells": 846,
+      "file": "candidate_0010_00846_1e6de854a09e19c0.json",
+      "hash": "1e6de854a09e19c0",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "3b54688dc4290814"
+      ],
+      "reject": 57,
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 115,
+      "cells": 852,
+      "file": "candidate_0011_00852_c96e175a27d2dcf0.json",
+      "hash": "c96e175a27d2dcf0",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "0c247be617e91ee2"
+      ],
+      "reject": 52,
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 83,
+      "cells": 852,
+      "file": "candidate_0012_00852_0bd9444ac501084a.json",
+      "hash": "0bd9444ac501084a",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 54,
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 37
+    },
+    {
+      "accept": 94,
+      "cells": 846,
+      "file": "candidate_0013_00846_5a68aaf261bef0a4.json",
+      "hash": "5a68aaf261bef0a4",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "cc11d947affc03ba"
+      ],
+      "reject": 61,
+      "step": 57,
+      "used_accept": 48,
+      "used_reject": 37
+    },
+    {
+      "accept": 72,
+      "cells": 804,
+      "file": "candidate_0014_00804_144004bbca109a3f.json",
+      "hash": "144004bbca109a3f",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "64633e4da4511e36"
+      ],
+      "reject": 98,
+      "step": 57,
+      "used_accept": 41,
+      "used_reject": 45
+    },
+    {
+      "accept": 115,
+      "cells": 852,
+      "file": "candidate_0015_00852_835641201c4ac220.json",
+      "hash": "835641201c4ac220",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "b99c3c6f93423df4"
+      ],
+      "reject": 51,
+      "step": 55,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 99,
+      "cells": 846,
+      "file": "candidate_0016_00846_70d110afd46f4a91.json",
+      "hash": "70d110afd46f4a91",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "4bb34c3a2b97f57c"
+      ],
+      "reject": 58,
+      "step": 56,
+      "used_accept": 45,
+      "used_reject": 39
+    },
+    {
+      "accept": 102,
+      "cells": 852,
+      "file": "candidate_0017_00852_008b307fb448a4e7.json",
+      "hash": "008b307fb448a4e7",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 55,
+      "step": 60,
+      "used_accept": 49,
+      "used_reject": 38
+    },
+    {
+      "accept": 81,
+      "cells": 852,
+      "file": "candidate_0018_00852_dd2dd46fdafd354b.json",
+      "hash": "dd2dd46fdafd354b",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 56,
+      "step": 56,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "file": "candidate_0019_00852_bce14e34e876aa66.json",
+      "hash": "bce14e34e876aa66",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "17340261fbb94eef"
+      ],
+      "reject": 55,
+      "step": 56,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 108,
+      "cells": 846,
+      "file": "candidate_0020_00846_a44af21e40b37382.json",
+      "hash": "a44af21e40b37382",
+      "op": "MINI_MUTATE",
+      "parents": [
+        "55bf67887ae9ef9e"
+      ],
+      "reject": 53,
+      "step": 55,
+      "used_accept": 47,
+      "used_reject": 38
+    }
+  ],
+  "input_records_by_cells": {
+    "1434": 1,
+    "696": 20,
+    "804": 1,
+    "810": 1,
+    "816": 1,
+    "834": 3,
+    "840": 1,
+    "846": 7,
+    "852": 17
+  },
+  "loaded_records": 52,
+  "mates": 0,
+  "mutations": 60,
+  "new_closed_chill_ge_keep_min": 20,
+  "seed": 2026061611,
+  "top_trials": [
+    {
+      "accept": 107,
+      "cells": 6870,
+      "hash": "94d516075de57c03",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 55,
+      "status": "PARTIAL_OR_OPEN",
+      "step": 197,
+      "unknown": 720,
+      "used_accept": 51,
+      "used_reject": 36
+    },
+    {
+      "accept": 103,
+      "cells": 852,
+      "hash": "b5ea80304380c077",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 50,
+      "status": "CLOSED_CHILL",
+      "step": 56,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 116,
+      "cells": 852,
+      "hash": "1c9eb4ae74678fdf",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "b99c3c6f93423df4"
+      ],
+      "reject": 51,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 98,
+      "cells": 852,
+      "hash": "959a4b0b919b7f32",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "7470d683b89cc750"
+      ],
+      "reject": 57,
+      "status": "CLOSED_CHILL",
+      "step": 56,
+      "unknown": 0,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 113,
+      "cells": 852,
+      "hash": "f8872f2537c2a340",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "0dcd17c2256c7949"
+      ],
+      "reject": 50,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 108,
+      "cells": 852,
+      "hash": "079361e29506776e",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 54,
+      "status": "CLOSED_CHILL",
+      "step": 57,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 108,
+      "cells": 852,
+      "hash": "d502269d3ebb8c7c",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 55,
+      "status": "CLOSED_CHILL",
+      "step": 57,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 36
+    },
+    {
+      "accept": 99,
+      "cells": 852,
+      "hash": "ec2b582020c3b109",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "7470d683b89cc750"
+      ],
+      "reject": 55,
+      "status": "CLOSED_CHILL",
+      "step": 56,
+      "unknown": 0,
+      "used_accept": 47,
+      "used_reject": 36
+    },
+    {
+      "accept": 85,
+      "cells": 852,
+      "hash": "380d7b76f82f6d65",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "bb9f47367b53dac0"
+      ],
+      "reject": 50,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 47,
+      "used_reject": 35
+    },
+    {
+      "accept": 117,
+      "cells": 852,
+      "hash": "19f7447c96e21f80",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "0c247be617e91ee2"
+      ],
+      "reject": 49,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 115,
+      "cells": 852,
+      "hash": "c96e175a27d2dcf0",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "0c247be617e91ee2"
+      ],
+      "reject": 52,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 83,
+      "cells": 852,
+      "hash": "0bd9444ac501084a",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 54,
+      "status": "CLOSED_CHILL",
+      "step": 56,
+      "unknown": 0,
+      "used_accept": 46,
+      "used_reject": 37
+    },
+    {
+      "accept": 88,
+      "cells": 852,
+      "hash": "dfa95f656a4648dc",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "f4ff8e03fbf65665"
+      ],
+      "reject": 56,
+      "status": "CLOSED_CHILL",
+      "step": 57,
+      "unknown": 0,
+      "used_accept": 46,
+      "used_reject": 39
+    },
+    {
+      "accept": 105,
+      "cells": 852,
+      "hash": "1db530b04b46c5d1",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "70a962d222f1cb0e"
+      ],
+      "reject": 53,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 115,
+      "cells": 852,
+      "hash": "835641201c4ac220",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "b99c3c6f93423df4"
+      ],
+      "reject": 51,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 34
+    },
+    {
+      "accept": 102,
+      "cells": 852,
+      "hash": "008b307fb448a4e7",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "7c74dca6ad8b1053"
+      ],
+      "reject": 55,
+      "status": "CLOSED_CHILL",
+      "step": 60,
+      "unknown": 0,
+      "used_accept": 49,
+      "used_reject": 38
+    },
+    {
+      "accept": 81,
+      "cells": 852,
+      "hash": "dd2dd46fdafd354b",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "c0a6be53311d6536"
+      ],
+      "reject": 56,
+      "status": "CLOSED_CHILL",
+      "step": 56,
+      "unknown": 0,
+      "used_accept": 46,
+      "used_reject": 38
+    },
+    {
+      "accept": 90,
+      "cells": 852,
+      "hash": "bce14e34e876aa66",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "17340261fbb94eef"
+      ],
+      "reject": 55,
+      "status": "CLOSED_CHILL",
+      "step": 56,
+      "unknown": 0,
+      "used_accept": 47,
+      "used_reject": 37
+    },
+    {
+      "accept": 104,
+      "cells": 852,
+      "hash": "71cee06562999872",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "a5acd12ea1ff946f"
+      ],
+      "reject": 50,
+      "status": "CLOSED_CHILL",
+      "step": 55,
+      "unknown": 0,
+      "used_accept": 48,
+      "used_reject": 35
+    },
+    {
+      "accept": 108,
+      "cells": 852,
+      "hash": "4149cb88660757b6",
+      "operator": "MINI_MUTATE",
+      "parents": [
+        "abd07da154d18eb0"
+      ],
+      "reject": 54,
+      "status": "PARTIAL_OR_OPEN",
+      "step": 57,
+      "unknown": 12,
+      "used_accept": 48,
+      "used_reject": 35
+    }
+  ],
+  "trials": 60,
+  "valid_parent_records": 50
+}

@@ -1,0 +1,257 @@
+{
+  "best_new_cells": 852,
+  "candidate_dir": "build/search/basic",
+  "found_by_cells": {
+    "852": 5
+  },
+  "found_index": [
+    {
+      "cells": 852,
+      "file": "candidate_0001_00852_5494c2e08a8485e4.json",
+      "hash": "5494c2e08a8485e4",
+      "op": "BASIC_REJECT_TO_ACCEPT"
+    },
+    {
+      "cells": 852,
+      "file": "candidate_0002_00852_d14634e350575427.json",
+      "hash": "d14634e350575427",
+      "op": "BASIC_REJECT_TO_ACCEPT"
+    },
+    {
+      "cells": 852,
+      "file": "candidate_0003_00852_318d85cf9cd8cd07.json",
+      "hash": "318d85cf9cd8cd07",
+      "op": "BASIC_ACCEPT_TO_REJECT"
+    },
+    {
+      "cells": 852,
+      "file": "candidate_0004_00852_d0aa3c4b8a742a0e.json",
+      "hash": "d0aa3c4b8a742a0e",
+      "op": "BASIC_ACCEPT_TO_REJECT"
+    },
+    {
+      "cells": 852,
+      "file": "candidate_0005_00852_158eb242d8f1bfab.json",
+      "hash": "158eb242d8f1bfab",
+      "op": "BASIC_ACCEPT_TO_REJECT"
+    }
+  ],
+  "keep_min": 800,
+  "loaded_records": 52,
+  "new_closed_chill_ge_keep_min": 5,
+  "ok": true,
+  "purpose": "basic bounded local search for more same-family closed-chill DH12 records",
+  "top_trials": [
+    {
+      "accept": 116,
+      "cells": 852,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "H.4",
+        "H.5"
+      ],
+      "hash": "5494c2e08a8485e4",
+      "operator": "BASIC_REJECT_TO_ACCEPT",
+      "parent": "95165584ec5de221",
+      "reject": 53,
+      "step": 55,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 0
+    },
+    {
+      "accept": 116,
+      "cells": 852,
+      "edit_key": [
+        "*",
+        "*",
+        "H.4",
+        "H.1",
+        "D.2",
+        "H.4"
+      ],
+      "hash": "d14634e350575427",
+      "operator": "BASIC_REJECT_TO_ACCEPT",
+      "parent": "95165584ec5de221",
+      "reject": 53,
+      "step": 55,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 0
+    },
+    {
+      "accept": 114,
+      "cells": 852,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "D.1",
+        "H.0"
+      ],
+      "hash": "318d85cf9cd8cd07",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 55,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 0
+    },
+    {
+      "accept": 114,
+      "cells": 852,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "D.1",
+        "H.2"
+      ],
+      "hash": "d0aa3c4b8a742a0e",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 55,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 0
+    },
+    {
+      "accept": 114,
+      "cells": 852,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "H.0",
+        "D.2"
+      ],
+      "hash": "158eb242d8f1bfab",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 55,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 0
+    },
+    {
+      "accept": 114,
+      "cells": 612,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "*",
+        "D.1"
+      ],
+      "hash": "3771d43d201d28d2",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 43,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 30
+    },
+    {
+      "accept": 114,
+      "cells": 594,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "D.0",
+        "H.3"
+      ],
+      "hash": "e622853670056fdd",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 38,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 0
+    },
+    {
+      "accept": 114,
+      "cells": 414,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "D.0",
+        "H.0"
+      ],
+      "hash": "2ba7e7b45ded7e40",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 29,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 36
+    },
+    {
+      "accept": 114,
+      "cells": 138,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "*",
+        "H.0"
+      ],
+      "hash": "c0a0cd6b9bee6a51",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 17,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 18
+    },
+    {
+      "accept": 114,
+      "cells": 60,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "D.2",
+        "H.4"
+      ],
+      "hash": "6aad6df2b0ad29ee",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 8,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 6
+    },
+    {
+      "accept": 114,
+      "cells": 54,
+      "edit_key": [
+        "*",
+        "*",
+        "*",
+        "*",
+        "H.0",
+        "D.1"
+      ],
+      "hash": "6c1c7dd62f5b071f",
+      "operator": "BASIC_ACCEPT_TO_REJECT",
+      "parent": "95165584ec5de221",
+      "reject": 55,
+      "step": 6,
+      "terminal_births": 0,
+      "terminal_unknown_frontier": 0
+    }
+  ],
+  "trials": 11,
+  "valid_parent_records": 50
+}

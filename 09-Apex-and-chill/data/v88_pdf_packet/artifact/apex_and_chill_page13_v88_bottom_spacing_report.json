@@ -1,0 +1,22 @@
+{
+  "artifact": "apex_and_chill_page13_v88_bottom_spacing_complete_counts",
+  "pdf": "/mnt/data/09-Apex-and-chill_minimal_merge_v1/data/v88_pdf_packet/artifact/apex_and_chill_page13_v88_bottom_spacing.pdf",
+  "root_pdf": "/mnt/data/09-Apex-and-chill_minimal_merge_v1/apex_and_chill_page13_v88_bottom_spacing.pdf",
+  "svg": "/mnt/data/09-Apex-and-chill_minimal_merge_v1/data/v88_pdf_packet/artifact/apex_and_chill_page13_v88_bottom_spacing.svg",
+  "payload": "/mnt/data/09-Apex-and-chill_minimal_merge_v1/data/v88_pdf_packet/certificate/apex852_pdf_payload_v88_reduced_certificate.json",
+  "bottom_panel_growth_line_counts": {
+    "a_lines": 4,
+    "delta_lines": 3
+  },
+  "bottom_panel_note": "all wrapped a_t and delta plateau-preview lines are visible; no truncation",
+  "pdf_link_uris": [
+    "https://www.youtube.com/watch?v=z5_rz6x4m3s"
+  ],
+  "pdf_embedded_files": [
+    "apex852_pdf_payload_v88_reduced_certificate.json",
+    "pseudocode_style_object_v40.json"
+  ],
+  "image_xobjects": 0,
+  "sha256_pdf": "b04a3f623f94c1e133f4e8ce6b6c52386ae880c9f119d670715ddfc279ce365b",
+  "sha256_svg": "951b5652ab8f6be1bb570011d4b7aca8b66ac230aabfcabd100b7c11651e7d92"
+}

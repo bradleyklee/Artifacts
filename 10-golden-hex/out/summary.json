@@ -1,0 +1,18 @@
+{
+  "level": 6,
+  "state_counts": {
+    "F": 1,
+    "0": 15840,
+    "1": 15840,
+    "B": 13536,
+    "C": 9240,
+    "G": 54120
+  },
+  "total_state_cells": 108577,
+  "on_cells": 45217,
+  "time_steps": 233,
+  "max_time": 232,
+  "final_N_t": 45217,
+  "final_a_t": 7536,
+  "(N_t-1)_mod_6": 0
+}

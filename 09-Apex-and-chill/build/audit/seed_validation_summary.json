@@ -1,0 +1,20 @@
+{
+  "by_replay_cells": {
+    "1434": 1,
+    "696": 20,
+    "804": 1,
+    "810": 1,
+    "816": 1,
+    "834": 3,
+    "840": 1,
+    "846": 7,
+    "852": 17
+  },
+  "cell_count_matches": 40,
+  "closed_zero_unknown": 50,
+  "exact_state_matches": 40,
+  "max_replay_cells": 1434,
+  "ok": true,
+  "overlap_records": 0,
+  "records": 52
+}

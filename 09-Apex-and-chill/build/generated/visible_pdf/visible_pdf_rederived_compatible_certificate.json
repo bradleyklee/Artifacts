@@ -1,0 +1,612 @@
+{
+  "accept_rules": [
+    {
+      "canonical_neighbor_key": "*|*|*|H.2|H.4|H.1",
+      "matrix_index": 7,
+      "output": "H.0",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.1",
+      "matrix_index": 14,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.5|D.0|D.3",
+      "matrix_index": 28,
+      "output": "H.4",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|H.0",
+      "matrix_index": 32,
+      "output": "H.3",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.5|H.4",
+      "matrix_index": 33,
+      "output": "H.0",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.0|H.4|H.3|H.5",
+      "matrix_index": 51,
+      "output": "H.1",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.4|D.5|D.2|H.0",
+      "matrix_index": 60,
+      "output": "H.3",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|H.3|D.4|D.1|H.5|H.4",
+      "matrix_index": 61,
+      "output": "H.2",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "D.2|D.5|H.3|H.2|H.4|H.1",
+      "matrix_index": 63,
+      "output": "H.0",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|D.3|H.3",
+      "matrix_index": 66,
+      "output": "H.1",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.1|H.3|D.5",
+      "matrix_index": 76,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.2|D.4|H.3",
+      "matrix_index": 89,
+      "output": "H.4",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.5|D.4",
+      "matrix_index": 93,
+      "output": "H.2",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.3|H.2|H.0",
+      "matrix_index": 116,
+      "output": "H.3",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.1|D.3|H.2|H.0",
+      "matrix_index": 120,
+      "output": "H.3",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.0",
+      "matrix_index": 130,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.1|H.3|H.0|D.0",
+      "matrix_index": 131,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|H.2|H.1|H.3|H.0|D.0",
+      "matrix_index": 154,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.3|H.1|H.5|H.4",
+      "matrix_index": 163,
+      "output": "H.2",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|D.2",
+      "matrix_index": 170,
+      "output": "D.5",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|D.1|H.2",
+      "matrix_index": 172,
+      "output": "D.4",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.1|H.2",
+      "matrix_index": 174,
+      "output": "D.3",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.2",
+      "matrix_index": 197,
+      "output": "D.5",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.3|H.0|D.2",
+      "matrix_index": 212,
+      "output": "D.5",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.0|H.4|H.1",
+      "matrix_index": 219,
+      "output": "D.0",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.4|H.5",
+      "matrix_index": 231,
+      "output": "D.1",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.0|H.4|H.5",
+      "matrix_index": 235,
+      "output": "D.1",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.3|H.4|H.1",
+      "matrix_index": 247,
+      "output": "D.0",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|D.3|H.0",
+      "matrix_index": 255,
+      "output": "H.1",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.1|*|*|D.0",
+      "matrix_index": 257,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.3|D.0",
+      "matrix_index": 260,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|D.0",
+      "matrix_index": 262,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|D.0|H.3|*|D.5|H.3",
+      "matrix_index": 270,
+      "output": "H.4",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.3|H.1|H.5|D.4",
+      "matrix_index": 290,
+      "output": "H.2",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.4|H.2|H.4",
+      "matrix_index": 331,
+      "output": "H.3",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "D.0|H.5|H.4|D.4|H.2|H.4",
+      "matrix_index": 338,
+      "output": "H.3",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|D.0|D.3",
+      "matrix_index": 356,
+      "output": "H.4",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|H.0|D.2|*|H.0|D.1",
+      "matrix_index": 362,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.1|H.3|D.5",
+      "matrix_index": 366,
+      "output": "H.2",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|D.3|D.0|H.2|D.4|H.3",
+      "matrix_index": 376,
+      "output": "H.1",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.2|H.5|D.4",
+      "matrix_index": 382,
+      "output": "H.0",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|D.0|D.3|H.1|H.5|D.4",
+      "matrix_index": 408,
+      "output": "H.2",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|D.5",
+      "matrix_index": 413,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.3|H.2|H.4",
+      "matrix_index": 428,
+      "output": "H.0",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.3|D.5",
+      "matrix_index": 432,
+      "output": "H.5",
+      "output_type": "H"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.0|D.4|H.3",
+      "matrix_index": 465,
+      "output": "D.1",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|D.1|H.0|H.5|D.1|H.2",
+      "matrix_index": 485,
+      "output": "D.4",
+      "output_type": "D"
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.1|H.3|D.0",
+      "matrix_index": 516,
+      "output": "H.5",
+      "output_type": "H"
+    }
+  ],
+  "artifact": "apex852_visible_pdf_rederived_compatible_certificate",
+  "canonicalization": "v88 plus convention: slot p -> p+k; state index i -> i+k; center excluded from rule key.",
+  "derivation": "PDF-visible/vector reconstruction only; generated from visible_pdf_rederived_payload.json, not from the official embedded certificate.",
+  "growth_counts": {
+    "a_sequence": [
+      1,
+      2,
+      4,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      14,
+      17,
+      19,
+      21,
+      23,
+      25,
+      29,
+      32,
+      34,
+      37,
+      41,
+      47,
+      50,
+      53,
+      58,
+      62,
+      67,
+      71,
+      76,
+      79,
+      81,
+      84,
+      87,
+      89,
+      91,
+      93,
+      95,
+      98,
+      100,
+      101,
+      102,
+      104,
+      107,
+      109,
+      111,
+      114,
+      117,
+      118,
+      119,
+      121,
+      124,
+      125,
+      126,
+      128,
+      132,
+      134,
+      137,
+      139,
+      140,
+      141,
+      142
+    ],
+    "first_differences": [
+      1,
+      2,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      3,
+      2,
+      2,
+      2,
+      2,
+      4,
+      3,
+      2,
+      3,
+      4,
+      6,
+      3,
+      3,
+      5,
+      4,
+      5,
+      4,
+      5,
+      3,
+      2,
+      3,
+      3,
+      2,
+      2,
+      2,
+      2,
+      3,
+      2,
+      1,
+      1,
+      2,
+      3,
+      2,
+      2,
+      3,
+      3,
+      1,
+      1,
+      2,
+      3,
+      1,
+      1,
+      2,
+      4,
+      2,
+      3,
+      2,
+      1,
+      1,
+      1
+    ]
+  },
+  "normalization_report": {
+    "accept_reject_overlap": 0,
+    "accept_rules": 48,
+    "input_payload": "build/generated/visible_pdf/visible_pdf_rederived_payload.json",
+    "reject_rules": 41,
+    "unknown_terminal": 0
+  },
+  "reject_rules": [
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|H.4",
+      "matrix_index": 1
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|H.5",
+      "matrix_index": 2
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.3|H.5",
+      "matrix_index": 3
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|H.1",
+      "matrix_index": 4
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.4|H.1",
+      "matrix_index": 6
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|D.1",
+      "matrix_index": 8
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.1|H.3|*|D.1",
+      "matrix_index": 11
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.1",
+      "matrix_index": 12
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|D.3",
+      "matrix_index": 16
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|D.0|D.3",
+      "matrix_index": 24
+    },
+    {
+      "canonical_neighbor_key": "*|H.0|H.2|H.5|D.0|D.3",
+      "matrix_index": 31
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.4|*|H.5",
+      "matrix_index": 34
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.4|H.3|H.5",
+      "matrix_index": 35
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.3|H.2|H.4|H.1",
+      "matrix_index": 39
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.5|D.2|H.0",
+      "matrix_index": 56
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.4|D.1|H.5|H.4",
+      "matrix_index": 57
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|D.4",
+      "matrix_index": 64
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|H.3",
+      "matrix_index": 65
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.2|H.4",
+      "matrix_index": 68
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|D.5",
+      "matrix_index": 70
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.3|D.5",
+      "matrix_index": 74
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|D.4|H.3",
+      "matrix_index": 85
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.2|H.0",
+      "matrix_index": 108
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|D.0",
+      "matrix_index": 124
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.0|D.0",
+      "matrix_index": 128
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|D.5|H.3",
+      "matrix_index": 139
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.4|H.2|H.0",
+      "matrix_index": 162
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|*|H.2",
+      "matrix_index": 171
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|*|H.1|H.5",
+      "matrix_index": 189
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.3|H.1|*|D.4",
+      "matrix_index": 268
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.1|H.0|D.0",
+      "matrix_index": 304
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.2|H.1|H.0|D.0",
+      "matrix_index": 305
+    },
+    {
+      "canonical_neighbor_key": "*|H.0|D.2|H.1|H.0|D.0",
+      "matrix_index": 326
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|H.1|H.0|D.1",
+      "matrix_index": 343
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.0|*|D.0|D.3",
+      "matrix_index": 352
+    },
+    {
+      "canonical_neighbor_key": "*|D.1|H.0|*|D.0|D.3",
+      "matrix_index": 353
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.0|H.5|D.0|D.3",
+      "matrix_index": 355
+    },
+    {
+      "canonical_neighbor_key": "*|*|*|D.2|*|D.4",
+      "matrix_index": 381
+    },
+    {
+      "canonical_neighbor_key": "*|*|H.3|D.2|*|D.4",
+      "matrix_index": 396
+    },
+    {
+      "canonical_neighbor_key": "*|D.0|*|H.1|H.5|D.4",
+      "matrix_index": 404
+    },
+    {
+      "canonical_neighbor_key": "*|*|D.2|H.1|*|D.2",
+      "matrix_index": 462
+    }
+  ],
+  "seed_axiom": {
+    "-1,0": "H.0",
+    "-1,1": "H.1",
+    "0,-1": "H.5",
+    "0,1": "H.2",
+    "1,-1": "H.4",
+    "1,0": "H.3"
+  },
+  "source": null,
+  "verification": {
+    "final_cells": 852,
+    "terminal_births": 0,
+    "terminal_step": 60,
+    "terminal_unknown_frontier": 0,
+    "used_accept_outputs": 48,
+    "used_reject_rules": 41
+  }
+}

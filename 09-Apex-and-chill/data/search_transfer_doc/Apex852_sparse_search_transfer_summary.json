@@ -1,0 +1,14 @@
+{
+  "document": "Apex852_sparse_search_transfer.md",
+  "certificate_exists": false,
+  "search_code_included": false,
+  "purpose": "Recover and merge sparse-search provenance/code with final Apex 852 page/certificate work.",
+  "required_threads": [
+    "Artifact 09 Sparse-Genome Search / Apex-and-chill",
+    "C6 Autonomous Bootstrap / GA-Prior / Apex local-rule",
+    "CA Search Pass #9"
+  ],
+  "target_bundle_size": "under 10 MB",
+  "best_result": "Apex 852 / a(infinity)=142",
+  "warning": "Search audit is provenance, not proof of optimality."
+}

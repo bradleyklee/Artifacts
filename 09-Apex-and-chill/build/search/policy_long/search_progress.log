@@ -1,0 +1,76 @@
+[SEARCH] records=52 closed_parents=50
+[SEARCH] seed=2026061709 keep_min=800
+[SEARCH] prior_keys=179 signposts=12
+[SEARCH] adopt_pairs_updown=933
+[SEARCH] adopt_pairs_equal=292
+[SEARCH] operators:
+[SEARCH] MUTATE=110 MATE=130
+[SEARCH] ADOPT_UP=100 ADOPT_DOWN=100
+[SEARCH] ADOPT_EQUAL=40
+[SEARCH] geometry:
+[SEARCH] MATE is interior averaging on the parent axis
+[SEARCH] ADOPT_UP moves up the lifetime differential
+[SEARCH] ADOPT_DOWN moves down the lifetime differential
+[SEARCH] ADOPT_EQUAL handles equal-lifetime pairs
+[METHOD] MUTATE start trials=110
+[PROGRESS] MUTATE t=50 cells=696 status=CLOSED_CHILL
+[PROGRESS] unknown=0 births=0
+[PROGRESS] state_new=False found=7
+[PROGRESS] best=918 best_op=MUTATE
+[PROGRESS] best_closed=852
+[PROGRESS] MUTATE t=100 cells=54 status=CLOSED_CHILL
+[PROGRESS] unknown=0 births=0
+[PROGRESS] state_new=True found=20
+[PROGRESS] best=942 best_op=MUTATE
+[PROGRESS] best_closed=852
+[METHOD] MUTATE done trials=110
+[METHOD] MUTATE found=25
+[METHOD] MATE start trials=130
+[PROGRESS] MATE t=50 cells=912 status=OPEN_OR_CONFLICT
+[PROGRESS] unknown=54 births=30
+[PROGRESS] state_new=True found=40
+[PROGRESS] best=942 best_op=MUTATE
+[PROGRESS] best_closed=852
+[PROGRESS] MATE t=100 cells=852 status=CLOSED_CHILL
+[PROGRESS] unknown=0 births=0
+[PROGRESS] state_new=False found=61
+[PROGRESS] best=942 best_op=MUTATE
+[PROGRESS] best_closed=852
+[METHOD] MATE done trials=130
+[METHOD] MATE found=50
+[METHOD] ADOPT_UP start trials=100
+[PROGRESS] ADOPT_UP t=50 duplicate_rule=59294775ba2615db
+[PROGRESS] best=942 best_op=MUTATE
+[PROGRESS] closed=852 found=87
+[PROGRESS] ADOPT_UP t=100 cells=852 status=CLOSED_CHILL
+[PROGRESS] unknown=0 births=0
+[PROGRESS] state_new=False found=96
+[PROGRESS] best=942 best_op=MUTATE
+[PROGRESS] best_closed=852
+[METHOD] ADOPT_UP done trials=100
+[METHOD] ADOPT_UP found=21
+[METHOD] ADOPT_DOWN start trials=100
+[METHOD] ADOPT_DOWN stop: reached target=100
+[METHOD] ADOPT_DOWN min_trials=20
+[METHOD] ADOPT_DOWN done trials=30
+[METHOD] ADOPT_DOWN found=4
+[METHOD] ADOPT_EQUAL start trials=40
+[METHOD] ADOPT_EQUAL stop: reached target=100
+[METHOD] ADOPT_EQUAL min_trials=20
+[METHOD] ADOPT_EQUAL done trials=20
+[METHOD] ADOPT_EQUAL found=8
+[SUMMARY] ok=True trials=277
+[SUMMARY] target=100
+[SUMMARY] found=108
+[SUMMARY] best_new_cells=852
+[SUMMARY] found_by_cells={'852': 55, '846': 22, '834': 14, '804': 3, '816': 2,
+          '822': 3, '840': 4, '828': 2, '810': 3}
+[SUMMARY] operator_trials={'MUTATE': 110, 'MATE': 130, 'ADOPT_UP': 100,
+          'ADOPT_DOWN': 30, 'ADOPT_EQUAL': 20}
+[SUMMARY] found_by_operator_cells={'MUTATE': {'852': 15, '846': 5, '834': 2,
+          '804': 2, '816': 1}, 'MATE': {'852': 24, '834': 5, '822': 3, '804': 1,
+          '846': 11, '840': 4, '828': 2}, 'ADOPT_UP': {'834': 7, '852': 9,
+          '846': 4, '810': 1}, 'ADOPT_DOWN': {'810': 1, '852': 2, '816': 1},
+          'ADOPT_EQUAL': {'852': 5, '846': 2, '810': 1}}
+[SUMMARY] summary_json=build/search/policy_long/policy_search_summary.json
+[SUMMARY] candidates_dir=build/search/policy_long/candidates

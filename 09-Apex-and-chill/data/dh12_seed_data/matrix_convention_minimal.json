@@ -1,0 +1,8 @@
+{
+  "model": "dh12",
+  "boundary_order": "ports 0,1,2,3,4,5 in CCW convention used by the search key",
+  "columns": "64 six-bit boundary states in numeric order 0..63",
+  "rows": "31 nonempty forget/keep masks in numeric order 1..31",
+  "space_size": 1984,
+  "tile_ports": "H has one port; D has four ports; renderer convention is separate from rule search data."
+}

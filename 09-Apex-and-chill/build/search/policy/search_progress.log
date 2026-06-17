@@ -1,0 +1,69 @@
+[SEARCH] records=52 closed_parents=50
+[SEARCH] seed=2026061709 keep_min=800
+[SEARCH] prior_keys=179 signposts=12
+[SEARCH] adopt_pairs_updown=933
+[SEARCH] adopt_pairs_equal=292
+[SEARCH] operators:
+[SEARCH] MUTATE=15 MATE=15
+[SEARCH] ADOPT_UP=15 ADOPT_DOWN=15
+[SEARCH] ADOPT_EQUAL=6
+[SEARCH] geometry:
+[SEARCH] MATE is interior averaging on the parent axis
+[SEARCH] ADOPT_UP moves up the lifetime differential
+[SEARCH] ADOPT_DOWN moves down the lifetime differential
+[SEARCH] ADOPT_EQUAL handles equal-lifetime pairs
+[METHOD] MUTATE start trials=15
+[FOUND] #001 MUTATE cells=852 step=60
+[FOUND] hash=ff5490878ea60f45 state=767c67346a1994cb
+[FOUND] #002 MUTATE cells=846 step=55
+[FOUND] hash=0e8925359003f92e state=1578574a623932d7
+[FOUND] #003 MUTATE cells=846 step=55
+[FOUND] hash=d860b00bf1a6c3a7 state=03db197d14d33e12
+[FOUND] #004 MUTATE cells=852 step=57
+[FOUND] hash=04715fd5ba37ea13 state=767c67346a1994cb
+[METHOD] MUTATE done trials=15
+[METHOD] MUTATE found=4
+[METHOD] MATE start trials=15
+[FOUND] #005 MATE cells=846 step=57
+[FOUND] hash=5da7e885f1116841 state=03db197d14d33e12
+[FOUND] #006 MATE cells=852 step=57
+[FOUND] hash=b369d6232de617c7 state=786cb6128ce278fd
+[FOUND] #007 MATE cells=810 step=56
+[FOUND] hash=2380d75e322bd0b2 state=a2b7d7e99421c594
+[FOUND] #008 MATE cells=834 step=56
+[FOUND] hash=01160ad0ab61a364 state=1ad8a3958d63c3f7
+[FOUND] #009 MATE cells=852 step=60
+[FOUND] hash=af390f75045e8a1d state=767c67346a1994cb
+[FOUND] #010 MATE cells=852 step=57
+[FOUND] hash=8c05fcf334d16cbf state=767c67346a1994cb
+[METHOD] MATE done trials=15
+[METHOD] MATE found=6
+[METHOD] ADOPT_UP start trials=15
+[FOUND] #011 ADOPT_UP cells=846 step=57
+[FOUND] hash=4942627cca5fae58 state=d8cb42ded83ae88e
+[FOUND] #012 ADOPT_UP cells=810 step=56
+[FOUND] hash=87243c3f451a9a7e state=3ba1ef336249b753
+[METHOD] ADOPT_UP done trials=15
+[METHOD] ADOPT_UP found=2
+[METHOD] ADOPT_DOWN start trials=15
+[FOUND] #013 ADOPT_DOWN cells=852 step=55
+[FOUND] hash=805e7dfbce7bf786 state=767c67346a1994cb
+[METHOD] ADOPT_DOWN done trials=15
+[METHOD] ADOPT_DOWN found=1
+[METHOD] ADOPT_EQUAL start trials=6
+[FOUND] #014 ADOPT_EQUAL cells=834 step=57
+[FOUND] hash=04d42e6c8760aad2 state=85d61e659346cb0b
+[METHOD] ADOPT_EQUAL done trials=6
+[METHOD] ADOPT_EQUAL found=1
+[SUMMARY] ok=True trials=45
+[SUMMARY] target=25
+[SUMMARY] found=14
+[SUMMARY] best_new_cells=852
+[SUMMARY] found_by_cells={'852': 6, '846': 4, '810': 2, '834': 2}
+[SUMMARY] operator_trials={'MUTATE': 15, 'MATE': 15, 'ADOPT_UP': 15,
+          'ADOPT_DOWN': 15, 'ADOPT_EQUAL': 6}
+[SUMMARY] found_by_operator_cells={'MUTATE': {'852': 2, '846': 2}, 'MATE':
+          {'846': 1, '852': 3, '810': 1, '834': 1}, 'ADOPT_UP': {'846': 1,
+          '810': 1}, 'ADOPT_DOWN': {'852': 1}, 'ADOPT_EQUAL': {'834': 1}}
+[SUMMARY] summary_json=build/search/policy/policy_search_summary.json
+[SUMMARY] candidates_dir=build/search/policy/candidates
