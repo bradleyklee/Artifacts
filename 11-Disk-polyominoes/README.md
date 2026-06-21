@@ -24,7 +24,7 @@ The target circle condition is about the *sites* in $P$, not the planar square
 union $\mathcal U(P)$.  It asks for $C\in\mathbb R^2$ and $r\ge0$ with
 
 $$
-P=\left\{z\in\mathbb Z^2:\ \lVert z-C\rVert^2\le r^2\right\}.
+P=\{z\in\mathbb Z^2 : \lVert z-C\rVert^2\le r^2\}.
 $$
 
 Thus every $p\in P$ is on or inside the circle, while every
