@@ -68,6 +68,29 @@ exact test.
 The candidate is accepted if at least one exposed-boundary pair has a feasible
 pencil interval.
 
+### Why the bisector parameter is rational and linear
+
+For a chosen anchor pair `A`, `B`, let `M` be their midpoint and let `N` be the
+perpendicular integer vector obtained by rotating `B - A` by 90 degrees. Every
+center in the pencil has the form `C(t) = M + t*N`, where `t` is a signed
+rational parameter. The actual signed distance from `M` along the bisector is
+`|N| * t`; for one fixed pair, ordering event circles by increasing radius is
+therefore the same as ordering them by increasing `abs(t)`.
+
+For any lattice site `X`, the program compares the squared distance from `X`
+to `C(t)` with the squared radius of the circle through `A` and `B`. Each
+quantity separately has a quadratic `t*t` term, but the two circles share that
+term, so it cancels in the difference. What remains is an expression of the
+form `constant + coefficient*t`.
+
+Thus a selected site gives either a closed lower bound or a closed upper bound
+on `t`: it must stay inside or on the circle. An exterior-fence site gives the
+corresponding strict bound: it must stay outside. A site whose coefficient is
+zero never changes status anywhere in that pencil and is either immediately
+compatible or immediately disqualifying. The surviving lower and upper bounds
+are exact rational numbers, so a nonempty interval is an exact certificate
+that some member of the pencil works.
+
 ## Inductive enumeration
 
 The enumerator deliberately does not generate all free polyominoes and then
@@ -114,16 +137,6 @@ only add candidates and can therefore only preserve or increase a reported
 count; it should not lower one. The agreement of depth 1 and depth 2 through
 order 50 is useful evidence, but it does not prove that depth 3 or a larger
 recovery depth will never add a new disk polyomino.
-
-Two direct closed-disk witnesses beyond the older prefix are worth retaining:
-
-- The origin-centered disk with squared radius `13` has 45 lattice sites and
-  row counts `(5, 7, 7, 7, 7, 7, 5)`.
-- The origin-centered disk with squared radius `16` has 49 lattice sites and
-  row counts `(1, 5, 7, 7, 9, 7, 7, 5, 1)`.
-
-Both are strict witnesses: their nearest omitted lattice sites have larger
-squared radius.
 
 ## Build
 
