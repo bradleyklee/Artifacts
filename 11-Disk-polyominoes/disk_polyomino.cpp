@@ -1,9 +1,10 @@
 // Exact hereditary enumerator for square-lattice disk polyominoes.
 //
 // A polyomino is accepted when some Euclidean circle contains exactly its
-// lattice sites.  For each selected pair A,B, the program tests the entire
-// pencil of circles through A and B using exact rational interval arithmetic.
-// It uses every selected pair, not only hull edges or hull vertices.
+// lattice sites.  For each pair A,B of exposed occupied boundary sites, the
+// program tests the entire pencil of circles through A and B using exact
+// rational interval arithmetic.  The immediate exterior lattice boundary is
+// the separate strict-exclusion fence.
 //
 // --depth 1: level n comes from one-square extensions of accepted level n-1.
 // --depth 2: also add all two-square extensions of accepted level n-2.  The
@@ -184,6 +185,25 @@ static constexpr std::array<int, 21> kOeis1To21{{
     return {exterior.begin(), exterior.end()};
 }
 
+// An occupied lattice site is exposed when at least one of its four
+// edge-neighbors is absent.  These are the lattice sites on the polyomino's
+// exposed boundary; only they may be used as the two anchor contacts A,B.
+[[nodiscard]] std::vector<Point> exposed_boundary_sites(const Poly& poly) {
+    const std::set<Point> cells(poly.begin(), poly.end());
+    std::vector<Point> boundary;
+    boundary.reserve(poly.size());
+    for (const Point& p : poly) {
+        for (const Point& d : kDirections) {
+            const Point q{p.x + d.x, p.y + d.y};
+            if (!cells.contains(q)) {
+                boundary.push_back(p);
+                break;
+            }
+        }
+    }
+    return boundary;
+}
+
 // Rational numbers are used only as parameter bounds for one pencil.  We keep
 // them unreduced: exact cross multiplication is faster than repeated gcd calls.
 struct Rational {
@@ -303,7 +323,7 @@ struct Difference {
     return allowed.feasible();
 }
 
-[[nodiscard]] bool accepts_by_all_pairs(const Poly& poly) {
+[[nodiscard]] bool accepts_by_boundary_pairs(const Poly& poly) {
     if (!lattice_convex(poly)) {
         return false;
     }
@@ -311,9 +331,10 @@ struct Difference {
         return true;
     }
     const std::vector<Point> exterior = immediate_exterior(poly);
-    for (std::size_t i = 0; i < poly.size(); ++i) {
-        for (std::size_t j = i + 1; j < poly.size(); ++j) {
-            if (pair_pencil_accepts(poly, exterior, poly[i], poly[j])) {
+    const std::vector<Point> boundary = exposed_boundary_sites(poly);
+    for (std::size_t i = 0; i < boundary.size(); ++i) {
+        for (std::size_t j = i + 1; j < boundary.size(); ++j) {
+            if (pair_pencil_accepts(poly, exterior, boundary[i], boundary[j])) {
                 return true;
             }
         }
@@ -457,7 +478,7 @@ int main(int argc, char** argv) {
                     continue;
                 }
                 ++convex_count;
-                if (accepts_by_all_pairs(candidate)) {
+                if (accepts_by_boundary_pairs(candidate)) {
                     accepted.insert(candidate);
                 }
             }
