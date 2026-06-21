@@ -24,7 +24,7 @@ The target circle condition is about the *sites* in $P$, not the planar square
 union $\mathcal U(P)$.  It asks for $C\in\mathbb R^2$ and $r\ge0$ with
 
 $$
-P=\{z\in\mathbb Z^2 : \lVert z-C\rVert^2\le r^2\}.
+P=\{z\in\mathbb Z^2 \mid \lVert z-C\rVert^2\le r^2\}.
 $$
 
 Thus every $p\in P$ is on or inside the circle, while every
@@ -58,13 +58,13 @@ $$
 The immediate exterior fence is
 
 $$
-E(P)=\{q\in\mathbb Z^2\setminus P:\ \exists p\in P,\ \lVert q-p\rVert_1=1\}.
+E(P)=\{q\in\mathbb Z^2\setminus P \mid \exists p\in P,\ \lVert q-p\rVert_1=1\}.
 $$
 
 The exposed occupied boundary sites are
 
 $$
-\partial_4P=\{p\in P:\ \exists d\in D,\ p+d\notin P\}.
+\partial_4P=\{p\in P \mid \exists d\in D,\ p+d\notin P\}.
 $$
 
 For every unordered pair $\{A,B\}\subset\partial_4P$, the program considers
