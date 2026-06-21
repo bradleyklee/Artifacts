@@ -24,7 +24,7 @@ The target circle condition is about the *sites* in $P$, not the planar square
 union $\mathcal U(P)$.  It asks for $C\in\mathbb R^2$ and $r\ge0$ with
 
 $$
-P=\{z\in\mathbb Z^2 \mid \lVert z-C\rVert^2\le r^2\}.
+P=\lbrace z\in\mathbb Z^2 \mid \lVert z-C\rVert^2\le r^2\rbrace.
 $$
 
 Thus every $p\in P$ is on or inside the circle, while every
@@ -52,22 +52,22 @@ Pick's theorem; it does not enumerate a bounding box.
 Let
 
 $$
-D=\{(1,0),(-1,0),(0,1),(0,-1)\}.
+D=\lbrace(1,0),(-1,0),(0,1),(0,-1)\rbrace.
 $$
 
 The immediate exterior fence is
 
 $$
-E(P)=\{q\in\mathbb Z^2\setminus P \mid \exists p\in P,\ \lVert q-p\rVert_1=1\}.
+E(P)=\lbrace q\in\mathbb Z^2\setminus P \mid \exists p\in P,\ \lVert q-p\rVert_1=1\rbrace.
 $$
 
 The exposed occupied boundary sites are
 
 $$
-\partial_4P=\{p\in P \mid \exists d\in D,\ p+d\notin P\}.
+\partial_4P=\lbrace p\in P \mid \exists d\in D,\ p+d\notin P\rbrace.
 $$
 
-For every unordered pair $\{A,B\}\subset\partial_4P$, the program considers
+For every unordered pair $\lbrace A,B\rbrace\subset\partial_4P$, the program considers
 the complete pencil of circles through $A$ and $B$.  Put
 
 $$
