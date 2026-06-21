@@ -1,0 +1,64 @@
+N=18 BIDIRECTIONAL-VERTEX-SWEEP CERTIFICATE
+============================================
+
+STATUS
+  The four circles below have been checked directly with exact rational
+  squared-distance comparisons. For each witness:
+    (1) every required polyomino vertex is inside or on the circle; and
+    (2) the induced set of unit squares is exactly the listed 18-cell polyomino.
+
+IMPORTANT TERMINOLOGY
+  'Circle center' below is the center of the witness circle.
+  It is not generally the centroid of the 18 cells.
+
+PHYSICAL GEOMETRIC CONVENTION (CENTER-SITE COORDINATES)
+  A stored cell coordinate (i,j) is the CENTER of the unit square
+      Q(i,j) = [i-1/2, i+1/2] x [j-1/2, j+1/2].
+  Its four physical vertices are
+      (i-1/2,j-1/2), (i-1/2,j+1/2),
+      (i+1/2,j-1/2), (i+1/2,j+1/2).
+
+INTERNAL DOUBLED-VERTEX COORDINATES
+  The sweep internally stores every physical point p as p2 = 2p.
+  Therefore:
+      physical circle center C = C2 / 2
+      physical squared radius r^2 = r2^2 / 4
+  where C2 and r2^2 are the raw doubled-coordinate values.
+
+STANDARD LOWER-LEFT-CORNER GRID CONVENTION
+  To draw the same geometry with integer square corners, translate every
+  physical point by (+1/2,+1/2). The circle center becomes
+      C_standard = C + (1/2,1/2),
+  while r^2 is unchanged.
+
+VERIFIED TABLE
+  W  cell-centroid       circle-center C       r^2        C_standard
+  -- ------------------- --------------------- ---------- ---------------------
+  W1 (3/2,16/9)          (3/2,17/10)           221/25     (2,11/5)
+  W2 (5/3,5/3)           (13/8,13/8)           289/32     (17/8,17/8)
+  W3 (31/18,17/9)        (51/28,53/28)         3349/392   (65/28,67/28)
+  W4 (2,5/2)             (2,5/2)               37/4       (5/2,3)
+
+RAW-TO-PHYSICAL CONVERSION TABLE
+  W  raw C2                 raw r2^2     C=C2/2                 r^2=r2^2/4
+  -- ---------------------- ------------ ---------------------- ------------
+  W1 (3,17/5)               884/25       (3/2,17/10)            221/25
+  W2 (13/4,13/4)            289/8        (13/8,13/8)            289/32
+  W3 (51/14,53/14)          3349/98      (51/28,53/28)          3349/392
+  W4 (4,5)                  37           (2,5/2)                37/4
+
+EXACT CHECKS
+  W1: required vertices inside = 28/28; induced cells = 18; exact match = YES.
+  W2: required vertices inside = 29/29; induced cells = 18; exact match = YES.
+  W3: required vertices inside = 29/29; induced cells = 18; exact match = YES.
+  W4: required vertices inside = 30/30; induced cells = 18; exact match = YES.
+
+THE FOUR 18-CELL POLYOMINOES (CENTER-SITE COORDINATES)
+  W1: 0,0 0,1 0,2 0,3 1,0 1,1 1,2 1,3 1,4 2,0 2,1 2,2 2,3 2,4 3,0 3,1 3,2 3,3
+  W2: 0,0 0,1 0,2 0,3 1,0 1,1 1,2 1,3 2,0 2,1 2,2 2,3 2,4 3,0 3,1 3,2 3,3 4,2
+  W3: 0,1 0,2 0,3 1,0 1,1 1,2 1,3 1,4 2,0 2,1 2,2 2,3 2,4 3,0 3,1 3,2 3,3 4,2
+  W4: 0,2 0,3 1,1 1,2 1,3 1,4 2,0 2,1 2,2 2,3 2,4 2,5 3,1 3,2 3,3 3,4 4,2 4,3
+
+NOTE ON THE TWO PREVIOUS TABLES
+  The earlier table beginning W1 C=(3/4,17/10) is invalid for W1.
+  The verified value is W1 C=(3/2,17/10).

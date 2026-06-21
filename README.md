@@ -155,3 +155,22 @@ SciPy/HiGHS cross-check through order 10.
 Question: Can some polyomino vertex sets (such as for Z tetromino?) fit in an
 ellipse whose principle axes are rotated off cardinal directions while the
 ellipse also excludes all exterior points.
+
+
+### 13. cognitive-dissonance
+
+OEIS A147680 is titled “Number of disk polyominoes of order (n).” Its definition
+begins with a closed disk selecting a finite set of points from the square
+lattice (\mathbb Z^2).
+
+Two natural reconstructions now contradict the reported values:
+
+* Under the **unit-square / polyomino** reading, there are four distinct 18-square
+*  configurations, while the reported value is (a(18)=3).
+* Under the literal **lattice-site / polystick** reading, there are twelve
+* distinct 45-site configurations, while the reported value is (a(45)=11).
+
+Thus neither natural model can be what is being counted without an error, an
+unstated exclusion rule, or a mismatch between the reported sequence and its 
+definition.
+

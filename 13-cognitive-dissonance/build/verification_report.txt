@@ -1,0 +1,4 @@
+Check at least 18 unit squares interior: True (4/4)
+Check no more than 18 unit squares interior: True (4/4)
+Check at least 45 lattice vertices interior: True (12/12)
+Check no more than 45 lattice vertices interior: True (12/12)

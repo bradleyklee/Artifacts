@@ -1,0 +1,126 @@
+N=45 SITE-SET / POLYSTICK CIRCLE FACT SHEET
+=============================================
+
+SCOPE
+  This certificate describes the 12 canonical 45-site representatives
+  emitted by the original occupied-lattice-site circle enumerator
+  (depth-1 hereditary run). Each listed circle is independently checked
+  below against the full integer lattice.
+
+  It certifies the 12 dumped representatives and their witnesses.
+  It does not, by itself, prove that no other 45-site representatives
+  exist outside that enumerator's hereditary search regime.
+
+MODEL: LATTICE SITES, NOT FILLED UNIT SQUARES
+  A stored coordinate p=(i,j) is the actual physical lattice point (i,j)
+  in Z^2. A closed disk D(C,r) represents the selected site set P exactly
+  when
+      P = D(C,r) intersection Z^2.
+
+  A polystick drawing places a vertex at each selected site and joins
+  horizontally/vertically adjacent selected sites by unit bars.
+  There is NO square-area or square-corner condition in this model.
+  Earlier drawings that showed black squares used them only as point glyphs
+  centered at the selected lattice sites; they are not geometric cells.
+
+SWEEP CONVENTION
+  For each listed anchor pair A,B and rational parameter t:
+      C(t) = (A+B)/2 + t * (-(B_y-A_y), B_x-A_x),
+      r^2  = |A-C(t)|^2 = |B-C(t)|^2.
+  All displayed values are physical coordinates. There is no doubled-grid
+  encoding and no global coordinate shift in this certificate.
+
+EXACT GLOBAL CHECK
+  For each S01...S12, every integer lattice point in a finite bounding box
+  containing the disk was tested by exact rational squared-distance comparison.
+  Result for every witness: 45/45 listed sites inside; 0 missing; 0 extra.
+
+D4 UNIQUENESS CHECK
+  Each of the 12 coordinate sets was normalized under all 8 rotations and
+  reflections of the square lattice. Number of distinct free-polyomino
+  canonical forms: 12. No two listed shapes are congruent by a D4 motion.
+
+RUN PROVENANCE
+  n=45 timing CSV row: 45,12,11,200,0,200,131,12,0.0704417
+
+VERIFIED CENTER / RADIUS TABLE
+  Site centroid is the arithmetic mean of the 45 selected lattice sites.
+  It is included only for comparison; it is not generally the circle center.
+
+  ID  site centroid          anchor A -- B        t          circle center C           r^2
+  --  ---------------------  -------------------  ---------  ------------------------  ----------------
+  S01  (128/45,154/45)        (0, 6)--(4, 0)       17/144     (65/24,125/36)            71149/5184
+  S02  (43/15,148/45)         (1, 0)--(2, 7)       -13/68     (193/68,225/68)           33125/2312
+  S03  (133/45,142/45)        (1, 0)--(3, 7)       -3/22      (65/22,71/22)             3445/242
+  S04  (3,3)                  (0, 1)--(0, 5)       -3/4       (3,3)                     13
+  S05  (44/15,31/9)           (0, 1)--(4, 7)       -7/48      (23/8,41/12)              8125/576
+  S06  (134/45,149/45)        (2, 7)--(6, 1)       -35/204    (101/34,169/51)           151177/10404
+  S07  (143/45,151/45)        (0, 5)--(2, 0)       29/62      (207/62,213/62)           26129/1922
+  S08  (16/5,16/5)            (0, 5)--(3, 7)       -9/10      (33/10,33/10)             689/50
+  S09  (49/15,157/45)         (0, 5)--(7, 3)       -10/133    (891/266,66/19)           958717/70756
+  S10  (149/45,152/45)        (2, 0)--(6, 6)       97/896     (1501/448,769/224)        2731469/200704
+  S11  (10/3,10/3)            (0, 2)--(2, 0)       43/36      (61/18,61/18)             2173/162
+  S12  (154/45,52/15)         (0, 2)--(6, 6)       -3/32      (27/8,55/16)              3445/256
+
+EXACT WITNESS CHECK SUMMARY
+  ID   required sites inside   extra lattice sites inside   D4 class
+  ---  ----------------------  ---------------------------  --------
+  S01  45/45                   0                            unique
+  S02  45/45                   0                            unique
+  S03  45/45                   0                            unique
+  S04  45/45                   0                            unique
+  S05  45/45                   0                            unique
+  S06  45/45                   0                            unique
+  S07  45/45                   0                            unique
+  S08  45/45                   0                            unique
+  S09  45/45                   0                            unique
+  S10  45/45                   0                            unique
+  S11  45/45                   0                            unique
+  S12  45/45                   0                            unique
+
+THE TWELVE 45-SITE REPRESENTATIVES (CENTER-SITE COORDINATES)
+  Each line is one canonical free-polyomino representative, written as
+  its 45 selected lattice sites. The row-run signature is a compact
+  readable checksum; the coordinate list is the definitive data.
+
+  S01 row-runs: 0:2-4 | 1:0-5 | 2:0-6 | 3:0-6 | 4:0-6 | 5:0-6 | 6:0-5 | 7:2-3
+  S01 sites: 0,1 0,2 0,3 0,4 0,5 0,6 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 2,7 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 5,1 5,2 5,3 5,4 5,5 5,6 6,2 6,3 6,4 6,5
+
+  S02 row-runs: 0:1-4 | 1:0-5 | 2:0-6 | 3:0-6 | 4:0-6 | 5:0-6 | 6:1-5 | 7:2-3
+  S02 sites: 0,1 0,2 0,3 0,4 0,5 1,0 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 2,7 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 5,1 5,2 5,3 5,4 5,5 5,6 6,2 6,3 6,4 6,5
+
+  S03 row-runs: 0:1-4 | 1:0-6 | 2:0-6 | 3:0-6 | 4:0-6 | 5:0-6 | 6:1-5 | 7:3
+  S03 sites: 0,1 0,2 0,3 0,4 0,5 1,0 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5
+
+  S04 row-runs: 0:1-5 | 1:0-6 | 2:0-6 | 3:0-6 | 4:0-6 | 5:0-6 | 6:1-5
+  S04 sites: 0,1 0,2 0,3 0,4 0,5 1,0 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 4,0 4,1 4,2 4,3 4,4 4,5 4,6 5,0 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5
+
+  S05 row-runs: 0:2-4 | 1:0-5 | 2:0-6 | 3:0-6 | 4:0-6 | 5:0-6 | 6:1-5 | 7:2-4
+  S05 sites: 0,1 0,2 0,3 0,4 0,5 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 2,7 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 4,7 5,1 5,2 5,3 5,4 5,5 5,6 6,2 6,3 6,4 6,5
+
+  S06 row-runs: 0:2-4 | 1:0-6 | 2:0-6 | 3:0-6 | 4:0-6 | 5:0-6 | 6:1-5 | 7:2-3
+  S06 sites: 0,1 0,2 0,3 0,4 0,5 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 2,7 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5
+
+  S07 row-runs: 0:2-4 | 1:1-6 | 2:0-6 | 3:0-7 | 4:0-6 | 5:0-6 | 6:1-5 | 7:3-4
+  S07 sites: 0,2 0,3 0,4 0,5 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 4,7 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5 7,3
+
+  S08 row-runs: 0:2-5 | 1:1-6 | 2:0-6 | 3:0-7 | 4:0-6 | 5:0-6 | 6:1-5 | 7:3
+  S08 sites: 0,2 0,3 0,4 0,5 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 5,0 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5 7,3
+
+  S09 row-runs: 0:3-4 | 1:1-6 | 2:0-6 | 3:0-7 | 4:0-6 | 5:0-6 | 6:1-6 | 7:3-4
+  S09 sites: 0,2 0,3 0,4 0,5 1,1 1,2 1,3 1,4 1,5 1,6 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 4,7 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5 6,6 7,3
+
+  S10 row-runs: 0:2-4 | 1:1-6 | 2:0-6 | 3:0-7 | 4:0-6 | 5:1-6 | 6:1-6 | 7:3-4
+  S10 sites: 0,2 0,3 0,4 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 4,7 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5 6,6 7,3
+
+  S11 row-runs: 0:2-4 | 1:1-6 | 2:0-6 | 3:0-7 | 4:0-7 | 5:1-6 | 6:1-5 | 7:3-4
+  S11 sites: 0,2 0,3 0,4 1,1 1,2 1,3 1,4 1,5 1,6 2,0 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 4,7 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5 7,3 7,4
+
+  S12 row-runs: 0:3-4 | 1:1-6 | 2:0-6 | 3:0-7 | 4:0-7 | 5:1-6 | 6:1-6 | 7:3-4
+  S12 sites: 0,2 0,3 0,4 1,1 1,2 1,3 1,4 1,5 1,6 2,1 2,2 2,3 2,4 2,5 2,6 3,0 3,1 3,2 3,3 3,4 3,5 3,6 3,7 4,0 4,1 4,2 4,3 4,4 4,5 4,6 4,7 5,1 5,2 5,3 5,4 5,5 5,6 6,1 6,2 6,3 6,4 6,5 6,6 7,3 7,4
+
+REPRODUCIBILITY NOTE
+  The full-lattice verification test for each witness is:
+      (x-C_x)^2 + (y-C_y)^2 <= r^2
+  evaluated exactly for integer (x,y) in a guaranteed disk-bounding box.
+  Equality is allowed: the circle is closed.
