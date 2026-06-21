@@ -133,13 +133,10 @@ sequence using binary REPHEX-style Lindenmayer rules. The folder contains a
 small data-and-rendering pipeline for expanding the tree, assigning the parity
 coloring, producing the visible hex-tree figures, and printing the associated
 growth sequence and first differences.
+### 12. disk-polyominoes
 
-### 11. disk-polyominoes
-
-An experimental exact-integer/rational enumerator for OEIS A147680 that grows
-square-lattice disk polyominoes from accepted predecessors and certifies
-candidates by sweeping circle pencils through pairs of exposed occupied
-boundary sites against the immediate exterior lattice boundary.
-
-Question: can increasing predecessor-recovery depth change the reported counts
-by finding a valid disk polyomino with no retained shallower predecessor?
+An experimental exact-integer/rational enumerator for OEIS A147680.  It grows
+square-lattice disk-polyomino candidates from accepted predecessors and tests
+circle pencils through occupied-site pairs against the immediate exterior fence.
+The artifact includes a code-drawn small-order gallery comparing exact circle
+witnesses with exact axis-aligned-ellipse certificates.
