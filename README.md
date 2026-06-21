@@ -144,7 +144,7 @@ boundary sites against the immediate exterior lattice boundary.
 Question: can increasing predecessor-recovery depth change the reported counts
 by finding a valid disk polyomino with no retained shallower predecessor?
 
-### 12. axis-aligned-ellipses
+### 12. ellipses-polyominoes
 
 An exact-rational search for finite square-lattice polyominoes that are exactly
 the lattice sites of a translated, axis-aligned ellipse. The current artifact
