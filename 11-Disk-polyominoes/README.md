@@ -4,166 +4,126 @@ This folder contains an experimental exact-integer/rational enumerator for
 [OEIS A147680](https://oeis.org/A147680): free square-lattice polyominoes whose
 lattice sites are exactly the lattice points of a closed Euclidean disk.
 
-All geometry decisions use signed 128-bit integer expressions and rational
-parameter bounds; no floating-point comparison decides acceptance.  Thus the
-calculation is exact provided its intermediate integer products fit in signed
-`__int128`.  The current code does not dynamically check that bound, so this is
-an implementation limit to retain when extending far beyond the recorded runs.
+Every geometry decision uses signed 128-bit integer expressions and exact
+rational parameter bounds. No floating-point comparison decides acceptance.
+The calculation is exact provided every intermediate integer product fits in
+signed `__int128`. The current code does not dynamically check that bound, so
+this remains an implementation limit when extending far beyond the recorded
+runs.
 
-A shape is a finite, edge-connected set \(P\subset\mathbb Z^2\).  It is accepted
-only when the program finds a circle \(C\) satisfying
-
-\[
-C\cap\mathbb Z^2=P.
-\]
-
-Thus selected points may lie on the circle, while every unselected lattice point
-must be strictly outside it.  The test concerns **lattice points**, not the
-outline formed by unit squares.
+Here, a shape is a finite edge-connected collection of square-lattice sites.
+It is accepted only if the program finds a closed Euclidean disk containing
+exactly those sites and no other square-lattice sites. Selected sites may lie
+on the circle; every unselected lattice site must be strictly outside it. The
+test concerns lattice sites, not the outline formed by unit squares.
 
 ## The geometric test
 
-The program does not fit circles numerically.  It uses the following finite,
+The program does not fit circles numerically. It uses the following finite,
 exact test.
 
-1. **Lattice-convex prefilter.** A disk is convex, so a possible answer must
-   contain every lattice point in its Euclidean convex hull.  The program
-   computes the hull and rejects unless
+1. **Lattice-convex prefilter.** A disk is convex, so a candidate must contain
+   every lattice site in its Euclidean convex hull. The program computes the
+   hull and rejects a candidate unless the hull contains no unselected lattice
+   site. Its lattice-point count is obtained exactly from the integer hull
+   vertices using Pick's theorem and edge gcd counts.
 
-   \[
-   \operatorname{conv}(P)\cap\mathbb Z^2=P.
-   \]
+2. **Finite exterior fence.** The exterior fence consists of every unselected
+   lattice site one four-neighbor step from the candidate. A witness circle
+   must leave every fence site strictly outside. This is the finite exclusion
+   set used in every certificate. The intended finite-check lemma is that a
+   disk capturing any farther unwanted lattice site would also capture a first
+   exterior-fence site along a lattice path back to the candidate.
 
-   The lattice-point count of the hull is obtained exactly from its integer
-   vertices using Pick's theorem and the edge gcd counts.
+3. **Every exposed-boundary pair gives a pencil.** An exposed occupied boundary
+   site is an occupied site with at least one missing four-neighbor. The program
+   tries every unordered pair `A`, `B` of such sites as possible circle-contact
+   anchors. All circles through `A` and `B` have centers on the perpendicular
+   bisector of the segment between them. The program uses a signed rational
+   coordinate along that bisector to describe the full one-parameter pencil.
 
-2. **Finite exterior fence.** Let \(E\) be the unselected lattice points at
-   four-neighbor distance one from \(P\).  A witness circle must put all of
-   \(E\) strictly outside.  This is the finite exterior set used in every
-   certificate.  The intended finite-check lemma is that a disk which captured
-   any farther unwanted lattice point would also capture some first exterior
-   point on a lattice path from \(P\).
+   A fully surrounded occupied site never needs to be an anchor: a circle
+   through it could not also contain both members of an opposite occupied
+   neighbor pair. The exposed boundary supplies anchors; the exterior fence is
+   the separate set of strict exclusions.
 
-3. **Every exposed-boundary pair gives a pencil.** Let
+4. **Events are ordered by radius, not signed bisector position.** For each
+   remaining selected site and each exterior-fence site, there is at most one
+   circle in the pencil that passes through `A`, `B`, and that site. The sweep
+   begins with the smallest circle through `A` and `B`, whose diameter is the
+   segment `AB`, and increases radius. Equivalently, it increases the absolute
+   distance of the center from the midpoint of `AB` along the perpendicular
+   bisector. The sign still matters because it identifies which of the two
+   same-radius branches changes.
 
-   \[
-   \partial_4 P=\{p\in P:\text{at least one four-neighbor of }p\text{ is not in }P\}.
-   \]
+5. **Exact interval test.** Instead of constructing a numerical event ledger,
+   the implementation compares the squared distance from each site to the
+   moving center with the squared radius of the same moving circle. The common
+   quadratic term cancels, leaving a linear condition on the signed bisector
+   parameter. Selected sites impose non-strict bounds; exterior-fence sites
+   impose strict bounds. The program intersects all of those half-line bounds
+   with exact rational arithmetic. A nonempty interval proves that the pair
+   has a valid witness circle.
 
-   The program tests every unordered pair \(A,B\in\partial_4 P\), looking
-   for a witness circle having both on its boundary.  A fully surrounded
-   lattice site never needs to be an anchor: if a circle passed through \(p\),
-   it could not contain both members of an opposite neighbor pair
-   \(p+v,p-v\).  Thus a circle contact must be exposed.  The immediate
-   exterior lattice boundary is the separate exclusion set \(E\).  All
-   circles through \(A\) and \(B\) have centers on the perpendicular bisector
-   of \(AB\):
-
-   \[
-   c(t)=\frac{A+B}{2}+t\,n,
-   \]
-
-   where \(n\) is a fixed perpendicular vector.  The signed coordinate \(t\)
-   distinguishes the two branches of the pencil.
-
-4. **Events are ordered by radius, not signed position.** For each other point
-   \(X\in(P\setminus\{A,B\})\cup E\), there is at most one event circle
-   through \(A,B,X\).  Its center has some signed coordinate \(t_X\), but the
-   event radius satisfies
-
-   \[
-   r_X^2=\frac{\lVert A-B\rVert^2}{4}+\lVert n\rVert^2t_X^2.
-   \]
-
-   Therefore the geometric sweep starts at the diameter circle \(t=0\) and
-   proceeds in increasing \(|t|\), equivalently increasing radius, while
-   retaining the sign of \(t\) to identify which branch changes.  A point on
-   the two opposite half-planes of the chord line has the corresponding
-   enter-on-one-branch / leave-on-the-other behavior.
-
-5. **Exact interval test.** Rather than explicitly sorting an event ledger, the
-   implementation writes, for each \(X\),
-
-   \[
-   \Delta_X(t)=\lVert X-c(t)\rVert^2-\lVert A-c(t)\rVert^2.
-   \]
-
-   This is linear in \(t\).  A selected point requires \(\Delta_X(t)\le0\);
-   an exterior-fence point requires \(\Delta_X(t)>0\).  Each condition is a
-   half-line, all are intersected with exact rational arithmetic, and a
-   nonempty interval is a witness for that pair.  This is algebraically the
-   same finite pair-pencil sweep described above; it avoids floating-point
-   geometry and preserves the strict exclusion of exterior points.
-
-The candidate is accepted if **any exposed-boundary pair** has a feasible
+The candidate is accepted if at least one exposed-boundary pair has a feasible
 pencil interval.
 
 ## Inductive enumeration
 
 The enumerator deliberately does not generate all free polyominoes and then
-filter them.  It grows candidates from earlier accepted levels, canonicalizing
+filter them. It grows candidates from earlier accepted levels and canonicalizes
 under the eight symmetries of the square.
 
-`--depth 1` uses ordinary hereditary growth:
+`--depth 1` uses ordinary hereditary growth: add one edge-adjacent square to
+an accepted shape of the preceding order.
 
-\[
-\mathcal D_n\leftarrow\{P\cup\{q\}:P\in\mathcal D_{n-1},\ q\text{ is one edge-adjacent new square}\}.
-\]
+`--depth 2` takes the deduplicated union of two routes at the target order:
 
-`--depth 2` uses the deduplicated union of two routes at target order \(n\):
+1. one-square extensions of accepted shapes from the preceding order; and
+2. two-square extensions of accepted shapes from two orders earlier.
 
-1. one-square extensions of accepted order \(n-1\), and
-2. two-square extensions of accepted order \(n-2\).
-
-For the two-step route, the intermediate order-\(n-1\) shape is **not**
-required to be accepted.  It is a recovery channel for a valid shape whose
-one-square predecessor might not itself be retained by the current search.
-Every candidate from either route still passes the full lattice-convex and
-exposed-boundary-pair circle test.
+For the two-step route, the intermediate shape is not required to be accepted.
+It is a recovery channel for a valid shape whose one-square predecessor might
+not itself be retained by the current search. Every candidate from either route
+still passes the full lattice-convex and exposed-boundary-pair circle test.
 
 ## Status and validation
 
 This is a research enumerator, not a proof that the hereditary generator or the
-two-contact reduction is complete.  In particular, the following remain proof
-obligations rather than assumptions silently discharged by the code:
+two-contact reduction is complete. The following are proof obligations rather
+than assumptions silently discharged by the code:
 
-- every disk polyomino occurs through the chosen one- or two-square predecessor
-  routes; and
-- every disk polyomino has a witness circle through two exposed occupied
+- Every disk polyomino occurs through one of the chosen predecessor routes.
+- Every disk polyomino has a witness circle through two exposed occupied
   boundary sites, so that one of the tested pencils finds it.
 
-The program reproduces the OEIS prefix hard-coded through \(n=21\) in both
-depth modes.  Replacing the earlier all-occupied-pair anchor loop with the
+The program reproduces the OEIS prefix hard-coded through order 21 in both
+depth modes. Replacing the earlier all-occupied-pair anchor loop with the
 exposed-boundary-pair loop left every discrete count column unchanged through
-\(n=50\), in both depth modes.  Because the boundary-pair anchors are a subset
-of the older all-pair anchors, term-by-term equality establishes inductively
-that the retained accepted sets also agree through that range.  These
-comparisons are evidence, not a completeness proof.
+order 50 in both depth modes. Because the new anchor set is a subset of the old
+one, term-by-term equality establishes inductively that the retained accepted
+sets also agree through that range. These comparisons are evidence, not a
+completeness proof.
 
 ### Open question: can depth change the counts?
 
-Yes, in principle.  A deeper recovery mode can find a valid order-\(n\) disk
-whose deletion paths do not pass through any accepted candidate retained by a
-shallower mode.  With the same geometric predicate, enlarging the recovery
-pool should only add candidates and therefore can only preserve or increase a
-reported count; it should not lower one.  The agreement of depth 1 and depth 2
-through \(n=50\) is useful evidence, but it does not prove that depth 3 or a
-larger recovery depth will never add a new disk polyomino.
+Yes, in principle. A deeper recovery mode can find a valid disk polyomino whose
+deletion paths do not pass through an accepted candidate retained by a shallower
+mode. With the same geometric predicate, enlarging the recovery pool should
+only add candidates and can therefore only preserve or increase a reported
+count; it should not lower one. The agreement of depth 1 and depth 2 through
+order 50 is useful evidence, but it does not prove that depth 3 or a larger
+recovery depth will never add a new disk polyomino.
 
-Two useful direct closed-disk witnesses beyond the older prefix are:
+Two direct closed-disk witnesses beyond the older prefix are worth retaining:
 
-\[
-\{(x,y)\in\mathbb Z^2:x^2+y^2\le13\},\qquad |P|=45,
-\]
+- The origin-centered disk with squared radius `13` has 45 lattice sites and
+  row counts `(5, 7, 7, 7, 7, 7, 5)`.
+- The origin-centered disk with squared radius `16` has 49 lattice sites and
+  row counts `(1, 5, 7, 7, 9, 7, 7, 5, 1)`.
 
-with row counts \((5,7,7,7,7,7,5)\), and
-
-\[
-\{(x,y)\in\mathbb Z^2:x^2+y^2\le16\},\qquad |P|=49,
-\]
-
-with row counts \((1,5,7,7,9,7,7,5,1)\).  Both are strict witnesses: the
-nearest omitted lattice points lie at larger squared radius.
+Both are strict witnesses: their nearest omitted lattice sites have larger
+squared radius.
 
 ## Build
 
@@ -171,7 +131,7 @@ nearest omitted lattice points lie at larger squared radius.
 make
 ```
 
-Requires a C++20 compiler.  Recent GCC and Clang work; no third-party library
+Requires a C++20 compiler. Recent GCC and Clang work; no third-party library
 is required.
 
 ## Run
@@ -188,7 +148,7 @@ Depth-two growth:
 ./disk_polyomino --max-n 50 --depth 2 --csv depth2_n50.csv
 ```
 
-Check the embedded OEIS prefix through \(n=21\):
+Check the embedded OEIS prefix through order 21:
 
 ```sh
 ./disk_polyomino --max-n 21 --depth 1 --verify-oeis
@@ -197,5 +157,5 @@ Check the embedded OEIS prefix through \(n=21\):
 
 The CSV gives, for each order, the sizes of the previous accepted levels, the
 `+1` and `+2` candidate pools, their deduplicated union, lattice-convex
-survivors, accepted disks, and elapsed seconds.  See `BENCHMARKS.md` for the
-recorded local baseline through \(n=50\).
+survivors, accepted disks, and elapsed seconds. See `BENCHMARKS.md` for the
+recorded local baseline through order 50.
