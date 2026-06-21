@@ -1,145 +1,180 @@
-# Artifacts
+# Exact disk-polyomino enumerator
 
-This folder records provisional mathematical/computational artifacts found through
-**Harm.On.ica** methodology: LLM-based spontaneous code generation combined with
-extensive testing. We are currently using Chat GPT plus as the service provider.
+This directory contains an experimental C++ enumerator for
+[OEIS A147680](https://oeis.org/A147680): free square-lattice polyominoes whose
+occupied lattice sites are exactly the lattice points of a closed Euclidean disk.
 
-Artifacts are not automatically rigorously proven. Far from it. They may include
-false positives, hallucinations, clever hacks, and even, sometimes, outright
-deception. The goal is to preserve the ideation of interesting calculations
-without pretending they are already settled.
+Let $P\subset\mathbb Z^2$ be finite and edge-connected.  The program accepts
+$P$ when it finds $C\in\mathbb R^2$ and $r\ge0$ with
 
-## Reader Responsibilities
+$$
+P=\{X\in\mathbb Z^2:\ \lVert X-C\rVert^2\le r^2\}.
+$$
 
-Caveat emptor! Read at your own risk!
+Only lattice sites matter here, not the outline of the unit squares.  Selected
+sites may lie on the circle; every unselected lattice site must be strictly
+outside it.
 
-The reader’s main responsibility is bringing a safety-first attitude to the
-artificial workplace, an attitude which fully acknowledges the lethality of
-catastrophic failure modes. People have died delusionally insane from using this
-technology, and still others have lost their careers. What will happen when,
-like Nabokov’s poor Luzhin, you find out that your defense has a flaw? What if
-that flaw leads to a catastrophic loss of life, or at least the loss of a living
-wage?
+## Exact arithmetic
 
-Unlike archaeological artifacts, computational artifacts belong to a present and
-future epoch, most likely the Anthropocene. Occasionally, on an archaeological
-dig, there are false positive discoveries, but not at the rates you can expect
-when dealing with aura code. We baseline expect every result to occur initially
-as a false positive. Thus the reader’s second responsibility is deciding when
-false positives can be converted into true positives. Some results will be easy
-to convert, and also worthwhile. In those circumstances, reward outweighs risk.
+All geometric accept/reject decisions use signed 128-bit integer expressions
+and exact rational bounds.  Floating point is used only to print elapsed time.
+Thus the calculation is exact provided every intermediate product fits in
+`__int128`.  The code does not yet check that bound dynamically, so overflow is
+an implementation limit for much larger runs.
 
-Human navigators and pilots are taking on serious risk here. Readers can always
-help in the effort to judge artifact truth values: we need more human review of
-Harm.On.ica content. Personally, I am not subordinating a billion-dollar machine,
-and wish for my Harm.On.ica artificial colleague to be considered the first author
-for all of the code and some of the writing.
+## Certificate test
 
-If there is something you like, and you can think of a better reference
-implementation, proof, counterexample, simplification, test, or warning label,
-please contribute it. The best help is specific: give the smallest failing case,
-the exact command, the observed output, and the expected output.
+The program does not numerically fit a circle.  It reduces each candidate to a
+finite family of one-parameter circle pencils.
 
-## Artifact List
+### 1. Lattice-convexity
 
-### 01. forgetful-bracelets
+A disk is convex, so a necessary condition is
 
-The number `T(N,M)` of `N`-color bracelets of length `N-M`, for
-`M = 0, ..., N`.
+$$
+P=\operatorname{conv}(P)\cap\mathbb Z^2.
+$$
 
-Question: can the row sums be simplified or connected to a useful recurrence?
-The rotation part reduces to divisor/totient sums and does not look
-hypergeometric-summable.
+The code computes the integer convex hull and counts its lattice sites with
+Pick's theorem:
 
-### 02. bracelet-representations
+$$
+\#\bigl(\operatorname{conv}(P)\cap\mathbb Z^2\bigr)
+=A+\frac B2+1,
+$$
 
-Decompositions of bracelet colorings by D_n irreducible representation:
-A1 monotone, A2 chiral pairs, B1/B2 for even only, and doublet E for aperiodic.
-It includes table generation plus a worked \(n=4,k=4\) word-label example.
+where $A$ is the hull area and $B$ is its number of boundary lattice
+sites.  A candidate fails immediately when this count is not $\#P$.
 
-Question: how can we use inductive representations (read: Molien theory)
-to generate counts in the table. What type of generating functions become available?
+### 2. Exterior fence
 
-### 03. knight-quadrants
+The immediate exterior lattice boundary is
 
-Sequential knight-cover images inspired by an OEIS red/black picture, then varied
-by scan order (`spiral`, `dist-atan`), number of colors (`b`, `br`, `brg`,
-`brgy`), and geometry (`square`, `hex`). The current implementation caches
-geometry/order data, renders large square PNGs and hex SVGs, and includes debug
-views for all cases.
+$$
+E(P)=\{q\in\mathbb Z^2\setminus P:\ \lVert q-p\rVert_1=1
+\text{ for some }p\in P\}.
+$$
 
-Question: what large-scale structures are genuine, and how do they change when
-we alter the ordering rule or pass from square knights to six-move short hex
-knights?
+A witness must exclude every site of $E(P)$.  This is the finite exclusion
+set used by the program.  The reduction relies on the fact that the lattice
+sites of a disk are edge-connected: a disk containing an omitted lattice site
+would also contain a first omitted neighbor on a lattice path back to $P$.
 
-### 04. nicomachus-theorem
+### 3. Exposed boundary anchors
 
-It's interesting to consider the differential ring of polynomials generated by
-the partial derivative operator and any polynomial. With the triangular numbers
-quadratic polynomial, we can quickly rediscover Nicomachus theorem. Now what's 
-the proof using telescoping sums? 
+The exposed occupied boundary is
 
-### 05. lean-conjectures
+$$
+\partial_4P=\{p\in P:\ p+d\notin P
+\text{ for some }d\in\{(1,0),(-1,0),(0,1),(0,-1)\}\}.
+$$
 
-A recent Deep Mind paper mentions a conjecture on OEIS A108 Catalan Numberrs. 
-OEIS makes the result look more mysterious than it is; Google makes the proof 
-look more impressive than it is. The theorem only needs a short tail-dominance 
-argument, which we'd prefer to write as a five way case split.
-### 06. sage-hexings
+For every unordered pair $\{A,B\}\subset\partial_4P$, the program tests
+the pencil of all circles through $A$ and $B$.  This is the actual anchor
+set in the code; it does not test fully surrounded occupied sites.
 
-Obtain a reduced two-hex Spectre-style model with executable directed edge rules, 
-cyclic vertex rules, and local forcing properties. The artifact prints a compact 
-fact sheet and a strong-forcing diagram for the seven-tile configuration obtained 
-from singular H1 edges plus one branch-killed alternative. Thanks to Bowen Ping
-for the original data, which was parsed and reformatted by Harm.On.ica.
+### 4. One pencil, one rational parameter
 
-### 07. tri-searching
+Put
 
-An exhaustive SAT search over a 15-bit anchored equilateral-triangle rule family:
-`AB=DE` is mandatory and uniquely distinguished, while the remaining symmetric
-edge joins are optional.  At the recorded bounds, all 32,768 masks are either
-pruned by one of 49 small periodic certificates or die by finite completion
-depth 3; the artifact includes a generated illustrated PDF of the periodic
-witnesses.
+$$
+M=\frac{A+B}{2},\qquad d=B-A,\qquad N=(-d_y,d_x).
+$$
 
-### 08. spectre-straight-breaks
+Every circle through $A$ and $B$ has center
 
-A source-derived audit of straight positioned paths in the Spectre substitution
-from minimal excerpts of Figures 4.2 and 5.1. The program extracts 76
-positioned straight-path records, audits all 288 valid positioned joins, and
-finds that every straight-only join breaks under inflation. This is a
-straight-only structure theorem: bent-path records may repair the breaks and
-remain to be analyzed.
+$$
+C(t)=M+tN,\qquad t\in\mathbb R.
+$$
 
-Bad news for OEIS: the straight-line sequence refuses to stay straight.
-Good news for OEIS: we might be able to bend some axes into existence.
+Its squared radius is
 
-Rebuild and verify this artifact with `cd 08-spectre-straight-breaks && make smoke`.
+$$
+r(t)^2=\lVert A-C(t)\rVert^2
+=\lVert A-M\rVert^2+t^2\lVert N\rVert^2.
+$$
 
+Hence the two centers $C(t)$ and $C(-t)$ give the two circles of the
+same radius through $A,B$, and event radii are ordered by $|t|$.
 
-### 09. apex-and-chill
+For any lattice site $X$, compare its squared distance from the moving
+center with the squared radius:
 
-Apex 852 is the current summit record in our DH12 / C6 local-rule mountain
-climbing sport: a finite growth record reaching a(∞) = 142, the highest apex
-we have found so far in this artifact line. The folder preserves the climb in
-checkable form, including front-page figures, extracted growth data, replay
-checks, audits, priors, and the sparse-search machinery used to find and improve
-candidate records. Can you set a new record?
+$$
+\begin{aligned}
+\Delta_X(t)
+&=\lVert X-C(t)\rVert^2-\lVert A-C(t)\rVert^2\\
+&=\lVert X-M\rVert^2-\lVert A-M\rVert^2
+ -2t\,N\mathbin\cdot(X-M).
+\end{aligned}
+$$
 
-### 10. golden-hex
+The $t^2$ terms cancel.  Thus $\Delta_X(t)$ is linear in $t$:
 
-A reconstruction artifact for the Golden-Ratio Hex Tree / Mountain-and-Valley
-sequence using binary REPHEX-style Lindenmayer rules. The folder contains a
-small data-and-rendering pipeline for expanding the tree, assigning the parity
-coloring, producing the visible hex-tree figures, and printing the associated
-growth sequence and first differences.
+$$
+X\in P\Rightarrow\Delta_X(t)\le0,
+\qquad
+q\in E(P)\Rightarrow\Delta_q(t)>0.
+$$
 
-### 11. disk-polyominoes
+Each site supplies one exact rational lower or upper bound on $t$, or
+immediately rules out the pencil.  Their intersection is an exact interval.
+A nonempty interval is a certificate for that anchor pair.  The candidate is
+accepted when at least one exposed-boundary pair has such an interval.
 
-An experimental exact-integer/rational enumerator for OEIS A147680 that grows
-square-lattice disk polyominoes from accepted predecessors and certifies
-candidates by sweeping circle pencils through pairs of exposed occupied
-boundary sites against the immediate exterior lattice boundary.
+## Inductive enumeration
 
-Question: can increasing predecessor-recovery depth change the reported counts
-by finding a valid disk polyomino with no retained shallower predecessor?
+Shapes are canonicalized under the eight symmetries of the square.  The program
+grows only from earlier accepted shapes rather than first enumerating all free
+polyominoes.
+
+| Mode | Candidate pool at order $n$ |
+|---|---|
+| `--depth 1` | Add one edge-adjacent square to every accepted shape of order $n-1$. |
+| `--depth 2` | Take the deduplicated union of the depth-1 pool and all two-square extensions of accepted shapes of order $n-2$. |
+
+In the two-square route, the intermediate $n-1$ shape need not be accepted.
+Every candidate still passes the full lattice-convexity and pencil test.
+
+## Evidence and open questions
+
+The executable verifies its embedded OEIS prefix through $n=21$ in both
+depth modes.  Replacing the earlier all-occupied-pair search with exposed
+boundary pairs left every discrete CSV count unchanged through $n=50$, in
+both modes.  Depth 1 and depth 2 also gave the same accepted counts through
+$n=50$.
+
+These are regression checks, not completeness proofs.  The main open questions
+are:
+
+1. Does every disk polyomino admit a realizing circle through two exposed
+   occupied boundary sites?
+2. Can a larger predecessor-recovery depth find a disk polyomino missed by
+   depth 1 and depth 2?
+
+With the same certificate predicate, a larger recovery pool can only preserve
+or increase reported counts.  Agreement through $n=50$ is evidence that the
+current shallow modes are adequate there; it is not a theorem about later
+orders.
+
+## Build and run
+
+Requires a C++20 compiler and no third-party library.
+
+```sh
+make
+./disk_polyomino --max-n 50 --depth 1 --csv depth1_n50.csv
+./disk_polyomino --max-n 50 --depth 2 --csv depth2_n50.csv
+```
+
+To check the embedded OEIS prefix:
+
+```sh
+./disk_polyomino --max-n 21 --depth 1 --verify-oeis
+./disk_polyomino --max-n 21 --depth 2 --verify-oeis
+```
+
+The CSV records the predecessor sizes, the `+1` and `+2` pools, their
+union, lattice-convex survivors, accepted disks, and elapsed time.  See
+`BENCHMARKS.md` for the recorded local runs through $n=50$.
