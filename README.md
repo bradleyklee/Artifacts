@@ -174,3 +174,14 @@ Thus neither natural model can be what is being counted without an error, an
 unstated exclusion rule, or a mismatch between the reported sequence and its 
 definition.
 
+
+### 14. convex-polyominoes
+
+An exact integer-lattice enumeration of Wechsler convex polyominoes,
+extending OEIS A181785 from its published prefix through order 16 to
+provisional values through order 25. The fast search grows each accepted
+polyomino by one square and retains only hull-complete children. Because this
+bounded-growth recurrence is not proved hereditary, it is checked at every
+order against a separate breadth-first convex-completion search, which
+promotes failed children to the larger size forced by their lattice convex
+hull and continues growth from the completed result.

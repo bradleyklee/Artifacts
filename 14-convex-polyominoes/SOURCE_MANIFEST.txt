@@ -1,0 +1,8 @@
+cmd/a181785/main.go       command-line entry point and both BFS engines
+internal/poly/poly.go     shared exact hull, Pick count, closure, D4 canonicalization
+go.mod                    Go module declaration
+README.md                 build/run and output documentation
+BASELINE.md               expected checked prefix
+build.sh                  build the bundled Linux x86-64 executable
+run-both.sh               run bundled executable in --mode both
+Makefile                  convenience targets
