@@ -1,0 +1,23 @@
+{
+  "schema": "hard-octagons-L4-N3-ternary-extraction/v1",
+  "certificate": "data/three-body/evolve/1152.json",
+  "class": 1152,
+  "bodies": [
+    "P0",
+    "P1",
+    "P2"
+  ],
+  "pair_token_count": 1302,
+  "mixed_pair_token_count": 2,
+  "lex_min_mapping": {
+    "A": "P0",
+    "B": "P2",
+    "C": "P1",
+    "0": "AB",
+    "1": "BC",
+    "2": "CA"
+  },
+  "comma_separated_pair_sequence_file": "class_1152.pairs.sequence.csv",
+  "comma_separated_ternary_file": "class_1152.ternary.sequence.csv",
+  "prefix_80": "0,1,1,1,2,1,1,1,0,1,0,1,0,1,1,0,2,2,2,0,2,2,1,2,2,1,1,1,2,0,2,0,1,1,2,0,0,1,1,2,2,0,2,1,1,2,0,0,1,2,2,0,2,0,2,1,2,0,2,0,2,0,2,1,2,0,2,1,2,2,0,1,0,2,0,2,1,0,0,2"
+}

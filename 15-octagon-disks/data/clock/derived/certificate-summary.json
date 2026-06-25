@@ -1,0 +1,81 @@
+{
+  "schema": "c4-clock-complexity-certificate-summary/v1",
+  "complexity_measure": "maximum numerator-or-denominator bit length across all exact rational coefficients of Q(sqrt2) positions and rational velocities",
+  "certificates": [
+    {
+      "mask": "086",
+      "bodies": 4,
+      "mask_text": "I0=0 I1=1 I2=1 I3=0 O0=1 O1=0 O2=1 O3=0",
+      "completed_batches": 4056,
+      "stop_class": "complexity_cutoff",
+      "complexity_cutoff_bits": 192,
+      "max_complexity_bits_observed": 192,
+      "next_complexity_bits": 193,
+      "checker_ok": true,
+      "pair_contacts": 1167,
+      "wall_contacts": 2890,
+      "mixed_batches": 0,
+      "repeat_state_detected": false
+    },
+    {
+      "mask": "031",
+      "bodies": 5,
+      "mask_text": "I0=1 I1=1 I2=1 I3=1 O0=1 O1=0 O2=0 O3=0",
+      "completed_batches": 2650,
+      "stop_class": "complexity_cutoff",
+      "complexity_cutoff_bits": 192,
+      "max_complexity_bits_observed": 192,
+      "next_complexity_bits": 193,
+      "checker_ok": true,
+      "pair_contacts": 936,
+      "wall_contacts": 1717,
+      "mixed_batches": 0,
+      "repeat_state_detected": false
+    },
+    {
+      "mask": "091",
+      "bodies": 5,
+      "mask_text": "I0=1 I1=1 I2=0 I3=1 O0=1 O1=0 O2=1 O3=0",
+      "completed_batches": 2515,
+      "stop_class": "complexity_cutoff",
+      "complexity_cutoff_bits": 192,
+      "max_complexity_bits_observed": 192,
+      "next_complexity_bits": 193,
+      "checker_ok": true,
+      "pair_contacts": 893,
+      "wall_contacts": 1625,
+      "mixed_batches": 0,
+      "repeat_state_detected": false
+    },
+    {
+      "mask": "124",
+      "bodies": 5,
+      "mask_text": "I0=0 I1=0 I2=1 I3=1 O0=1 O1=1 O2=1 O3=0",
+      "completed_batches": 2719,
+      "stop_class": "complexity_cutoff",
+      "complexity_cutoff_bits": 192,
+      "max_complexity_bits_observed": 192,
+      "next_complexity_bits": 193,
+      "checker_ok": true,
+      "pair_contacts": 962,
+      "wall_contacts": 1759,
+      "mixed_batches": 0,
+      "repeat_state_detected": false
+    },
+    {
+      "mask": "125",
+      "bodies": 6,
+      "mask_text": "I0=1 I1=0 I2=1 I3=1 O0=1 O1=1 O2=1 O3=0",
+      "completed_batches": 2189,
+      "stop_class": "complexity_cutoff",
+      "complexity_cutoff_bits": 192,
+      "max_complexity_bits_observed": 192,
+      "next_complexity_bits": 193,
+      "checker_ok": true,
+      "pair_contacts": 884,
+      "wall_contacts": 1310,
+      "mixed_batches": 1,
+      "repeat_state_detected": false
+    }
+  ]
+}

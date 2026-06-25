@@ -1,0 +1,220 @@
+{
+  "schema": "octagon-collisions-index/v1",
+  "families": {
+    "three-body": [
+      {
+        "id": "1152",
+        "bodies": 3,
+        "batches": 4290,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/1152.json",
+        "evolve": "data/three-body/evolve/1152.json",
+        "check": "data/three-body/check/1152.json",
+        "pairs": "data/three-body/pairs/1152.csv",
+        "image": "data/three-body/images/1152.svg",
+        "ternary": "data/three-body/ternary/1152.csv"
+      },
+      {
+        "id": "1241",
+        "bodies": 3,
+        "batches": 4173,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/1241.json",
+        "evolve": "data/three-body/evolve/1241.json",
+        "check": "data/three-body/check/1241.json",
+        "pairs": "data/three-body/pairs/1241.csv",
+        "image": "data/three-body/images/1241.svg",
+        "ternary": "data/three-body/ternary/1241.csv"
+      },
+      {
+        "id": "1273",
+        "bodies": 3,
+        "batches": 4285,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/1273.json",
+        "evolve": "data/three-body/evolve/1273.json",
+        "check": "data/three-body/check/1273.json",
+        "pairs": "data/three-body/pairs/1273.csv",
+        "image": "data/three-body/images/1273.svg",
+        "ternary": "data/three-body/ternary/1273.csv"
+      },
+      {
+        "id": "1489",
+        "bodies": 3,
+        "batches": 4201,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/1489.json",
+        "evolve": "data/three-body/evolve/1489.json",
+        "check": "data/three-body/check/1489.json",
+        "pairs": "data/three-body/pairs/1489.csv",
+        "image": "data/three-body/images/1489.svg",
+        "ternary": "data/three-body/ternary/1489.csv"
+      },
+      {
+        "id": "1529",
+        "bodies": 3,
+        "batches": 4047,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/1529.json",
+        "evolve": "data/three-body/evolve/1529.json",
+        "check": "data/three-body/check/1529.json",
+        "pairs": "data/three-body/pairs/1529.csv",
+        "image": "data/three-body/images/1529.svg",
+        "ternary": "data/three-body/ternary/1529.csv"
+      },
+      {
+        "id": "1643",
+        "bodies": 3,
+        "batches": 3825,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/1643.json",
+        "evolve": "data/three-body/evolve/1643.json",
+        "check": "data/three-body/check/1643.json",
+        "pairs": "data/three-body/pairs/1643.csv",
+        "image": "data/three-body/images/1643.svg",
+        "ternary": "data/three-body/ternary/1643.csv"
+      },
+      {
+        "id": "2142",
+        "bodies": 3,
+        "batches": 4045,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/2142.json",
+        "evolve": "data/three-body/evolve/2142.json",
+        "check": "data/three-body/check/2142.json",
+        "pairs": "data/three-body/pairs/2142.csv",
+        "image": "data/three-body/images/2142.svg",
+        "ternary": "data/three-body/ternary/2142.csv"
+      },
+      {
+        "id": "2925",
+        "bodies": 3,
+        "batches": 4242,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/2925.json",
+        "evolve": "data/three-body/evolve/2925.json",
+        "check": "data/three-body/check/2925.json",
+        "pairs": "data/three-body/pairs/2925.csv",
+        "image": "data/three-body/images/2925.svg",
+        "ternary": "data/three-body/ternary/2925.csv"
+      },
+      {
+        "id": "3097",
+        "bodies": 3,
+        "batches": 4283,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/3097.json",
+        "evolve": "data/three-body/evolve/3097.json",
+        "check": "data/three-body/check/3097.json",
+        "pairs": "data/three-body/pairs/3097.csv",
+        "image": "data/three-body/images/3097.svg",
+        "ternary": "data/three-body/ternary/3097.csv"
+      },
+      {
+        "id": "4092",
+        "bodies": 3,
+        "batches": 4282,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/4092.json",
+        "evolve": "data/three-body/evolve/4092.json",
+        "check": "data/three-body/check/4092.json",
+        "pairs": "data/three-body/pairs/4092.csv",
+        "image": "data/three-body/images/4092.svg",
+        "ternary": "data/three-body/ternary/4092.csv"
+      },
+      {
+        "id": "4678",
+        "bodies": 3,
+        "batches": 4286,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/4678.json",
+        "evolve": "data/three-body/evolve/4678.json",
+        "check": "data/three-body/check/4678.json",
+        "pairs": "data/three-body/pairs/4678.csv",
+        "image": "data/three-body/images/4678.svg",
+        "ternary": "data/three-body/ternary/4678.csv"
+      },
+      {
+        "id": "5629",
+        "bodies": 3,
+        "batches": 4016,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/5629.json",
+        "evolve": "data/three-body/evolve/5629.json",
+        "check": "data/three-body/check/5629.json",
+        "pairs": "data/three-body/pairs/5629.csv",
+        "image": "data/three-body/images/5629.svg",
+        "ternary": "data/three-body/ternary/5629.csv"
+      },
+      {
+        "id": "5722",
+        "bodies": 3,
+        "batches": 3899,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/three-body/initial/5722.json",
+        "evolve": "data/three-body/evolve/5722.json",
+        "check": "data/three-body/check/5722.json",
+        "pairs": "data/three-body/pairs/5722.csv",
+        "image": "data/three-body/images/5722.svg",
+        "ternary": "data/three-body/ternary/5722.csv"
+      }
+    ],
+    "clock": [
+      {
+        "id": "031",
+        "bodies": 5,
+        "batches": 2650,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/clock/initial/031.json",
+        "evolve": "data/clock/evolve/031.json",
+        "check": "data/clock/check/031.json",
+        "pairs": "data/clock/pairs/031.csv",
+        "image": "data/clock/images/031.svg"
+      },
+      {
+        "id": "086",
+        "bodies": 4,
+        "batches": 4056,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/clock/initial/086.json",
+        "evolve": "data/clock/evolve/086.json",
+        "check": "data/clock/check/086.json",
+        "pairs": "data/clock/pairs/086.csv",
+        "image": "data/clock/images/086.svg"
+      },
+      {
+        "id": "091",
+        "bodies": 5,
+        "batches": 2515,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/clock/initial/091.json",
+        "evolve": "data/clock/evolve/091.json",
+        "check": "data/clock/check/091.json",
+        "pairs": "data/clock/pairs/091.csv",
+        "image": "data/clock/images/091.svg"
+      },
+      {
+        "id": "124",
+        "bodies": 5,
+        "batches": 2719,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/clock/initial/124.json",
+        "evolve": "data/clock/evolve/124.json",
+        "check": "data/clock/check/124.json",
+        "pairs": "data/clock/pairs/124.csv",
+        "image": "data/clock/images/124.svg"
+      },
+      {
+        "id": "125",
+        "bodies": 6,
+        "batches": 2189,
+        "stop_class": "complexity_cutoff",
+        "initial": "data/clock/initial/125.json",
+        "evolve": "data/clock/evolve/125.json",
+        "check": "data/clock/check/125.json",
+        "pairs": "data/clock/pairs/125.csv",
+        "image": "data/clock/images/125.svg"
+      }
+    ]
+  }
+}

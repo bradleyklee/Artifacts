@@ -1,0 +1,11 @@
+Initial artifact assembly
+=========================
+
+This directory is organized for the first repository commit of the octagon
+collision work. It contains committed exact inputs, self-contained evolution
+ledgers, prior independent checker reports, read-only pair/ternary extractions,
+and data-generated initial-condition SVGs.
+
+No Git commit is represented by this file. Before committing in the target
+repository, run `make smoke`; `make check` is the complete but slower exact
+verification pass.

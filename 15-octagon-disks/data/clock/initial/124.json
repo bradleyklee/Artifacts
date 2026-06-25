@@ -1,0 +1,123 @@
+{
+  "schema": "c4-clock-mask-seed/v1",
+  "normalization": "unit-edge regular octagon; exact Q(sqrt(2)); canonical post-wall C4 phase",
+  "container": {
+    "shape": "axis_aligned_square",
+    "half_box": {
+      "a": "11/2",
+      "b": "3"
+    },
+    "mass_model": "fixed infinite mass"
+  },
+  "body_shape": {
+    "regular_octagon_edge": "1",
+    "cardinal_support": {
+      "a": "1/2",
+      "b": "1/2"
+    }
+  },
+  "slot_order": [
+    "I0",
+    "I1",
+    "I2",
+    "I3",
+    "O0",
+    "O1",
+    "O2",
+    "O3"
+  ],
+  "mask_bits": 124,
+  "mask_text": "I0=0 I1=0 I2=1 I3=1 O0=1 O1=1 O2=1 O3=0",
+  "weight": 5,
+  "source_index_status": "budget_exhausted",
+  "source_index_batches": 512,
+  "source_index_time": null,
+  "source_index_detail": null,
+  "state": [
+    {
+      "id": "I2",
+      "position": {
+        "x": {
+          "a": "-2",
+          "b": "-1"
+        },
+        "y": {
+          "a": "0",
+          "b": "0"
+        }
+      },
+      "velocity": {
+        "vx": "0",
+        "vy": "-1"
+      }
+    },
+    {
+      "id": "I3",
+      "position": {
+        "x": {
+          "a": "0",
+          "b": "0"
+        },
+        "y": {
+          "a": "2",
+          "b": "1"
+        }
+      },
+      "velocity": {
+        "vx": "-1",
+        "vy": "0"
+      }
+    },
+    {
+      "id": "O0",
+      "position": {
+        "x": {
+          "a": "3",
+          "b": "3/2"
+        },
+        "y": {
+          "a": "-5",
+          "b": "-5/2"
+        }
+      },
+      "velocity": {
+        "vx": "0",
+        "vy": "1"
+      }
+    },
+    {
+      "id": "O1",
+      "position": {
+        "x": {
+          "a": "-5",
+          "b": "-5/2"
+        },
+        "y": {
+          "a": "-3",
+          "b": "-3/2"
+        }
+      },
+      "velocity": {
+        "vx": "1",
+        "vy": "0"
+      }
+    },
+    {
+      "id": "O2",
+      "position": {
+        "x": {
+          "a": "-3",
+          "b": "-3/2"
+        },
+        "y": {
+          "a": "5",
+          "b": "5/2"
+        }
+      },
+      "velocity": {
+        "vx": "0",
+        "vy": "-1"
+      }
+    }
+  ]
+}

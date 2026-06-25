@@ -185,3 +185,14 @@ bounded-growth recurrence is not proved hereditary, it is checked at every
 order against a separate breadth-first convex-completion search, which
 promotes failed children to the larger size forced by their lattice convex
 hull and continues growth from the completed result.
+
+### 15. octagon-disks
+
+An exact-arithmetic collision-certificate dataset for translating unit-edge
+regular octagons in square 4.8.8 containers. It preserves thirteen L=4
+three-body seeds and five C4 clock survivors, each with a compact initial
+state, full `Q(sqrt(2))` event ledger, independent checker report,
+data-generated SVG initial condition, and body-pair record; only the
+three-body family includes lex-min ternary pair words. All stored runs stop at
+the first next state beyond a 192-bit coefficient cutoff, and the artifact
+makes no claim of chaos, aperiodicity, or complete classification.

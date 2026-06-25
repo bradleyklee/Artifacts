@@ -1,0 +1,47 @@
+{
+  "schema": "duplicate-pair-state-relations/v1",
+  "relations": [
+    {
+      "left_class": 2142,
+      "right_class": 1529,
+      "exact_relation": "class 1529 post-state after batch 2 equals diag(class 2142 initial state), with right-body-to-left-body permutation [1, 0, 2]",
+      "d4_transform": "diag",
+      "right_body_i_equals_transformed_left_body": [
+        1,
+        0,
+        2
+      ],
+      "right_state_batch": 2,
+      "not_free_flight_equivalent_before_first_collision": true,
+      "first_alignment_requires_collision_batches": 2
+    },
+    {
+      "left_class": 4092,
+      "right_class": 3097,
+      "exact_relation": "class 3097 post-state after batch 1 equals r180(class 4092 initial state), with right-body-to-left-body permutation [1, 2, 0]",
+      "d4_transform": "r180",
+      "right_body_i_equals_transformed_left_body": [
+        1,
+        2,
+        0
+      ],
+      "right_state_batch": 1,
+      "not_free_flight_equivalent_before_first_collision": true,
+      "first_alignment_requires_collision_batches": 1
+    },
+    {
+      "left_class": 1273,
+      "right_class": 4678,
+      "exact_relation": "class 4678 post-state after batch 1 equals diag(class 1273 initial state), with right-body-to-left-body permutation [1, 2, 0]",
+      "d4_transform": "diag",
+      "right_body_i_equals_transformed_left_body": [
+        1,
+        2,
+        0
+      ],
+      "right_state_batch": 1,
+      "not_free_flight_equivalent_before_first_collision": true,
+      "first_alignment_requires_collision_batches": 1
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+mask,bodies,mask_text,completed_batches,stop_class,complexity_cutoff_bits,max_complexity_bits_observed,next_complexity_bits,checker_ok,pair_contacts,wall_contacts,mixed_batches,repeat_state_detected
+086,4,I0=0 I1=1 I2=1 I3=0 O0=1 O1=0 O2=1 O3=0,4056,complexity_cutoff,192,192,193,True,1167,2890,0,False
+031,5,I0=1 I1=1 I2=1 I3=1 O0=1 O1=0 O2=0 O3=0,2650,complexity_cutoff,192,192,193,True,936,1717,0,False
+091,5,I0=1 I1=1 I2=0 I3=1 O0=1 O1=0 O2=1 O3=0,2515,complexity_cutoff,192,192,193,True,893,1625,0,False
+124,5,I0=0 I1=0 I2=1 I3=1 O0=1 O1=1 O2=1 O3=0,2719,complexity_cutoff,192,192,193,True,962,1759,0,False
+125,6,I0=1 I1=0 I2=1 I3=1 O0=1 O1=1 O2=1 O3=0,2189,complexity_cutoff,192,192,193,True,884,1310,1,False

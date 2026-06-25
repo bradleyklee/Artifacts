@@ -1,0 +1,14 @@
+class,bodies,completed_batches,pair_tokens,mixed_pair_tokens,stop_class,max_bits,next_bits,checker_ok,counts_0,counts_1,counts_2,H1_base3,H2_base3,certificate,check,ternary_sequence
+1643,3,3825,1114,0,complexity_cutoff,192,193,True,383,393,338,0.99808429,1.98967285,certificates/class_1643.certificate.json,checks/class_1643.check.json,derived/class_1643.ternary.sequence.csv
+1489,3,4201,1219,1,complexity_cutoff,192,193,True,442,370,407,0.99761267,1.99306175,certificates/class_1489.certificate.json,checks/class_1489.check.json,derived/class_1489.ternary.sequence.csv
+2142,3,4045,1199,1,complexity_cutoff,192,193,True,384,401,414,0.99956927,1.98868431,certificates/class_2142.certificate.json,checks/class_2142.check.json,derived/class_2142.ternary.sequence.csv
+1529,3,4047,1199,1,complexity_cutoff,192,193,True,384,401,414,0.99956927,1.98868431,certificates/class_1529.certificate.json,checks/class_1529.check.json,derived/class_1529.ternary.sequence.csv
+5722,3,3899,1147,2,complexity_cutoff,192,193,True,370,379,398,0.99957753,1.99206402,certificates/class_5722.certificate.json,checks/class_5722.check.json,derived/class_5722.ternary.sequence.csv
+2925,3,4242,1235,0,complexity_cutoff,192,193,True,390,425,420,0.99935298,1.9908555,certificates/class_2925.certificate.json,checks/class_2925.check.json,derived/class_2925.ternary.sequence.csv
+1241,3,4173,1220,0,complexity_cutoff,192,193,True,424,399,397,0.99958756,1.99513809,certificates/class_1241.certificate.json,checks/class_1241.check.json,derived/class_1241.ternary.sequence.csv
+5629,3,4016,1170,0,complexity_cutoff,192,193,True,386,412,372,0.99918182,1.98653997,certificates/class_5629.certificate.json,checks/class_5629.check.json,derived/class_5629.ternary.sequence.csv
+4092,3,4282,1299,1,complexity_cutoff,192,193,True,438,440,421,0.9998228,1.99220338,certificates/class_4092.certificate.json,checks/class_4092.check.json,derived/class_4092.ternary.sequence.csv
+3097,3,4283,1299,1,complexity_cutoff,192,193,True,438,440,421,0.9998228,1.99220338,certificates/class_3097.certificate.json,checks/class_3097.check.json,derived/class_3097.ternary.sequence.csv
+1273,3,4285,1300,1,complexity_cutoff,192,193,True,439,440,421,0.99981437,1.99227436,certificates/class_1273.certificate.json,checks/class_1273.check.json,derived/class_1273.ternary.sequence.csv
+4678,3,4286,1300,1,complexity_cutoff,192,193,True,439,440,421,0.99981437,1.99227436,certificates/class_4678.certificate.json,checks/class_4678.check.json,derived/class_4678.ternary.sequence.csv
+1152,3,4290,1302,2,complexity_cutoff,192,193,True,422,440,440,0.99982521,1.99235122,certificates/class_1152.certificate.json,checks/class_1152.check.json,derived/class_1152.ternary.sequence.csv
