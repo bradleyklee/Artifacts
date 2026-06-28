@@ -1,0 +1,6283 @@
+{
+  "schema": "half-edge-hard-octagon-atlas-search/v2",
+  "edge_length": "1/2",
+  "container": "unit-edge 4.8.8 L-patch, moving centers fixed to octagon centers",
+  "max_L": 2,
+  "max_state_bits": 32,
+  "levels": [
+    {
+      "L": 2,
+      "bodies": 2,
+      "sites": 5,
+      "raw_initials": 160,
+      "d4_classes": 24,
+      "clean_classes": 24,
+      "status_counts": {
+        "RETURN": 24
+      },
+      "top_nonreturns": null
+    },
+    {
+      "L": 2,
+      "bodies": 3,
+      "sites": 5,
+      "raw_initials": 640,
+      "d4_classes": 84,
+      "clean_classes": 84,
+      "status_counts": {
+        "COMPLEXITY_CUTOFF": 7,
+        "LOW_COMPLEXITY_WATCH": 12,
+        "REJECT": 6,
+        "RETURN": 22,
+        "UNKNOWN_CORNER": 37
+      },
+      "top_nonreturns": [
+        {
+          "class": 3,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "7/2",
+            "b": "7/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 6,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 25,
+          "time": {
+            "a": "27/2",
+            "b": "15/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "9/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 18,
+          "positive_pair_events": 8,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 7,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 7,
+          "time": {
+            "a": "4",
+            "b": "9/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 8,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] -x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] -x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "4",
+            "b": "2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "4",
+                "b": "2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 9,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 7,
+          "time": {
+            "a": "7/2",
+            "b": "2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair-corner:P0:P1"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 10,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 47,
+          "time": {
+            "a": "89/4",
+            "b": "105/8"
+          },
+          "max_state_bits": 5,
+          "max_position_bits": 5,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:SW"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:SE",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "7/2",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5",
+                "b": "3"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 33,
+          "positive_pair_events": 15,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 11,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 25,
+          "time": {
+            "a": "11",
+            "b": "23/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            }
+          ],
+          "positive_wall_events": 16,
+          "positive_pair_events": 10,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 12,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 14,
+          "time": {
+            "a": "19/2",
+            "b": "11/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:N",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:NE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "17/4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "9/2",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P0:P1:NE"
+              ]
+            }
+          ],
+          "positive_wall_events": 12,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 13,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 2,
+          "time": {
+            "a": "1",
+            "b": "1/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/4"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 0,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 14,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "7/2",
+            "b": "7/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:W",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:SW"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 15,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 12,
+          "time": {
+            "a": "7",
+            "b": "4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "1"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 18,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "3",
+            "b": "2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:E",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3",
+                "b": "2"
+              },
+              "events": [
+                "pair-corner:P0:P1"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 19,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] -x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] -x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "9/2",
+            "b": "5/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:N",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "9/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 20,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "3",
+            "b": "2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3",
+                "b": "2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 21,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 8,
+          "time": {
+            "a": "11/2",
+            "b": "7/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:W",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P1:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "21/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "11/2",
+                "b": "7/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 8,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 22,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "2",
+            "b": "1"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 23,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 28,
+          "time": {
+            "a": "27/2",
+            "b": "29/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:NE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "4",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "17/4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 19,
+          "positive_pair_events": 10,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 24,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 44,
+          "time": {
+            "a": "79/4",
+            "b": "93/8"
+          },
+          "max_state_bits": 5,
+          "max_position_bits": 5,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:NE",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "7/2",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "9/2",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P0:P2:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 30,
+          "positive_pair_events": 15,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 25,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] -y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 10,
+          "time": {
+            "a": "6",
+            "b": "7/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P1:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "21/4",
+                "b": "3"
+              },
+              "events": [
+                "pair:P0:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 8,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 26,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 3,
+          "time": {
+            "a": "3/2",
+            "b": "1/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 1,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 27,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P2",
+          "batches": 5,
+          "time": {
+            "a": "9/4",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 28,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 33 exceeds cap 32 (position=33, velocity=20)",
+          "batches": 562,
+          "time": {
+            "a": "189878163/842822",
+            "b": "869195657/6742576"
+          },
+          "max_state_bits": 33,
+          "max_position_bits": 33,
+          "max_velocity_bits": 20,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:NE",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "wall:P1:W",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 374,
+          "positive_pair_events": 190,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 29,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "4045/4",
+            "b": "2427/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 1500,
+          "positive_pair_events": 548,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 30,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "4045/4",
+            "b": "2427/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 1500,
+          "positive_pair_events": 548,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 31,
+          "orbit_size": 4,
+          "raw_representative": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] -x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P0",
+          "batches": 6,
+          "time": {
+            "a": "15/4",
+            "b": "9/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "3/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 32,
+          "orbit_size": 4,
+          "raw_representative": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +x",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P0",
+          "batches": 0,
+          "time": {
+            "a": "0",
+            "b": "0"
+          },
+          "max_state_bits": 2,
+          "max_position_bits": 2,
+          "max_velocity_bits": 1,
+          "positive_wall_events": 0,
+          "positive_pair_events": 0
+        },
+        {
+          "class": 33,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "5983/4",
+            "b": "2991/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "3/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "19/4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "23/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2048,
+          "positive_pair_events": 748,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 34,
+          "orbit_size": 4,
+          "raw_representative": [
+            "B[+0,+0] -x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] -x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P0",
+          "batches": 3,
+          "time": {
+            "a": "9/4",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N",
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 35,
+          "orbit_size": 4,
+          "raw_representative": [
+            "B[+0,+0] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P0",
+          "batches": 1,
+          "time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2,
+          "positive_pair_events": 0
+        },
+        {
+          "class": 36,
+          "orbit_size": 8,
+          "raw_representative": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "B[+0,+0] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "5525/4",
+            "b": "3315/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N",
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "21/4",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "25/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2049,
+          "positive_pair_events": 748,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 37,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "4049/4",
+            "b": "2429/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 1501,
+          "positive_pair_events": 548,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 38,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "5983/4",
+            "b": "2991/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "3/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "19/4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "23/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2048,
+          "positive_pair_events": 748,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 39,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "3",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "3/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 40,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 98,
+          "time": {
+            "a": "59",
+            "b": "69/2"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/2",
+                "b": "7/2"
+              },
+              "events": [
+                "pair:P0:P1:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "27/4",
+                "b": "15/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P0:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 79,
+          "positive_pair_events": 32,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 41,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "4383/4",
+            "b": "2191/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 1501,
+          "positive_pair_events": 548,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 42,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] -y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "5521/4",
+            "b": "3313/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "19/4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "23/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2047,
+          "positive_pair_events": 748,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 43,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] -y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 17,
+          "time": {
+            "a": "21/2",
+            "b": "6"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/2",
+                "b": "7/2"
+              },
+              "events": [
+                "pair:P0:P1:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "27/4",
+                "b": "15/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P0:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 14,
+          "positive_pair_events": 6,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 44,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] -y"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 33 exceeds cap 32 (position=33, velocity=20)",
+          "batches": 539,
+          "time": {
+            "a": "153537033/658934",
+            "b": "180047987/1317868"
+          },
+          "max_state_bits": 33,
+          "max_position_bits": 33,
+          "max_velocity_bits": 20,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "17/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "6",
+                "b": "15/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            }
+          ],
+          "positive_wall_events": 386,
+          "positive_pair_events": 159,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 46,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -x"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 33 exceeds cap 32 (position=33, velocity=23)",
+          "batches": 518,
+          "time": {
+            "a": "869579406/4121795",
+            "b": "489749951/4121795"
+          },
+          "max_state_bits": 33,
+          "max_position_bits": 33,
+          "max_velocity_bits": 23,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "11/4",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "3",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 360,
+          "positive_pair_events": 160,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 49,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] -y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 21,
+          "time": {
+            "a": "8",
+            "b": "9/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "5/2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 13,
+          "positive_pair_events": 8,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 53,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "5985/4",
+            "b": "2993/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "21/4",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "25/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2050,
+          "positive_pair_events": 748,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 54,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "4049/4",
+            "b": "2429/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 1501,
+          "positive_pair_events": 548,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 55,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "3",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 56,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 12,
+          "time": {
+            "a": "6",
+            "b": "7/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 57,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "5981/4",
+            "b": "2991/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "21/4",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "21/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2049,
+          "positive_pair_events": 748,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 58,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +y",
+            "A[+1,+1] +y"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 32 after exact observation checkpoint of 2048 batches (position=9, velocity=1)",
+          "batches": 2048,
+          "time": {
+            "a": "4383/4",
+            "b": "2191/4"
+          },
+          "max_state_bits": 9,
+          "max_position_bits": 9,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "15/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 1501,
+          "positive_pair_events": 548,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 59,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] -x",
+            "A[+1,+1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 93,
+          "time": {
+            "a": "109/2",
+            "b": "32"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "21/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 74,
+          "positive_pair_events": 30,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 60,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "A[+1,-1] +x",
+            "A[+1,+1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "7/2",
+            "b": "2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "9/4",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ]
+        },
+        {
+          "class": 62,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "3",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 65,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +x",
+            "A[+1,-1] -y",
+            "A[+1,+1] +y"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 33 exceeds cap 32 (position=33, velocity=23)",
+          "batches": 552,
+          "time": {
+            "a": "3226293431/14323246",
+            "b": "943859565/7161623"
+          },
+          "max_state_bits": 33,
+          "max_position_bits": 33,
+          "max_velocity_bits": 23,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "11/4",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 384,
+          "positive_pair_events": 171,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 71,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -x",
+            "A[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -x",
+            "A[+1,-1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 28,
+          "time": {
+            "a": "33/2",
+            "b": "17/2"
+          },
+          "max_state_bits": 5,
+          "max_position_bits": 5,
+          "max_velocity_bits": 3,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "5/6"
+              },
+              "events": [
+                "pair:P1:P2:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/3",
+                "b": "1"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "10/3",
+                "b": "2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 21,
+          "positive_pair_events": 9,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 72,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "B[+0,+0] -y",
+            "A[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "B[+0,+0] -y",
+            "A[+1,-1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "5/2",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:SE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "5/2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair-corner:P0:P1",
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 74,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +x",
+            "A[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +x",
+            "A[+1,-1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 14,
+          "time": {
+            "a": "15/2",
+            "b": "17/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:S",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 10,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 75,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "B[+0,+0] +y",
+            "A[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "B[+0,+0] +y",
+            "A[+1,-1] -x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "3",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P2"
+          ]
+        },
+        {
+          "class": 76,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -x",
+            "A[+1,-1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -x",
+            "A[+1,-1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 7,
+          "time": {
+            "a": "9/2",
+            "b": "5/2"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "19/6",
+                "b": "11/6"
+              },
+              "events": [
+                "pair:P1:P2:NE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "10/3",
+                "b": "2"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 77,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] -y",
+            "B[+0,+0] +x",
+            "A[+1,-1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] -y",
+            "B[+0,+0] +x",
+            "A[+1,-1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 10,
+          "time": {
+            "a": "6",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:SE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P0:P1:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "17/4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 7,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 78,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +y",
+            "A[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +y",
+            "A[+1,-1] -x"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 33 exceeds cap 32 (position=33, velocity=23)",
+          "batches": 523,
+          "time": {
+            "a": "553493501/2412628",
+            "b": "303977977/2412628"
+          },
+          "max_state_bits": 33,
+          "max_position_bits": 33,
+          "max_velocity_bits": 23,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "2",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:S",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:SW"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 370,
+          "positive_pair_events": 154,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 79,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +x",
+            "A[+1,-1] +y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +x",
+            "A[+1,-1] +y"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "5/2",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 80,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -y",
+            "A[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -y",
+            "A[+1,-1] -x"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 33 exceeds cap 32 (position=33, velocity=25)",
+          "batches": 492,
+          "time": {
+            "a": "3480298577/18207914",
+            "b": "2040276417/18207914"
+          },
+          "max_state_bits": 33,
+          "max_position_bits": 33,
+          "max_velocity_bits": 25,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1/2"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/4",
+                "b": "2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "15/4",
+                "b": "17/8"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 328,
+          "positive_pair_events": 165,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 82,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -y",
+            "A[+1,-1] +x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] -y",
+            "A[+1,-1] +x"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 41,
+          "time": {
+            "a": "41/2",
+            "b": "23/2"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "19/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E",
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "23/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 33,
+          "positive_pair_events": 12,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 83,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +y",
+            "A[+1,-1] +x"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +y",
+            "A[+1,-1] +x"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P1",
+          "batches": 20,
+          "time": {
+            "a": "17/2",
+            "b": "16/3"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "2",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:SW"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3",
+                "b": "2"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 14,
+          "positive_pair_events": 8,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        },
+        {
+          "class": 84,
+          "orbit_size": 8,
+          "raw_representative": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +x",
+            "A[+1,-1] -y"
+          ],
+          "post_contact_start": [
+            "A[-1,+1] +y",
+            "B[+0,+0] +x",
+            "A[+1,-1] -y"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 33 exceeds cap 32 (position=33, velocity=21)",
+          "batches": 476,
+          "time": {
+            "a": "266300255/1331618",
+            "b": "155028933/1331618"
+          },
+          "max_state_bits": 33,
+          "max_position_bits": 33,
+          "max_velocity_bits": 21,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "9/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "11/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "15/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "17/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 335,
+          "positive_pair_events": 146,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ]
+        }
+      ]
+    }
+  ]
+}

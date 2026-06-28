@@ -1,0 +1,264 @@
+{
+  "schema": "four-site-half-edge-octagon-search/v1",
+  "edge_length": "1/2",
+  "container": "square side 2+2sqrt(2); moving centers fixed at the four quadrant centroids",
+  "max_L": 2,
+  "max_state_bits": 128,
+  "levels": [
+    {
+      "L": 2,
+      "bodies": 3,
+      "sites": 4,
+      "raw_initials": 256,
+      "d4_classes": 32,
+      "clean_classes": 32,
+      "status_counts": {
+        "COMPLEXITY_CUTOFF": 1
+      },
+      "trials": [
+        {
+          "class": 8,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 129 exceeds cap 128 (position=129, velocity=85)",
+          "batches": 2357,
+          "time": {
+            "a": "16316842809227067615840118587/35408745028721553003499670",
+            "b": "2593691334451647940998126319/5058392146960221857642810"
+          },
+          "max_state_bits": 129,
+          "max_position_bits": 129,
+          "max_velocity_bits": 85,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "7/6"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/6",
+                "b": "4/3"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:SE",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:NE"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "7/4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 1535,
+          "positive_pair_events": 827,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CABCCBCCCACACABABAABBACBABCAACCBAABACABAABACCBBCBBBBBBABACCBCBACABACCACACAAACACABCBABBCBBCCABABABACABBACAABACCBCBACCCCACACCAABABBAABCBABABABACABACBBCCBCCBACACAABAAACCAAAAABBABCABCACCABABBBAABCABBBABCCBABBCACACAAAACAAAAABBABCBBCBBCCBCBCABBACBCBCCBCBCBBAACCCABCBCCBCACABBABAABCCBACAACCABCBBABAAACCBCBACBCCBCBBACAACCCBCBCBACCCBBBBAABBBCAACCBCABBCCBCABABBABBBCABCACBBABABCBBAAAAACAAAACABABCBCACBCAACBCBAAACCABCACACACACABCABAABACBCCACBACABAACABBCBACCBABCBCBCCBCAACBCBBBCBABBCBACACACCBABABCCBCBCAABBCCBCBABBCCAACACAABAACCBCCBCBCAABACACBBCBCACBBCBACBCCBABABBABCBBBABCCBCACCACAAACACCBABBCCBACAABCBCCBABABACBAABCCABAACACACCCBAAABBCBACABBAACACCACACCCACBABBCAAAAABACABCBACABAACABAACBABBAACACACCAACAABBCCABAABCCCCACAABACCAACCAABCBCAABAABBABBCCBCCACABBCBBCBBCBABABAABAACCCAAABCBACBABACBCABABAABCACACABCACBAAABCCCBABACBAABBCAABBABCABBBBACBCA",
+          "lex_min_ternary": "01200200010101212112210212011002112101211210022022222212100202101210010101110101202122022001212121012210112100202100001010011212211202121212101210220020021010112111001111122120120100121222112012221200212201010111101111122120220220020201221020200202022110001202002010122121120021011001202212111002021020020221011000202021000222211222011002012200201212212220120102212120221111101111012120201020110202111001201010101012012112102001021012110122021002120202002011020222021220210101002121200202011220020212200110101121100200202011210102202010220210200212122120222120020100101110100212200210112020021212102112001211010100021112202101221101001010001021220111112101202101211012110212211010100110112200121120000101121001100112020112112212200200101220220220212121121100011120210212102012121120101012010211120002121021122011221201222210201",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        }
+      ],
+      "top_nonreturns": [
+        {
+          "class": 8,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 129 exceeds cap 128 (position=129, velocity=85)",
+          "batches": 2357,
+          "time": {
+            "a": "16316842809227067615840118587/35408745028721553003499670",
+            "b": "2593691334451647940998126319/5058392146960221857642810"
+          },
+          "max_state_bits": 129,
+          "max_position_bits": 129,
+          "max_velocity_bits": 85,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "7/6"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/6",
+                "b": "4/3"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:SE",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:NE"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "7/4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 1535,
+          "positive_pair_events": 827,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CABCCBCCCACACABABAABBACBABCAACCBAABACABAABACCBBCBBBBBBABACCBCBACABACCACACAAACACABCBABBCBBCCABABABACABBACAABACCBCBACCCCACACCAABABBAABCBABABABACABACBBCCBCCBACACAABAAACCAAAAABBABCABCACCABABBBAABCABBBABCCBABBCACACAAAACAAAAABBABCBBCBBCCBCBCABBACBCBCCBCBCBBAACCCABCBCCBCACABBABAABCCBACAACCABCBBABAAACCBCBACBCCBCBBACAACCCBCBCBACCCBBBBAABBBCAACCBCABBCCBCABABBABBBCABCACBBABABCBBAAAAACAAAACABABCBCACBCAACBCBAAACCABCACACACACABCABAABACBCCACBACABAACABBCBACCBABCBCBCCBCAACBCBBBCBABBCBACACACCBABABCCBCBCAABBCCBCBABBCCAACACAABAACCBCCBCBCAABACACBBCBCACBBCBACBCCBABABBABCBBBABCCBCACCACAAACACCBABBCCBACAABCBCCBABABACBAABCCABAACACACCCBAAABBCBACABBAACACCACACCCACBABBCAAAAABACABCBACABAACABAACBABBAACACACCAACAABBCCABAABCCCCACAABACCAACCAABCBCAABAABBABBCCBCCACABBCBBCBBCBABABAABAACCCAAABCBACBABACBCABABAABCACACABCACBAAABCCCBABACBAABBCAABBABCABBBBACBCA",
+          "lex_min_ternary": "01200200010101212112210212011002112101211210022022222212100202101210010101110101202122022001212121012210112100202100001010011212211202121212101210220020021010112111001111122120120100121222112012221200212201010111101111122120220220020201221020200202022110001202002010122121120021011001202212111002021020020221011000202021000222211222011002012200201212212220120102212120221111101111012120201020110202111001201010101012012112102001021012110122021002120202002011020222021220210101002121200202011220020212200110101121100200202011210102202010220210200212122120222120020100101110100212200210112020021212102112001211010100021112202101221101001010001021220111112101202101211012110212211010100110112200121120000101121001100112020112112212200200101220220220212121121100011120210212102012121120101012010211120002121021122011221201222210201",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        }
+      ]
+    }
+  ]
+}

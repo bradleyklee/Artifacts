@@ -1,0 +1,8 @@
+# Representative states as stored by the square search output
+
+## geometry
+container_edge: 4
+square_edge: 1
+center_sites: (±1,±1)
+velocity_atlas: ['+x', '-x', '+y', '-y']
+arithmetic: Fraction / Q

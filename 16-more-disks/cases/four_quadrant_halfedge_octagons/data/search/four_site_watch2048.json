@@ -1,0 +1,6786 @@
+{
+  "schema": "four-site-half-edge-octagon-search/v1",
+  "edge_length": "1/2",
+  "container": "square side 2+2sqrt(2); moving centers fixed at the four quadrant centroids",
+  "max_L": 2,
+  "max_state_bits": 128,
+  "levels": [
+    {
+      "L": 2,
+      "bodies": 2,
+      "sites": 4,
+      "raw_initials": 96,
+      "d4_classes": 16,
+      "clean_classes": 16,
+      "status_counts": {
+        "RETURN": 16
+      },
+      "trials": [
+        {
+          "class": 1,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[+1,-1] -x",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "17/4",
+            "b": "17/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:E",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "17/4",
+                "b": "17/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 2,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[+1,-1] +x",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 5,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 4,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 3,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 109,
+          "time": {
+            "a": "217/4",
+            "b": "229/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 108,
+          "period_time": {
+            "a": "54",
+            "b": "57"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P1:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "15/4",
+                "b": "15/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "4",
+                "b": "17/4"
+              },
+              "events": [
+                "pair:P0:P1:NE"
+              ]
+            }
+          ],
+          "positive_wall_events": 85,
+          "positive_pair_events": 24,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AAAAAAAAAAAAAAAAAAAAAAAA",
+          "lex_min_ternary": "000000000000000000000000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 4,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "17/4",
+            "b": "17/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "17/4",
+                "b": "17/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 5,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[+1,-1] +x",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:E",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:E",
+                "wall:P1:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 6,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 7,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 109,
+          "time": {
+            "a": "217/4",
+            "b": "229/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 108,
+          "period_time": {
+            "a": "54",
+            "b": "57"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "5/2",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P0:P1:SW"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "11/4",
+                "b": "3"
+              },
+              "events": [
+                "wall:P0:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "13/4",
+                "b": "7/2"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 85,
+          "positive_pair_events": 24,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AAAAAAAAAAAAAAAAAAAAAAAA",
+          "lex_min_ternary": "000000000000000000000000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 8,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 7,
+          "time": {
+            "a": "9/4",
+            "b": "9/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 6,
+          "period_time": {
+            "a": "2",
+            "b": "2"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 9,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "1",
+            "b": "1"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 2,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 10,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "1",
+            "b": "1"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "A",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 11,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 5,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 4,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 12,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "17/4",
+            "b": "17/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "17/4",
+                "b": "17/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 13,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 11,
+          "time": {
+            "a": "21/4",
+            "b": "21/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 10,
+          "period_time": {
+            "a": "5",
+            "b": "5"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "7/2",
+                "b": "7/2"
+              },
+              "events": [
+                "pair:P0:P1:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "15/4",
+                "b": "15/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P0:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AAAA",
+          "lex_min_ternary": "0000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 14,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 5,
+          "time": {
+            "a": "5/2",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/2",
+            "b": "3/4"
+          },
+          "period_batches": 4,
+          "period_time": {
+            "a": "2",
+            "b": "5/2"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/2",
+                "b": "13/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AAA",
+          "lex_min_ternary": "000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 15,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 16,
+          "orbit_size": 4,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 5,
+          "time": {
+            "a": "9/4",
+            "b": "11/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 4,
+          "period_time": {
+            "a": "2",
+            "b": "5/2"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        }
+      ],
+      "top_nonreturns": null
+    },
+    {
+      "L": 2,
+      "bodies": 3,
+      "sites": 4,
+      "raw_initials": 256,
+      "d4_classes": 32,
+      "clean_classes": 32,
+      "status_counts": {
+        "COMPLEXITY_CUTOFF": 1,
+        "LOW_COMPLEXITY_WATCH": 1,
+        "REJECT": 3,
+        "RETURN": 12,
+        "UNKNOWN_CORNER": 15
+      },
+      "trials": [
+        {
+          "class": 1,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 19,
+          "time": {
+            "a": "25/4",
+            "b": "25/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 18,
+          "period_time": {
+            "a": "6",
+            "b": "6"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 17,
+          "positive_pair_events": 6,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCCCCC",
+          "lex_min_ternary": "000000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 2,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 7,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 6,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N",
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 8,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCCC",
+          "lex_min_ternary": "0000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 3,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 4,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2"
+          ],
+          "raw_pair_word": "BA",
+          "lex_min_ternary": "01",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 5,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 19,
+          "time": {
+            "a": "25/4",
+            "b": "25/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 18,
+          "period_time": {
+            "a": "6",
+            "b": "6"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 18,
+          "positive_pair_events": 6,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCCCCC",
+          "lex_min_ternary": "000000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 6,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 7,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 6,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:N",
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "pair:P1:P2:N",
+                "wall:P0:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCCC",
+          "lex_min_ternary": "0000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 7,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 9,
+          "time": {
+            "a": "7/2",
+            "b": "4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "7/2",
+                "b": "7/2"
+              },
+              "events": [
+                "pair:P0:P1:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "15/4",
+                "b": "15/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P0:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AAA",
+          "lex_min_ternary": "000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 8,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 128 after exact observation checkpoint of 2048 batches (position=108, velocity=74)",
+          "batches": 2048,
+          "time": {
+            "a": "523465806746620040525763/1304387483986636653734",
+            "b": "44818210150436230654629/100337498768202819518"
+          },
+          "max_state_bits": 108,
+          "max_position_bits": 108,
+          "max_velocity_bits": 74,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "7/6"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/6",
+                "b": "4/3"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:SE",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:NE"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "7/4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 1336,
+          "positive_pair_events": 717,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CABCCBCCCACACABABAABBACBABCAACCBAABACABAABACCBBCBBBBBBABACCBCBACABACCACACAAACACABCBABBCBBCCABABABACABBACAABACCBCBACCCCACACCAABABBAABCBABABABACABACBBCCBCCBACACAABAAACCAAAAABBABCABCACCABABBBAABCABBBABCCBABBCACACAAAACAAAAABBABCBBCBBCCBCBCABBACBCBCCBCBCBBAACCCABCBCCBCACABBABAABCCBACAACCABCBBABAAACCBCBACBCCBCBBACAACCCBCBCBACCCBBBBAABBBCAACCBCABBCCBCABABBABBBCABCACBBABABCBBAAAAACAAAACABABCBCACBCAACBCBAAACCABCACACACACABCABAABACBCCACBACABAACABBCBACCBABCBCBCCBCAACBCBBBCBABBCBACACACCBABABCCBCBCAABBCCBCBABBCCAACACAABAACCBCCBCBCAABACACBBCBCACBBCBACBCCBABABBABCBBBABCCBCACCACAAACACCBABBCCBACAABCBCCBABABACBAABCCABAACACACCCBAAABBCBACABBAACACCACACCCACBABBCAAAAABACABCBACABAACABAACBABBAACACACCAACAABBCCABAABCCCCACAABACCAACCAABC",
+          "lex_min_ternary": "012002000101012121122102120110021121012112100220222222121002021012100101011101012021220220012121210122101121002021000010100112122112021212121012102200200210101121110011111221201201001212221120122212002122010101111011111221202202200202012210202002020221100012020020101221211200210110012022121110020210200202210110002020210002222112220110020122002012122122201201022121202211111011110121202010201102021110012010101010120121121020010210121101220210021202020020110202220212202101010021212002020112200202122001101011211002002020112101022020102202102002121221202221200201001011101002122002101120200212121021120012110101000211122021012211010010100010212201111121012021012110121102122110101001101122001211200001011210011001120",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 9,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P2",
+          "batches": 5,
+          "time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:E",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CB",
+          "lex_min_ternary": "01",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 10,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 20,
+          "time": {
+            "a": "13/2",
+            "b": "7"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P2:E",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/6",
+                "b": "4/3"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "2",
+                "b": "13/6"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 17,
+          "positive_pair_events": 7,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "BCBCBCA",
+          "lex_min_ternary": "0101012",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 11,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "2",
+            "b": "5/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P1:P2:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "C",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 12,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ],
+          "raw_pair_word": "B",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 13,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P2",
+          "batches": 5,
+          "time": {
+            "a": "3/4",
+            "b": "1"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CB",
+          "lex_min_ternary": "01",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 14,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 7,
+          "time": {
+            "a": "9/4",
+            "b": "9/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 6,
+          "period_time": {
+            "a": "2",
+            "b": "2"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 5,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CBBCC",
+          "lex_min_ternary": "01100",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 15,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "17/4",
+            "b": "17/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "17/4",
+                "b": "17/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N",
+                "wall:P2:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 16,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1/2",
+            "b": "1"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1/2",
+                "b": "1"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 2,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ],
+          "raw_pair_word": "B",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 17,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 7,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 6,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P1:P2:N",
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 10,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCC",
+          "lex_min_ternary": "000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 18,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 19,
+          "time": {
+            "a": "25/4",
+            "b": "25/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 18,
+          "period_time": {
+            "a": "6",
+            "b": "6"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 17,
+          "positive_pair_events": 6,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCCCCC",
+          "lex_min_ternary": "000000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 19,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 20,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "A",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 21,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 7,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 6,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:N",
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 11,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCC",
+          "lex_min_ternary": "000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 22,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 19,
+          "time": {
+            "a": "25/4",
+            "b": "25/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 18,
+          "period_time": {
+            "a": "6",
+            "b": "6"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 18,
+          "positive_pair_events": 6,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "CCCCCC",
+          "lex_min_ternary": "000000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 23,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 9,
+          "time": {
+            "a": "3",
+            "b": "7/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P1:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 8,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ],
+          "raw_pair_word": "AAC",
+          "lex_min_ternary": "001",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 24,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +x",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "3/2",
+            "b": "2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 25,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 7,
+          "time": {
+            "a": "9/4",
+            "b": "9/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 6,
+          "period_time": {
+            "a": "2",
+            "b": "2"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 4,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CBBC",
+          "lex_min_ternary": "0110",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 26,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 20,
+          "time": {
+            "a": "19/4",
+            "b": "43/8"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 14,
+          "positive_pair_events": 8,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "BCBCBABC",
+          "lex_min_ternary": "01010201",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 27,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "5/2",
+            "b": "3"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:N",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "5/2",
+                "b": "3"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ],
+          "raw_pair_word": "B",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 28,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "RETURN",
+          "detail": "exact unlabelled event-endpoint recurrence",
+          "return_kind": "unlabelled",
+          "batches": 3,
+          "time": {
+            "a": "13/4",
+            "b": "13/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "preperiod_batches": 1,
+          "preperiod_time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "period_batches": 2,
+          "period_time": {
+            "a": "3",
+            "b": "3"
+          },
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P1:N",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 29,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 19,
+          "time": {
+            "a": "6",
+            "b": "13/2"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2/3",
+                "b": "5/6"
+              },
+              "events": [
+                "pair:P1:P2:NE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "1/2",
+                "b": "1"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "5/3"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 16,
+          "positive_pair_events": 6,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "BCBCBA",
+          "lex_min_ternary": "010102",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 30,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P2",
+          "batches": 1,
+          "time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 1,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 31,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 129 exceeds cap 128 (position=129, velocity=84)",
+          "batches": 2045,
+          "time": {
+            "a": "17454875547397423491658924561/43503327589538068093581132",
+            "b": "39013778223140163930604223419/87006655179076136187162264"
+          },
+          "max_state_bits": 129,
+          "max_position_bits": 129,
+          "max_velocity_bits": 84,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5/2",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            }
+          ],
+          "positive_wall_events": 1335,
+          "positive_pair_events": 712,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CBCABBABCBBABACCACAABBABABAABCAACACCACBCACBACBBACAACBBCCBCAACBCCACCACBCACCACACACACBBAACAABABCBCBACABACBABAACCACACCABACCBBCCAAAAACAABABBBABACCBCACBCBBAACBBAABACBABABAACABCBAAACACACACABCACAAACCACACCACCCCAACBACBBABCABCBAACCCAABABABBCBCBCABAABACAABABCBCCBCBCCBACBBCBAABAACAAACACBBAABBACAABABABACBBCABAABBCAAAABAAABBACBCAACBBBACACCABABCAAACACCCACABBACCABCBCABABBCACABACCBABBBACAACACBBCACBABABABBCBABBBCCCACABCCCBCABABABAABACBCBCACABACABCBBACCAABBBBCABBBABABBABBACAAABCBABACACCAACCBAABCBBCACABAAAABAAAAAAABCBBCABBBCBAAACABABAABAACCAAACACACACAABCACBCCAACBAABCACBBACCACCBACAABBACBACCACBABCCACBBCABABCCBBAAACCBACCCAACCBAABCCBBBBACCBCCBCABACCCCABCBACABABCCCBCAACBACCBBACCCCABBABABBCCBBCACBBCCCBACCCABCACACBBCBAACABACABABCB",
+          "lex_min_ternary": "0102112101121200202211212122102202002010201201120220110010220100200201020020202020112202212101012021201212200202002120011002222202212111212001020101122011221201212122021012220202020210202220020200200002201201121021012200022121211010102122120221210100101001201101221220222020112211202212121201102122110222212221120102201112020021210222020002021120021010212110202120012111202202011020121212110121110002021000102121212212010102021202101120022111102111212112112022210121202002200122101102021222212222222101102111012220212122122002220202020221020100220122102011200200120221120120020121002011021210011222001200022001221001111200100102120000210120212100010220120011200002112121100110201100012000210202011012202120212101",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 32,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "C",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        }
+      ],
+      "top_nonreturns": [
+        {
+          "class": 3,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 4,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2"
+          ],
+          "raw_pair_word": "BA",
+          "lex_min_ternary": "01",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 7,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 9,
+          "time": {
+            "a": "7/2",
+            "b": "4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W",
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "11/4",
+                "b": "11/4"
+              },
+              "events": [
+                "wall:P1:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "7/2",
+                "b": "7/2"
+              },
+              "events": [
+                "pair:P0:P1:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "15/4",
+                "b": "15/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P0:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 9,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AAA",
+          "lex_min_ternary": "000",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 8,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +x",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "LOW_COMPLEXITY_WATCH",
+          "detail": "still valid, unlabelled-nonrepeating, and at or below full-state cap 128 after exact observation checkpoint of 2048 batches (position=108, velocity=74)",
+          "batches": 2048,
+          "time": {
+            "a": "523465806746620040525763/1304387483986636653734",
+            "b": "44818210150436230654629/100337498768202819518"
+          },
+          "max_state_bits": 108,
+          "max_position_bits": 108,
+          "max_velocity_bits": 74,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "7/6"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/6",
+                "b": "4/3"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:SE",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair:P1:P2:NE"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "7/4",
+                "b": "5/2"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 1336,
+          "positive_pair_events": 717,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CABCCBCCCACACABABAABBACBABCAACCBAABACABAABACCBBCBBBBBBABACCBCBACABACCACACAAACACABCBABBCBBCCABABABACABBACAABACCBCBACCCCACACCAABABBAABCBABABABACABACBBCCBCCBACACAABAAACCAAAAABBABCABCACCABABBBAABCABBBABCCBABBCACACAAAACAAAAABBABCBBCBBCCBCBCABBACBCBCCBCBCBBAACCCABCBCCBCACABBABAABCCBACAACCABCBBABAAACCBCBACBCCBCBBACAACCCBCBCBACCCBBBBAABBBCAACCBCABBCCBCABABBABBBCABCACBBABABCBBAAAAACAAAACABABCBCACBCAACBCBAAACCABCACACACACABCABAABACBCCACBACABAACABBCBACCBABCBCBCCBCAACBCBBBCBABBCBACACACCBABABCCBCBCAABBCCBCBABBCCAACACAABAACCBCCBCBCAABACACBBCBCACBBCBACBCCBABABBABCBBBABCCBCACCACAAACACCBABBCCBACAABCBCCBABABACBAABCCABAACACACCCBAAABBCBACABBAACACCACACCCACBABBCAAAAABACABCBACABAACABAACBABBAACACACCAACAABBCCABAABCCCCACAABACCAACCAABC",
+          "lex_min_ternary": "012002000101012121122102120110021121012112100220222222121002021012100101011101012021220220012121210122101121002021000010100112122112021212121012102200200210101121110011111221201201001212221120122212002122010101111011111221202202200202012210202002020221100012020020101221211200210110012022121110020210200202210110002020210002222112220110020122002012122122201201022121202211111011110121202010201102021110012010101010120121121020010210121101220210021202020020110202220212202101010021212002020112200202122001101011211002002020112101022020102202102002121221202221200201001011101002122002101120200212121021120012110101000211122021012211010010100010212201111121012021012110121102122110101001101122001211200001011210011001120",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 9,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P2",
+          "batches": 5,
+          "time": {
+            "a": "5/4",
+            "b": "5/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:E",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CB",
+          "lex_min_ternary": "01",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 10,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 20,
+          "time": {
+            "a": "13/2",
+            "b": "7"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "pair:P0:P2:E",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/6",
+                "b": "4/3"
+              },
+              "events": [
+                "pair:P0:P2:NE"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "2",
+                "b": "13/6"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            }
+          ],
+          "positive_wall_events": 17,
+          "positive_pair_events": 7,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "BCBCBCA",
+          "lex_min_ternary": "0101012",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 11,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "2",
+            "b": "5/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P1:P2:W"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P1:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "2",
+                "b": "5/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 5,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "C",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 12,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ],
+          "raw_pair_word": "B",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 13,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] -y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P2",
+          "batches": 5,
+          "time": {
+            "a": "3/4",
+            "b": "1"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "1/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P2:SE"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CB",
+          "lex_min_ternary": "01",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 16,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] -x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1/2",
+            "b": "1"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1/2",
+                "b": "1"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 2,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ],
+          "raw_pair_word": "B",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 19,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 5,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "3/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "1"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 20,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 4,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "A",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 23,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] -x",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 9,
+          "time": {
+            "a": "3",
+            "b": "7/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P1:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P1:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "13/4",
+                "b": "13/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 8,
+          "positive_pair_events": 3,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P1/P2"
+          ],
+          "raw_pair_word": "AAC",
+          "lex_min_ternary": "001",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 24,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +x",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "3/2",
+            "b": "2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P1:E",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1",
+                "b": "5/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "5/4",
+                "b": "3/2"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P1:S"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "3/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P0:P1:SE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P2:S"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 2,
+          "positive_pair_edges": [
+            "P0/P1"
+          ],
+          "raw_pair_word": "AA",
+          "lex_min_ternary": "00",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 26,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 20,
+          "time": {
+            "a": "19/4",
+            "b": "43/8"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "1"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:W",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "7/4"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:W"
+              ]
+            }
+          ],
+          "positive_wall_events": 14,
+          "positive_pair_events": 8,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "BCBCBABC",
+          "lex_min_ternary": "01010201",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 27,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 6,
+          "time": {
+            "a": "5/2",
+            "b": "3"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P1:N",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2",
+                "b": "2"
+              },
+              "events": [
+                "pair:P0:P2:N"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "5/2",
+                "b": "3"
+              },
+              "events": [
+                "pair-corner:P1:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 6,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P0/P2"
+          ],
+          "raw_pair_word": "B",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 29,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 19,
+          "time": {
+            "a": "6",
+            "b": "13/2"
+          },
+          "max_state_bits": 4,
+          "max_position_bits": 4,
+          "max_velocity_bits": 2,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "2/3",
+                "b": "5/6"
+              },
+              "events": [
+                "pair:P1:P2:NE"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "1/2",
+                "b": "1"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:E"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "3/2",
+                "b": "5/3"
+              },
+              "events": [
+                "wall:P1:W"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "3/2",
+                "b": "2"
+              },
+              "events": [
+                "wall:P1:S",
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 16,
+          "positive_pair_events": 6,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "BCBCBA",
+          "lex_min_ternary": "010102",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e0",
+            "P1/P2-\u003e1"
+          ]
+        },
+        {
+          "class": 30,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +y"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "REJECT",
+          "detail": "exact batch-rule violation: shared-body batch body P2",
+          "batches": 1,
+          "time": {
+            "a": "1/4",
+            "b": "1/4"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            }
+          ],
+          "positive_wall_events": 1,
+          "positive_pair_events": 0,
+          "lex_min_pair_map": [
+            "P0/P1-\u003e0",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e2"
+          ]
+        },
+        {
+          "class": 31,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] -y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "COMPLEXITY_CUTOFF",
+          "detail": "full-state coefficient bit length 129 exceeds cap 128 (position=129, velocity=84)",
+          "batches": 2045,
+          "time": {
+            "a": "17454875547397423491658924561/43503327589538068093581132",
+            "b": "39013778223140163930604223419/87006655179076136187162264"
+          },
+          "max_state_bits": 129,
+          "max_position_bits": 129,
+          "max_velocity_bits": 84,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "5/4",
+                "b": "5/4"
+              },
+              "events": [
+                "wall:P0:S"
+              ]
+            },
+            {
+              "batch": 5,
+              "time": {
+                "a": "3/2",
+                "b": "3/2"
+              },
+              "events": [
+                "pair:P0:P2:N"
+              ]
+            },
+            {
+              "batch": 6,
+              "time": {
+                "a": "7/4",
+                "b": "7/4"
+              },
+              "events": [
+                "wall:P0:S",
+                "wall:P2:W"
+              ]
+            },
+            {
+              "batch": 7,
+              "time": {
+                "a": "9/4",
+                "b": "9/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 8,
+              "time": {
+                "a": "5/2",
+                "b": "11/4"
+              },
+              "events": [
+                "pair:P1:P2:NW"
+              ]
+            }
+          ],
+          "positive_wall_events": 1335,
+          "positive_pair_events": 712,
+          "positive_pair_edges": [
+            "P0/P1",
+            "P0/P2",
+            "P1/P2"
+          ],
+          "raw_pair_word": "CBCABBABCBBABACCACAABBABABAABCAACACCACBCACBACBBACAACBBCCBCAACBCCACCACBCACCACACACACBBAACAABABCBCBACABACBABAACCACACCABACCBBCCAAAAACAABABBBABACCBCACBCBBAACBBAABACBABABAACABCBAAACACACACABCACAAACCACACCACCCCAACBACBBABCABCBAACCCAABABABBCBCBCABAABACAABABCBCCBCBCCBACBBCBAABAACAAACACBBAABBACAABABABACBBCABAABBCAAAABAAABBACBCAACBBBACACCABABCAAACACCCACABBACCABCBCABABBCACABACCBABBBACAACACBBCACBABABABBCBABBBCCCACABCCCBCABABABAABACBCBCACABACABCBBACCAABBBBCABBBABABBABBACAAABCBABACACCAACCBAABCBBCACABAAAABAAAAAAABCBBCABBBCBAAACABABAABAACCAAACACACACAABCACBCCAACBAABCACBBACCACCBACAABBACBACCACBABCCACBBCABABCCBBAAACCBACCCAACCBAABCCBBBBACCBCCBCABACCCCABCBACABABCCCBCAACBACCBBACCCCABBABABBCCBBCACBBCCCBACCCABCACACBBCBAACABACABABCB",
+          "lex_min_ternary": "0102112101121200202211212122102202002010201201120220110010220100200201020020202020112202212101012021201212200202002120011002222202212111212001020101122011221201212122021012220202020210202220020200200002201201121021012200022121211010102122120221210100101001201101221220222020112211202212121201102122110222212221120102201112020021210222020002021120021010212110202120012111202202011020121212110121110002021000102121212212010102021202101120022111102111212112112022210121202002200122101102021222212222222101102111012220212122122002220202020221020100220122102011200200120221120120020121002011021210011222001200022001221001111200100102120000210120212100010220120011200002112121100110201100012000210202011012202120212101",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e2",
+            "P0/P2-\u003e1",
+            "P1/P2-\u003e0"
+          ]
+        },
+        {
+          "class": 32,
+          "orbit_size": 8,
+          "raw_representative": [
+            "Q[-1,+1] +y",
+            "Q[+1,-1] +y",
+            "Q[+1,+1] +x"
+          ],
+          "post_contact_start": [
+            "non-cardinal or non-atlas post-contact state"
+          ],
+          "status": "UNKNOWN_CORNER",
+          "detail": "exact pair-corner hit; no declared continuation",
+          "batches": 4,
+          "time": {
+            "a": "1",
+            "b": "3/2"
+          },
+          "max_state_bits": 3,
+          "max_position_bits": 3,
+          "max_velocity_bits": 1,
+          "first_batches": [
+            {
+              "batch": 1,
+              "time": {
+                "a": "1/4",
+                "b": "1/4"
+              },
+              "events": [
+                "wall:P0:N",
+                "wall:P2:E"
+              ]
+            },
+            {
+              "batch": 2,
+              "time": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "events": [
+                "pair:P1:P2:N"
+              ]
+            },
+            {
+              "batch": 3,
+              "time": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "events": [
+                "wall:P2:N"
+              ]
+            },
+            {
+              "batch": 4,
+              "time": {
+                "a": "1",
+                "b": "3/2"
+              },
+              "events": [
+                "pair-corner:P0:P2"
+              ]
+            }
+          ],
+          "positive_wall_events": 3,
+          "positive_pair_events": 1,
+          "positive_pair_edges": [
+            "P1/P2"
+          ],
+          "raw_pair_word": "C",
+          "lex_min_ternary": "0",
+          "lex_min_pair_map": [
+            "P0/P1-\u003e1",
+            "P0/P2-\u003e2",
+            "P1/P2-\u003e0"
+          ]
+        }
+      ]
+    }
+  ]
+}

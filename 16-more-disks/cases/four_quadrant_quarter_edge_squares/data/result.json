@@ -1,0 +1,667 @@
+{
+  "schema": "four-quadrant-quarter-edge-squares/v1",
+  "geometry": {
+    "container_edge": "4",
+    "square_edge": "1",
+    "center_sites": "(\u00b11,\u00b11)",
+    "velocity_atlas": [
+      "+x",
+      "-x",
+      "+y",
+      "-y"
+    ],
+    "arithmetic": "Fraction / Q"
+  },
+  "event_cap": 20000,
+  "levels": [
+    {
+      "bodies": 2,
+      "raw_initials": 96,
+      "d4_classes": 16,
+      "status_counts": {
+        "RETURN": 9,
+        "CORNER": 6,
+        "SIMULTANEOUS": 1
+      },
+      "trials": [
+        {
+          "class": 1,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 3,
+          "period_batches": 2,
+          "time": "13/2",
+          "pair_events": 0,
+          "wall_events": 6
+        },
+        {
+          "class": 2,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 4,
+          "time": "2",
+          "pair_events": 1,
+          "wall_events": 2
+        },
+        {
+          "class": 3,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x"
+          ],
+          "status": "RETURN",
+          "batches": 5,
+          "period_batches": 4,
+          "time": "13/2",
+          "pair_events": 0,
+          "wall_events": 5
+        },
+        {
+          "class": 4,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "2",
+          "pair_events": 0,
+          "wall_events": 2
+        },
+        {
+          "class": 5,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 7,
+          "period_batches": 6,
+          "time": "9/2",
+          "pair_events": 2,
+          "wall_events": 5
+        },
+        {
+          "class": 6,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] -x"
+          ],
+          "status": "RETURN",
+          "batches": 3,
+          "period_batches": 2,
+          "time": "5/2",
+          "pair_events": 1,
+          "wall_events": 4
+        },
+        {
+          "class": 7,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 6,
+          "time": "5",
+          "pair_events": 1,
+          "wall_events": 4
+        },
+        {
+          "class": 8,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,-1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 5,
+          "period_batches": 4,
+          "time": "13/2",
+          "pair_events": 0,
+          "wall_events": 5
+        },
+        {
+          "class": 9,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,-1] +y"
+          ],
+          "status": "SIMULTANEOUS",
+          "batches": 3,
+          "time": "5/2",
+          "pair_events": 1,
+          "wall_events": 1
+        },
+        {
+          "class": 10,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,-1] -x"
+          ],
+          "status": "RETURN",
+          "batches": 3,
+          "period_batches": 2,
+          "time": "13/2",
+          "pair_events": 0,
+          "wall_events": 6
+        },
+        {
+          "class": 11,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,-1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "2",
+          "pair_events": 0,
+          "wall_events": 2
+        },
+        {
+          "class": 12,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[+1,-1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 1,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 0
+        },
+        {
+          "class": 13,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[+1,-1] -x"
+          ],
+          "status": "RETURN",
+          "batches": 3,
+          "period_batches": 2,
+          "time": "17/2",
+          "pair_events": 0,
+          "wall_events": 6
+        },
+        {
+          "class": 14,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[-1,+1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 3,
+          "period_batches": 2,
+          "time": "5/2",
+          "pair_events": 2,
+          "wall_events": 2
+        },
+        {
+          "class": 15,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[-1,-1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 3,
+          "period_batches": 2,
+          "time": "17/2",
+          "pair_events": 0,
+          "wall_events": 6
+        },
+        {
+          "class": 16,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[-1,-1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 1,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 0
+        }
+      ]
+    },
+    {
+      "bodies": 3,
+      "raw_initials": 256,
+      "d4_classes": 32,
+      "status_counts": {
+        "RETURN": 8,
+        "CORNER": 18,
+        "SIMULTANEOUS": 6
+      },
+      "trials": [
+        {
+          "class": 1,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +x",
+            "Q[-1,+1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 19,
+          "period_batches": 18,
+          "time": "25/2",
+          "pair_events": 6,
+          "wall_events": 18
+        },
+        {
+          "class": 2,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +x",
+            "Q[-1,+1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "2",
+          "pair_events": 0,
+          "wall_events": 3
+        },
+        {
+          "class": 3,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +x",
+            "Q[-1,+1] -x"
+          ],
+          "status": "RETURN",
+          "batches": 7,
+          "period_batches": 6,
+          "time": "13/2",
+          "pair_events": 3,
+          "wall_events": 11
+        },
+        {
+          "class": 4,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +x",
+            "Q[-1,+1] -y"
+          ],
+          "status": "SIMULTANEOUS",
+          "batches": 3,
+          "time": "5/2",
+          "pair_events": 1,
+          "wall_events": 2
+        },
+        {
+          "class": 5,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,+1] +x"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 1
+        },
+        {
+          "class": 6,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,+1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 4,
+          "time": "2",
+          "pair_events": 1,
+          "wall_events": 3
+        },
+        {
+          "class": 7,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,+1] -x"
+          ],
+          "status": "SIMULTANEOUS",
+          "batches": 3,
+          "time": "3/2",
+          "pair_events": 1,
+          "wall_events": 2
+        },
+        {
+          "class": 8,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,+1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 4,
+          "time": "2",
+          "pair_events": 1,
+          "wall_events": 2
+        },
+        {
+          "class": 9,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,-1] +x"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 1
+        },
+        {
+          "class": 10,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,-1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 4,
+          "time": "2",
+          "pair_events": 1,
+          "wall_events": 2
+        },
+        {
+          "class": 11,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,-1] -x"
+          ],
+          "status": "CORNER",
+          "batches": 4,
+          "time": "2",
+          "pair_events": 1,
+          "wall_events": 3
+        },
+        {
+          "class": 12,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] +y",
+            "Q[-1,-1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 4,
+          "time": "2",
+          "pair_events": 1,
+          "wall_events": 3
+        },
+        {
+          "class": 13,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x",
+            "Q[-1,+1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 19,
+          "period_batches": 18,
+          "time": "25/2",
+          "pair_events": 6,
+          "wall_events": 17
+        },
+        {
+          "class": 14,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x",
+            "Q[-1,+1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "2",
+          "pair_events": 0,
+          "wall_events": 2
+        },
+        {
+          "class": 15,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x",
+            "Q[-1,+1] -x"
+          ],
+          "status": "RETURN",
+          "batches": 7,
+          "period_batches": 6,
+          "time": "13/2",
+          "pair_events": 3,
+          "wall_events": 10
+        },
+        {
+          "class": 16,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x",
+            "Q[-1,+1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 1
+        },
+        {
+          "class": 17,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x",
+            "Q[-1,-1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 7,
+          "period_batches": 6,
+          "time": "13/2",
+          "pair_events": 4,
+          "wall_events": 9
+        },
+        {
+          "class": 18,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x",
+            "Q[-1,-1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 1
+        },
+        {
+          "class": 19,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -x",
+            "Q[-1,-1] -x"
+          ],
+          "status": "RETURN",
+          "batches": 19,
+          "period_batches": 18,
+          "time": "25/2",
+          "pair_events": 6,
+          "wall_events": 18
+        },
+        {
+          "class": 20,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[-1,+1] +x"
+          ],
+          "status": "CORNER",
+          "batches": 6,
+          "time": "3",
+          "pair_events": 2,
+          "wall_events": 5
+        },
+        {
+          "class": 21,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[-1,+1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "2",
+          "pair_events": 0,
+          "wall_events": 3
+        },
+        {
+          "class": 22,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[-1,+1] -x"
+          ],
+          "status": "SIMULTANEOUS",
+          "batches": 4,
+          "time": "5/2",
+          "pair_events": 2,
+          "wall_events": 3
+        },
+        {
+          "class": 23,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[+1,-1] -y",
+            "Q[-1,+1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "2",
+          "pair_events": 0,
+          "wall_events": 2
+        },
+        {
+          "class": 24,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] +x",
+            "Q[-1,-1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 19,
+          "period_batches": 18,
+          "time": "25/2",
+          "pair_events": 6,
+          "wall_events": 17
+        },
+        {
+          "class": 25,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] +x",
+            "Q[-1,-1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 1
+        },
+        {
+          "class": 26,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] +x",
+            "Q[-1,-1] -y"
+          ],
+          "status": "SIMULTANEOUS",
+          "batches": 5,
+          "time": "5/2",
+          "pair_events": 2,
+          "wall_events": 3
+        },
+        {
+          "class": 27,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] -y",
+            "Q[-1,-1] +x"
+          ],
+          "status": "CORNER",
+          "batches": 2,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 1
+        },
+        {
+          "class": 28,
+          "initial": [
+            "Q[+1,+1] +x",
+            "Q[-1,+1] -y",
+            "Q[-1,-1] +y"
+          ],
+          "status": "SIMULTANEOUS",
+          "batches": 4,
+          "time": "5/2",
+          "pair_events": 2,
+          "wall_events": 3
+        },
+        {
+          "class": 29,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[+1,-1] +y",
+            "Q[-1,+1] +x"
+          ],
+          "status": "SIMULTANEOUS",
+          "batches": 3,
+          "time": "3/2",
+          "pair_events": 2,
+          "wall_events": 0
+        },
+        {
+          "class": 30,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[+1,-1] +y",
+            "Q[-1,+1] -y"
+          ],
+          "status": "CORNER",
+          "batches": 1,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 0
+        },
+        {
+          "class": 31,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[+1,-1] +y",
+            "Q[-1,-1] +y"
+          ],
+          "status": "CORNER",
+          "batches": 1,
+          "time": "1",
+          "pair_events": 0,
+          "wall_events": 0
+        },
+        {
+          "class": 32,
+          "initial": [
+            "Q[+1,+1] -x",
+            "Q[+1,-1] -x",
+            "Q[-1,+1] +x"
+          ],
+          "status": "RETURN",
+          "batches": 7,
+          "period_batches": 6,
+          "time": "13/2",
+          "pair_events": 4,
+          "wall_events": 8
+        }
+      ]
+    }
+  ]
+}

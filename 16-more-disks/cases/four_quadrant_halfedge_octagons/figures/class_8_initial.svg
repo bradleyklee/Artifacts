@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900" viewBox="0 0 900 900">
+<rect width="100%" height="100%" fill="white"/>
+<style>text { font-family: Arial, Helvetica, sans-serif; fill:#111; } .title{ font-size:44px; font-weight:700;} .label{ font-size:24px; }</style>
+<rect x="80.00" y="80.00" width="740.00" height="740.00" fill="#fcfcfd" stroke="#111827" stroke-width="3"/>
+<line x1="450.00" y1="80.00" x2="450.00" y2="820.00" stroke="#b0b0b0" stroke-width="2" stroke-dasharray="10 10"/>
+<line x1="80.00" y1="450.00" x2="820.00" y2="450.00" stroke="#b0b0b0" stroke-width="2" stroke-dasharray="10 10"/>
+<polygon points="357.50,226.69 303.31,172.50 226.69,172.50 172.50,226.69 172.50,303.31 226.69,357.50 303.31,357.50 357.50,303.31" fill="#f1f3f6" stroke="#cfd5dd" stroke-width="1.5"/>
+<polygon points="727.50,596.69 673.31,542.50 596.69,542.50 542.50,596.69 542.50,673.31 596.69,727.50 673.31,727.50 727.50,673.31" fill="#f1f3f6" stroke="#cfd5dd" stroke-width="1.5"/>
+<polygon points="727.50,226.69 673.31,172.50 596.69,172.50 542.50,226.69 542.50,303.31 596.69,357.50 673.31,357.50 727.50,303.31" fill="#f1f3f6" stroke="#cfd5dd" stroke-width="1.5"/>
+<polygon points="357.50,596.69 303.31,542.50 226.69,542.50 172.50,596.69 172.50,673.31 226.69,727.50 303.31,727.50 357.50,673.31" fill="#f1f3f6" stroke="#cfd5dd" stroke-width="1.5"/>
+<polygon points="357.50,226.69 303.31,172.50 226.69,172.50 172.50,226.69 172.50,303.31 226.69,357.50 303.31,357.50 357.50,303.31" fill="#e67e22" stroke="#222" stroke-width="3"/>
+<line x1="265.00" y1="291.60" x2="265.00" y2="249.80" stroke="#111" stroke-width="4.5" stroke-linecap="round"/><polygon points="265.00,223.20 277.00,249.80 253.00,249.80" fill="#111"/>
+<polygon points="727.50,596.69 673.31,542.50 596.69,542.50 542.50,596.69 542.50,673.31 596.69,727.50 673.31,727.50 727.50,673.31" fill="#20b2aa" stroke="#222" stroke-width="3"/>
+<line x1="608.40" y1="635.00" x2="650.20" y2="635.00" stroke="#111" stroke-width="4.5" stroke-linecap="round"/><polygon points="676.80,635.00 650.20,647.00 650.20,623.00" fill="#111"/>
+<polygon points="727.50,226.69 673.31,172.50 596.69,172.50 542.50,226.69 542.50,303.31 596.69,357.50 673.31,357.50 727.50,303.31" fill="#7d72cf" stroke="#222" stroke-width="3"/>
+<line x1="635.00" y1="238.40" x2="635.00" y2="280.20" stroke="#111" stroke-width="4.5" stroke-linecap="round"/><polygon points="635.00,306.80 623.00,280.20 647.00,280.20" fill="#111"/>
+<text x="450.0" y="46" text-anchor="middle" class="title">Class 8 initial condition</text>
+<text x="450.0" y="840" text-anchor="middle" class="label">Q[-1,+1] +y ; Q[+1,-1] +x ; Q[+1,+1] -y</text>
+</svg>
