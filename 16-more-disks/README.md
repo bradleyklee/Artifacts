@@ -14,6 +14,47 @@ threshold experiments needed for the current story:
 All of these are finite exact computations. `CAP` means only that a trajectory
 remained regular and did not return through its listed event horizon.
 
+## Ternary-word samples
+
+For the centered dodecagon scan, a regular pair-face contact contributes its
+face label modulo 3; wall contacts contribute no symbol. The prescribed central
+contact at time zero is the first symbol. The complete all-face cap-500 scan
+has two distinct 108-symbol words. The first is the lexicographically minimal
+class, represented by `face=1, incoming=(E,N)`; the second is obtained by
+swapping `1` and `2` while keeping `0` fixed.
+
+**Lex-min class — first 100 of 108 symbols**
+
+```text
+1,0,2,1,0,2,1,2,1,2,2,2,1,2,2,2,0,2,2,0,2,1,1,0,2
+2,2,1,1,2,0,0,0,1,2,2,1,2,1,0,2,2,2,1,0,1,0,2,1,0
+2,0,0,1,1,2,2,0,0,0,0,2,2,1,1,2,1,0,0,2,0,0,1,0,1
+1,2,1,1,2,1,1,0,0,2,0,1,1,0,0,2,2,2,0,1,2,0,1,1,0
+```
+
+**Paired class — first 100 of 108 symbols**
+
+```text
+2,0,1,2,0,1,2,1,2,1,1,1,2,1,1,1,0,1,1,0,1,2,2,0,1
+1,1,2,2,1,0,0,0,2,1,1,2,1,2,0,1,1,1,2,0,2,0,1,2,0
+1,0,0,2,2,1,1,0,0,0,0,1,1,2,2,1,2,0,0,1,0,0,2,0,2
+2,1,2,2,1,2,2,0,0,1,0,2,2,0,0,1,1,1,0,2,1,0,2,2,0
+```
+
+The lex-min forward continuation is independently checked through 2,000 event
+batches / 418 pair contacts and through a compact 7,500-batch checkpoint /
+1,578 pair contacts. The first 100 symbols above are also the prefix of both
+longer records. Full comma-separated sequences are in:
+
+```text
+data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_cap2000.txt
+data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_cap7500.txt
+```
+
+The reverse stem emits only the source symbol `1` before two wall contacts and
+a terminal pair-corner; see `docs/TERNARY_DATA.md` for the convention and
+scope.
+
 ## Layout
 
 ```text
