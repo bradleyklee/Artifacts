@@ -1,0 +1,1793 @@
+{
+  "schema": "lattice-chaos-self-contained-certificate/v2",
+  "certificate_id": "centered_dodecagon_f1_EN_reverse_stem",
+  "producer": {
+    "language": "Go",
+    "runtime": "go1.23.2",
+    "module": "latticegeometry",
+    "build": "go run ./cmd/lattice"
+  },
+  "model": {
+    "model_id": "dodecagon",
+    "polygon": "regular 12-gon",
+    "sides": 12,
+    "edge": {
+      "a": "1/2",
+      "b": "0",
+      "c": "0",
+      "d": "0"
+    },
+    "apothem": {
+      "a": "1/2",
+      "b": "0",
+      "c": "1/4",
+      "d": "0"
+    },
+    "cell_side": {
+      "a": "2",
+      "b": "0",
+      "c": "1",
+      "d": "0"
+    },
+    "cardinal_width": {
+      "a": "1",
+      "b": "0",
+      "c": "1/2",
+      "d": "0"
+    },
+    "field": "Q(sqrt(3))",
+    "basis": [
+      "1",
+      "sqrt(2)",
+      "sqrt(3)",
+      "sqrt(6)"
+    ],
+    "face_convention": "face k has outward normal angle 360*k/sides degrees",
+    "face_normals": [
+      {
+        "x": {
+          "a": "1",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "0",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "0",
+          "b": "0",
+          "c": "1/2",
+          "d": "0"
+        },
+        "y": {
+          "a": "1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "0",
+          "b": "0",
+          "c": "1/2",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "0",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "1",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "-1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "0",
+          "b": "0",
+          "c": "1/2",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "0",
+          "b": "0",
+          "c": "-1/2",
+          "d": "0"
+        },
+        "y": {
+          "a": "1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "-1",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "0",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "0",
+          "b": "0",
+          "c": "-1/2",
+          "d": "0"
+        },
+        "y": {
+          "a": "-1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "-1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "0",
+          "b": "0",
+          "c": "-1/2",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "0",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "-1",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "y": {
+          "a": "0",
+          "b": "0",
+          "c": "-1/2",
+          "d": "0"
+        }
+      },
+      {
+        "x": {
+          "a": "0",
+          "b": "0",
+          "c": "1/2",
+          "d": "0"
+        },
+        "y": {
+          "a": "-1/2",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        }
+      }
+    ],
+    "geometry_version": "artifact16-go-v1"
+  },
+  "container": {
+    "kind": "axis_aligned_square",
+    "cells_per_side": 2,
+    "half_side": {
+      "a": "2",
+      "b": "0",
+      "c": "1",
+      "d": "0"
+    }
+  },
+  "dynamics": {
+    "translation": "Rigid fixed-orientation translation only; no angular degrees of freedom.",
+    "polygon_orientation": "Face 0 has outward normal +x; face labels increase counterclockwise.",
+    "pair_law": "Equal-mass elastic reflection of relative velocity in the active outward face normal.",
+    "wall_law": "Axis-aligned specular reflection at the support offset of the fixed square container.",
+    "batch_law": "Resolve only regular singleton batches and disjoint same-time batches. Distinct-body same-time contacts commute. Do not serialize shared-body contacts.",
+    "terminal_classes": [
+      "PAIR_CORNER",
+      "WALL_CORNER",
+      "COUPLED_SIMULTANEOUS",
+      "NO_EVENT"
+    ],
+    "float_policy": "No floating-point value is used to create, order, classify, or resolve an event. Coordinates are exact Q(sqrt(2),sqrt(3)) coefficients."
+  },
+  "instance": {
+    "family": "time_reversal_continuation_from_resolved_centered_contact",
+    "initial_state": [
+      {
+        "position": {
+          "x": {
+            "a": "-3/8",
+            "b": "0",
+            "c": "-1/4",
+            "d": "0"
+          },
+          "y": {
+            "a": "-1/4",
+            "b": "0",
+            "c": "-1/8",
+            "d": "0"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "-1/4",
+            "b": "0",
+            "c": "-1/4",
+            "d": "0"
+          },
+          "y": {
+            "a": "-1/4",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          }
+        }
+      },
+      {
+        "position": {
+          "x": {
+            "a": "3/8",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          },
+          "y": {
+            "a": "1/4",
+            "b": "0",
+            "c": "1/8",
+            "d": "0"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "-3/4",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          },
+          "y": {
+            "a": "-3/4",
+            "b": "0",
+            "c": "-1/4",
+            "d": "0"
+          }
+        }
+      }
+    ],
+    "source_centered_contact": {
+      "face": 1,
+      "face_class_mod_3": 1,
+      "incoming": [
+        "E",
+        "N"
+      ],
+      "pre_time_zero_state": [
+        {
+          "position": {
+            "x": {
+              "a": "-3/8",
+              "b": "0",
+              "c": "-1/4",
+              "d": "0"
+            },
+            "y": {
+              "a": "-1/4",
+              "b": "0",
+              "c": "-1/8",
+              "d": "0"
+            }
+          },
+          "velocity": {
+            "x": {
+              "a": "1",
+              "b": "0",
+              "c": "0",
+              "d": "0"
+            },
+            "y": {
+              "a": "0",
+              "b": "0",
+              "c": "0",
+              "d": "0"
+            }
+          }
+        },
+        {
+          "position": {
+            "x": {
+              "a": "3/8",
+              "b": "0",
+              "c": "1/4",
+              "d": "0"
+            },
+            "y": {
+              "a": "1/4",
+              "b": "0",
+              "c": "1/8",
+              "d": "0"
+            }
+          },
+          "velocity": {
+            "x": {
+              "a": "0",
+              "b": "0",
+              "c": "0",
+              "d": "0"
+            },
+            "y": {
+              "a": "1",
+              "b": "0",
+              "c": "0",
+              "d": "0"
+            }
+          }
+        }
+      ],
+      "time_zero_event": {
+        "step": 0,
+        "exact_dt": {
+          "a": "0",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "exact_T": {
+          "a": "0",
+          "b": "0",
+          "c": "0",
+          "d": "0"
+        },
+        "event_class": "INITIAL_PAIR_FACE",
+        "batch": [
+          {
+            "dt": {
+              "a": "0",
+              "b": "0",
+              "c": "0",
+              "d": "0"
+            },
+            "kind": "PAIR_FACE",
+            "bodies": [
+              0,
+              1
+            ],
+            "face": 1,
+            "wall": null
+          }
+        ],
+        "batch_code": "P01:1",
+        "post_state_hash": "d3fd22e52dc4bf541308a19634b617d799f2f8ee6043d81a037f213e0e66591d",
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-3/8",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/8",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "3/8",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/8",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "3/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "metrics": {
+          "positions": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          },
+          "velocities": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          },
+          "all_coordinates": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          }
+        }
+      },
+      "post_time_zero_state": [
+        {
+          "position": {
+            "x": {
+              "a": "-3/8",
+              "b": "0",
+              "c": "-1/4",
+              "d": "0"
+            },
+            "y": {
+              "a": "-1/4",
+              "b": "0",
+              "c": "-1/8",
+              "d": "0"
+            }
+          },
+          "velocity": {
+            "x": {
+              "a": "1/4",
+              "b": "0",
+              "c": "1/4",
+              "d": "0"
+            },
+            "y": {
+              "a": "1/4",
+              "b": "0",
+              "c": "-1/4",
+              "d": "0"
+            }
+          }
+        },
+        {
+          "position": {
+            "x": {
+              "a": "3/8",
+              "b": "0",
+              "c": "1/4",
+              "d": "0"
+            },
+            "y": {
+              "a": "1/4",
+              "b": "0",
+              "c": "1/8",
+              "d": "0"
+            }
+          },
+          "velocity": {
+            "x": {
+              "a": "3/4",
+              "b": "0",
+              "c": "-1/4",
+              "d": "0"
+            },
+            "y": {
+              "a": "3/4",
+              "b": "0",
+              "c": "1/4",
+              "d": "0"
+            }
+          }
+        }
+      ]
+    },
+    "time_parameter": "positive time in this record equals negative physical time of the original centered forward seed"
+  },
+  "stopping_rule": {
+    "declared_terminal_classes": [
+      "PAIR_CORNER",
+      "WALL_CORNER",
+      "COUPLED_SIMULTANEOUS",
+      "NO_EVENT"
+    ],
+    "event_cap": 16,
+    "finite_prefix_rule": "CAP is a finite regular horizon survivor, not a chaos or aperiodicity proof.",
+    "return_rule": "exact full labelled state equality after a resolved batch"
+  },
+  "evolution": {
+    "record_encoding": "append-only exact batch ledger; every row includes global earliest batch, exact dt/T, and complete pre/post labelled states",
+    "events": [
+      {
+        "step": 1,
+        "exact_dt": {
+          "a": "7/4",
+          "b": "0",
+          "c": "7/12",
+          "d": "0"
+        },
+        "exact_T": {
+          "a": "7/4",
+          "b": "0",
+          "c": "7/12",
+          "d": "0"
+        },
+        "event_class": "REGULAR",
+        "batch": [
+          {
+            "dt": {
+              "a": "7/4",
+              "b": "0",
+              "c": "7/12",
+              "d": "0"
+            },
+            "kind": "WALL_FACE",
+            "bodies": [
+              1
+            ],
+            "face": null,
+            "wall": "S"
+          }
+        ],
+        "batch_code": "W1:S",
+        "pre_state_hash": "ef1439fc4fcc537269dffc5e19d406ff2f26f2920200ddd1de166ba50e0f14dd",
+        "post_state_hash": "a507ab9ea596e222a236ad174abcd588c3e85a1573e304c7d7364374c933acd8",
+        "pre_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-3/8",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/8",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "3/8",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/8",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-5/4",
+                "b": "0",
+                "c": "-5/6",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/6",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "-1/2",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "metrics": {
+          "positions": {
+            "max_abs_numerator": "5",
+            "max_denominator": "6",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          },
+          "velocities": {
+            "max_abs_numerator": "3",
+            "max_denominator": "4",
+            "max_numerator_bits": 2,
+            "max_denominator_bits": 3
+          },
+          "all_coordinates": {
+            "max_abs_numerator": "5",
+            "max_denominator": "6",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          }
+        }
+      },
+      {
+        "step": 2,
+        "exact_dt": {
+          "a": "-1",
+          "b": "0",
+          "c": "2/3",
+          "d": "0"
+        },
+        "exact_T": {
+          "a": "3/4",
+          "b": "0",
+          "c": "5/4",
+          "d": "0"
+        },
+        "event_class": "REGULAR",
+        "batch": [
+          {
+            "dt": {
+              "a": "-1",
+              "b": "0",
+              "c": "2/3",
+              "d": "0"
+            },
+            "kind": "WALL_FACE",
+            "bodies": [
+              0
+            ],
+            "face": null,
+            "wall": "W"
+          }
+        ],
+        "batch_code": "W0:W",
+        "pre_state_hash": "a507ab9ea596e222a236ad174abcd588c3e85a1573e304c7d7364374c933acd8",
+        "post_state_hash": "bf89d869d143acf2eef73901bf62017438cabd6fcf69b4d4dad42e5e02e8abc6",
+        "pre_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-5/4",
+                "b": "0",
+                "c": "-5/6",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/6",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "-1/2",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/2",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "3/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              },
+              "y": {
+                "a": "-7/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "metrics": {
+          "positions": {
+            "max_abs_numerator": "7",
+            "max_denominator": "4",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          },
+          "velocities": {
+            "max_abs_numerator": "3",
+            "max_denominator": "4",
+            "max_numerator_bits": 2,
+            "max_denominator_bits": 3
+          },
+          "all_coordinates": {
+            "max_abs_numerator": "7",
+            "max_denominator": "4",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          }
+        }
+      },
+      {
+        "step": 3,
+        "exact_dt": {
+          "a": "7/4",
+          "b": "0",
+          "c": "-1/4",
+          "d": "0"
+        },
+        "exact_T": {
+          "a": "5/2",
+          "b": "0",
+          "c": "1",
+          "d": "0"
+        },
+        "event_class": "PAIR_CORNER",
+        "batch": [
+          {
+            "dt": {
+              "a": "7/4",
+              "b": "0",
+              "c": "-1/4",
+              "d": "0"
+            },
+            "kind": "PAIR_CORNER",
+            "bodies": [
+              0,
+              1
+            ],
+            "face": 10,
+            "wall": null
+          }
+        ],
+        "batch_code": "P01:10",
+        "pre_state_hash": "bf89d869d143acf2eef73901bf62017438cabd6fcf69b4d4dad42e5e02e8abc6",
+        "pre_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/2",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "3/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              },
+              "y": {
+                "a": "-7/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-5/4",
+                "b": "0",
+                "c": "-3/8",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/8",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/8",
+                "d": "0"
+              },
+              "y": {
+                "a": "-5/8",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "metrics": {
+          "positions": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          },
+          "velocities": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          },
+          "all_coordinates": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          }
+        }
+      }
+    ]
+  },
+  "result": {
+    "status": "PAIR_CORNER",
+    "event_batches": 3,
+    "exact_T": {
+      "a": "5/2",
+      "b": "0",
+      "c": "1",
+      "d": "0"
+    },
+    "events": [
+      {
+        "step": 1,
+        "exact_dt": {
+          "a": "7/4",
+          "b": "0",
+          "c": "7/12",
+          "d": "0"
+        },
+        "exact_T": {
+          "a": "7/4",
+          "b": "0",
+          "c": "7/12",
+          "d": "0"
+        },
+        "event_class": "REGULAR",
+        "batch": [
+          {
+            "dt": {
+              "a": "7/4",
+              "b": "0",
+              "c": "7/12",
+              "d": "0"
+            },
+            "kind": "WALL_FACE",
+            "bodies": [
+              1
+            ],
+            "face": null,
+            "wall": "S"
+          }
+        ],
+        "batch_code": "W1:S",
+        "pre_state_hash": "ef1439fc4fcc537269dffc5e19d406ff2f26f2920200ddd1de166ba50e0f14dd",
+        "post_state_hash": "a507ab9ea596e222a236ad174abcd588c3e85a1573e304c7d7364374c933acd8",
+        "pre_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-3/8",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/8",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "3/8",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/8",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-5/4",
+                "b": "0",
+                "c": "-5/6",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/6",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "-1/2",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "metrics": {
+          "positions": {
+            "max_abs_numerator": "5",
+            "max_denominator": "6",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          },
+          "velocities": {
+            "max_abs_numerator": "3",
+            "max_denominator": "4",
+            "max_numerator_bits": 2,
+            "max_denominator_bits": 3
+          },
+          "all_coordinates": {
+            "max_abs_numerator": "5",
+            "max_denominator": "6",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          }
+        }
+      },
+      {
+        "step": 2,
+        "exact_dt": {
+          "a": "-1",
+          "b": "0",
+          "c": "2/3",
+          "d": "0"
+        },
+        "exact_T": {
+          "a": "3/4",
+          "b": "0",
+          "c": "5/4",
+          "d": "0"
+        },
+        "event_class": "REGULAR",
+        "batch": [
+          {
+            "dt": {
+              "a": "-1",
+              "b": "0",
+              "c": "2/3",
+              "d": "0"
+            },
+            "kind": "WALL_FACE",
+            "bodies": [
+              0
+            ],
+            "face": null,
+            "wall": "W"
+          }
+        ],
+        "batch_code": "W0:W",
+        "pre_state_hash": "a507ab9ea596e222a236ad174abcd588c3e85a1573e304c7d7364374c933acd8",
+        "post_state_hash": "bf89d869d143acf2eef73901bf62017438cabd6fcf69b4d4dad42e5e02e8abc6",
+        "pre_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-5/4",
+                "b": "0",
+                "c": "-5/6",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/6",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "-1/2",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/2",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "3/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              },
+              "y": {
+                "a": "-7/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "metrics": {
+          "positions": {
+            "max_abs_numerator": "7",
+            "max_denominator": "4",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          },
+          "velocities": {
+            "max_abs_numerator": "3",
+            "max_denominator": "4",
+            "max_numerator_bits": 2,
+            "max_denominator_bits": 3
+          },
+          "all_coordinates": {
+            "max_abs_numerator": "7",
+            "max_denominator": "4",
+            "max_numerator_bits": 3,
+            "max_denominator_bits": 3
+          }
+        }
+      },
+      {
+        "step": 3,
+        "exact_dt": {
+          "a": "7/4",
+          "b": "0",
+          "c": "-1/4",
+          "d": "0"
+        },
+        "exact_T": {
+          "a": "5/2",
+          "b": "0",
+          "c": "1",
+          "d": "0"
+        },
+        "event_class": "PAIR_CORNER",
+        "batch": [
+          {
+            "dt": {
+              "a": "7/4",
+              "b": "0",
+              "c": "-1/4",
+              "d": "0"
+            },
+            "kind": "PAIR_CORNER",
+            "bodies": [
+              0,
+              1
+            ],
+            "face": 10,
+            "wall": null
+          }
+        ],
+        "batch_code": "P01:10",
+        "pre_state_hash": "bf89d869d143acf2eef73901bf62017438cabd6fcf69b4d4dad42e5e02e8abc6",
+        "pre_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-3/2",
+                "b": "0",
+                "c": "-3/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "1/2",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "3/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              },
+              "y": {
+                "a": "-7/4",
+                "b": "0",
+                "c": "-1/2",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-5/4",
+                "b": "0",
+                "c": "-3/8",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/8",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "-1/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/8",
+                "d": "0"
+              },
+              "y": {
+                "a": "-5/8",
+                "b": "0",
+                "c": "-1/4",
+                "d": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "-3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "0",
+                "c": "1/4",
+                "d": "0"
+              }
+            }
+          }
+        ],
+        "metrics": {
+          "positions": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          },
+          "velocities": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          },
+          "all_coordinates": {
+            "max_abs_numerator": "\u003cnil\u003e",
+            "max_denominator": "\u003cnil\u003e",
+            "max_numerator_bits": 0,
+            "max_denominator_bits": 0
+          }
+        }
+      }
+    ],
+    "final_state": [
+      {
+        "position": {
+          "x": {
+            "a": "-5/4",
+            "b": "0",
+            "c": "-3/8",
+            "d": "0"
+          },
+          "y": {
+            "a": "-1/8",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "1/4",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          },
+          "y": {
+            "a": "-1/4",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          }
+        }
+      },
+      {
+        "position": {
+          "x": {
+            "a": "-3/4",
+            "b": "0",
+            "c": "1/8",
+            "d": "0"
+          },
+          "y": {
+            "a": "-5/8",
+            "b": "0",
+            "c": "-1/4",
+            "d": "0"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "-3/4",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          },
+          "y": {
+            "a": "3/4",
+            "b": "0",
+            "c": "1/4",
+            "d": "0"
+          }
+        }
+      }
+    ],
+    "final_state_hash": "207186723c6c2c94e27e31aba4081ae7abc7e8b8d760ce6bcd2817c2f70903bc",
+    "distinct_states": 3,
+    "pair_face_word": [],
+    "initial_metrics": {
+      "positions": {
+        "max_abs_numerator": "3",
+        "max_denominator": "8",
+        "max_numerator_bits": 2,
+        "max_denominator_bits": 4
+      },
+      "velocities": {
+        "max_abs_numerator": "3",
+        "max_denominator": "4",
+        "max_numerator_bits": 2,
+        "max_denominator_bits": 3
+      },
+      "all_coordinates": {
+        "max_abs_numerator": "3",
+        "max_denominator": "8",
+        "max_numerator_bits": 2,
+        "max_denominator_bits": 4
+      }
+    },
+    "final_metrics": {
+      "positions": {
+        "max_abs_numerator": "5",
+        "max_denominator": "8",
+        "max_numerator_bits": 3,
+        "max_denominator_bits": 4
+      },
+      "velocities": {
+        "max_abs_numerator": "3",
+        "max_denominator": "4",
+        "max_numerator_bits": 2,
+        "max_denominator_bits": 3
+      },
+      "all_coordinates": {
+        "max_abs_numerator": "5",
+        "max_denominator": "8",
+        "max_numerator_bits": 3,
+        "max_denominator_bits": 4
+      }
+    },
+    "max_metrics": {
+      "positions": {
+        "max_abs_numerator": "7",
+        "max_denominator": "8",
+        "max_numerator_bits": 3,
+        "max_denominator_bits": 4
+      },
+      "velocities": {
+        "max_abs_numerator": "3",
+        "max_denominator": "4",
+        "max_numerator_bits": 2,
+        "max_denominator_bits": 3
+      },
+      "all_coordinates": {
+        "max_abs_numerator": "7",
+        "max_denominator": "8",
+        "max_numerator_bits": 3,
+        "max_denominator_bits": 4
+      }
+    },
+    "first_denominator_promotion": null,
+    "first_numerator_height_growth": 1
+  },
+  "independent_check_contract": {
+    "contact_rule": "A regular pair contact has exactly one active support face. Pair corners and shared-body same-time batches are terminal; disjoint contacts commute.",
+    "required_recomputation": "Reconstruct geometry and initial state, enumerate every wall/pair candidate before each recorded batch, require exact earliest-time batch equality, and require exact post-state equality.",
+    "reverse_time_rule": "Start from the resolved forward t=0 state with all velocities negated; do not insert a second t=0 pair collision.",
+    "sequence_rule": "For the centered dodecagon family, the ternary face sequence is pair_face_word reduced modulo 3, including the time-zero face contact.",
+    "sole_input": "A checker must use this file alone; it must not import or invoke the Go producer."
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "authority": {
+    "independent_postcheck": "Python: scripts/postcheck_go.py; does not invoke Go",
+    "production_physics": "Go: cmd/lattice and internal/engine",
+    "visuals": "Pillow/FFmpeg code renders fed only checked certificate JSON"
+  },
+  "canonical_experiments": {
+    "24gon_L2_N2": {
+      "bytes": 2448574,
+      "counts": {
+        "CAP": 16,
+        "RETURN": 72,
+        "WALL_CORNER": 8
+      },
+      "earliest": {
+        "EARLIEST_CAP": "24gon-L2-N2-000004",
+        "EARLIEST_DENOMINATOR_PROMOTION": "24gon-L2-N2-000001",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "24gon-L2-N2-000001",
+        "EARLIEST_OFFCARDINAL_PAIR_FACE": "24gon-L2-N2-000004",
+        "EARLIEST_RETURN": "24gon-L2-N2-000001",
+        "EARLIEST_WALL_CORNER": "24gon-L2-N2-000035"
+      },
+      "event_cap": 100,
+      "experiment_id": "24gon_L2_N2_cardinal_lattice",
+      "independent_check": {
+        "bytes": 181,
+        "checked_batches": null,
+        "checked_cases": 96,
+        "path": "check/24gon_L2_N2.python.json",
+        "result": "PASS",
+        "sha256": "c97ddddbde3a84185b151ba359595c01783ac47f01e0991cfbd4e5b23671d273",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/24gon_L2_N2/atlas.json",
+      "raw_starts": 96,
+      "schema": "lattice-chaos-atlas/v2",
+      "sha256": "04ca9adfb49e3ece677f8b417ae47b116093157b2500addbe35f25a08edbf5c0"
+    },
+    "dodecagon_L2_N2": {
+      "bytes": 824516,
+      "counts": {
+        "PAIR_CORNER": 24,
+        "RETURN": 64,
+        "WALL_CORNER": 8
+      },
+      "earliest": {
+        "EARLIEST_DENOMINATOR_PROMOTION": "dodecagon-L2-N2-000001",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "dodecagon-L2-N2-000001",
+        "EARLIEST_PAIR_CORNER": "dodecagon-L2-N2-000004",
+        "EARLIEST_RETURN": "dodecagon-L2-N2-000001",
+        "EARLIEST_WALL_CORNER": "dodecagon-L2-N2-000035"
+      },
+      "event_cap": 100,
+      "experiment_id": "dodecagon_L2_N2_cardinal_lattice",
+      "independent_check": {
+        "bytes": 193,
+        "checked_batches": null,
+        "checked_cases": 96,
+        "path": "check/dodecagon_L2_N2.python.json",
+        "result": "PASS",
+        "sha256": "da59bcc0f3321bd3a53a21049d050a40fec83e5b8db3683c5178858ca7482a16",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/dodecagon_L2_N2/atlas.json",
+      "raw_starts": 96,
+      "schema": "lattice-chaos-atlas/v2",
+      "sha256": "4ff3fabb49f1f6755995e0f65d64843e83f928f9a74ec6c41ca00f6d6235f0ee"
+    },
+    "dodecagon_L3_N2": {
+      "bytes": 5749223,
+      "counts": {
+        "PAIR_CORNER": 136,
+        "RETURN": 424,
+        "WALL_CORNER": 16
+      },
+      "earliest": {
+        "EARLIEST_DENOMINATOR_PROMOTION": "dodecagon-L3-N2-000001",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "dodecagon-L3-N2-000001",
+        "EARLIEST_PAIR_CORNER": "dodecagon-L3-N2-000004",
+        "EARLIEST_RETURN": "dodecagon-L3-N2-000001",
+        "EARLIEST_WALL_CORNER": "dodecagon-L3-N2-000115"
+      },
+      "event_cap": 100,
+      "experiment_id": "dodecagon_L3_N2_cardinal_lattice",
+      "independent_check": {
+        "bytes": 197,
+        "checked_batches": null,
+        "checked_cases": 576,
+        "path": "check/dodecagon_L3_N2.python.json",
+        "result": "PASS",
+        "sha256": "8e0a0a22db1aa6e826139f866e2caf8007eaf741eb9d2fc7bbd40fb6fb57b2a9",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/dodecagon_L3_N2/atlas.json",
+      "raw_starts": 576,
+      "schema": "lattice-chaos-atlas/v2",
+      "sha256": "5e7afd1e457336f14c3e4f033c5ebbc8c92fd38c6abb4db4dd018eca97e8b868"
+    },
+    "dodecagon_centered_all_faces": {
+      "bytes": 10312517,
+      "counts": {
+        "CAP": 16,
+        "PAIR_CORNER": 32,
+        "RETURN": 20
+      },
+      "earliest": {
+        "EARLIEST_CAP": "dodecagon-center-f1-EN",
+        "EARLIEST_DENOMINATOR_PROMOTION": "dodecagon-center-f1-EN",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "dodecagon-center-f0-EW",
+        "EARLIEST_OFFCARDINAL_PAIR_FACE": "dodecagon-center-f1-EW",
+        "EARLIEST_PAIR_CORNER": "dodecagon-center-f0-EN",
+        "EARLIEST_RETURN": "dodecagon-center-f0-EW"
+      },
+      "event_cap": 500,
+      "experiment_id": "dodecagon_centered_all_faces_cardinal_incoming",
+      "independent_check": {
+        "bytes": 206,
+        "checked_batches": null,
+        "checked_cases": 68,
+        "path": "check/dodecagon_centered_all_faces.python.json",
+        "result": "PASS",
+        "sha256": "049b143f7e7fe83182d78577d350767e07904238ca91a28c053dda39e9abb480",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/dodecagon_centered/atlas_all_faces_cap500.json",
+      "raw_starts": 68,
+      "schema": "lattice-chaos-centered-atlas/v2",
+      "sha256": "83321e337387f5f6a237ba5b0e9526ac306fdd085f997c671c9c62137f816646"
+    },
+    "dodecagon_centered_offcardinal": {
+      "bytes": 10070982,
+      "counts": {
+        "CAP": 16,
+        "PAIR_CORNER": 16,
+        "RETURN": 16
+      },
+      "earliest": {
+        "EARLIEST_CAP": "dodecagon-center-f1-EN",
+        "EARLIEST_DENOMINATOR_PROMOTION": "dodecagon-center-f1-EN",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "dodecagon-center-f1-EW",
+        "EARLIEST_OFFCARDINAL_PAIR_FACE": "dodecagon-center-f1-EW",
+        "EARLIEST_PAIR_CORNER": "dodecagon-center-f1-ES",
+        "EARLIEST_RETURN": "dodecagon-center-f1-EW"
+      },
+      "event_cap": 500,
+      "experiment_id": "dodecagon_centered_offcardinal_cardinal_incoming",
+      "independent_check": {
+        "bytes": 208,
+        "checked_batches": null,
+        "checked_cases": 48,
+        "path": "check/dodecagon_centered_offcardinal.python.json",
+        "result": "PASS",
+        "sha256": "16af1a5799bc541edc1e409920a16c8a6abc0a550c033eb1c490670308af6ebb",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/dodecagon_centered/atlas_offcardinal_cap500.json",
+      "raw_starts": 48,
+      "schema": "lattice-chaos-centered-atlas/v2",
+      "sha256": "530f00d89eae3589eb60457c633097f8d164e7266c881a370038fbc603cd5254"
+    },
+    "octagon_L2_N3_context": {
+      "bytes": 7579383,
+      "counts": {
+        "CAP": 16,
+        "COUPLED_SIMULTANEOUS": 16,
+        "PAIR_CORNER": 88,
+        "RETURN": 80,
+        "WALL_CORNER": 56
+      },
+      "earliest": {
+        "EARLIEST_CAP": "octagon-L2-N3-000014",
+        "EARLIEST_COUPLED_SIMULTANEOUS": "octagon-L2-N3-000004",
+        "EARLIEST_DENOMINATOR_PROMOTION": "octagon-L2-N3-000001",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "octagon-L2-N3-000001",
+        "EARLIEST_OFFCARDINAL_PAIR_FACE": "octagon-L2-N3-000004",
+        "EARLIEST_PAIR_CORNER": "octagon-L2-N3-000007",
+        "EARLIEST_RETURN": "octagon-L2-N3-000001",
+        "EARLIEST_WALL_CORNER": "octagon-L2-N3-000003"
+      },
+      "event_cap": 256,
+      "experiment_id": "octagon_L2_N3_cardinal_lattice",
+      "independent_check": {
+        "bytes": 240,
+        "checked_batches": null,
+        "checked_cases": 256,
+        "path": "check/octagon_L2_N3.python.json",
+        "result": "PASS",
+        "sha256": "8188d7bc01bbe08a284dff5f81003712fc58bc48192b949744212d848efeeb68",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/octagon_L2_N3/atlas.json",
+      "raw_starts": 256,
+      "schema": "lattice-chaos-atlas/v2",
+      "sha256": "d81f48328abbf1ffe52aa91284ed3333c189b2010cfc98bc013503195d65ec5a"
+    },
+    "square_L2_N4": {
+      "bytes": 2549140,
+      "counts": {
+        "COUPLED_SIMULTANEOUS": 24,
+        "PAIR_CORNER": 168,
+        "RETURN": 32,
+        "WALL_CORNER": 32
+      },
+      "earliest": {
+        "EARLIEST_COUPLED_SIMULTANEOUS": "square-L2-N4-000027",
+        "EARLIEST_DENOMINATOR_PROMOTION": "square-L2-N4-000001",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "square-L2-N4-000001",
+        "EARLIEST_PAIR_CORNER": "square-L2-N4-000003",
+        "EARLIEST_RETURN": "square-L2-N4-000001",
+        "EARLIEST_WALL_CORNER": "square-L2-N4-000011"
+      },
+      "event_cap": 256,
+      "experiment_id": "square_L2_N4_cardinal_lattice",
+      "independent_check": {
+        "bytes": 225,
+        "checked_batches": null,
+        "checked_cases": 256,
+        "path": "check/square_L2_N4.python.json",
+        "result": "PASS",
+        "sha256": "c4beca8b7c0f2695d097dc3d60d321bec923e32d188585ea566c75b8d56277cd",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/square_L2_N4/atlas.json",
+      "raw_starts": 256,
+      "schema": "lattice-chaos-atlas/v2",
+      "sha256": "1d7f755b2fc27a0aa3d672a3ee3c8b7d7a6a024cc0640ee7bacfaadd3ef9ab06"
+    }
+  },
+  "derived_analysis": {
+    "bytes": 9531,
+    "path": "analysis/symmetry_and_sequence_audit.json",
+    "sha256": "195f465af24b733b52afa04306acb2919cc825dfaa7286e2bac55961e3c32915"
+  },
+  "finite_prefix_caveat": "CAP records are finite regular survivors, not proofs of chaos, aperiodicity, or infinitude.",
+  "highlighted_positive_records": {
+    "24gon_class_A": {
+      "bytes": 902170,
+      "event_batches": 100,
+      "id": "24gon_L2_N2_class_A_ES_cap100",
+      "independent_check": {
+        "bytes": 226,
+        "checked_batches": 100,
+        "checked_cases": null,
+        "path": "check/24gon_L2_N2_class_A_ES_cap100.python.json",
+        "result": "PASS",
+        "sha256": "ca8e16c548bbeec0bcb8514faae385f2e980cd9a72bdf216f2c108c50e059107",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 24,
+      "pair_face_word_sha256": "1e4dbece67738bb2327a8097beb624f0ecb4934f3cb31d4ffe591d1fc944855b",
+      "path": "data/24gon_L2_N2/certificates/24gon_L2_N2_class_A_ES_cap100.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "d31ab04bc9cf27378e462b930e97d05df2c5c29f475895e63529df547a090a7b",
+      "status": "CAP"
+    },
+    "24gon_class_B": {
+      "bytes": 900858,
+      "event_batches": 100,
+      "id": "24gon_L2_N2_class_B_WN_cap100",
+      "independent_check": {
+        "bytes": 226,
+        "checked_batches": 100,
+        "checked_cases": null,
+        "path": "check/24gon_L2_N2_class_B_WN_cap100.python.json",
+        "result": "PASS",
+        "sha256": "90f71696edeb087eb5781b3773c286f5f461b06e1d9ae5bc6502b89882b23f6f",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 24,
+      "pair_face_word_sha256": "a7f692e3fc88be31d32e2091f5b94e65ac963919f4748f647ec5d5b628f26443",
+      "path": "data/24gon_L2_N2/certificates/24gon_L2_N2_class_B_WN_cap100.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "b9f1c4f77ea68c750e93eae2eda458827d0b06cbb4ed09d681561bc80c8e39d6",
+      "status": "CAP"
+    },
+    "dodecagon_lexmin_cap2000": {
+      "bytes": 23996844,
+      "event_batches": 2000,
+      "id": "centered_dodecagon_f1_EN_cap2000",
+      "independent_check": {
+        "bytes": 240,
+        "checked_batches": 2000,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap2000.python.json",
+        "result": "PASS",
+        "sha256": "ce69277e38360ed81a5e14e61b88e98f674a58444c80ac3ce8085a0988df6e77",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 418,
+      "pair_face_word_sha256": "9b735352cf90dd476023c72504a5e9b293e5a9edcc908b11af8cd5d69818c8bd",
+      "path": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap2000.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "d144cb0041364d9052c76bd2b6b6fe6215ae48dd770b78859404192b6f88a40f",
+      "status": "CAP"
+    },
+    "dodecagon_lexmin_cap4000_compact": {
+      "bytes": 14189340,
+      "event_batches": 4000,
+      "id": "centered_dodecagon_f1_EN_cap4000_compact",
+      "independent_check": {
+        "bytes": 249,
+        "checked_batches": 4000,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap4000_compact.python.json",
+        "result": "PASS",
+        "sha256": "406bcf681617accefbe25b1b049677356afd276a8156c6bccba039fd4422f572",
+        "status": "CAP"
+      },
+      "kind": "compact_checkpoint",
+      "pair_contacts": 838,
+      "pair_face_word_sha256": "980d6c957fd0804d6e72be478c0e020396fdf201ef50e17fdb3ffc50bbe5d599",
+      "path": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap4000_compact.json",
+      "schema": "lattice-chaos-compact-progress/v1",
+      "sha256": "5788ffaf3cce7e9e72c2ed1a995e4f47ef39ca926f872732601d9a815a14a2d3",
+      "status": "CAP"
+    },
+    "dodecagon_lexmin_cap500": {
+      "bytes": 4813220,
+      "event_batches": 500,
+      "id": "centered_dodecagon_f1_EN_cap500",
+      "independent_check": {
+        "bytes": 237,
+        "checked_batches": 500,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap500.python.json",
+        "result": "PASS",
+        "sha256": "d187e24ca6cad86d4d7452c9ddab2d082d0f11f16537c4bb861300b92e2b6ddf",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 108,
+      "pair_face_word_sha256": "4d876ca934b36080440c795f797d4f9c13b71073d81b45ff1346c6db7b873a7d",
+      "path": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap500.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "67ea7f05291831a88d0f893ed778b10037af4a591387ba9c5bfa390519a77915",
+      "status": "CAP"
+    },
+    "dodecagon_lexmin_cap6000_compact": {
+      "bytes": 26737767,
+      "event_batches": 6000,
+      "id": "centered_dodecagon_f1_EN_cap6000_compact",
+      "independent_check": {
+        "bytes": 249,
+        "checked_batches": 6000,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap6000_compact.python.json",
+        "result": "PASS",
+        "sha256": "8d6bf8bd1d12e8f57f661ee94200f00f69c25e99eda887c87425342f8bdacef0",
+        "status": "CAP"
+      },
+      "kind": "compact_checkpoint",
+      "pair_contacts": 1249,
+      "pair_face_word_sha256": "ad94b949248f10cba24178b38baeecd3b8bf009095613ae65f9172366edec910",
+      "path": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap6000_compact.json",
+      "schema": "lattice-chaos-compact-progress/v1",
+      "sha256": "055856963ab434f04dc541e915026ee6f0cdefc696ccecb6e4ce2b360c43cb4b",
+      "status": "CAP"
+    },
+    "dodecagon_lexmin_cap7500_compact": {
+      "bytes": 38511484,
+      "event_batches": 7500,
+      "id": "centered_dodecagon_f1_EN_cap7500_compact",
+      "independent_check": {
+        "bytes": 249,
+        "checked_batches": 7500,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap7500_compact.python.json",
+        "result": "PASS",
+        "sha256": "ca8376094770f5e64e58eda2a23cf3e9f4170c8f5f0ceb2a978b1d05140e276d",
+        "status": "CAP"
+      },
+      "kind": "compact_checkpoint",
+      "pair_contacts": 1578,
+      "pair_face_word_sha256": "5bafd81edcc7e9de6d21890a88557ca3581d0d82a742ec557cdb18f76b1ec5e0",
+      "path": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap7500_compact.json",
+      "schema": "lattice-chaos-compact-progress/v1",
+      "sha256": "13b14a377854ced367195f5a8c58f7e4b76909cae204e5a37c6eca78c54a4003",
+      "status": "CAP"
+    },
+    "dodecagon_lexmin_reverse_stem": {
+      "bytes": 41900,
+      "event_batches": 3,
+      "id": "centered_dodecagon_f1_EN_reverse_stem",
+      "independent_check": {
+        "bytes": 255,
+        "checked_batches": 3,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_reverse_stem.python.json",
+        "result": "PASS",
+        "sha256": "3bc6f5a04ab3c127b15b693a2071711c05390a36e9647ddd1742bc6c8e1274c1",
+        "status": "PAIR_CORNER"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 0,
+      "pair_face_word_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_reverse_stem.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "b05758248acc10d9d72884ca7844f08c5ac77b0e7ffac293cf3796a85a74b805",
+      "status": "PAIR_CORNER"
+    }
+  },
+  "known_differences": "KNOWN_DIFFERENCES.md",
+  "rebuild_order": [
+    "make build test",
+    "make scan certs deep-dodecagon",
+    "make check",
+    "make derive",
+    "make render",
+    "make index manifest package"
+  ],
+  "render_manifest": {
+    "bytes": 1452,
+    "path": "renders/shorts/render_manifest.json",
+    "sha256": "5e6ddcb1fe30a1e7df37c16eb14811ab987ba6f2994977f794216a2c154e062e"
+  },
+  "rewrite_entrypoint": "docs/REWRITE_BRIEF.md",
+  "schema": "artifact16-index/v1",
+  "title": "Cardinal lattice polygon experiments"
+}

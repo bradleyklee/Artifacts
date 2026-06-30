@@ -1,0 +1,277 @@
+{
+  "24gon_L2_N2": {
+    "D4_classes": [
+      {
+        "earliest_case_id": "24gon-L2-N2-000004",
+        "members": [
+          "24gon-L2-N2-000004",
+          "24gon-L2-N2-000014",
+          "24gon-L2-N2-000024",
+          "24gon-L2-N2-000026",
+          "24gon-L2-N2-000068",
+          "24gon-L2-N2-000073",
+          "24gon-L2-N2-000083",
+          "24gon-L2-N2-000090"
+        ],
+        "raw_member_count": 8,
+        "representative": [
+          {
+            "site": 0,
+            "velocity": "E"
+          },
+          {
+            "site": 1,
+            "velocity": "S"
+          }
+        ],
+        "time_reverse_same_sites": "24gon-L2-N2-000007"
+      },
+      {
+        "earliest_case_id": "24gon-L2-N2-000007",
+        "members": [
+          "24gon-L2-N2-000007",
+          "24gon-L2-N2-000009",
+          "24gon-L2-N2-000019",
+          "24gon-L2-N2-000029",
+          "24gon-L2-N2-000071",
+          "24gon-L2-N2-000078",
+          "24gon-L2-N2-000088",
+          "24gon-L2-N2-000093"
+        ],
+        "raw_member_count": 8,
+        "representative": [
+          {
+            "site": 0,
+            "velocity": "E"
+          },
+          {
+            "site": 2,
+            "velocity": "N"
+          }
+        ],
+        "time_reverse_same_sites": "24gon-L2-N2-000004"
+      }
+    ],
+    "family": "24gon_L2_N2",
+    "raw_cap_cases": 16,
+    "source": "data/24gon_L2_N2/atlas.json",
+    "source_sha256": "04ca9adfb49e3ece677f8b417ae47b116093157b2500addbe35f25a08edbf5c0"
+  },
+  "dodecagon_centered": {
+    "all_distinct_words": [
+      {
+        "raw_cases": [
+          "dodecagon-center-f1-EN",
+          "dodecagon-center-f1-SW",
+          "dodecagon-center-f4-ES",
+          "dodecagon-center-f4-NW",
+          "dodecagon-center-f7-WS",
+          "dodecagon-center-f7-NE",
+          "dodecagon-center-f10-WN",
+          "dodecagon-center-f10-SE"
+        ],
+        "word": "102102121222122202202110222112000122121022210102102001122000022112100200101121121100201100222012011012112101"
+      },
+      {
+        "raw_cases": [
+          "dodecagon-center-f2-WS",
+          "dodecagon-center-f2-NE",
+          "dodecagon-center-f5-WN",
+          "dodecagon-center-f5-SE",
+          "dodecagon-center-f8-EN",
+          "dodecagon-center-f8-SW",
+          "dodecagon-center-f11-ES",
+          "dodecagon-center-f11-NW"
+        ],
+        "word": "201201212111211101101220111221000211212011120201201002211000011221200100202212212200102200111021022021221202"
+      }
+    ],
+    "distinct_ternary_words": 2,
+    "lexicographically_minimal": {
+      "case_id": "dodecagon-center-f1-EN",
+      "equivalent_raw_cases_with_same_word": [
+        "dodecagon-center-f1-EN",
+        "dodecagon-center-f1-SW",
+        "dodecagon-center-f4-ES",
+        "dodecagon-center-f4-NW",
+        "dodecagon-center-f7-WS",
+        "dodecagon-center-f7-NE",
+        "dodecagon-center-f10-WN",
+        "dodecagon-center-f10-SE"
+      ],
+      "face": 1,
+      "incoming": [
+        "E",
+        "N"
+      ],
+      "word_500": "102102121222122202202110222112000122121022210102102001122000022112100200101121121100201100222012011012112101"
+    },
+    "raw_cap_cases": 16,
+    "reduction": "every pair face label reduced modulo 3; the prescribed time-zero central contact is included",
+    "source": "data/dodecagon_centered/atlas_all_faces_cap500.json",
+    "source_sha256": "83321e337387f5f6a237ba5b0e9526ac306fdd085f997c671c9c62137f816646"
+  },
+  "dodecagon_sequences": {
+    "compact_cap7500": {
+      "certificate": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap7500_compact.json",
+      "certificate_sha256": "13b14a377854ced367195f5a8c58f7e4b76909cae204e5a37c6eca78c54a4003",
+      "csv": "data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_cap7500.csv",
+      "last_120": "010110021112200221012000111020122222222221110112210222102101112022220012022010120122120012122220121110211022202000122121",
+      "pair_contacts": 1578,
+      "prefix_120": "102102121222122202202110222112000122121022210102102001122000022112100200101121121100201100222012011012112101221111112222",
+      "reduction": "face_label modulo 3, with time-zero face contact at index 0",
+      "text": "data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_cap7500.txt"
+    },
+    "full_cap2000": {
+      "certificate": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap2000.json",
+      "certificate_sha256": "d144cb0041364d9052c76bd2b6b6fe6215ae48dd770b78859404192b6f88a40f",
+      "csv": "data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_cap2000.csv",
+      "last_120": "222100210002211022222220020110111202201211212210001102212210011112101222221211001101001002211111022222100210200101222011",
+      "pair_contacts": 418,
+      "prefix_120": "102102121222122202202110222112000122121022210102102001122000022112100200101121121100201100222012011012112101221111112222",
+      "reduction": "face_label modulo 3, with time-zero face contact at index 0",
+      "text": "data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_cap2000.txt"
+    },
+    "reverse_stem": {
+      "certificate": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_reverse_stem.json",
+      "certificate_sha256": "b05758248acc10d9d72884ca7844f08c5ac77b0e7ffac293cf3796a85a74b805",
+      "csv": "data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_reverse_stem.csv",
+      "events": [
+        {
+          "emits_regular_ternary_symbol": true,
+          "event_class": "INITIAL_PAIR_FACE",
+          "exact_reverse_time": {
+            "a": "0",
+            "b": "0",
+            "c": "0",
+            "d": "0"
+          },
+          "face_label": 1,
+          "physical_role": "source central face contact at reverse-time zero",
+          "reverse_time_event_index": 0,
+          "ternary_face_class_mod_3": 1
+        },
+        {
+          "emits_regular_ternary_symbol": false,
+          "event_class": "REGULAR",
+          "exact_reverse_time": {
+            "a": "7/4",
+            "b": "0",
+            "c": "7/12",
+            "d": "0"
+          },
+          "face_label": null,
+          "kind": "WALL_FACE",
+          "physical_role": "negative-physical-time continuation from resolved centered contact",
+          "reverse_time_event_index": 1,
+          "ternary_face_class_mod_3": null,
+          "wall": "S"
+        },
+        {
+          "emits_regular_ternary_symbol": false,
+          "event_class": "REGULAR",
+          "exact_reverse_time": {
+            "a": "3/4",
+            "b": "0",
+            "c": "5/4",
+            "d": "0"
+          },
+          "face_label": null,
+          "kind": "WALL_FACE",
+          "physical_role": "negative-physical-time continuation from resolved centered contact",
+          "reverse_time_event_index": 2,
+          "ternary_face_class_mod_3": null,
+          "wall": "W"
+        },
+        {
+          "emits_regular_ternary_symbol": false,
+          "event_class": "PAIR_CORNER",
+          "exact_reverse_time": {
+            "a": "5/2",
+            "b": "0",
+            "c": "1",
+            "d": "0"
+          },
+          "face_label": 10,
+          "kind": "PAIR_CORNER",
+          "physical_role": "negative-physical-time continuation from resolved centered contact",
+          "reverse_time_event_index": 3,
+          "ternary_face_class_mod_3": null,
+          "wall": null
+        }
+      ],
+      "interpretation": "The true past branch from the resolved t=0 state has only the source trit 1; it then has two wall contacts and reaches a pair-corner terminal. Wall contacts and the terminal corner emit no regular ternary digit.",
+      "regular_ternary_word": "1",
+      "terminal_batches_after_t0": 3,
+      "terminal_status": "PAIR_CORNER",
+      "text": "data/dodecagon_centered/ternary/centered_dodecagon_f1_EN_reverse_stem.txt"
+    }
+  },
+  "octagon_L2_N3": {
+    "D4_classes": [
+      {
+        "earliest_case_id": "octagon-L2-N3-000014",
+        "members": [
+          "octagon-L2-N3-000014",
+          "octagon-L2-N3-000046",
+          "octagon-L2-N3-000117",
+          "octagon-L2-N3-000121",
+          "octagon-L2-N3-000147",
+          "octagon-L2-N3-000159",
+          "octagon-L2-N3-000202",
+          "octagon-L2-N3-000204"
+        ],
+        "raw_member_count": 8,
+        "representative": [
+          {
+            "site": 0,
+            "velocity": "E"
+          },
+          {
+            "site": 1,
+            "velocity": "S"
+          },
+          {
+            "site": 2,
+            "velocity": "W"
+          }
+        ],
+        "time_reverse_same_sites": null
+      },
+      {
+        "earliest_case_id": "octagon-L2-N3-000028",
+        "members": [
+          "octagon-L2-N3-000028",
+          "octagon-L2-N3-000053",
+          "octagon-L2-N3-000078",
+          "octagon-L2-N3-000100",
+          "octagon-L2-N3-000138",
+          "octagon-L2-N3-000168",
+          "octagon-L2-N3-000211",
+          "octagon-L2-N3-000237"
+        ],
+        "raw_member_count": 8,
+        "representative": [
+          {
+            "site": 0,
+            "velocity": "E"
+          },
+          {
+            "site": 1,
+            "velocity": "S"
+          },
+          {
+            "site": 3,
+            "velocity": "W"
+          }
+        ],
+        "time_reverse_same_sites": null
+      }
+    ],
+    "family": "octagon_L2_N3",
+    "raw_cap_cases": 16,
+    "source": "data/octagon_L2_N3/atlas.json",
+    "source_sha256": "d81f48328abbf1ffe52aa91284ed3333c189b2010cfc98bc013503195d65ec5a"
+  },
+  "schema": "lattice-chaos-derived-symmetry-and-sequences/v1"
+}

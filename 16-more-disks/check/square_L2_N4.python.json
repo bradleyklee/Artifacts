@@ -1,0 +1,12 @@
+{
+  "checked_cases": 256,
+  "counts": {
+    "COUPLED_SIMULTANEOUS": 24,
+    "PAIR_CORNER": 168,
+    "RETURN": 32,
+    "WALL_CORNER": 32
+  },
+  "kind": "atlas",
+  "result": "PASS",
+  "source": "data/square_L2_N4/atlas.json"
+}

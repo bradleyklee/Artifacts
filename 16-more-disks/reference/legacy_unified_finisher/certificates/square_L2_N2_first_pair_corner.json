@@ -1,0 +1,270 @@
+{
+  "case": {
+    "L": 2,
+    "N": 2,
+    "event_cap": 20,
+    "sites": [
+      0,
+      1
+    ],
+    "velocities": [
+      "E",
+      "N"
+    ]
+  },
+  "container": {
+    "cells_per_side": 2,
+    "half_side": {
+      "a": "1"
+    },
+    "kind": "axis_aligned_square"
+  },
+  "model": {
+    "apothem": {
+      "a": "1/4"
+    },
+    "cardinal_width": {
+      "a": "1/2"
+    },
+    "cell_side": {
+      "a": "1"
+    },
+    "edge": {
+      "a": "1/2"
+    },
+    "field": "Q",
+    "geometry_version": "unified-v1",
+    "model_id": "square",
+    "normal_label": "face k has normal angle 360*k/sides degrees",
+    "polygon": "regular 4-gon",
+    "sides": 4
+  },
+  "ordering": "model -> N -> orientation/phase -> unordered site tuple -> ordered velocity tuple",
+  "outcome": {
+    "distinct_states": 1,
+    "event_batches": 1,
+    "events": [
+      {
+        "batch": [
+          {
+            "bodies": [
+              0,
+              1
+            ],
+            "dt": {
+              "a": "1/2"
+            },
+            "face": 0,
+            "kind": "PAIR_CORNER",
+            "wall": null
+          }
+        ],
+        "event_class": "PAIR_CORNER",
+        "exact_T": {
+          "a": "1/2"
+        },
+        "exact_dt": {
+          "a": "1/2"
+        },
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "0"
+              },
+              "y": {
+                "a": "-1/2"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1"
+              },
+              "y": {
+                "a": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "1/2"
+              },
+              "y": {
+                "a": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "0"
+              },
+              "y": {
+                "a": "1"
+              }
+            }
+          }
+        ],
+        "post_state_hash": null,
+        "pre_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-1/2"
+              },
+              "y": {
+                "a": "-1/2"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1"
+              },
+              "y": {
+                "a": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "1/2"
+              },
+              "y": {
+                "a": "-1/2"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "0"
+              },
+              "y": {
+                "a": "1"
+              }
+            }
+          }
+        ],
+        "pre_state_hash": "af9226c61b347286400d21bc7e475000610264733865f5da54320abdedd7d166",
+        "step": 1
+      }
+    ],
+    "exact_T": {
+      "a": "1/2"
+    },
+    "final_metrics": {
+      "all_coordinates": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "positions": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "time": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "velocities": {
+        "max_abs_numerator": 1,
+        "max_denominator": 1,
+        "max_denominator_bits": 1,
+        "max_numerator_bits": 1
+      }
+    },
+    "final_state": [
+      {
+        "position": {
+          "x": {
+            "a": "0"
+          },
+          "y": {
+            "a": "-1/2"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "1"
+          },
+          "y": {
+            "a": "0"
+          }
+        }
+      },
+      {
+        "position": {
+          "x": {
+            "a": "1/2"
+          },
+          "y": {
+            "a": "0"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "0"
+          },
+          "y": {
+            "a": "1"
+          }
+        }
+      }
+    ],
+    "final_state_hash": "c037b1cad304c50318f17574ba395bc318a2b66adfbb6606f6daf5c04aedfbb9",
+    "first_denominator_promotion": null,
+    "first_numerator_height_growth": null,
+    "initial_metrics": {
+      "all_coordinates": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "positions": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "velocities": {
+        "max_abs_numerator": 1,
+        "max_denominator": 1,
+        "max_denominator_bits": 1,
+        "max_numerator_bits": 1
+      }
+    },
+    "max_metrics": {
+      "all_coordinates": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "positions": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "time": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "velocities": {
+        "max_abs_numerator": 1,
+        "max_denominator": 1,
+        "max_denominator_bits": 1,
+        "max_numerator_bits": 1
+      }
+    },
+    "pair_face_word": [],
+    "status": "PAIR_CORNER"
+  },
+  "schema": "lattice-geometry-certificate/v1"
+}

@@ -1,0 +1,13 @@
+{
+  "checked_cases": 256,
+  "counts": {
+    "CAP": 16,
+    "COUPLED_SIMULTANEOUS": 16,
+    "PAIR_CORNER": 88,
+    "RETURN": 80,
+    "WALL_CORNER": 56
+  },
+  "kind": "atlas",
+  "result": "PASS",
+  "source": "data/octagon_L2_N3/atlas.json"
+}

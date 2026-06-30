@@ -1,0 +1,8 @@
+{
+  "certificate_id": "centered_dodecagon_f1_EN_reverse_stem",
+  "checked_batches": 3,
+  "kind": "certificate",
+  "result": "PASS",
+  "source": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_reverse_stem.json",
+  "status": "PAIR_CORNER"
+}

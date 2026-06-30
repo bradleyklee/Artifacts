@@ -196,3 +196,15 @@ data-generated SVG initial condition, and body-pair record; only the
 three-body family includes lex-min ternary pair words. All stored runs stop at
 the first next state beyond a 192-bit coefficient cutoff, and the artifact
 makes no claim of chaos, aperiodicity, or complete classification.
+
+### 16. more-disks
+
+An exact-arithmetic collision dataset for fixed-orientation squares, octagons,
+dodecagons, and 24-gons moving in finite square containers. The low-threshold
+scans find no finite-horizon survivor among the stated square and ordinary
+cardinal/lattice dodecagon controls, while a centered off-cardinal dodecagon
+contact produces two ternary pair-face-word classes and admits a checked forward
+prefix through 7,500 event batches. The same artifact records two D4-related
+24-gon survivor classes through 100 checked batches. Every displayed survivor
+is a finite exact prefix only: `CAP` means regular, nonreturning evolution
+through the listed horizon, not a proof of chaos, aperiodicity, or infinitude.

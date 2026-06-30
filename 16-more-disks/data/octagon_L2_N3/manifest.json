@@ -1,0 +1,41 @@
+{
+  "atlas": {
+    "bytes": 7579383,
+    "counts": {
+      "CAP": 16,
+      "COUPLED_SIMULTANEOUS": 16,
+      "PAIR_CORNER": 88,
+      "RETURN": 80,
+      "WALL_CORNER": 56
+    },
+    "earliest": {
+      "EARLIEST_CAP": "octagon-L2-N3-000014",
+      "EARLIEST_COUPLED_SIMULTANEOUS": "octagon-L2-N3-000004",
+      "EARLIEST_DENOMINATOR_PROMOTION": "octagon-L2-N3-000001",
+      "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "octagon-L2-N3-000001",
+      "EARLIEST_OFFCARDINAL_PAIR_FACE": "octagon-L2-N3-000004",
+      "EARLIEST_PAIR_CORNER": "octagon-L2-N3-000007",
+      "EARLIEST_RETURN": "octagon-L2-N3-000001",
+      "EARLIEST_WALL_CORNER": "octagon-L2-N3-000003"
+    },
+    "event_cap": 256,
+    "experiment_id": "octagon_L2_N3_cardinal_lattice",
+    "independent_check": {
+      "bytes": 240,
+      "checked_batches": null,
+      "checked_cases": 256,
+      "path": "check/octagon_L2_N3.python.json",
+      "result": "PASS",
+      "sha256": "8188d7bc01bbe08a284dff5f81003712fc58bc48192b949744212d848efeeb68",
+      "status": null
+    },
+    "kind": "atlas",
+    "path": "data/octagon_L2_N3/atlas.json",
+    "raw_starts": 256,
+    "schema": "lattice-chaos-atlas/v2",
+    "sha256": "d81f48328abbf1ffe52aa91284ed3333c189b2010cfc98bc013503195d65ec5a"
+  },
+  "family": "octagon_L2_N3",
+  "role": "context-only early three-body survivor atlas",
+  "schema": "artifact16-family-manifest/v1"
+}

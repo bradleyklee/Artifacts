@@ -1,40 +1,52 @@
-# 16-more-disks
+# Artifact 16 — cardinal lattice polygon experiments
 
-A handoff directory collecting the experiments run after Artifact 15
-(`15-octagon-collisions`). It is deliberately divided by geometry and status so
-that a reviewer can distinguish exact search records from preliminary searches
-and from visual-only material.
+A Go-first exact-arithmetic artifact for fixed-orientation squares, octagons,
+dodecagons, and 24-gons in finite square containers. It packages the low
+threshold experiments needed for the current story:
 
-## Contents
+1. squares do not produce a finite-horizon survivor through `L=2,N=4`;
+2. ordinary cardinal/lattice dodecagon pairs do not produce one at `L=2` or
+   `L=3` through the stated horizon;
+3. a centered off-cardinal dodecagon contact yields two ternary-word classes,
+   with face 1 / `(E,N)` chosen as lexicographically minimal; its short exact reverse stem is retained separately;
+4. ordinary `L=2,N=2` 24-gon starts yield two D4 classes of survivors.
 
-- `cases/l2_five_site_halfedge_octagons_preliminary/`
-  - earlier L=2 five-site half-edge octagon ternary catalogue.
-  - preliminary; needs an independent audit.
-- `cases/four_quadrant_halfedge_octagons/`
-  - the four-quadrant, three-body half-edge octagon scan.
-  - this is the strongest recent exact search record: raw Go source, full JSON,
-    continuation for class 8, and exported ternary CSV.
-- `cases/four_quadrant_quarter_edge_squares/`
-  - negative control using squares of edge 1 in an outer square of edge 4,
-    with starts at `(±1,±1)`. Exact-rational Python search and its generated
-    result JSON are included.
+All of these are finite exact computations. `CAP` means only that a trajectory
+remained regular and did not return through its listed event horizon.
 
-## Important status discipline
+## Layout
 
-1. The four-quadrant octagon scan reports *complexity cutoffs*, not a theorem
-   of chaos or aperiodicity.
-2. The L=2 five-site catalogue is explicitly preliminary.
-3. The square control is a bounded exhaustive scan of the stated finite start
-   atlas; it is not a theorem about all square billiard initial conditions.
-4. `visual/` material is not an independent verifier and must not be cited as
-   a collision certificate.
+```text
+cmd/lattice/                  canonical Go command-line producer
+internal/engine/              exact common-field evolver and Go parity tests
+internal/artifact/            portable JSON wire schema
+data/<family>/                raw Go atlases, manifests, full certificates, sequences
+check/                        Python independent-replay reports
+analysis/                     D4/time-reversal and ternary audit
+scripts/postcheck_go.py       independent Python checker; never calls the Go producer
+scripts/render_shorts.py      code-only vertical video renderer
+renders/shorts/               two public-facing MP4s and their render manifest
+docs/                         contract, status, certificate and transfer material
+reference/                    incoming packets retained as non-authoritative references
+```
 
-Start with `REVIEW.md`, then each case's `README.md`. `make verify` performs
-local consistency checks only; it does not independently rederive the octagon
-result.
+## Build and verify
 
-## v2 completeness correction
+Only Go, Python 3 standard library, Pillow, and FFmpeg are used.
 
-See `ADDENDUM_v2.md`. The item-15 certificate corpus and its images are under
-`reference_item_15/`. Later exploratory branches explicitly identify whether
-they do or do not have self-contained collision certificates.
+```sh
+make build              # canonical Go binary
+make test               # Go exact-arithmetic parity tests
+make scan               # reproduce the low exhaustive atlases
+make certs              # regenerate the four full positive certificates
+make check              # independent Python replay of all committed records
+make derive             # rebuild symmetry / ternary derived data
+make render             # rebuild the two Shorts
+make index manifest     # rebuild index and checksums
+```
+
+`make deep-dodecagon` creates the checked compact 7,500-event progress
+checkpoint. It is intentionally separate from the ordinary low-atlas build.
+
+Read `docs/DATASET_STATUS.md` before treating any record as evidence. See
+`TRANSFER_PACKET.md` for a next-window or independent-rewrite handoff.

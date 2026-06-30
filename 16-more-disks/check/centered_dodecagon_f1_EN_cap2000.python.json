@@ -1,0 +1,8 @@
+{
+  "certificate_id": "centered_dodecagon_f1_EN_cap2000",
+  "checked_batches": 2000,
+  "kind": "certificate",
+  "result": "PASS",
+  "source": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap2000.json",
+  "status": "CAP"
+}

@@ -1,0 +1,36 @@
+{
+  "atlas": {
+    "bytes": 5749223,
+    "counts": {
+      "PAIR_CORNER": 136,
+      "RETURN": 424,
+      "WALL_CORNER": 16
+    },
+    "earliest": {
+      "EARLIEST_DENOMINATOR_PROMOTION": "dodecagon-L3-N2-000001",
+      "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "dodecagon-L3-N2-000001",
+      "EARLIEST_PAIR_CORNER": "dodecagon-L3-N2-000004",
+      "EARLIEST_RETURN": "dodecagon-L3-N2-000001",
+      "EARLIEST_WALL_CORNER": "dodecagon-L3-N2-000115"
+    },
+    "event_cap": 100,
+    "experiment_id": "dodecagon_L3_N2_cardinal_lattice",
+    "independent_check": {
+      "bytes": 197,
+      "checked_batches": null,
+      "checked_cases": 576,
+      "path": "check/dodecagon_L3_N2.python.json",
+      "result": "PASS",
+      "sha256": "8e0a0a22db1aa6e826139f866e2caf8007eaf741eb9d2fc7bbd40fb6fb57b2a9",
+      "status": null
+    },
+    "kind": "atlas",
+    "path": "data/dodecagon_L3_N2/atlas.json",
+    "raw_starts": 576,
+    "schema": "lattice-chaos-atlas/v2",
+    "sha256": "5e7afd1e457336f14c3e4f033c5ebbc8c92fd38c6abb4db4dd018eca97e8b868"
+  },
+  "family": "dodecagon_L3_N2",
+  "role": "ordinary negative control extension",
+  "schema": "artifact16-family-manifest/v1"
+}

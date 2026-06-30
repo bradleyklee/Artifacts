@@ -1,0 +1,14 @@
+{
+  "schema": "transfer-parity-expectations/v1",
+  "source_status": "provisional reproduction targets only; not mathematical ground truth",
+  "checks": {
+    "dodecagon_L2_N2": {"RETURN": 64, "PAIR_CORNER": 24, "SIMULTANEOUS": 8},
+    "dodecagon_L3_N2": {"RETURN": 424, "PAIR_CORNER": 136, "SIMULTANEOUS": 16},
+    "24gon_L2_N2": {"RETURN": 72, "CAP": 16, "SIMULTANEOUS": 8},
+    "centered_dodecagon_face1_EN_500": {
+      "status": "CAP", "event_batches": 500, "pair_faces": 108,
+      "time": {"a": "2353179148286069/5610388152668", "b": "3883129832421329/16831164458004"},
+      "final_metrics": {"pos_num": 153835946087593, "pos_den": 33662328916008, "vel_num": 14821725, "vel_den": 16777216, "time_num": 3883129832421329, "time_den": 16831164458004}
+    }
+  }
+}

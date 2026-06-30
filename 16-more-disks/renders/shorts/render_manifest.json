@@ -1,0 +1,31 @@
+{
+  "24gon": {
+    "duration_seconds": 44.0,
+    "event_batches_animated": 75,
+    "frames": 660,
+    "selection": "the two D4 classes of cap survivors in complete L=2,N=2 24-gon cardinal lattice scan",
+    "sha256_A": "d31ab04bc9cf27378e462b930e97d05df2c5c29f475895e63529df547a090a7b",
+    "sha256_B": "b9f1c4f77ea68c750e93eae2eda458827d0b06cbb4ed09d681561bc80c8e39d6",
+    "source_A": "data/24gon_L2_N2/certificates/24gon_L2_N2_class_A_ES_cap100.json",
+    "source_B": "data/24gon_L2_N2/certificates/24gon_L2_N2_class_B_WN_cap100.json",
+    "video": "renders/shorts/24gon_two_minimal_classes_short.mp4"
+  },
+  "combined_duration_seconds": 89.0,
+  "dodecagon": {
+    "duration_seconds": 45.0,
+    "event_batches_animated": 120,
+    "frames": 675,
+    "pair_trits_at_cut": 27,
+    "selection": "lexicographically minimal ternary representative in complete centered dodecagon cap-500 scan: face 1, incoming E,N",
+    "sha256": "67ea7f05291831a88d0f893ed778b10037af4a591387ba9c5bfa390519a77915",
+    "source": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap500.json",
+    "video": "renders/shorts/dodecagon_special_lexmin_short.mp4"
+  },
+  "rendering": "Pillow/FFmpeg code render; input states from independently checked Go certificates; floating-point only to rasterize already-certified exact data.",
+  "schema": "artifact16-short-render-manifest/v1",
+  "vertical_format": {
+    "fps": 15,
+    "height": 1280,
+    "width": 720
+  }
+}

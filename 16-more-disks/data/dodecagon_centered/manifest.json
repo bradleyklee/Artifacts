@@ -1,0 +1,199 @@
+{
+  "atlases": [
+    {
+      "bytes": 10312517,
+      "counts": {
+        "CAP": 16,
+        "PAIR_CORNER": 32,
+        "RETURN": 20
+      },
+      "earliest": {
+        "EARLIEST_CAP": "dodecagon-center-f1-EN",
+        "EARLIEST_DENOMINATOR_PROMOTION": "dodecagon-center-f1-EN",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "dodecagon-center-f0-EW",
+        "EARLIEST_OFFCARDINAL_PAIR_FACE": "dodecagon-center-f1-EW",
+        "EARLIEST_PAIR_CORNER": "dodecagon-center-f0-EN",
+        "EARLIEST_RETURN": "dodecagon-center-f0-EW"
+      },
+      "event_cap": 500,
+      "experiment_id": "dodecagon_centered_all_faces_cardinal_incoming",
+      "independent_check": {
+        "bytes": 206,
+        "checked_batches": null,
+        "checked_cases": 68,
+        "path": "check/dodecagon_centered_all_faces.python.json",
+        "result": "PASS",
+        "sha256": "049b143f7e7fe83182d78577d350767e07904238ca91a28c053dda39e9abb480",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/dodecagon_centered/atlas_all_faces_cap500.json",
+      "raw_starts": 68,
+      "schema": "lattice-chaos-centered-atlas/v2",
+      "sha256": "83321e337387f5f6a237ba5b0e9526ac306fdd085f997c671c9c62137f816646"
+    },
+    {
+      "bytes": 10070982,
+      "counts": {
+        "CAP": 16,
+        "PAIR_CORNER": 16,
+        "RETURN": 16
+      },
+      "earliest": {
+        "EARLIEST_CAP": "dodecagon-center-f1-EN",
+        "EARLIEST_DENOMINATOR_PROMOTION": "dodecagon-center-f1-EN",
+        "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "dodecagon-center-f1-EW",
+        "EARLIEST_OFFCARDINAL_PAIR_FACE": "dodecagon-center-f1-EW",
+        "EARLIEST_PAIR_CORNER": "dodecagon-center-f1-ES",
+        "EARLIEST_RETURN": "dodecagon-center-f1-EW"
+      },
+      "event_cap": 500,
+      "experiment_id": "dodecagon_centered_offcardinal_cardinal_incoming",
+      "independent_check": {
+        "bytes": 208,
+        "checked_batches": null,
+        "checked_cases": 48,
+        "path": "check/dodecagon_centered_offcardinal.python.json",
+        "result": "PASS",
+        "sha256": "16af1a5799bc541edc1e409920a16c8a6abc0a550c033eb1c490670308af6ebb",
+        "status": null
+      },
+      "kind": "atlas",
+      "path": "data/dodecagon_centered/atlas_offcardinal_cap500.json",
+      "raw_starts": 48,
+      "schema": "lattice-chaos-centered-atlas/v2",
+      "sha256": "530f00d89eae3589eb60457c633097f8d164e7266c881a370038fbc603cd5254"
+    }
+  ],
+  "certificates": [
+    {
+      "bytes": 4813220,
+      "event_batches": 500,
+      "id": "centered_dodecagon_f1_EN_cap500",
+      "independent_check": {
+        "bytes": 237,
+        "checked_batches": 500,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap500.python.json",
+        "result": "PASS",
+        "sha256": "d187e24ca6cad86d4d7452c9ddab2d082d0f11f16537c4bb861300b92e2b6ddf",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 108,
+      "pair_face_word_sha256": "4d876ca934b36080440c795f797d4f9c13b71073d81b45ff1346c6db7b873a7d",
+      "path": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap500.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "67ea7f05291831a88d0f893ed778b10037af4a591387ba9c5bfa390519a77915",
+      "status": "CAP"
+    },
+    {
+      "bytes": 23996844,
+      "event_batches": 2000,
+      "id": "centered_dodecagon_f1_EN_cap2000",
+      "independent_check": {
+        "bytes": 240,
+        "checked_batches": 2000,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap2000.python.json",
+        "result": "PASS",
+        "sha256": "ce69277e38360ed81a5e14e61b88e98f674a58444c80ac3ce8085a0988df6e77",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 418,
+      "pair_face_word_sha256": "9b735352cf90dd476023c72504a5e9b293e5a9edcc908b11af8cd5d69818c8bd",
+      "path": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap2000.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "d144cb0041364d9052c76bd2b6b6fe6215ae48dd770b78859404192b6f88a40f",
+      "status": "CAP"
+    },
+    {
+      "bytes": 41900,
+      "event_batches": 3,
+      "id": "centered_dodecagon_f1_EN_reverse_stem",
+      "independent_check": {
+        "bytes": 255,
+        "checked_batches": 3,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_reverse_stem.python.json",
+        "result": "PASS",
+        "sha256": "3bc6f5a04ab3c127b15b693a2071711c05390a36e9647ddd1742bc6c8e1274c1",
+        "status": "PAIR_CORNER"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 0,
+      "pair_face_word_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "path": "data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_reverse_stem.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "b05758248acc10d9d72884ca7844f08c5ac77b0e7ffac293cf3796a85a74b805",
+      "status": "PAIR_CORNER"
+    },
+    {
+      "bytes": 14189340,
+      "event_batches": 4000,
+      "id": "centered_dodecagon_f1_EN_cap4000_compact",
+      "independent_check": {
+        "bytes": 249,
+        "checked_batches": 4000,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap4000_compact.python.json",
+        "result": "PASS",
+        "sha256": "406bcf681617accefbe25b1b049677356afd276a8156c6bccba039fd4422f572",
+        "status": "CAP"
+      },
+      "kind": "compact_checkpoint",
+      "pair_contacts": 838,
+      "pair_face_word_sha256": "980d6c957fd0804d6e72be478c0e020396fdf201ef50e17fdb3ffc50bbe5d599",
+      "path": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap4000_compact.json",
+      "schema": "lattice-chaos-compact-progress/v1",
+      "sha256": "5788ffaf3cce7e9e72c2ed1a995e4f47ef39ca926f872732601d9a815a14a2d3",
+      "status": "CAP"
+    },
+    {
+      "bytes": 26737767,
+      "event_batches": 6000,
+      "id": "centered_dodecagon_f1_EN_cap6000_compact",
+      "independent_check": {
+        "bytes": 249,
+        "checked_batches": 6000,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap6000_compact.python.json",
+        "result": "PASS",
+        "sha256": "8d6bf8bd1d12e8f57f661ee94200f00f69c25e99eda887c87425342f8bdacef0",
+        "status": "CAP"
+      },
+      "kind": "compact_checkpoint",
+      "pair_contacts": 1249,
+      "pair_face_word_sha256": "ad94b949248f10cba24178b38baeecd3b8bf009095613ae65f9172366edec910",
+      "path": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap6000_compact.json",
+      "schema": "lattice-chaos-compact-progress/v1",
+      "sha256": "055856963ab434f04dc541e915026ee6f0cdefc696ccecb6e4ce2b360c43cb4b",
+      "status": "CAP"
+    },
+    {
+      "bytes": 38511484,
+      "event_batches": 7500,
+      "id": "centered_dodecagon_f1_EN_cap7500_compact",
+      "independent_check": {
+        "bytes": 249,
+        "checked_batches": 7500,
+        "checked_cases": null,
+        "path": "check/centered_dodecagon_f1_EN_cap7500_compact.python.json",
+        "result": "PASS",
+        "sha256": "ca8376094770f5e64e58eda2a23cf3e9f4170c8f5f0ceb2a978b1d05140e276d",
+        "status": "CAP"
+      },
+      "kind": "compact_checkpoint",
+      "pair_contacts": 1578,
+      "pair_face_word_sha256": "5bafd81edcc7e9de6d21890a88557ca3581d0d82a742ec557cdb18f76b1ec5e0",
+      "path": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap7500_compact.json",
+      "schema": "lattice-chaos-compact-progress/v1",
+      "sha256": "13b14a377854ced367195f5a8c58f7e4b76909cae204e5a37c6eca78c54a4003",
+      "status": "CAP"
+    }
+  ],
+  "family": "dodecagon_centered",
+  "role": "special positive seed family",
+  "schema": "artifact16-family-manifest/v1"
+}

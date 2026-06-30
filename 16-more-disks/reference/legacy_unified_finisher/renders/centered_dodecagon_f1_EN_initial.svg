@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+<rect width="800" height="800" fill="#fffdf8"/>
+<rect x="75.000" y="75.000" width="650.000" height="650.000" fill="none" stroke="#151515" stroke-width="3"/>
+<text x="32" y="36" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="700">Centered dodecagon: face 1, incoming E/N</text>
+<text x="32" y="62" font-family="Helvetica,Arial,sans-serif" font-size="15">Prescribed ordinary face contact at t=0; the 500-event certificate begins after elastic resolution.</text>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#222"/></marker></defs>
+<polygon points="410.885,418.854 389.115,381.146 351.406,359.375 307.865,359.375 270.156,381.146 248.385,418.854 248.385,462.396 270.156,500.104 307.865,521.875 351.406,521.875 389.115,500.104 410.885,462.396" fill="#9ac7e8" fill-opacity="0.72" stroke="#202020" stroke-width="2"/>
+<line x1="329.635" y1="440.625" x2="379.635" y2="440.625" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="336.635" y="431.625" font-family="Helvetica,Arial,sans-serif" font-size="16">A</text>
+<polygon points="551.615,337.604 529.844,299.896 492.135,278.125 448.594,278.125 410.885,299.896 389.115,337.604 389.115,381.146 410.885,418.854 448.594,440.625 492.135,440.625 529.844,418.854 551.615,381.146" fill="#f0b36b" fill-opacity="0.72" stroke="#202020" stroke-width="2"/>
+<line x1="470.365" y1="359.375" x2="470.365" y2="309.375" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="477.365" y="350.375" font-family="Helvetica,Arial,sans-serif" font-size="16">B</text>
+<text x="32" y="778" font-family="monospace" font-size="13">regular 12-gon • L=2 • exact Q(sqrt(3)) core; float only in this renderer</text>
+</svg>

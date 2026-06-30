@@ -1,0 +1,438 @@
+// Independent Go replay checker for the centered dodecagon certificate.
+// It deliberately does not import the Python evolver or consume derived JSON
+// other than the certificate trace it verifies.
+package main
+
+import (
+	"crypto/sha256"
+	"encoding/json"
+	"flag"
+	"fmt"
+	"math/big"
+	"os"
+)
+
+type Q3 struct{ a, b *big.Rat }
+
+func rr(n, d int64) *big.Rat     { return new(big.Rat).SetFrac(big.NewInt(n), big.NewInt(d)) }
+func qr(an, ad, bn, bd int64) Q3 { return Q3{rr(an, ad), rr(bn, bd)} }
+func z() Q3                      { return qr(0, 1, 0, 1) }
+func (x Q3) clone() Q3           { return Q3{new(big.Rat).Set(x.a), new(big.Rat).Set(x.b)} }
+func (x Q3) add(y Q3) Q3         { return Q3{new(big.Rat).Add(x.a, y.a), new(big.Rat).Add(x.b, y.b)} }
+func (x Q3) neg() Q3             { return Q3{new(big.Rat).Neg(x.a), new(big.Rat).Neg(x.b)} }
+func (x Q3) sub(y Q3) Q3         { return x.add(y.neg()) }
+func (x Q3) mul(y Q3) Q3 {
+	a := new(big.Rat).Mul(x.a, y.a)
+	t := new(big.Rat).Mul(x.b, y.b)
+	t.Mul(t, rr(3, 1))
+	a.Add(a, t)
+	b := new(big.Rat).Mul(x.a, y.b)
+	t.Mul(x.b, y.a)
+	b.Add(b, t)
+	return Q3{a, b}
+}
+func (x Q3) inv() Q3 {
+	den := new(big.Rat).Mul(x.a, x.a)
+	t := new(big.Rat).Mul(x.b, x.b)
+	t.Mul(t, rr(3, 1))
+	den.Sub(den, t)
+	return Q3{new(big.Rat).Quo(x.a, den), new(big.Rat).Quo(new(big.Rat).Neg(x.b), den)}
+}
+func (x Q3) div(y Q3) Q3 { return x.mul(y.inv()) }
+func (x Q3) sign() int {
+	as, bs := x.a.Sign(), x.b.Sign()
+	if as == 0 && bs == 0 {
+		return 0
+	}
+	if bs == 0 {
+		return as
+	}
+	if as == 0 {
+		return bs
+	}
+	if (as > 0) == (bs > 0) {
+		if as > 0 {
+			return 1
+		}
+		return -1
+	}
+	l := new(big.Rat).Mul(x.a, x.a)
+	r := new(big.Rat).Mul(x.b, x.b)
+	r.Mul(r, rr(3, 1))
+	c := l.Cmp(r)
+	if as > 0 {
+		return c
+	}
+	return -c
+}
+func (x Q3) eq(y Q3) bool     { return x.a.Cmp(y.a) == 0 && x.b.Cmp(y.b) == 0 }
+func (x Q3) wire() ScalarWire { return ScalarWire{A: x.a.RatString(), B: x.b.RatString()} }
+
+type V struct{ x, y Q3 }
+
+func (x V) add(y V) V    { return V{x.x.add(y.x), x.y.add(y.y)} }
+func (x V) sub(y V) V    { return V{x.x.sub(y.x), x.y.sub(y.y)} }
+func (x V) scale(t Q3) V { return V{x.x.mul(t), x.y.mul(t)} }
+func dot(a, b V) Q3      { return a.x.mul(b.x).add(a.y.mul(b.y)) }
+
+type Body struct{ p, v V }
+type Event struct {
+	dt     Q3
+	kind   string
+	bodies []int
+	face   int
+	wall   string
+}
+
+// Certificate types.
+type ScalarWire struct {
+	A string `json:"a"`
+	B string `json:"b"`
+}
+type VecWire struct {
+	X ScalarWire `json:"x"`
+	Y ScalarWire `json:"y"`
+}
+type BodyWire struct {
+	Position VecWire `json:"position"`
+	Velocity VecWire `json:"velocity"`
+}
+type BatchWire struct {
+	DT     ScalarWire `json:"dt"`
+	Kind   string     `json:"kind"`
+	Bodies []int      `json:"bodies"`
+	Face   *int       `json:"face"`
+	Wall   *string    `json:"wall"`
+}
+type TraceWire struct {
+	Step       int         `json:"step"`
+	ExactDT    ScalarWire  `json:"exact_dt"`
+	ExactT     ScalarWire  `json:"exact_T"`
+	EventClass string      `json:"event_class"`
+	Batch      []BatchWire `json:"batch"`
+}
+type OutcomeWire struct {
+	Status       string      `json:"status"`
+	EventBatches int         `json:"event_batches"`
+	ExactT       ScalarWire  `json:"exact_T"`
+	Events       []TraceWire `json:"events"`
+	PairFaceWord []int       `json:"pair_face_word"`
+	FinalState   []BodyWire  `json:"final_state"`
+}
+type CaseWire struct {
+	Face     int      `json:"face"`
+	Incoming []string `json:"incoming"`
+	L        int      `json:"L"`
+}
+type Certificate struct {
+	Case     CaseWire    `json:"case"`
+	EventCap int         `json:"event_cap"`
+	Outcome  OutcomeWire `json:"outcome"`
+}
+
+func parseQ(w ScalarWire) Q3 {
+	a, ok := new(big.Rat).SetString(w.A)
+	if !ok {
+		panic("bad rational " + w.A)
+	}
+	b, ok := new(big.Rat).SetString(w.B)
+	if !ok {
+		panic("bad rational " + w.B)
+	}
+	return Q3{a, b}
+}
+func sameQ(x Q3, w ScalarWire) bool { return x.eq(parseQ(w)) }
+func qhalf() Q3                     { return qr(1, 2, 0, 1) }
+
+var normals []V
+var apothem Q3
+var box Q3
+
+func initGeometry() {
+	one := qr(1, 1, 0, 1)
+	half := qhalf()
+	s3 := qr(0, 1, 1, 1)
+	h := s3.mul(half)
+	zz := z()
+	normals = []V{{one, zz}, {h, half}, {half, h}, {zz, one}, {half.neg(), h}, {h.neg(), half}, {one.neg(), zz}, {h.neg(), half.neg()}, {half.neg(), h.neg()}, {zz, one.neg()}, {half, h.neg()}, {h, half.neg()}}
+	apothem = qr(1, 2, 1, 4) // (2+sqrt(3))/4
+	box = qr(2, 1, 1, 1)     // L=2 half-side
+}
+func inside(d V) bool {
+	for _, n := range normals {
+		if dot(n, d).sub(apothem.mul(qr(2, 1, 0, 1))).sign() > 0 {
+			return false
+		}
+	}
+	return true
+}
+func active(d V) []int {
+	r := []int{}
+	for k, n := range normals {
+		if dot(n, d).sub(apothem.mul(qr(2, 1, 0, 1))).sign() == 0 {
+			r = append(r, k)
+		}
+	}
+	return r
+}
+func pairCandidate(bs []Body, i, j int) *Event {
+	d := bs[j].p.sub(bs[i].p)
+	rel := bs[j].v.sub(bs[i].v)
+	var best *Event
+	for k, n := range normals {
+		der := dot(n, rel)
+		gap := dot(n, d).sub(apothem.mul(qr(2, 1, 0, 1)))
+		if der.sign() >= 0 || gap.sign() <= 0 {
+			continue
+		}
+		dt := gap.neg().div(der)
+		if dt.sign() <= 0 {
+			continue
+		}
+		loc := d.add(rel.scale(dt))
+		if !inside(loc) || dot(n, loc).sub(apothem.mul(qr(2, 1, 0, 1))).sign() != 0 {
+			continue
+		}
+		if best == nil || dt.sub(best.dt).sign() < 0 {
+			best = &Event{dt: dt, kind: "PAIR_FACE", bodies: []int{i, j}, face: k}
+		}
+	}
+	if best == nil {
+		return nil
+	}
+	if len(active(d.add(rel.scale(best.dt)))) != 1 {
+		best.kind = "PAIR_CORNER"
+	}
+	return best
+}
+func wallCandidates(bs []Body, i int) []Event {
+	b := bs[i]
+	out := []Event{}
+	type spec struct {
+		coord, vel Q3
+		wall       string
+		sign       int
+	}
+	ss := []spec{{b.p.x, b.v.x, "E", 1}, {b.p.x, b.v.x, "W", -1}, {b.p.y, b.v.y, "N", 1}, {b.p.y, b.v.y, "S", -1}}
+	for _, s := range ss {
+		target := box.sub(apothem)
+		if s.sign < 0 {
+			target = box.neg().add(apothem)
+		}
+		speed := s.vel
+		if s.sign < 0 {
+			speed = s.vel.neg()
+		}
+		gap := target.sub(s.coord)
+		if s.sign < 0 {
+			gap = s.coord.sub(target)
+		}
+		if speed.sign() > 0 && gap.sign() > 0 {
+			out = append(out, Event{dt: gap.div(speed), kind: "WALL_FACE", bodies: []int{i}, face: -1, wall: s.wall})
+		}
+	}
+	return out
+}
+func nextBatch(bs []Body) ([]Event, string) {
+	es := []Event{}
+	for i := range bs {
+		es = append(es, wallCandidates(bs, i)...)
+	}
+	for i := 0; i < len(bs); i++ {
+		for j := i + 1; j < len(bs); j++ {
+			if e := pairCandidate(bs, i, j); e != nil {
+				es = append(es, *e)
+			}
+		}
+	}
+	if len(es) == 0 {
+		return nil, "NO_EVENT"
+	}
+	dt := es[0].dt
+	for _, e := range es[1:] {
+		if e.dt.sub(dt).sign() < 0 {
+			dt = e.dt
+		}
+	}
+	batch := []Event{}
+	for _, e := range es {
+		if e.dt.sub(dt).sign() == 0 {
+			batch = append(batch, e)
+		}
+	}
+	for _, e := range batch {
+		if e.kind == "PAIR_CORNER" {
+			return batch, "PAIR_CORNER"
+		}
+	}
+	seen := map[int]bool{}
+	allWall := true
+	for _, e := range batch {
+		if e.kind != "WALL_FACE" {
+			allWall = false
+		}
+		if e.kind == "WALL_FACE" {
+			id := e.bodies[0]
+			if seen[id] {
+				return batch, "WALL_CORNER"
+			}
+			seen[id] = true
+		}
+	}
+	if len(batch) == 1 {
+		return batch, "REGULAR"
+	}
+	if allWall {
+		return batch, "INDEPENDENT_WALL_BATCH"
+	}
+	return batch, "COUPLED_SIMULTANEOUS"
+}
+func advance(bs []Body, dt Q3) {
+	for i := range bs {
+		bs[i].p = bs[i].p.add(bs[i].v.scale(dt))
+	}
+}
+func resolve(bs []Body, e Event) {
+	if e.kind == "WALL_FACE" {
+		i := e.bodies[0]
+		if e.wall == "E" || e.wall == "W" {
+			bs[i].v.x = bs[i].v.x.neg()
+		} else {
+			bs[i].v.y = bs[i].v.y.neg()
+		}
+		return
+	}
+	i, j := e.bodies[0], e.bodies[1]
+	n := normals[e.face]
+	g := dot(n, bs[j].v.sub(bs[i].v))
+	bs[i].v = bs[i].v.add(n.scale(g))
+	bs[j].v = bs[j].v.sub(n.scale(g))
+}
+func velocity(name string) V {
+	one := qr(1, 1, 0, 1)
+	zz := z()
+	switch name {
+	case "E":
+		return V{one, zz}
+	case "W":
+		return V{one.neg(), zz}
+	case "N":
+		return V{zz, one}
+	case "S":
+		return V{zz, one.neg()}
+	}
+	panic("bad velocity")
+}
+func sameEvent(e Event, w BatchWire) bool {
+	if e.kind != w.Kind || !sameQ(e.dt, w.DT) || len(e.bodies) != len(w.Bodies) {
+		return false
+	}
+	for i := range e.bodies {
+		if e.bodies[i] != w.Bodies[i] {
+			return false
+		}
+	}
+	if e.kind == "PAIR_FACE" || e.kind == "PAIR_CORNER" {
+		return w.Face != nil && *w.Face == e.face
+	}
+	return w.Wall != nil && *w.Wall == e.wall
+}
+func sameBody(b Body, w BodyWire) bool {
+	return sameQ(b.p.x, w.Position.X) && sameQ(b.p.y, w.Position.Y) && sameQ(b.v.x, w.Velocity.X) && sameQ(b.v.y, w.Velocity.Y)
+}
+func hashState(bs []Body) string { // diagnostic only; Python's serialization differs, so don't compare this to certificate hash.
+	h := sha256.New()
+	for _, b := range bs {
+		fmt.Fprintf(h, "%s,%s@%s,%s|", b.p.x.a.RatString(), b.p.x.b.RatString(), b.v.x.a.RatString(), b.v.x.b.RatString())
+	}
+	return fmt.Sprintf("%x", h.Sum(nil))
+}
+func fail(format string, args ...any) {
+	fmt.Fprintf(os.Stderr, "FAIL: "+format+"\n", args...)
+	os.Exit(1)
+}
+func main() {
+	certPath := flag.String("certificate", "", "centered dodecagon certificate JSON")
+	flag.Parse()
+	if *certPath == "" {
+		fail("--certificate required")
+	}
+	raw, err := os.ReadFile(*certPath)
+	if err != nil {
+		fail("read: %v", err)
+	}
+	var cert Certificate
+	if err = json.Unmarshal(raw, &cert); err != nil {
+		fail("json: %v", err)
+	}
+	if cert.Case.L != 2 || cert.Case.Face < 0 || cert.Case.Face >= 12 || len(cert.Case.Incoming) != 2 {
+		fail("unsupported certificate seed")
+	}
+	initGeometry()
+	n := normals[cert.Case.Face]
+	bs := []Body{{n.scale(apothem.neg()), velocity(cert.Case.Incoming[0])}, {n.scale(apothem), velocity(cert.Case.Incoming[1])}}
+	g := dot(n, bs[1].v.sub(bs[0].v))
+	if g.sign() >= 0 {
+		fail("seed is not incoming")
+	}
+	resolve(bs, Event{dt: z(), kind: "PAIR_FACE", bodies: []int{0, 1}, face: cert.Case.Face})
+	if len(cert.Outcome.Events) == 0 {
+		fail("missing event ledger")
+	}
+	r0 := cert.Outcome.Events[0]
+	if r0.Step != 0 || r0.EventClass != "INITIAL_PAIR_FACE" || len(r0.Batch) != 1 || r0.Batch[0].Face == nil || *r0.Batch[0].Face != cert.Case.Face {
+		fail("bad initial record")
+	}
+	total := z()
+	word := []int{cert.Case.Face}
+	for step := 1; step <= cert.EventCap; step++ {
+		if step >= len(cert.Outcome.Events) {
+			fail("ledger ends at %d", step-1)
+		}
+		batch, kind := nextBatch(bs)
+		if batch == nil {
+			fail("unexpected NO_EVENT at %d", step)
+		}
+		dt := batch[0].dt
+		advance(bs, dt)
+		total = total.add(dt)
+		w := cert.Outcome.Events[step]
+		if w.Step != step || w.EventClass != kind || !sameQ(dt, w.ExactDT) || !sameQ(total, w.ExactT) || len(batch) != len(w.Batch) {
+			fail("trace mismatch at %d: computed class=%s dt=%v+%vsqrt3 batch=%d", step, kind, dt.a, dt.b, len(batch))
+		}
+		for i, e := range batch {
+			if !sameEvent(e, w.Batch[i]) {
+				fail("batch mismatch at step %d item %d", step, i)
+			}
+		}
+		if kind != "REGULAR" && kind != "INDEPENDENT_WALL_BATCH" {
+			break
+		}
+		for _, e := range batch {
+			resolve(bs, e)
+			if e.kind == "PAIR_FACE" {
+				word = append(word, e.face)
+			}
+		}
+	}
+	if cert.Outcome.Status != "CAP" || cert.Outcome.EventBatches != cert.EventCap || !sameQ(total, cert.Outcome.ExactT) {
+		fail("outcome mismatch")
+	}
+	if len(word) != len(cert.Outcome.PairFaceWord) {
+		fail("pair-word length mismatch")
+	}
+	for i, v := range word {
+		if cert.Outcome.PairFaceWord[i] != v {
+			fail("pair-word mismatch at %d", i)
+		}
+	}
+	if len(cert.Outcome.FinalState) != len(bs) {
+		fail("final body count mismatch")
+	}
+	for i, b := range bs {
+		if !sameBody(b, cert.Outcome.FinalState[i]) {
+			fail("final state mismatch body %d", i)
+		}
+	}
+	fmt.Printf("GO_CERTIFICATE_REPLAY=OK events=%d pair_faces=%d final_diag_hash=%s\n", cert.EventCap, len(word), hashState(bs))
+}

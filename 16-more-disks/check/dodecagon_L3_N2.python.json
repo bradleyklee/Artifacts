@@ -1,0 +1,11 @@
+{
+  "checked_cases": 576,
+  "counts": {
+    "PAIR_CORNER": 136,
+    "RETURN": 424,
+    "WALL_CORNER": 16
+  },
+  "kind": "atlas",
+  "result": "PASS",
+  "source": "data/dodecagon_L3_N2/atlas.json"
+}

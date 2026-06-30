@@ -1,0 +1,8 @@
+{
+  "checked_batches": 4000,
+  "checkpoint_id": "centered_dodecagon_f1_EN_cap4000_compact",
+  "kind": "compact_checkpoint",
+  "result": "PASS",
+  "source": "data/dodecagon_centered/centered_dodecagon_f1_EN_cap4000_compact.json",
+  "status": "CAP"
+}

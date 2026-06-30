@@ -1,0 +1,5 @@
+reverse_time_event_index,physical_role,event_class,kind,face_label,wall,ternary_face_class_mod_3,emits_regular_ternary_symbol,exact_reverse_time
+0,source central face contact at reverse-time zero,INITIAL_PAIR_FACE,,1,,1,True,"{""a"": ""0"", ""b"": ""0"", ""c"": ""0"", ""d"": ""0""}"
+1,negative-physical-time continuation from resolved centered contact,REGULAR,WALL_FACE,,S,,False,"{""a"": ""7/4"", ""b"": ""0"", ""c"": ""7/12"", ""d"": ""0""}"
+2,negative-physical-time continuation from resolved centered contact,REGULAR,WALL_FACE,,W,,False,"{""a"": ""3/4"", ""b"": ""0"", ""c"": ""5/4"", ""d"": ""0""}"
+3,negative-physical-time continuation from resolved centered contact,PAIR_CORNER,PAIR_CORNER,10,,,False,"{""a"": ""5/2"", ""b"": ""0"", ""c"": ""1"", ""d"": ""0""}"

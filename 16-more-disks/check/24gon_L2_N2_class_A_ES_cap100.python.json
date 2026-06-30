@@ -1,0 +1,8 @@
+{
+  "certificate_id": "24gon_L2_N2_class_A_ES_cap100",
+  "checked_batches": 100,
+  "kind": "certificate",
+  "result": "PASS",
+  "source": "data/24gon_L2_N2/certificates/24gon_L2_N2_class_A_ES_cap100.json",
+  "status": "CAP"
+}

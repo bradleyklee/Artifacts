@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800">
+<rect width="800" height="800" fill="#fffdf8"/>
+<rect x="75.000" y="75.000" width="650.000" height="650.000" fill="none" stroke="#151515" stroke-width="3"/>
+<text x="32" y="36" font-family="Helvetica,Arial,sans-serif" font-size="24" font-weight="700">Octagon: first strict L=2 wall corner</text>
+<text x="32" y="62" font-family="Helvetica,Arial,sans-serif" font-size="15">Sites [0,3], velocities E,N; old simultaneous buckets must not hide this contact.</text>
+<defs><marker id="arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#222"/></marker></defs>
+<polygon points="318.750,528.845 271.155,481.250 203.845,481.250 156.250,528.845 156.250,596.155 203.845,643.750 271.155,643.750 318.750,596.155" fill="#9ac7e8" fill-opacity="0.72" stroke="#202020" stroke-width="2"/>
+<line x1="237.500" y1="562.500" x2="287.500" y2="562.500" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="244.500" y="553.500" font-family="Helvetica,Arial,sans-serif" font-size="16">A</text>
+<polygon points="643.750,203.845 596.155,156.250 528.845,156.250 481.250,203.845 481.250,271.155 528.845,318.750 596.155,318.750 643.750,271.155" fill="#f0b36b" fill-opacity="0.72" stroke="#202020" stroke-width="2"/>
+<line x1="562.500" y1="237.500" x2="562.500" y2="187.500" stroke="#222" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="569.500" y="228.500" font-family="Helvetica,Arial,sans-serif" font-size="16">B</text>
+<text x="32" y="778" font-family="monospace" font-size="13">regular 8-gon • L=2 • exact Q(sqrt(2)) core; float only in this renderer</text>
+</svg>

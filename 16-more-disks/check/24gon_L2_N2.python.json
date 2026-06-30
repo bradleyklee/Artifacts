@@ -1,0 +1,11 @@
+{
+  "checked_cases": 96,
+  "counts": {
+    "CAP": 16,
+    "RETURN": 72,
+    "WALL_CORNER": 8
+  },
+  "kind": "atlas",
+  "result": "PASS",
+  "source": "data/24gon_L2_N2/atlas.json"
+}

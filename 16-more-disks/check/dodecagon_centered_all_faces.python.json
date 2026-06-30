@@ -1,0 +1,11 @@
+{
+  "checked_cases": 68,
+  "counts": {
+    "CAP": 16,
+    "PAIR_CORNER": 32,
+    "RETURN": 20
+  },
+  "kind": "atlas",
+  "result": "PASS",
+  "source": "data/dodecagon_centered/atlas_all_faces_cap500.json"
+}

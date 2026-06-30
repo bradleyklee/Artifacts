@@ -1,0 +1,81 @@
+{
+  "atlas": {
+    "bytes": 2448574,
+    "counts": {
+      "CAP": 16,
+      "RETURN": 72,
+      "WALL_CORNER": 8
+    },
+    "earliest": {
+      "EARLIEST_CAP": "24gon-L2-N2-000004",
+      "EARLIEST_DENOMINATOR_PROMOTION": "24gon-L2-N2-000001",
+      "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "24gon-L2-N2-000001",
+      "EARLIEST_OFFCARDINAL_PAIR_FACE": "24gon-L2-N2-000004",
+      "EARLIEST_RETURN": "24gon-L2-N2-000001",
+      "EARLIEST_WALL_CORNER": "24gon-L2-N2-000035"
+    },
+    "event_cap": 100,
+    "experiment_id": "24gon_L2_N2_cardinal_lattice",
+    "independent_check": {
+      "bytes": 181,
+      "checked_batches": null,
+      "checked_cases": 96,
+      "path": "check/24gon_L2_N2.python.json",
+      "result": "PASS",
+      "sha256": "c97ddddbde3a84185b151ba359595c01783ac47f01e0991cfbd4e5b23671d273",
+      "status": null
+    },
+    "kind": "atlas",
+    "path": "data/24gon_L2_N2/atlas.json",
+    "raw_starts": 96,
+    "schema": "lattice-chaos-atlas/v2",
+    "sha256": "04ca9adfb49e3ece677f8b417ae47b116093157b2500addbe35f25a08edbf5c0"
+  },
+  "certificates": [
+    {
+      "bytes": 902170,
+      "event_batches": 100,
+      "id": "24gon_L2_N2_class_A_ES_cap100",
+      "independent_check": {
+        "bytes": 226,
+        "checked_batches": 100,
+        "checked_cases": null,
+        "path": "check/24gon_L2_N2_class_A_ES_cap100.python.json",
+        "result": "PASS",
+        "sha256": "ca8e16c548bbeec0bcb8514faae385f2e980cd9a72bdf216f2c108c50e059107",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 24,
+      "pair_face_word_sha256": "1e4dbece67738bb2327a8097beb624f0ecb4934f3cb31d4ffe591d1fc944855b",
+      "path": "data/24gon_L2_N2/certificates/24gon_L2_N2_class_A_ES_cap100.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "d31ab04bc9cf27378e462b930e97d05df2c5c29f475895e63529df547a090a7b",
+      "status": "CAP"
+    },
+    {
+      "bytes": 900858,
+      "event_batches": 100,
+      "id": "24gon_L2_N2_class_B_WN_cap100",
+      "independent_check": {
+        "bytes": 226,
+        "checked_batches": 100,
+        "checked_cases": null,
+        "path": "check/24gon_L2_N2_class_B_WN_cap100.python.json",
+        "result": "PASS",
+        "sha256": "90f71696edeb087eb5781b3773c286f5f461b06e1d9ae5bc6502b89882b23f6f",
+        "status": "CAP"
+      },
+      "kind": "full_certificate",
+      "pair_contacts": 24,
+      "pair_face_word_sha256": "a7f692e3fc88be31d32e2091f5b94e65ac963919f4748f647ec5d5b628f26443",
+      "path": "data/24gon_L2_N2/certificates/24gon_L2_N2_class_B_WN_cap100.json",
+      "schema": "lattice-chaos-self-contained-certificate/v2",
+      "sha256": "b9f1c4f77ea68c750e93eae2eda458827d0b06cbb4ed09d681561bc80c8e39d6",
+      "status": "CAP"
+    }
+  ],
+  "family": "24gon_L2_N2",
+  "role": "ordinary positive two-body family",
+  "schema": "artifact16-family-manifest/v1"
+}

@@ -1,0 +1,460 @@
+{
+  "case": {
+    "L": 2,
+    "N": 2,
+    "event_cap": 20,
+    "sites": [
+      0,
+      3
+    ],
+    "velocities": [
+      "E",
+      "N"
+    ]
+  },
+  "container": {
+    "cells_per_side": 2,
+    "half_side": {
+      "a": "1",
+      "b": "1"
+    },
+    "kind": "axis_aligned_square"
+  },
+  "model": {
+    "apothem": {
+      "a": "1/4",
+      "b": "1/4"
+    },
+    "cardinal_width": {
+      "a": "1/2",
+      "b": "1/2"
+    },
+    "cell_side": {
+      "a": "1",
+      "b": "1"
+    },
+    "edge": {
+      "a": "1/2",
+      "b": "0"
+    },
+    "field": "Q(sqrt(2))",
+    "geometry_version": "unified-v1",
+    "model_id": "octagon",
+    "normal_label": "face k has normal angle 360*k/sides degrees",
+    "polygon": "regular 8-gon",
+    "sides": 8
+  },
+  "ordering": "model -> N -> orientation/phase -> unordered site tuple -> ordered velocity tuple",
+  "outcome": {
+    "distinct_states": 3,
+    "event_batches": 3,
+    "events": [
+      {
+        "batch": [
+          {
+            "bodies": [
+              1
+            ],
+            "dt": {
+              "a": "1/4",
+              "b": "1/4"
+            },
+            "face": null,
+            "kind": "WALL_FACE",
+            "wall": "N"
+          }
+        ],
+        "event_class": "REGULAR",
+        "exact_T": {
+          "a": "1/4",
+          "b": "1/4"
+        },
+        "exact_dt": {
+          "a": "1/4",
+          "b": "1/4"
+        },
+        "metrics": {
+          "all_coordinates": {
+            "max_abs_numerator": 3,
+            "max_denominator": 4,
+            "max_denominator_bits": 3,
+            "max_numerator_bits": 2
+          },
+          "positions": {
+            "max_abs_numerator": 3,
+            "max_denominator": 4,
+            "max_denominator_bits": 3,
+            "max_numerator_bits": 2
+          },
+          "velocities": {
+            "max_abs_numerator": 1,
+            "max_denominator": 1,
+            "max_denominator_bits": 1,
+            "max_numerator_bits": 1
+          }
+        },
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "-1/4",
+                "b": "-1/4"
+              },
+              "y": {
+                "a": "-1/2",
+                "b": "-1/2"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1",
+                "b": "0"
+              },
+              "y": {
+                "a": "0",
+                "b": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "y": {
+                "a": "3/4",
+                "b": "3/4"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "0",
+                "b": "0"
+              },
+              "y": {
+                "a": "-1",
+                "b": "0"
+              }
+            }
+          }
+        ],
+        "post_state_hash": "dfd582de274ae95dc1b3d2404b9dafa3818587320fe5b25c5e7acf9025bed0ac",
+        "pre_state_hash": "674844f63d8b640e3ae69b85c58745bf150900779f387a8a1be9b21152cb062f",
+        "step": 1
+      },
+      {
+        "batch": [
+          {
+            "bodies": [
+              0,
+              1
+            ],
+            "dt": {
+              "a": "3/4",
+              "b": "3/4"
+            },
+            "face": 2,
+            "kind": "PAIR_FACE",
+            "wall": null
+          }
+        ],
+        "event_class": "REGULAR",
+        "exact_T": {
+          "a": "1",
+          "b": "1"
+        },
+        "exact_dt": {
+          "a": "3/4",
+          "b": "3/4"
+        },
+        "metrics": {
+          "all_coordinates": {
+            "max_abs_numerator": 1,
+            "max_denominator": 2,
+            "max_denominator_bits": 2,
+            "max_numerator_bits": 1
+          },
+          "positions": {
+            "max_abs_numerator": 1,
+            "max_denominator": 2,
+            "max_denominator_bits": 2,
+            "max_numerator_bits": 1
+          },
+          "velocities": {
+            "max_abs_numerator": 1,
+            "max_denominator": 1,
+            "max_denominator_bits": 1,
+            "max_numerator_bits": 1
+          }
+        },
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "y": {
+                "a": "-1/2",
+                "b": "-1/2"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1",
+                "b": "0"
+              },
+              "y": {
+                "a": "-1",
+                "b": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "y": {
+                "a": "0",
+                "b": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "0",
+                "b": "0"
+              },
+              "y": {
+                "a": "0",
+                "b": "0"
+              }
+            }
+          }
+        ],
+        "post_state_hash": "8c98ae591acad04513fd2581010a3821c60e4733d333e926514d46e0251c8a65",
+        "pre_state_hash": "dfd582de274ae95dc1b3d2404b9dafa3818587320fe5b25c5e7acf9025bed0ac",
+        "step": 2
+      },
+      {
+        "batch": [
+          {
+            "bodies": [
+              0
+            ],
+            "dt": {
+              "a": "1/4",
+              "b": "1/4"
+            },
+            "face": null,
+            "kind": "WALL_FACE",
+            "wall": "E"
+          },
+          {
+            "bodies": [
+              0
+            ],
+            "dt": {
+              "a": "1/4",
+              "b": "1/4"
+            },
+            "face": null,
+            "kind": "WALL_FACE",
+            "wall": "S"
+          }
+        ],
+        "event_class": "WALL_CORNER",
+        "exact_T": {
+          "a": "5/4",
+          "b": "5/4"
+        },
+        "exact_dt": {
+          "a": "1/4",
+          "b": "1/4"
+        },
+        "post_state": [
+          {
+            "position": {
+              "x": {
+                "a": "3/4",
+                "b": "3/4"
+              },
+              "y": {
+                "a": "-3/4",
+                "b": "-3/4"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "1",
+                "b": "0"
+              },
+              "y": {
+                "a": "-1",
+                "b": "0"
+              }
+            }
+          },
+          {
+            "position": {
+              "x": {
+                "a": "1/2",
+                "b": "1/2"
+              },
+              "y": {
+                "a": "0",
+                "b": "0"
+              }
+            },
+            "velocity": {
+              "x": {
+                "a": "0",
+                "b": "0"
+              },
+              "y": {
+                "a": "0",
+                "b": "0"
+              }
+            }
+          }
+        ],
+        "post_state_hash": null,
+        "pre_state": null,
+        "pre_state_hash": "8c98ae591acad04513fd2581010a3821c60e4733d333e926514d46e0251c8a65",
+        "step": 3
+      }
+    ],
+    "exact_T": {
+      "a": "5/4",
+      "b": "5/4"
+    },
+    "final_metrics": {
+      "all_coordinates": {
+        "max_abs_numerator": 3,
+        "max_denominator": 4,
+        "max_denominator_bits": 3,
+        "max_numerator_bits": 2
+      },
+      "positions": {
+        "max_abs_numerator": 3,
+        "max_denominator": 4,
+        "max_denominator_bits": 3,
+        "max_numerator_bits": 2
+      },
+      "time": {
+        "max_abs_numerator": 5,
+        "max_denominator": 4,
+        "max_denominator_bits": 3,
+        "max_numerator_bits": 3
+      },
+      "velocities": {
+        "max_abs_numerator": 1,
+        "max_denominator": 1,
+        "max_denominator_bits": 1,
+        "max_numerator_bits": 1
+      }
+    },
+    "final_state": [
+      {
+        "position": {
+          "x": {
+            "a": "3/4",
+            "b": "3/4"
+          },
+          "y": {
+            "a": "-3/4",
+            "b": "-3/4"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "1",
+            "b": "0"
+          },
+          "y": {
+            "a": "-1",
+            "b": "0"
+          }
+        }
+      },
+      {
+        "position": {
+          "x": {
+            "a": "1/2",
+            "b": "1/2"
+          },
+          "y": {
+            "a": "0",
+            "b": "0"
+          }
+        },
+        "velocity": {
+          "x": {
+            "a": "0",
+            "b": "0"
+          },
+          "y": {
+            "a": "0",
+            "b": "0"
+          }
+        }
+      }
+    ],
+    "final_state_hash": "c847d46eeaf0f2fc55bb1c9bc2c41a5989fb8ce39c81e705f18a470838341a7a",
+    "first_denominator_promotion": 1,
+    "first_numerator_height_growth": 1,
+    "initial_metrics": {
+      "all_coordinates": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "positions": {
+        "max_abs_numerator": 1,
+        "max_denominator": 2,
+        "max_denominator_bits": 2,
+        "max_numerator_bits": 1
+      },
+      "velocities": {
+        "max_abs_numerator": 1,
+        "max_denominator": 1,
+        "max_denominator_bits": 1,
+        "max_numerator_bits": 1
+      }
+    },
+    "max_metrics": {
+      "all_coordinates": {
+        "max_abs_numerator": 3,
+        "max_denominator": 4,
+        "max_denominator_bits": 3,
+        "max_numerator_bits": 2
+      },
+      "positions": {
+        "max_abs_numerator": 3,
+        "max_denominator": 4,
+        "max_denominator_bits": 3,
+        "max_numerator_bits": 2
+      },
+      "time": {
+        "max_abs_numerator": 5,
+        "max_denominator": 4,
+        "max_denominator_bits": 3,
+        "max_numerator_bits": 3
+      },
+      "velocities": {
+        "max_abs_numerator": 1,
+        "max_denominator": 1,
+        "max_denominator_bits": 1,
+        "max_numerator_bits": 1
+      }
+    },
+    "pair_face_word": [
+      2
+    ],
+    "status": "WALL_CORNER"
+  },
+  "schema": "lattice-geometry-certificate/v1"
+}

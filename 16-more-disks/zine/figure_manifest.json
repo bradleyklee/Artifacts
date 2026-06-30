@@ -1,0 +1,23 @@
+{
+  "schema": "artifact16-zine-figure-manifest/v1",
+  "figures": [
+    {
+      "id": "dodecagon_special_lexmin_short",
+      "path": "figures/dodecagon_special_lexmin_short.mp4",
+      "source_certificate": "../data/dodecagon_centered/certificates/centered_dodecagon_f1_EN_cap500.json",
+      "independent_check": "../check/centered_dodecagon_f1_EN_cap500.python.json"
+    },
+    {
+      "id": "24gon_two_minimal_classes_short",
+      "path": "figures/24gon_two_minimal_classes_short.mp4",
+      "source_certificates": [
+        "../data/24gon_L2_N2/certificates/24gon_L2_N2_class_A_ES_cap100.json",
+        "../data/24gon_L2_N2/certificates/24gon_L2_N2_class_B_WN_cap100.json"
+      ],
+      "independent_checks": [
+        "../check/24gon_L2_N2_class_A_ES_cap100.python.json",
+        "../check/24gon_L2_N2_class_B_WN_cap100.python.json"
+      ]
+    }
+  ]
+}

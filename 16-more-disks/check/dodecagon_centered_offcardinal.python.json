@@ -1,0 +1,11 @@
+{
+  "checked_cases": 48,
+  "counts": {
+    "CAP": 16,
+    "PAIR_CORNER": 16,
+    "RETURN": 16
+  },
+  "kind": "atlas",
+  "result": "PASS",
+  "source": "data/dodecagon_centered/atlas_offcardinal_cap500.json"
+}

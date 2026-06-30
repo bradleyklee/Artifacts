@@ -1,0 +1,38 @@
+{
+  "atlas": {
+    "bytes": 2549140,
+    "counts": {
+      "COUPLED_SIMULTANEOUS": 24,
+      "PAIR_CORNER": 168,
+      "RETURN": 32,
+      "WALL_CORNER": 32
+    },
+    "earliest": {
+      "EARLIEST_COUPLED_SIMULTANEOUS": "square-L2-N4-000027",
+      "EARLIEST_DENOMINATOR_PROMOTION": "square-L2-N4-000001",
+      "EARLIEST_NUMERATOR_HEIGHT_GROWTH": "square-L2-N4-000001",
+      "EARLIEST_PAIR_CORNER": "square-L2-N4-000003",
+      "EARLIEST_RETURN": "square-L2-N4-000001",
+      "EARLIEST_WALL_CORNER": "square-L2-N4-000011"
+    },
+    "event_cap": 256,
+    "experiment_id": "square_L2_N4_cardinal_lattice",
+    "independent_check": {
+      "bytes": 225,
+      "checked_batches": null,
+      "checked_cases": 256,
+      "path": "check/square_L2_N4.python.json",
+      "result": "PASS",
+      "sha256": "c4beca8b7c0f2695d097dc3d60d321bec923e32d188585ea566c75b8d56277cd",
+      "status": null
+    },
+    "kind": "atlas",
+    "path": "data/square_L2_N4/atlas.json",
+    "raw_starts": 256,
+    "schema": "lattice-chaos-atlas/v2",
+    "sha256": "1d7f755b2fc27a0aa3d672a3ee3c8b7d7a6a024cc0640ee7bacfaadd3ef9ab06"
+  },
+  "family": "square_L2_N4",
+  "role": "negative control",
+  "schema": "artifact16-family-manifest/v1"
+}

@@ -1,0 +1,133 @@
+{
+  "schema": "lattice-geometry-certificate-index/v1",
+  "records": [
+    {
+      "certificate": "square_L2_N2_first_pair_corner.json",
+      "status": "PAIR_CORNER",
+      "event_batches": 1,
+      "pair_face_contacts": 0,
+      "max_metrics": {
+        "positions": {
+          "max_abs_numerator": 1,
+          "max_denominator": 2,
+          "max_numerator_bits": 1,
+          "max_denominator_bits": 2
+        },
+        "velocities": {
+          "max_abs_numerator": 1,
+          "max_denominator": 1,
+          "max_numerator_bits": 1,
+          "max_denominator_bits": 1
+        },
+        "all_coordinates": {
+          "max_abs_numerator": 1,
+          "max_denominator": 2,
+          "max_numerator_bits": 1,
+          "max_denominator_bits": 2
+        },
+        "time": {
+          "max_abs_numerator": 1,
+          "max_denominator": 2,
+          "max_numerator_bits": 1,
+          "max_denominator_bits": 2
+        }
+      }
+    },
+    {
+      "certificate": "octagon_L2_N2_first_wall_corner.json",
+      "status": "WALL_CORNER",
+      "event_batches": 3,
+      "pair_face_contacts": 1,
+      "max_metrics": {
+        "positions": {
+          "max_abs_numerator": 3,
+          "max_denominator": 4,
+          "max_numerator_bits": 2,
+          "max_denominator_bits": 3
+        },
+        "velocities": {
+          "max_abs_numerator": 1,
+          "max_denominator": 1,
+          "max_numerator_bits": 1,
+          "max_denominator_bits": 1
+        },
+        "all_coordinates": {
+          "max_abs_numerator": 3,
+          "max_denominator": 4,
+          "max_numerator_bits": 2,
+          "max_denominator_bits": 3
+        },
+        "time": {
+          "max_abs_numerator": 5,
+          "max_denominator": 4,
+          "max_numerator_bits": 3,
+          "max_denominator_bits": 3
+        }
+      }
+    },
+    {
+      "certificate": "octagon_L2_N3_first_regular_survivor_256.json",
+      "status": "CAP",
+      "event_batches": 256,
+      "pair_face_contacts": 89,
+      "max_metrics": {
+        "positions": {
+          "max_abs_numerator": 74187,
+          "max_denominator": 96256,
+          "max_numerator_bits": 17,
+          "max_denominator_bits": 17
+        },
+        "velocities": {
+          "max_abs_numerator": 141,
+          "max_denominator": 128,
+          "max_numerator_bits": 8,
+          "max_denominator_bits": 8
+        },
+        "all_coordinates": {
+          "max_abs_numerator": 74187,
+          "max_denominator": 96256,
+          "max_numerator_bits": 17,
+          "max_denominator_bits": 17
+        },
+        "time": {
+          "max_abs_numerator": 15313,
+          "max_denominator": 264,
+          "max_numerator_bits": 14,
+          "max_denominator_bits": 9
+        }
+      }
+    },
+    {
+      "certificate": "24gon_L2_N2_first_offcardinal_survivor_100.json",
+      "status": "CAP",
+      "event_batches": 100,
+      "pair_face_contacts": 24,
+      "max_metrics": {
+        "positions": {
+          "max_abs_numerator": 71309,
+          "max_denominator": 25204,
+          "max_numerator_bits": 17,
+          "max_denominator_bits": 15
+        },
+        "velocities": {
+          "max_abs_numerator": 69,
+          "max_denominator": 128,
+          "max_numerator_bits": 7,
+          "max_denominator_bits": 8
+        },
+        "all_coordinates": {
+          "max_abs_numerator": 71309,
+          "max_denominator": 25204,
+          "max_numerator_bits": 17,
+          "max_denominator_bits": 15
+        },
+        "time": {
+          "max_abs_numerator": 12665,
+          "max_denominator": 276,
+          "max_numerator_bits": 14,
+          "max_denominator_bits": 9
+        }
+      }
+    }
+  ]
+}
