@@ -1,0 +1,7 @@
+build/*
+!build/.gitkeep
+reports/probe-*.md
+reports/resource-watch-*.csv
+reports/resource-watch-*.md
+__pycache__/
+*.pyc

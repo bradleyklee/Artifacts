@@ -208,3 +208,19 @@ prefix through 7,500 event batches. The same artifact records two D4-related
 24-gon survivor classes through 100 checked batches. Every displayed survivor
 is a finite exact prefix only: `CAP` means regular, nonreturning evolution
 through the listed horizon, not a proof of chaos, aperiodicity, or infinitude.
+
+### 17. missing-rust
+
+Artifact 17 probes the sandbox’s practical language capability: exact rational
+`355/113` long-division programs successfully printed `hello 3.1415 world!` in
+Bash/AWK, Python, Node, Ruby, Perl, PHP, Tcl, Go, GCC/Clang C and C++, Java,
+Kotlin, Swift, and Fortran, while Rust is not a native durable capability in
+this context—`rustc`, `cargo`, and `rustup` are absent from `PATH`, and an
+earlier complete Rust 1.96 GNU x86_64 upload launched Cargo but crashed
+`rustc` with `SIGBUS` during gVisor startup. A separate context later installed
+Rust and produced a two-body hard-disk parity control whose Go and Rust
+100,000-event traces are byte-identical with matching final-state and FNV-1a
+certificates; however, that required transferring a roughly 100 MiB+
+session-local toolchain, demonstrating that Rust can work when manually rafted
+into a context but is not presently viable as a normal iterative research
+workflow.

@@ -1,0 +1,23 @@
+/mnt/data/artifact-17-missing-rust/17-missing-rust.md
+Bash         available    expected output
+AWK          available    expected output
+Python       available    expected output
+Node         available    expected output
+TypeScript   available    expected output
+Ruby         available    expected output
+Perl         available    expected output
+PHP          available    expected output
+Tcl          available    expected output
+Go           available    expected output
+GCC C        available    expected output
+G++ C++      available    expected output
+Clang C      available    expected output
+Clang C++    available    expected output
+Java         available    expected output
+Kotlin       available    expected output
+Swift        available    expected output
+Fortran      available    expected output
+Rust         unavailable  not found in PATH: rustc
+
+Rust record: /mnt/data/artifact-17-missing-rust/rust/FAILED_HELLO_WORLD.md
+Report: /mnt/data/artifact-17-missing-rust/reports/probe-20260702T174645Z.md
