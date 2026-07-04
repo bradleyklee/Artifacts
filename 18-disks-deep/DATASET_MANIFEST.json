@@ -1,0 +1,2050 @@
+{
+  "canonical_corpus": "blocks/",
+  "complexity_series": {
+    "24A": {
+      "csv": "complexity/24A_total_bits.csv",
+      "csv_sha256": "c1b154c7bb00d9117eefc83c5d806e65ec51593bc14d3e56607dcd8f7eb91c96",
+      "first_collision": 1,
+      "first_total_bits": 8,
+      "last_collision": 50000,
+      "last_total_bits": 26279,
+      "rows": 50000,
+      "status": "provided campaign telemetry; see complexity/README.md for relation to compact per-block columns",
+      "svg": "complexity/24A_total_bits.svg",
+      "svg_sha256": "6f6e07e3b372cb39143ad6e5abf930e6f9fbf47ea01346de2190b5a9caa48b6e"
+    },
+    "24B": {
+      "csv": "complexity/24B_total_bits.csv",
+      "csv_sha256": "322c1dbd2aac96860a875e6690112a6df47a4d839bdb0602e8f0377723da36ed",
+      "first_collision": 1,
+      "first_total_bits": 8,
+      "last_collision": 50000,
+      "last_total_bits": 26284,
+      "rows": 50000,
+      "status": "provided campaign telemetry; see complexity/README.md for relation to compact per-block columns",
+      "svg": "complexity/24B_total_bits.svg",
+      "svg_sha256": "4673c2afc9c413fc0f54d4af6d898d4afcb533eb239ced6892587591c4d1dc52"
+    },
+    "d12": {
+      "csv": "complexity/d12_total_bits.csv",
+      "csv_sha256": "88d4efeb28c9d8833299b3e2ab0c7dc66918e660e87a90f3cf0ad0f75debcb51",
+      "first_collision": 1,
+      "first_total_bits": 11,
+      "last_collision": 50000,
+      "last_total_bits": 10461,
+      "rows": 50000,
+      "status": "provided campaign telemetry; see complexity/README.md for relation to compact per-block columns",
+      "svg": "complexity/d12_total_bits.svg",
+      "svg_sha256": "c9dbb6f5150cc28b119c885c3b3d0a354381a8b2dba2b0dbfc2850209e01021f"
+    }
+  },
+  "lanes": {
+    "24A": {
+      "block_count": 50,
+      "blocks": [
+        {
+          "end_state_hash": "a80bc586605bea069696b7f7b6024dfffdbbcd14ef9e1a5273e39352f2269acd",
+          "events": 1000,
+          "file": "blocks/24A/24A_000001_001000.block.tar.gz",
+          "pair_contacts": 228,
+          "range": [
+            1,
+            1000
+          ],
+          "sha256": "de307e1e0bd1d56bddc6ee70548de28c3beb0d392e12c0fa7a1b88217fa5ee30",
+          "start_state_hash": "e7f7810a6fb146049398321e06a973ef7c5886c6e921c0738c900a421b060019",
+          "wall_contacts": 772
+        },
+        {
+          "end_state_hash": "79f383391ce87f50df3a530e69805e791fd27cfc7c222b436a4729a76c47eefd",
+          "events": 1000,
+          "file": "blocks/24A/24A_001001_002000.block.tar.gz",
+          "pair_contacts": 186,
+          "range": [
+            1001,
+            2000
+          ],
+          "sha256": "f542882dc760bdffcb0bb2d3d6f05170e075bf1e608e532f60d5e131704127b5",
+          "start_state_hash": "a80bc586605bea069696b7f7b6024dfffdbbcd14ef9e1a5273e39352f2269acd",
+          "wall_contacts": 814
+        },
+        {
+          "end_state_hash": "2bb37d1333dae92617e9c56a15363bfcb1524a7c7d856718620fd027138858fb",
+          "events": 1000,
+          "file": "blocks/24A/24A_002001_003000.block.tar.gz",
+          "pair_contacts": 220,
+          "range": [
+            2001,
+            3000
+          ],
+          "sha256": "d4fe3f2e31ae7780e1efd95a293535e66a677ef60f8129e37bb1b8b2d4518857",
+          "start_state_hash": "79f383391ce87f50df3a530e69805e791fd27cfc7c222b436a4729a76c47eefd",
+          "wall_contacts": 780
+        },
+        {
+          "end_state_hash": "f8128b38d3a29085e34fded34616069d27b2bd5e97311522e38b277988a27896",
+          "events": 1000,
+          "file": "blocks/24A/24A_003001_004000.block.tar.gz",
+          "pair_contacts": 217,
+          "range": [
+            3001,
+            4000
+          ],
+          "sha256": "5d7927c848da2208b76ae1497a59ac36f5699cb4f3f163ee5626b37b688c46f6",
+          "start_state_hash": "2bb37d1333dae92617e9c56a15363bfcb1524a7c7d856718620fd027138858fb",
+          "wall_contacts": 783
+        },
+        {
+          "end_state_hash": "316399d6c64ccbd35066e3bc00c510f3a4a7318bccf90fc4b204faa43a75806b",
+          "events": 1000,
+          "file": "blocks/24A/24A_004001_005000.block.tar.gz",
+          "pair_contacts": 236,
+          "range": [
+            4001,
+            5000
+          ],
+          "sha256": "59bf6e640287be2da8ae2e8efb8fa4f516a89dd79f8c3cfd1923dfc79fbd30cf",
+          "start_state_hash": "f8128b38d3a29085e34fded34616069d27b2bd5e97311522e38b277988a27896",
+          "wall_contacts": 764
+        },
+        {
+          "end_state_hash": "888688a499bd6a0c80a0c620c68c6fc4e1da93eb81ef8649d3c6ca466cccaba0",
+          "events": 1000,
+          "file": "blocks/24A/24A_005001_006000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            5001,
+            6000
+          ],
+          "sha256": "fe8af76e6f9d7bab88c01f3beb1a982bdca20f9fb259930fcd1b4acb94920401",
+          "start_state_hash": "316399d6c64ccbd35066e3bc00c510f3a4a7318bccf90fc4b204faa43a75806b",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "73d0d45ca592df2b1a10d5a26016d4dbfc72d8060c408e9209007fd3afdabac4",
+          "events": 1000,
+          "file": "blocks/24A/24A_006001_007000.block.tar.gz",
+          "pair_contacts": 210,
+          "range": [
+            6001,
+            7000
+          ],
+          "sha256": "e4dd30e244009e65d770a6e57d84c48e96641891615220dad94bd40733b6f905",
+          "start_state_hash": "888688a499bd6a0c80a0c620c68c6fc4e1da93eb81ef8649d3c6ca466cccaba0",
+          "wall_contacts": 790
+        },
+        {
+          "end_state_hash": "84a7154ccbccb1779ae088e1e6dfe24b68e16435feb2e41487967dc6a892e918",
+          "events": 1000,
+          "file": "blocks/24A/24A_007001_008000.block.tar.gz",
+          "pair_contacts": 220,
+          "range": [
+            7001,
+            8000
+          ],
+          "sha256": "917f2e2fbcd7b10f4faf17c13cdd91a91d6a1e2395ad69f3ef65372569f96afa",
+          "start_state_hash": "73d0d45ca592df2b1a10d5a26016d4dbfc72d8060c408e9209007fd3afdabac4",
+          "wall_contacts": 780
+        },
+        {
+          "end_state_hash": "909a633ed333fb6d9987379701f9f9c18bc0c707351ef2220a3c265d91e0d23e",
+          "events": 1000,
+          "file": "blocks/24A/24A_008001_009000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            8001,
+            9000
+          ],
+          "sha256": "1875cfa290eef2689d7b9d0162d1d5bd8b177e3fe94e4a0b6b0a12bcd3546ef8",
+          "start_state_hash": "84a7154ccbccb1779ae088e1e6dfe24b68e16435feb2e41487967dc6a892e918",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "8e52c509cb48517739ca856f8719cbe553a7b6092d1e7a46fa56b9d5579f1c90",
+          "events": 1000,
+          "file": "blocks/24A/24A_009001_010000.block.tar.gz",
+          "pair_contacts": 221,
+          "range": [
+            9001,
+            10000
+          ],
+          "sha256": "5900f2f8acbbb6df42784c523e1601673c675c418d4441473fb57ce538643057",
+          "start_state_hash": "909a633ed333fb6d9987379701f9f9c18bc0c707351ef2220a3c265d91e0d23e",
+          "wall_contacts": 779
+        },
+        {
+          "end_state_hash": "9bb152669e0d04698294cca3847e96e203bf90eb87cedd914380b659ea8356f7",
+          "events": 1000,
+          "file": "blocks/24A/24A_010001_011000.block.tar.gz",
+          "pair_contacts": 214,
+          "range": [
+            10001,
+            11000
+          ],
+          "sha256": "d3bf6bc7b5e896ddbbcf9def9a938474c263b237633dff89185aa8290bef4cdb",
+          "start_state_hash": "8e52c509cb48517739ca856f8719cbe553a7b6092d1e7a46fa56b9d5579f1c90",
+          "wall_contacts": 786
+        },
+        {
+          "end_state_hash": "83230a4994c5b92643ee8b8e26aa6cb699e0164711ef290fef2ad0df2a5063e6",
+          "events": 1000,
+          "file": "blocks/24A/24A_011001_012000.block.tar.gz",
+          "pair_contacts": 227,
+          "range": [
+            11001,
+            12000
+          ],
+          "sha256": "42ac45f0cbfd536c690af22b25dc19bf8d7f71a780d0fbde8baa46a5b11dd678",
+          "start_state_hash": "9bb152669e0d04698294cca3847e96e203bf90eb87cedd914380b659ea8356f7",
+          "wall_contacts": 773
+        },
+        {
+          "end_state_hash": "36428d22f3e2561a3d71d34e23f3b28158c7f2859ea37b6962441f115789ed2a",
+          "events": 1000,
+          "file": "blocks/24A/24A_012001_013000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            12001,
+            13000
+          ],
+          "sha256": "9630ad238d67262b4b131479f4fb1b90d44efc6b44050a8c1a01d449a148c938",
+          "start_state_hash": "83230a4994c5b92643ee8b8e26aa6cb699e0164711ef290fef2ad0df2a5063e6",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "bf02c18d93761f0e80cd881b2787a49903b424074dc825c3f2d94d90b7ca371e",
+          "events": 1000,
+          "file": "blocks/24A/24A_013001_014000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            13001,
+            14000
+          ],
+          "sha256": "56f6dde680334a66f9a50181cedf4584811a1f097bc29166e7872fd95c812d17",
+          "start_state_hash": "36428d22f3e2561a3d71d34e23f3b28158c7f2859ea37b6962441f115789ed2a",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "97b59cf77d5cb22f9f4841225832566b9c7d07f5b47754878ca310700508d8d1",
+          "events": 1000,
+          "file": "blocks/24A/24A_014001_015000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            14001,
+            15000
+          ],
+          "sha256": "3a51cb1af700df595d356b569b2f1d6532cd24cd1e36b8d03bfc1dc026ddb1f5",
+          "start_state_hash": "bf02c18d93761f0e80cd881b2787a49903b424074dc825c3f2d94d90b7ca371e",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "443eea80eae2ecd3e372f53c207a22db02a558974a310341c6665d533c22598f",
+          "events": 1000,
+          "file": "blocks/24A/24A_015001_016000.block.tar.gz",
+          "pair_contacts": 221,
+          "range": [
+            15001,
+            16000
+          ],
+          "sha256": "6494c8c2dfb4799575c531428fadc8aba05d0cbb8a6808c191e891a71489e5ee",
+          "start_state_hash": "97b59cf77d5cb22f9f4841225832566b9c7d07f5b47754878ca310700508d8d1",
+          "wall_contacts": 779
+        },
+        {
+          "end_state_hash": "a00a869b44d2959767b5ee0362cb3a1e140e3a3a78b3e74f81ffdd35cb37ef21",
+          "events": 1000,
+          "file": "blocks/24A/24A_016001_017000.block.tar.gz",
+          "pair_contacts": 199,
+          "range": [
+            16001,
+            17000
+          ],
+          "sha256": "38d9e39a09a80f932e4c5ccf5ba96775cbf80743e5340f4c6d03784c5d29360a",
+          "start_state_hash": "443eea80eae2ecd3e372f53c207a22db02a558974a310341c6665d533c22598f",
+          "wall_contacts": 801
+        },
+        {
+          "end_state_hash": "c956a3a2f885369abb455d22eab5e72111376b00ad160fa08eca5ea3bfd4675c",
+          "events": 1000,
+          "file": "blocks/24A/24A_017001_018000.block.tar.gz",
+          "pair_contacts": 214,
+          "range": [
+            17001,
+            18000
+          ],
+          "sha256": "e231a2b75d607760e2dd08a337f9e53fa86de8ea3bc4f483ebb063babc14080a",
+          "start_state_hash": "a00a869b44d2959767b5ee0362cb3a1e140e3a3a78b3e74f81ffdd35cb37ef21",
+          "wall_contacts": 786
+        },
+        {
+          "end_state_hash": "a69179741a072522b9adf1984324f0258fe6ac700e0fa0aa845cfe569f7ff68e",
+          "events": 1000,
+          "file": "blocks/24A/24A_018001_019000.block.tar.gz",
+          "pair_contacts": 232,
+          "range": [
+            18001,
+            19000
+          ],
+          "sha256": "d5f74c61c9a020f5b1edfe2977e7298490dac38455310a39f53a84f20becfb50",
+          "start_state_hash": "c956a3a2f885369abb455d22eab5e72111376b00ad160fa08eca5ea3bfd4675c",
+          "wall_contacts": 768
+        },
+        {
+          "end_state_hash": "1b3855e0cffaafa8a5bd03b8c97837c6007bab74151e246299d76d54466e3ad7",
+          "events": 1000,
+          "file": "blocks/24A/24A_019001_020000.block.tar.gz",
+          "pair_contacts": 201,
+          "range": [
+            19001,
+            20000
+          ],
+          "sha256": "6ddf1e7021c48ed8e3cf280ef53d1a04d666b5a75862d22646bc491dfadccdee",
+          "start_state_hash": "a69179741a072522b9adf1984324f0258fe6ac700e0fa0aa845cfe569f7ff68e",
+          "wall_contacts": 799
+        },
+        {
+          "end_state_hash": "297dc6121cc1945474aca5ac607ed32fe0dac47056527dffb21c60ee77f046c2",
+          "events": 1000,
+          "file": "blocks/24A/24A_020001_021000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            20001,
+            21000
+          ],
+          "sha256": "d9d1061b3332f4c7a18e0e95eb9fd93b8d18eb629fe01817cafa437ee672ac04",
+          "start_state_hash": "1b3855e0cffaafa8a5bd03b8c97837c6007bab74151e246299d76d54466e3ad7",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "f838fabebe8282b65775d0f06afd96818004cacce08649dfc0306aa028e8fb20",
+          "events": 1000,
+          "file": "blocks/24A/24A_021001_022000.block.tar.gz",
+          "pair_contacts": 215,
+          "range": [
+            21001,
+            22000
+          ],
+          "sha256": "4061977773c46847df943b884c7b9d4589c7643522346eb86942bd26b2720717",
+          "start_state_hash": "297dc6121cc1945474aca5ac607ed32fe0dac47056527dffb21c60ee77f046c2",
+          "wall_contacts": 785
+        },
+        {
+          "end_state_hash": "8360815754a549d5e58aabdaa8cfc942c44a340e61e5af4d25e15370f3d0d4bd",
+          "events": 1000,
+          "file": "blocks/24A/24A_022001_023000.block.tar.gz",
+          "pair_contacts": 231,
+          "range": [
+            22001,
+            23000
+          ],
+          "sha256": "54bc3e7f5437fa619204c51e98ced2939869d71ff3c15c503afce0d9dcd64608",
+          "start_state_hash": "f838fabebe8282b65775d0f06afd96818004cacce08649dfc0306aa028e8fb20",
+          "wall_contacts": 769
+        },
+        {
+          "end_state_hash": "a72156a1a5f02df6c0cd185e78fa1319c8c4a892b7f65c7daa1070fa757a4626",
+          "events": 1000,
+          "file": "blocks/24A/24A_023001_024000.block.tar.gz",
+          "pair_contacts": 202,
+          "range": [
+            23001,
+            24000
+          ],
+          "sha256": "11d83138e7ed4ea72a3ca8c47eb39c65fd7d6798c933d679a9d6c05b5ddc72c3",
+          "start_state_hash": "8360815754a549d5e58aabdaa8cfc942c44a340e61e5af4d25e15370f3d0d4bd",
+          "wall_contacts": 798
+        },
+        {
+          "end_state_hash": "efc48a937bec0ec304989999d40d8654340d57e6f6ed20779df17167748886a8",
+          "events": 1000,
+          "file": "blocks/24A/24A_024001_025000.block.tar.gz",
+          "pair_contacts": 230,
+          "range": [
+            24001,
+            25000
+          ],
+          "sha256": "45940dc5f611f01cbd844e22a3f3131dd1357ca8d77c6625e9e7e8dbe7bd2bb2",
+          "start_state_hash": "a72156a1a5f02df6c0cd185e78fa1319c8c4a892b7f65c7daa1070fa757a4626",
+          "wall_contacts": 770
+        },
+        {
+          "end_state_hash": "78ada3ae27731f52292a859cfca8e6eecfb09d253cb816cc44d328c3f0b089ec",
+          "events": 1000,
+          "file": "blocks/24A/24A_025001_026000.block.tar.gz",
+          "pair_contacts": 209,
+          "range": [
+            25001,
+            26000
+          ],
+          "sha256": "9aa4e930ddbd14614890cdc89f6e7e222d7e82602a931f7197e703ef84d86676",
+          "start_state_hash": "efc48a937bec0ec304989999d40d8654340d57e6f6ed20779df17167748886a8",
+          "wall_contacts": 791
+        },
+        {
+          "end_state_hash": "e8775f16a8a9d2e76dbdf3c452aaf32263cf02573754d88336862203163b70eb",
+          "events": 1000,
+          "file": "blocks/24A/24A_026001_027000.block.tar.gz",
+          "pair_contacts": 196,
+          "range": [
+            26001,
+            27000
+          ],
+          "sha256": "708567751662e48f86ca68d1e2c2e09684b1d062199e623da4873c4e205dad1d",
+          "start_state_hash": "78ada3ae27731f52292a859cfca8e6eecfb09d253cb816cc44d328c3f0b089ec",
+          "wall_contacts": 804
+        },
+        {
+          "end_state_hash": "0fa705a88248d9091199a3177bdee26f3723371ddeebc91d4d3119339d5c4dcf",
+          "events": 1000,
+          "file": "blocks/24A/24A_027001_028000.block.tar.gz",
+          "pair_contacts": 229,
+          "range": [
+            27001,
+            28000
+          ],
+          "sha256": "d0541e24ed9e48baa8a5ea279bc24cee8a43e86c9b232e442c5aa8b952417c63",
+          "start_state_hash": "e8775f16a8a9d2e76dbdf3c452aaf32263cf02573754d88336862203163b70eb",
+          "wall_contacts": 771
+        },
+        {
+          "end_state_hash": "7c99b72b7e69a41604ab93e47c78f9e6ccacda2c625b4e8d4ad3cc26561d5fc9",
+          "events": 1000,
+          "file": "blocks/24A/24A_028001_029000.block.tar.gz",
+          "pair_contacts": 219,
+          "range": [
+            28001,
+            29000
+          ],
+          "sha256": "d7c24e4feaf1f26d7654f6fac30f47c2f3c56c4ef1a609eead2cf6c3c8830eb0",
+          "start_state_hash": "0fa705a88248d9091199a3177bdee26f3723371ddeebc91d4d3119339d5c4dcf",
+          "wall_contacts": 781
+        },
+        {
+          "end_state_hash": "15ac1e7ba8c30897e0d09fe854215afeadd648f97fd00b7beec4bd7c180f1c48",
+          "events": 1000,
+          "file": "blocks/24A/24A_029001_030000.block.tar.gz",
+          "pair_contacts": 218,
+          "range": [
+            29001,
+            30000
+          ],
+          "sha256": "c20e57aee427157512c5faabf0e4432632bff2befb5587d36dc297017b206170",
+          "start_state_hash": "7c99b72b7e69a41604ab93e47c78f9e6ccacda2c625b4e8d4ad3cc26561d5fc9",
+          "wall_contacts": 782
+        },
+        {
+          "end_state_hash": "a70337ab18e8b349518d7efc0b7cb3b54baf1b5cdda279ac1937d7fac3500b66",
+          "events": 1000,
+          "file": "blocks/24A/24A_030001_031000.block.tar.gz",
+          "pair_contacts": 191,
+          "range": [
+            30001,
+            31000
+          ],
+          "sha256": "6da0c29301ded6321bab1b00ee9d672d447b2bd1f279d5c38212d61aaa78c8fe",
+          "start_state_hash": "15ac1e7ba8c30897e0d09fe854215afeadd648f97fd00b7beec4bd7c180f1c48",
+          "wall_contacts": 809
+        },
+        {
+          "end_state_hash": "13a52a2c9719860f0a49ed4b49f327ddaf7c5f74797322c54f7531e4cff1e17e",
+          "events": 1000,
+          "file": "blocks/24A/24A_031001_032000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            31001,
+            32000
+          ],
+          "sha256": "b30ab1a76f215cf6bb2a98620fe7672e176923abc0869f1e5614a90f0add2c99",
+          "start_state_hash": "a70337ab18e8b349518d7efc0b7cb3b54baf1b5cdda279ac1937d7fac3500b66",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "d159a0a8434147f19b0b4d6110fcefeea748fe4c8950ecc651deafe4b43842c6",
+          "events": 1000,
+          "file": "blocks/24A/24A_032001_033000.block.tar.gz",
+          "pair_contacts": 216,
+          "range": [
+            32001,
+            33000
+          ],
+          "sha256": "078f7fdada72ee961759917e43f93a4bac7ab81bd2ce01c1b7dab6a81b0b63c8",
+          "start_state_hash": "13a52a2c9719860f0a49ed4b49f327ddaf7c5f74797322c54f7531e4cff1e17e",
+          "wall_contacts": 784
+        },
+        {
+          "end_state_hash": "73d6d506cb3971945ceef2c67a7e4c68ecaa9e8bc7ffb851523dcef782c1c499",
+          "events": 1000,
+          "file": "blocks/24A/24A_033001_034000.block.tar.gz",
+          "pair_contacts": 202,
+          "range": [
+            33001,
+            34000
+          ],
+          "sha256": "f1ac0ba193e57c057bb4c5843bec39c3d1a85ed306a219b961729d0c5f010d94",
+          "start_state_hash": "d159a0a8434147f19b0b4d6110fcefeea748fe4c8950ecc651deafe4b43842c6",
+          "wall_contacts": 798
+        },
+        {
+          "end_state_hash": "12ecc7951fdd8ca54d80594ecc3ac98f57bbabf5da9ecca4b654ad3e876a770b",
+          "events": 1000,
+          "file": "blocks/24A/24A_034001_035000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            34001,
+            35000
+          ],
+          "sha256": "7e05ee04d41d80b691514538ba8cc840a31f5024db34702f0a95fea89daefeda",
+          "start_state_hash": "73d6d506cb3971945ceef2c67a7e4c68ecaa9e8bc7ffb851523dcef782c1c499",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "e4d716dee540e6fd424f3be707305a39d85f41cdae473305f1d6c18e939419b5",
+          "events": 1000,
+          "file": "blocks/24A/24A_035001_036000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            35001,
+            36000
+          ],
+          "sha256": "5b87edc61c22dd1da7920eb79f2c9fa00197b9b9e54b44e7e6826f6948b4f3b4",
+          "start_state_hash": "12ecc7951fdd8ca54d80594ecc3ac98f57bbabf5da9ecca4b654ad3e876a770b",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "a1ae86790c2efd39a04dc3fc5c47a40ae4792a45032af63e4bac3c7d54f94153",
+          "events": 1000,
+          "file": "blocks/24A/24A_036001_037000.block.tar.gz",
+          "pair_contacts": 202,
+          "range": [
+            36001,
+            37000
+          ],
+          "sha256": "9c78aae7d4b04fbcdf4fef0874e7ef09e1876b52dbbd7048257547b61673249e",
+          "start_state_hash": "e4d716dee540e6fd424f3be707305a39d85f41cdae473305f1d6c18e939419b5",
+          "wall_contacts": 798
+        },
+        {
+          "end_state_hash": "07e23f2977984cdc36f8e91b2a6911e42dcdc55694393d7e6fc829e3f7833769",
+          "events": 1000,
+          "file": "blocks/24A/24A_037001_038000.block.tar.gz",
+          "pair_contacts": 218,
+          "range": [
+            37001,
+            38000
+          ],
+          "sha256": "ff3d6a1b8914438a49b7d006e2e3f5beab89557da938a1e468c853d42849abfe",
+          "start_state_hash": "a1ae86790c2efd39a04dc3fc5c47a40ae4792a45032af63e4bac3c7d54f94153",
+          "wall_contacts": 782
+        },
+        {
+          "end_state_hash": "dc6fbc4b8d2bae6f49baf487dac31860767858a9035358276163075f2f04e944",
+          "events": 1000,
+          "file": "blocks/24A/24A_038001_039000.block.tar.gz",
+          "pair_contacts": 203,
+          "range": [
+            38001,
+            39000
+          ],
+          "sha256": "92c53fe3066a9359d343a1b8a1cc86041290c1e0103d04a85f34a72e1b8aedf0",
+          "start_state_hash": "07e23f2977984cdc36f8e91b2a6911e42dcdc55694393d7e6fc829e3f7833769",
+          "wall_contacts": 797
+        },
+        {
+          "end_state_hash": "296d202e12314b8cc11d9a3e75f9a5901ce7b33b5d1316d59f49b7ae25e92c8c",
+          "events": 1000,
+          "file": "blocks/24A/24A_039001_040000.block.tar.gz",
+          "pair_contacts": 200,
+          "range": [
+            39001,
+            40000
+          ],
+          "sha256": "d188766d5d2628e01f14580b91a20634461a7b1404f8423ff2e66bae98dfbf63",
+          "start_state_hash": "dc6fbc4b8d2bae6f49baf487dac31860767858a9035358276163075f2f04e944",
+          "wall_contacts": 800
+        },
+        {
+          "end_state_hash": "4ca20b5c58ad59b2235ea440d4c2c3ec7b2bff378eef55a85c0ed794e774d7db",
+          "events": 1000,
+          "file": "blocks/24A/24A_040001_041000.block.tar.gz",
+          "pair_contacts": 193,
+          "range": [
+            40001,
+            41000
+          ],
+          "sha256": "6edd608770b153e74e20f0c0b6b2d1f6600bcef394e7ba907022272a6b1eada4",
+          "start_state_hash": "296d202e12314b8cc11d9a3e75f9a5901ce7b33b5d1316d59f49b7ae25e92c8c",
+          "wall_contacts": 807
+        },
+        {
+          "end_state_hash": "edf7cdac79158d3d9a885d1e096015ab6591b825e88ed8d8b4d292188d4bb15a",
+          "events": 1000,
+          "file": "blocks/24A/24A_041001_042000.block.tar.gz",
+          "pair_contacts": 214,
+          "range": [
+            41001,
+            42000
+          ],
+          "sha256": "d7bd2d7cdf46618a8ecac54973c20e0db296015056538e3062ba6a1bbc192d9b",
+          "start_state_hash": "4ca20b5c58ad59b2235ea440d4c2c3ec7b2bff378eef55a85c0ed794e774d7db",
+          "wall_contacts": 786
+        },
+        {
+          "end_state_hash": "ac378700278dd8c9843985bdce46cc0021c23ba6a06280a57e828c577d1c49be",
+          "events": 1000,
+          "file": "blocks/24A/24A_042001_043000.block.tar.gz",
+          "pair_contacts": 192,
+          "range": [
+            42001,
+            43000
+          ],
+          "sha256": "c348ba575debcdba86f158505cca691589c92c06f2bea56d69f7aed9b7aa9f28",
+          "start_state_hash": "edf7cdac79158d3d9a885d1e096015ab6591b825e88ed8d8b4d292188d4bb15a",
+          "wall_contacts": 808
+        },
+        {
+          "end_state_hash": "e59b0b68ca569458d6ad6ba8f24eca62502d8fcbd2911195793c738cb7094e5e",
+          "events": 1000,
+          "file": "blocks/24A/24A_043001_044000.block.tar.gz",
+          "pair_contacts": 205,
+          "range": [
+            43001,
+            44000
+          ],
+          "sha256": "f7508c88286c26847024126b1269095f2600c8fbd34a1d66664a274edddb1628",
+          "start_state_hash": "ac378700278dd8c9843985bdce46cc0021c23ba6a06280a57e828c577d1c49be",
+          "wall_contacts": 795
+        },
+        {
+          "end_state_hash": "7321266bf165a305961f48772116977061c50c09ad649224e8141fbb8b1fec62",
+          "events": 1000,
+          "file": "blocks/24A/24A_044001_045000.block.tar.gz",
+          "pair_contacts": 217,
+          "range": [
+            44001,
+            45000
+          ],
+          "sha256": "dd71aa334b19a4435769917533024106ee0dc54b2848c75191e764722ad1c30b",
+          "start_state_hash": "e59b0b68ca569458d6ad6ba8f24eca62502d8fcbd2911195793c738cb7094e5e",
+          "wall_contacts": 783
+        },
+        {
+          "end_state_hash": "e582e816c8181215dea5ac1a0148d6700bf4fdbe556ccf4c91cfd9f0cb141cc9",
+          "events": 1000,
+          "file": "blocks/24A/24A_045001_046000.block.tar.gz",
+          "pair_contacts": 199,
+          "range": [
+            45001,
+            46000
+          ],
+          "sha256": "8490903110e0f3aae20babc34e22b860c8b1ac922476b8eeaccfb76cab2145d4",
+          "start_state_hash": "7321266bf165a305961f48772116977061c50c09ad649224e8141fbb8b1fec62",
+          "wall_contacts": 801
+        },
+        {
+          "end_state_hash": "ed2755da8d121a7199bf011c6dd3ce785279dbd58330871033b91e46753d2736",
+          "events": 1000,
+          "file": "blocks/24A/24A_046001_047000.block.tar.gz",
+          "pair_contacts": 209,
+          "range": [
+            46001,
+            47000
+          ],
+          "sha256": "ac744bfabcda0bc757fa328869f7314cdd83d6a73a5a97599e3a82b37c46c853",
+          "start_state_hash": "e582e816c8181215dea5ac1a0148d6700bf4fdbe556ccf4c91cfd9f0cb141cc9",
+          "wall_contacts": 791
+        },
+        {
+          "end_state_hash": "e5802b794932c29d9b943b1fff7c93a79bdf066dbf5426c9d03a829712a72c28",
+          "events": 1000,
+          "file": "blocks/24A/24A_047001_048000.block.tar.gz",
+          "pair_contacts": 206,
+          "range": [
+            47001,
+            48000
+          ],
+          "sha256": "d52de35a733ef282024191caac023c8505b8a0bd5b7a74e58b28d118075a82ee",
+          "start_state_hash": "ed2755da8d121a7199bf011c6dd3ce785279dbd58330871033b91e46753d2736",
+          "wall_contacts": 794
+        },
+        {
+          "end_state_hash": "295c7d375f2569f05e51f20c0024f93c6cc3c9064bbaace9d8f8e9d15b9bdb49",
+          "events": 1000,
+          "file": "blocks/24A/24A_048001_049000.block.tar.gz",
+          "pair_contacts": 205,
+          "range": [
+            48001,
+            49000
+          ],
+          "sha256": "accbccedea11eee3086c77b5717cb10b30046563b9eaaf415eadd67e6dc64a99",
+          "start_state_hash": "e5802b794932c29d9b943b1fff7c93a79bdf066dbf5426c9d03a829712a72c28",
+          "wall_contacts": 795
+        },
+        {
+          "end_state_hash": "102035325641ea57eb275f98618e7d19211caa7190d66bd116f64258b1983cd3",
+          "events": 1000,
+          "file": "blocks/24A/24A_049001_050000.block.tar.gz",
+          "pair_contacts": 210,
+          "range": [
+            49001,
+            50000
+          ],
+          "sha256": "1f26d3ce297d20e91c08385d1fd0e78d36f9ac9d4aa9d41bdebfd1d9f7609ddb",
+          "start_state_hash": "295c7d375f2569f05e51f20c0024f93c6cc3c9064bbaace9d8f8e9d15b9bdb49",
+          "wall_contacts": 790
+        }
+      ],
+      "chain_end_state_hash": "102035325641ea57eb275f98618e7d19211caa7190d66bd116f64258b1983cd3",
+      "chain_start_state_hash": "e7f7810a6fb146049398321e06a973ef7c5886c6e921c0738c900a421b060019",
+      "coverage": {
+        "first_event": 1,
+        "last_event": 50000,
+        "total_events": 50000
+      },
+      "events_per_block": 1000,
+      "model": "24gon",
+      "polygon_sides": 24
+    },
+    "24B": {
+      "block_count": 50,
+      "blocks": [
+        {
+          "end_state_hash": "56e3e238f3ddcea238541ce524cb0fab9a771e095ff8ecb8716a91217041985b",
+          "events": 1000,
+          "file": "blocks/24B/24B_000001_001000.block.tar.gz",
+          "pair_contacts": 228,
+          "range": [
+            1,
+            1000
+          ],
+          "sha256": "b07e3145746bca0b11f2860ccff59aa4ba36a63f4c0c6583666b920213b59ea8",
+          "start_state_hash": "522b9cc4f059e7f97595d5da64341416f43deea3d466091c7a7f1779513ea14e",
+          "wall_contacts": 772
+        },
+        {
+          "end_state_hash": "8f67782a360c4b2cc45094a74c798cd7308510047205f264020a2a99e76cde0f",
+          "events": 1000,
+          "file": "blocks/24B/24B_001001_002000.block.tar.gz",
+          "pair_contacts": 186,
+          "range": [
+            1001,
+            2000
+          ],
+          "sha256": "b10520f8c7dbaca40086d29dc6a7b2185444380d0f0c84d52a89fcee46c5a9c8",
+          "start_state_hash": "56e3e238f3ddcea238541ce524cb0fab9a771e095ff8ecb8716a91217041985b",
+          "wall_contacts": 814
+        },
+        {
+          "end_state_hash": "93233585eefb54f1be960c018e75eabc69209c8e32ffcde564c8e4267ed2c852",
+          "events": 1000,
+          "file": "blocks/24B/24B_002001_003000.block.tar.gz",
+          "pair_contacts": 219,
+          "range": [
+            2001,
+            3000
+          ],
+          "sha256": "31e61af69c52d854bbb75806e980f0f2f2ee580da5f8ae69d86331b4b40a9c10",
+          "start_state_hash": "8f67782a360c4b2cc45094a74c798cd7308510047205f264020a2a99e76cde0f",
+          "wall_contacts": 781
+        },
+        {
+          "end_state_hash": "8ec0007ca583e6133e313a7d0190aa90e31538887e730ca357c70b794944cd54",
+          "events": 1000,
+          "file": "blocks/24B/24B_003001_004000.block.tar.gz",
+          "pair_contacts": 218,
+          "range": [
+            3001,
+            4000
+          ],
+          "sha256": "7433d02ea1ea8ece1ff1f0bd2450063592bebb62dea39e547d59e22d0c3a2053",
+          "start_state_hash": "93233585eefb54f1be960c018e75eabc69209c8e32ffcde564c8e4267ed2c852",
+          "wall_contacts": 782
+        },
+        {
+          "end_state_hash": "7cb97a57b3e0569205e6c5d74002fa9450081e452e757956b01d7906f7a778cd",
+          "events": 1000,
+          "file": "blocks/24B/24B_004001_005000.block.tar.gz",
+          "pair_contacts": 236,
+          "range": [
+            4001,
+            5000
+          ],
+          "sha256": "8744e3ead8add71447e264b10270fa451ace7093b51f2ff042c16d3a9c508f9f",
+          "start_state_hash": "8ec0007ca583e6133e313a7d0190aa90e31538887e730ca357c70b794944cd54",
+          "wall_contacts": 764
+        },
+        {
+          "end_state_hash": "7a2c70c5effecf4a4bb6aaacbccbaaba7a7c65d0b716a36e0f3fc7bf0b481da5",
+          "events": 1000,
+          "file": "blocks/24B/24B_005001_006000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            5001,
+            6000
+          ],
+          "sha256": "aaa0d4eefd641cee84f52a9a7fbad2bbab0d6ab680066c47c3cd197f4031da08",
+          "start_state_hash": "7cb97a57b3e0569205e6c5d74002fa9450081e452e757956b01d7906f7a778cd",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "da740336c5b0ecdc25563f8436373d6ade6d6f1d39a8f783afac82503f0e3b0d",
+          "events": 1000,
+          "file": "blocks/24B/24B_006001_007000.block.tar.gz",
+          "pair_contacts": 209,
+          "range": [
+            6001,
+            7000
+          ],
+          "sha256": "9dbb234699844f0bd3cf5e6976ed9f5a3a619122b0c62a474b91eddaf56fb605",
+          "start_state_hash": "7a2c70c5effecf4a4bb6aaacbccbaaba7a7c65d0b716a36e0f3fc7bf0b481da5",
+          "wall_contacts": 791
+        },
+        {
+          "end_state_hash": "2561a53ea43bda001094c757f87f2e8b69efafc4df54624c5d9ae472759255cc",
+          "events": 1000,
+          "file": "blocks/24B/24B_007001_008000.block.tar.gz",
+          "pair_contacts": 221,
+          "range": [
+            7001,
+            8000
+          ],
+          "sha256": "8f5ec3b359bad884349ec2e78a0bde0f57084ff843f768ce3a847ab01738c9ad",
+          "start_state_hash": "da740336c5b0ecdc25563f8436373d6ade6d6f1d39a8f783afac82503f0e3b0d",
+          "wall_contacts": 779
+        },
+        {
+          "end_state_hash": "53a86752b8c73bafa04bb127dec5deb1de87b306944cf1d2619e4535d3df8207",
+          "events": 1000,
+          "file": "blocks/24B/24B_008001_009000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            8001,
+            9000
+          ],
+          "sha256": "bcae741e85462a0b95198348f16a8d0930016006d03dbb4a36d8d3ecb87d3cdb",
+          "start_state_hash": "2561a53ea43bda001094c757f87f2e8b69efafc4df54624c5d9ae472759255cc",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "4b9929346f8ef50b4f0485f93accbc87d7174766083e1b79586e859611f4b9ac",
+          "events": 1000,
+          "file": "blocks/24B/24B_009001_010000.block.tar.gz",
+          "pair_contacts": 220,
+          "range": [
+            9001,
+            10000
+          ],
+          "sha256": "33f1ada91c3b4f545602d8bd39cfa25bc3b738d71fd9f4fd82cf0b86dbb72ba6",
+          "start_state_hash": "53a86752b8c73bafa04bb127dec5deb1de87b306944cf1d2619e4535d3df8207",
+          "wall_contacts": 780
+        },
+        {
+          "end_state_hash": "2ae8a2b0d2122a0c2ab0c3f7ed978ef7ca53d7c45e5c55ff22e5ca6fe6ed9ef8",
+          "events": 1000,
+          "file": "blocks/24B/24B_010001_011000.block.tar.gz",
+          "pair_contacts": 215,
+          "range": [
+            10001,
+            11000
+          ],
+          "sha256": "b2566d041dbf5f59732de32865bddd5786c48c4a376da4d2bea5ee9d72dfaf22",
+          "start_state_hash": "4b9929346f8ef50b4f0485f93accbc87d7174766083e1b79586e859611f4b9ac",
+          "wall_contacts": 785
+        },
+        {
+          "end_state_hash": "7d1d1f56da22d38780d1afdc122d1928a7fa13c7b6f17fb0cd600b5c43a285dd",
+          "events": 1000,
+          "file": "blocks/24B/24B_011001_012000.block.tar.gz",
+          "pair_contacts": 226,
+          "range": [
+            11001,
+            12000
+          ],
+          "sha256": "4609e0bee65eb29dbd7edaa664f0ff78bf33dbd9d501d18eb5efa4acecbbbbee",
+          "start_state_hash": "2ae8a2b0d2122a0c2ab0c3f7ed978ef7ca53d7c45e5c55ff22e5ca6fe6ed9ef8",
+          "wall_contacts": 774
+        },
+        {
+          "end_state_hash": "f872b386c63692b54f31d0bc90eb1721813d7eeff65c93fc8feba76d4aabbe30",
+          "events": 1000,
+          "file": "blocks/24B/24B_012001_013000.block.tar.gz",
+          "pair_contacts": 208,
+          "range": [
+            12001,
+            13000
+          ],
+          "sha256": "466ba5eb544d09bdb72d129e034ae2ac47960559fec34fb1221765f4d0123ffa",
+          "start_state_hash": "7d1d1f56da22d38780d1afdc122d1928a7fa13c7b6f17fb0cd600b5c43a285dd",
+          "wall_contacts": 792
+        },
+        {
+          "end_state_hash": "ebd5005ade3a801cbb81cab0006d6d525faef2d9b45410ac10446208916c6a7d",
+          "events": 1000,
+          "file": "blocks/24B/24B_013001_014000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            13001,
+            14000
+          ],
+          "sha256": "201bd17c0f8b3ec2c2ecbc8079ff64ad0493af7e387980da7fef2d7de0f553f1",
+          "start_state_hash": "f872b386c63692b54f31d0bc90eb1721813d7eeff65c93fc8feba76d4aabbe30",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "d47ff4b66f8d1c9999a6448b9af3880b6c214bf4839c1a2b3de743ab796ba9c8",
+          "events": 1000,
+          "file": "blocks/24B/24B_014001_015000.block.tar.gz",
+          "pair_contacts": 210,
+          "range": [
+            14001,
+            15000
+          ],
+          "sha256": "b63ae4ed5032c710ca7773ef454c40fdff7a4f2820870fe55f9048102822a5c2",
+          "start_state_hash": "ebd5005ade3a801cbb81cab0006d6d525faef2d9b45410ac10446208916c6a7d",
+          "wall_contacts": 790
+        },
+        {
+          "end_state_hash": "4f7b7d8497eaa8f907de820f3df68d8dd21589176d474d0d168a8c030c38dd92",
+          "events": 1000,
+          "file": "blocks/24B/24B_015001_016000.block.tar.gz",
+          "pair_contacts": 222,
+          "range": [
+            15001,
+            16000
+          ],
+          "sha256": "20b16ae9ea08ebf2f3c1523f53f6a31330661c797b4a9b63d6c96e0eaff66f29",
+          "start_state_hash": "d47ff4b66f8d1c9999a6448b9af3880b6c214bf4839c1a2b3de743ab796ba9c8",
+          "wall_contacts": 778
+        },
+        {
+          "end_state_hash": "b4667534fb0fdc3e4318fa7ff1fecf5c45487e7a8fc9b56e3a7cdee705f31f72",
+          "events": 1000,
+          "file": "blocks/24B/24B_016001_017000.block.tar.gz",
+          "pair_contacts": 199,
+          "range": [
+            16001,
+            17000
+          ],
+          "sha256": "d80963f9fd87258df9d917c4025058ae3131a63f1599782774bd96958c2c1e45",
+          "start_state_hash": "4f7b7d8497eaa8f907de820f3df68d8dd21589176d474d0d168a8c030c38dd92",
+          "wall_contacts": 801
+        },
+        {
+          "end_state_hash": "6efb99299e65d2481a70b40c483540ce23815742cc698d78dace17e182abef12",
+          "events": 1000,
+          "file": "blocks/24B/24B_017001_018000.block.tar.gz",
+          "pair_contacts": 213,
+          "range": [
+            17001,
+            18000
+          ],
+          "sha256": "120a2452d833778022e39f3efed28e8b0f9b200a361cf0a921ef09285fb0b7ca",
+          "start_state_hash": "b4667534fb0fdc3e4318fa7ff1fecf5c45487e7a8fc9b56e3a7cdee705f31f72",
+          "wall_contacts": 787
+        },
+        {
+          "end_state_hash": "a6e3b33b07143fd98ee9427bf398195b1b83ccf1f07630d67a2fc76a4028d100",
+          "events": 1000,
+          "file": "blocks/24B/24B_018001_019000.block.tar.gz",
+          "pair_contacts": 233,
+          "range": [
+            18001,
+            19000
+          ],
+          "sha256": "f70bf9b36a05a2739c919d41058c80b2bc0d2e1b5a7b1573d0ab8daa83602340",
+          "start_state_hash": "6efb99299e65d2481a70b40c483540ce23815742cc698d78dace17e182abef12",
+          "wall_contacts": 767
+        },
+        {
+          "end_state_hash": "ad93446ad55e4a11b91246660f1b877c434aca29d22bef24196b1e3e257fb4a6",
+          "events": 1000,
+          "file": "blocks/24B/24B_019001_020000.block.tar.gz",
+          "pair_contacts": 200,
+          "range": [
+            19001,
+            20000
+          ],
+          "sha256": "bacf80e5b46da611e61316ebcefa2d3ddac0907e691455f85462ad257b08a6bb",
+          "start_state_hash": "a6e3b33b07143fd98ee9427bf398195b1b83ccf1f07630d67a2fc76a4028d100",
+          "wall_contacts": 800
+        },
+        {
+          "end_state_hash": "a6ed12e713b68d125471a38d00b2a8ed0fefcc98bc2f42e58b573d45b94b01c8",
+          "events": 1000,
+          "file": "blocks/24B/24B_020001_021000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            20001,
+            21000
+          ],
+          "sha256": "df97ea032caf35e30f7d958bd6f25464d0bb926479534df8f04cee1d44f53ea5",
+          "start_state_hash": "ad93446ad55e4a11b91246660f1b877c434aca29d22bef24196b1e3e257fb4a6",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "7559dfe0a9fe27dd5f65aca9b84c3acde45fa1796096ecd05bd3d45794df96f4",
+          "events": 1000,
+          "file": "blocks/24B/24B_021001_022000.block.tar.gz",
+          "pair_contacts": 215,
+          "range": [
+            21001,
+            22000
+          ],
+          "sha256": "01a1278e25d2d31fd4e4aa074c183343b5ed83cb7e4002dc031faea21b494b8a",
+          "start_state_hash": "a6ed12e713b68d125471a38d00b2a8ed0fefcc98bc2f42e58b573d45b94b01c8",
+          "wall_contacts": 785
+        },
+        {
+          "end_state_hash": "384ac81a3d2987ab87b7b78105e1694031fbcd5dbfee8a02ea4ce8d5261767d7",
+          "events": 1000,
+          "file": "blocks/24B/24B_022001_023000.block.tar.gz",
+          "pair_contacts": 232,
+          "range": [
+            22001,
+            23000
+          ],
+          "sha256": "bceb65996ff8538618b4d38004b02e56ce25bb4fb01e4db49922f60280a0609f",
+          "start_state_hash": "7559dfe0a9fe27dd5f65aca9b84c3acde45fa1796096ecd05bd3d45794df96f4",
+          "wall_contacts": 768
+        },
+        {
+          "end_state_hash": "d7c3fa33dd0630600852adfd710fe2354859b0148fd7735fc2861b3b1d5552db",
+          "events": 1000,
+          "file": "blocks/24B/24B_023001_024000.block.tar.gz",
+          "pair_contacts": 201,
+          "range": [
+            23001,
+            24000
+          ],
+          "sha256": "bc1c25df0e93bf9c03978df69abaeebe475fc58e726e7119ee91a51c3c090ff6",
+          "start_state_hash": "384ac81a3d2987ab87b7b78105e1694031fbcd5dbfee8a02ea4ce8d5261767d7",
+          "wall_contacts": 799
+        },
+        {
+          "end_state_hash": "1cfdd5cef549fd0dd3a3a33f644a2b06bd30b275c001999714f5cad8d738d22a",
+          "events": 1000,
+          "file": "blocks/24B/24B_024001_025000.block.tar.gz",
+          "pair_contacts": 231,
+          "range": [
+            24001,
+            25000
+          ],
+          "sha256": "9a620bbad77d14ed6aa31bd9e1637a76f08f6cb15e4693d49d0afaa21cd72330",
+          "start_state_hash": "d7c3fa33dd0630600852adfd710fe2354859b0148fd7735fc2861b3b1d5552db",
+          "wall_contacts": 769
+        },
+        {
+          "end_state_hash": "d2045121197925893db1ea64a18ac3231299695db33000ceb780730f41125a3e",
+          "events": 1000,
+          "file": "blocks/24B/24B_025001_026000.block.tar.gz",
+          "pair_contacts": 208,
+          "range": [
+            25001,
+            26000
+          ],
+          "sha256": "82e4231b6a5d68e035a27ad53b64fb69b13461700c2552c1d32d46a8d290e895",
+          "start_state_hash": "1cfdd5cef549fd0dd3a3a33f644a2b06bd30b275c001999714f5cad8d738d22a",
+          "wall_contacts": 792
+        },
+        {
+          "end_state_hash": "e2c82eec6433d1051363aa3e207c09edd3d3113e4f2aca0071c9bf98cde830d1",
+          "events": 1000,
+          "file": "blocks/24B/24B_026001_027000.block.tar.gz",
+          "pair_contacts": 197,
+          "range": [
+            26001,
+            27000
+          ],
+          "sha256": "44ac42e5bc5e3a7f4987c7f4adfceaa8cc80644319de63bf357e0f0cc75e24a5",
+          "start_state_hash": "d2045121197925893db1ea64a18ac3231299695db33000ceb780730f41125a3e",
+          "wall_contacts": 803
+        },
+        {
+          "end_state_hash": "c881341c596cb9dd524bacf18e7779d1a0c6038970294c549c2da15f17c24bad",
+          "events": 1000,
+          "file": "blocks/24B/24B_027001_028000.block.tar.gz",
+          "pair_contacts": 229,
+          "range": [
+            27001,
+            28000
+          ],
+          "sha256": "80c3d857a284ac7db61ab3e05666563bfe6ee6c995d91d46e9aa1345581c9e07",
+          "start_state_hash": "e2c82eec6433d1051363aa3e207c09edd3d3113e4f2aca0071c9bf98cde830d1",
+          "wall_contacts": 771
+        },
+        {
+          "end_state_hash": "0190b0f6d5d7248e07edb7399a375bd1262eb3251d819a43ef5f4cb49a167793",
+          "events": 1000,
+          "file": "blocks/24B/24B_028001_029000.block.tar.gz",
+          "pair_contacts": 219,
+          "range": [
+            28001,
+            29000
+          ],
+          "sha256": "e03bb9e18ed447f559904834127e023310e6a6550eca1656c17bcc4a3a6af153",
+          "start_state_hash": "c881341c596cb9dd524bacf18e7779d1a0c6038970294c549c2da15f17c24bad",
+          "wall_contacts": 781
+        },
+        {
+          "end_state_hash": "c07eab0de9dc20982726f40a968e85707f277d7299860015ec23c7fa614fbf60",
+          "events": 1000,
+          "file": "blocks/24B/24B_029001_030000.block.tar.gz",
+          "pair_contacts": 218,
+          "range": [
+            29001,
+            30000
+          ],
+          "sha256": "07adf546c991f8a34cb874ecdc40a4cac0abeea599ec3e8df127a310af2e7950",
+          "start_state_hash": "0190b0f6d5d7248e07edb7399a375bd1262eb3251d819a43ef5f4cb49a167793",
+          "wall_contacts": 782
+        },
+        {
+          "end_state_hash": "9704e947e2fc773604207008cbb9d175e8a861045725951d5932085a3a8a2075",
+          "events": 1000,
+          "file": "blocks/24B/24B_030001_031000.block.tar.gz",
+          "pair_contacts": 191,
+          "range": [
+            30001,
+            31000
+          ],
+          "sha256": "8d029980ad867805bb1b93c7d246f96d2fd009916a7f70255a7e7c726bab6717",
+          "start_state_hash": "c07eab0de9dc20982726f40a968e85707f277d7299860015ec23c7fa614fbf60",
+          "wall_contacts": 809
+        },
+        {
+          "end_state_hash": "5b309bde8a2b3f20f46cd2b7774b84e78b01d5ef1f76c48576cb80cb3de4d8c5",
+          "events": 1000,
+          "file": "blocks/24B/24B_031001_032000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            31001,
+            32000
+          ],
+          "sha256": "8c91b71f17282af4e82b4b949b11f511336ec3b553f659f9bfaee1cd55fb8ab1",
+          "start_state_hash": "9704e947e2fc773604207008cbb9d175e8a861045725951d5932085a3a8a2075",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "49c92cf3941267512e51b42fdb8b20766cef1ff53182c3a7cff6bdfd6667512d",
+          "events": 1000,
+          "file": "blocks/24B/24B_032001_033000.block.tar.gz",
+          "pair_contacts": 216,
+          "range": [
+            32001,
+            33000
+          ],
+          "sha256": "e7d39b03c2dc2f57ccf45be647440d367f3e4f322d844929e4a038a8ab978093",
+          "start_state_hash": "5b309bde8a2b3f20f46cd2b7774b84e78b01d5ef1f76c48576cb80cb3de4d8c5",
+          "wall_contacts": 784
+        },
+        {
+          "end_state_hash": "82fcb4b58b0be810303cb8c3b612d92d90614ce8941a52822bfc61018b30e756",
+          "events": 1000,
+          "file": "blocks/24B/24B_033001_034000.block.tar.gz",
+          "pair_contacts": 202,
+          "range": [
+            33001,
+            34000
+          ],
+          "sha256": "fca3ed6d9d195591c96452a2fbd5232d1d7f4ab0747cf82d7b232e9864aef0e6",
+          "start_state_hash": "49c92cf3941267512e51b42fdb8b20766cef1ff53182c3a7cff6bdfd6667512d",
+          "wall_contacts": 798
+        },
+        {
+          "end_state_hash": "94fb06d03f3f6b0e6eb023e1b8c97beb143b7e17b26603461ab318b388146eb7",
+          "events": 1000,
+          "file": "blocks/24B/24B_034001_035000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            34001,
+            35000
+          ],
+          "sha256": "c0aa09c6e0152701e1ad9446cd440d25d6a24f65c961aaaeda06eb208f9060a2",
+          "start_state_hash": "82fcb4b58b0be810303cb8c3b612d92d90614ce8941a52822bfc61018b30e756",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "f7e9c309aae5f7b78027ab9498ae4cd9a7a09270a40b26f7c63599e3e6ac13b2",
+          "events": 1000,
+          "file": "blocks/24B/24B_035001_036000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            35001,
+            36000
+          ],
+          "sha256": "ceef9c660e8cc9d6aa262dfb3e7ce8aba73cf5f32e314a1a7dd9f76db255f9f5",
+          "start_state_hash": "94fb06d03f3f6b0e6eb023e1b8c97beb143b7e17b26603461ab318b388146eb7",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "ef5ad23c23be6328cbcf4179b2aa7b6a44fe122eb446a6a5167d7ca85ff7ab56",
+          "events": 1000,
+          "file": "blocks/24B/24B_036001_037000.block.tar.gz",
+          "pair_contacts": 201,
+          "range": [
+            36001,
+            37000
+          ],
+          "sha256": "ac02b120132ab965b9c18fcd5cd5718bfb703ac4bd5415fc074cb9fbff050e99",
+          "start_state_hash": "f7e9c309aae5f7b78027ab9498ae4cd9a7a09270a40b26f7c63599e3e6ac13b2",
+          "wall_contacts": 799
+        },
+        {
+          "end_state_hash": "4133ce6e9afdd1a9078b657c5d684f1fcca026919f34c018014f1d9a786ca209",
+          "events": 1000,
+          "file": "blocks/24B/24B_037001_038000.block.tar.gz",
+          "pair_contacts": 218,
+          "range": [
+            37001,
+            38000
+          ],
+          "sha256": "d0b7ec097e47e61b1c7c72739e62fd3e34d3a7028bddd6ccb749cbeb9d07f434",
+          "start_state_hash": "ef5ad23c23be6328cbcf4179b2aa7b6a44fe122eb446a6a5167d7ca85ff7ab56",
+          "wall_contacts": 782
+        },
+        {
+          "end_state_hash": "47e86b853be850bee773c78fc650b7869625528fe9acf4b49a3b12f4d9d1f8fc",
+          "events": 1000,
+          "file": "blocks/24B/24B_038001_039000.block.tar.gz",
+          "pair_contacts": 204,
+          "range": [
+            38001,
+            39000
+          ],
+          "sha256": "263228d6d317ccbc41c6aff8ce28f3fda5ad113c8816439b54f7bf6079bc146a",
+          "start_state_hash": "4133ce6e9afdd1a9078b657c5d684f1fcca026919f34c018014f1d9a786ca209",
+          "wall_contacts": 796
+        },
+        {
+          "end_state_hash": "6dbf81810e2dccc251cefe99850246d377a0af83af2b3a3adef4d10b77414b7d",
+          "events": 1000,
+          "file": "blocks/24B/24B_039001_040000.block.tar.gz",
+          "pair_contacts": 200,
+          "range": [
+            39001,
+            40000
+          ],
+          "sha256": "7a834d41540942673c6046c48497b8e44a40374a4d0c20ca881c074b9bd837c6",
+          "start_state_hash": "47e86b853be850bee773c78fc650b7869625528fe9acf4b49a3b12f4d9d1f8fc",
+          "wall_contacts": 800
+        },
+        {
+          "end_state_hash": "a47f7c89ad7e0b1a9930ad63356892a2a56ab4f68f2d9275d0a3a88dd5a66899",
+          "events": 1000,
+          "file": "blocks/24B/24B_040001_041000.block.tar.gz",
+          "pair_contacts": 193,
+          "range": [
+            40001,
+            41000
+          ],
+          "sha256": "6be76d661c7035213f169a868888803ba78d6be1153aed6d9e7b9925ebd949c2",
+          "start_state_hash": "6dbf81810e2dccc251cefe99850246d377a0af83af2b3a3adef4d10b77414b7d",
+          "wall_contacts": 807
+        },
+        {
+          "end_state_hash": "c8b1e9cc225665ea4d8094d7bdf80e2295091dd1b2ae93ef83e08501d829637a",
+          "events": 1000,
+          "file": "blocks/24B/24B_041001_042000.block.tar.gz",
+          "pair_contacts": 213,
+          "range": [
+            41001,
+            42000
+          ],
+          "sha256": "6af799133b40f2e15545ce98f97735371d92520d954ec5df794fd1d55588a735",
+          "start_state_hash": "a47f7c89ad7e0b1a9930ad63356892a2a56ab4f68f2d9275d0a3a88dd5a66899",
+          "wall_contacts": 787
+        },
+        {
+          "end_state_hash": "3fc964f92c3e6ea1698c3914266a99bcac109d8178c453ac7b7db2378801f3c3",
+          "events": 1000,
+          "file": "blocks/24B/24B_042001_043000.block.tar.gz",
+          "pair_contacts": 193,
+          "range": [
+            42001,
+            43000
+          ],
+          "sha256": "5e1d15af67d84f5201355db2667f557f68b6f8def0e65482c8bc1e6b790ce8e3",
+          "start_state_hash": "c8b1e9cc225665ea4d8094d7bdf80e2295091dd1b2ae93ef83e08501d829637a",
+          "wall_contacts": 807
+        },
+        {
+          "end_state_hash": "6cf6df49a8223d8efe1c42cb29488e9939d0288c86a2b9b75d0e915ba07169d9",
+          "events": 1000,
+          "file": "blocks/24B/24B_043001_044000.block.tar.gz",
+          "pair_contacts": 205,
+          "range": [
+            43001,
+            44000
+          ],
+          "sha256": "d8a47bac1e8729ce8c5af2486dfe5cf36d1cb17383368a582ffac67f785770c3",
+          "start_state_hash": "3fc964f92c3e6ea1698c3914266a99bcac109d8178c453ac7b7db2378801f3c3",
+          "wall_contacts": 795
+        },
+        {
+          "end_state_hash": "a974437b5e3c73edcb6b5d0e14a307c32f62a343a71423a8e5586a2cd8f887d2",
+          "events": 1000,
+          "file": "blocks/24B/24B_044001_045000.block.tar.gz",
+          "pair_contacts": 217,
+          "range": [
+            44001,
+            45000
+          ],
+          "sha256": "10cc453f4156434975324578e7bfea5cb79d31edaa12757408eef86e7a6d1cab",
+          "start_state_hash": "6cf6df49a8223d8efe1c42cb29488e9939d0288c86a2b9b75d0e915ba07169d9",
+          "wall_contacts": 783
+        },
+        {
+          "end_state_hash": "43dcd79a5957833aedae029ca5b2d48fc5c453e3c1609f543473da81f5811cc5",
+          "events": 1000,
+          "file": "blocks/24B/24B_045001_046000.block.tar.gz",
+          "pair_contacts": 198,
+          "range": [
+            45001,
+            46000
+          ],
+          "sha256": "3bc545dc085b927870d3f14a9bbbec55888cd7c258e28e36e4baa619c8063364",
+          "start_state_hash": "a974437b5e3c73edcb6b5d0e14a307c32f62a343a71423a8e5586a2cd8f887d2",
+          "wall_contacts": 802
+        },
+        {
+          "end_state_hash": "a117b9e37ccee235675450f3493003a99b6e1a3903d448b1b0253c021ba29965",
+          "events": 1000,
+          "file": "blocks/24B/24B_046001_047000.block.tar.gz",
+          "pair_contacts": 210,
+          "range": [
+            46001,
+            47000
+          ],
+          "sha256": "9d522a9d3a46e7a20309daee1e4d84b2f4ba6752e5e0a09437cbeef7a230ee81",
+          "start_state_hash": "43dcd79a5957833aedae029ca5b2d48fc5c453e3c1609f543473da81f5811cc5",
+          "wall_contacts": 790
+        },
+        {
+          "end_state_hash": "81c3b73204740febe7ea1845458def0e08851d3949abe1e434714dedf370a34d",
+          "events": 1000,
+          "file": "blocks/24B/24B_047001_048000.block.tar.gz",
+          "pair_contacts": 206,
+          "range": [
+            47001,
+            48000
+          ],
+          "sha256": "e05ca36dfd8a43dcaf5b5f6d1a15402d726df2fd506992ff8f77fcb588711f87",
+          "start_state_hash": "a117b9e37ccee235675450f3493003a99b6e1a3903d448b1b0253c021ba29965",
+          "wall_contacts": 794
+        },
+        {
+          "end_state_hash": "3552162a3c41c80062c42feea8d8499ee9e771c6cca9315886378eb02bf3323c",
+          "events": 1000,
+          "file": "blocks/24B/24B_048001_049000.block.tar.gz",
+          "pair_contacts": 205,
+          "range": [
+            48001,
+            49000
+          ],
+          "sha256": "b76bb6a643b324ae526d50c66e5345e285bdc91e213cf4f6a3bdaad45407ccbb",
+          "start_state_hash": "81c3b73204740febe7ea1845458def0e08851d3949abe1e434714dedf370a34d",
+          "wall_contacts": 795
+        },
+        {
+          "end_state_hash": "666d56139c8b0e67df515ad817670f0a8d84d9f707e8fb21797f3bc5185a29aa",
+          "events": 1000,
+          "file": "blocks/24B/24B_049001_050000.block.tar.gz",
+          "pair_contacts": 209,
+          "range": [
+            49001,
+            50000
+          ],
+          "sha256": "d9873ca8a67750a18a857a09db7cc6590e4a20b5f39154b6a0270929dc38bc3b",
+          "start_state_hash": "3552162a3c41c80062c42feea8d8499ee9e771c6cca9315886378eb02bf3323c",
+          "wall_contacts": 791
+        }
+      ],
+      "chain_end_state_hash": "666d56139c8b0e67df515ad817670f0a8d84d9f707e8fb21797f3bc5185a29aa",
+      "chain_start_state_hash": "522b9cc4f059e7f97595d5da64341416f43deea3d466091c7a7f1779513ea14e",
+      "coverage": {
+        "first_event": 1,
+        "last_event": 50000,
+        "total_events": 50000
+      },
+      "events_per_block": 1000,
+      "model": "24gon",
+      "polygon_sides": 24
+    },
+    "d12": {
+      "block_count": 50,
+      "blocks": [
+        {
+          "end_state_hash": "ce383665b17da2893a81274e3d8beb024262d77060e4aa13e3e96a34a83db766",
+          "events": 1000,
+          "file": "blocks/d12/d12_000001_001000.block.tar.gz",
+          "pair_contacts": 211,
+          "range": [
+            1,
+            1000
+          ],
+          "sha256": "c9a7f43a53eebd4cdc310dc448925adc88af9c811f31f12ffa5cfeabd394b447",
+          "start_state_hash": "d3fd22e52dc4bf541308a19634b617d799f2f8ee6043d81a037f213e0e66591d",
+          "wall_contacts": 789
+        },
+        {
+          "end_state_hash": "ef2a687f8d0c5ca8b15e9a60648d304d79e006588d77b2d77877fc28b212041b",
+          "events": 1000,
+          "file": "blocks/d12/d12_001001_002000.block.tar.gz",
+          "pair_contacts": 206,
+          "range": [
+            1001,
+            2000
+          ],
+          "sha256": "4914ad979761eca4b213035a07224d341b5fdc1ba51f0db0bb7d548ddff34898",
+          "start_state_hash": "ce383665b17da2893a81274e3d8beb024262d77060e4aa13e3e96a34a83db766",
+          "wall_contacts": 794
+        },
+        {
+          "end_state_hash": "4c4879eb2524a1df305a4e352ea0560f95b5425f4b8dd1c5b222fc36f1a60363",
+          "events": 1000,
+          "file": "blocks/d12/d12_002001_003000.block.tar.gz",
+          "pair_contacts": 220,
+          "range": [
+            2001,
+            3000
+          ],
+          "sha256": "2ac854404ed0e0dd7437d6640ac7ab54dc006cee2b44f1c274d26ddb0ec1a713",
+          "start_state_hash": "ef2a687f8d0c5ca8b15e9a60648d304d79e006588d77b2d77877fc28b212041b",
+          "wall_contacts": 780
+        },
+        {
+          "end_state_hash": "1ec0c07c60a100a2e8e9ac5106973731c69b3a0edc3ef8429fd8ce79b2ee77f3",
+          "events": 1000,
+          "file": "blocks/d12/d12_003001_004000.block.tar.gz",
+          "pair_contacts": 200,
+          "range": [
+            3001,
+            4000
+          ],
+          "sha256": "8b997704bf2e9488e9230ccf178be619cf5e74c51f2aa9029a330480d0727bcb",
+          "start_state_hash": "4c4879eb2524a1df305a4e352ea0560f95b5425f4b8dd1c5b222fc36f1a60363",
+          "wall_contacts": 800
+        },
+        {
+          "end_state_hash": "74d42d75793584a0713a0372c5e1514bd222a21626a58f58b3578a84c5d7ef5f",
+          "events": 1000,
+          "file": "blocks/d12/d12_004001_005000.block.tar.gz",
+          "pair_contacts": 204,
+          "range": [
+            4001,
+            5000
+          ],
+          "sha256": "ae4e948649ec135b11180b3654651496c962412d62679cd890408a11041cdfe0",
+          "start_state_hash": "1ec0c07c60a100a2e8e9ac5106973731c69b3a0edc3ef8429fd8ce79b2ee77f3",
+          "wall_contacts": 796
+        },
+        {
+          "end_state_hash": "4b98ef71e3676e86ba59c20a9dfcb0622fed7fb63d37f26f6f4a9ac3e1e089d7",
+          "events": 1000,
+          "file": "blocks/d12/d12_005001_006000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            5001,
+            6000
+          ],
+          "sha256": "b5852e872b6e0154bfcd5080d13ceb0339c51d2dd988745f1914c18556b46f8c",
+          "start_state_hash": "74d42d75793584a0713a0372c5e1514bd222a21626a58f58b3578a84c5d7ef5f",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "7f4fc59ea9f9162fad84204d465a87f20c3e2f69e194e9600b04deebe7971f22",
+          "events": 1000,
+          "file": "blocks/d12/d12_006001_007000.block.tar.gz",
+          "pair_contacts": 214,
+          "range": [
+            6001,
+            7000
+          ],
+          "sha256": "97e1d672a74d7788aba14fa08caa896c0d6865dad949dedf4466c470f9fe7973",
+          "start_state_hash": "4b98ef71e3676e86ba59c20a9dfcb0622fed7fb63d37f26f6f4a9ac3e1e089d7",
+          "wall_contacts": 786
+        },
+        {
+          "end_state_hash": "e875177e874f625c0cfe58da3b340599100aed1edc2ff05a485e8cb0b8ac6f9f",
+          "events": 1000,
+          "file": "blocks/d12/d12_007001_008000.block.tar.gz",
+          "pair_contacts": 217,
+          "range": [
+            7001,
+            8000
+          ],
+          "sha256": "91271848af906dd650a8500a973daaadb7b463ae03cc2bb6871023be9c8cc450",
+          "start_state_hash": "7f4fc59ea9f9162fad84204d465a87f20c3e2f69e194e9600b04deebe7971f22",
+          "wall_contacts": 783
+        },
+        {
+          "end_state_hash": "6e558cdef03ba6c63f53ff1608c0019f7eb69ef558c948cf3227dc781e96d894",
+          "events": 1000,
+          "file": "blocks/d12/d12_008001_009000.block.tar.gz",
+          "pair_contacts": 205,
+          "range": [
+            8001,
+            9000
+          ],
+          "sha256": "22be33f59fb187b0d8bbf0eef40d26f02c9bbc83e70797d8f70a0ba45576cb2f",
+          "start_state_hash": "e875177e874f625c0cfe58da3b340599100aed1edc2ff05a485e8cb0b8ac6f9f",
+          "wall_contacts": 795
+        },
+        {
+          "end_state_hash": "c33418a6f4ae8d1bf90a881d1d385796cf376825433f350eda2cb808a9f92264",
+          "events": 1000,
+          "file": "blocks/d12/d12_009001_010000.block.tar.gz",
+          "pair_contacts": 212,
+          "range": [
+            9001,
+            10000
+          ],
+          "sha256": "1536b3ba2eb08531d08817826e2b382d923fdc5fb509e400a4c13ca60a312718",
+          "start_state_hash": "6e558cdef03ba6c63f53ff1608c0019f7eb69ef558c948cf3227dc781e96d894",
+          "wall_contacts": 788
+        },
+        {
+          "end_state_hash": "c2f6f82f8546af68b82de3078154df95b053d0cbed3e012dd7ed5f7f8d2d94e7",
+          "events": 1000,
+          "file": "blocks/d12/d12_010001_011000.block.tar.gz",
+          "pair_contacts": 231,
+          "range": [
+            10001,
+            11000
+          ],
+          "sha256": "6375d266468f6c15ee90d0d629213452632d6d02381b21f3f2d8ffba8980ec3d",
+          "start_state_hash": "c33418a6f4ae8d1bf90a881d1d385796cf376825433f350eda2cb808a9f92264",
+          "wall_contacts": 769
+        },
+        {
+          "end_state_hash": "67db61334a3487ea12a610d74c78de1a4b77fe8b8ba7a07b832ca4cd75735039",
+          "events": 1000,
+          "file": "blocks/d12/d12_011001_012000.block.tar.gz",
+          "pair_contacts": 207,
+          "range": [
+            11001,
+            12000
+          ],
+          "sha256": "766575c7fcd25424c458b62ea355dabc66d3b4d0c57c3922d336e4027421f5c1",
+          "start_state_hash": "c2f6f82f8546af68b82de3078154df95b053d0cbed3e012dd7ed5f7f8d2d94e7",
+          "wall_contacts": 793
+        },
+        {
+          "end_state_hash": "514498734255eac0d2de5bbfd5a1b0b8d432be1e456a7d6277c72f59790515b3",
+          "events": 1000,
+          "file": "blocks/d12/d12_012001_013000.block.tar.gz",
+          "pair_contacts": 201,
+          "range": [
+            12001,
+            13000
+          ],
+          "sha256": "23934e87efc906b33dd62b857e6fd5cf7dfeac7d343361666d3021163aa2f4cb",
+          "start_state_hash": "67db61334a3487ea12a610d74c78de1a4b77fe8b8ba7a07b832ca4cd75735039",
+          "wall_contacts": 799
+        },
+        {
+          "end_state_hash": "990ac4260e4e348732171b2f09db4ba7397fb748db6fa9dc8597f72c5dc1b07e",
+          "events": 1000,
+          "file": "blocks/d12/d12_013001_014000.block.tar.gz",
+          "pair_contacts": 221,
+          "range": [
+            13001,
+            14000
+          ],
+          "sha256": "460f873e4fa503fd855984c9ad369b42724658a317328cbe679ac67fa9fcaccf",
+          "start_state_hash": "514498734255eac0d2de5bbfd5a1b0b8d432be1e456a7d6277c72f59790515b3",
+          "wall_contacts": 779
+        },
+        {
+          "end_state_hash": "220397ce8b9e8c23846b3feebba1521724662f5481dcde06e4139d300181291a",
+          "events": 1000,
+          "file": "blocks/d12/d12_014001_015000.block.tar.gz",
+          "pair_contacts": 189,
+          "range": [
+            14001,
+            15000
+          ],
+          "sha256": "8f7ef8fbbc99378e20d4671df43b813a4d32bc2fe345a6a8749e1bf1809fbde7",
+          "start_state_hash": "990ac4260e4e348732171b2f09db4ba7397fb748db6fa9dc8597f72c5dc1b07e",
+          "wall_contacts": 811
+        },
+        {
+          "end_state_hash": "2b3208cbd413b4cbbc35ae72036b1e190338a01780dc1979ac6ff614ee7db343",
+          "events": 1000,
+          "file": "blocks/d12/d12_015001_016000.block.tar.gz",
+          "pair_contacts": 203,
+          "range": [
+            15001,
+            16000
+          ],
+          "sha256": "f16ecdac4eefa7101b83f57404fcd56dd61f97bbe8eeb48dc0f3d42660478cae",
+          "start_state_hash": "220397ce8b9e8c23846b3feebba1521724662f5481dcde06e4139d300181291a",
+          "wall_contacts": 797
+        },
+        {
+          "end_state_hash": "f4da148142a1751c6f8120bb836de83c89f425bb523aac20bf0b8411ff742ab0",
+          "events": 1000,
+          "file": "blocks/d12/d12_016001_017000.block.tar.gz",
+          "pair_contacts": 217,
+          "range": [
+            16001,
+            17000
+          ],
+          "sha256": "73196591c3f84bd973d5c7b6f1a74e2cbef72e2f3c306e33ac0ad7e3c384d96f",
+          "start_state_hash": "2b3208cbd413b4cbbc35ae72036b1e190338a01780dc1979ac6ff614ee7db343",
+          "wall_contacts": 783
+        },
+        {
+          "end_state_hash": "1dde3b701ea4bfce36d381048185e9434150b0abdb15795f526b09ae566592da",
+          "events": 1000,
+          "file": "blocks/d12/d12_017001_018000.block.tar.gz",
+          "pair_contacts": 190,
+          "range": [
+            17001,
+            18000
+          ],
+          "sha256": "f71209666cb36f811352d51f60fac0a378650bb57d1fd91bce5518ef2f6cb51c",
+          "start_state_hash": "f4da148142a1751c6f8120bb836de83c89f425bb523aac20bf0b8411ff742ab0",
+          "wall_contacts": 810
+        },
+        {
+          "end_state_hash": "818127e8879736b280b495f471cabbfd991857b5ccc370f834347ab056de41cd",
+          "events": 1000,
+          "file": "blocks/d12/d12_018001_019000.block.tar.gz",
+          "pair_contacts": 197,
+          "range": [
+            18001,
+            19000
+          ],
+          "sha256": "147f277d295b5ed34cc5cb5ff063b7c1c5928f92752f07be854bceb486fa118b",
+          "start_state_hash": "1dde3b701ea4bfce36d381048185e9434150b0abdb15795f526b09ae566592da",
+          "wall_contacts": 803
+        },
+        {
+          "end_state_hash": "06a9265eb714aec4bbf0750ab52cbc565f9501582cfca0eb095a0c927f6cdc60",
+          "events": 1000,
+          "file": "blocks/d12/d12_019001_020000.block.tar.gz",
+          "pair_contacts": 221,
+          "range": [
+            19001,
+            20000
+          ],
+          "sha256": "77cd6656dbd995fa0bdddd99a76ce39a6d1188f704dcba95b8fd021981c62e9b",
+          "start_state_hash": "818127e8879736b280b495f471cabbfd991857b5ccc370f834347ab056de41cd",
+          "wall_contacts": 779
+        },
+        {
+          "end_state_hash": "17f97f7cdd01206a13d6660952130914dc0f74deac2f99bdf50519e685cd53c7",
+          "events": 1000,
+          "file": "blocks/d12/d12_020001_021000.block.tar.gz",
+          "pair_contacts": 205,
+          "range": [
+            20001,
+            21000
+          ],
+          "sha256": "910c203a31bb62eedb895262c31549919fc1b531a68376f009c3dcbc97d2b161",
+          "start_state_hash": "06a9265eb714aec4bbf0750ab52cbc565f9501582cfca0eb095a0c927f6cdc60",
+          "wall_contacts": 795
+        },
+        {
+          "end_state_hash": "91dbeaffec8a4338ed69d1d09de9acc338fd34e25ac0b2f66f2c39b233d8ae64",
+          "events": 1000,
+          "file": "blocks/d12/d12_021001_022000.block.tar.gz",
+          "pair_contacts": 227,
+          "range": [
+            21001,
+            22000
+          ],
+          "sha256": "f712cdd4b11304bff496295089526722c25f073b0b50f68160ca5a1ff7e6c3cf",
+          "start_state_hash": "17f97f7cdd01206a13d6660952130914dc0f74deac2f99bdf50519e685cd53c7",
+          "wall_contacts": 773
+        },
+        {
+          "end_state_hash": "c9a7fbfb8136eedc392c45d2d71ea51c98cb22c21350ca705418ce277f06eb8d",
+          "events": 1000,
+          "file": "blocks/d12/d12_022001_023000.block.tar.gz",
+          "pair_contacts": 198,
+          "range": [
+            22001,
+            23000
+          ],
+          "sha256": "25676164ad481c8ed4bafbf7c605773b2e3b2734543c9086296efae7b64e5118",
+          "start_state_hash": "91dbeaffec8a4338ed69d1d09de9acc338fd34e25ac0b2f66f2c39b233d8ae64",
+          "wall_contacts": 802
+        },
+        {
+          "end_state_hash": "a54f070de252621f67a5c1994b3795dcfeac9c8ddd7130c3bb988b1db11c9c9a",
+          "events": 1000,
+          "file": "blocks/d12/d12_023001_024000.block.tar.gz",
+          "pair_contacts": 213,
+          "range": [
+            23001,
+            24000
+          ],
+          "sha256": "075bd4ce3e4aaa6e230e160afcd98f67b4a6f42dbc8b6534b41f598747d6f312",
+          "start_state_hash": "c9a7fbfb8136eedc392c45d2d71ea51c98cb22c21350ca705418ce277f06eb8d",
+          "wall_contacts": 787
+        },
+        {
+          "end_state_hash": "ea479891fcd5fa2fb9d253129ece629dd720a64c15c088d7b7c3d11853f98fb3",
+          "events": 1000,
+          "file": "blocks/d12/d12_024001_025000.block.tar.gz",
+          "pair_contacts": 219,
+          "range": [
+            24001,
+            25000
+          ],
+          "sha256": "277acf25d39267a1b353f7bc8fb5c94e3eb747dc23c820af863464aa2fb70a3d",
+          "start_state_hash": "a54f070de252621f67a5c1994b3795dcfeac9c8ddd7130c3bb988b1db11c9c9a",
+          "wall_contacts": 781
+        },
+        {
+          "end_state_hash": "d8611a95a0fcf9174f7ac75b5c255655fa43baf9ce8b8936039a3f3487e1a799",
+          "events": 1000,
+          "file": "blocks/d12/d12_025001_026000.block.tar.gz",
+          "pair_contacts": 234,
+          "range": [
+            25001,
+            26000
+          ],
+          "sha256": "c9b5ac4bb3847535a1681c749311cf1efc29232fc1f0ae16acc8101af8d04fca",
+          "start_state_hash": "ea479891fcd5fa2fb9d253129ece629dd720a64c15c088d7b7c3d11853f98fb3",
+          "wall_contacts": 766
+        },
+        {
+          "end_state_hash": "a1d5841acb45c26c9fd3635468e8910dde760d3f738042e8a8e257014dec555a",
+          "events": 1000,
+          "file": "blocks/d12/d12_026001_027000.block.tar.gz",
+          "pair_contacts": 210,
+          "range": [
+            26001,
+            27000
+          ],
+          "sha256": "280a111304e54d13ab69f58bda365c2edaf029f98caf214173e8da19777131a5",
+          "start_state_hash": "d8611a95a0fcf9174f7ac75b5c255655fa43baf9ce8b8936039a3f3487e1a799",
+          "wall_contacts": 790
+        },
+        {
+          "end_state_hash": "4b3a94df37ab2e21774d46a6038676bbfedf51e49a020db86007ea3ee2db7107",
+          "events": 1000,
+          "file": "blocks/d12/d12_027001_028000.block.tar.gz",
+          "pair_contacts": 227,
+          "range": [
+            27001,
+            28000
+          ],
+          "sha256": "6120d9bc5ae7a5c6f41895cb00ea496839bd2e11ac5aee611bf371dd682c4e15",
+          "start_state_hash": "a1d5841acb45c26c9fd3635468e8910dde760d3f738042e8a8e257014dec555a",
+          "wall_contacts": 773
+        },
+        {
+          "end_state_hash": "151ab17a752a4fcbb7c4ae03e9311edfa737c8b0b62acdfe6488d7ede7d082c1",
+          "events": 1000,
+          "file": "blocks/d12/d12_028001_029000.block.tar.gz",
+          "pair_contacts": 195,
+          "range": [
+            28001,
+            29000
+          ],
+          "sha256": "c2cf1c1495d2a879cb7d3f6a3f02ecf94f4c552784469c32dc07de8be1759088",
+          "start_state_hash": "4b3a94df37ab2e21774d46a6038676bbfedf51e49a020db86007ea3ee2db7107",
+          "wall_contacts": 805
+        },
+        {
+          "end_state_hash": "c636aa5378d2a7c61afd4b282e86aabf08aa86676e58cce6d69112f4bff18fe2",
+          "events": 1000,
+          "file": "blocks/d12/d12_029001_030000.block.tar.gz",
+          "pair_contacts": 230,
+          "range": [
+            29001,
+            30000
+          ],
+          "sha256": "e3a75f3f2295a67e8106131224b122a26b74f60169accd5da9621aba6f94603d",
+          "start_state_hash": "151ab17a752a4fcbb7c4ae03e9311edfa737c8b0b62acdfe6488d7ede7d082c1",
+          "wall_contacts": 770
+        },
+        {
+          "end_state_hash": "04c7b98496e587af6e7250ccd0b396f7dbefc6706e33d098e12b63c4a489d606",
+          "events": 1000,
+          "file": "blocks/d12/d12_030001_031000.block.tar.gz",
+          "pair_contacts": 214,
+          "range": [
+            30001,
+            31000
+          ],
+          "sha256": "2dfb5c08117c58a3ac595dfb8f6d47b76f83368ddb1fecce21116b46358b4ec7",
+          "start_state_hash": "c636aa5378d2a7c61afd4b282e86aabf08aa86676e58cce6d69112f4bff18fe2",
+          "wall_contacts": 786
+        },
+        {
+          "end_state_hash": "bb95dbe11432f234c40a4e0bb0f1f5f5dd434d46575b722736fb1b43b2c301ed",
+          "events": 1000,
+          "file": "blocks/d12/d12_031001_032000.block.tar.gz",
+          "pair_contacts": 210,
+          "range": [
+            31001,
+            32000
+          ],
+          "sha256": "6db7c16679641a440563c2573b66569b50f2a46dcc2fc89bd3aabb7f0fec13e2",
+          "start_state_hash": "04c7b98496e587af6e7250ccd0b396f7dbefc6706e33d098e12b63c4a489d606",
+          "wall_contacts": 790
+        },
+        {
+          "end_state_hash": "9c97b3414dc412ddc3e336d141891900f9dce5b3724de87f816797e4cd33a9f0",
+          "events": 1000,
+          "file": "blocks/d12/d12_032001_033000.block.tar.gz",
+          "pair_contacts": 205,
+          "range": [
+            32001,
+            33000
+          ],
+          "sha256": "e2b05c0f0aa62ef0704104ae27fa637beb529961eac8465ae4da3c3421250064",
+          "start_state_hash": "bb95dbe11432f234c40a4e0bb0f1f5f5dd434d46575b722736fb1b43b2c301ed",
+          "wall_contacts": 795
+        },
+        {
+          "end_state_hash": "fb78a3063b0950eb0efac8f8c20a4b0ebb43c902d31c76dfbee005031dc6d9bf",
+          "events": 1000,
+          "file": "blocks/d12/d12_033001_034000.block.tar.gz",
+          "pair_contacts": 213,
+          "range": [
+            33001,
+            34000
+          ],
+          "sha256": "3a076fc5b4581e22b83ed5d937113cde56869d3bfaeb61457c9a08ea65a61f5f",
+          "start_state_hash": "9c97b3414dc412ddc3e336d141891900f9dce5b3724de87f816797e4cd33a9f0",
+          "wall_contacts": 787
+        },
+        {
+          "end_state_hash": "ae0b5ce5d7aaa0655cbdd9da07707d193660e3c5a52aad3fc48a2b186a2ce052",
+          "events": 1000,
+          "file": "blocks/d12/d12_034001_035000.block.tar.gz",
+          "pair_contacts": 214,
+          "range": [
+            34001,
+            35000
+          ],
+          "sha256": "e4062250b3a6cf09ea1a589d167ad29b6c307d3b042a4f86dedfb9f63aac0551",
+          "start_state_hash": "fb78a3063b0950eb0efac8f8c20a4b0ebb43c902d31c76dfbee005031dc6d9bf",
+          "wall_contacts": 786
+        },
+        {
+          "end_state_hash": "b3d45782b78d048ffc23aa47c74130092f7d31414012cdab3e836a2fe5a7c2b0",
+          "events": 1000,
+          "file": "blocks/d12/d12_035001_036000.block.tar.gz",
+          "pair_contacts": 229,
+          "range": [
+            35001,
+            36000
+          ],
+          "sha256": "f0bdcf6997e39f6d4ae4581e72ff22732ac472a8c2ced890b5d856c1a057fae3",
+          "start_state_hash": "ae0b5ce5d7aaa0655cbdd9da07707d193660e3c5a52aad3fc48a2b186a2ce052",
+          "wall_contacts": 771
+        },
+        {
+          "end_state_hash": "917c3d122490526e8a91c1aef196fea2d1e0c3a49e265fb1f94361ac25d48589",
+          "events": 1000,
+          "file": "blocks/d12/d12_036001_037000.block.tar.gz",
+          "pair_contacts": 218,
+          "range": [
+            36001,
+            37000
+          ],
+          "sha256": "e3ae5431e5f39752155b2158bdb554632113d2579cfc86469f77432aa3b70a11",
+          "start_state_hash": "b3d45782b78d048ffc23aa47c74130092f7d31414012cdab3e836a2fe5a7c2b0",
+          "wall_contacts": 782
+        },
+        {
+          "end_state_hash": "f232078a410003ec5dc1527f1bfe94922d2f86e15e28fc2384a99334f98301bc",
+          "events": 1000,
+          "file": "blocks/d12/d12_037001_038000.block.tar.gz",
+          "pair_contacts": 206,
+          "range": [
+            37001,
+            38000
+          ],
+          "sha256": "12d4a7994f5ac1958bf458e81cb9067522679231b5812226a7470817f97339ea",
+          "start_state_hash": "917c3d122490526e8a91c1aef196fea2d1e0c3a49e265fb1f94361ac25d48589",
+          "wall_contacts": 794
+        },
+        {
+          "end_state_hash": "5f9d044015bce46075686004ad7e89df61a8d936385e922891695b3a7b677a28",
+          "events": 1000,
+          "file": "blocks/d12/d12_038001_039000.block.tar.gz",
+          "pair_contacts": 218,
+          "range": [
+            38001,
+            39000
+          ],
+          "sha256": "53ed4fe9a9d428003552ca67aadc5a5827fa24482e243bef77d1635d002ad304",
+          "start_state_hash": "f232078a410003ec5dc1527f1bfe94922d2f86e15e28fc2384a99334f98301bc",
+          "wall_contacts": 782
+        },
+        {
+          "end_state_hash": "d65e6f23256d8f4a46c22cdd6b3bb10f1291e199c0abd70707f01d616e828fa6",
+          "events": 1000,
+          "file": "blocks/d12/d12_039001_040000.block.tar.gz",
+          "pair_contacts": 192,
+          "range": [
+            39001,
+            40000
+          ],
+          "sha256": "059d05dd9a32f9f835909e44733f2b0fd67ff42aabefbcfca351414faa416754",
+          "start_state_hash": "5f9d044015bce46075686004ad7e89df61a8d936385e922891695b3a7b677a28",
+          "wall_contacts": 808
+        },
+        {
+          "end_state_hash": "b44b7d13ee8f5358c2de1dce98179cb704ec71e4913ae107b2416c0c43e1ebc2",
+          "events": 1000,
+          "file": "blocks/d12/d12_040001_041000.block.tar.gz",
+          "pair_contacts": 212,
+          "range": [
+            40001,
+            41000
+          ],
+          "sha256": "ae70a3735c0d9e98e9b9b8ce884eb949413c6d15c27e60c7bc20165762b44e06",
+          "start_state_hash": "d65e6f23256d8f4a46c22cdd6b3bb10f1291e199c0abd70707f01d616e828fa6",
+          "wall_contacts": 788
+        },
+        {
+          "end_state_hash": "2dc52a9482922bf5d51ed0fa745f25ad0310a631c49af17c19f32d895ae0b7a0",
+          "events": 1000,
+          "file": "blocks/d12/d12_041001_042000.block.tar.gz",
+          "pair_contacts": 226,
+          "range": [
+            41001,
+            42000
+          ],
+          "sha256": "4b14e60c709e4dfa0084eb36bfaa0ecbbc86fe1a3010c51d377f34cec0f37c2f",
+          "start_state_hash": "b44b7d13ee8f5358c2de1dce98179cb704ec71e4913ae107b2416c0c43e1ebc2",
+          "wall_contacts": 774
+        },
+        {
+          "end_state_hash": "158780d229338c4a76c42bbe671a5ae4179020b7d80f7e5fa00c520da7ea3bba",
+          "events": 1000,
+          "file": "blocks/d12/d12_042001_043000.block.tar.gz",
+          "pair_contacts": 215,
+          "range": [
+            42001,
+            43000
+          ],
+          "sha256": "013efd489a4362c16830497bceaa9b97b11350189568de2d72fc29ebf076a16e",
+          "start_state_hash": "2dc52a9482922bf5d51ed0fa745f25ad0310a631c49af17c19f32d895ae0b7a0",
+          "wall_contacts": 785
+        },
+        {
+          "end_state_hash": "ff45fc9af51377a16d11f1bec9def7d13f418dc3e07fd42d272e71787260090c",
+          "events": 1000,
+          "file": "blocks/d12/d12_043001_044000.block.tar.gz",
+          "pair_contacts": 224,
+          "range": [
+            43001,
+            44000
+          ],
+          "sha256": "2ee7a4def2b5e84e5da9d6b6050d232fbcccd97a59898b00b37e10f8a0c5324f",
+          "start_state_hash": "158780d229338c4a76c42bbe671a5ae4179020b7d80f7e5fa00c520da7ea3bba",
+          "wall_contacts": 776
+        },
+        {
+          "end_state_hash": "0568af318d7c6318285ab2fb99b6105aff55304963e713945726bec7cedcf5f8",
+          "events": 1000,
+          "file": "blocks/d12/d12_044001_045000.block.tar.gz",
+          "pair_contacts": 221,
+          "range": [
+            44001,
+            45000
+          ],
+          "sha256": "5063fe7bfc80eaef96cf5065a45c5e1e1de54fc05d4e3c29b77bd712deb69c22",
+          "start_state_hash": "ff45fc9af51377a16d11f1bec9def7d13f418dc3e07fd42d272e71787260090c",
+          "wall_contacts": 779
+        },
+        {
+          "end_state_hash": "4b19491b76165b914a65da52ec9e41d229bbb1a41d0d4e8d7e76e42c99d132ef",
+          "events": 1000,
+          "file": "blocks/d12/d12_045001_046000.block.tar.gz",
+          "pair_contacts": 226,
+          "range": [
+            45001,
+            46000
+          ],
+          "sha256": "0ac3705da2f8a457ce2e280fa0e217a49765a28e94dcdf8752255687fd258a27",
+          "start_state_hash": "0568af318d7c6318285ab2fb99b6105aff55304963e713945726bec7cedcf5f8",
+          "wall_contacts": 774
+        },
+        {
+          "end_state_hash": "be830d751285215f9697e699f24d467b0a8eb1c98c52dfdd8a5a68fdecceba0d",
+          "events": 1000,
+          "file": "blocks/d12/d12_046001_047000.block.tar.gz",
+          "pair_contacts": 221,
+          "range": [
+            46001,
+            47000
+          ],
+          "sha256": "864154b94014a7d98e24b822709a350ba3a2474cc2cf02d74e53d6fc2fdb1507",
+          "start_state_hash": "4b19491b76165b914a65da52ec9e41d229bbb1a41d0d4e8d7e76e42c99d132ef",
+          "wall_contacts": 779
+        },
+        {
+          "end_state_hash": "5cfcf0a43203921fe390a0baf49bc0abeff81ebc1510fa32daed2d797b2da684",
+          "events": 1000,
+          "file": "blocks/d12/d12_047001_048000.block.tar.gz",
+          "pair_contacts": 235,
+          "range": [
+            47001,
+            48000
+          ],
+          "sha256": "53b3c6b5057803e711d45cbe7de1e82843713d30d77fc09b6cc043ffa5c43b14",
+          "start_state_hash": "be830d751285215f9697e699f24d467b0a8eb1c98c52dfdd8a5a68fdecceba0d",
+          "wall_contacts": 765
+        },
+        {
+          "end_state_hash": "73a38c5b37bb35367aa68d4e0932bf2a3545899d75185595189c018e13b88990",
+          "events": 1000,
+          "file": "blocks/d12/d12_048001_049000.block.tar.gz",
+          "pair_contacts": 220,
+          "range": [
+            48001,
+            49000
+          ],
+          "sha256": "5c6df23e992fb47d8a82ed9147b2b88bde7107713b8713aadc770f990ecd1f04",
+          "start_state_hash": "5cfcf0a43203921fe390a0baf49bc0abeff81ebc1510fa32daed2d797b2da684",
+          "wall_contacts": 780
+        },
+        {
+          "end_state_hash": "4f568fb32c4e33f66fe354121e116f30b8f5758193a2e713d223902063f3d859",
+          "events": 1000,
+          "file": "blocks/d12/d12_049001_050000.block.tar.gz",
+          "pair_contacts": 204,
+          "range": [
+            49001,
+            50000
+          ],
+          "sha256": "ee69d5114b75a75340398b2797a41227acc1d4314ebdad72f32683c55c001d1c",
+          "start_state_hash": "73a38c5b37bb35367aa68d4e0932bf2a3545899d75185595189c018e13b88990",
+          "wall_contacts": 796
+        }
+      ],
+      "chain_end_state_hash": "4f568fb32c4e33f66fe354121e116f30b8f5758193a2e713d223902063f3d859",
+      "chain_start_state_hash": "d3fd22e52dc4bf541308a19634b617d799f2f8ee6043d81a037f213e0e66591d",
+      "coverage": {
+        "first_event": 1,
+        "last_event": 50000,
+        "total_events": 50000
+      },
+      "events_per_block": 1000,
+      "model": "dodecagon",
+      "polygon_sides": 12
+    }
+  },
+  "notes": [
+    "All 150 compact blocks supplied in the input archive are retained.",
+    "Block internal checksums, stream sizes, event-stream consistency, and lane continuity were rechecked while assembling this packet.",
+    "The packet contains no producer physics implementation; independent verifier code must be written separately."
+  ],
+  "purpose": "Data-only handoff for independent exact replay of the full retained corpus.",
+  "schema": "artifact-18-independent-verification-packet/v1",
+  "supplementary": {
+    "initial_block_source_records": "supplementary/initial-block-source-records/",
+    "producer_compaction_manifest": "supplementary/producer-provenance/compaction_manifest.json",
+    "scope": "producer records for only the first 1,000-event block in each lane; retained to avoid dropping supplied data; not canonical evidence for the full corpus."
+  }
+}

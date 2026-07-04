@@ -1,0 +1,91 @@
+{
+  "elapsed_seconds": 2.353954172,
+  "event_batches": 1000,
+  "events_per_second": 424.81710642241,
+  "exact_T": {
+    "a": "128767942840040005401374997365082591/166212830212470495799710267728164",
+    "b": "95930836322767653409720846822989435/166212830212470495799710267728164",
+    "c": "223358904513213576869275148667740543/498638490637411487399130803184492",
+    "d": "162754218126094641425014381508036057/498638490637411487399130803184492"
+  },
+  "filter_totals": {
+    "steps": 1000,
+    "aabb_rejects": 378,
+    "parabola_rejects": 163,
+    "constant_distance_misses": 0,
+    "facets_exposed": 1570,
+    "facets_tested": 3138,
+    "valid_pair_candidates": 228,
+    "quotients_materialized": 2000
+  },
+  "final_state_hash": "a80bc586605bea069696b7f7b6024dfffdbbcd14ef9e1a5273e39352f2269acd",
+  "final_state_metrics": {
+    "positions": {
+      "max_abs_numerator": "20410101711795769072715806690165583",
+      "max_denominator": "1994553962549645949596523212737968",
+      "max_numerator_bits": 114,
+      "max_denominator_bits": 111
+    },
+    "velocities": {
+      "max_abs_numerator": "15871830557888139",
+      "max_denominator": "18014398509481984",
+      "max_numerator_bits": 54,
+      "max_denominator_bits": 55
+    },
+    "all_coordinates": {
+      "max_abs_numerator": "20410101711795769072715806690165583",
+      "max_denominator": "1994553962549645949596523212737968",
+      "max_numerator_bits": 114,
+      "max_denominator_bits": 111
+    }
+  },
+  "initial_state_metrics": {
+    "positions": {
+      "max_abs_numerator": "1",
+      "max_denominator": "2",
+      "max_numerator_bits": 1,
+      "max_denominator_bits": 2
+    },
+    "velocities": {
+      "max_abs_numerator": "1",
+      "max_denominator": "1",
+      "max_numerator_bits": 1,
+      "max_denominator_bits": 1
+    },
+    "all_coordinates": {
+      "max_abs_numerator": "1",
+      "max_denominator": "2",
+      "max_numerator_bits": 1,
+      "max_denominator_bits": 2
+    }
+  },
+  "max_collision_time_bits": {
+    "max_numerator_bits": 121,
+    "max_denominator_bits": 111
+  },
+  "max_state_metrics": {
+    "positions": {
+      "max_abs_numerator": "111110065380445015159725023973752785",
+      "max_denominator": "8349628714770434903910812003185552",
+      "max_numerator_bits": 117,
+      "max_denominator_bits": 113
+    },
+    "velocities": {
+      "max_abs_numerator": "18187296095853479",
+      "max_denominator": "18014398509481984",
+      "max_numerator_bits": 55,
+      "max_denominator_bits": 55
+    },
+    "all_coordinates": {
+      "max_abs_numerator": "111110065380445015159725023973752785",
+      "max_denominator": "8349628714770434903910812003185552",
+      "max_numerator_bits": 117,
+      "max_denominator_bits": 113
+    }
+  },
+  "pair_contacts": 228,
+  "regular_only_completed": true,
+  "segment_end_step": 1000,
+  "segment_start_step": 0,
+  "status": "CAP"
+}

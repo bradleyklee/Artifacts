@@ -1,0 +1,61 @@
+{
+  "canonical_block_count": 150,
+  "canonical_event_count": 150000,
+  "checks_performed_before_this_rebuild": [
+    "all compact archive members required by v3 present",
+    "all per-block SHA256SUMS entries match uncompressed members",
+    "all event code and native-label stream cardinalities/ranges agree",
+    "all compact complexity rows have matching absolute step and event code",
+    "every block declares exactly 1000 regular events",
+    "each lane has 50 contiguous blocks covering 1 through 50000",
+    "each supplied full complexity CSV is a 50000-row collision sequence 1 through 50000"
+  ],
+  "important_limitations": [
+    "No fresh independent dynamics replay is claimed by this packet.",
+    "The provided producer supports rerun but is not independent verification.",
+    "The supplied campaign total_bits series is not reconstructible from compact per-block component-bit columns alone."
+  ],
+  "input_archive": "18-disks-deep.zip",
+  "rebuild_validation": {
+    "executed": [
+      "go test ./...",
+      "make test (one sealed 1000-event division per lane, live monitor, V3 compaction, structural checker)",
+      "tools/check_corpus.py --root . --target 50000",
+      "tools/export_words.py --root . --out-dir words --terms 10000 --target-events 50000 --check (including declared time-zero seed contact)",
+      "make words-print WORD_TERMS=50 (manifest-checking prefix display)"
+    ],
+    "results": {
+      "go_tests": "PASS",
+      "integer_words": "PASS: all six 10,000-term quotient words recomputed from complete recorded 50,000-event lanes; d12 prepends its independently cross-checked retained step-0 seed face before taking the remaining 9,999 labels",
+      "monitored_smoke": "PASS: d12, 24A, 24B each completed 1..1000 as a compact V3 block",
+      "preserved_corpus_chain": "PASS: three 50-block lanes covering 1..50000"
+    }
+  },
+  "retained_derived_words": {
+    "certificate": "make words-check; words/WORDS_CERTIFICATE.json",
+    "ordering": "chronological pair contacts; d12 begins with retained INITIAL_PAIR_FACE at exact time zero, face 1; 24A/24B have no declared time-zero pair event",
+    "prefix_display": {
+      "command": "make words-print WORD_TERMS=50",
+      "scope": "read-only 50-term display; validates saved word file SHA-256 values against WORDS_MANIFEST.json",
+      "ternary_encoding": "d12 mod 3: base-10 prefix computed from all 10,000 saved trits; display refuses a precision not determined by that full saved prefix",
+      "verified_decimal_prefix": "0.423359616787198293609629498260695939241264862349149690865629 (60 places; 4,770 places are continuation-stable)",
+      "full_corpus_cross_check": "The displayed 60-place d12 mod-3 decimal prefix was independently recomputed from all 10,655 chronological d12 pair labels retained in the complete 50,000-event lane; it matches the 10,000-term exported-word calculation."
+    },
+    "terms_per_word": 10000,
+    "views": [
+      "d12 mod 6",
+      "d12 mod 3",
+      "24A mod 12",
+      "24A mod 6",
+      "24B mod 12",
+      "24B mod 6"
+    ]
+  },
+  "retained_producer": {
+    "entry": "cmd/burner",
+    "language": "Go",
+    "monitor": "tools/launch_v2_50k.py + tools/v2_terminal_dashboard.py",
+    "test_contract": "Not a release entry point; use make burn-50k for a fresh three-lane campaign run."
+  },
+  "schema": "artifact-18-packet-build-audit/v3"
+}

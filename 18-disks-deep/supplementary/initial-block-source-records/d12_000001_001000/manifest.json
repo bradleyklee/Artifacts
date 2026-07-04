@@ -1,0 +1,79 @@
+{
+  "container": {
+    "cells_per_side": 2,
+    "half_side": {
+      "a": "2",
+      "b": "0",
+      "c": "1",
+      "d": "0"
+    }
+  },
+  "filters": {
+    "aabb": "exact swept physical AABB reject",
+    "facet_scan": "all exposed facets; quotient comparisons cross-multiplied",
+    "parabolic": "exact circumscribed-disk minimum over [0,Twall], reject-only"
+  },
+  "model": {
+    "apothem": {
+      "a": "1/2",
+      "b": "0",
+      "c": "1/4",
+      "d": "0"
+    },
+    "edge": {
+      "a": "1/2",
+      "b": "0",
+      "c": "0",
+      "d": "0"
+    },
+    "face_convention": "face k outward normal angle 360*k/sides degrees",
+    "field": "Q(sqrt(3))",
+    "id": "dodecagon",
+    "sides": 12
+  },
+  "output": {
+    "checkpoint_interval": 1000,
+    "checkpoint_snapshots": "checkpoints/\u003cabsolute-step\u003e.json (atomic)",
+    "checkpoints": "checkpoints.ndjson.gz",
+    "codec": "gzip NDJSON",
+    "end_state": "end_state.json (atomic)",
+    "ledger": "ledger.ndjson.gz",
+    "pair_face_index": "segment-relative",
+    "pair_faces": "pair_faces.csv",
+    "return_detection": false,
+    "start_state": "start_state.json (atomic)"
+  },
+  "physics": {
+    "arithmetic": "exact Q(sqrt(2),sqrt(3)) coefficients; no floating decisions",
+    "pair": "equal-mass elastic reflection on active contact normal",
+    "two_body_only": true,
+    "wall": "axis-aligned specular reflection"
+  },
+  "producer": {
+    "command": "go run ./cmd/burner run",
+    "language": "Go",
+    "module": "latticegeometry",
+    "runtime": "go1.18.1"
+  },
+  "schema": "exact-two-body-burner/v1",
+  "seed": {
+    "face": 1,
+    "incoming": [
+      "E",
+      "N"
+    ],
+    "kind": "centered",
+    "time_zero_pair_face": 1
+  },
+  "stopping_rule": {
+    "event_cap": 1000,
+    "policy": "wall+pair, wall-corner, pair-corner, and coupled shared-body ties are recorded then terminal; they are never resolved by order",
+    "require_regular": true,
+    "terminal_classes": [
+      "PAIR_CORNER",
+      "WALL_CORNER",
+      "COUPLED_SIMULTANEOUS",
+      "NO_EVENT"
+    ]
+  }
+}

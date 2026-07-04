@@ -1,0 +1,91 @@
+{
+  "elapsed_seconds": 0.616681734,
+  "event_batches": 1000,
+  "events_per_second": 1621.5820006758947,
+  "exact_T": {
+    "a": "2162432685793654527483974188505/4317563722402629424649267084",
+    "b": "0",
+    "c": "2764265257559741903668896259703/4317563722402629424649267084",
+    "d": "0"
+  },
+  "filter_totals": {
+    "steps": 1000,
+    "aabb_rejects": 402,
+    "parabola_rejects": 172,
+    "constant_distance_misses": 0,
+    "facets_exposed": 749,
+    "facets_tested": 1498,
+    "valid_pair_candidates": 211,
+    "quotients_materialized": 2000
+  },
+  "final_state_hash": "ce383665b17da2893a81274e3d8beb024262d77060e4aa13e3e96a34a83db766",
+  "final_state_metrics": {
+    "positions": {
+      "max_abs_numerator": "95749910195381205591315299707621",
+      "max_denominator": "276324078233768283177553093376",
+      "max_numerator_bits": 107,
+      "max_denominator_bits": 98
+    },
+    "velocities": {
+      "max_abs_numerator": "675432422014779",
+      "max_denominator": "1125899906842624",
+      "max_numerator_bits": 50,
+      "max_denominator_bits": 51
+    },
+    "all_coordinates": {
+      "max_abs_numerator": "95749910195381205591315299707621",
+      "max_denominator": "276324078233768283177553093376",
+      "max_numerator_bits": 107,
+      "max_denominator_bits": 98
+    }
+  },
+  "initial_state_metrics": {
+    "positions": {
+      "max_abs_numerator": "3",
+      "max_denominator": "8",
+      "max_numerator_bits": 2,
+      "max_denominator_bits": 4
+    },
+    "velocities": {
+      "max_abs_numerator": "3",
+      "max_denominator": "4",
+      "max_numerator_bits": 2,
+      "max_denominator_bits": 3
+    },
+    "all_coordinates": {
+      "max_abs_numerator": "3",
+      "max_denominator": "8",
+      "max_numerator_bits": 2,
+      "max_denominator_bits": 4
+    }
+  },
+  "max_collision_time_bits": {
+    "max_numerator_bits": 110,
+    "max_denominator_bits": 101
+  },
+  "max_state_metrics": {
+    "positions": {
+      "max_abs_numerator": "544780209159550389584523017918759",
+      "max_denominator": "72847803303861517613247885357824",
+      "max_numerator_bits": 109,
+      "max_denominator_bits": 106
+    },
+    "velocities": {
+      "max_abs_numerator": "675432422014779",
+      "max_denominator": "1125899906842624",
+      "max_numerator_bits": 50,
+      "max_denominator_bits": 51
+    },
+    "all_coordinates": {
+      "max_abs_numerator": "544780209159550389584523017918759",
+      "max_denominator": "72847803303861517613247885357824",
+      "max_numerator_bits": 109,
+      "max_denominator_bits": 106
+    }
+  },
+  "pair_contacts": 212,
+  "regular_only_completed": true,
+  "segment_end_step": 1000,
+  "segment_start_step": 0,
+  "status": "CAP"
+}

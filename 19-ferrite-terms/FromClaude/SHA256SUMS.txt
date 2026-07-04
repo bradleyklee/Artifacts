@@ -1,0 +1,2 @@
+a6489ad2ebefadce4581a129984b304b87270a0799fb5d6f4cc5add9db7badd3  /mnt/data/artifact-19-ferrite-terms/terms/ferrite_terms_S21_S60.txt
+a6489ad2ebefadce4581a129984b304b87270a0799fb5d6f4cc5add9db7badd3  /mnt/data/artifact-19-ferrite-terms/FromClaude/claude_terms_S21_S60.txt

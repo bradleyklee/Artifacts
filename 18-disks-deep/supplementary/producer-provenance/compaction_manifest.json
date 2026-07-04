@@ -1,0 +1,1061 @@
+{
+  "entries": [
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_000001_001000.block.tar.gz",
+      "compact_bytes": 9724,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_000001_001000.block.tar.gz",
+      "source_bytes": 200730,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_001001_002000.block.tar.gz",
+      "compact_bytes": 9934,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_001001_002000.block.tar.gz",
+      "source_bytes": 326960,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_002001_003000.block.tar.gz",
+      "compact_bytes": 10105,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_002001_003000.block.tar.gz",
+      "source_bytes": 427665,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_003001_004000.block.tar.gz",
+      "compact_bytes": 10806,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_003001_004000.block.tar.gz",
+      "source_bytes": 544224,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_004001_005000.block.tar.gz",
+      "compact_bytes": 11052,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_004001_005000.block.tar.gz",
+      "source_bytes": 683785,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_005001_006000.block.tar.gz",
+      "compact_bytes": 11955,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_005001_006000.block.tar.gz",
+      "source_bytes": 791753,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_006001_007000.block.tar.gz",
+      "compact_bytes": 12988,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_006001_007000.block.tar.gz",
+      "source_bytes": 947621,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_007001_008000.block.tar.gz",
+      "compact_bytes": 13683,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_007001_008000.block.tar.gz",
+      "source_bytes": 1059055,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_008001_009000.block.tar.gz",
+      "compact_bytes": 13077,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_008001_009000.block.tar.gz",
+      "source_bytes": 1151618,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_009001_010000.block.tar.gz",
+      "compact_bytes": 13596,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_009001_010000.block.tar.gz",
+      "source_bytes": 1255710,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_010001_011000.block.tar.gz",
+      "compact_bytes": 14379,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_010001_011000.block.tar.gz",
+      "source_bytes": 1374272,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_011001_012000.block.tar.gz",
+      "compact_bytes": 14431,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_011001_012000.block.tar.gz",
+      "source_bytes": 1501200,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_012001_013000.block.tar.gz",
+      "compact_bytes": 15293,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_012001_013000.block.tar.gz",
+      "source_bytes": 1600902,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_013001_014000.block.tar.gz",
+      "compact_bytes": 15504,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_013001_014000.block.tar.gz",
+      "source_bytes": 1682306,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_014001_015000.block.tar.gz",
+      "compact_bytes": 15553,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_014001_015000.block.tar.gz",
+      "source_bytes": 1735124,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_015001_016000.block.tar.gz",
+      "compact_bytes": 15852,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_015001_016000.block.tar.gz",
+      "source_bytes": 1794261,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_016001_017000.block.tar.gz",
+      "compact_bytes": 16662,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_016001_017000.block.tar.gz",
+      "source_bytes": 1909051,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_017001_018000.block.tar.gz",
+      "compact_bytes": 16275,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_017001_018000.block.tar.gz",
+      "source_bytes": 1906801,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_018001_019000.block.tar.gz",
+      "compact_bytes": 16786,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_018001_019000.block.tar.gz",
+      "source_bytes": 2097630,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_019001_020000.block.tar.gz",
+      "compact_bytes": 17674,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_019001_020000.block.tar.gz",
+      "source_bytes": 2205650,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_020001_021000.block.tar.gz",
+      "compact_bytes": 17682,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_020001_021000.block.tar.gz",
+      "source_bytes": 2335678,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_021001_022000.block.tar.gz",
+      "compact_bytes": 18300,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_021001_022000.block.tar.gz",
+      "source_bytes": 2464887,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_022001_023000.block.tar.gz",
+      "compact_bytes": 18147,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_022001_023000.block.tar.gz",
+      "source_bytes": 2551239,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_023001_024000.block.tar.gz",
+      "compact_bytes": 18826,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_023001_024000.block.tar.gz",
+      "source_bytes": 2685136,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_024001_025000.block.tar.gz",
+      "compact_bytes": 20000,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_024001_025000.block.tar.gz",
+      "source_bytes": 2864449,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_025001_026000.block.tar.gz",
+      "compact_bytes": 20593,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_025001_026000.block.tar.gz",
+      "source_bytes": 2963201,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_026001_027000.block.tar.gz",
+      "compact_bytes": 21686,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_026001_027000.block.tar.gz",
+      "source_bytes": 3058772,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_027001_028000.block.tar.gz",
+      "compact_bytes": 23317,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_027001_028000.block.tar.gz",
+      "source_bytes": 3215369,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_028001_029000.block.tar.gz",
+      "compact_bytes": 22268,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_028001_029000.block.tar.gz",
+      "source_bytes": 3476396,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_029001_030000.block.tar.gz",
+      "compact_bytes": 21611,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_029001_030000.block.tar.gz",
+      "source_bytes": 3622523,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_030001_031000.block.tar.gz",
+      "compact_bytes": 22049,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_030001_031000.block.tar.gz",
+      "source_bytes": 3727173,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_031001_032000.block.tar.gz",
+      "compact_bytes": 22516,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_031001_032000.block.tar.gz",
+      "source_bytes": 3814907,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_032001_033000.block.tar.gz",
+      "compact_bytes": 23676,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_032001_033000.block.tar.gz",
+      "source_bytes": 3916333,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_033001_034000.block.tar.gz",
+      "compact_bytes": 24814,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_033001_034000.block.tar.gz",
+      "source_bytes": 4080321,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_034001_035000.block.tar.gz",
+      "compact_bytes": 25043,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_034001_035000.block.tar.gz",
+      "source_bytes": 4158996,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_035001_036000.block.tar.gz",
+      "compact_bytes": 24877,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_035001_036000.block.tar.gz",
+      "source_bytes": 4285898,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_036001_037000.block.tar.gz",
+      "compact_bytes": 25749,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_036001_037000.block.tar.gz",
+      "source_bytes": 4415938,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_037001_038000.block.tar.gz",
+      "compact_bytes": 26451,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_037001_038000.block.tar.gz",
+      "source_bytes": 4518503,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_038001_039000.block.tar.gz",
+      "compact_bytes": 26432,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_038001_039000.block.tar.gz",
+      "source_bytes": 4663502,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_039001_040000.block.tar.gz",
+      "compact_bytes": 25852,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_039001_040000.block.tar.gz",
+      "source_bytes": 4779250,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_040001_041000.block.tar.gz",
+      "compact_bytes": 25891,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_040001_041000.block.tar.gz",
+      "source_bytes": 4996389,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_041001_042000.block.tar.gz",
+      "compact_bytes": 26820,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_041001_042000.block.tar.gz",
+      "source_bytes": 5131719,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_042001_043000.block.tar.gz",
+      "compact_bytes": 28008,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_042001_043000.block.tar.gz",
+      "source_bytes": 5197521,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_043001_044000.block.tar.gz",
+      "compact_bytes": 29992,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_043001_044000.block.tar.gz",
+      "source_bytes": 5392591,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_044001_045000.block.tar.gz",
+      "compact_bytes": 29848,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_044001_045000.block.tar.gz",
+      "source_bytes": 5542290,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_045001_046000.block.tar.gz",
+      "compact_bytes": 29248,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_045001_046000.block.tar.gz",
+      "source_bytes": 5679713,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_046001_047000.block.tar.gz",
+      "compact_bytes": 30595,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_046001_047000.block.tar.gz",
+      "source_bytes": 5809310,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_047001_048000.block.tar.gz",
+      "compact_bytes": 30901,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_047001_048000.block.tar.gz",
+      "source_bytes": 5923795,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_048001_049000.block.tar.gz",
+      "compact_bytes": 29531,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_048001_049000.block.tar.gz",
+      "source_bytes": 6095277,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_049001_050000.block.tar.gz",
+      "compact_bytes": 31548,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/d12/d12_049001_050000.block.tar.gz",
+      "source_bytes": 6175836,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_000001_001000.block.tar.gz",
+      "compact_bytes": 11887,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_000001_001000.block.tar.gz",
+      "source_bytes": 313275,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_001001_002000.block.tar.gz",
+      "compact_bytes": 12009,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_001001_002000.block.tar.gz",
+      "source_bytes": 513836,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_002001_003000.block.tar.gz",
+      "compact_bytes": 13790,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_002001_003000.block.tar.gz",
+      "source_bytes": 777105,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_003001_004000.block.tar.gz",
+      "compact_bytes": 15429,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_003001_004000.block.tar.gz",
+      "source_bytes": 1092521,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_004001_005000.block.tar.gz",
+      "compact_bytes": 16722,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_004001_005000.block.tar.gz",
+      "source_bytes": 1469357,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_005001_006000.block.tar.gz",
+      "compact_bytes": 17378,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_005001_006000.block.tar.gz",
+      "source_bytes": 1749815,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_006001_007000.block.tar.gz",
+      "compact_bytes": 18722,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_006001_007000.block.tar.gz",
+      "source_bytes": 2078089,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_007001_008000.block.tar.gz",
+      "compact_bytes": 20119,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_007001_008000.block.tar.gz",
+      "source_bytes": 2376713,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_008001_009000.block.tar.gz",
+      "compact_bytes": 21983,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_008001_009000.block.tar.gz",
+      "source_bytes": 2672805,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_009001_010000.block.tar.gz",
+      "compact_bytes": 24027,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_009001_010000.block.tar.gz",
+      "source_bytes": 2973828,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_010001_011000.block.tar.gz",
+      "compact_bytes": 24104,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_010001_011000.block.tar.gz",
+      "source_bytes": 3350152,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_011001_012000.block.tar.gz",
+      "compact_bytes": 26352,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_011001_012000.block.tar.gz",
+      "source_bytes": 3637244,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_012001_013000.block.tar.gz",
+      "compact_bytes": 25870,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_012001_013000.block.tar.gz",
+      "source_bytes": 3990704,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_013001_014000.block.tar.gz",
+      "compact_bytes": 27804,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_013001_014000.block.tar.gz",
+      "source_bytes": 4197867,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_014001_015000.block.tar.gz",
+      "compact_bytes": 30720,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_014001_015000.block.tar.gz",
+      "source_bytes": 4535593,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_015001_016000.block.tar.gz",
+      "compact_bytes": 30926,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_015001_016000.block.tar.gz",
+      "source_bytes": 4811686,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_016001_017000.block.tar.gz",
+      "compact_bytes": 30270,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_016001_017000.block.tar.gz",
+      "source_bytes": 5114549,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_017001_018000.block.tar.gz",
+      "compact_bytes": 32857,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_017001_018000.block.tar.gz",
+      "source_bytes": 5504108,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_018001_019000.block.tar.gz",
+      "compact_bytes": 36741,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_018001_019000.block.tar.gz",
+      "source_bytes": 5813290,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_019001_020000.block.tar.gz",
+      "compact_bytes": 33675,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_019001_020000.block.tar.gz",
+      "source_bytes": 6025682,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_020001_021000.block.tar.gz",
+      "compact_bytes": 34037,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_020001_021000.block.tar.gz",
+      "source_bytes": 6217827,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_021001_022000.block.tar.gz",
+      "compact_bytes": 35587,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_021001_022000.block.tar.gz",
+      "source_bytes": 6536950,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_022001_023000.block.tar.gz",
+      "compact_bytes": 35556,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_022001_023000.block.tar.gz",
+      "source_bytes": 6777480,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_023001_024000.block.tar.gz",
+      "compact_bytes": 36121,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_023001_024000.block.tar.gz",
+      "source_bytes": 7155789,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_024001_025000.block.tar.gz",
+      "compact_bytes": 38339,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_024001_025000.block.tar.gz",
+      "source_bytes": 7394992,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_025001_026000.block.tar.gz",
+      "compact_bytes": 39951,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_025001_026000.block.tar.gz",
+      "source_bytes": 7706305,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_026001_027000.block.tar.gz",
+      "compact_bytes": 42281,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_026001_027000.block.tar.gz",
+      "source_bytes": 7954097,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_027001_028000.block.tar.gz",
+      "compact_bytes": 46131,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_027001_028000.block.tar.gz",
+      "source_bytes": 8285949,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_028001_029000.block.tar.gz",
+      "compact_bytes": 46258,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_028001_029000.block.tar.gz",
+      "source_bytes": 8610921,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_029001_030000.block.tar.gz",
+      "compact_bytes": 45363,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_029001_030000.block.tar.gz",
+      "source_bytes": 8905052,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_030001_031000.block.tar.gz",
+      "compact_bytes": 42262,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_030001_031000.block.tar.gz",
+      "source_bytes": 9069508,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_031001_032000.block.tar.gz",
+      "compact_bytes": 42757,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_031001_032000.block.tar.gz",
+      "source_bytes": 9368662,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_032001_033000.block.tar.gz",
+      "compact_bytes": 46235,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_032001_033000.block.tar.gz",
+      "source_bytes": 9759461,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_033001_034000.block.tar.gz",
+      "compact_bytes": 51131,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_033001_034000.block.tar.gz",
+      "source_bytes": 10209541,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_034001_035000.block.tar.gz",
+      "compact_bytes": 51053,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_034001_035000.block.tar.gz",
+      "source_bytes": 11266813,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_035001_036000.block.tar.gz",
+      "compact_bytes": 51961,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_035001_036000.block.tar.gz",
+      "source_bytes": 11485588,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_036001_037000.block.tar.gz",
+      "compact_bytes": 53329,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_036001_037000.block.tar.gz",
+      "source_bytes": 11840320,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_037001_038000.block.tar.gz",
+      "compact_bytes": 53070,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_037001_038000.block.tar.gz",
+      "source_bytes": 12117077,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_038001_039000.block.tar.gz",
+      "compact_bytes": 57037,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_038001_039000.block.tar.gz",
+      "source_bytes": 12506874,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_039001_040000.block.tar.gz",
+      "compact_bytes": 57507,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_039001_040000.block.tar.gz",
+      "source_bytes": 12772121,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_040001_041000.block.tar.gz",
+      "compact_bytes": 53030,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_040001_041000.block.tar.gz",
+      "source_bytes": 13230711,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_041001_042000.block.tar.gz",
+      "compact_bytes": 54559,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_041001_042000.block.tar.gz",
+      "source_bytes": 13582471,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_042001_043000.block.tar.gz",
+      "compact_bytes": 58287,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_042001_043000.block.tar.gz",
+      "source_bytes": 13718923,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_043001_044000.block.tar.gz",
+      "compact_bytes": 60644,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_043001_044000.block.tar.gz",
+      "source_bytes": 14280382,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_044001_045000.block.tar.gz",
+      "compact_bytes": 65707,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_044001_045000.block.tar.gz",
+      "source_bytes": 14270517,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_045001_046000.block.tar.gz",
+      "compact_bytes": 66806,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_045001_046000.block.tar.gz",
+      "source_bytes": 14700425,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_046001_047000.block.tar.gz",
+      "compact_bytes": 62816,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_046001_047000.block.tar.gz",
+      "source_bytes": 14911224,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_047001_048000.block.tar.gz",
+      "compact_bytes": 63476,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_047001_048000.block.tar.gz",
+      "source_bytes": 15246381,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_048001_049000.block.tar.gz",
+      "compact_bytes": 63920,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_048001_049000.block.tar.gz",
+      "source_bytes": 15732616,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_049001_050000.block.tar.gz",
+      "compact_bytes": 70146,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24A/24A_049001_050000.block.tar.gz",
+      "source_bytes": 15617130,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_000001_001000.block.tar.gz",
+      "compact_bytes": 11809,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_000001_001000.block.tar.gz",
+      "source_bytes": 312445,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_001001_002000.block.tar.gz",
+      "compact_bytes": 11947,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_001001_002000.block.tar.gz",
+      "source_bytes": 513441,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_002001_003000.block.tar.gz",
+      "compact_bytes": 13749,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_002001_003000.block.tar.gz",
+      "source_bytes": 775799,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_003001_004000.block.tar.gz",
+      "compact_bytes": 15906,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_003001_004000.block.tar.gz",
+      "source_bytes": 1092325,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_004001_005000.block.tar.gz",
+      "compact_bytes": 17856,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_004001_005000.block.tar.gz",
+      "source_bytes": 1470075,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_005001_006000.block.tar.gz",
+      "compact_bytes": 17888,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_005001_006000.block.tar.gz",
+      "source_bytes": 1750145,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_006001_007000.block.tar.gz",
+      "compact_bytes": 19089,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_006001_007000.block.tar.gz",
+      "source_bytes": 2077279,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_007001_008000.block.tar.gz",
+      "compact_bytes": 20526,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_007001_008000.block.tar.gz",
+      "source_bytes": 2377480,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_008001_009000.block.tar.gz",
+      "compact_bytes": 21522,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_008001_009000.block.tar.gz",
+      "source_bytes": 2670770,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_009001_010000.block.tar.gz",
+      "compact_bytes": 23311,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_009001_010000.block.tar.gz",
+      "source_bytes": 2971463,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_010001_011000.block.tar.gz",
+      "compact_bytes": 24002,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_010001_011000.block.tar.gz",
+      "source_bytes": 3350576,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_011001_012000.block.tar.gz",
+      "compact_bytes": 27261,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_011001_012000.block.tar.gz",
+      "source_bytes": 3638628,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_012001_013000.block.tar.gz",
+      "compact_bytes": 27686,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_012001_013000.block.tar.gz",
+      "source_bytes": 3992664,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_013001_014000.block.tar.gz",
+      "compact_bytes": 27598,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_013001_014000.block.tar.gz",
+      "source_bytes": 4195722,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_014001_015000.block.tar.gz",
+      "compact_bytes": 29749,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_014001_015000.block.tar.gz",
+      "source_bytes": 4532417,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_015001_016000.block.tar.gz",
+      "compact_bytes": 31951,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_015001_016000.block.tar.gz",
+      "source_bytes": 4814112,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_016001_017000.block.tar.gz",
+      "compact_bytes": 32168,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_016001_017000.block.tar.gz",
+      "source_bytes": 5117882,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_017001_018000.block.tar.gz",
+      "compact_bytes": 31531,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_017001_018000.block.tar.gz",
+      "source_bytes": 5499906,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_018001_019000.block.tar.gz",
+      "compact_bytes": 32101,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_018001_019000.block.tar.gz",
+      "source_bytes": 5808742,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_019001_020000.block.tar.gz",
+      "compact_bytes": 33327,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_019001_020000.block.tar.gz",
+      "source_bytes": 6026492,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_020001_021000.block.tar.gz",
+      "compact_bytes": 35326,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_020001_021000.block.tar.gz",
+      "source_bytes": 6219070,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_021001_022000.block.tar.gz",
+      "compact_bytes": 34181,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_021001_022000.block.tar.gz",
+      "source_bytes": 6531909,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_022001_023000.block.tar.gz",
+      "compact_bytes": 36944,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_022001_023000.block.tar.gz",
+      "source_bytes": 6782221,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_023001_024000.block.tar.gz",
+      "compact_bytes": 39600,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_023001_024000.block.tar.gz",
+      "source_bytes": 7158468,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_024001_025000.block.tar.gz",
+      "compact_bytes": 42223,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_024001_025000.block.tar.gz",
+      "source_bytes": 7397891,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_025001_026000.block.tar.gz",
+      "compact_bytes": 42136,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_025001_026000.block.tar.gz",
+      "source_bytes": 7708752,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_026001_027000.block.tar.gz",
+      "compact_bytes": 38393,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_026001_027000.block.tar.gz",
+      "source_bytes": 7947205,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_027001_028000.block.tar.gz",
+      "compact_bytes": 39249,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_027001_028000.block.tar.gz",
+      "source_bytes": 8277083,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_028001_029000.block.tar.gz",
+      "compact_bytes": 42955,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_028001_029000.block.tar.gz",
+      "source_bytes": 8611404,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_029001_030000.block.tar.gz",
+      "compact_bytes": 48276,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_029001_030000.block.tar.gz",
+      "source_bytes": 8907555,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_030001_031000.block.tar.gz",
+      "compact_bytes": 47913,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_030001_031000.block.tar.gz",
+      "source_bytes": 9077145,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_031001_032000.block.tar.gz",
+      "compact_bytes": 47343,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_031001_032000.block.tar.gz",
+      "source_bytes": 9375092,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_032001_033000.block.tar.gz",
+      "compact_bytes": 45638,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_032001_033000.block.tar.gz",
+      "source_bytes": 9755456,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_033001_034000.block.tar.gz",
+      "compact_bytes": 48655,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_033001_034000.block.tar.gz",
+      "source_bytes": 10205850,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_034001_035000.block.tar.gz",
+      "compact_bytes": 52760,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_034001_035000.block.tar.gz",
+      "source_bytes": 11268695,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_035001_036000.block.tar.gz",
+      "compact_bytes": 53640,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_035001_036000.block.tar.gz",
+      "source_bytes": 11484011,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_036001_037000.block.tar.gz",
+      "compact_bytes": 54347,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_036001_037000.block.tar.gz",
+      "source_bytes": 11841675,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_037001_038000.block.tar.gz",
+      "compact_bytes": 53021,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_037001_038000.block.tar.gz",
+      "source_bytes": 12114451,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_038001_039000.block.tar.gz",
+      "compact_bytes": 52531,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_038001_039000.block.tar.gz",
+      "source_bytes": 12497436,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_039001_040000.block.tar.gz",
+      "compact_bytes": 54761,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_039001_040000.block.tar.gz",
+      "source_bytes": 12774827,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_040001_041000.block.tar.gz",
+      "compact_bytes": 53051,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_040001_041000.block.tar.gz",
+      "source_bytes": 13232301,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_041001_042000.block.tar.gz",
+      "compact_bytes": 55185,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_041001_042000.block.tar.gz",
+      "source_bytes": 13580345,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_042001_043000.block.tar.gz",
+      "compact_bytes": 59050,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_042001_043000.block.tar.gz",
+      "source_bytes": 13709702,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_043001_044000.block.tar.gz",
+      "compact_bytes": 60853,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_043001_044000.block.tar.gz",
+      "source_bytes": 14280082,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_044001_045000.block.tar.gz",
+      "compact_bytes": 61132,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_044001_045000.block.tar.gz",
+      "source_bytes": 14265223,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_045001_046000.block.tar.gz",
+      "compact_bytes": 61814,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_045001_046000.block.tar.gz",
+      "source_bytes": 14693139,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_046001_047000.block.tar.gz",
+      "compact_bytes": 66669,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_046001_047000.block.tar.gz",
+      "source_bytes": 14910817,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_047001_048000.block.tar.gz",
+      "compact_bytes": 69867,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_047001_048000.block.tar.gz",
+      "source_bytes": 15250880,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_048001_049000.block.tar.gz",
+      "compact_bytes": 73913,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_048001_049000.block.tar.gz",
+      "source_bytes": 15747060,
+      "status": "PASS"
+    },
+    {
+      "compact": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_049001_050000.block.tar.gz",
+      "compact_bytes": 74732,
+      "source": "/home/brad/Work/Aura/Artifacts/18-disks-deep-02/blocks/24B/24B_049001_050000.block.tar.gz",
+      "source_bytes": 15620589,
+      "status": "PASS"
+    }
+  ],
+  "schema": "compact-blocks/v1",
+  "summary": {
+    "compact_bytes": 5031477,
+    "reclaimed_bytes_if_old_purged": 936152776,
+    "source_bytes": 941184253
+  },
+  "utc": "20260703T184743Z"
+}

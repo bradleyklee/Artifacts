@@ -224,3 +224,22 @@ certificates; however, that required transferring a roughly 100 MiB+
 session-local toolchain, demonstrating that Rust can work when manually rafted
 into a context but is not presently viable as a normal iterative research
 workflow.
+
+### 18. disks-deep
+
+Artifact 18 is the exact-arithmetic deep-burn project for d12, 24A, and 24B disk
+dynamics. make burn-50k launches a fresh live-monitored 50,000-collision run per
+lane; the retained 50k runs exhibit near-linear common-denominator clock-complexity
+growth (d12: 0.207 bits/event; 24A/24B: 0.526 bits/event; all (R^2 \ge 0.9975)).
+The local README contains the corpus, plots, verified quotient-word views,
+and separate instructions for corpus-derived word checks versus independent
+physical replay.
+
+### 19. ferrite-terms
+
+Artifact 19 extends McLarnan's barium-ferrite enumerations for OEIS
+A011961-A011964. The compact reference implementation generates the
+N=4,6,8,10 ferrite counts from the paper's composition, dihedral-symmetry,
+registry, and exact-period rules. An independently developed Claude
+implementation agreed exactly on all 160 newly compared terms for
+S=21,...,60.
