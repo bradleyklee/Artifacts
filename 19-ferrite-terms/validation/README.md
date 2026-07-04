@@ -1,12 +1,10 @@
-# Validation sidecar
+# Validation
 
-Not part of the reference implementation.
-
-`ferrite_audit.py` contains the development audit: literal Zhdanov expansion,
-direct orbit checks, direct physical-primitivity checks, and a second Burnside
-engine.  It is retained to document due diligence, not as submission-facing
-code.
+Development-only checks.  They are not part of `reference/`.
 
 ```sh
-python3 ferrite_audit.py --audit --start-s 1 --end-s 1
+python3 validation/check_claude.py
 ```
+
+This compares the 160 exchanged values, ignoring only the different `S`/`n`
+labels in the two files.

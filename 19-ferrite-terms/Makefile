@@ -1,12 +1,13 @@
 PYTHON ?= python3
-REF = reference/mclarnan_1981_ferrite.py
 
-terms-21-60:
-	$(PYTHON) $(REF) --n 4 6 8 10 --start-s 21 --end-s 60 > terms/ferrite_terms_S21_S60.txt
+.PHONY: terms check
 
-terms-21-100:
-	$(PYTHON) $(REF) --n 4 6 8 10 --start-s 21 --end-s 100 > terms/ferrite_terms_S21_S100.txt
+terms:
+	$(PYTHON) reference/a011961.py > terms/a011961_n1_100.txt
+	$(PYTHON) reference/a011962.py > terms/a011962_n1_100.txt
+	$(PYTHON) reference/a011963.py > terms/a011963_n1_100.txt
+	$(PYTHON) reference/a011964.py > terms/a011964_n1_100.txt
+	$(PYTHON) reference/all.py > terms/all_n1_100.txt
 
 check:
-	$(PYTHON) validation/ferrite_audit.py --audit --start-s 1 --end-s 1 >/dev/null
-	@echo check: PASS
+	$(PYTHON) validation/check_claude.py

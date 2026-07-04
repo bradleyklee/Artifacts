@@ -1,47 +1,46 @@
 # Artifact 19 — McLarnan ferrite terms
 
-See [`ARTIFACT.md`](ARTIFACT.md) for the short result statement.
+Artifact 19 extends McLarnan's barium-ferrite enumerations for OEIS
+A011961-A011964.  The four fixed-parameter reference implementations print
+terms from `n = 1` onward, using the paper's composition, dihedral-symmetry,
+registry, and exact-period rules.  An independently developed Claude
+implementation agreed exactly on all 160 newly compared terms for
+`n = 21,...,60`.
 
 ## Run
 
 ```sh
-make terms-21-60
-make terms-21-100
+python3 reference/a011961.py
+python3 reference/a011962.py
+python3 reference/a011963.py
+python3 reference/a011964.py
+python3 reference/all.py
 make check
 ```
 
-The submission-facing program is:
+Each OEIS-facing file fixes one parameter:
 
 ```text
-reference/mclarnan_1981_ferrite.py
+reference/a011961.py   M = 4
+reference/a011962.py   M = 6
+reference/a011963.py   M = 8
+reference/a011964.py   M = 10
 ```
 
-It is a compact exact generator for the `M_N Y_S` barium-ferrite counts in
-McLarnan (1981), using the source’s weak-composition encoding, `C_Nv` action,
-and exact-layer-number correction. It contains no OEIS data and no copied term
-table.
+`reference/all.py` prints all four fixed sequences.  It is retained for the
+common use case, but does not replace the separate reference files.
 
-Example:
-
-```sh
-python3 reference/mclarnan_1981_ferrite.py --n 4 6 8 10 --start-s 21 --end-s 60
-```
-
-## Contents
+## Layout
 
 ```text
-reference/    minimal runnable reference implementation
-terms/        generated output; S=21..60 is independently matched
-validation/   development-only audit and alternate implementation
-FromClaude/   Claude submission, retained separately and unchanged
+reference/    fixed-sequence reference implementations
+terms/        outputs through n = 100; matched range n = 21,...,60
+validation/   development-only comparison against the Claude submission
+FromClaude/   Claude files retained without edits
 ```
-
-`terms/ferrite_terms_S21_S60.txt` is the exchanged range.  `S=61..100` is
-additional output from the reference implementation; it was not part of the
-Claude comparison.
 
 ## Source
 
-T. J. McLarnan, “The numbers of polytypes in close-packings and related
-structures,” *Zeitschrift für Kristallographie* **155** (1981), 269–291;
-ferrite construction and count on pp. 285–288.
+T. J. McLarnan, "The numbers of polytypes in close-packings and related
+structures," Zeitschrift für Kristallographie 155 (1981), 269-291;
+barium-ferrite construction and count on pp. 285-288.
