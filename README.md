@@ -236,11 +236,13 @@ and separate instructions for corpus-derived word checks versus independent
 physical replay.
 
 ### 19. ferrite-terms
-Artifact 19 extends McLarnan's barium-ferrite enumerations for OEIS A011961-A011964.
-The four fixed-parameter reference implementations print terms from n = 1 onward,
-using the paper's composition, dihedral-symmetry, registry, and exact-period rules.
-An independently developed Claude implementation agreed exactly on all 160 newly
-compared terms for n = 21,...,60.
+
+Artifact 19 extends McLarnan's barium-ferrite enumerations for OEIS
+A011961-A011964. The compact reference implementation generates the
+N=4,6,8,10 ferrite counts from the paper's composition, dihedral-symmetry,
+registry, and exact-period rules. An independently developed Claude
+implementation agreed exactly on all 160 newly compared terms for
+S=21,...,60.
 
 ### 20. points-contained
 An exact compiled search for OEIS A295344, the maximum number of lattice points
@@ -252,11 +254,3 @@ decisions.
 
 
 
-### 19. ferrite-terms
-
-Artifact 19 extends McLarnan's barium-ferrite enumerations for OEIS
-A011961-A011964. The compact reference implementation generates the
-N=4,6,8,10 ferrite counts from the paper's composition, dihedral-symmetry,
-registry, and exact-period rules. An independently developed Claude
-implementation agreed exactly on all 160 newly compared terms for
-S=21,...,60.
