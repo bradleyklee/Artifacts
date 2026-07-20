@@ -245,12 +245,13 @@ implementation agreed exactly on all 160 newly compared terms for
 S=21,...,60.
 
 ### 20. points-contained
-An exact compiled search for OEIS A295344, the maximum number of lattice points
-covered by a closed circle of integer radius.  A two-boundary-point reduction
-and exact discrete row counts produce terms and quadratic-center witnesses;
-an independent four-neighbor flood fill checks the geometry and supplies a
-timing comparison.  The artifact contains no floating-point geometric
-decisions.
+An exact circular-sweep computation for OEIS A295344, the maximum number of
+lattice points covered by a closed circle of integer radius.  Fixing one
+boundary point turns every other relevant lattice point into an entry/exit
+event; exact differentials replace repeated disk counts and reduce one-term
+work to O(n^2 log n).  Exact-row, center-region, and flood implementations
+provide independent checks.  The supplied terms and longest-chord certificates
+extend through n=300, with all currently published OEIS terms reproduced.
 
 
 
