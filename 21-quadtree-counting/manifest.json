@@ -6,12 +6,11 @@
   "layers": {
     "human": {
       "media_type": "application/pdf",
-      "path": "output/a120593_quadtree_certificate_zine_spread.pdf",
+      "path": "self",
       "requirements": ["vector-rendered", "human-readable", "figures-code-generated"]
     },
     "data": {
       "media_type": "application/json",
-      "path": "data/certificate.json",
       "embedded_name": "a120593_certificate.json",
       "requirements": ["byte-identical-to-embedded-payload", "canonical-math-data"]
     },
@@ -21,6 +20,11 @@
       "required": false
     }
   },
+  "embedded_support": [
+    {"name": "artifact21_type_spec.md", "role": "candidate datatype and relay/gatekeeping expectations"},
+    {"name": "artifact21_manifest.json", "role": "artifact and layer declaration"},
+    {"name": "verify_layered_pdf.py", "role": "independent checker operating from the PDF"}
+  ],
   "checker_obligations": [
     "container-integrity",
     "discover-visible-claims",

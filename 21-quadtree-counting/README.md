@@ -28,6 +28,7 @@ are separate gates: neither result implies the other.
 - `source/interior_prose_page_style.json` — style data used by the builder.
 - `requirements.txt` — Python dependencies for the verifier and source.
 - `SHA256SUMS` — digests for the primary PDF, payload, checker, and report.
+- `FromClaude/` — drop location for review files returned by Claude.
 
 ## Verification
 
@@ -39,7 +40,7 @@ python3 verification/verify_layered_pdf.py \
   --output verification/recomputed_report.json
 ```
 
-The included report records fifteen passing checks and no failures. It verifies
+The included report records sixteen passing checks and no failures. It verifies
 container properties, embedded data, quadtree counts, residue extraction, the
 rational telescoping identity over `Q(n,u)`, the P-recurrence, the differential
 operator, the algebraic generating equation, the surface-math inventory, and

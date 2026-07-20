@@ -77,6 +77,18 @@ def check_pdf(path: Path) -> dict:
     doc.close()
 
     record("two-page carrier", page_count == 2, {"pages": page_count}, scope="container")
+    required_attachments = {
+        "a120593_certificate.json",
+        "artifact21_type_spec.md",
+        "artifact21_manifest.json",
+        "verify_layered_pdf.py",
+    }
+    record(
+        "self-contained support attachments",
+        required_attachments.issubset(set(names)),
+        {"attachments": sorted(names), "required": sorted(required_attachments)},
+        scope="container",
+    )
     record(
         "vector-only pages",
         raster_counts == [0, 0],

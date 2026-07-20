@@ -29,6 +29,9 @@ REPO = PAGE.parents[1]
 STYLE = json.loads((REPO/'pages/_common_zine_style/data/interior_prose_page_style.json').read_text())
 DATA_PATH = PAGE/'data/certificate.json'
 DATA = json.loads(DATA_PATH.read_text())
+TYPE_SPEC_PATH = PAGE/'ARTIFACT_21.md'
+ARTIFACT_MANIFEST_PATH = PAGE/'data/artifact21_manifest.json'
+VERIFIER_PATH = PAGE/'src/verify_layered_pdf.py'
 OUT = PAGE/'output'; OUT.mkdir(parents=True, exist_ok=True)
 W,H = 675,900; ML,MR = 42,42
 PAPER='#fbfaf7'; INK='#211f1b'; QUIET='#615b52'; RULE='#49453e'; GRAY='#c9c5bd'
@@ -233,7 +236,7 @@ def tree_code(t):
     return '⟨'+','.join('□' if t[p] is None else tree_code(t[p]) for p in CCW)+'⟩'
 
 def page_one():
-    reg=SpatialRegistry(1); s=base({'publication':'ZINE OF ZANY SAGES','running':'Mathematical Separator',
+    reg=SpatialRegistry(1); s=base({'publication':'ZINE OF ZANY SAGES','running':'Mathematical gatherings',
       'title':'Counting the quadrant trees','subtitle':'A combinatorial derivation'})
     # n=1 and n=2 band
     reg.add('small-atlas',42,145,591,108)
@@ -270,13 +273,13 @@ def page_one():
     reg.add('proof-closed-form',42,774,591,63,overlap_with=('counting-proof',))
     s += [f'<line x1="337" y1="587" x2="337" y2="767" stroke="#aaa398" stroke-width=".6"/>',
           paragraph_svg(42,598,'A quadtree square needs to be split into quadrants, possibly recursively, if it contains two or more points. Apply this procedure recursively to obtain a perfect quaternary tree pointing to n points on n true leafs. Forget those branches not ending at a true leaf point.',287,8.5,14),
-          paragraph_svg(42,666,'Now let i, j, k count nodes with 2, 3, or 4 valence only, and distinguish branch-like (bₓ) from true leafs (l₀). Each branch introduces a differential toward leaf count:',287,8.5,14),
+          paragraph_svg(42,666,'Now let i, j, k count nodes with x = 2, 3, or 4 valence, respectively, and distinguish branch-like (bₓ) from true leafs (l₀). Each branch introduces a differential toward leaf count:',287,8.5,14),
           math_svg(r'b_x:X\longmapsto X\prime=X+x-1',185.5,702,10.2,'middle'),
           paragraph_svg(42,729,'Summing over all branch nodes, starting from one root and ending in n true leafs we obtain that:',287,8.5,14),
           math_svg(r'1+i+2j+3k-n=0',185.5,741,10.7,'middle'),
           paragraph_svg(345,598,'The total number of nodes including the root and true leafs will be m=i+j+k+n. The raw multinomial ordering of these symbols is:',288,8.5,14),
           math_svg(r'\binom{m}{n,i,j,k}\;=\;\frac{m!}{n!\,i!\,j!\,k!}',489,620,12.2,'middle'),
-          paragraph_svg(345,658,'For each sequencing of bₓ and l₀ symbols there is exactly one cyclic rotation whose partial sums are non-zero until all leafs are consumed, so we divide the multinomial by m.',288,8.35,14),
+          paragraph_svg(345,658,'Take any linear ordering of the bₓ and l₀ symbols. Cyclically shift it until the partial sums from X = 1 reach zero only after the last term. This is the unique shift that reads as a valid rooted tree, so we divide by m.',288,8.25,12),
           paragraph_svg(345,708,'The b₂ and b₃ branchings are associated to 6 and 4 distinct realizations in space, so we multiply by 6ⁱ and 4ʲ to obtain the final closed-form summand:',288,8.35,14),
           math_svg(r'\frac{(n+i+j+k-1)!}{n!\,i!\,j!\,k!}\,6^i4^j',489,742,9.7,'middle'),
           f'<line x1="42" y1="772" x2="633" y2="772" stroke="#aaa398" stroke-width=".6"/>',
@@ -286,7 +289,7 @@ def page_one():
     return ''.join(s),reg.audit()
 
 def page_two():
-    reg=SpatialRegistry(2); s=base({'publication':'ZINE OF ZANY SAGES','running':'Congrats, Hadrien Brochet',
+    reg=SpatialRegistry(2); s=base({'publication':'ZINE OF ZANY SAGES','running':'Congrats, Hadrien Brochet!',
       'title':'The witness certificate','subtitle':'Just the integral-differential facts'})
     reg.add('integral',42,138,591,240)
     s += [text(42,151,'INTEGRAL FORM',10,'quiet',weight='bold',tracking=1),
@@ -423,7 +426,13 @@ def build():
     writer.add_uri(1,'https://arxiv.org/abs/2307.07216',
                    RectangleObject((31.5,43.0,187.0,57.0)),border=[0,0,0])
     payload=DATA_PATH.read_bytes(); sha=hashlib.sha256(payload).hexdigest()
-    writer.add_attachment('a120593_certificate.json',payload)
+    attachments={
+        'a120593_certificate.json':payload,
+        'artifact21_type_spec.md':TYPE_SPEC_PATH.read_bytes(),
+        'artifact21_manifest.json':ARTIFACT_MANIFEST_PATH.read_bytes(),
+        'verify_layered_pdf.py':VERIFIER_PATH.read_bytes(),
+    }
+    for name,content in attachments.items():writer.add_attachment(name,content)
     writer.add_metadata({'/Title':'A120593 quadtree and rational certificate',
                          '/Subject':'Code-generated Zine of Zany Sages proof spread',
                          '/A120593CertificateSHA256':sha,
@@ -444,7 +453,7 @@ def build():
                             'uri':'https://arxiv.org/abs/2307.07216'})
     proof.save(OUT/'a120593_quadtree_certificate_zine_spread_printerproof.pdf',garbage=4,deflate=True)
     proof.close(); natural.close()
-    audit={'status':'PASS','pages':audits,'embedded_payload':'a120593_certificate.json',
+    audit={'status':'PASS','pages':audits,'embedded_payloads':list(attachments),
            'payload_sha256':sha,'oriented_counts':[1,6,76],'d4_orbits':[1,2,11]}
     (OUT/'layout_audit.json').write_text(json.dumps(audit,indent=2)+'\n')
     print(json.dumps(audit,indent=2)); print(final)

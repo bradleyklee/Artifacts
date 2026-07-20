@@ -2,9 +2,9 @@
   "artifact_type": "layered-verifiable-pdf",
   "artifact_id": "artifact-21",
   "pdf": {
-    "name": "Artifact21_Certificate.pdf",
-    "sha256": "db089580681976b8acb8caa138d61364c1cc2eb18ee1b60113ff2a228a659079",
-    "size_bytes": 1299596
+    "name": "a120593_quadtree_certificate_zine_spread.pdf",
+    "sha256": "48bdbad4394c51de73cd75a3c9f30f9de3906ea9ec60932df0d817e420fcc8ea",
+    "size_bytes": 1327180
   },
   "payload": {
     "embedded_name": "a120593_certificate.json",
@@ -13,7 +13,7 @@
   },
   "summary": {
     "status": "pass",
-    "passes": 15,
+    "passes": 16,
     "failures": 0
   },
   "checks": [
@@ -23,6 +23,25 @@
       "status": "pass",
       "detail": {
         "pages": 2
+      }
+    },
+    {
+      "name": "self-contained support attachments",
+      "scope": "container",
+      "status": "pass",
+      "detail": {
+        "attachments": [
+          "a120593_certificate.json",
+          "artifact21_manifest.json",
+          "artifact21_type_spec.md",
+          "verify_layered_pdf.py"
+        ],
+        "required": [
+          "a120593_certificate.json",
+          "artifact21_manifest.json",
+          "artifact21_type_spec.md",
+          "verify_layered_pdf.py"
+        ]
       }
     },
     {

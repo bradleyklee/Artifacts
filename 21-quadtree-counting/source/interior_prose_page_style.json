@@ -1,58 +1,8 @@
 {
-  "template_name": "interior_prose_page_v1",
-  "source_reference": "pages/current_editor_page4 approved v15 layout",
-  "page": {
-    "width": 675,
-    "height": 900,
-    "margin_left": 42,
-    "margin_right": 42,
-    "top_rule_y": 42,
-    "footer_rule_y": 850,
-    "footer_second_rule_y": 853.5
-  },
-  "fonts": {
-    "body_regular": "/usr/share/fonts/opentype/linux-libertine/LinLibertine_R.otf",
-    "body_italic": "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RI.otf",
-    "body_bold": "/usr/share/fonts/opentype/linux-libertine/LinLibertine_RB.otf"
-  },
-  "palette": {
-    "paper": "#fbfaf7",
-    "rule": "#49453e",
-    "secondary_rule": "#706b63",
-    "ink": "#211f1b",
-    "ink_dark": "#111",
-    "quiet": "#615b52",
-    "quiet_title": "#625c54",
-    "box_fill": "#fdfcf9",
-    "box_stroke": "#aaa398",
-    "box_heading_fill": "#eae5db"
-  },
-  "typography": {
-    "header_y": 30,
-    "header_size": 12,
-    "header_tracking": 2,
-    "header_minor_size": 9.6,
-    "title_y": 92,
-    "title_size": 39,
-    "subtitle_y": 119,
-    "subtitle_size": 15,
-    "footer_y": 886,
-    "footer_size": 10.8,
-    "footer_tracking": 2,
-    "page_number_y": 889,
-    "page_number_size": 31,
-    "footer_note_size": 11.3
-  },
-  "exports": {
-    "png_width": 1350,
-    "png_height": 1800,
-    "printerproof_page_width": 612,
-    "printerproof_page_height": 792,
-    "printerproof_placement": [
-      52.875,
-      58.5,
-      559.125,
-      733.5
-    ]
-  }
+  "page_size": [675, 900],
+  "content_bounds": [42, 132, 591, 708],
+  "quadtree_square_size": 62,
+  "minimum_gap": 8,
+  "collision_policy": "Every top-level region and every diagram-label unit is registered; positive-area intersections are fatal.",
+  "payload_policy": "certificate.json is embedded in the final PDF as an associated file and is not painted on either page."
 }
