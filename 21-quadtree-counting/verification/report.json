@@ -1,0 +1,246 @@
+{
+  "artifact_type": "layered-verifiable-pdf",
+  "artifact_id": "artifact-21",
+  "pdf": {
+    "name": "Artifact21_Certificate.pdf",
+    "sha256": "db089580681976b8acb8caa138d61364c1cc2eb18ee1b60113ff2a228a659079",
+    "size_bytes": 1299596
+  },
+  "payload": {
+    "embedded_name": "a120593_certificate.json",
+    "sha256": "72b5b1f863f797aff9d5e44d53504ab07528dddaef25ca758766c898585ce5b5",
+    "sequence": "A120593"
+  },
+  "summary": {
+    "status": "pass",
+    "passes": 15,
+    "failures": 0
+  },
+  "checks": [
+    {
+      "name": "two-page carrier",
+      "scope": "container",
+      "status": "pass",
+      "detail": {
+        "pages": 2
+      }
+    },
+    {
+      "name": "vector-only pages",
+      "scope": "container",
+      "status": "pass",
+      "detail": {
+        "raster_image_counts": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "declared external links",
+      "scope": "container",
+      "status": "pass",
+      "detail": {
+        "links": [
+          "https://oeis.org/A120593",
+          "https://arxiv.org/abs/2307.07216"
+        ]
+      }
+    },
+    {
+      "name": "visible prose anchors",
+      "scope": "surface",
+      "status": "pass",
+      "detail": "section headings extracted from the PDF text layer"
+    },
+    {
+      "name": "multinomial initial values",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "computed": [
+          1,
+          1,
+          6,
+          76,
+          1201,
+          21252
+        ],
+        "payload": [
+          1,
+          1,
+          6,
+          76,
+          1201,
+          21252
+        ]
+      }
+    },
+    {
+      "name": "integral residues equal multinomial counts",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "n_1_through_8": [
+          1,
+          6,
+          76,
+          1201,
+          21252,
+          402892,
+          8001412,
+          164321982
+        ]
+      }
+    },
+    {
+      "name": "residue selects coefficient n-1",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "coefficient_values": [
+          1,
+          6,
+          76,
+          1201,
+          21252,
+          402892,
+          8001412,
+          164321982
+        ]
+      }
+    },
+    {
+      "name": "rational telescoping identity over Q(n,u)",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "reduced_difference": "0"
+      }
+    },
+    {
+      "name": "P-recurrence matches multinomial sequence",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "n_0_through_9_residuals": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "differential operator coefficient translation",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "differential_coefficients_plus_recurrence_P": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    {
+      "name": "algebraic generating equation",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "checked_degrees": [
+          0,
+          12
+        ],
+        "residual_coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "D and quadtree generating equation correspondence",
+      "scope": "mathematics",
+      "status": "pass",
+      "detail": {
+        "checked_degrees": [
+          0,
+          12
+        ],
+        "residual_coefficients": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "surface equation source inventory",
+      "scope": "surface",
+      "status": "pass",
+      "detail": {
+        "format": "matplotlib-mathtext-latex",
+        "page_1_equations": 8,
+        "page_2_equations": 23,
+        "duplicate_ids": [],
+        "parse_errors": [],
+        "ordinary_text_layer_tokens": [
+          "D(u)="
+        ],
+        "qualification": "JSON carries exact MathText source; the rendered outlines still require visual or renderer-trust review."
+      }
+    },
+    {
+      "name": "surface inventory agrees with canonical initial data",
+      "scope": "surface",
+      "status": "pass",
+      "detail": {
+        "p1-count-1": true,
+        "p1-count-2": true,
+        "p1-count-3": true,
+        "p2-initial-values": true
+      }
+    },
+    {
+      "name": "quadtree figures have machine-readable representative manifest",
+      "scope": "surface",
+      "status": "pass",
+      "detail": {
+        "representatives_per_n": {
+          "1": 1,
+          "2": 2,
+          "3": 11
+        },
+        "explanation": "Canonical CCW codes, inventories, and orbit sizes are present for every displayed representative."
+      }
+    }
+  ]
+}

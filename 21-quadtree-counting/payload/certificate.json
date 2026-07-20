@@ -1,0 +1,111 @@
+{
+  "sequence": "A120593",
+  "indexing": "q[0]=1; multinomial formula applies for n>=1",
+  "initial_values": [1, 1, 6, 76, 1201, 21252],
+  "generating_function": {
+    "Q": "Q=x+6*Q^2+4*Q^3+Q^4",
+    "A": "A=1+Q",
+    "algebraic_equation": "A^4-5*A+4+x=0"
+  },
+  "multinomial_sum": {
+    "formula": "q[n]=sum_{i,j,k>=0, i+2*j+3*k=n-1} (n+i+j+k-1)!*6^i*4^j/(n!*i!*j!*k!)",
+    "range": "n>=1"
+  },
+  "lagrange_certificate_setup": {
+    "D": "1-6*u-4*u^2-u^3",
+    "H": "H[n](u)=1/(n*u^n*D(u)^n)",
+    "coefficient_integral": "q[n]=(1/(2*pi*i))*contour_integral H[n](u) du"
+  },
+  "recurrence": {
+    "form": "sum_{r=0}^3 P[r](n)*q[n+r]=0",
+    "valid_for": "n>=0 (n=0 checked directly; certificate proves n>=1)",
+    "P": [
+      "-8*(4*n+5)*(2*n+1)*(4*n-1)",
+      "-64*(n+1)*(48*n^2+96*n+43)",
+      "-6144*(2*n+3)*(n+2)*(n+1)",
+      "491*(n+3)*(n+2)*(n+1)"
+    ]
+  },
+  "differential_equation": "(256*x^3+3072*x^2+12288*x-491)*A'''(x)+(1152*x^2+9216*x+18432)*A''(x)+(688*x+2752)*A'(x)-40*A(x)=0",
+  "rational_certificate": {
+    "R": "N(n,u)/(u^2*(u^3+4*u^2+6*u-1)^2)",
+    "N_by_n_degree": {
+      "2": [-491, 6396, 204, -8524, -5136, 2784, 4496, 2304, 576, 64],
+      "1": [-491, 6648, -948, -11872, -6228, 5784, 7988, 4032, 1008, 112],
+      "0": [0, 0, 40, -440, 640, 2960, 2960, 1440, 360, 40]
+    },
+    "coefficient_convention": "N_by_n_degree[d][e] is coefficient of n^d*u^e"
+  },
+  "verification_identity": "sum_{r=0}^3 P[r](n)*H[n+r](u)=d/du(R(n,u)*H[n](u))",
+  "boundary_argument": "The contour integral of the exact derivative is zero on a closed coefficient-extraction contour avoiding poles.",
+  "exact_check": "Expand the verification identity over Q(n,u), clear denominators, and verify the numerator polynomial is zero.",
+  "symmetry_audit": {
+    "group": "global D4 action on every quadrant address",
+    "orbits_n_1_to_3": [1, 2, 11],
+    "oriented_counts_n_1_to_3": [1, 6, 76],
+    "n3_orbit_sizes": [4, 8, 8, 8, 4, 8, 8, 8, 8, 8, 4],
+    "tree_representatives": {
+      "1": [{"code": "▪", "orbit_size": 1, "inventory": [0, 0, 0]}],
+      "2": [
+        {"code": "⟨▪,□,□,▪⟩", "orbit_size": 4, "inventory": [1, 0, 0]},
+        {"code": "⟨▪,□,▪,□⟩", "orbit_size": 2, "inventory": [1, 0, 0]}
+      ],
+      "3": [
+        {"code": "⟨▪,▪,□,▪⟩", "orbit_size": 4, "inventory": [0, 1, 0]},
+        {"code": "⟨▪,□,□,⟨□,▪,▪,□⟩⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨▪,□,□,⟨▪,□,▪,□⟩⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨▪,□,□,⟨▪,▪,□,□⟩⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨▪,□,⟨□,▪,□,▪⟩,□⟩", "orbit_size": 4, "inventory": [2, 0, 0]},
+        {"code": "⟨▪,□,⟨▪,□,□,▪⟩,□⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨⟨▪,□,□,▪⟩,□,□,▪⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨⟨▪,□,□,▪⟩,□,▪,□⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨⟨▪,□,□,▪⟩,▪,□,□⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨⟨▪,□,▪,□⟩,□,□,▪⟩", "orbit_size": 8, "inventory": [2, 0, 0]},
+        {"code": "⟨⟨▪,□,▪,□⟩,□,▪,□⟩", "orbit_size": 4, "inventory": [2, 0, 0]}
+      ]
+    }
+  },
+  "surface_math": {
+    "format": "matplotlib-mathtext-latex",
+    "page_1": [
+      {"id": "p1-count-1", "latex": "a(1)=1"},
+      {"id": "p1-count-2", "latex": "a(2)=6"},
+      {"id": "p1-count-3", "latex": "a(3)=76"},
+      {"id": "p1-slot-change", "latex": "b_x:X\\longmapsto X\\prime=X+x-1"},
+      {"id": "p1-slot-balance", "latex": "1+i+2j+3k-n=0"},
+      {"id": "p1-multinomial", "latex": "\\binom{m}{n,i,j,k}\\;=\\;\\frac{m!}{n!\\,i!\\,j!\\,k!}"},
+      {"id": "p1-summand", "latex": "\\frac{(n+i+j+k-1)!}{n!\\,i!\\,j!\\,k!}\\,6^i4^j"},
+      {"id": "p1-closed-form", "latex": "a(n)=\\sum\\frac{(n+i+j+k-1)!}{n!\\,i!\\,j!\\,k!}\\,6^i4^j,\\qquad \\mathrm{where}\\quad i,j,k\\geq0,\\quad 1+i+2j+3k-n=0\\,."}
+    ],
+    "page_2": [
+      {"id": "p2-integral-definitions", "latex": "D(u)=1-6u-4u^2-u^3,\\qquad H_n(u)=\\frac{1}{n u^nD(u)^n},\\qquad q_n=\\frac{1}{2\\pi i}\\oint H_n(u)\\,du"},
+      {"id": "p2-laurent-expansion", "latex": "q_n=\\frac{1}{2\\pi i}\\oint\\frac{1}{n}\\sum\\sum\\binom{n+m-1}{m}\\binom{m}{i,j,k}6^i4^j u^{i+2j+3k-n}\\,du,\\quad\\mathrm{where}\\quad m,i,j,k\\geq0,\\ i+j+k=m."},
+      {"id": "p2-contour-selector", "latex": "\\frac{1}{2\\pi i}\\oint u^r\\,du=1\\ \\ (r=-1),\\qquad 0\\ \\ (r\\neq-1)."},
+      {"id": "p2-exponent-constraint", "latex": "i+2j+3k-n=-1\\quad\\Longleftrightarrow\\quad 1+i+2j+3k-n=0,"},
+      {"id": "p2-constrained-sum", "latex": "q_n=\\frac{1}{n}\\sum\\binom{n+m-1}{m}\\binom{m}{i,j,k}6^i4^j,\\quad\\mathrm{where}\\quad m,i,j,k\\geq0,\\ i+j+k=m,\\ 1+i+2j+3k-n=0."},
+      {"id": "p2-factorial-collapse", "latex": "\\frac{1}{n}\\binom{n+m-1}{m}\\binom{m}{i,j,k}=\\frac{(n+i+j+k-1)!}{n!\\,i!\\,j!\\,k!}\\quad\\Longrightarrow\\quad q_n=a(n)."},
+      {"id": "p2-verification-identity", "latex": "\\sum_{r=0}^{3}P_r(n)H_{n+r}(u)=\\frac{d}{du}\\left(R(n,u)H_n(u)\\right)"},
+      {"id": "p2-rational-certificate", "latex": "R(n,u)=\\frac{N(n,u)}{u^2(u^3+4u^2+6u-1)^2}"},
+      {"id": "p2-N-line-1", "latex": "N(n,u)=n^2(64u^9+576u^8+2304u^7+4496u^6"},
+      {"id": "p2-N-line-2", "latex": "+2784u^5-5136u^4-8524u^3+204u^2+6396u-491)"},
+      {"id": "p2-N-line-3", "latex": "+n(112u^9+1008u^8+4032u^7+7988u^6"},
+      {"id": "p2-N-line-4", "latex": "+5784u^5-6228u^4-11872u^3-948u^2+6648u-491)"},
+      {"id": "p2-N-line-5", "latex": "+40u^9+360u^8+1440u^7+2960u^6"},
+      {"id": "p2-N-line-6", "latex": "+2960u^5+640u^4-440u^3+40u^2."},
+      {"id": "p2-recurrence", "latex": "\\sum_{r=0}^{3}P_r(n)q_{n+r}=0"},
+      {"id": "p2-initial-values", "latex": "q_0,\\ldots,q_5=1,1,6,76,1201,21252"},
+      {"id": "p2-P0", "latex": "P_0=-8(4n+5)(2n+1)(4n-1)"},
+      {"id": "p2-P1", "latex": "P_1=-64(n+1)(48n^2+96n+43)"},
+      {"id": "p2-P2", "latex": "P_2=-6144(2n+3)(n+2)(n+1)"},
+      {"id": "p2-P3", "latex": "P_3=491(n+3)(n+2)(n+1)"},
+      {"id": "p2-algebraic-equation", "latex": "5A(x)=4+x+A(x)^4\\quad\\Longleftrightarrow\\quad Q=A-1,\\quad Q=\\frac{x}{D(Q)}"},
+      {"id": "p2-differential-line-1", "latex": "(256x^3+3072x^2+12288x-491)A^{(3)}+(1152x^2+9216x+18432)A^{(2)}"},
+      {"id": "p2-differential-line-2", "latex": "+(688x+2752)A^{(1)}-40A=0"}
+    ]
+  },
+  "provenance": {
+    "derivation": "Independent derivation and exact SymPy verification; no image generation, Maple, or Mathematica used.",
+    "related_implementation_inspected": "https://github.com/HBrochet/CreativeTelescoping",
+    "inspected_commit": "30253bd5b197bdf17fffb9bd2bcdbd6468218f36"
+  }
+}

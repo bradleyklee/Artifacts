@@ -253,5 +253,9 @@ work to O(n^2 log n).  Exact-row, center-region, and flood implementations
 provide independent checks.  The supplied terms and longest-chord certificates
 extend through n=300, with all currently published OEIS terms reproduced.
 
+### 21. quadtree-counting
 
-
+Artifact 21 proposes a layered PDF format for relaying verifiable 
+mathematics between human and LLM readers. It pairs readable pages with 
+hidden machine-checkable data and optional formal proofs, using 
+quadtree enumeration as its first example.

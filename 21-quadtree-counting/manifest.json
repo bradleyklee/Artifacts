@@ -1,0 +1,36 @@
+{
+  "artifact_id": "artifact-21",
+  "artifact_type": "layered-verifiable-pdf",
+  "type_version": "0.1",
+  "status": "candidate",
+  "layers": {
+    "human": {
+      "media_type": "application/pdf",
+      "path": "output/a120593_quadtree_certificate_zine_spread.pdf",
+      "requirements": ["vector-rendered", "human-readable", "figures-code-generated"]
+    },
+    "data": {
+      "media_type": "application/json",
+      "path": "data/certificate.json",
+      "embedded_name": "a120593_certificate.json",
+      "requirements": ["byte-identical-to-embedded-payload", "canonical-math-data"]
+    },
+    "formal": {
+      "media_type": "text/x-lean",
+      "status": "not_implemented",
+      "required": false
+    }
+  },
+  "checker_obligations": [
+    "container-integrity",
+    "discover-visible-claims",
+    "surface-payload-equality",
+    "payload-self-consistency",
+    "certificate-verification",
+    "operator-translation",
+    "external-source-comparison",
+    "human-layer-review",
+    "formal-layer-review"
+  ],
+  "release_rule": "All required obligations must pass; optional absent layers must be explicit."
+}
