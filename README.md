@@ -258,4 +258,7 @@ extend through n=300, with all currently published OEIS terms reproduced.
 Artifact 21 proposes a layered PDF format for relaying verifiable 
 mathematics between human and LLM readers. It pairs readable pages with 
 hidden machine-checkable data and optional formal proofs, using 
-quadtree enumeration as its first example.
+quadtree enumeration as its first example. The future of this effort
+is working toward something like an ANSI standard that can also be 
+agreed on by security researchers who don't really like the "hidden
+payloads" aspect of the pdf file format.
