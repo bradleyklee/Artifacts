@@ -1,0 +1,533 @@
+{
+  "checks": {
+    "D_q_formula_exact": {
+      "pass": true,
+      "value": "0"
+    },
+    "GUV_split_exact": {
+      "pass": true,
+      "value": 0
+    },
+    "G_determinant_matches": {
+      "pass": true,
+      "value": "-266453663671"
+    },
+    "G_times_G_inverse_identity": {
+      "pass": true,
+      "value": 0
+    },
+    "J_derivative_matrix_exact": {
+      "pass": true,
+      "value": 0
+    },
+    "X_full_last_row_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "X_full_rebuilt_from_lowering": {
+      "pass": true,
+      "value": 0
+    },
+    "X_is_prefix_of_X_full": {
+      "pass": true,
+      "value": 0
+    },
+    "X_rank_q_minus_1": {
+      "pass": true,
+      "value": 7
+    },
+    "X_times_P_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "all_term_recurrence_residuals_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "basis_dimension_q": {
+      "pass": true,
+      "value": 8
+    },
+    "basis_order_explicit": {
+      "pass": true,
+      "value": "ascending powers of u"
+    },
+    "certificate_denominator_power": {
+      "pass": true,
+      "value": 6
+    },
+    "cleared_telescoping_identity_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_ODE_status_valid": {
+      "pass": true,
+      "value": {
+        "requested": false,
+        "status": "not_run"
+      }
+    },
+    "format_v0_2": {
+      "pass": true,
+      "value": "RELAY-CT-annotated-case-v0.2"
+    },
+    "integrand_rho_form_defined": {
+      "pass": true,
+      "value": "1/(n*rho_q(u)^n)"
+    },
+    "integrand_symbol_defined": {
+      "pass": true,
+      "value": "H_{q,n}(u)"
+    },
+    "lowering_chain_count": {
+      "pass": true,
+      "value": 8
+    },
+    "lowering_shift_0_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_2_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_2_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_2_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_2_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_2_step_2_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_2_step_2_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_2_step_2_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_2_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_2_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_2_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_3_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_3_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_3_step_3_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_2_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_2_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_2_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_3_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_3_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_3_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_4_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_4_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_4_step_4_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_2_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_2_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_2_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_3_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_3_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_3_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_4_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_4_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_4_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_5_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_5_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_5_step_5_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_2_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_2_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_2_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_3_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_3_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_3_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_4_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_4_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_4_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_5_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_5_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_5_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_6_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_6_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_6_step_6_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_2_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_2_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_2_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_3_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_3_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_3_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_4_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_4_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_4_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_5_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_5_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_5_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_6_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_6_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_6_input": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_7_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_7_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_7_step_7_input": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_ode_boundary_exact": {
+      "pass": true,
+      "value": "0"
+    },
+    "recurrence_ode_coefficient_correspondence": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_ode_coefficients_exact": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_ode_series_residual_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_scale_0_polynomial": {
+      "pass": true,
+      "value": "-16777216*n**7 - 293601280*n**6 - 2022178816*n**5 - 6927155200*n**4 - 12180066304*n**3 - 9922017280*n**2 - 2313179904*n + 469722240"
+    },
+    "recurrence_scale_1_polynomial": {
+      "pass": true,
+      "value": "-939524096*n**7 - 16911433728*n**6 - 120816926720*n**5 - 435117096960*n**4 - 824650072064*n**3 - 768662372352*n**2 - 269399808000*n"
+    },
+    "recurrence_scale_2_polynomial": {
+      "pass": true,
+      "value": "-22548578304*n**7 - 417148698624*n**6 - 3079290224640*n**5 - 11538530304000*n**4 - 22966294020096*n**3 - 22780843524096*n**2 - 8668389703680*n"
+    },
+    "recurrence_scale_3_polynomial": {
+      "pass": true,
+      "value": "-300647710720*n**7 - 5712306503680*n**6 - 43424803717120*n**5 - 168005698846720*n**4 - 345923009904640*n**3 - 354960497704960*n**2 - 139030041722880*n"
+    },
+    "recurrence_scale_4_polynomial": {
+      "pass": true,
+      "value": "-2405181685760*n**7 - 46901042872320*n**6 - 366113749729280*n**5 - 1454045071933440*n**4 - 3068560859463680*n**3 - 3216667437957120*n**2 - 1280533761884160*n"
+    },
+    "recurrence_scale_5_polynomial": {
+      "pass": true,
+      "value": "-11544872091648*n**7 - 230897441832960*n**6 - 1846097202905088*n**5 - 7493343541985280*n**4 - 16113394444664832*n**3 - 17147742828625920*n**2 - 6900947292782592*n"
+    },
+    "recurrence_scale_6_polynomial": {
+      "pass": true,
+      "value": "-30786325577728*n**7 - 631119674343424*n**6 - 5156709534269440*n**5 - 21319530462576640*n**4 - 46533531110735872*n**3 - 50089351714963456*n**2 - 20318974881300480*n"
+    },
+    "recurrence_scale_7_polynomial": {
+      "pass": true,
+      "value": "266453663671*n**7 + 5595526937091*n**6 + 46629391142425*n**5 + 195843442798185*n**4 + 432720749801704*n**3 + 470024262715644*n**2 + 191846637843120*n"
+    },
+    "required_primary_objects_present": {
+      "pass": true,
+      "value": [
+        "bases",
+        "closed_form",
+        "direct_derivative_reduction",
+        "input_polynomials",
+        "integrand_family",
+        "matrices",
+        "ode_from_recurrence",
+        "p_recurrence",
+        "pole_lowering_chains",
+        "provenance_graph",
+        "rational_certificate",
+        "sequence_family",
+        "shifted_generating_function",
+        "typogeometric_model"
+      ]
+    },
+    "rho_equals_u_D": {
+      "pass": true,
+      "value": "0"
+    }
+  },
+  "elapsed_seconds": 14.638846893998561,
+  "format": "RELAY-CT-validation-v0.2",
+  "pass": true,
+  "passed_checks": 126,
+  "q": 8,
+  "source": "/home/brad/Work/Aura/Artifacts/22-certificate-factory/runs/q8/case.json",
+  "total_checks": 126
+}

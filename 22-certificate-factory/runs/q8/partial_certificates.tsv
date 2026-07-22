@@ -1,0 +1,29 @@
+shift	lowering_index	pole_parameter	scale	certificate_polynomial	N_contribution
+1	1	n	stored-in-generator	stored-in-generator	stored-in-generator
+2	2	n + 1	stored-in-generator	stored-in-generator	stored-in-generator
+2	1	n	stored-in-generator	stored-in-generator	stored-in-generator
+3	3	n + 2	stored-in-generator	stored-in-generator	stored-in-generator
+3	2	n + 1	stored-in-generator	stored-in-generator	stored-in-generator
+3	1	n	stored-in-generator	stored-in-generator	stored-in-generator
+4	4	n + 3	stored-in-generator	stored-in-generator	stored-in-generator
+4	3	n + 2	stored-in-generator	stored-in-generator	stored-in-generator
+4	2	n + 1	stored-in-generator	stored-in-generator	stored-in-generator
+4	1	n	stored-in-generator	stored-in-generator	stored-in-generator
+5	5	n + 4	stored-in-generator	stored-in-generator	stored-in-generator
+5	4	n + 3	stored-in-generator	stored-in-generator	stored-in-generator
+5	3	n + 2	stored-in-generator	stored-in-generator	stored-in-generator
+5	2	n + 1	stored-in-generator	stored-in-generator	stored-in-generator
+5	1	n	stored-in-generator	stored-in-generator	stored-in-generator
+6	6	n + 5	stored-in-generator	stored-in-generator	stored-in-generator
+6	5	n + 4	stored-in-generator	stored-in-generator	stored-in-generator
+6	4	n + 3	stored-in-generator	stored-in-generator	stored-in-generator
+6	3	n + 2	stored-in-generator	stored-in-generator	stored-in-generator
+6	2	n + 1	stored-in-generator	stored-in-generator	stored-in-generator
+6	1	n	stored-in-generator	stored-in-generator	stored-in-generator
+7	7	n + 6	stored-in-generator	stored-in-generator	stored-in-generator
+7	6	n + 5	stored-in-generator	stored-in-generator	stored-in-generator
+7	5	n + 4	stored-in-generator	stored-in-generator	stored-in-generator
+7	4	n + 3	stored-in-generator	stored-in-generator	stored-in-generator
+7	3	n + 2	stored-in-generator	stored-in-generator	stored-in-generator
+7	2	n + 1	stored-in-generator	stored-in-generator	stored-in-generator
+7	1	n	stored-in-generator	stored-in-generator	stored-in-generator

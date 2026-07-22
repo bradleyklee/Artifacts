@@ -262,3 +262,15 @@ quadtree enumeration as its first example. The future of this effort
 is working toward something like an ANSI standard that can also be 
 agreed on by security researchers who don't really like the "hidden
 payloads" aspect of the pdf file format.
+
+## 22 — Certificate Factory
+
+This artifact builds and checks exact creative-telescoping data for one 
+case at a time. The fast path generates the core polynomial data, 
+reduction matrices, recurrence, recurrence certificate, and an ODE 
+derived from the recurrence. An optional slower mode also derives the 
+ODE directly and saves its separate certificate. Each run prints clear 
+progress, writes a fully labeled JSON data blob, records timings, memory 
+use, dimensions, and check values, and validates the result by default. 
+The fast and direct methods have been tested through q=9, with the 
+full q=9 direct run passing all 281 checks.

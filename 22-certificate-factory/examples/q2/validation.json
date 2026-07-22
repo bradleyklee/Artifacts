@@ -1,0 +1,226 @@
+{
+  "checks": {
+    "D_q_formula_exact": {
+      "pass": true,
+      "value": "0"
+    },
+    "GUV_split_exact": {
+      "pass": true,
+      "value": 0
+    },
+    "G_determinant_matches": {
+      "pass": true,
+      "value": "-1"
+    },
+    "G_times_G_inverse_identity": {
+      "pass": true,
+      "value": 0
+    },
+    "J_derivative_matrix_exact": {
+      "pass": true,
+      "value": 0
+    },
+    "X_full_last_row_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "X_full_rebuilt_from_lowering": {
+      "pass": true,
+      "value": 0
+    },
+    "X_is_prefix_of_X_full": {
+      "pass": true,
+      "value": 0
+    },
+    "X_rank_q_minus_1": {
+      "pass": true,
+      "value": 1
+    },
+    "X_times_P_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "all_term_recurrence_residuals_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "basis_dimension_q": {
+      "pass": true,
+      "value": 2
+    },
+    "basis_order_explicit": {
+      "pass": true,
+      "value": "ascending powers of u"
+    },
+    "certificate_denominator_power": {
+      "pass": true,
+      "value": 0
+    },
+    "cleared_telescoping_identity_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_Gx_UV_split": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_Gx_determinant": {
+      "pass": true,
+      "value": "4*x - 1"
+    },
+    "direct_Gx_inverse": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_J_exact": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_ODE_certificate_identity_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_ODE_induced_recurrence_equals_P": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_ODE_series_residual_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_X_full_rebuilt": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_X_prefix": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_X_times_C_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_derivative_0_final": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_derivative_1_final": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_derivative_1_m1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_derivative_1_m1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_derivative_1_m1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "direct_g_equals_rho_minus_x": {
+      "pass": true,
+      "value": "0"
+    },
+    "direct_leading_ODE_coefficient_det": {
+      "pass": true,
+      "value": "0"
+    },
+    "direct_rank_q_minus_1": {
+      "pass": true,
+      "value": 1
+    },
+    "format_v0_2": {
+      "pass": true,
+      "value": "RELAY-CT-annotated-case-v0.2"
+    },
+    "integrand_rho_form_defined": {
+      "pass": true,
+      "value": "1/(n*rho_q(u)^n)"
+    },
+    "integrand_symbol_defined": {
+      "pass": true,
+      "value": "H_{q,n}(u)"
+    },
+    "lowering_chain_count": {
+      "pass": true,
+      "value": 2
+    },
+    "lowering_shift_0_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_final": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_step_1_T": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_step_1_V": {
+      "pass": true,
+      "value": 0
+    },
+    "lowering_shift_1_step_1_input": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_ode_boundary_exact": {
+      "pass": true,
+      "value": "0"
+    },
+    "recurrence_ode_coefficient_correspondence": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_ode_coefficients_exact": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_ode_series_residual_zero": {
+      "pass": true,
+      "value": 0
+    },
+    "recurrence_scale_0_polynomial": {
+      "pass": true,
+      "value": "2 - 4*n"
+    },
+    "recurrence_scale_1_polynomial": {
+      "pass": true,
+      "value": "n"
+    },
+    "required_primary_objects_present": {
+      "pass": true,
+      "value": [
+        "bases",
+        "closed_form",
+        "direct_derivative_reduction",
+        "input_polynomials",
+        "integrand_family",
+        "matrices",
+        "ode_from_recurrence",
+        "p_recurrence",
+        "pole_lowering_chains",
+        "provenance_graph",
+        "rational_certificate",
+        "sequence_family",
+        "shifted_generating_function",
+        "typogeometric_model"
+      ]
+    },
+    "rho_equals_u_D": {
+      "pass": true,
+      "value": "0"
+    }
+  },
+  "elapsed_seconds": 0.08905460400092124,
+  "format": "RELAY-CT-validation-v0.2",
+  "pass": true,
+  "passed_checks": 50,
+  "q": 2,
+  "source": "/mnt/data/22-certificate-factory-v0.2/examples/q2/case.json",
+  "total_checks": 50
+}
