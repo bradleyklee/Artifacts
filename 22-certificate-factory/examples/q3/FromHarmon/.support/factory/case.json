@@ -1,0 +1,1479 @@
+{
+  "D": "-u**2 - 3*u + 1",
+  "G": {
+    "columns": 6,
+    "determinant": -13,
+    "invertible": true,
+    "rows": 6
+  },
+  "artifact_version": "22-certificate-factory-v0.2",
+  "certificate": {
+    "N": "-9*n*u**4 - 36*n*u**3 + 6*n*u**2 + 84*n*u - 13*n - 3*u**4 - 12*u**3 - 6*u**2 + 3*u",
+    "degree_n_N": 1,
+    "degree_u_N": 4,
+    "denominator_power_of_rho": 1
+  },
+  "checks": {
+    "GUV_split_exact": true,
+    "G_invertible": true,
+    "X_times_P_zero": true,
+    "certificate_numerator_polynomial": true,
+    "cleared_telescoping_identity_zero": true,
+    "last_remainder_row_zero": true,
+    "multinomial_recurrence_checks_zero": true,
+    "nullspace_dimension_one": true,
+    "plaintext_counts_match_multinomial_n0_n3": true,
+    "rank_witness_minor_nonzero": true,
+    "remainder_rank_q_minus_1": true
+  },
+  "elapsed_seconds": 0.19460453300052905,
+  "format": "RELAY-CT-annotated-case-v0.2",
+  "identities": {
+    "GUV_split": "G*[U;V]=E",
+    "G_definition": "coeff(w)=G*[coeff(a);coeff(b)] for w=rho*a-rho_prime*b",
+    "G_inverse": "G*G_inverse=I",
+    "algebraic_ogf": "(q+1)A_q(x)=q+x+A_q(x)^q",
+    "certificate": "sum_r P_r(n)H_{n+r}=d(R H_n)/du",
+    "combinatorial_functional_equation": "T_q=x+sum_{k=2}^q binomial(q,k)T_q^k",
+    "integrand": "H_{q,n}(u)=1/(n*rho_q(u)^n)",
+    "kernel": "X*P=0",
+    "pole_lowering": "w/rho^(m+1)=(U-JV/m)w/rho^m+d((Vw)/(m rho^m))/du",
+    "recurrence_to_ode": "L_q(x,theta)=sum_r x^(s-r)P_r(theta-r), L_q A_q=B_q"
+  },
+  "n0_residual": 0,
+  "objects": {
+    "bases": {
+      "G_codomain_basis": [
+        "1",
+        "u^1",
+        "u^2",
+        "u^3",
+        "u^4",
+        "u^5"
+      ],
+      "G_domain_basis": [
+        "a_0",
+        "a_1",
+        "a_2",
+        "b_0",
+        "b_1",
+        "b_2"
+      ],
+      "X_columns": [
+        "shift r=0",
+        "shift r=1",
+        "shift r=2"
+      ],
+      "X_rows": [
+        "coefficient of u^0",
+        "coefficient of u^1"
+      ],
+      "coefficient_order": "ascending powers of u",
+      "polynomial_space_basis": [
+        "1",
+        "u^1",
+        "u^2"
+      ]
+    },
+    "closed_form": {
+      "coefficient_formula": "a_q(n)=(1/n)[u^(n-1)]D_q(u)^(-n)",
+      "range": "n>=1",
+      "residue_formula": "a_q(n)=Res_{u=0} H_{q,n}(u) du"
+    },
+    "direct_derivative_reduction": {
+      "Gx": {
+        "determinant": "27*x**2 + 162*x - 13",
+        "invertible": true
+      },
+      "bases": {
+        "Gx_codomain": [
+          "1",
+          "u^1",
+          "u^2",
+          "u^3",
+          "u^4",
+          "u^5"
+        ],
+        "Gx_domain": "coeff(a_0..a_{q-1}) followed by coeff(b_0..b_{q-1})",
+        "coefficient_order": "ascending powers of u",
+        "polynomial_basis_q": [
+          "1",
+          "u^1",
+          "u^2"
+        ]
+      },
+      "certificate": {
+        "degree_u": 4,
+        "degree_x": 1,
+        "denominator_base": "-u**3 - 3*u**2 + u - x",
+        "denominator_power": 2,
+        "identity": "sum_j C_j(x) d_x^j F_q(x,u)=d_u(N_ODE/g^(q-1))",
+        "numerator": "12*u**4 + 48*u**3 + 3*u*x - 87*u + 3*x + 13"
+      },
+      "compatibility_with_fast_path": {
+        "component_residuals": [
+          "0",
+          "0",
+          "0"
+        ],
+        "direct_coefficients": [
+          "-27*n**2 + 3",
+          "-162*n**2 - 243*n - 81",
+          "13*n**2 + 39*n + 26"
+        ],
+        "fast_coefficients": [
+          "-27*n**2 + 3",
+          "-162*n**2 - 243*n - 81",
+          "13*n**2 + 39*n + 26"
+        ],
+        "pass": true,
+        "relation": "primitive recurrence induced by direct ODE equals shift-reduction P-recurrence"
+      },
+      "derivative_reductions": [
+        {
+          "derivative_order": 0,
+          "final_remainder_vector": [
+            "1",
+            "0",
+            "0"
+          ],
+          "input_integrand": "1/g(x,u)^1",
+          "steps": []
+        },
+        {
+          "derivative_order": 1,
+          "final_remainder_vector": [
+            "-18*x/(27*x**2 + 162*x - 13) - 78/(27*x**2 + 162*x - 13)",
+            "-24/(27*x**2 + 162*x - 13)",
+            "0"
+          ],
+          "input_integrand": "1/g(x,u)^2",
+          "steps": [
+            {
+              "certificate_vector": [
+                "-9*x/(27*x**2 + 162*x - 13) + 13/(27*x**2 + 162*x - 13)",
+                "-9*x/(27*x**2 + 162*x - 13) - 75/(27*x**2 + 162*x - 13)",
+                "-24/(27*x**2 + 162*x - 13)"
+              ],
+              "input_vector": [
+                "1",
+                "0",
+                "0"
+              ],
+              "output_vector": [
+                "-18*x/(27*x**2 + 162*x - 13) - 78/(27*x**2 + 162*x - 13)",
+                "-24/(27*x**2 + 162*x - 13)",
+                "0"
+              ],
+              "pole_parameter": 1
+            }
+          ]
+        },
+        {
+          "derivative_order": 2,
+          "final_remainder_vector": [
+            "810*x**2/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 6804*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 19266/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)",
+            "1944*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 5832/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)",
+            "0"
+          ],
+          "input_integrand": "2/g(x,u)^3",
+          "steps": [
+            {
+              "certificate_vector": [
+                "-18*x/(27*x**2 + 162*x - 13) + 26/(27*x**2 + 162*x - 13)",
+                "-18*x/(27*x**2 + 162*x - 13) - 150/(27*x**2 + 162*x - 13)",
+                "-48/(27*x**2 + 162*x - 13)"
+              ],
+              "input_vector": [
+                "2",
+                "0",
+                "0"
+              ],
+              "output_vector": [
+                "-45*x/(27*x**2 + 162*x - 13) - 231/(27*x**2 + 162*x - 13)",
+                "-96/(27*x**2 + 162*x - 13)",
+                "0"
+              ],
+              "pole_parameter": 2
+            },
+            {
+              "certificate_vector": [
+                "405*x**2/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) - 810*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) - 3003/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)",
+                "405*x**2/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 6318*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 18381/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)",
+                "1944*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 5832/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)"
+              ],
+              "input_vector": [
+                "-45*x/(27*x**2 + 162*x - 13) - 231/(27*x**2 + 162*x - 13)",
+                "-96/(27*x**2 + 162*x - 13)",
+                "0"
+              ],
+              "output_vector": [
+                "810*x**2/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 6804*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 19266/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)",
+                "1944*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 5832/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)",
+                "0"
+              ],
+              "pole_parameter": 1
+            }
+          ]
+        }
+      ],
+      "induced_coefficient_recurrence": {
+        "identity": "coefficient extraction from the direct ODE for A_q'(x)",
+        "primitive_coefficients": [
+          "-27*n**2 + 3",
+          "-162*n**2 - 243*n - 81",
+          "13*n**2 + 39*n + 26"
+        ],
+        "raw_coefficients": [
+          "27*n**3 - 3*n",
+          "162*n**3 + 243*n**2 + 81*n",
+          "-13*n**3 - 39*n**2 - 26*n"
+        ]
+      },
+      "integrand": {
+        "denominator_g": "-u**3 - 3*u**2 + u - x",
+        "formula": "1/(rho_q(u)-x)",
+        "residue_relation": "A_q'(x)=Res_{u=0} F_q(x,u) du",
+        "symbol": "F_q(x,u)"
+      },
+      "matrices": {
+        "Gx": {
+          "entries": [
+            [
+              "-x",
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0"
+            ],
+            [
+              "1",
+              "-x",
+              "0",
+              "6",
+              "-1",
+              "0"
+            ],
+            [
+              "-3",
+              "1",
+              "-x",
+              "3",
+              "6",
+              "-1"
+            ],
+            [
+              "-1",
+              "-3",
+              "1",
+              "0",
+              "3",
+              "6"
+            ],
+            [
+              "0",
+              "-1",
+              "-3",
+              "0",
+              "0",
+              "3"
+            ],
+            [
+              "0",
+              "0",
+              "-1",
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "shape": [
+            6,
+            6
+          ]
+        },
+        "Gx_inverse": {
+          "entries": [
+            [
+              "-27*x/(27*x**2 + 162*x - 13) - 153/(27*x**2 + 162*x - 13)",
+              "-24/(27*x**2 + 162*x - 13)",
+              "-9*x/(27*x**2 + 162*x - 13) - 3/(27*x**2 + 162*x - 13)",
+              "18*x/(27*x**2 + 162*x - 13) - 2/(27*x**2 + 162*x - 13)",
+              "-39*x/(27*x**2 + 162*x - 13) + 3/(27*x**2 + 162*x - 13)",
+              "9*x**2/(27*x**2 + 162*x - 13) + 138*x/(27*x**2 + 162*x - 13) - 11/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "-72/(27*x**2 + 162*x - 13)",
+              "-27*x/(27*x**2 + 162*x - 13) - 9/(27*x**2 + 162*x - 13)",
+              "54*x/(27*x**2 + 162*x - 13) - 6/(27*x**2 + 162*x - 13)",
+              "-117*x/(27*x**2 + 162*x - 13) + 9/(27*x**2 + 162*x - 13)",
+              "252*x/(27*x**2 + 162*x - 13) - 20/(27*x**2 + 162*x - 13)",
+              "-54*x**2/(27*x**2 + 162*x - 13) - 867*x/(27*x**2 + 162*x - 13) + 69/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "0",
+              "0",
+              "0",
+              "0",
+              "0",
+              "-1"
+            ],
+            [
+              "-9*x/(27*x**2 + 162*x - 13) + 13/(27*x**2 + 162*x - 13)",
+              "24*x/(27*x**2 + 162*x - 13)",
+              "9*x**2/(27*x**2 + 162*x - 13) + 3*x/(27*x**2 + 162*x - 13)",
+              "-18*x**2/(27*x**2 + 162*x - 13) + 2*x/(27*x**2 + 162*x - 13)",
+              "39*x**2/(27*x**2 + 162*x - 13) - 3*x/(27*x**2 + 162*x - 13)",
+              "-9*x**3/(27*x**2 + 162*x - 13) - 138*x**2/(27*x**2 + 162*x - 13) + 11*x/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "-9*x/(27*x**2 + 162*x - 13) - 75/(27*x**2 + 162*x - 13)",
+              "-9*x/(27*x**2 + 162*x - 13) - 11/(27*x**2 + 162*x - 13)",
+              "15*x/(27*x**2 + 162*x - 13) - 3/(27*x**2 + 162*x - 13)",
+              "9*x**2/(27*x**2 + 162*x - 13) + 21*x/(27*x**2 + 162*x - 13) - 2/(27*x**2 + 162*x - 13)",
+              "-18*x**2/(27*x**2 + 162*x - 13) - 37*x/(27*x**2 + 162*x - 13) + 3/(27*x**2 + 162*x - 13)",
+              "48*x**2/(27*x**2 + 162*x - 13) + 135*x/(27*x**2 + 162*x - 13) - 11/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "-24/(27*x**2 + 162*x - 13)",
+              "-9*x/(27*x**2 + 162*x - 13) - 3/(27*x**2 + 162*x - 13)",
+              "18*x/(27*x**2 + 162*x - 13) - 2/(27*x**2 + 162*x - 13)",
+              "-39*x/(27*x**2 + 162*x - 13) + 3/(27*x**2 + 162*x - 13)",
+              "9*x**2/(27*x**2 + 162*x - 13) + 138*x/(27*x**2 + 162*x - 13) - 11/(27*x**2 + 162*x - 13)",
+              "-45*x**2/(27*x**2 + 162*x - 13) - 451*x/(27*x**2 + 162*x - 13) + 36/(27*x**2 + 162*x - 13)"
+            ]
+          ],
+          "shape": [
+            6,
+            6
+          ]
+        },
+        "J": {
+          "entries": [
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "2"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "shape": [
+            3,
+            3
+          ]
+        },
+        "Ux": {
+          "entries": [
+            [
+              "-27*x/(27*x**2 + 162*x - 13) - 153/(27*x**2 + 162*x - 13)",
+              "-24/(27*x**2 + 162*x - 13)",
+              "-9*x/(27*x**2 + 162*x - 13) - 3/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "-72/(27*x**2 + 162*x - 13)",
+              "-27*x/(27*x**2 + 162*x - 13) - 9/(27*x**2 + 162*x - 13)",
+              "54*x/(27*x**2 + 162*x - 13) - 6/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "shape": [
+            3,
+            3
+          ]
+        },
+        "Vx": {
+          "entries": [
+            [
+              "-9*x/(27*x**2 + 162*x - 13) + 13/(27*x**2 + 162*x - 13)",
+              "24*x/(27*x**2 + 162*x - 13)",
+              "9*x**2/(27*x**2 + 162*x - 13) + 3*x/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "-9*x/(27*x**2 + 162*x - 13) - 75/(27*x**2 + 162*x - 13)",
+              "-9*x/(27*x**2 + 162*x - 13) - 11/(27*x**2 + 162*x - 13)",
+              "15*x/(27*x**2 + 162*x - 13) - 3/(27*x**2 + 162*x - 13)"
+            ],
+            [
+              "-24/(27*x**2 + 162*x - 13)",
+              "-9*x/(27*x**2 + 162*x - 13) - 3/(27*x**2 + 162*x - 13)",
+              "18*x/(27*x**2 + 162*x - 13) - 2/(27*x**2 + 162*x - 13)"
+            ]
+          ],
+          "shape": [
+            3,
+            3
+          ]
+        },
+        "X": {
+          "entries": [
+            [
+              "1",
+              "-18*x/(27*x**2 + 162*x - 13) - 78/(27*x**2 + 162*x - 13)",
+              "810*x**2/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 6804*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 19266/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)"
+            ],
+            [
+              "0",
+              "-24/(27*x**2 + 162*x - 13)",
+              "1944*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 5832/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)"
+            ]
+          ],
+          "shape": [
+            2,
+            3
+          ]
+        },
+        "X_full": {
+          "entries": [
+            [
+              "1",
+              "-18*x/(27*x**2 + 162*x - 13) - 78/(27*x**2 + 162*x - 13)",
+              "810*x**2/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 6804*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 19266/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)"
+            ],
+            [
+              "0",
+              "-24/(27*x**2 + 162*x - 13)",
+              "1944*x/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169) + 5832/(729*x**4 + 8748*x**3 + 25542*x**2 - 4212*x + 169)"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "shape": [
+            3,
+            3
+          ]
+        },
+        "embedding_E": {
+          "entries": [
+            [
+              "1",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "1",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "1"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ],
+            [
+              "0",
+              "0",
+              "0"
+            ]
+          ],
+          "shape": [
+            6,
+            3
+          ]
+        }
+      },
+      "method": "Klee-style repeated parameter differentiation followed by Hermite-Ostrogradsky reduction",
+      "ode_for_A_prime": {
+        "coefficients": [
+          "24",
+          "81*x + 243",
+          "27*x**2 + 162*x - 13"
+        ],
+        "identity": "sum_{j=0}^{q-1} C_j(x) d^j A_q'(x)/dx^j = 0",
+        "order": 2
+      },
+      "requested": true,
+      "statistics": {
+        "Gx_dimension": 6,
+        "derivative_count": 3,
+        "partial_certificate_count": 3,
+        "remainder_dimension": 2,
+        "stage_seconds": {
+          "Gx_assembly": 0.008622273999208119,
+          "Gx_determinant": 0.03461435499957588,
+          "Gx_inversion": 0.006861527999717509,
+          "Ux_Vx_J": 0.057380422000278486,
+          "certificate_assembly": 0.04485216099965328,
+          "derivative_reductions": 0.08699449200139497,
+          "identity_check": 0.01199390100009623,
+          "input": 0.0003093860013905214,
+          "kernel": 0.03110652299983485
+        },
+        "wall_seconds": 0.29744508400108316
+      },
+      "status": "complete",
+      "verification": {
+        "Gx_Ux_Vx_split": {
+          "pass": true,
+          "relation": "Gx*[Ux;Vx]=E",
+          "residual": 0
+        },
+        "Gx_inverse": {
+          "pass": true,
+          "relation": "Gx*Gx_inverse=I",
+          "residual": 0
+        },
+        "Gx_invertible": {
+          "pass": true,
+          "relation": "det(Gx)!=0",
+          "residual": 0,
+          "witness": "27*x**2 + 162*x - 13"
+        },
+        "derivative_remainder_kernel": {
+          "nullity": 1,
+          "pass": true,
+          "rank": 2,
+          "relation": "X_ODE*C=0",
+          "residual": 0
+        },
+        "integrand_certificate": {
+          "pass": true,
+          "relation": "sum_j C_j d_x^j F=d_u(N_ODE/g^(q-1))",
+          "residual": 0
+        },
+        "leading_coefficient_equals_det_Gx": {
+          "pass": true,
+          "relation": "C_{q-1}(x)=det(Gx)",
+          "residual": "0"
+        }
+      }
+    },
+    "input_polynomials": {
+      "D_q": "-u**2 - 3*u + 1",
+      "rho_q": "-u**3 - 3*u**2 + u"
+    },
+    "integrand_family": {
+      "formula": "1/(n*u^n*D_q(u)^n)",
+      "instantiated_formula": "1/(n*(-u**3 - 3*u**2 + u)^n)",
+      "logarithmic_u_derivative": "(dH_{q,n}/du)/H_{q,n}=-n*rho_q'(u)/rho_q(u)",
+      "residue_relation": "a_q(n)=Res_{u=0} H_{q,n}(u) du",
+      "rho_form": "1/(n*rho_q(u)^n)",
+      "shift_ratio": "H_{q,n+r}(u)/H_{q,n}(u)=n/((n+r)rho_q(u)^r)",
+      "symbol": "H_{q,n}(u)"
+    },
+    "matrices": {
+      "G": {
+        "entries": [
+          [
+            "0",
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "0",
+            "0",
+            "6",
+            "-1",
+            "0"
+          ],
+          [
+            "-3",
+            "1",
+            "0",
+            "3",
+            "6",
+            "-1"
+          ],
+          [
+            "-1",
+            "-3",
+            "1",
+            "0",
+            "3",
+            "6"
+          ],
+          [
+            "0",
+            "-1",
+            "-3",
+            "0",
+            "0",
+            "3"
+          ],
+          [
+            "0",
+            "0",
+            "-1",
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "shape": [
+          6,
+          6
+        ]
+      },
+      "G_inverse": {
+        "entries": [
+          [
+            "153/13",
+            "24/13",
+            "3/13",
+            "2/13",
+            "-3/13",
+            "11/13"
+          ],
+          [
+            "72/13",
+            "9/13",
+            "6/13",
+            "-9/13",
+            "20/13",
+            "-69/13"
+          ],
+          [
+            "0",
+            "0",
+            "0",
+            "0",
+            "0",
+            "-1"
+          ],
+          [
+            "-1",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "75/13",
+            "11/13",
+            "3/13",
+            "2/13",
+            "-3/13",
+            "11/13"
+          ],
+          [
+            "24/13",
+            "3/13",
+            "2/13",
+            "-3/13",
+            "11/13",
+            "-36/13"
+          ]
+        ],
+        "shape": [
+          6,
+          6
+        ]
+      },
+      "J": {
+        "entries": [
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "2"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "U": {
+        "entries": [
+          [
+            "153/13",
+            "24/13",
+            "3/13"
+          ],
+          [
+            "72/13",
+            "9/13",
+            "6/13"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "V": {
+        "entries": [
+          [
+            "-1",
+            "0",
+            "0"
+          ],
+          [
+            "75/13",
+            "11/13",
+            "3/13"
+          ],
+          [
+            "24/13",
+            "3/13",
+            "2/13"
+          ]
+        ],
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "X": {
+        "entries": [
+          [
+            "1",
+            "153*n/(13*n + 13) - 75/(13*n + 13)",
+            "25137*n**2/(169*n**2 + 507*n + 338) + 243*n/(169*n**2 + 507*n + 338) - 6114/(169*n**2 + 507*n + 338)"
+          ],
+          [
+            "0",
+            "72*n/(13*n + 13) - 48/(13*n + 13)",
+            "11664*n**2/(169*n**2 + 507*n + 338) - 1944*n/(169*n**2 + 507*n + 338) - 3888/(169*n**2 + 507*n + 338)"
+          ]
+        ],
+        "shape": [
+          2,
+          3
+        ]
+      },
+      "X_full": {
+        "entries": [
+          [
+            "1",
+            "153*n/(13*n + 13) - 75/(13*n + 13)",
+            "25137*n**2/(169*n**2 + 507*n + 338) + 243*n/(169*n**2 + 507*n + 338) - 6114/(169*n**2 + 507*n + 338)"
+          ],
+          [
+            "0",
+            "72*n/(13*n + 13) - 48/(13*n + 13)",
+            "11664*n**2/(169*n**2 + 507*n + 338) - 1944*n/(169*n**2 + 507*n + 338) - 3888/(169*n**2 + 507*n + 338)"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "shape": [
+          3,
+          3
+        ]
+      },
+      "embedding_E": {
+        "entries": [
+          [
+            "1",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "1",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "1"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "0"
+          ]
+        ],
+        "shape": [
+          6,
+          3
+        ]
+      }
+    },
+    "ode_from_recurrence": {
+      "boundary_polynomial": "0",
+      "coefficient_correspondence": {
+        "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
+        "samples": [
+          {
+            "difference": "0",
+            "n": 1,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 2,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 3,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 4,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 5,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 6,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 7,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 8,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 9,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 10,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 11,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 12,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 13,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 14,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 15,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 16,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 17,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 18,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 19,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 20,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          }
+        ]
+      },
+      "ordinary_derivative_form": {
+        "coefficients": [
+          "3*x**2",
+          "-27*x**3 - 81*x**2",
+          "-27*x**4 - 162*x**3 + 13*x**2"
+        ],
+        "identity": "sum_j C_j(x) d^j A_q(x)/dx^j = B_q(x)",
+        "order": 2
+      },
+      "series": "A_q(x)",
+      "status": "complete",
+      "theta_definition": "theta=x*d/dx",
+      "theta_operator": {
+        "identity": "L_q(x,theta)=sum_{r=0}^{s} x^(s-r) P_r(theta-r)",
+        "terms": [
+          {
+            "polynomial_in_theta": "-27*theta**2 + 3",
+            "shift": 0,
+            "source": "P_0(theta-0)",
+            "x_power": 2
+          },
+          {
+            "polynomial_in_theta": "-162*theta**2 + 81*theta",
+            "shift": 1,
+            "source": "P_1(theta-1)",
+            "x_power": 1
+          },
+          {
+            "polynomial_in_theta": "13*theta**2 - 13*theta",
+            "shift": 2,
+            "source": "P_2(theta-2)",
+            "x_power": 0
+          }
+        ]
+      },
+      "validity": {
+        "safe_series_exponent_range": [
+          0,
+          22
+        ],
+        "source_recurrence_valid_from_n": 1
+      },
+      "verification": {
+        "recurrence_coefficient_correspondence": {
+          "checked_n": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ],
+          "max_absolute_difference": 0,
+          "pass": true,
+          "relation": "ODE coefficient equals recurrence residual"
+        },
+        "series_residual": {
+          "checked_exponents": [
+            0,
+            22
+          ],
+          "max_absolute_residual": 0,
+          "pass": true,
+          "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+        }
+      }
+    },
+    "p_recurrence": {
+      "coefficients": [
+        "-27*n**2 + 3",
+        "-162*n**2 - 243*n - 81",
+        "13*n**2 + 39*n + 26"
+      ],
+      "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+      "order": 2,
+      "valid_from_n": 1
+    },
+    "pole_lowering_chains": [
+      {
+        "final_remainder_vector_after_scale": [
+          "1",
+          "0",
+          "0"
+        ],
+        "final_remainder_vector_before_scale": [
+          "1",
+          "0",
+          "0"
+        ],
+        "initial_vector": [
+          "1",
+          "0",
+          "0"
+        ],
+        "shift": 0,
+        "shift_ratio_scale": "1",
+        "steps": []
+      },
+      {
+        "final_remainder_vector_after_scale": [
+          "153*n/(13*n + 13) - 75/(13*n + 13)",
+          "72*n/(13*n + 13) - 48/(13*n + 13)",
+          "0"
+        ],
+        "final_remainder_vector_before_scale": [
+          "153/13 - 75/(13*n)",
+          "72/13 - 48/(13*n)",
+          "0"
+        ],
+        "initial_vector": [
+          "1",
+          "0",
+          "0"
+        ],
+        "shift": 1,
+        "shift_ratio_scale": "n/(n + 1)",
+        "steps": [
+          {
+            "certificate_term": "poly(Vw)/((n)*rho^1)",
+            "certificate_vector_Vw": [
+              "-1",
+              "75/13",
+              "24/13"
+            ],
+            "input_vector": [
+              "1",
+              "0",
+              "0"
+            ],
+            "lowering_index": 1,
+            "output_vector_Tm_w": [
+              "153/13 - 75/(13*n)",
+              "72/13 - 48/(13*n)",
+              "0"
+            ],
+            "pole_parameter": "n",
+            "remainder_operator": "T_m=U-JV/(n)"
+          }
+        ]
+      },
+      {
+        "final_remainder_vector_after_scale": [
+          "25137*n**2/(169*n**2 + 507*n + 338) + 243*n/(169*n**2 + 507*n + 338) - 6114/(169*n**2 + 507*n + 338)",
+          "11664*n**2/(169*n**2 + 507*n + 338) - 1944*n/(169*n**2 + 507*n + 338) - 3888/(169*n**2 + 507*n + 338)",
+          "0"
+        ],
+        "final_remainder_vector_before_scale": [
+          "25137*n**2/(169*n**2 + 169*n) + 243*n/(169*n**2 + 169*n) - 6114/(169*n**2 + 169*n)",
+          "11664*n**2/(169*n**2 + 169*n) - 1944*n/(169*n**2 + 169*n) - 3888/(169*n**2 + 169*n)",
+          "0"
+        ],
+        "initial_vector": [
+          "1",
+          "0",
+          "0"
+        ],
+        "shift": 2,
+        "shift_ratio_scale": "n/(n + 2)",
+        "steps": [
+          {
+            "certificate_term": "poly(Vw)/((n + 1)*rho^2)",
+            "certificate_vector_Vw": [
+              "-1",
+              "75/13",
+              "24/13"
+            ],
+            "input_vector": [
+              "1",
+              "0",
+              "0"
+            ],
+            "lowering_index": 2,
+            "output_vector_Tm_w": [
+              "153*n/(13*n + 13) + 78/(13*n + 13)",
+              "72*n/(13*n + 13) + 24/(13*n + 13)",
+              "0"
+            ],
+            "pole_parameter": "n + 1",
+            "remainder_operator": "T_m=U-JV/(n + 1)"
+          },
+          {
+            "certificate_term": "poly(Vw)/((n)*rho^1)",
+            "certificate_vector_Vw": [
+              "-153*n/(13*n + 13) - 78/(13*n + 13)",
+              "12267*n/(169*n + 169) + 6114/(169*n + 169)",
+              "3888*n/(169*n + 169) + 1944/(169*n + 169)"
+            ],
+            "input_vector": [
+              "153*n/(13*n + 13) + 78/(13*n + 13)",
+              "72*n/(13*n + 13) + 24/(13*n + 13)",
+              "0"
+            ],
+            "lowering_index": 1,
+            "output_vector_Tm_w": [
+              "25137*n**2/(169*n**2 + 169*n) + 243*n/(169*n**2 + 169*n) - 6114/(169*n**2 + 169*n)",
+              "11664*n**2/(169*n**2 + 169*n) - 1944*n/(169*n**2 + 169*n) - 3888/(169*n**2 + 169*n)",
+              "0"
+            ],
+            "pole_parameter": "n",
+            "remainder_operator": "T_m=U-JV/(n)"
+          }
+        ]
+      }
+    ],
+    "provenance_graph": {
+      "convergence_point": "integrand_family",
+      "edges": [
+        [
+          "typogeometric_model",
+          "combinatorial_functional_equation"
+        ],
+        [
+          "combinatorial_functional_equation",
+          "closed_form"
+        ],
+        [
+          "algebraic_ogf",
+          "closed_form"
+        ],
+        [
+          "closed_form",
+          "integrand_family"
+        ],
+        [
+          "integrand_family",
+          "shift_reduction"
+        ],
+        [
+          "shift_reduction",
+          "p_recurrence"
+        ],
+        [
+          "shift_reduction",
+          "recurrence_certificate"
+        ],
+        [
+          "p_recurrence",
+          "ode_from_recurrence"
+        ],
+        [
+          "integrand_family",
+          "direct_ode_reduction"
+        ]
+      ],
+      "nodes": [
+        "typogeometric_model",
+        "combinatorial_functional_equation",
+        "algebraic_ogf",
+        "closed_form",
+        "integrand_family",
+        "shift_reduction",
+        "p_recurrence",
+        "recurrence_certificate",
+        "ode_from_recurrence",
+        "direct_ode_reduction"
+      ],
+      "starting_points": [
+        "typogeometric_model",
+        "algebraic_ogf"
+      ]
+    },
+    "rational_certificate": {
+      "denominator_base": "-u**3 - 3*u**2 + u",
+      "denominator_power": 1,
+      "formula": "R(n,u)=N(n,u)/rho(u)^(q-2)",
+      "numerator_N": "-9*n*u**4 - 36*n*u**3 + 6*n*u**2 + 84*n*u - 13*n - 3*u**4 - 12*u**3 - 6*u**2 + 3*u"
+    },
+    "sequence_family": {
+      "initial_coefficients": {
+        "a_q(0)": 1,
+        "a_q(1)": 1,
+        "a_q(2)": 3
+      },
+      "ordinary_generating_function": {
+        "algebraic_equation": "(q+1)A_q(x)=q+x+A_q(x)^q",
+        "definition": "A_q(x)=sum_{n>=0} a_q(n)x^n",
+        "initial_value": "A_q(0)=1",
+        "symbol": "A_q(x)"
+      },
+      "symbol": "a_q(n)"
+    },
+    "shifted_generating_function": {
+      "definition": "T_q(x)=A_q(x)-1",
+      "functional_equation": "T_q(x)=x+sum_{k=2}^q binomial(q,k)T_q(x)^k",
+      "lagrange_form": "T_q(x)=x/D_q(T_q(x))",
+      "symbol": "T_q(x)"
+    },
+    "typogeometric_model": {
+      "functional_equation": "T_q(x)=x+sum_{k=2}^q binomial(q,k)T_q(x)^k",
+      "grid_shape_when_applicable": null,
+      "name": "normalized positional q-slot trees",
+      "retention_rule": "every internal layer has at least two occupied slots",
+      "slot_count": 3,
+      "symbols": {
+        "empty_slot": "□",
+        "layer_close": "⟩",
+        "layer_open": "⟨",
+        "leaf": "▪"
+      }
+    }
+  },
+  "plaintext_counts": {
+    "0": 1,
+    "1": 1,
+    "2": 3,
+    "3": 19
+  },
+  "plaintext_hashes": {
+    "1": "b27652da952e99853e59532102196c8660429c967fa7af9d6efdf5ef10f73de2",
+    "2": "0a05bfb1b9e523b428ffa8a480ee87dbb8a83df2124026bfd7acea8223972b0a",
+    "3": "c1a2f053af625a84607addf5eefd54c213ea72322c05aba6fa4817d14d760707"
+  },
+  "q": 3,
+  "recurrence": [
+    "-27*n**2 + 3",
+    "-162*n**2 - 243*n - 81",
+    "13*n**2 + 39*n + 26"
+  ],
+  "recurrence_degree": 2,
+  "recurrence_valid_from": 1,
+  "remainder_matrix": {
+    "columns": 3,
+    "leading_minor_determinant": "24*(3*n - 2)/(13*(n + 1))",
+    "nullity": 1,
+    "rank": 2,
+    "rows": 2
+  },
+  "rho": "-u**3 - 3*u**2 + u",
+  "statistics": {
+    "G_codomain_dimension": 6,
+    "G_domain_dimension": 6,
+    "cpu_seconds": 0.18000000000000016,
+    "direct_ode_requested": true,
+    "environment": {
+      "command": [
+        "/mnt/data/22-certificate-factory-v0.2/src/relay_factory_v02.py",
+        "3",
+        "--derive-ode-direct",
+        "--output",
+        "examples"
+      ],
+      "machine": "x86_64",
+      "memory_measurement": "resource.getrusage(RUSAGE_SELF).ru_maxrss; KB on Linux",
+      "pid": 46938,
+      "platform": "Linux-4.4.0-x86_64-with-glibc2.41",
+      "processor": "",
+      "python_executable": "/opt/pyvenv/bin/python3",
+      "python_version": "3.13.5",
+      "sympy_version": "1.14.0"
+    },
+    "independent_validation": {
+      "elapsed_seconds": 0.460438707999856,
+      "pass": true,
+      "passed_checks": 65,
+      "total_checks": 65
+    },
+    "partial_certificate_count": 3,
+    "peak_rss_kb": 338100,
+    "peak_rss_kb_after_quality_revision": 340608,
+    "polynomial_space_dimension": 3,
+    "q": 3,
+    "remainder_space_dimension": 2,
+    "shift_count": 3,
+    "stage_seconds": {
+      "G_assembly": 0.012069779999364982,
+      "G_determinant": 0.0011734170002455357,
+      "G_inversion": 0.000588036000408465,
+      "UVJ": 0.00036292700133344624,
+      "certificate_assembly": 0.02668027199979406,
+      "input_polynomials": 0.029516326998418663,
+      "json_write": 0.01797647499915911,
+      "kernel_solve": 0.0490474140005972,
+      "pole_lowering": 0.038058341000578366,
+      "rank_witness": 0.0010297209992131684,
+      "remainder_assembly": 0.0003619939998316113,
+      "serialization_sidecars": 0.017928528000993538,
+      "string_checks": 0.00027186899933440145,
+      "telescoping_check": 0.00456842000130564,
+      "term_checks": 0.01185724599963578
+    },
+    "term_limit": 24,
+    "total_generation_wall_seconds": 0.7250177960013389,
+    "wall_seconds": 0.19460453300052905
+  },
+  "terms": [
+    1,
+    1,
+    3,
+    19,
+    150,
+    1326,
+    12558,
+    124590,
+    1278189,
+    13449205,
+    144342627,
+    1573990275,
+    17389407984,
+    194228357568,
+    2189610888840,
+    24881753664840,
+    284708154606318,
+    3277578288381318,
+    37934510719585350,
+    441152315040444150,
+    5152282099512304680,
+    60406551502736538000,
+    710696386643487054660,
+    8388096824571665369220,
+    99289485169936277117850
+  ],
+  "verification": {
+    "direct_ode_fast_recurrence_compatibility": {
+      "component_residuals": [
+        "0",
+        "0",
+        "0"
+      ],
+      "direct_coefficients": [
+        "-27*n**2 + 3",
+        "-162*n**2 - 243*n - 81",
+        "13*n**2 + 39*n + 26"
+      ],
+      "fast_coefficients": [
+        "-27*n**2 + 3",
+        "-162*n**2 - 243*n - 81",
+        "13*n**2 + 39*n + 26"
+      ],
+      "pass": true,
+      "relation": "primitive recurrence induced by direct ODE equals shift-reduction P-recurrence"
+    },
+    "fast_certificate": {
+      "observed_residual": 0,
+      "pass": true,
+      "relation": "sum_r P_r(n)H_{q,n+r}=d_u(R_q H_{q,n})"
+    },
+    "integrand_defined": {
+      "observed_formula": "1/(n*(-u**3 - 3*u**2 + u)^n)",
+      "pass": true,
+      "relation": "H_{q,n}(u)=1/(n*rho_q(u)^n)"
+    },
+    "recurrence_ode": {
+      "recurrence_coefficient_correspondence": {
+        "checked_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "max_absolute_difference": 0,
+        "pass": true,
+        "relation": "ODE coefficient equals recurrence residual"
+      },
+      "series_residual": {
+        "checked_exponents": [
+          0,
+          22
+        ],
+        "max_absolute_residual": 0,
+        "pass": true,
+        "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+      }
+    },
+    "rho_definition": {
+      "observed_residual": "0",
+      "pass": true,
+      "relation": "rho_q(u)=u*D_q(u)"
+    },
+    "starting_point_convergence": {
+      "observed_residual": "0",
+      "pass": true,
+      "relation": "D_q from algebraic OGF equals D_q from typogeometric functional equation"
+    },
+    "u_derivative_matrix": {
+      "observed_residual": 0,
+      "pass": true,
+      "relation": "poly(Jv)=d(poly(v))/du on the declared basis"
+    }
+  },
+  "worked_q4_recurrence_match": null
+}

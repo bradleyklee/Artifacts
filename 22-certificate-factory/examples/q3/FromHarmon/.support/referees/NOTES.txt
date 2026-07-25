@@ -1,0 +1,12 @@
+Referee status
+
+Claude produced a literal SymPy translation that ran unmodified and derived
+the recurrence, terms, and ODE from the supplied fixed data.
+
+Kimi independently reconstructed the same mathematics.  The submitted source
+contains two broken multiline f-strings in its final display code.  A corrected
+copy changes only those two display statements.  Kimi's speculative claim that
+the first row of U encodes a plum-blossom class is not supported and is excluded
+from the publication claims.
+
+Both poems are preserved.  Neither poem is mathematical evidence.

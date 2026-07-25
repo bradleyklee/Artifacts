@@ -1,0 +1,1 @@
+%o (Python/SymPy) See attached q3_algorithm.py for the literal implementation of the matrix-reduction pseudocode.

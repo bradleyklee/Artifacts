@@ -1,0 +1,25 @@
+TERNATREE MYSTERY TREE AUDIT
+pseudocode_sha256 773bc3a1188bb1f5f66949f45bea48c0548583d14caa087be703fb31157a3928
+python_sha256 a7625f43de88961c1f63d752d3e0d5add0acd7b6d7452ddd0000468ac677dc41
+defined_functions 6 Lower Normalize3 Cancel3 Apply2 MakeODE Q3
+mystery_vertices 15 LCM Denom Together Expand PolynomialGCD GCD LeadingCoefficient Factor Collect MatrixFromColumns Simplify ExactQuotient Sum Coeffs Substitute
+tree_depth 3
+resolution_coverage PASS
+python_evidence PASS
+
+MYSTERY	RESOLUTION
+LCM	lcm_expr / sp.lcm
+Denom	fraction denominator
+Together	sp.together
+Expand	sp.expand
+PolynomialGCD	sp.gcd
+GCD	math.gcd
+LeadingCoefficient	Poly.LC
+Factor	sp.factor
+Collect	coefficients of A'', A', A
+MatrixFromColumns	Matrix.hstack
+Simplify	sp.simplify
+ExactQuotient	exact_integer_quotient
+Sum	Python sum
+Coeffs	Poly.nth
+Substitute	ODE residual at A=S

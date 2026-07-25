@@ -1,0 +1,4 @@
+shift	lowering_index	pole_parameter	scale	certificate_polynomial	N_contribution
+1	1	n	stored-in-generator	stored-in-generator	stored-in-generator
+2	2	n + 1	stored-in-generator	stored-in-generator	stored-in-generator
+2	1	n	stored-in-generator	stored-in-generator	stored-in-generator

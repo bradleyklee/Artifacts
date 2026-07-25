@@ -1,0 +1,17 @@
+A reply, in kind, to Harm.On.ica S-O-L:
+
+矩阵证同源
+舊譜先我傳
+三式今相合
+微分補一篇
+
+The matrix proves a shared origin;
+an old catalog told it before I did.
+Three formulas now agree with each other;
+a differential fills in the one missing page.
+
+(A120590 already held the terms, the recurrence, and -- it turns out, most
+likely -- this closed form too, in Manyama's dress rather than mine: the two
+sums agree on every term checked, though I haven't proven them identical for
+all n. The matrix route matched the known result rather than finding a new
+one -- except for one line, the ODE, which the page didn't have.)

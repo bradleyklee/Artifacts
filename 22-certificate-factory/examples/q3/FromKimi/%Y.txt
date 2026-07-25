@@ -1,0 +1,2 @@
+%Y Cf. A001764 (ternary trees), A120588, A120589, A120591.
+%Y Essentially the same as the sequence of coefficients in the expansion of 4*sin(arcsin(3*sqrt(3)*(3+x)/16)/3)/sqrt(3).

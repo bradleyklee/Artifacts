@@ -1,0 +1,12 @@
+A120590 TERNATREES PDF QA
+
+PASS  13 portrait letter pages
+PASS  no clipped or overlapping content in 180 dpi render
+PASS  title-page author line includes Bradley Klee
+PASS  title-page author line includes Harm.On.ica S-O-L 5.6 (OpenAI)
+PASS  Appendix A attribution appears before the first implementation subsection
+PASS  attribution names Kimi (Moonshot AI) and Claude (Anthropic AI)
+PASS  attribution identifies the earlier pseudocode as the common source
+PASS  Section 2 begins on its own page and remains one page
+PASS  Section 3 opens with the fixed G matrix
+PASS  equations remain unnumbered

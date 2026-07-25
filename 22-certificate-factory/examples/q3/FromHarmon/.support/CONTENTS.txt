@@ -1,0 +1,13 @@
+.support/
+|-- source/       LaTeX sources and the paper-only pseudocode extract
+|-- graphs/       Aligned shallow trees, vector renders, and graph audit
+|-- tools/        Deterministic graph renderer and packet audit
+|-- data/         Raw G, U, V, and J matrix TSV files
+|-- factory/      Frozen q=3 factory case, certificates, and validation
+|-- referees/     Claude and Kimi submissions plus correction notes
+|-- validation/   Exact run, package audit, and PDF quality-assurance record
+`-- SHA256SUMS.txt
+
+The root contains only the mathematical paper, executable q=3 source,
+pseudocode, reduction data, publication graphics, ternatree examples, poetry
+digest, and proposed OEIS text.

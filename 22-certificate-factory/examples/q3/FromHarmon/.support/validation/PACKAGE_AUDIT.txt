@@ -1,0 +1,43 @@
+A120590 TERNATREE PACKET AUDIT
+root /mnt/data/v13_work
+root_python_sha256 a7625f43de88961c1f63d752d3e0d5add0acd7b6d7452ddd0000468ac677dc41
+checks 31/31 PASS
+
+PASS  root executable returns a(0)..a(30)
+PASS  root terms agree with frozen factory terms through n=24
+PASS  root recurrence equals frozen factory recurrence
+PASS  frozen factory validation is 65/65 PASS
+PASS  root ODE has the stated normalized coefficients
+PASS  U.tsv equals executable U
+PASS  V.tsv equals executable V
+PASS  J.tsv equals executable J
+PASS  Claude literal translation terms agree through n=15
+PASS  Claude literal translation recurrence agrees
+PASS  Claude literal translation ODE agrees
+PASS  corrected Kimi terms agree through n=30
+PASS  corrected Kimi recurrence agrees
+PASS  corrected Kimi ODE agrees up to a global sign
+PASS  pseudocode graph exposes 15 mystery vertices
+PASS  comparison graphics are shallow three-level trees
+PASS  all mystery vertices have source-backed resolutions
+PASS  all publication and generation sources are present
+PASS  nested factory checksum manifest is portable
+PASS  human-facing PDF has 13 portrait pages
+PASS  paper includes a direct integral-to-ODE derivation
+PASS  paper source has no numbered equations or equation cross-references
+PASS  human paper consistently uses integral-form notation
+PASS  mathematical sections occur in geometric, shift, direct, comparison order
+PASS  paper explicitly compares G and G_x
+PASS  paper gives an integral definition of A(x)
+PASS  algebraic equation is derived from the generating-function integral
+PASS  Appendix A attributes the merged one-shot implementations
+PASS  title page carries the comma-separated author and company attribution
+PASS  Section 2 occupies its own page
+PASS  Section 3 opens with the fixed G matrix
+
+SCOPE
+The packet is self-contained for the human PDF, graph regeneration,
+sequence generation, recurrence, ODE, and cross-checks against the frozen
+q=3 factory case. The general multi-q RELAY factory generator is not copied
+into this sequence-specific publication packet; its frozen q=3 outputs and
+independent 65/65 validation record are included under .support/factory/.
