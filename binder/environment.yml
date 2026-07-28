@@ -1,0 +1,17 @@
+name: artifact24
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - jupyterlab
+  - notebook
+  - voila
+  - numpy
+  - pandas
+  - sympy
+  - mpmath
+  - matplotlib
+  - plotly
+  - ipywidgets
+  - scipy
+  - pip
