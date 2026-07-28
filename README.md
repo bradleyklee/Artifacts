@@ -263,7 +263,7 @@ is working toward something like an ANSI standard that can also be
 agreed on by security researchers who don't really like the "hidden
 payloads" aspect of the pdf file format.
 
-## 22 — Certificate Factory
+## 22. certificate-factory
 
 This artifact builds and checks exact creative-telescoping data for one 
 case at a time. The fast path generates the core polynomial data, 
@@ -274,3 +274,16 @@ progress, writes a fully labeled JSON data blob, records timings, memory
 use, dimensions, and check values, and validates the result by default. 
 The fast and direct methods have been tested through q=9, with the 
 full q=9 direct run passing all 281 checks.
+
+## 23. PLACEHOLDER
+
+## 24. jupyter-testing
+
+A Binder-ready executable paper for testing mathematical artifacts in 
+JupyterLab. It combines symbolic definitions, numerical checks, interactive 
+Plotly geometry, and reproducible source code for the polynomial map and 
+its closed Abel–Wick cycle families, with local smoke tests and a public 
+browser-based launch. The use case is an oddity from twitter, that was
+given out as a counter-example to the Jacobian conjecture. 
+
+

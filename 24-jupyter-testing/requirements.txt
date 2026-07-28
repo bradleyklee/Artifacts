@@ -1,0 +1,11 @@
+numpy
+pandas
+sympy
+mpmath
+matplotlib
+plotly
+ipywidgets
+scipy
+jupyterlab
+notebook
+voila

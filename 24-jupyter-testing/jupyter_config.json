@@ -1,0 +1,7 @@
+{
+  "VoilaConfiguration": {
+    "enable_nbextensions": true,
+    "strip_sources": false,
+    "theme": "light"
+  }
+}

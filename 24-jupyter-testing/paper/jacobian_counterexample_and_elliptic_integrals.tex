@@ -1,0 +1,600 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{microtype}
+\usepackage{hyperref}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\usepackage{array}
+\graphicspath{{figures/}}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,citecolor=black}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.58em}
+\setlist{nosep,leftmargin=1.5em}
+\pagestyle{fancy}
+\setlength{\headheight}{14pt}
+\fancyhf{}
+\lhead{Jacobian Counter-example and Elliptic Integrals}
+\rhead{July 2026}
+\cfoot{\thepage}
+\newcommand{\dd}{\,d}
+\newcommand{\RR}{\mathbb R}
+\definecolor{softblue}{RGB}{233,242,250}
+\definecolor{softgold}{RGB}{250,245,228}
+\definecolor{softred}{RGB}{252,238,238}
+\newcommand{\bluebox}[1]{\begin{center}\colorbox{softblue}{\parbox{0.93\linewidth}{#1}}\end{center}}
+\newcommand{\goldbox}[1]{\begin{center}\colorbox{softgold}{\parbox{0.93\linewidth}{#1}}\end{center}}
+\newcommand{\redbox}[1]{\begin{center}\colorbox{softred}{\parbox{0.93\linewidth}{#1}}\end{center}}
+
+\title{\vspace{-1.2em}\textbf{Jacobian Counter-example and Elliptic Integrals}}
+\author{Harm.On.ica S-O-L 5.6 (Open AI), Bradley Klee}
+\date{July 2026}
+
+\begin{document}
+\maketitle
+\vspace{-1.8em}
+
+\begin{center}
+\includegraphics[width=0.99\textwidth,keepaspectratio]{nested_curves_headliner_clean.png}
+\end{center}
+\vspace{-0.8em}
+
+\begin{abstract}
+A two-dimensional slice of the 2026 counterexample to the Jacobian conjecture
+starts with nested closed curves inside a triangle and maps the filled regions
+into three-dimensional space. Two areas must be kept separate. The
+\emph{pre-image area} is the flat area before deformation. The \emph{image
+area} is the true area of the bent and stretched sheet afterward. The
+pre-image area has a direct hypergeometric formula and leads, through OEIS
+A007004 and its derivative A006480, to Ramanujan's cubic period function. For
+the image area we give the full deformation density, an exact two-dimensional
+integral, and an exact one-dimensional integral for its derivative. Expanding
+the deformation density near the center produces a convergent sequence of
+finite linear combinations of hypergeometric functions. The first twenty area
+coefficients, direct numerical integration, and ordinary triangle meshes all
+agree. The final section poses a geometric question: can the flat triangle be
+folded and stretched continuously until its three corners meet, and can the
+given polynomial map be reached as a limit of small smooth deformations?
+\end{abstract}
+
+\clearpage
+\section{From the Jacobian conjecture to the triangle map}
+
+The Jacobian determinant records how a map changes a tiny area or volume. If
+it never vanishes, the map can be reversed near every point. The Jacobian
+conjecture asked whether a polynomial map with one fixed nonzero Jacobian
+determinant must also have one global polynomial inverse. In July 2026,
+Levent Alp\"oge announced a three-variable counterexample: its Jacobian
+determinant is constantly $-2$, yet three different inputs have the same
+output~\cite{alpoge,speyer}.
+
+The map is
+\[
+F(x,y,z)=(P,Q,R),
+\]
+with
+\begin{align*}
+P&=(1+xy)^3z+y^2(1+xy)(4+3xy),\\
+Q&=y+3x(1+xy)^2z+3xy^2(4+3xy),\\
+R&=2x-3x^2y-x^3z.
+\end{align*}
+The three colliding inputs lie in the plane
+\[
+\iota(u,v)=\left(u-v,-\frac32(u-v),\frac{27}{4}(u+v)-\frac14\right).
+\]
+Thus the two-variable map studied here is $G=F\circ\iota$. Its triangle
+corners satisfy
+\[
+G(0,0)=G(1,0)=G(0,1)=\left(-\frac14,0,0\right).
+\]
+Filling the triangle and applying $G$ turns the logical counterexample into a
+visible curved sheet. The nested curves below are level curves in that
+triangle and their images under $G$.
+
+\section{The picture before the integrals}
+
+Start with the triangle whose corners are
+\[
+(0,0),\qquad(1,0),\qquad(0,1)
+\]
+in coordinates $(u,v)$. Inside it, consider the function
+\[
+H(u,v)=uv(1-u-v).
+\]
+Its largest value is $1/27$ at the center $(1/3,1/3)$. We label the nested
+closed loops by
+\[
+H(u,v)=\frac{1-m}{27},\qquad 0\leq m\leq1.
+\]
+At $m=0$ the loop has shrunk to the center. As $m$ grows, it expands. At
+$m=1$ it reaches the three sides of the triangle. We call the filled region
+inside the loop $D_m$ and its boundary $C_m$.
+
+A polynomial map $G$ sends the starting plane into three-dimensional space:
+\[
+G(u,v)=(U(u,v),V(u,v),W(u,v)).
+\]
+The important geometric fact is that the three triangle corners have the same image,
+\[
+G(0,0)=G(1,0)=G(0,1)=\left(-\frac14,0,0\right).
+\]
+Thus the final triangular boundary becomes three loops meeting at one point.
+For $m<1$, the closed oval $C_m$ becomes the space curve
+\[
+\Gamma_m=G(C_m),
+\]
+and the filled region becomes the mapped sheet
+\[
+\Sigma_m=G(D_m).
+\]
+The map used here is the restriction of the explicit polynomial map announced
+by Levent Alp\"oge in July 2026~\cite{alpoge}.
+
+\section{Two different meanings of area}
+
+Imagine drawing a closed shape on a flat, stretchable sheet. Measure the inked
+region before touching the sheet: this is the \emph{pre-image area}. Now bend
+and stretch the sheet according to the map and measure the same marked region
+along the deformed surface: this is the \emph{image area}. The second number
+includes the stretching caused by the map; it is not merely a different view
+of the first.
+
+\begin{center}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{0.98\textwidth}{>{\bfseries}p{0.18\textwidth}X X}
+\toprule
+Area & When it is measured & What it tells us\\
+\midrule
+Pre-image area
+& Before applying the deformation map.
+& The flat area we started with; it preserves the original timing.\\
+Image area
+& After deformation, measured directly along the bent and stretched sheet.
+& The true area after stretching; it depends on the map but not on how the finished surface is oriented.\\
+\bottomrule
+\end{tabularx}
+\end{center}
+
+The image area is the target of this paper. Changing the deformation map can
+change it, because a different map stretches the sheet differently. Rotating
+or reflecting the completed surface cannot change it. This combination---map
+dependent but orientation invariant---is exactly what we need from a quantity
+that belongs to the image.
+
+\section{Integral I: pre-image area}
+
+The pre-image area is the area of the filled loop before the map is applied:
+\[
+\mathcal A_0(m)=\iint_{D_m}\dd u\,\dd v.
+\]
+Walking once around the boundary gives the same number:
+\[
+\mathcal A_0(m)=-\oint_{C_m}v\,\dd u,
+\]
+with the sign fixed by the direction of travel.
+
+In mechanics, enclosed area divided by $2\pi$ is called an \emph{action}. Here
+\[
+J_0(m)=\frac{\mathcal A_0(m)}{2\pi}.
+\]
+The exact answer is especially simple after normalization. Define
+\[
+F_3(m)={}_2F_1\!\left(\frac13,\frac23;1;m\right)
+=\sum_{n\geq0}\frac{(3n)!}{(n!)^3}\left(\frac{m}{27}\right)^n
+\]
+and its integral
+\[
+S_3(m)=\int_0^m F_3(t)\,\dd t.
+\]
+Then
+\[
+\boxed{
+\mathcal A_0(m)=\frac{2\pi\sqrt3}{27}S_3(m),
+\qquad
+J_0(m)=\frac{\sqrt3}{27}S_3(m).}
+\]
+This is the exact quantity that preserves the original clock.
+
+The cubic rescaling has integer coefficients:
+\[
+\frac{S_3(27x)}{27}
+=x+3x^2+30x^3+420x^4+6930x^5+126126x^6+\cdots.
+\]
+The coefficient of $x^{n+1}$ is
+\[
+\frac{(3n)!}{(n+1)(n!)^3},
+\]
+which is OEIS A007004~\cite{oeis7004}.
+
+Its derivative provides the direct link to Ramanujan. Write
+\[
+G_7(x)=\sum_{n\geq0}\frac{(3n)!}{(n+1)(n!)^3}x^{n+1}
+=x\,{}_2F_1\!\left(\frac13,\frac23;2;27x\right).
+\]
+Then
+\[
+G_7'(x)=\sum_{n\geq0}\frac{(3n)!}{(n!)^3}x^n
+={}_2F_1\!\left(\frac13,\frac23;1;27x\right).
+\]
+The derivative coefficients are OEIS A006480. OEIS identifies this
+hypergeometric function with period functions for elliptic-curve families and
+connects it to Ramanujan's work on modular equations and approximations to
+$\pi$~\cite{oeis6480,ramanujan}. Thus A007004 is an integrated version of the
+Ramanujan period sequence A006480.
+
+\goldbox{The pre-image area is exact and preserves the original clock, but it
+does not measure how much the map stretches the sheet. It is the area before
+deformation, recovered from the image by undoing that deformation.}
+
+\subsection*{How a triangle mesh recovers the pre-image area}
+
+The mesh is a later numerical check, not the definition of the integral. A
+small mapped triangle with vertices $\mathbf r_1,\mathbf r_2,\mathbf r_3$ has
+an area arrow
+\[
+\mathbf a_\triangle=
+\frac12(\mathbf r_2-\mathbf r_1)\times(\mathbf r_3-\mathbf r_1).
+\]
+Its length is the triangle's image area, while its direction records how the
+triangle is facing. To recover the pre-image area instead, use the correcting
+vector
+\[
+B_0(u,v)=
+\frac{G_u\times G_v}{\|G_u\times G_v\|^2},
+\qquad
+B_0\cdot(G_u\times G_v)=1.
+\]
+Then
+\[
+\sum_{\triangle} B_0(u_\triangle,v_\triangle)\cdot
+\mathbf a_\triangle
+\longrightarrow \mathcal A_0(m).
+\]
+These weights undo the local stretching of the map. They recover the area
+before deformation rather than measuring the size of the deformed sheet.
+
+\section{Integral II: image area after stretching}
+
+The image area is the ordinary area of the mapped sheet after the map has bent
+and stretched it:
+\[
+\boxed{
+\mathcal A_\Sigma(m)=
+\iint_{D_m}\|G_u\times G_v\|\,\dd u\,\dd v.}
+\]
+This number is unchanged if the completed surface is rotated or reflected,
+but it changes when the deformation map changes. It therefore measures the
+geometry created by the map itself.
+
+For an exact formula, use the centered coordinates
+\[
+u=\frac13+\frac{x}{3}+\frac{y}{3\sqrt3},
+\qquad
+v=\frac13-\frac{x}{3}+\frac{y}{3\sqrt3}.
+\]
+The filled region is
+\[
+D_m=\{(x,y):M(x,y)\le m\},
+\qquad
+M=x^2+y^2+\frac{2}{3\sqrt3}y(y^2-3x^2).
+\]
+Write
+\[
+\mathcal J(x,y)=\|G_x\times G_y\|
+=\sqrt{C_1(x,y)^2+C_2(x,y)^2+C_3(x,y)^2},
+\]
+where
+\begin{align*}
+C_1={}&-\frac{4\sqrt3x}{81}
+\bigl(24\sqrt3x^6y-4x^6-72x^4-54\sqrt3x^2y-27x^2+81\bigr),\\
+C_2={}&-\frac{\sqrt3}{81}
+\bigl(48\sqrt3x^8y-8x^8-72\sqrt3x^6y-132x^6
+-108\sqrt3x^4y+162x^4\\
+&\hspace{3.1cm}+162\sqrt3x^2y+297x^2-162\bigr),\\
+C_3={}&-\frac{\sqrt3(2x^2-3)^2}{324}
+\bigl(48\sqrt3x^6y-8x^6-72\sqrt3x^4y-132x^4
+-108\sqrt3x^2y\\
+&\hspace{3.1cm}+162x^2+162\sqrt3y+405\bigr).
+\end{align*}
+Thus the deformed area has the explicit exact form
+\[
+\boxed{
+\mathcal A_\Sigma(m)=
+\iint_{M(x,y)\le m}\mathcal J(x,y)\,\dd x\,\dd y.}
+\]
+Nothing is hidden in the norm notation: the three polynomials above are the
+three components of the local area-stretching vector.
+
+There is also an exact one-dimensional formula for the rate at which area is
+added. In polar coordinates,
+\[
+M(r,\theta)=r^2-\frac{2}{3\sqrt3}r^3\sin(3\theta).
+\]
+Let $R_m(\theta)$ be the positive solution of
+\[
+R_m^2-\frac{2}{3\sqrt3}R_m^3\sin(3\theta)=m.
+\]
+Differentiating the radial integral gives
+\[
+\boxed{
+\mathcal A_\Sigma'(m)=\frac12\int_0^{2\pi}
+\frac{\mathcal J(R_m\cos\theta,R_m\sin\theta)}
+{1-\dfrac{R_m}{\sqrt3}\sin(3\theta)}\,\dd\theta.}
+\]
+The double integral gives the accumulated image area; this single integral
+gives the new area contributed by the next thin shell.
+
+At the center,
+\[
+J_c=\mathcal J(0,0)=\frac{\sqrt{6267}}4.
+\]
+Normalize by
+\[
+\Psi(m)=\frac{\mathcal A_\Sigma(m)}{\pi J_c}.
+\]
+Then
+\[
+\Psi(m)=\frac{1}{\pi J_c}\int_0^{2\pi}
+\int_0^{R_m(\theta)}\mathcal J(r\cos\theta,r\sin\theta)
+\,r\,\dd r\,\dd\theta,
+\]
+and
+\[
+\Psi'(m)=\frac{1}{2\pi J_c}\int_0^{2\pi}
+\frac{\mathcal J(R_m\cos\theta,R_m\sin\theta)}
+{1-\dfrac{R_m}{\sqrt3}\sin(3\theta)}\,\dd\theta.
+\]
+These are exact formulas for the deformed area and its derivative.
+
+\subsection*{Hypergeometric form near the center}
+
+The same cubic hypergeometric functions that describe the pre-image area also
+organize the local expansion of the image area. Put
+\[
+F_3(m)={}_2F_1\!\left(\frac13,\frac23;1;m\right),
+\qquad
+S_3(m)=m\,{}_2F_1\!\left(\frac13,\frac23;2;m\right).
+\]
+Expand the exact stretching density at the center,
+\[
+\frac{\mathcal J(x,y)}{J_c}=P_0(x,y)+P_1(x,y)+P_2(x,y)+\cdots,
+\]
+where $P_d$ is the homogeneous part of degree $d$. For each $N$, integrate the
+finite polynomial $P_0+\cdots+P_{2N-2}$ over $D_m$. Exact reduction on the
+cubic curves gives polynomials $A_N(m)$ and $B_N(m)$ such that
+\[
+\boxed{
+\Psi_N(m)=A_N(m)F_3(m)+B_N(m)S_3(m),
+\qquad
+\Psi(m)-\Psi_N(m)=O(m^{N+1}).}
+\]
+As $N$ increases, these finite hypergeometric combinations converge to the
+exact image-area function near the center. Differentiation remains in the
+same explicit family. If
+\[
+F_3^+(m)={}_2F_1\!\left(\frac43,\frac53;2;m\right),
+\qquad F_3'(m)=\frac29F_3^+(m),
+\]
+then
+\[
+\boxed{
+\Psi_N'(m)=
+\bigl(A_N'(m)+B_N(m)\bigr)F_3(m)
++\frac29A_N(m)F_3^+(m)+B_N'(m)S_3(m).}
+\]
+The companion file gives the exact $A_8$ and $B_8$, whose combination agrees
+with the first eight nonzero coefficients of $\Psi$. This is a practical
+hypergeometric form without printing several lines of very large rational
+numbers in the main text.
+
+The local series begins
+\[
+\begin{aligned}
+\Psi(m)={}&m
+-\frac{8798863}{78550578}m^2
+-\frac{656984015341439}{4627644978100563}m^3\\
+&-\frac{5888704400396591850310}
+{545256281712894848663121}m^4
++\frac{9229642725727364600800502643893}
+{856603921733574408314213636678760}m^5+O(m^6).
+\end{aligned}
+\]
+The image-area action is therefore
+\[
+J_\Sigma(m)=\frac{\mathcal A_\Sigma(m)}{2\pi}
+=\frac{\sqrt{6267}}8\Psi(m).
+\]
+
+The derivative has a notable integer rescaling. With
+\[
+C=235651734=54\cdot2089^2,
+\]
+the first twenty exactly computed coefficients of $\Psi'(Cx)$ are integers.
+The first eight are
+\[
+\begin{aligned}
+\Psi'(Cx)={}&1-52793178x-23651424552291804x^2\\
+&-565315622438072817629760x^3
++166133569063092562814409047590074x^4\\
+&+19584594743364404616475143307241406057420x^5\\
+&+4509774622501256294260247296713228343209292240728x^6\\
+&+1755635498235399950242562905014394392824488851953334778752x^7
++O(x^8).
+\end{aligned}
+\]
+All twenty integers are included in the companion table.
+
+\subsection*{Independent numerical check}
+
+The exact series, direct evaluation of the integral, and ordinary mapped
+triangle areas agree:
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+$m$ & direct integral & 20-term series & 12,640-triangle mesh\\
+\midrule
+0.10 & 6.139023 & 6.139023 & 6.137024\\
+0.40 & 23.182660 & 23.182660 & 23.169230\\
+0.70 & 37.237531 & 37.243141 & 37.204348\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.72\textwidth]{true_surface_mesh_convergence.png}
+\caption{Ordinary triangle-area sums converge to direct numerical integration
+of the image area at $m=0.70$.}
+\label{fig:surface-convergence}
+\end{figure}
+
+\section{Folding the triangle continuously}
+
+The last question is geometric rather than computational. Begin with the flat
+triangle in the plane and imagine lifting and stretching it continuously until
+the three corners meet. The given polynomial map shows the final arrangement:
+three distinct corners arrive at one point while each corner still has a
+well-defined local sheet. What we would like is a continuous movie of how that
+collision can be made.
+
+One precise version is to seek maps
+\[
+G_t:D_1\longrightarrow\mathbb R^3,
+\qquad 0\le t\le1,
+\]
+with
+\[
+G_0(u,v)=(u,v,0),
+\qquad
+G_1(u,v)=G(u,v),
+\]
+after a harmless change of coordinates in the starting plane. For $t<1$, the
+three corners should remain distinct and the sheet should stay smooth. At the
+last moment, the corners may meet exactly as they do under $G$.
+
+The equilateral triangle suggests a simple picture. Lift the three corners in
+three different directions, as though the triangle were being folded toward
+a tetrahedral point, and let those directions move along curves on a sphere.
+The sheet is allowed to stretch, so this need not be a rigid paper-folding
+problem. The sphere records directions; the triangle records which points are
+being joined.
+
+There are two closely related questions for colleagues:
+\begin{enumerate}
+\item Can one write down such a smooth family $G_t$ directly?
+\item Can the final map be obtained as a limit of many small, smooth changes
+that each stay close to the identity?
+\end{enumerate}
+A product of ordinary constant matrices cannot do this by itself: it remains a
+single linear map. The useful replacement is a composition of
+\emph{position-dependent} near-identity maps, for example
+\[
+X\longmapsto X+\varepsilon V_k(X),
+\]
+or the continuous flow
+\[
+\frac{dX}{dt}=V_t(X).
+\]
+Their local derivative matrices multiply along each path, while the maps as a
+whole can bend and stretch the triangle nonlinearly. An ambient deformation
+that is invertible at every stage cannot merge three points, so the collision
+must occur in the final limit or in one final non-invertible step. That is not
+a defect; it identifies the exact event the construction must explain.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.72\textwidth]{mapped_separatrix_3d.png}
+\caption{The three boundary arcs meet at one image point. The proposed
+continuous folding problem asks for a smooth path from the flat triangle to
+this final arrangement.}
+\label{fig:critical-arcs}
+\end{figure}
+
+\section{Files, checks, and questions for the next step}
+
+The companion files include the exact map, the three polynomial components
+$C_1,C_2,C_3$, the first twenty image-area coefficients, the first twenty
+rescaled derivative integers, the $N=8$ hypergeometric reduction, direct
+integration values, and mesh checks. The main files are
+\begin{itemize}
+\item \path{data/intrinsic_area_density.txt};
+\item \path{data/true_surface_area_series.csv};
+\item \path{data/image_area_hypergeometric_reduction_N8.txt};
+\item \path{data/true_surface_area_validation.csv};
+\item \path{scripts/derive_image_area_hypergeometric.py}.
+\end{itemize}
+
+The calculations now provide an exact deformation integral, an exact shell
+integral, a convergent hypergeometric reduction near the center, and three
+independent numerical checks. The natural next questions are whether the
+coefficient functions $A_N,B_N$ approach a simpler named form, whether the
+integer rescaling continues to all orders, and whether a smooth family $G_t$
+can make the triangle's three corners meet in the final limit.
+
+\begin{thebibliography}{99}
+\bibitem{alpoge}
+Levent Alp\"oge,
+``hello there the jacobian conjecture is false ...'', public announcement,
+July 19, 2026,
+\url{https://x.com/__alpoge__/status/2079028340955197566}.
+
+\bibitem{crawford}
+Tom Crawford,
+``Oxford Calculus: Jacobians Explained,''
+YouTube video,
+\url{https://www.youtube.com/watch?v=YqMelRryG8U}.
+
+\bibitem{mathgeek}
+Mathgeek,
+``The Jacobian Conjecture,''
+YouTube video, July 2, 2023,
+\url{https://www.youtube.com/watch?v=Jxu3is_hrZI}.
+
+\bibitem{origin}
+L\'azaro O. Rodr\'iguez D\'iaz,
+``On the origin of the Jacobian conjecture,''
+2025,
+\url{https://arxiv.org/abs/2512.23614}.
+
+\bibitem{countervideo}
+``Counter Example To Jacobian Conjecture Found By Levent Alpoge,''
+YouTube video, July 2026,
+\url{https://www.youtube.com/watch?v=2ausgtmjn6g}.
+
+\bibitem{detailsvideo}
+``AI kills the Jacobian conjecture -- the details,''
+YouTube video, July 2026,
+\url{https://www.youtube.com/watch?v=8OBxOuyDBU8}.
+
+\bibitem{speyer}
+David Speyer,
+``The new counterexample to the Jacobian conjecture,''
+Secret Blogging Seminar, July 20, 2026,
+\url{https://sbseminar.wordpress.com/2026/07/20/the-new-counterexample-to-the-jacobian-conjecture/}.
+
+\bibitem{oeis7004}
+N. J. A. Sloane and James Propp,
+``A007004: $(3n)!/((n+1)(n!)^3)$,''
+The On-Line Encyclopedia of Integer Sequences,
+\url{https://oeis.org/A007004}.
+
+\bibitem{oeis6480}
+N. J. A. Sloane,
+``A006480: $(3n)!/(n!)^3$,''
+The On-Line Encyclopedia of Integer Sequences,
+\url{https://oeis.org/A006480}.
+
+\bibitem{ramanujan}
+Srinivasa Ramanujan,
+``Modular Equations and Approximations to $\pi$,''
+\emph{Quarterly Journal of Mathematics}, Vol. 45 (1914), 350--372.
+\end{thebibliography}
+
+\end{document}
