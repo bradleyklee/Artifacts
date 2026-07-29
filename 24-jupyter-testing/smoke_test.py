@@ -28,6 +28,14 @@ fig = build_interactive_figure(
 )
 assert len(fig.data) > 0
 
+
+# Binder rational-backend guard.
+from sympy.polys.domains import QQ
+from abel_wick_period_series import rationalized_gram_parts
+for family_index in range(3):
+    parts, _ = rationalized_gram_parts(family_index)
+    assert all(type(c) is type(QQ.one) for row in parts.values() for c in row)
+
 # Live exact prefixes for the new notebook.
 red_area = compute_red_area(4)["coeffs"]
 red_period = [sp.factor((k + 1) * red_area[k + 1]) for k in range(4)]

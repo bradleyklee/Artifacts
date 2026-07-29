@@ -25,9 +25,9 @@ import math
 import time
 from functools import lru_cache
 from pathlib import Path
+from typing import Any
 
 import sympy as sp
-from sympy.external.pythonmpq import PythonMPQ as MPQ
 from sympy.polys.densearith import dup_add, dup_mul
 from sympy.polys.densebasic import dup_strip
 from sympy.polys.domains import QQ
@@ -97,12 +97,18 @@ def center_density(family: int) -> sp.Expr:
     return sp.sqrt(gram_determinant(family)[1])
 
 
-def _mpq(value: sp.Expr) -> MPQ:
-    value = sp.Rational(value)
-    return MPQ(int(value.p), int(value.q))
+RationalElement = Any
+
+def _mpq(value: object) -> RationalElement:
+    """Convert through SymPy's active QQ backend.
+
+    Binder may use gmpy2.mpq while a plain Python install uses PythonMPQ.
+    Constructing one private class directly can mix incompatible rationals.
+    """
+    return QQ.convert(sp.Rational(value))
 
 
-def rationalized_gram_parts(family: int) -> tuple[dict[int, list[MPQ]], sp.Expr]:
+def rationalized_gram_parts(family: int) -> tuple[dict[int, list[RationalElement]], sp.Expr]:
     """Homogeneous parts of det(G_i)/det(G_i)(0) in rational U,V coordinates.
 
     Dense univariate arrays are stored high-degree first, as expected by
@@ -120,7 +126,7 @@ def rationalized_gram_parts(family: int) -> tuple[dict[int, list[MPQ]], sp.Expr]
     )
     polynomial = sp.Poly(rationalized, U, V, extension=True)
 
-    parts: dict[int, list[MPQ]] = {}
+    parts: dict[int, list[RationalElement]] = {}
     for (u_power, v_power), coefficient in polynomial.terms():
         if not coefficient.is_Rational:
             raise AssertionError(
@@ -128,34 +134,34 @@ def rationalized_gram_parts(family: int) -> tuple[dict[int, list[MPQ]], sp.Expr]
                 f"non-rational coefficient={coefficient}"
             )
         degree = u_power + v_power
-        row = parts.setdefault(degree, [MPQ(0, 1)] * (degree + 1))
+        row = parts.setdefault(degree, [QQ.zero] * (degree + 1))
         row[u_power] = _mpq(coefficient)
 
     return {degree: list(reversed(row)) for degree, row in parts.items()}, center
 
 
 def square_root_homogeneous_parts(
-    gram_parts: dict[int, list[MPQ]],
+    gram_parts: dict[int, list[RationalElement]],
     max_degree: int,
     *,
     progress: bool = False,
-) -> list[list[MPQ]]:
+) -> list[list[RationalElement]]:
     """Compute homogeneous j_n from sqrt(Q)=sum j_n.
 
     For the bounded action-angle normalization the finite recurrence is
 
         j_n = -(1/(2n)) sum_k (2n-3k) q_k j_(n-k).
     """
-    result: list[list[MPQ]] = [[MPQ(1, 1)]]
+    result: list[list[RationalElement]] = [[QQ.one]]
     determinant_degree = max(gram_parts)
 
     for degree in range(1, max_degree + 1):
-        accumulator: list[MPQ] = []
+        accumulator: list[RationalElement] = []
         for k in range(1, min(determinant_degree, degree) + 1):
             qk = gram_parts.get(k)
             if not qk:
                 continue
-            multiplier = MPQ(2 * degree - 3 * k, 1)
+            multiplier = _mpq(2 * degree - 3 * k)
             if multiplier == 0:
                 continue
             product = dup_mul(qk, result[degree - k], QQ)
@@ -163,7 +169,7 @@ def square_root_homogeneous_parts(
                 product = [multiplier * coefficient for coefficient in product]
             accumulator = dup_add(accumulator, product, QQ)
 
-        denominator = MPQ(2 * degree, 1)
+        denominator = _mpq(2 * degree)
         result.append(dup_strip([-coefficient / denominator for coefficient in accumulator]))
         if progress and degree % 20 == 0:
             print(f"  density degree {degree}/{max_degree}", flush=True)
@@ -175,13 +181,13 @@ def square_root_homogeneous_parts(
 def angular_moment(cos_power: int, sin_power: int) -> MPQ:
     """(1/pi) integral_0^(2pi) cos^a(phi) sin^b(phi) dphi."""
     if cos_power < 0 or sin_power < 0 or cos_power % 2 or sin_power % 2:
-        return MPQ(0, 1)
+        return QQ.zero
     p = cos_power // 2
     q = sin_power // 2
-    return MPQ(
+    return _mpq(sp.Rational(
         2 * math.comb(2 * p, p) * math.comb(2 * q, q),
         4 ** (p + q) * math.comb(p + q, p),
-    )
+    ))
 
 
 def period_coefficients(
@@ -207,23 +213,23 @@ def period_coefficients(
     if progress:
         print(f"  density expansion {time.time() - start:.2f}s", flush=True)
 
-    x_scale_squared = MPQ(4, 27)
+    x_scale_squared = _mpq(sp.Rational(4, 27))
     inverse_y_scale_squared = (
-        MPQ(1, 1)
+        QQ.one
         if family == 0
-        else MPQ(RATIONAL_Y_DENOMINATOR, 3)
+        else _mpq(sp.Rational(RATIONAL_Y_DENOMINATOR, 3))
     )
 
-    x_powers = [MPQ(1, 1)]
-    y_powers = [MPQ(1, 1)]
+    x_powers = [QQ.one]
+    y_powers = [QQ.one]
     for _ in range(terms + 2):
         x_powers.append(x_powers[-1] * x_scale_squared)
         y_powers.append(y_powers[-1] * inverse_y_scale_squared)
 
-    monomials: list[list[tuple[int, int, MPQ]]] = []
+    monomials: list[list[tuple[int, int, RationalElement]]] = []
     for degree, dense in enumerate(density_parts):
         polynomial_degree = len(dense) - 1
-        row: list[tuple[int, int, MPQ]] = []
+        row: list[tuple[int, int, RationalElement]] = []
         for position, coefficient in enumerate(dense):
             if coefficient == 0:
                 continue
@@ -236,25 +242,25 @@ def period_coefficients(
 
     output: list[sp.Rational] = []
     for coefficient_index in range(terms):
-        total = MPQ(0, 1)
+        total = QQ.zero
         for density_degree in range(2 * coefficient_index + 1):
             harmonic_power = 2 * coefficient_index - density_degree
             if harmonic_power == 0:
-                radial_factor = MPQ(1, 2)
+                radial_factor = _mpq(sp.Rational(1, 2))
             else:
-                radial_factor = MPQ(
+                radial_factor = _mpq(sp.Rational(
                     ((-1) ** harmonic_power)
                     * (coefficient_index + 1)
                     * math.comb(coefficient_index + harmonic_power, harmonic_power - 1),
                     2 * harmonic_power,
-                )
+                ))
 
             for u_power, v_power, density_coefficient in monomials[density_degree]:
                 x_exponent = (harmonic_power - u_power) // 2
                 x_factor = (
                     x_powers[x_exponent]
                     if x_exponent >= 0
-                    else MPQ(1, 1) / x_powers[-x_exponent]
+                    else QQ.one / x_powers[-x_exponent]
                 )
                 y_factor = y_powers[v_power // 2]
                 moment = angular_moment(u_power + harmonic_power, v_power)
@@ -267,7 +273,7 @@ def period_coefficients(
                         * radial_factor
                     )
 
-        output.append(sp.Rational(int(total.numerator), int(total.denominator)))
+        output.append(sp.Rational(QQ.to_sympy(total)))
         if progress and (coefficient_index + 1) % 10 == 0:
             print(f"  coefficient {coefficient_index + 1}/{terms}", flush=True)
 
