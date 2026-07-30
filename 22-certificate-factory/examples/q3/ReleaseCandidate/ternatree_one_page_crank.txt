@@ -7,7 +7,7 @@ Cross-products return one law.
 Dawn's loop brings forth the sequence.
 晓轮生数列
 (Target: 4*A(x)=3+x+A(x)^3, A(0)=1; print a(0)..a(N).)
-(n,x,A,A',A'' are formal; k,N are integers; arithmetic is exact.)
+(n,u,x,A,A',A'' are formal; k,N are integers; arithmetic is exact.)
 (Matrices are 1-based; vectors are columns; ranges include both ends.)
 (ExactQuotient asserts zero integer remainder; Factor only prints.)
 Function Lower(U,V,J,w,m)
@@ -45,11 +45,16 @@ Function Q3(N)
 6: c2 <- (n/(n+2))*Lower(U,V,J,Lower(U,V,J,e,n+1),n);
 7: X <- first two rows of MatrixFromColumns(c0,c1,c2);
 8: {P0,P1,P2} <- Cancel3(X);  Assert Simplify(X*{P0,P1,P2}^T)=0;
-9: a[0] <- 1;  a[1] <- ExactQuotient(1,4-3*a[0]^2);
-10: a[2] <- ExactQuotient(3*a[0]*a[1]^2,4-3*a[0]^2);
-11: For k <- 1 to N-2:
-12:   a[k+2] <- ExactQuotient(-P0(k)*a[k]-P1(k)*a[k+1],P2(k));
-13: S <- Sum(a[k]*x^k,k=0..N);  Assert Coeffs(4*S-3-x-S^3,0..N)=0;
-14: ODE <- MakeODE(P0,P1,P2);
-15: Assert Coeffs(Substitute(ODE,A=S,A'=S',A''=S''),0..N-2)=0;
-16: Return {a[0..N],Factor({P0,P1,P2}),ODE=0};
+9: rho <- u*(1-3*u-u^2);
+10: C <- -9*n*u^4-36*n*u^3+6*n*u^2+84*n*u-13*n
+         -3*u^4-12*u^3-6*u^2+3*u;
+11: Assert Simplify(P0*rho^2+n*P1*rho/(n+1)+n*P2/(n+2)
+          -(C'*rho-(n+1)*C*rho'))=0;
+12: a[0] <- 1;  a[1] <- ExactQuotient(1,4-3*a[0]^2);
+13: a[2] <- ExactQuotient(3*a[0]*a[1]^2,4-3*a[0]^2);
+14: For k <- 1 to N-2:
+15:   a[k+2] <- ExactQuotient(-P0(k)*a[k]-P1(k)*a[k+1],P2(k));
+16: S <- Sum(a[k]*x^k,k=0..N);  Assert Coeffs(4*S-3-x-S^3,0..N)=0;
+17: ODE <- MakeODE(P0,P1,P2);
+18: Assert Coeffs(Substitute(ODE,A=S,A'=S',A''=S''),0..N-2)=0;
+19: Return {a[0..N],Factor({P0,P1,P2}),R=C/rho,ODE=0};

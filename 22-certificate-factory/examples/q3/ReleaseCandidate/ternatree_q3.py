@@ -131,6 +131,22 @@ def run_q3(N: int) -> dict[str, object]:
     if sp.simplify(X * sp.Matrix([P0, P1, P2])) != sp.zeros(2, 1):
         raise AssertionError("X*P is not zero")
 
+    u = sp.symbols("u")
+    rho = u * (1 - 3 * u - u**2)
+    certificate_numerator = (
+        -9 * n * u**4 - 36 * n * u**3 + 6 * n * u**2
+        + 84 * n * u - 13 * n - 3 * u**4 - 12 * u**3
+        - 6 * u**2 + 3 * u
+    )
+    certificate_residual = sp.expand(
+        P0 * rho**2 + n * P1 * rho / (n + 1) + n * P2 / (n + 2)
+        - (sp.diff(certificate_numerator, u) * rho
+           - (n + 1) * certificate_numerator * sp.diff(rho, u))
+    )
+    if sp.factor(certificate_residual) != 0:
+        raise AssertionError("exact certificate identity failed")
+    certificate = sp.factor(certificate_numerator / rho)
+
     terms = [0] * (N + 1)
     terms[0] = 1
     terms[1] = exact_integer_quotient(1, 4 - 3 * terms[0] ** 2)
@@ -162,6 +178,7 @@ def run_q3(N: int) -> dict[str, object]:
         "x": x,
         "X": X,
         "P": (P0, P1, P2),
+        "certificate": certificate,
         "terms": terms,
         "ode": ode,
     }
@@ -180,6 +197,7 @@ def main() -> None:
     print("A120590 ternatree q=3")
     print(f"N = {args.N}")
     print("X*P check: PASS")
+    print("exact certificate identity: PASS")
     print("exact recurrence divisions: PASS")
     print("cubic series check: PASS")
     print("ODE series check: PASS")
@@ -188,6 +206,9 @@ def main() -> None:
     print(f"P0(n) = {P0}")
     print(f"P1(n) = {P1}")
     print(f"P2(n) = {P2}")
+    print()
+    print("Certificate:")
+    print(f"R(n,u) = {result['certificate']}")
     print()
     print("Expanded recurrence coefficients:")
     print(f"P0(n) = {sp.expand(P0)}")

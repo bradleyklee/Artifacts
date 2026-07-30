@@ -1,12 +1,20 @@
-A120590 TERNATREES PDF QA
+A120590_Ternatrees.pdf final-draft QA
 
-PASS  13 portrait letter pages
-PASS  no clipped or overlapping content in 180 dpi render
-PASS  title-page author line includes Bradley Klee
-PASS  title-page author line includes Harm.On.ica S-O-L 5.6 (OpenAI)
-PASS  Appendix A attribution appears before the first implementation subsection
-PASS  attribution names Kimi (Moonshot AI) and Claude (Anthropic AI)
-PASS  attribution identifies the earlier pseudocode as the common source
-PASS  Section 2 begins on its own page and remains one page
-PASS  Section 3 opens with the fixed G matrix
-PASS  equations remain unnumbered
+Date: 2026-07-30
+Pages: 16
+Page size: US Letter (612 x 792 pt)
+Compiler: XeLaTeX, two passes
+Rendered verification: 160 dpi, all 16 pages inspected
+
+Checks:
+- title, abstract, theorem, and tree figure render correctly;
+- recurrence and derivative-reduction matrices fit within the page;
+- relations among the formulas precede the computational reference sections;
+- reference pseudocode is present and legible on page 9;
+- pseudocode/SymPy comparison figure is present and aligned on page 10;
+- references are ordered by method, beginning with complex calculus and coefficient extraction, followed by inversion, combinatorics, and specialized certificate literature;
+- the pseudocode and Python implementation both verify the exact recurrence certificate;
+- all five appendix code listings are present, including command-line output;
+- no clipped text, overlapping objects, broken glyphs, or blank pages observed;
+- one harmless 0.183 pt matrix overfull warning remains;
+- underfull reference lines and expected eulervm/microtype font warnings do not affect visible output.

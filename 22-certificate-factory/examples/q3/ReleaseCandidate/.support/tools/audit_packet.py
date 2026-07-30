@@ -56,6 +56,11 @@ def main() -> None:
     check(terms[:len(factory_terms)] == factory_terms,
           "root terms agree with frozen factory terms through n=24", records)
     check(P == factory_P, "root recurrence equals frozen factory recurrence", records)
+    u = sp.symbols("u")
+    expected_N = sp.sympify(case["certificate"]["N"])
+    expected_R = sp.cancel(expected_N / sp.sympify(case["rho"]))
+    check(sp.simplify(result["certificate"] - expected_R) == 0,
+          "root certificate equals frozen factory certificate", records)
 
     validation = json.loads((SUPPORT / "factory/validation.json").read_text(encoding="utf-8"))
     check(validation["pass"] is True and validation["passed_checks"] == validation["total_checks"] == 65,
@@ -109,7 +114,7 @@ def main() -> None:
         ROOT / "ternatree_poetry_digest.pdf",
         ROOT / "ternatree_pseudocode_mysteries.png",
         ROOT / "ternatree_sympy_resolutions.png",
-        SUPPORT / "source/A120590_ternatree_derivation_v13.tex",
+        SUPPORT / "source/A120590_ternatree_human.tex",
         SUPPORT / "source/ternatree_one_page_crank_academic.txt",
         SUPPORT / "source/ternatree_poetry_digest.tex",
         SUPPORT / "tools/make_mystery_comparison.py",
@@ -117,6 +122,8 @@ def main() -> None:
         SUPPORT / "graphs/ternatree_pseudocode_mysteries.svg",
         SUPPORT / "graphs/ternatree_sympy_resolutions.pdf",
         SUPPORT / "graphs/ternatree_sympy_resolutions.svg",
+        SUPPORT / "payload/A120590_certificate_payload.json",
+        SUPPORT / "payload/README.txt",
     ]
     check(all(p.is_file() and p.stat().st_size > 0 for p in required),
           "all publication and generation sources are present", records)
@@ -131,35 +138,45 @@ def main() -> None:
         ["pdfinfo", str(ROOT / "A120590_Ternatrees.pdf")],
         text=True, capture_output=True, check=True,
     ).stdout
-    check("Pages:           13" in pdfinfo, "human-facing PDF has 13 portrait pages", records)
+    check("Pages:           16" in pdfinfo, "human-facing PDF has 16 portrait pages", records)
 
     paper_text = subprocess.run(
         ["pdftotext", str(ROOT / "A120590_Ternatrees.pdf"), "-"],
         text=True, capture_output=True, check=True,
     ).stdout
-    check("Direct reduction in the generating variable" in paper_text,
+    check("Derivative reduction and the ODE" in paper_text,
           "paper includes a direct integral-to-ODE derivation", records)
-    source_text = (SUPPORT / "source/A120590_ternatree_derivation_v13.tex").read_text(encoding="utf-8")
+    source_text = (SUPPORT / "source/A120590_ternatree_human.tex").read_text(encoding="utf-8")
     check("\\begin{equation" not in source_text and "\\label{" not in source_text and "\\eqref{" not in source_text,
           "paper source has no numbered equations or equation cross-references", records)
     check("residue" not in paper_text.lower() and "Res_{" not in source_text,
           "human paper consistently uses integral-form notation", records)
     order = [paper_text.find(title) for title in (
-        "From ternatrees to the integral form",
+        "Trees, typogeometry, and contour integration",
         "Shift reduction and the recurrence",
-        "Direct reduction in the generating variable",
-        "Comparison of the two reductions",
+        "Derivative reduction and the ODE",
+        "Relations among the formulas",
+        "Reference pseudocode",
+        "Pseudocode operations and exact realization",
+        "References by method",
     )]
     check(all(i >= 0 for i in order) and order == sorted(order),
-          "mathematical sections occur in geometric, shift, direct, comparison order", records)
-    check("G_x=G-x" in source_text and "G_x\\big|_{x=0}=G" in source_text,
+          "paper sections occur in the intended geometric-to-computational order", records)
+    check("G_x=G-xEE^T" in source_text and "G_0=G" in source_text,
           "paper explicitly compares G and G_x", records)
     check("\\log\\!\\left(1-\\frac{x}{\\rho(u)}\\right)" in source_text,
           "paper gives an integral definition of A(x)", records)
-    check("A'(x)=\\frac{1}{Q(x,T(x))}" in source_text and "A(x)=1+T(x)" in source_text,
-          "algebraic equation is derived from the generating-function integral", records)
+    check(source_text.find("Lars V. Ahlfors") < source_text.find("Aryeh Dvoretzky") < source_text.find(r"Fr\'ed\'eric Chyzak"),
+          "bibliography orders complex calculus before combinatorics and symbolic reduction", records)
+    check("The algebraic form is verified as an ansatz" in source_text and
+          r"\widetilde A(x)=A(x)" in source_text,
+          "algebraic equation is verified by the ODE ansatz and uniqueness", records)
+    pseudo_text = (SUPPORT / "source/ternatree_one_page_crank_academic.txt").read_text(encoding="utf-8")
+    check("exact certificate identity: PASS" in (SUPPORT / "validation/run_N30.txt").read_text(encoding="utf-8") and
+          "R=C/rho" in pseudo_text and "certificate" in source_text.lower(),
+          "paper, pseudocode, and executable include the exact certificate", records)
     check("Kimi (Moonshot AI)" in source_text and "Claude (Anthropic AI)" in source_text and
-          "pseudocode presented in Section 5" in source_text,
+          "pseudocode and implementation presented in Sections 5--6" in source_text,
           "Appendix A attributes the merged one-shot implementations", records)
     check("Bradley Klee, \\quad Harm.On.ica S-O-L 5.6" in source_text and
           "OpenAI" in source_text,
@@ -168,15 +185,49 @@ def main() -> None:
         ["pdftotext", "-f", "4", "-l", "4", str(ROOT / "A120590_Ternatrees.pdf"), "-"],
         text=True, capture_output=True, check=True,
     ).stdout
-    page5 = subprocess.run(
-        ["pdftotext", "-f", "5", "-l", "5", str(ROOT / "A120590_Ternatrees.pdf"), "-"],
+    page6 = subprocess.run(
+        ["pdftotext", "-f", "6", "-l", "6", str(ROOT / "A120590_Ternatrees.pdf"), "-"],
         text=True, capture_output=True, check=True,
     ).stdout
-    check("Shift reduction and the recurrence" in page4 and
-          "Direct reduction in the generating variable" not in page4,
-          "Section 2 occupies its own page", records)
-    check("Direct reduction in the generating variable" in page5 and "G =" in page5,
-          "Section 3 opens with the fixed G matrix", records)
+    pages = {}
+    for page_number in (8, 9, 10, 11):
+        pages[page_number] = subprocess.run(
+            ["pdftotext", "-f", str(page_number), "-l", str(page_number),
+             str(ROOT / "A120590_Ternatrees.pdf"), "-"],
+            text=True, capture_output=True, check=True,
+        ).stdout
+    check("Shift reduction and the recurrence" in page4,
+          "shift-reduction section begins on page 4", records)
+    check("Derivative reduction and the ODE" in page6,
+          "derivative-reduction section begins on page 6", records)
+    check("Relations among the formulas" in pages[8],
+          "relations section begins on page 8", records)
+    check("Reference pseudocode" in pages[9],
+          "reference pseudocode is embedded on page 9", records)
+    check("Pseudocode operations and exact realization" in pages[10],
+          "comparison figure is embedded on page 10", records)
+    check("References by method" in pages[11],
+          "method-ordered bibliography begins on page 11", records)
+
+    payload_path = SUPPORT / "payload/A120590_certificate_payload.json"
+    payload = json.loads(payload_path.read_text(encoding="utf-8"))
+    check(payload["schema"] == "a120590-human-certificate-payload-v1",
+          "machine-readable payload has the declared schema", records)
+    check(payload["pseudocode"]["text"] == (ROOT / "ternatree_one_page_crank.txt").read_text(encoding="utf-8"),
+          "payload embeds the exact root pseudocode", records)
+    check(payload["overview"]["initial_terms_a0_to_a30"] == terms,
+          "payload terms agree with the executable through n=30", records)
+    for name, expected in (("G", parse_tsv_matrix(SUPPORT / "data/G.tsv")),
+                           ("U", U), ("V", V), ("J", J)):
+        observed = sp.Matrix([[sp.sympify(e) for e in row]
+                              for row in payload["exact_data"]["matrices"][name]["entries"]])
+        check(observed == expected, f"payload matrix {name} is exact", records)
+    check(payload["checks"]["factory_validation_summary"]["passed"] == 65 and
+          all(item["status"] == "pass" for item in payload["checks"]["assertions"]),
+          "payload exposes semantic PASS records for the principal checks", records)
+    reference_methods = [r["method"] for r in payload["references"]]
+    check(reference_methods[:3] == ["complex calculus", "applied complex calculus", "Lagrange inversion"],
+          "payload references put calculus and inversion first", records)
 
     output = [
         "A120590 TERNATREE PACKET AUDIT",
@@ -187,7 +238,7 @@ def main() -> None:
         *records,
         "",
         "SCOPE",
-        "The packet is self-contained for the human PDF, graph regeneration,",
+        "The packet is self-contained for the human PDF, compact JSON reading payload,",
         "sequence generation, recurrence, ODE, and cross-checks against the frozen",
         "q=3 factory case. The general multi-q RELAY factory generator is not copied",
         "into this sequence-specific publication packet; its frozen q=3 outputs and",

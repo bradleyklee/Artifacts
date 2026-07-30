@@ -1,6 +1,7 @@
 A120590 ternatree q=3
 N = 30
 X*P check: PASS
+exact certificate identity: PASS
 exact recurrence divisions: PASS
 cubic series check: PASS
 ODE series check: PASS
@@ -9,6 +10,9 @@ Factored recurrence coefficients:
 P0(n) = -3*(3*n - 1)*(3*n + 1)
 P1(n) = -81*(n + 1)*(2*n + 1)
 P2(n) = 13*(n + 1)*(n + 2)
+
+Certificate:
+R(n,u) = (9*n*u**4 + 36*n*u**3 - 6*n*u**2 - 84*n*u + 13*n + 3*u**4 + 12*u**3 + 6*u**2 - 3*u)/(u*(u**2 + 3*u - 1))
 
 Expanded recurrence coefficients:
 P0(n) = 3 - 27*n**2

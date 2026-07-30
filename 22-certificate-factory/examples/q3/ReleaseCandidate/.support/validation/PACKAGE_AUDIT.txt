@@ -1,11 +1,12 @@
 A120590 TERNATREE PACKET AUDIT
-root /mnt/data/v13_work
-root_python_sha256 a7625f43de88961c1f63d752d3e0d5add0acd7b6d7452ddd0000468ac677dc41
-checks 31/31 PASS
+root /mnt/data/q3_work/q3/ReleaseCandidate
+root_python_sha256 773c4dd6311b1ff0959692f3e62067560b0f4a8413d8fe3f311c44136e5b47fd
+checks 47/47 PASS
 
 PASS  root executable returns a(0)..a(30)
 PASS  root terms agree with frozen factory terms through n=24
 PASS  root recurrence equals frozen factory recurrence
+PASS  root certificate equals frozen factory certificate
 PASS  frozen factory validation is 65/65 PASS
 PASS  root ODE has the stated normalized coefficients
 PASS  U.tsv equals executable U
@@ -22,21 +23,36 @@ PASS  comparison graphics are shallow three-level trees
 PASS  all mystery vertices have source-backed resolutions
 PASS  all publication and generation sources are present
 PASS  nested factory checksum manifest is portable
-PASS  human-facing PDF has 13 portrait pages
+PASS  human-facing PDF has 16 portrait pages
 PASS  paper includes a direct integral-to-ODE derivation
 PASS  paper source has no numbered equations or equation cross-references
 PASS  human paper consistently uses integral-form notation
-PASS  mathematical sections occur in geometric, shift, direct, comparison order
+PASS  paper sections occur in the intended geometric-to-computational order
 PASS  paper explicitly compares G and G_x
 PASS  paper gives an integral definition of A(x)
-PASS  algebraic equation is derived from the generating-function integral
+PASS  bibliography orders complex calculus before combinatorics and symbolic reduction
+PASS  algebraic equation is verified by the ODE ansatz and uniqueness
+PASS  paper, pseudocode, and executable include the exact certificate
 PASS  Appendix A attributes the merged one-shot implementations
 PASS  title page carries the comma-separated author and company attribution
-PASS  Section 2 occupies its own page
-PASS  Section 3 opens with the fixed G matrix
+PASS  shift-reduction section begins on page 4
+PASS  derivative-reduction section begins on page 6
+PASS  relations section begins on page 8
+PASS  reference pseudocode is embedded on page 9
+PASS  comparison figure is embedded on page 10
+PASS  method-ordered bibliography begins on page 11
+PASS  machine-readable payload has the declared schema
+PASS  payload embeds the exact root pseudocode
+PASS  payload terms agree with the executable through n=30
+PASS  payload matrix G is exact
+PASS  payload matrix U is exact
+PASS  payload matrix V is exact
+PASS  payload matrix J is exact
+PASS  payload exposes semantic PASS records for the principal checks
+PASS  payload references put calculus and inversion first
 
 SCOPE
-The packet is self-contained for the human PDF, graph regeneration,
+The packet is self-contained for the human PDF, compact JSON reading payload,
 sequence generation, recurrence, ODE, and cross-checks against the frozen
 q=3 factory case. The general multi-q RELAY factory generator is not copied
 into this sequence-specific publication packet; its frozen q=3 outputs and
