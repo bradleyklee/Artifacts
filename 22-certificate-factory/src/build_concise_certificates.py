@@ -13,6 +13,7 @@ import shutil
 import subprocess
 from collections import Counter
 from pathlib import Path
+from polynomial_normalization import divide_common_polynomial_factor
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -212,6 +213,7 @@ def recurrence(case: Path):
     else:
         vals = obj["p"]
         valid = 0 if "n=0 checked" in obj.get("validity", "") else 1
+    vals, _ = divide_common_polynomial_factor(vals, "n")
     return vals, valid, source
 
 
@@ -414,13 +416,16 @@ def build_tex(case: Path, payload: Path):
         rec_display = r"\(\sum_{r=0}^{" + str(rec_order) + r"}P_r(n)a(n+r)=0\), \(n\ge " + str(valid) + r"\), with \[\begin{aligned}" + r"\\".join(rec_rows) + r"\end{aligned}\]"
     else:
         rec_display = rf"\(\sum_{{r=0}}^{{{rec_order}}}P_r(n)a(n+r)=0\) for \(n\ge {valid}\). The exact degree-{polynomial_degree(vals)} coefficient polynomials are embedded in \texttt{{certificate\_payload.json}} (source: \texttt{{{tex_escape(recsrc)}}})."
-    coeffs = ordinary["coefficients"]
+    normalized_ode, _ = divide_common_polynomial_factor(
+        list(ordinary["coefficients"]) + [od.get("boundary_polynomial", "0")], "x"
+    )
+    coeffs, normalized_boundary = normalized_ode[:-1], normalized_ode[-1]
     if ode_order <= 4 and max(map(len, coeffs)) < 60 and sum(map(len, coeffs)) < 125:
         ode_terms = []
         for j, c in enumerate(coeffs):
-            derivative = "A(x)" if j == 0 else ("A'(x)" if j == 1 else rf"A^{{({j})}}(x)")
+            derivative = "A(x)" if j == 0 else ("A'(x)" if j == 1 else ("A''(x)" if ode_order == 2 else rf"A^{{({j})}}(x)"))
             ode_terms.append(rf"\left({math_expr(c)}\right){derivative}")
-        rhs = math_expr(od.get("boundary_polynomial", "0"))
+        rhs = math_expr(normalized_boundary)
         if sum(map(len, coeffs)) > 85 and len(ode_terms) > 2:
             chunks = ["+".join(ode_terms[i:i + 2]) for i in range(0, len(ode_terms), 2)]
             ode_display = r"\[\begin{aligned}&" + r"\\[-1pt]&+".join(chunks) + "=" + rhs + r".\end{aligned}\]"

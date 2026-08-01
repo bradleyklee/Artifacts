@@ -9,6 +9,7 @@ import math
 import itertools
 from collections import Counter
 from pathlib import Path
+from polynomial_normalization import divide_common_polynomial_factor
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -63,6 +64,7 @@ def recurrence(case: Path):
         valid = "n>=0" if "n=0 checked" in obj.get("validity", "") else "n>=1"
     else:
         raise ValueError((case.name, obj))
+    coeffs, _ = divide_common_polynomial_factor(coeffs, "n")
     pieces = []
     for r, coefficient in enumerate(coeffs):
         if re.fullmatch(r"\(?0\)?", str(coefficient).strip()):
@@ -75,14 +77,16 @@ def recurrence(case: Path):
 def ode(case: Path):
     obj = resolve(case, "data/ode.json")
     ordinary = obj["ordinary_derivative_form"]
-    coeffs = ordinary["coefficients"]
+    raw_coeffs = list(ordinary["coefficients"])
+    raw_rhs = obj.get("boundary_polynomial", "0")
+    normalized, _ = divide_common_polynomial_factor(raw_coeffs + [raw_rhs], "x")
+    coeffs, rhs = normalized[:-1], oeis(normalized[-1])
     terms = []
     for j, coefficient in enumerate(coeffs):
         if re.fullmatch(r"\(?0\)?", str(coefficient).strip()):
             continue
-        derivative = "A(x)" if j == 0 else ("A'(x)" if j == 1 else f"A^({j})(x)")
+        derivative = "A(x)" if j == 0 else ("A'(x)" if j == 1 else ("A''(x)" if ordinary["order"] == 2 else f"A^({j})(x)"))
         terms.append(f"({oeis(coefficient)})*{derivative}")
-    rhs = oeis(obj.get("boundary_polynomial", "0"))
     return f"Let A(x)=Sum_{{n>=0}} a(n)*x^n. Then " + " + ".join(terms) + f" = {rhs}."
 
 
@@ -139,8 +143,9 @@ def matrix_comment(case: Path):
         obj = obj.get("matrices", obj)
         gobj = obj.get("G", obj.get("Gx", {}))
         xobj = obj.get("X", {})
-        g = gobj.get("shape")
-        x = xobj.get("shape")
+        shape = lambda value: value.get("shape") if isinstance(value, dict) else [len(value), len(value[0]) if value else 0]
+        g = shape(gobj)
+        x = shape(xobj)
         rank = x[0] if x else None
         nullity = 1
     return (
