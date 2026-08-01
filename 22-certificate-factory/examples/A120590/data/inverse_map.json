@@ -1,0 +1,10 @@
+{
+  "D_coefficients_by_power": {
+    "0": "1",
+    "1": "-(3)",
+    "2": "-(1)"
+  },
+  "equation": "T=x/D(T)",
+  "shift": "A(x)=1+d*T(x)",
+  "status": "verified"
+}

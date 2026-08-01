@@ -1,0 +1,57 @@
+{
+  "sequence": "A244856",
+  "source_url": "https://oeis.org/A244856",
+  "checked_date": "2026-07-30",
+  "definitions": {
+    "Q": "1 - 6*t - 4*t^2 - t^3",
+    "Phi": "(1+t)/Q",
+    "R": "(1+t)/(t*Q)",
+    "F_n": "R^n/n",
+    "contour": "a(n)=Res_{t=0} F_n(t), n>=1; a(0)=1"
+  },
+  "recurrence": {
+    "orientation": "sum_{j=0}^4 p_j(n)*a(n+j)=0",
+    "validity": "creative-telescoping proof for n>=1; n=0 checked directly",
+    "minimal_order_claim": false,
+    "p": [
+      "3*(n+1)*(3*n-1)*(3*n+7)",
+      "-15*(2*n+3)*(18*n^2+54*n+29)",
+      "75*(n+2)*(54*n^2+216*n+209)",
+      "-6750*(n+2)*(n+3)*(2*n+5)",
+      "491*(n+2)*(n+3)*(n+4)"
+    ]
+  },
+  "certificate": {
+    "C": "(1+t)*P/(n*(n+1)*t^3*Q^3)",
+    "identity_reduced": "sum_j p_j(n)*R^j/(n+j) = dC/dt + n*(R'/R)*C",
+    "P_coefficients_by_t_power": [
+      "-491*n*(n+1)*(n+2)",
+      "4*n*(n+1)*(1411*n+2791)",
+      "n*(11394*n^2+34382*n+23093)",
+      "15004*n^3+47764*n^2+31584*n-21",
+      "16447*n^3+56569*n^2+42180*n+378",
+      "6*(2644*n^3+9656*n^2+7971*n-336)",
+      "7*(1812*n^3+6940*n^2+6463*n+225)",
+      "4*(2094*n^3+8438*n^2+9116*n+1827)",
+      "4611*n^3+19393*n^2+23539*n+7812",
+      "15*(132*n^3+568*n^2+730*n+287)",
+      "198*(n+1)^2*(3*n+7)",
+      "36*(n+1)^2*(3*n+7)",
+      "3*(n+1)^2*(3*n+7)"
+    ]
+  },
+  "grammar": {
+    "alphabet": [
+      "{",
+      "}",
+      ",",
+      "0",
+      "1"
+    ],
+    "empty": "0 has cost 0",
+    "terminal": "1 has cost 1",
+    "unary": "{W}, W!=0, has cost 1+cost(W)",
+    "four_slot": "{W1,W2,W3,W4} has cost sum(cost(Wi)) and at least two Wi are nonzero",
+    "warning": "one-active-slot four-tuples are forbidden and are not aliases for unary growth"
+  }
+}

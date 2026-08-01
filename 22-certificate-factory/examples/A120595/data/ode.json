@@ -1,0 +1,24 @@
+{
+  "canonical_source": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
+  "statistics": {
+    "G_nonzero": 32,
+    "G_shape": [
+      8,
+      8
+    ],
+    "X_rank": 3,
+    "X_shape": [
+      3,
+      4
+    ],
+    "certificate_degree_n": 2,
+    "certificate_degree_u": 9,
+    "checks_passed": 7,
+    "checks_total": 7,
+    "denominator_degree": 4,
+    "nullity": 1,
+    "recurrence_degree": 3,
+    "recurrence_order": 3
+  },
+  "status": "verified"
+}

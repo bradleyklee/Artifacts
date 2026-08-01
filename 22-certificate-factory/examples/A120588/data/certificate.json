@@ -1,0 +1,7 @@
+{
+  "denominator_base": "-u**2 + u",
+  "denominator_power": 0,
+  "formula": "R(n,u)=N(n,u)/rho(u)^(q-2)",
+  "numerator_N": "2*u - 1",
+  "status": "verified"
+}

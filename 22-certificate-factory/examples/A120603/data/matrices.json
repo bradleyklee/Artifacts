@@ -1,0 +1,24 @@
+{
+  "canonical_source": "release/certificate_payload.json.gz#/objects/matrices",
+  "statistics": {
+    "G_nonzero": 98,
+    "G_shape": [
+      14,
+      14
+    ],
+    "X_rank": 6,
+    "X_shape": [
+      6,
+      7
+    ],
+    "certificate_degree_n": 5,
+    "certificate_degree_u": 36,
+    "checks_passed": 7,
+    "checks_total": 7,
+    "denominator_degree": 7,
+    "nullity": 1,
+    "recurrence_degree": 6,
+    "recurrence_order": 6
+  },
+  "status": "verified"
+}

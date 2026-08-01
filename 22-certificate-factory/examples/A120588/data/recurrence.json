@@ -1,0 +1,16 @@
+{
+  "legacy_top_level": [
+    "-4*n + 2",
+    "n + 1"
+  ],
+  "recurrence": {
+    "coefficients": [
+      "-4*n + 2",
+      "n + 1"
+    ],
+    "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+    "order": 1,
+    "valid_from_n": 1
+  },
+  "status": "verified"
+}

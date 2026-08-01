@@ -1,0 +1,444 @@
+{
+  "case_count": 23,
+  "cases": [
+    {
+      "case_id": "A120588",
+      "certificate_pdf": "examples/A120588/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "667678fc05a6979c9b0d9620ac97b8d6319d00cf66d5811fcb6d91d519ad9521",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          4,
+          4
+        ],
+        "X_shape": [
+          1,
+          2
+        ],
+        "nullity": 1,
+        "rank": 1
+      },
+      "payload": "examples/A120588/release/certificate_payload.json",
+      "payload_sha256": "5c530aeab94fb27a4f2ce736fba8618016ac9139c8c811bca9f4f1fb94ebb692"
+    },
+    {
+      "case_id": "A120589",
+      "certificate_pdf": "examples/A120589/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "d43d1ad04959521c7899f861e4622289b056d39cbfa7a12ce34ca848a472933d",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          4,
+          4
+        ],
+        "X_shape": [
+          2,
+          3
+        ],
+        "nullity": 1,
+        "rank": 2
+      },
+      "payload": "examples/A120589/release/certificate_payload.json",
+      "payload_sha256": "1541aa60f64375cea2899cd57584ec655a5c6a8f6131e7ea98e1cab9fcd8635e"
+    },
+    {
+      "case_id": "A120590",
+      "certificate_pdf": "examples/A120590/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "3c2ad00b95ba1db4ec755de771124fd12da577fdde4a3bbbc5d50441ffd3c739",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          6,
+          6
+        ],
+        "X_shape": [
+          2,
+          3
+        ],
+        "nullity": 1,
+        "rank": 2
+      },
+      "payload": "examples/A120590/release/certificate_payload.json",
+      "payload_sha256": "08e872ba041b3fd86dd749a9cd2d5830a5bc595d0e3b8e010dc5c2e8bbe0b8c2"
+    },
+    {
+      "case_id": "A120591",
+      "certificate_pdf": "examples/A120591/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "7d7e1d93839ac2450aa4a293eeffa323f8214876121ca6d1fa71000f816f6dd1",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          6,
+          6
+        ],
+        "X_shape": [
+          3,
+          4
+        ],
+        "nullity": 1,
+        "rank": 3
+      },
+      "payload": "examples/A120591/release/certificate_payload.json",
+      "payload_sha256": "26feab8cc9b4cebec1f3cde40bf2d98e3142d8411a797539e77c818f24ea1100"
+    },
+    {
+      "case_id": "A120592",
+      "certificate_pdf": "examples/A120592/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "9ce54eb9147ecfdd3beeec349eea3579d619d7f447f8122a3c1818aac7469fe6",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          6,
+          6
+        ],
+        "X_shape": [
+          2,
+          3
+        ],
+        "nullity": 1,
+        "rank": 2
+      },
+      "payload": "examples/A120592/release/certificate_payload.json",
+      "payload_sha256": "eb12a22d196eb6d83906c2485e35db9b53560a02fb5554989006e2d71fb40d61"
+    },
+    {
+      "case_id": "A120593",
+      "certificate_pdf": "examples/A120593/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "f68611e97674b3d74e91f4a941bcc91e3bfe559a75727e0fa73814e2cb521c06",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          8,
+          8
+        ],
+        "X_shape": [
+          3,
+          4
+        ],
+        "nullity": 1,
+        "rank": 3
+      },
+      "payload": "examples/A120593/release/certificate_payload.json",
+      "payload_sha256": "b894c65ddca7807adaa76adae1f81d0f77f598ab36a44a28f0f88602a5f975d0"
+    },
+    {
+      "case_id": "A120594",
+      "certificate_pdf": "examples/A120594/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "9bb2adb59817e164827772561ab7f1c33dce9cf20a8229f793c9a548aaa9075d",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          8,
+          8
+        ],
+        "X_shape": [
+          3,
+          4
+        ],
+        "nullity": 1,
+        "rank": 3
+      },
+      "payload": "examples/A120594/release/certificate_payload.json",
+      "payload_sha256": "56a26be37198d043c87cc58b14972e79c4646abc67e8b2355d305e8bff94ffea"
+    },
+    {
+      "case_id": "A120595",
+      "certificate_pdf": "examples/A120595/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "6474674495219559f26321352f0d4621767d91f86f2250bdf539141aa442da7d",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          8,
+          8
+        ],
+        "X_shape": [
+          3,
+          4
+        ],
+        "nullity": 1,
+        "rank": 3
+      },
+      "payload": "examples/A120595/release/certificate_payload.json",
+      "payload_sha256": "cbb2264ad727afb2ebc8bb5a1575b07ea8bbdf67119266bf15d3fe01ce5de2b2"
+    },
+    {
+      "case_id": "A120596",
+      "certificate_pdf": "examples/A120596/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "c1600de83c6730953f8d3fc849f4c9179725a1681d7fde9ba57910d52433708d",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          10,
+          10
+        ],
+        "X_shape": [
+          4,
+          5
+        ],
+        "nullity": 1,
+        "rank": 4
+      },
+      "payload": "examples/A120596/release/certificate_payload.json",
+      "payload_sha256": "b549e391566440a4bd8922b1cb79f112a554d68a4db4e9213cc31032fd99409f"
+    },
+    {
+      "case_id": "A120597",
+      "certificate_pdf": "examples/A120597/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "002bd448c3e89d4ff2a4242b3b255f7f62f20a9f3ed0231b0c3701a2d016618f",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          10,
+          10
+        ],
+        "X_shape": [
+          4,
+          5
+        ],
+        "nullity": 1,
+        "rank": 4
+      },
+      "payload": "examples/A120597/release/certificate_payload.json",
+      "payload_sha256": "4789319a27782c329db39db5b26028f9d92646c8ce4d2af806c51182c8190fd1"
+    },
+    {
+      "case_id": "A120598",
+      "certificate_pdf": "examples/A120598/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "87acfad311bbfcd0b8049827bf63c828d35d2517d4b2fc3fa7d6eabc95dc0c42",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          10,
+          10
+        ],
+        "X_shape": [
+          4,
+          5
+        ],
+        "nullity": 1,
+        "rank": 4
+      },
+      "payload": "examples/A120598/release/certificate_payload.json",
+      "payload_sha256": "4c323abac77ce875a728275646c3283c3c85eaaa25f3ece6c10fb8cc75d75f56"
+    },
+    {
+      "case_id": "A120599",
+      "certificate_pdf": "examples/A120599/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "83651187c6dcc6f00365a8d1f2d501db7191c8ba1afb8dfcafd6e76dcbea4c55",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          10,
+          10
+        ],
+        "X_shape": [
+          4,
+          5
+        ],
+        "nullity": 1,
+        "rank": 4
+      },
+      "payload": "examples/A120599/release/certificate_payload.json",
+      "payload_sha256": "1d93537f463df109209b1a5aba2572c8eeb2ea336a11b817f3e437f74ff2f9ba"
+    },
+    {
+      "case_id": "A120600",
+      "certificate_pdf": "examples/A120600/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "7cf0636b4eb85a8c3a929de3b46e66fbdc753507b98130050b1153f45566b664",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          12,
+          12
+        ],
+        "X_shape": [
+          5,
+          6
+        ],
+        "nullity": 1,
+        "rank": 5
+      },
+      "payload": "examples/A120600/release/certificate_payload.json",
+      "payload_sha256": "e99858215997d19480faf445959af3b749687726d16381adc44df8bf2e502228"
+    },
+    {
+      "case_id": "A120601",
+      "certificate_pdf": "examples/A120601/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "944319de7693fb23a4565215605682e64bd44b71ce8bdd6c115b0bd825253852",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          12,
+          12
+        ],
+        "X_shape": [
+          5,
+          6
+        ],
+        "nullity": 1,
+        "rank": 5
+      },
+      "payload": "examples/A120601/release/certificate_payload.json",
+      "payload_sha256": "aca6cad8b559438a0da046b2e4954e51cf85a9ec2d37e094c91c5b4b0e77ac26"
+    },
+    {
+      "case_id": "A120602",
+      "certificate_pdf": "examples/A120602/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "382b7e8c1fad6fcc392cdd1721754fe0f0cf030a3ea07b70cfe6c4c8b793a8c0",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          12,
+          12
+        ],
+        "X_shape": [
+          5,
+          6
+        ],
+        "nullity": 1,
+        "rank": 5
+      },
+      "payload": "examples/A120602/release/certificate_payload.json",
+      "payload_sha256": "18282c963c0d24dc7a8d640bc284c9a136cf8b1983a55d44bb03bdd7caf79b5c"
+    },
+    {
+      "case_id": "A120603",
+      "certificate_pdf": "examples/A120603/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "9b24942ee782f176962f7340028b648e646851215cd9be3fb932a032450bab7c",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          14,
+          14
+        ],
+        "X_shape": [
+          6,
+          7
+        ],
+        "nullity": 1,
+        "rank": 6
+      },
+      "payload": "examples/A120603/release/certificate_payload.json",
+      "payload_sha256": "2ef7e20c9e4fb945b3519d58a39ea4ffa6ec1e838de9b3288a0b917a5503d79a"
+    },
+    {
+      "case_id": "A120604",
+      "certificate_pdf": "examples/A120604/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "f07ba93bc73c7a9bbeaec1b7451edddbb5919948df8cc63caec02ea0b739ddb2",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          16,
+          16
+        ],
+        "X_shape": [
+          7,
+          8
+        ],
+        "nullity": 1,
+        "rank": 7
+      },
+      "payload": "examples/A120604/release/certificate_payload.json",
+      "payload_sha256": "607bd71eacf6098d0d09828893519f7c17209f10ca899ba7543f676b50434ee1"
+    },
+    {
+      "case_id": "A120605",
+      "certificate_pdf": "examples/A120605/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "ef78413400121883516a24b0f4819a819b176968b9be49225b801d3c791ff52e",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          18,
+          18
+        ],
+        "X_shape": [
+          8,
+          9
+        ],
+        "nullity": 1,
+        "rank": 8
+      },
+      "payload": "examples/A120605/release/certificate_payload.json",
+      "payload_sha256": "19d0d590707b34dd011e8eae5466e30d1cba8d548afc0915a06a4c4006ffb8fa"
+    },
+    {
+      "case_id": "A120606",
+      "certificate_pdf": "examples/A120606/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "c171db18b67ab041bf96b5b0cf3e4a4e9abf71f38fd5a7619ff695f5280923a2",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          18,
+          18
+        ],
+        "X_shape": [
+          8,
+          9
+        ],
+        "nullity": 1,
+        "rank": 8
+      },
+      "payload": "examples/A120606/release/certificate_payload.json",
+      "payload_sha256": "b3885be1a68b971494e0c0861874db7e4bf2de07816ab1b948e9049a49e61d3c"
+    },
+    {
+      "case_id": "A120607",
+      "certificate_pdf": "examples/A120607/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "cb1102c4ffed9adf6ab08c02c3635bf6624eceb4dff3e70ebcce77c648faf746",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          20,
+          20
+        ],
+        "X_shape": [
+          9,
+          10
+        ],
+        "nullity": 1,
+        "rank": 9
+      },
+      "payload": "examples/A120607/release/certificate_payload.json",
+      "payload_sha256": "41abfbe9f5ecad3b37beb0fff4c49c22809fa644ec2aa3dceb5807bba18f16c3"
+    },
+    {
+      "case_id": "A244594",
+      "certificate_pdf": "examples/A244594/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "ad2289c85776d758f68f8838a7431b5eea3301524de61a6eda993224e61438ca",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          6,
+          6
+        ],
+        "X_shape": [
+          2,
+          3
+        ],
+        "nullity": 1,
+        "rank": 2
+      },
+      "payload": "examples/A244594/release/certificate_payload.json",
+      "payload_sha256": "cc47bfb5438fd1a15e7ebf81456a2ed4a23a792e1246f3aea6cc602c5a09eecb"
+    },
+    {
+      "case_id": "A244627",
+      "certificate_pdf": "examples/A244627/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "b1bdba748cbdbadf6774424697ed3848f08b17c00211395a06b5a60ceadc0130",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          6,
+          6
+        ],
+        "X_shape": [
+          2,
+          3
+        ],
+        "nullity": 1,
+        "rank": 2
+      },
+      "payload": "examples/A244627/release/certificate_payload.json",
+      "payload_sha256": "6ec9887dca4548327b09f2d1dfed2fe44d0729dfda637a1a8d63e6a92995a9c7"
+    },
+    {
+      "case_id": "A244856",
+      "certificate_pdf": "examples/A244856/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
+      "certificate_pdf_sha256": "ca96b0e84c5acd01ad1ec1f6b2c53139ee013316fc9b138096238d7eaf9c52c5",
+      "matrix_summary": {
+        "G_or_Gx_shape": [
+          8,
+          8
+        ],
+        "X_shape": [
+          3,
+          4
+        ],
+        "nullity": 1,
+        "rank": 3
+      },
+      "payload": "examples/A244856/release/certificate_payload.json",
+      "payload_sha256": "8506e851019ae0af0c031888766c4f19a3571b29eae708d0b534d8137a80c41a"
+    }
+  ],
+  "date": "2026-07-31",
+  "schema_version": "1.0"
+}

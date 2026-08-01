@@ -1,0 +1,18 @@
+{
+  "G": {
+    "invertibility_witness": "resultant(rho,rho')=13",
+    "shape": [
+      6,
+      6
+    ]
+  },
+  "expected_shift_count_for_first_nullvector": 3,
+  "integrand": "(3)*(u**2 + 2*u + 1)/(n*(-u**3 - 3*u**2 + u)^n)",
+  "kernel_class": "polynomial_power_with_fixed_seed",
+  "q3_algorithm_relation": "identical G/U/V and pole lowering; initialize shift 0 with the coefficient vector of the fixed seed instead of e_0",
+  "remainder_dimension": 2,
+  "required_change": "accept a fixed numerator seed vector and propagate it through every shifted column",
+  "seed_degree": 2,
+  "status": "verified",
+  "term_shift_ratio": "n/((n+s)*(-u**3 - 3*u**2 + u)^s)"
+}

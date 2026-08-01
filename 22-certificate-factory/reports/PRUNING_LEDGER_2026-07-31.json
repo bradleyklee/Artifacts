@@ -1,0 +1,650 @@
+{
+  "bytes_pruned": 22396465,
+  "date": "2026-07-31",
+  "entries": [
+    {
+      "bytes": 162,
+      "path": "examples/A120588/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11717,
+      "path": "examples/A120588/release/certificate.build.log",
+      "sha256_or_tree_sha256": "5c9ee140715bd46a02174fc04947c1537e948b51f2342236dc5cd7cfa2564bf8"
+    },
+    {
+      "bytes": 31658,
+      "path": "examples/A120588/release/certificate.log",
+      "sha256_or_tree_sha256": "bc04cefcd0347ec34efd6491f3d209be044fdd13687d359c3ce48a75989b781d"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120588/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120589/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11643,
+      "path": "examples/A120589/release/certificate.build.log",
+      "sha256_or_tree_sha256": "2eaaeb530f18fa96bcf93b06dbfe7934aea71cfd45248be2ee432a1681645889"
+    },
+    {
+      "bytes": 31584,
+      "path": "examples/A120589/release/certificate.log",
+      "sha256_or_tree_sha256": "93ffa273a5a4d96212eacbad2a657438bfa76e747198d5c42bc164da8b3d8106"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120589/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 16428,
+      "path": "examples/A120590/FromClaude",
+      "sha256_or_tree_sha256": "58e1b05fef12bc2fb4ccd9a69407595d775a42653df771dc6aa7ee928d584a3f"
+    },
+    {
+      "bytes": 13742,
+      "path": "examples/A120590/FromKimi",
+      "sha256_or_tree_sha256": "f3912193f82c8cdcbe9b3331b85d2978010913af0e87b22f08ddc42111052c24"
+    },
+    {
+      "bytes": 1186737,
+      "path": "examples/A120590/ReleaseCandidate",
+      "sha256_or_tree_sha256": "ec239cc9d2c5fb69cd621b2e5a1b97d0c16e3a4e957b52757d06a4ec076a0d42"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120590/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11717,
+      "path": "examples/A120590/release/certificate.build.log",
+      "sha256_or_tree_sha256": "41dc511917c27d5c90d18a7e8aaef3976aceba1bace6d84fa861d957e5b7b422"
+    },
+    {
+      "bytes": 31657,
+      "path": "examples/A120590/release/certificate.log",
+      "sha256_or_tree_sha256": "9ca78c63de4b6e25febbed24d8a80371665fd484fa1e58cd79fb1240b475ecc2"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120590/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120591/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11643,
+      "path": "examples/A120591/release/certificate.build.log",
+      "sha256_or_tree_sha256": "c4cd88094996e7b779315946297a83862e4784c7202a675efc213359760ef4ad"
+    },
+    {
+      "bytes": 31584,
+      "path": "examples/A120591/release/certificate.log",
+      "sha256_or_tree_sha256": "25cd1ea9ef8c0537e4fadf4f215468048ddf89ba580d6032d3904cb5eaeee716"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120591/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120592/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11717,
+      "path": "examples/A120592/release/certificate.build.log",
+      "sha256_or_tree_sha256": "9db59beb8fbc8e89757c1dcac3299f220e93f45610efd9cbf8058a66fd7736e8"
+    },
+    {
+      "bytes": 31658,
+      "path": "examples/A120592/release/certificate.log",
+      "sha256_or_tree_sha256": "92c5b53c7af07e47aefb24e6b6ea61d245480960b6e0b17009cb5fcaf836a7ed"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120592/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120593/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11717,
+      "path": "examples/A120593/release/certificate.build.log",
+      "sha256_or_tree_sha256": "5ce841ca3b608a570a59083ccdb91c542bc30cd030acd5f0ae4018bf2d2f9c92"
+    },
+    {
+      "bytes": 31657,
+      "path": "examples/A120593/release/certificate.log",
+      "sha256_or_tree_sha256": "f16e58ca366031e34a3105cb0f4aebc16ea6d1be45ca29edca043f264f16a7ec"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120593/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120594/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11717,
+      "path": "examples/A120594/release/certificate.build.log",
+      "sha256_or_tree_sha256": "835626daca346345236fb349abac818c1482c1528782f7e5f274bf5ff4065cae"
+    },
+    {
+      "bytes": 31658,
+      "path": "examples/A120594/release/certificate.log",
+      "sha256_or_tree_sha256": "4b3f0015623ba2627741ac8285025b8a0076f2a1990cc05134a4504dc7e29d5f"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120594/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120595/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11717,
+      "path": "examples/A120595/release/certificate.build.log",
+      "sha256_or_tree_sha256": "7c7a4151aacf936c24b0163ebb77c390e8cc20b48a2404a35890c5ab817b5562"
+    },
+    {
+      "bytes": 31658,
+      "path": "examples/A120595/release/certificate.log",
+      "sha256_or_tree_sha256": "698977c348a9b785fb9d06a5e1b7728af68df6ac632e4227c3669c560f342ba2"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120595/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120596/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120596/release/certificate.build.log",
+      "sha256_or_tree_sha256": "a354606f502a4bb3f8ec4a218280dc8b455272cbcc6d4c2b2399f815cab61f9a"
+    },
+    {
+      "bytes": 31584,
+      "path": "examples/A120596/release/certificate.log",
+      "sha256_or_tree_sha256": "f02741fb63f9708281165a9e8356eddfd8109e59691ad86e4378b78f907efcb0"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120596/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120597/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120597/release/certificate.build.log",
+      "sha256_or_tree_sha256": "558e2923480c9032ff4a31d89bfc1d2524cee95fe1dba35101efd4222fa5cb68"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120597/release/certificate.log",
+      "sha256_or_tree_sha256": "4dde87546e962da0f3fac763ed24f217e3e5d474ebaeee26923838b91d2cf6d4"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120597/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120598/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120598/release/certificate.build.log",
+      "sha256_or_tree_sha256": "e7ec8154ee4958c5b3b38e2d7d57ccdbc2b53974daa69046f63aa2adefa29098"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120598/release/certificate.log",
+      "sha256_or_tree_sha256": "67713d8810a0abec731da559d2825dae2bbf2ec1eadfa3cf1f334aa39ca7a91c"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120598/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120599/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120599/release/certificate.build.log",
+      "sha256_or_tree_sha256": "ad793caa6269b1f8d507aa99ad82a3cdf026f6843f5a288569557103e12daa8a"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120599/release/certificate.log",
+      "sha256_or_tree_sha256": "68abe1b60d466d2fedf269a7ef9b136903026659a0e1cca37bf041c902fe3aa1"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120599/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120600/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120600/release/certificate.build.log",
+      "sha256_or_tree_sha256": "842e2d5d685e88e6e05897cae547d6672953ee2180d09da589153c91b1d296dc"
+    },
+    {
+      "bytes": 31584,
+      "path": "examples/A120600/release/certificate.log",
+      "sha256_or_tree_sha256": "e76130e4dd865a3bb933944167ed12e73f304bcd6aab59e9fbed64af670f2a31"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120600/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120601/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120601/release/certificate.build.log",
+      "sha256_or_tree_sha256": "8f3d577d03d96dfa3e79886ea2e3d0d71b74f9c1916ac65b4f329e57d2cb0ced"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120601/release/certificate.log",
+      "sha256_or_tree_sha256": "2daffae7e7ebd7a6a5b2d393b332bf5a384d8640a9124e1425581f2616ac4f88"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120601/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120602/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120602/release/certificate.build.log",
+      "sha256_or_tree_sha256": "2ee87cfe6dcd51973d71a4aea16c5caec1497004c973e6f75fc3a454988ed58e"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120602/release/certificate.log",
+      "sha256_or_tree_sha256": "55791e2f989a983c435389ec2bd7215b3a8c3551d1d6b153056dfa67b6c22416"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120602/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120603/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120603/release/certificate.build.log",
+      "sha256_or_tree_sha256": "a0d279f0ec78a65b348ecdaea1a66d5ba4feeabcba6b0a060f52a4e3d28c795b"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120603/release/certificate.log",
+      "sha256_or_tree_sha256": "21f42b76d70a3ca7cc8a7c10a50f289bdac8b575220ca99e91e23f938c464d05"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120603/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120604/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120604/release/certificate.build.log",
+      "sha256_or_tree_sha256": "dfa332674dcada3ac780f76a7a60422a2b3d76d6c8a857f60a10b18aa6b9ac77"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120604/release/certificate.log",
+      "sha256_or_tree_sha256": "6695b75e99fdad4c293abf5ea897c24e34abeee13014d28527f988ada1f92cc9"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120604/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120605/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120605/release/certificate.build.log",
+      "sha256_or_tree_sha256": "0d76b55bd6b26f6a04c33376806bb85c966ee046111f8c955764c8a6239fccb0"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120605/release/certificate.log",
+      "sha256_or_tree_sha256": "2c826e798af72b55e4eaf11eaa50286b8ec30e953eabf7341b34ac86d829af0a"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120605/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120606/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120606/release/certificate.build.log",
+      "sha256_or_tree_sha256": "6b2b16ae19575cea8ea8a26a03c79b0df8d1a94f601d41a11bba0d6199fd4028"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120606/release/certificate.log",
+      "sha256_or_tree_sha256": "2290c98c4b623ad5a956219b966a432c39288f735b220f7237701560604d2c69"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120606/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A120607/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A120607/release/certificate.build.log",
+      "sha256_or_tree_sha256": "0832da66cd3474d0bfb03a0637100abdd253f03441b5a06b5dcabacd1da8c220"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A120607/release/certificate.log",
+      "sha256_or_tree_sha256": "fcc5fd50620adfe5967272140892f9173a37d2c04ca907ca72d57f763f62404e"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A120607/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A244594/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11717,
+      "path": "examples/A244594/release/certificate.build.log",
+      "sha256_or_tree_sha256": "1c67156d6ad8fc7612758d9332d49ebe5622d450e283dc437faef7032848143e"
+    },
+    {
+      "bytes": 31658,
+      "path": "examples/A244594/release/certificate.log",
+      "sha256_or_tree_sha256": "296ece1f73d3fdad5f8fd1e656adb4f80a7761c0031607b6cdbeb65f45499ae6"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A244594/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A244627/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A244627/release/certificate.build.log",
+      "sha256_or_tree_sha256": "757286090801a1cd9563020e6723901b6c6ac425100f53feb92d628106bbe314"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A244627/release/certificate.log",
+      "sha256_or_tree_sha256": "637779837e3d79d0fa41adc0bad7687bd3be1e705c620f19e6ded0b6fae9d5ae"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A244627/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 162,
+      "path": "examples/A244856/release/certificate.aux",
+      "sha256_or_tree_sha256": "09272726b6bcd93175bf0c45298a936362d70ab34e0bd87798585dcd7b0363fe"
+    },
+    {
+      "bytes": 11644,
+      "path": "examples/A244856/release/certificate.build.log",
+      "sha256_or_tree_sha256": "788796ce10598978c7a09adb242500c10b04d38b122eb0d86bc236cabcc3e03c"
+    },
+    {
+      "bytes": 31585,
+      "path": "examples/A244856/release/certificate.log",
+      "sha256_or_tree_sha256": "c1909c2b22231fc1cc32388e45be5f033e57dbddb44cb42294fb425a0b4a2d0f"
+    },
+    {
+      "bytes": 0,
+      "path": "examples/A244856/release/certificate.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 33603,
+      "path": "examples/q2",
+      "sha256_or_tree_sha256": "28d298492ae69e773fd0fb41e60cd797a1365cde07c94df283fa634e7b40fe73"
+    },
+    {
+      "bytes": 16428,
+      "path": "examples/q3/FromClaude",
+      "sha256_or_tree_sha256": "58e1b05fef12bc2fb4ccd9a69407595d775a42653df771dc6aa7ee928d584a3f"
+    },
+    {
+      "bytes": 13742,
+      "path": "examples/q3/FromKimi",
+      "sha256_or_tree_sha256": "f3912193f82c8cdcbe9b3331b85d2978010913af0e87b22f08ddc42111052c24"
+    },
+    {
+      "bytes": 81,
+      "path": "examples/q3/G.tsv",
+      "sha256_or_tree_sha256": "df38bc21968391a8e60172009abdfaade75555b0dce0965a6d7254217e543d09"
+    },
+    {
+      "bytes": 18,
+      "path": "examples/q3/J.tsv",
+      "sha256_or_tree_sha256": "4f8b0036cb2809ffe1c3c94b2ccf116fcf7c8bb1e09eb87e21e298a7cce2eae4"
+    },
+    {
+      "bytes": 908,
+      "path": "examples/q3/SHA256SUMS.txt",
+      "sha256_or_tree_sha256": "65c24e79d3ddb81fb715f1d47bacf34ced2feced2d7567b883677bbc731d11f3"
+    },
+    {
+      "bytes": 40,
+      "path": "examples/q3/U.tsv",
+      "sha256_or_tree_sha256": "c85de562a11f8ba30d230dadd3fd43b11fd49fe01e3a4b5fa8a663d17ce9882a"
+    },
+    {
+      "bytes": 40,
+      "path": "examples/q3/V.tsv",
+      "sha256_or_tree_sha256": "ac5ef22613cd4e560de7d96860f4fe43fcc7aa12a13a6cf2370938d5f5a51d88"
+    },
+    {
+      "bytes": 323,
+      "path": "examples/q3/X_remainders_sparse.tsv",
+      "sha256_or_tree_sha256": "cc2ed3a49921dbe1eac9662aac83f9adf09d788eddd9d38fa54e6e32895d4857"
+    },
+    {
+      "bytes": 39486,
+      "path": "examples/q3/case.json",
+      "sha256_or_tree_sha256": "56da52d114ba3ec00611ca8432f8df6e6d425e1a112aec0bd6ecda11ef7063f5"
+    },
+    {
+      "bytes": 282,
+      "path": "examples/q3/partial_certificates.tsv",
+      "sha256_or_tree_sha256": "071ebed10a49f1f04dd24be86587174fa6675f55b76a9bc3ce5e659149725fce"
+    },
+    {
+      "bytes": 1098,
+      "path": "examples/q3/plaintext_n0_n3.txt",
+      "sha256_or_tree_sha256": "b59ce62602ae4420d89619d09a20ebbcfc5eb74652221abee93f7a9bfb7bff48"
+    },
+    {
+      "bytes": 487,
+      "path": "examples/q3/recurrence_and_certificate.txt",
+      "sha256_or_tree_sha256": "12d34ccd8621f1e8d797b50ac0f6e1c129f860cd414831c6864264c5f2da0529"
+    },
+    {
+      "bytes": 528,
+      "path": "examples/q3/terms_and_recurrence_checks.tsv",
+      "sha256_or_tree_sha256": "9b1607590f7a2b4f1a3f1fcda2976485ff0fe72a82ce7532988f8d168bc484c4"
+    },
+    {
+      "bytes": 5930,
+      "path": "examples/q3/validation.json",
+      "sha256_or_tree_sha256": "9a87f145fe02a9d3856b039b1467a7699d1cf30ddc0c34d013b2ecdd419cdfd3"
+    },
+    {
+      "bytes": 114556,
+      "path": "examples/q4",
+      "sha256_or_tree_sha256": "43feab02e39282ce8b3c5db8f9a564ac849d12cf25cac3d274ad9a1511bc6ff4"
+    },
+    {
+      "bytes": 449600,
+      "path": "examples/q5",
+      "sha256_or_tree_sha256": "44b5670312aafa456e5407c62a631fb189f9d699758179b9d9737303f0e5a59b"
+    },
+    {
+      "bytes": 163,
+      "path": "release/HANNA_23_CALCULUS_CERTIFICATES.aux",
+      "sha256_or_tree_sha256": "669085197ed9b377ee86ae5477b27aa0fe50e778fe29fa50497022129623a672"
+    },
+    {
+      "bytes": 7386,
+      "path": "release/HANNA_23_CALCULUS_CERTIFICATES.build.log",
+      "sha256_or_tree_sha256": "e25dc0b0a563bb930d750641c6a68cb2e798d885049cd2ec55520f3521453882"
+    },
+    {
+      "bytes": 70575,
+      "path": "release/HANNA_23_CALCULUS_CERTIFICATES.log",
+      "sha256_or_tree_sha256": "aba0c319d4063f5d0eeefb420b03f2f08a3c8b12e73dea2b09759364476c85ab"
+    },
+    {
+      "bytes": 0,
+      "path": "release/HANNA_23_CALCULUS_CERTIFICATES.out",
+      "sha256_or_tree_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 1536469,
+      "path": "runs.zip",
+      "sha256_or_tree_sha256": "5d6e5bbbc5e2c2d73fcb02d3fa7f636786aa53005e57192d341fb5e8be10db3e"
+    },
+    {
+      "bytes": 3265538,
+      "path": "runs/big.zip",
+      "sha256_or_tree_sha256": "e3b5efd7e55499fed0c9918896593b10c6c61e0bcc989231d1086ffbe2246881"
+    },
+    {
+      "bytes": 33609,
+      "path": "runs/q2",
+      "sha256_or_tree_sha256": "5d22b61320a344fbb42d9eb2a158f53c2dc0295bcfadcd9f1eeae0cd0c62c3ce"
+    },
+    {
+      "bytes": 49272,
+      "path": "runs/q3",
+      "sha256_or_tree_sha256": "977af4d4eb7ac13d8ab2137df01ce68f6fceaf7345c4ef4ac8e308b2bc9adc95"
+    },
+    {
+      "bytes": 114597,
+      "path": "runs/q4",
+      "sha256_or_tree_sha256": "df5af1dab300ef2591808a43226852ab76c32f7bc3366faba981900124de9600"
+    },
+    {
+      "bytes": 449599,
+      "path": "runs/q5",
+      "sha256_or_tree_sha256": "0ebb2e01af8879d4503d67c029cccfdf7d7c9a4ef7223525c06788aea28f68b6"
+    },
+    {
+      "bytes": 2000629,
+      "path": "runs/q6",
+      "sha256_or_tree_sha256": "aff9342e729a463f7a8c0d2f346bc2eaba6ae9043ab05e7b1c7cb8279eb1cd24"
+    },
+    {
+      "bytes": 609443,
+      "path": "runs/q7",
+      "sha256_or_tree_sha256": "6e72a8d9f54c101f99eee6b450938b81761aecfd28d6ba739b29676737fc191e"
+    },
+    {
+      "bytes": 1399129,
+      "path": "runs/q8",
+      "sha256_or_tree_sha256": "5ef3f3bce37fbfdc5800abc85ffc3ee0c7320ff80021b97cb104a1163aefe782"
+    },
+    {
+      "bytes": 3010422,
+      "path": "runs/q9",
+      "sha256_or_tree_sha256": "3e55ae787e6fa461b12e987c0054d22e3ce856a9f97244145ced124a35b52fcd"
+    },
+    {
+      "bytes": 337645,
+      "path": "src/__pycache__",
+      "sha256_or_tree_sha256": "cfeca45a109e8c635d4eaa91f22fd8eb51d0a9fce1d46f3cdf48dacae3b7abad"
+    },
+    {
+      "bytes": 6618925,
+      "path": "work/FULL_CALCULUS_EVIDENCE_23_CASES.md",
+      "sha256_or_tree_sha256": "048b903477a90c92e3f4de305cb5b1b21a3ba6cf2b0f0150f0fa655f86786ff6"
+    }
+  ],
+  "project_bytes_after": 13575428,
+  "project_bytes_before": 35971893,
+  "stage_path": "/tmp/hanna23_pruned_2026-07-31",
+  "status": "staged_recoverably"
+}

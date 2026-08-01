@@ -1,0 +1,282 @@
+{
+  "status": "pass",
+  "pages": 24,
+  "case_pages": [
+    {
+      "page": 2,
+      "case_id": "A120588",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 3,
+      "case_id": "A120589",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 4,
+      "case_id": "A120590",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 5,
+      "case_id": "A120591",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 6,
+      "case_id": "A120592",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 7,
+      "case_id": "A120593",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 8,
+      "case_id": "A120594",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 9,
+      "case_id": "A120595",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 10,
+      "case_id": "A120596",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 11,
+      "case_id": "A120597",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 12,
+      "case_id": "A120598",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 13,
+      "case_id": "A120599",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 14,
+      "case_id": "A120600",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 15,
+      "case_id": "A120601",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 16,
+      "case_id": "A120602",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 17,
+      "case_id": "A120603",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 18,
+      "case_id": "A120604",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 19,
+      "case_id": "A120605",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 20,
+      "case_id": "A120606",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 21,
+      "case_id": "A120607",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 22,
+      "case_id": "A244594",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 23,
+      "case_id": "A244627",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    },
+    {
+      "page": 24,
+      "case_id": "A244856",
+      "checks": {
+        "case_id": true,
+        "multiplicities": true,
+        "coefficient": true,
+        "matrices": true,
+        "telescoping": true
+      },
+      "status": "pass"
+    }
+  ]
+}

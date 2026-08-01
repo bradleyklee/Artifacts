@@ -1,0 +1,19 @@
+{
+  "case_id": "A120589",
+  "attempt": "term-shift G/U/V with fixed numerator seed 1+u",
+  "last_completed_stage": "two shifted columns lowered exactly",
+  "learned": [
+    "G is invertible and G[U;V]=E is exact.",
+    "Unlike the seed-1 family, the degree-(q-1) remainder row is nonzero.",
+    "The quotient remainder space is dimension q rather than q-1 for this observable.",
+    "The next candidate is q+1 shifted columns, a q by (q+1) remainder matrix, and a recurrence of order q."
+  ],
+  "reason_code": "remainder_dimension_increases_with_seed",
+  "resource_failure": false,
+  "smallest_failing_input": {
+    "case_id": "A120589",
+    "q": 2,
+    "seed": "1+u"
+  },
+  "status": "blocked_pending_algorithm_dimension_decision"
+}

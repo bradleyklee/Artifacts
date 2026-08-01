@@ -1,0 +1,17 @@
+{
+  "attempts": [
+    {
+      "approach": "observable power as ordered forest",
+      "result": "pass",
+      "terms_tested": 23
+    }
+  ],
+  "classification": "colored_unweighted",
+  "component": "tree_model",
+  "model": "ordered forest of 2 parent A120588 typogeometries",
+  "parent_branch_multiplicities": {
+    "Delta_2": 1
+  },
+  "status": "verified",
+  "top_constructor": "Delta_2 with all 2 positions occupied"
+}

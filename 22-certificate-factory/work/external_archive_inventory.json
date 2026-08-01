@@ -1,0 +1,33 @@
+{
+  "reason": "Removed redundant bulky material from the active crawl path to enforce the 10 MiB project ceiling. The preceding Library version preserves the complete originals.",
+  "items": [
+    {
+      "original_path": "runs.zip",
+      "bytes": 1536469,
+      "sha256": "5d6e5bbbc5e2c2d73fcb02d3fa7f636786aa53005e57192d341fb5e8be10db3e"
+    },
+    {
+      "original_path": "runs/big.zip",
+      "bytes": 3265538,
+      "sha256": "e3b5efd7e55499fed0c9918896593b10c6c61e0bcc989231d1086ffbe2246881"
+    },
+    {
+      "original_path": "examples/q3.zip",
+      "bytes": 1165183,
+      "sha256": "9cfd072434053581670cd1b77c8a18490084c65bc7e9393cc627b9964658ae12"
+    },
+    {
+      "original_path": "examples/A120590/ReleaseCandidate/A120590_Ternatrees.pdf",
+      "bytes": 196678,
+      "sha256": "4334bda753cf004e4a48990ec63061194903abb701d58c2e2cf70af8bee754f1"
+    },
+    {
+      "original_paths": ["runs/q2", "runs/q3", "runs/q4", "runs/q5"],
+      "reason": "Exact duplicates of the four preserved and freshly normalized example cases."
+    },
+    {
+      "original_paths": ["runs/q7", "runs/q8", "runs/q9"],
+      "reason": "Verified non-target normalized runs summarized in work/unmapped_verified_runs.json; removed to create room for the 23-target attempt."
+    }
+  ]
+}

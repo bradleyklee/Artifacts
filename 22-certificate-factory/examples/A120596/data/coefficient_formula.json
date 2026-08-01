@@ -1,0 +1,5 @@
+{
+  "d": "1",
+  "formula": "a(n)=d/n * [u^(n-1)] D(u)^(-n), n>=1",
+  "status": "verified"
+}

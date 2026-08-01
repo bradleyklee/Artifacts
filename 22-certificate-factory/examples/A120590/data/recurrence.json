@@ -1,0 +1,18 @@
+{
+  "legacy_top_level": [
+    "-27*n**2 + 3",
+    "-162*n**2 - 243*n - 81",
+    "13*n**2 + 39*n + 26"
+  ],
+  "recurrence": {
+    "coefficients": [
+      "-27*n**2 + 3",
+      "-162*n**2 - 243*n - 81",
+      "13*n**2 + 39*n + 26"
+    ],
+    "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+    "order": 2,
+    "valid_from_n": 1
+  },
+  "status": "verified"
+}

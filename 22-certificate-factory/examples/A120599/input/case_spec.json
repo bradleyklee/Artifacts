@@ -1,0 +1,9 @@
+{
+  "b": 32,
+  "c": 12,
+  "equation": "13*A(x)=12+32*x+A(x)^5",
+  "linear_coefficient_d": "4",
+  "q": 5,
+  "r": 13,
+  "status": "verified"
+}

@@ -1,0 +1,5 @@
+Open the attached certificate-factory repository. Read WORK_MANIFEST.md and
+work/targets.json first. Perform Shot 1 only: infrastructure migration and
+verified q-to-A relabeling, with a hard 15-minute maximum. Preserve all existing
+mathematics. Return with changed files, checks, case states, blockers, and the
+proposed next shot. Do not begin the family-wide computation yet.

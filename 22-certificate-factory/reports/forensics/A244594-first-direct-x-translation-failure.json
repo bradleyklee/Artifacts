@@ -1,0 +1,18 @@
+{
+  "case_id": "A244594",
+  "elapsed_seconds": 1.1,
+  "last_completed_stage": "exact direct-x integrand certificate",
+  "learned": [
+    "Gx inversion, derivative reduction, rank/nullity, and the integrand-level certificate all succeeded.",
+    "The normalized q3 ODE-to-recurrence translator silently assumes coefficient degree bounds.",
+    "Here det(Gx)=4*x^3-48*x^2+192*x-13, so the x^3*A''' contribution creates an additional backward coefficient shift."
+  ],
+  "limits": {
+    "address_space_mib": 1024,
+    "project_mib": 10,
+    "wall_seconds": 300
+  },
+  "observed_exception": "AssertionError: recurrence-derived ODE failed coefficient check",
+  "resource_failure": false,
+  "status": "resolved_in_same_shot"
+}

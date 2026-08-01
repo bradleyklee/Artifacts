@@ -1,0 +1,24 @@
+{
+  "canonical_source": "release/certificate_payload.json.gz#/objects/rational_certificate",
+  "statistics": {
+    "G_nonzero": 50,
+    "G_shape": [
+      10,
+      10
+    ],
+    "X_rank": 4,
+    "X_shape": [
+      4,
+      5
+    ],
+    "certificate_degree_n": 3,
+    "certificate_degree_u": 16,
+    "checks_passed": 7,
+    "checks_total": 7,
+    "denominator_degree": 5,
+    "nullity": 1,
+    "recurrence_degree": 4,
+    "recurrence_order": 4
+  },
+  "status": "verified"
+}

@@ -1,0 +1,9 @@
+{
+  "b": 64,
+  "c": 23,
+  "equation": "24*A(x)=23+64*x+A(x)^8",
+  "linear_coefficient_d": "4",
+  "q": 8,
+  "r": 24,
+  "status": "verified"
+}

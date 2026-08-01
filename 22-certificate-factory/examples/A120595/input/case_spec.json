@@ -1,0 +1,9 @@
+{
+  "b": 27,
+  "c": 12,
+  "equation": "13*A(x)=12+27*x+A(x)^4",
+  "linear_coefficient_d": "3",
+  "q": 4,
+  "r": 13,
+  "status": "verified"
+}

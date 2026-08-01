@@ -1,0 +1,660 @@
+{
+  "case_id": "A120602",
+  "compact_exact_matrices": {},
+  "matrix_summary": {
+    "G_or_Gx_shape": [
+      12,
+      12
+    ],
+    "X_shape": [
+      5,
+      6
+    ],
+    "nullity": 1,
+    "rank": 5
+  },
+  "normalized_records": {
+    "checks/results.json": {
+      "checks": {
+        "defining_equation_terms_integral": {
+          "count": 24,
+          "status": "pass"
+        },
+        "oeis_initial_terms_match": {
+          "count": 6,
+          "status": "pass"
+        }
+      },
+      "status": "verified"
+    },
+    "data/coefficient_formula.json": {
+      "d": "5",
+      "formula": "a(n)=d/n * [u^(n-1)] D(u)^(-n), n>=1",
+      "status": "verified"
+    },
+    "data/contour.json": {
+      "D": "1-3*u^1-20*u^2-75*u^3-150*u^4-125*u^5",
+      "coefficient_integral": "a(n)=(5)/(2*pi*i*n) * integral_gamma du/rho(u)^n, n>=1",
+      "component": "contour",
+      "contour": "small positively oriented loop around u=0",
+      "ogf_integral": "A(x)=1-(5)/(2*pi*i)*integral_gamma log(1-x/rho(u)) du",
+      "rho": "u*(1-3*u^1-20*u^2-75*u^3-150*u^4-125*u^5)",
+      "status": "verified"
+    },
+    "data/integrand_analysis.json": {
+      "G": {
+        "definition": "coeff(rho*a-rho'*b), with deg(a),deg(b)<deg(rho)",
+        "invertibility_witness": "resultant(rho,rho')=204963525390625",
+        "shape": [
+          12,
+          12
+        ]
+      },
+      "expected_shift_count_for_first_nullvector": 6,
+      "integrand": "(5)/(n*(-125*u**6 - 150*u**5 - 75*u**4 - 20*u**3 - 3*u**2 + u)^n)",
+      "kernel_class": "polynomial_power",
+      "q3_algorithm_relation": "same exact G/U/V construction; replace hard-coded normalized rho_q by this rho",
+      "remainder_dimension": 5,
+      "required_change": "parameterize the existing polynomial-kernel entry point; no change to Lower(w,m)=U*w-J*V*w/m",
+      "status": "verified",
+      "term_shift_ratio": "n/((n+s)*(-125*u**6 - 150*u**5 - 75*u**4 - 20*u**3 - 3*u**2 + u)^s)"
+    },
+    "data/inverse_map.json": {
+      "D_coefficients_by_power": {
+        "0": "1",
+        "1": "-(3)",
+        "2": "-(20)",
+        "3": "-(75)",
+        "4": "-(150)",
+        "5": "-(125)"
+      },
+      "equation": "T=x/D(T)",
+      "shift": "A(x)=1+d*T(x)",
+      "status": "verified"
+    },
+    "data/ode.json": {
+      "canonical_source": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
+      "statistics": {
+        "G_nonzero": 72,
+        "G_shape": [
+          12,
+          12
+        ],
+        "X_rank": 5,
+        "X_shape": [
+          5,
+          6
+        ],
+        "certificate_degree_n": 4,
+        "certificate_degree_u": 25,
+        "checks_passed": 7,
+        "checks_total": 7,
+        "denominator_degree": 6,
+        "nullity": 1,
+        "recurrence_degree": 5,
+        "recurrence_order": 5
+      },
+      "status": "verified"
+    },
+    "data/recurrence.json": {
+      "canonical_source": "release/certificate_payload.json.gz#/objects/p_recurrence",
+      "statistics": {
+        "G_nonzero": 72,
+        "G_shape": [
+          12,
+          12
+        ],
+        "X_rank": 5,
+        "X_shape": [
+          5,
+          6
+        ],
+        "certificate_degree_n": 4,
+        "certificate_degree_u": 25,
+        "checks_passed": 7,
+        "checks_total": 7,
+        "denominator_degree": 6,
+        "nullity": 1,
+        "recurrence_degree": 5,
+        "recurrence_order": 5
+      },
+      "status": "verified"
+    },
+    "data/set_elements_n_le_3.json": {
+      "checks": {
+        "1": {
+          "enumerated": 5,
+          "pass": true,
+          "published_term": 5
+        },
+        "2": {
+          "enumerated": 15,
+          "pass": true,
+          "published_term": 15
+        },
+        "3": {
+          "enumerated": 190,
+          "pass": true,
+          "published_term": 190
+        }
+      },
+      "elements_by_true_leaf_count": {
+        "1": [
+          "root[0](l)",
+          "root[1](l)",
+          "root[2](l)",
+          "root[3](l)",
+          "root[4](l)"
+        ],
+        "2": [
+          "root[0](Delta_2[0](l,l))",
+          "root[0](Delta_2[1](l,l))",
+          "root[0](Delta_2[2](l,l))",
+          "root[1](Delta_2[0](l,l))",
+          "root[1](Delta_2[1](l,l))",
+          "root[1](Delta_2[2](l,l))",
+          "root[2](Delta_2[0](l,l))",
+          "root[2](Delta_2[1](l,l))",
+          "root[2](Delta_2[2](l,l))",
+          "root[3](Delta_2[0](l,l))",
+          "root[3](Delta_2[1](l,l))",
+          "root[3](Delta_2[2](l,l))",
+          "root[4](Delta_2[0](l,l))",
+          "root[4](Delta_2[1](l,l))",
+          "root[4](Delta_2[2](l,l))"
+        ],
+        "3": [
+          "root[0](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[0](Delta_3[0](l,l,l))",
+          "root[0](Delta_3[1](l,l,l))",
+          "root[0](Delta_3[2](l,l,l))",
+          "root[0](Delta_3[3](l,l,l))",
+          "root[0](Delta_3[4](l,l,l))",
+          "root[0](Delta_3[5](l,l,l))",
+          "root[0](Delta_3[6](l,l,l))",
+          "root[0](Delta_3[7](l,l,l))",
+          "root[0](Delta_3[8](l,l,l))",
+          "root[0](Delta_3[9](l,l,l))",
+          "root[0](Delta_3[10](l,l,l))",
+          "root[0](Delta_3[11](l,l,l))",
+          "root[0](Delta_3[12](l,l,l))",
+          "root[0](Delta_3[13](l,l,l))",
+          "root[0](Delta_3[14](l,l,l))",
+          "root[0](Delta_3[15](l,l,l))",
+          "root[0](Delta_3[16](l,l,l))",
+          "root[0](Delta_3[17](l,l,l))",
+          "root[0](Delta_3[18](l,l,l))",
+          "root[0](Delta_3[19](l,l,l))",
+          "root[1](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[1](Delta_3[0](l,l,l))",
+          "root[1](Delta_3[1](l,l,l))",
+          "root[1](Delta_3[2](l,l,l))",
+          "root[1](Delta_3[3](l,l,l))",
+          "root[1](Delta_3[4](l,l,l))",
+          "root[1](Delta_3[5](l,l,l))",
+          "root[1](Delta_3[6](l,l,l))",
+          "root[1](Delta_3[7](l,l,l))",
+          "root[1](Delta_3[8](l,l,l))",
+          "root[1](Delta_3[9](l,l,l))",
+          "root[1](Delta_3[10](l,l,l))",
+          "root[1](Delta_3[11](l,l,l))",
+          "root[1](Delta_3[12](l,l,l))",
+          "root[1](Delta_3[13](l,l,l))",
+          "root[1](Delta_3[14](l,l,l))",
+          "root[1](Delta_3[15](l,l,l))",
+          "root[1](Delta_3[16](l,l,l))",
+          "root[1](Delta_3[17](l,l,l))",
+          "root[1](Delta_3[18](l,l,l))",
+          "root[1](Delta_3[19](l,l,l))",
+          "root[2](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[2](Delta_3[0](l,l,l))",
+          "root[2](Delta_3[1](l,l,l))",
+          "root[2](Delta_3[2](l,l,l))",
+          "root[2](Delta_3[3](l,l,l))",
+          "root[2](Delta_3[4](l,l,l))",
+          "root[2](Delta_3[5](l,l,l))",
+          "root[2](Delta_3[6](l,l,l))",
+          "root[2](Delta_3[7](l,l,l))",
+          "root[2](Delta_3[8](l,l,l))",
+          "root[2](Delta_3[9](l,l,l))",
+          "root[2](Delta_3[10](l,l,l))",
+          "root[2](Delta_3[11](l,l,l))",
+          "root[2](Delta_3[12](l,l,l))",
+          "root[2](Delta_3[13](l,l,l))",
+          "root[2](Delta_3[14](l,l,l))",
+          "root[2](Delta_3[15](l,l,l))",
+          "root[2](Delta_3[16](l,l,l))",
+          "root[2](Delta_3[17](l,l,l))",
+          "root[2](Delta_3[18](l,l,l))",
+          "root[2](Delta_3[19](l,l,l))",
+          "root[3](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[3](Delta_3[0](l,l,l))",
+          "root[3](Delta_3[1](l,l,l))",
+          "root[3](Delta_3[2](l,l,l))",
+          "root[3](Delta_3[3](l,l,l))",
+          "root[3](Delta_3[4](l,l,l))",
+          "root[3](Delta_3[5](l,l,l))",
+          "root[3](Delta_3[6](l,l,l))",
+          "root[3](Delta_3[7](l,l,l))",
+          "root[3](Delta_3[8](l,l,l))",
+          "root[3](Delta_3[9](l,l,l))",
+          "root[3](Delta_3[10](l,l,l))",
+          "root[3](Delta_3[11](l,l,l))",
+          "root[3](Delta_3[12](l,l,l))",
+          "root[3](Delta_3[13](l,l,l))",
+          "root[3](Delta_3[14](l,l,l))",
+          "root[3](Delta_3[15](l,l,l))",
+          "root[3](Delta_3[16](l,l,l))",
+          "root[3](Delta_3[17](l,l,l))",
+          "root[3](Delta_3[18](l,l,l))",
+          "root[3](Delta_3[19](l,l,l))",
+          "root[4](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[4](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[4](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[4](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[4](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[4](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[4](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[4](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[4](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[4](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[4](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[4](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[4](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[4](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[4](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[4](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[4](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[4](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[4](Delta_3[0](l,l,l))",
+          "root[4](Delta_3[1](l,l,l))",
+          "root[4](Delta_3[2](l,l,l))",
+          "root[4](Delta_3[3](l,l,l))",
+          "root[4](Delta_3[4](l,l,l))",
+          "root[4](Delta_3[5](l,l,l))",
+          "root[4](Delta_3[6](l,l,l))",
+          "root[4](Delta_3[7](l,l,l))",
+          "root[4](Delta_3[8](l,l,l))",
+          "root[4](Delta_3[9](l,l,l))",
+          "root[4](Delta_3[10](l,l,l))",
+          "root[4](Delta_3[11](l,l,l))",
+          "root[4](Delta_3[12](l,l,l))",
+          "root[4](Delta_3[13](l,l,l))",
+          "root[4](Delta_3[14](l,l,l))",
+          "root[4](Delta_3[15](l,l,l))",
+          "root[4](Delta_3[16](l,l,l))",
+          "root[4](Delta_3[17](l,l,l))",
+          "root[4](Delta_3[18](l,l,l))",
+          "root[4](Delta_3[19](l,l,l))"
+        ]
+      },
+      "encoding": "prefix depth-first Delta word; l=true leaf; constructor suffix [c] is a finite color; false slots are suppressed and recoverable from the model metadata",
+      "maximum_true_leaves": 3,
+      "status": "verified"
+    },
+    "data/terms.json": {
+      "oeis_prefix_checked": [
+        1,
+        5,
+        15,
+        190,
+        2550,
+        38070
+      ],
+      "status": "verified",
+      "terms": [
+        1,
+        5,
+        15,
+        190,
+        2550,
+        38070,
+        609205,
+        10199640,
+        176483340,
+        3130904150,
+        56641633455,
+        1040985874470,
+        19381240377460,
+        364777461207360,
+        6929053224018750,
+        132665646902812800,
+        2557591625106894075,
+        49604907701733017850,
+        967242234362414552850,
+        18950004748051829487750,
+        372848735641925952297900,
+        7364153452990151479236850,
+        145956370321191907669819050,
+        2902002178259957385049030800
+      ]
+    },
+    "data/tree_model.json": {
+      "attempts": [
+        {
+          "approach": "shift equation, integral finite-color grammar, coefficient comparison",
+          "result": "pass",
+          "terms_tested": 23
+        }
+      ],
+      "branch_multiplicities": {
+        "Delta_2": 3,
+        "Delta_3": 20,
+        "Delta_4": 75,
+        "Delta_5": 150,
+        "Delta_6": 125
+      },
+      "classification": "colored_unweighted",
+      "component": "tree_model",
+      "normalization": "A(x)=1+(5)*T(x)",
+      "recursive_equation": "T=x+3*T^2+20*T^3+75*T^4+150*T^5+125*T^6",
+      "status": "verified",
+      "word_model": {
+        "alphabet": [
+          "l",
+          "Delta_2",
+          "Delta_3",
+          "Delta_4",
+          "Delta_5",
+          "Delta_6"
+        ],
+        "colors": "branch multiplicity labels distinguish constructors of the same arity",
+        "false_leaves": "restored as the q-k unused positions of a full Delta_q slot mask",
+        "true_leaf": "l",
+        "validity": "depth-first tree word; total weight -1; every proper prefix has nonnegative open-slot balance",
+        "weights": {
+          "Delta_2": 1,
+          "Delta_3": 2,
+          "Delta_4": 3,
+          "Delta_5": 4,
+          "Delta_6": 5,
+          "l": -1
+        }
+      }
+    },
+    "input/case_spec.json": {
+      "b": 125,
+      "c": 30,
+      "equation": "31*A(x)=30+125*x+A(x)^6",
+      "linear_coefficient_d": "5",
+      "q": 6,
+      "r": 31,
+      "status": "verified"
+    }
+  },
+  "note": "Full matrix entries remain at the precise canonical source above to avoid overwhelming the presentation PDF.",
+  "resolved_certificate": {
+    "denominator_base": "-125*u**6 - 150*u**5 - 75*u**4 - 20*u**3 - 3*u**2 + u",
+    "denominator_power": 4,
+    "formula": "R(n,u)=N(n,u)/rho(u)^(q-2)",
+    "numerator_N": "148315429687500000*n**4*u**25 + 741577148437500000*n**4*u**24 + 1779785156250000000*n**4*u**23 + 2729003906250000000*n**4*u**22 + 3001904296875000000*n**4*u**21 + 2514488378906250000*n**4*u**20 + 1652621484375000000*n**4*u**19 + 858533554687500000*n**4*u**18 + 345806085937500000*n**4*u**17 + 100012155468750000*n**4*u**16 + 14497681640625000*n**4*u**15 - 3698466328125000*n**4*u**14 - 3333361359375000*n**4*u**13 - 1172947415625000*n**4*u**12 - 210138046875000*n**4*u**11 + 9078409687500*n**4*u**10 + 18057692250000*n**4*u**9 + 5387645137500*n**4*u**8 + 600828975000*n**4*u**7 - 111827790000*n**4*u**6 - 55972506750*n**4*u**5 - 7793161350*n**4*u**4 + 418259100*n**4*u**3 + 282308640*n**4*u**2 + 35280258*n**4*u - 4197653*n**4 + 1137084960937500000*n**3*u**25 + 5685424804687500000*n**3*u**24 + 13645019531250000000*n**3*u**23 + 20922363281250000000*n**3*u**22 + 23014599609375000000*n**3*u**21 + 19278561621093750000*n**3*u**20 + 12673842187500000000*n**3*u**19 + 6590106210937500000*n**3*u**18 + 2661880851562500000*n**3*u**17 + 776775382031250000*n**3*u**16 + 118111344960937500*n**3*u**15 - 24686202304687500*n**3*u**14 - 24118553039062500*n**3*u**13 - 8614465467187500*n**3*u**12 - 1575872035312500*n**3*u**11 + 46983982031250*n**3*u**10 + 125006909250000*n**3*u**9 + 37753700231250*n**3*u**8 + 4297361602500*n**3*u**7 - 726709005000*n**3*u**6 - 372036465750*n**3*u**5 - 51531779550*n**3*u**4 + 2601639600*n**3*u**3 + 1769725830*n**3*u**2 + 216728718*n**3*u - 25185918*n**3 + 3011627197265625000*n**2*u**25 + 15058135986328125000*n**2*u**24 + 36139526367187500000*n**2*u**23 + 55413940429687500000*n**2*u**22 + 60955334472656250000*n**2*u**21 + 51063805151367187500*n**2*u**20 + 33584160058593750000*n**2*u**19 + 17491214267578125000*n**2*u**18 + 7100478087890625000*n**2*u**17 + 2105203410351562500*n**2*u**16 + 346562142070312500*n**2*u**15 - 47350107070312500*n**2*u**14 - 56670840492187500*n**2*u**13 - 20833306598437500*n**2*u**12 - 3932615685937500*n**2*u**11 + 40940504343750*n**2*u**10 + 273042343875000*n**2*u**9 + 83760113643750*n**2*u**8 + 9670955287500*n**2*u**7 - 1474165365000*n**2*u**6 - 763651266000*n**2*u**5 - 103066071900*n**2*u**4 + 5196894900*n**2*u**3 + 3375043710*n**2*u**2 + 403224348*n**2*u - 46174183*n**2 + 3190155029296875000*n*u**25 + 15950775146484375000*n*u**24 + 38281860351562500000*n*u**23 + 58698852539062500000*n*u**22 + 64568737792968750000*n*u**21 + 54097565405273437500*n*u**20 + 35607920800781250000*n*u**19 + 18602046298828125000*n*u**18 + 7623868341796875000*n*u**17 + 2328769879101562500*n*u**16 + 437521893281250000*n*u**15 - 12061192500000000*n*u**14 - 44523274781250000*n*u**13 - 17621811440625000*n*u**12 - 3500665616250000*n*u**11 - 63124225500000*n*u**10 + 189627595875000*n*u**9 + 59169619800000*n*u**8 + 6696240210000*n*u**7 - 970815840000*n*u**6 - 475736517000*n*u**5 - 59252933700*n*u**4 + 3279284400*n*u**3 + 1887626520*n*u**2 + 221775888*n*u - 25185918*n + 1095886230468750000*u**25 + 5479431152343750000*u**24 + 13150634765625000000*u**23 + 20164306640625000000*u**22 + 22180737304687500000*u**21 + 18588334570312500000*u**20 + 12255690234375000000*u**19 + 6444442265625000000*u**18 + 2695312019531250000*u**17 + 874450582031250000*u**16 + 203918301562500000*u**15 + 25178520937500000*u**14 - 3149980312500000*u**13 - 2419660687500000*u**12 - 551263387500000*u**11 - 35416237500000*u**10 + 13165503750000*u**9 + 3573942750000*u**8 + 163390500000*u**7 - 77206500000*u**6 - 6284250000*u**5 + 897750000*u**4"
+  },
+  "resolved_certificate_source": "release/certificate_payload.json.gz#/objects/rational_certificate",
+  "resolved_matrices_sha256": "ad9fadce931d4210e95d24be3f9c5d79d978aa043137a27923fe12d47a04a607",
+  "resolved_matrices_source": "release/certificate_payload.json.gz#/objects/matrices",
+  "resolved_ode": {
+    "boundary_polynomial": "0",
+    "coefficient_correspondence": {
+      "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
+      "samples": [
+        {
+          "difference": "0",
+          "n": 1,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 2,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 3,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 4,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 5,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 6,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 7,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 8,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 9,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 10,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 11,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 12,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 13,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        }
+      ]
+    },
+    "ordinary_derivative_form": {
+      "coefficients": [
+        "4488750000*x**5",
+        "-180270000000*x**6 - 43264800000*x**5",
+        "-520171875000*x**7 - 249682500000*x**6 - 29961900000*x**5",
+        "-324506250000*x**8 - 233644500000*x**7 - 56074680000*x**6 - 4485974400*x**5",
+        "-63787500000*x**9 - 61236000000*x**8 - 22044960000*x**7 - 3527193600*x**6 - 211631616*x**5",
+        "-3645000000*x**10 - 4374000000*x**9 - 2099520000*x**8 - 503884800*x**7 - 60466176*x**6 + 4197653*x**5"
+      ],
+      "identity": "sum_j C_j(x) d^j A_q(x)/dx^j = B_q(x)",
+      "order": 5
+    },
+    "series": "A_q(x)",
+    "status": "complete",
+    "theta_definition": "theta=x*d/dx",
+    "theta_operator": {
+      "identity": "L_q(x,theta)=sum_{r=0}^{s} x^(s-r) P_r(theta-r)",
+      "terms": [
+        {
+          "polynomial_in_theta": "-3645000000*theta**5 - 27337500000*theta**4 - 69356250000*theta**3 - 66065625000*theta**2 - 13865625000*theta + 4488750000",
+          "shift": 0,
+          "source": "P_0(theta-0)",
+          "x_power": 5
+        },
+        {
+          "polynomial_in_theta": "-4374000000*theta**5 - 17496000000*theta**4 - 19318500000*theta**3 - 3645000000*theta**2 + 1568700000*theta",
+          "shift": 1,
+          "source": "P_1(theta-1)",
+          "x_power": 4
+        },
+        {
+          "polynomial_in_theta": "-2099520000*theta**5 - 1049760000*theta**4 + 2711880000*theta**3 + 743580000*theta**2 - 306180000*theta",
+          "shift": 2,
+          "source": "P_2(theta-2)",
+          "x_power": 3
+        },
+        {
+          "polynomial_in_theta": "-503884800*theta**5 + 1511654400*theta**4 - 958780800*theta**3 - 146966400*theta**2 + 97977600*theta",
+          "shift": 3,
+          "source": "P_3(theta-3)",
+          "x_power": 2
+        },
+        {
+          "polynomial_in_theta": "-60466176*theta**5 + 393030144*theta**4 - 846526464*theta**3 + 695361024*theta**2 - 181398528*theta",
+          "shift": 4,
+          "source": "P_4(theta-4)",
+          "x_power": 1
+        },
+        {
+          "polynomial_in_theta": "4197653*theta**5 - 41976530*theta**4 + 146917855*theta**3 - 209882650*theta**2 + 100743672*theta",
+          "shift": 5,
+          "source": "P_5(theta-5)",
+          "x_power": 0
+        }
+      ]
+    },
+    "validity": {
+      "safe_series_exponent_range": [
+        0,
+        18
+      ],
+      "source_recurrence_valid_from_n": 1
+    },
+    "verification": {
+      "recurrence_coefficient_correspondence": {
+        "checked_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "max_absolute_difference": 0,
+        "pass": true,
+        "relation": "ODE coefficient equals recurrence residual"
+      },
+      "series_residual": {
+        "checked_exponents": [
+          0,
+          18
+        ],
+        "max_absolute_residual": 0,
+        "pass": true,
+        "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+      }
+    }
+  },
+  "resolved_ode_source": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
+  "resolved_recurrence": {
+    "coefficients": [
+      "-3645000000*n**5 - 27337500000*n**4 - 69356250000*n**3 - 66065625000*n**2 - 13865625000*n + 4488750000",
+      "-4374000000*n**5 - 39366000000*n**4 - 133042500000*n**3 - 210316500000*n**2 - 155530800000*n - 43264800000",
+      "-2099520000*n**5 - 22044960000*n**4 - 89667000000*n**3 - 176140980000*n**2 - 166343220000*n - 59923800000",
+      "-503884800*n**5 - 6046617600*n**4 - 28168560000*n**3 - 63195552000*n**2 - 67485571200*n - 26915846400",
+      "-60466176*n**5 - 816293376*n**4 - 4232632320*n**3 - 10430415360*n**2 - 12032769024*n - 5079158784",
+      "4197653*n**5 + 62964795*n**4 + 356800505*n**3 + 944471925*n**2 + 1150156922*n + 503718360"
+    ],
+    "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+    "order": 5,
+    "valid_from_n": 1
+  },
+  "resolved_recurrence_source": "release/certificate_payload.json.gz#/objects/p_recurrence",
+  "schema_version": "1.0",
+  "status": "verified"
+}

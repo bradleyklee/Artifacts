@@ -1,0 +1,437 @@
+{
+  "case_id": "A120589",
+  "compact_exact_matrices": {},
+  "matrix_summary": {
+    "G_or_Gx_shape": [
+      4,
+      4
+    ],
+    "X_shape": [
+      2,
+      3
+    ],
+    "nullity": 1,
+    "rank": 2
+  },
+  "normalized_records": {
+    "checks/results.json": {
+      "checks": {
+        "defining_equation_terms_integral": {
+          "count": 24,
+          "status": "pass"
+        },
+        "oeis_initial_terms_match": {
+          "count": 6,
+          "status": "pass"
+        }
+      },
+      "status": "verified"
+    },
+    "data/coefficient_formula.json": {
+      "formula": "a(n)=[x^n]A_A120588(x)^2",
+      "status": "verified"
+    },
+    "data/contour.json": {
+      "D": "1-1*u^1",
+      "component": "contour",
+      "contour": "small positively oriented loop around u=0",
+      "formula": "[x^n]A(x)^2=(2*1)/(2*pi*i*n)*integral_gamma (1+(1)*u)^1 du/(u^n*D(u)^n)",
+      "status": "verified"
+    },
+    "data/integrand_analysis.json": {
+      "G": {
+        "invertibility_witness": "resultant(rho,rho')=1",
+        "shape": [
+          4,
+          4
+        ]
+      },
+      "expected_shift_count_for_first_nullvector": 2,
+      "integrand": "(2)*(u + 1)/(n*(-u**2 + u)^n)",
+      "kernel_class": "polynomial_power_with_fixed_seed",
+      "q3_algorithm_relation": "identical G/U/V and pole lowering; initialize shift 0 with the coefficient vector of the fixed seed instead of e_0",
+      "remainder_dimension": 1,
+      "required_change": "accept a fixed numerator seed vector and propagate it through every shifted column",
+      "seed_degree": 1,
+      "status": "verified",
+      "term_shift_ratio": "n/((n+s)*(-u**2 + u)^s)"
+    },
+    "data/inverse_map.json": {
+      "reason": "observable of parent analytic function",
+      "status": "not_applicable"
+    },
+    "data/ode.json": {
+      "canonical_source": "release/certificate_payload.json.gz#/ode",
+      "statistics": {
+        "G_shape": [
+          4,
+          4
+        ],
+        "X_shape": [
+          2,
+          3
+        ],
+        "certificate_numerator_degree_n": 1,
+        "certificate_numerator_degree_u": 2,
+        "certificate_parameter_denominator": "n*u + n + u + 1",
+        "denominator_degree": 2,
+        "leading_zero_coefficients": 1,
+        "nullity": 1,
+        "rank": 2,
+        "recurrence_order": 2,
+        "remainder_dimension": 2,
+        "shift_columns": 3
+      },
+      "status": "verified"
+    },
+    "data/recurrence.json": {
+      "canonical_source": "release/certificate_payload.json.gz#/recurrence",
+      "statistics": {
+        "G_shape": [
+          4,
+          4
+        ],
+        "X_shape": [
+          2,
+          3
+        ],
+        "certificate_numerator_degree_n": 1,
+        "certificate_numerator_degree_u": 2,
+        "certificate_parameter_denominator": "n*u + n + u + 1",
+        "denominator_degree": 2,
+        "leading_zero_coefficients": 1,
+        "nullity": 1,
+        "rank": 2,
+        "recurrence_order": 2,
+        "remainder_dimension": 2,
+        "shift_columns": 3
+      },
+      "status": "verified"
+    },
+    "data/set_elements_n_le_3.json": {
+      "checks": {
+        "1": {
+          "enumerated": 2,
+          "pass": true,
+          "published_term": 2
+        },
+        "2": {
+          "enumerated": 3,
+          "pass": true,
+          "published_term": 3
+        },
+        "3": {
+          "enumerated": 6,
+          "pass": true,
+          "published_term": 6
+        }
+      },
+      "elements_by_true_leaf_count": {
+        "1": [
+          "Delta_2F(false,root[0](l))",
+          "Delta_2F(root[0](l),false)"
+        ],
+        "2": [
+          "Delta_2F(false,root[0](Delta_2[0](l,l)))",
+          "Delta_2F(root[0](l),root[0](l))",
+          "Delta_2F(root[0](Delta_2[0](l,l)),false)"
+        ],
+        "3": [
+          "Delta_2F(false,root[0](Delta_2[0](l,Delta_2[0](l,l))))",
+          "Delta_2F(false,root[0](Delta_2[0](Delta_2[0](l,l),l)))",
+          "Delta_2F(root[0](l),root[0](Delta_2[0](l,l)))",
+          "Delta_2F(root[0](Delta_2[0](l,l)),root[0](l))",
+          "Delta_2F(root[0](Delta_2[0](l,Delta_2[0](l,l))),false)",
+          "Delta_2F(root[0](Delta_2[0](Delta_2[0](l,l),l)),false)"
+        ]
+      },
+      "encoding": "ordered 2-forest; false is the unit parent object",
+      "maximum_true_leaves": 3,
+      "status": "verified"
+    },
+    "data/terms.json": {
+      "oeis_prefix_checked": [
+        1,
+        2,
+        3,
+        6,
+        15,
+        42
+      ],
+      "status": "verified",
+      "terms": [
+        1,
+        2,
+        3,
+        6,
+        15,
+        42,
+        126,
+        396,
+        1287,
+        4290,
+        14586,
+        50388,
+        176358,
+        624036,
+        2228700,
+        8023320,
+        29084535,
+        106073010,
+        388934370,
+        1432916100,
+        5301789570,
+        19692361260,
+        73398801060,
+        274447690920
+      ]
+    },
+    "data/tree_model.json": {
+      "attempts": [
+        {
+          "approach": "observable power as ordered forest",
+          "result": "pass",
+          "terms_tested": 23
+        }
+      ],
+      "classification": "colored_unweighted",
+      "component": "tree_model",
+      "model": "ordered forest of 2 parent A120588 typogeometries",
+      "parent_branch_multiplicities": {
+        "Delta_2": 1
+      },
+      "status": "verified",
+      "top_constructor": "Delta_2 with all 2 positions occupied"
+    },
+    "input/case_spec.json": {
+      "observable": "A_parent(x)^2",
+      "parent": "A120588",
+      "status": "verified"
+    }
+  },
+  "note": "Full matrix entries remain at the precise canonical source above to avoid overwhelming the presentation PDF.",
+  "resolved_certificate": {
+    "N": "2*n*u**2/(n*u + n + u + 1) + n*u/(n*u + n + u + 1) - n/(n*u + n + u + 1) + u**2/(n*u + n + u + 1) - u/(n*u + n + u + 1)",
+    "denominator_base": "-u**2 + u",
+    "denominator_power": 1
+  },
+  "resolved_certificate_source": "release/certificate_payload.json.gz#/certificate",
+  "resolved_matrices_sha256": "b464fddd6de4c20c36c93c03abc5e2426b85b8ce55a9b88f036af375cf5c351f",
+  "resolved_matrices_source": "release/certificate_payload.json.gz#/matrices",
+  "resolved_ode": {
+    "boundary_polynomial": "2*x**2 + 4*x",
+    "coefficient_correspondence": {
+      "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
+      "samples": [
+        {
+          "difference": "0",
+          "n": 1,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 2,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 3,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 4,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 5,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 6,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 7,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 8,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 9,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 10,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 11,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 12,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 13,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 14,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 15,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 16,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 17,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 18,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 19,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 20,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        }
+      ]
+    },
+    "ordinary_derivative_form": {
+      "coefficients": [
+        "2*x",
+        "-4*x**2 + x"
+      ],
+      "identity": "sum_j C_j(x) d^j A_q(x)/dx^j = B_q(x)",
+      "order": 1
+    },
+    "series": "A_q(x)",
+    "status": "complete",
+    "theta_definition": "theta=x*d/dx",
+    "theta_operator": {
+      "identity": "L_q(x,theta)=sum_{r=0}^{s} x^(s-r) P_r(theta-r)",
+      "terms": [
+        {
+          "polynomial_in_theta": "0",
+          "shift": 0,
+          "source": "P_0(theta-0)",
+          "x_power": 2
+        },
+        {
+          "polynomial_in_theta": "-4*theta + 2",
+          "shift": 1,
+          "source": "P_1(theta-1)",
+          "x_power": 1
+        },
+        {
+          "polynomial_in_theta": "theta",
+          "shift": 2,
+          "source": "P_2(theta-2)",
+          "x_power": 0
+        }
+      ]
+    },
+    "validity": {
+      "safe_series_exponent_range": [
+        0,
+        22
+      ],
+      "source_recurrence_valid_from_n": 1
+    },
+    "verification": {
+      "recurrence_coefficient_correspondence": {
+        "checked_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "max_absolute_difference": 0,
+        "pass": true,
+        "relation": "ODE coefficient equals recurrence residual"
+      },
+      "series_residual": {
+        "checked_exponents": [
+          0,
+          22
+        ],
+        "max_absolute_residual": 0,
+        "pass": true,
+        "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+      }
+    }
+  },
+  "resolved_ode_source": "release/certificate_payload.json.gz#/ode",
+  "resolved_recurrence": [
+    "0",
+    "-4*n - 2",
+    "n + 2"
+  ],
+  "resolved_recurrence_source": "release/certificate_payload.json.gz#/recurrence",
+  "schema_version": "1.0",
+  "status": "verified"
+}

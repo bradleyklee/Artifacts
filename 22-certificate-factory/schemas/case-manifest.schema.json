@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "case-manifest.schema.json",
+  "title": "Certificate factory case manifest",
+  "type": "object",
+  "required": ["schema_version", "case_id", "aliases", "case_state", "mapping", "components"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "case_id": {"type": "string", "pattern": "^A[0-9]{6}$"},
+    "aliases": {"type": "array", "items": {"type": "string"}},
+    "case_state": {
+      "enum": ["NEW", "GENERATING", "PARTIAL", "BLOCKED", "ANALYTIC_COMPLETE", "CERTIFICATE_READY", "RELEASED", "INVALID"]
+    },
+    "mapping": {
+      "type": "object",
+      "required": ["verified"],
+      "properties": {"verified": {"type": "boolean"}}
+    },
+    "components": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["status"],
+        "properties": {
+          "status": {
+            "enum": ["not_attempted", "running", "produced", "verified", "blocked", "not_applicable", "rejected"]
+          }
+        }
+      }
+    }
+  }
+}

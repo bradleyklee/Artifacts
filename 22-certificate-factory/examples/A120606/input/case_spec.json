@@ -1,0 +1,9 @@
+{
+  "b": 81,
+  "c": 35,
+  "equation": "36*A(x)=35+81*x+A(x)^9",
+  "linear_coefficient_d": "3",
+  "q": 9,
+  "r": 36,
+  "status": "verified"
+}

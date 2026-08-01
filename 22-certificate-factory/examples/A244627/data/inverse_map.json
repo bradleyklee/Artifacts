@@ -1,0 +1,5 @@
+{
+  "formula": "x=((r-q)*d*T-sum_{k=2}^q binomial(q,k)*(d*T)^k)/(s*(1+d*T))",
+  "status": "verified",
+  "type": "rational"
+}

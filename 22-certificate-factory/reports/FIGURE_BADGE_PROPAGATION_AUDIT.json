@@ -1,0 +1,398 @@
+{
+  "status": "pass",
+  "expected_badges_per_case": 4,
+  "case_count": 23,
+  "cases": [
+    {
+      "page": 2,
+      "case_id": "A120588",
+      "expected_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 3,
+      "case_id": "A120589",
+      "expected_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 4,
+      "case_id": "A120590",
+      "expected_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 5,
+      "case_id": "A120591",
+      "expected_badges": [
+        "x1",
+        "x3",
+        "x9",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x3",
+        "x9",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 6,
+      "case_id": "A120592",
+      "expected_badges": [
+        "x2",
+        "x6",
+        "x18",
+        "x4"
+      ],
+      "observed_tree_region_badges": [
+        "x2",
+        "x6",
+        "x18",
+        "x4"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 7,
+      "case_id": "A120593",
+      "expected_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 8,
+      "case_id": "A120594",
+      "expected_badges": [
+        "x2",
+        "x6",
+        "x18",
+        "x8"
+      ],
+      "observed_tree_region_badges": [
+        "x2",
+        "x6",
+        "x18",
+        "x8"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 9,
+      "case_id": "A120595",
+      "expected_badges": [
+        "x3",
+        "x6",
+        "x12",
+        "x12"
+      ],
+      "observed_tree_region_badges": [
+        "x3",
+        "x6",
+        "x12",
+        "x12"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 10,
+      "case_id": "A120596",
+      "expected_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 11,
+      "case_id": "A120597",
+      "expected_badges": [
+        "x2",
+        "x10",
+        "x50",
+        "x20"
+      ],
+      "observed_tree_region_badges": [
+        "x2",
+        "x10",
+        "x50",
+        "x20"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 12,
+      "case_id": "A120598",
+      "expected_badges": [
+        "x5",
+        "x10",
+        "x20",
+        "x50"
+      ],
+      "observed_tree_region_badges": [
+        "x5",
+        "x10",
+        "x20",
+        "x50"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 13,
+      "case_id": "A120599",
+      "expected_badges": [
+        "x4",
+        "x20",
+        "x100",
+        "x80"
+      ],
+      "observed_tree_region_badges": [
+        "x4",
+        "x20",
+        "x100",
+        "x80"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 14,
+      "case_id": "A120600",
+      "expected_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x1",
+        "x1",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 15,
+      "case_id": "A120601",
+      "expected_badges": [
+        "x3",
+        "x15",
+        "x75",
+        "x60"
+      ],
+      "observed_tree_region_badges": [
+        "x3",
+        "x15",
+        "x75",
+        "x60"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 16,
+      "case_id": "A120602",
+      "expected_badges": [
+        "x5",
+        "x15",
+        "x45",
+        "x100"
+      ],
+      "observed_tree_region_badges": [
+        "x5",
+        "x15",
+        "x45",
+        "x100"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 17,
+      "case_id": "A120603",
+      "expected_badges": [
+        "x3",
+        "x21",
+        "x147",
+        "x105"
+      ],
+      "observed_tree_region_badges": [
+        "x3",
+        "x21",
+        "x147",
+        "x105"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 18,
+      "case_id": "A120604",
+      "expected_badges": [
+        "x4",
+        "x28",
+        "x196",
+        "x224"
+      ],
+      "observed_tree_region_badges": [
+        "x4",
+        "x28",
+        "x196",
+        "x224"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 19,
+      "case_id": "A120605",
+      "expected_badges": [
+        "x4",
+        "x36",
+        "x324",
+        "x336"
+      ],
+      "observed_tree_region_badges": [
+        "x4",
+        "x36",
+        "x324",
+        "x336"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 20,
+      "case_id": "A120606",
+      "expected_badges": [
+        "x3",
+        "x12",
+        "x48",
+        "x84"
+      ],
+      "observed_tree_region_badges": [
+        "x3",
+        "x12",
+        "x48",
+        "x84"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 21,
+      "case_id": "A120607",
+      "expected_badges": [
+        "x3",
+        "x15",
+        "x75",
+        "x120"
+      ],
+      "observed_tree_region_badges": [
+        "x3",
+        "x15",
+        "x75",
+        "x120"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 22,
+      "case_id": "A244594",
+      "expected_badges": [
+        "x1",
+        "x4",
+        "x16",
+        "x1"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x4",
+        "x16",
+        "x1"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 23,
+      "case_id": "A244627",
+      "expected_badges": [
+        "x2",
+        "x10",
+        "x50",
+        "x4"
+      ],
+      "observed_tree_region_badges": [
+        "x2",
+        "x10",
+        "x50",
+        "x4"
+      ],
+      "status": "pass"
+    },
+    {
+      "page": 24,
+      "case_id": "A244856",
+      "expected_badges": [
+        "x1",
+        "x7",
+        "x49",
+        "x4"
+      ],
+      "observed_tree_region_badges": [
+        "x1",
+        "x7",
+        "x49",
+        "x4"
+      ],
+      "status": "pass"
+    }
+  ]
+}

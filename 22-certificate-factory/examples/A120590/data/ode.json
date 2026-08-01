@@ -1,0 +1,6 @@
+{
+  "canonical_source": "case.json#/objects/ode_from_recurrence",
+  "order": 2,
+  "quality_repair": "replaced algebraic first-order fallback pointer with existing verified scalar linear ODE",
+  "status": "verified"
+}

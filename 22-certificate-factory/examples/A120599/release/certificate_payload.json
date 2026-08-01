@@ -1,0 +1,756 @@
+{
+  "case_id": "A120599",
+  "compact_exact_matrices": {},
+  "matrix_summary": {
+    "G_or_Gx_shape": [
+      10,
+      10
+    ],
+    "X_shape": [
+      4,
+      5
+    ],
+    "nullity": 1,
+    "rank": 4
+  },
+  "normalized_records": {
+    "checks/results.json": {
+      "checks": {
+        "defining_equation_terms_integral": {
+          "count": 24,
+          "status": "pass"
+        },
+        "oeis_initial_terms_match": {
+          "count": 6,
+          "status": "pass"
+        }
+      },
+      "status": "verified"
+    },
+    "data/coefficient_formula.json": {
+      "d": "4",
+      "formula": "a(n)=d/n * [u^(n-1)] D(u)^(-n), n>=1",
+      "status": "verified"
+    },
+    "data/contour.json": {
+      "D": "1-5*u^1-20*u^2-40*u^3-32*u^4",
+      "coefficient_integral": "a(n)=(4)/(2*pi*i*n) * integral_gamma du/rho(u)^n, n>=1",
+      "component": "contour",
+      "contour": "small positively oriented loop around u=0",
+      "ogf_integral": "A(x)=1-(4)/(2*pi*i)*integral_gamma log(1-x/rho(u)) du",
+      "rho": "u*(1-5*u^1-20*u^2-40*u^3-32*u^4)",
+      "status": "verified"
+    },
+    "data/integrand_analysis.json": {
+      "G": {
+        "definition": "coeff(rho*a-rho'*b), with deg(a),deg(b)<deg(rho)",
+        "invertibility_witness": "resultant(rho,rho')=968032256",
+        "shape": [
+          10,
+          10
+        ]
+      },
+      "expected_shift_count_for_first_nullvector": 5,
+      "integrand": "(4)/(n*(-32*u**5 - 40*u**4 - 20*u**3 - 5*u**2 + u)^n)",
+      "kernel_class": "polynomial_power",
+      "q3_algorithm_relation": "same exact G/U/V construction; replace hard-coded normalized rho_q by this rho",
+      "remainder_dimension": 4,
+      "required_change": "parameterize the existing polynomial-kernel entry point; no change to Lower(w,m)=U*w-J*V*w/m",
+      "status": "verified",
+      "term_shift_ratio": "n/((n+s)*(-32*u**5 - 40*u**4 - 20*u**3 - 5*u**2 + u)^s)"
+    },
+    "data/inverse_map.json": {
+      "D_coefficients_by_power": {
+        "0": "1",
+        "1": "-(5)",
+        "2": "-(20)",
+        "3": "-(40)",
+        "4": "-(32)"
+      },
+      "equation": "T=x/D(T)",
+      "shift": "A(x)=1+d*T(x)",
+      "status": "verified"
+    },
+    "data/ode.json": {
+      "canonical_source": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
+      "statistics": {
+        "G_nonzero": 50,
+        "G_shape": [
+          10,
+          10
+        ],
+        "X_rank": 4,
+        "X_shape": [
+          4,
+          5
+        ],
+        "certificate_degree_n": 3,
+        "certificate_degree_u": 16,
+        "checks_passed": 7,
+        "checks_total": 7,
+        "denominator_degree": 5,
+        "nullity": 1,
+        "recurrence_degree": 4,
+        "recurrence_order": 4
+      },
+      "status": "verified"
+    },
+    "data/recurrence.json": {
+      "canonical_source": "release/certificate_payload.json.gz#/objects/p_recurrence",
+      "statistics": {
+        "G_nonzero": 50,
+        "G_shape": [
+          10,
+          10
+        ],
+        "X_rank": 4,
+        "X_shape": [
+          4,
+          5
+        ],
+        "certificate_degree_n": 3,
+        "certificate_degree_u": 16,
+        "checks_passed": 7,
+        "checks_total": 7,
+        "denominator_degree": 5,
+        "nullity": 1,
+        "recurrence_degree": 4,
+        "recurrence_order": 4
+      },
+      "status": "verified"
+    },
+    "data/set_elements_n_le_3.json": {
+      "checks": {
+        "1": {
+          "enumerated": 4,
+          "pass": true,
+          "published_term": 4
+        },
+        "2": {
+          "enumerated": 20,
+          "pass": true,
+          "published_term": 20
+        },
+        "3": {
+          "enumerated": 280,
+          "pass": true,
+          "published_term": 280
+        }
+      },
+      "elements_by_true_leaf_count": {
+        "1": [
+          "root[0](l)",
+          "root[1](l)",
+          "root[2](l)",
+          "root[3](l)"
+        ],
+        "2": [
+          "root[0](Delta_2[0](l,l))",
+          "root[0](Delta_2[1](l,l))",
+          "root[0](Delta_2[2](l,l))",
+          "root[0](Delta_2[3](l,l))",
+          "root[0](Delta_2[4](l,l))",
+          "root[1](Delta_2[0](l,l))",
+          "root[1](Delta_2[1](l,l))",
+          "root[1](Delta_2[2](l,l))",
+          "root[1](Delta_2[3](l,l))",
+          "root[1](Delta_2[4](l,l))",
+          "root[2](Delta_2[0](l,l))",
+          "root[2](Delta_2[1](l,l))",
+          "root[2](Delta_2[2](l,l))",
+          "root[2](Delta_2[3](l,l))",
+          "root[2](Delta_2[4](l,l))",
+          "root[3](Delta_2[0](l,l))",
+          "root[3](Delta_2[1](l,l))",
+          "root[3](Delta_2[2](l,l))",
+          "root[3](Delta_2[3](l,l))",
+          "root[3](Delta_2[4](l,l))"
+        ],
+        "3": [
+          "root[0](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[3](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[4](l,Delta_2[0](l,l)))",
+          "root[0](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[3](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[4](l,Delta_2[1](l,l)))",
+          "root[0](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[3](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[4](l,Delta_2[2](l,l)))",
+          "root[0](Delta_2[0](l,Delta_2[3](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[3](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[3](l,l)))",
+          "root[0](Delta_2[3](l,Delta_2[3](l,l)))",
+          "root[0](Delta_2[4](l,Delta_2[3](l,l)))",
+          "root[0](Delta_2[0](l,Delta_2[4](l,l)))",
+          "root[0](Delta_2[1](l,Delta_2[4](l,l)))",
+          "root[0](Delta_2[2](l,Delta_2[4](l,l)))",
+          "root[0](Delta_2[3](l,Delta_2[4](l,l)))",
+          "root[0](Delta_2[4](l,Delta_2[4](l,l)))",
+          "root[0](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[3](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[4](Delta_2[0](l,l),l))",
+          "root[0](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[3](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[4](Delta_2[1](l,l),l))",
+          "root[0](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[0](Delta_2[3](Delta_2[2](l,l),l))",
+          "root[0](Delta_2[4](Delta_2[2](l,l),l))",
+          "root[0](Delta_2[0](Delta_2[3](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[3](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[3](l,l),l))",
+          "root[0](Delta_2[3](Delta_2[3](l,l),l))",
+          "root[0](Delta_2[4](Delta_2[3](l,l),l))",
+          "root[0](Delta_2[0](Delta_2[4](l,l),l))",
+          "root[0](Delta_2[1](Delta_2[4](l,l),l))",
+          "root[0](Delta_2[2](Delta_2[4](l,l),l))",
+          "root[0](Delta_2[3](Delta_2[4](l,l),l))",
+          "root[0](Delta_2[4](Delta_2[4](l,l),l))",
+          "root[0](Delta_3[0](l,l,l))",
+          "root[0](Delta_3[1](l,l,l))",
+          "root[0](Delta_3[2](l,l,l))",
+          "root[0](Delta_3[3](l,l,l))",
+          "root[0](Delta_3[4](l,l,l))",
+          "root[0](Delta_3[5](l,l,l))",
+          "root[0](Delta_3[6](l,l,l))",
+          "root[0](Delta_3[7](l,l,l))",
+          "root[0](Delta_3[8](l,l,l))",
+          "root[0](Delta_3[9](l,l,l))",
+          "root[0](Delta_3[10](l,l,l))",
+          "root[0](Delta_3[11](l,l,l))",
+          "root[0](Delta_3[12](l,l,l))",
+          "root[0](Delta_3[13](l,l,l))",
+          "root[0](Delta_3[14](l,l,l))",
+          "root[0](Delta_3[15](l,l,l))",
+          "root[0](Delta_3[16](l,l,l))",
+          "root[0](Delta_3[17](l,l,l))",
+          "root[0](Delta_3[18](l,l,l))",
+          "root[0](Delta_3[19](l,l,l))",
+          "root[1](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[3](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[4](l,Delta_2[0](l,l)))",
+          "root[1](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[3](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[4](l,Delta_2[1](l,l)))",
+          "root[1](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[3](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[4](l,Delta_2[2](l,l)))",
+          "root[1](Delta_2[0](l,Delta_2[3](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[3](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[3](l,l)))",
+          "root[1](Delta_2[3](l,Delta_2[3](l,l)))",
+          "root[1](Delta_2[4](l,Delta_2[3](l,l)))",
+          "root[1](Delta_2[0](l,Delta_2[4](l,l)))",
+          "root[1](Delta_2[1](l,Delta_2[4](l,l)))",
+          "root[1](Delta_2[2](l,Delta_2[4](l,l)))",
+          "root[1](Delta_2[3](l,Delta_2[4](l,l)))",
+          "root[1](Delta_2[4](l,Delta_2[4](l,l)))",
+          "root[1](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[3](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[4](Delta_2[0](l,l),l))",
+          "root[1](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[3](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[4](Delta_2[1](l,l),l))",
+          "root[1](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[1](Delta_2[3](Delta_2[2](l,l),l))",
+          "root[1](Delta_2[4](Delta_2[2](l,l),l))",
+          "root[1](Delta_2[0](Delta_2[3](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[3](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[3](l,l),l))",
+          "root[1](Delta_2[3](Delta_2[3](l,l),l))",
+          "root[1](Delta_2[4](Delta_2[3](l,l),l))",
+          "root[1](Delta_2[0](Delta_2[4](l,l),l))",
+          "root[1](Delta_2[1](Delta_2[4](l,l),l))",
+          "root[1](Delta_2[2](Delta_2[4](l,l),l))",
+          "root[1](Delta_2[3](Delta_2[4](l,l),l))",
+          "root[1](Delta_2[4](Delta_2[4](l,l),l))",
+          "root[1](Delta_3[0](l,l,l))",
+          "root[1](Delta_3[1](l,l,l))",
+          "root[1](Delta_3[2](l,l,l))",
+          "root[1](Delta_3[3](l,l,l))",
+          "root[1](Delta_3[4](l,l,l))",
+          "root[1](Delta_3[5](l,l,l))",
+          "root[1](Delta_3[6](l,l,l))",
+          "root[1](Delta_3[7](l,l,l))",
+          "root[1](Delta_3[8](l,l,l))",
+          "root[1](Delta_3[9](l,l,l))",
+          "root[1](Delta_3[10](l,l,l))",
+          "root[1](Delta_3[11](l,l,l))",
+          "root[1](Delta_3[12](l,l,l))",
+          "root[1](Delta_3[13](l,l,l))",
+          "root[1](Delta_3[14](l,l,l))",
+          "root[1](Delta_3[15](l,l,l))",
+          "root[1](Delta_3[16](l,l,l))",
+          "root[1](Delta_3[17](l,l,l))",
+          "root[1](Delta_3[18](l,l,l))",
+          "root[1](Delta_3[19](l,l,l))",
+          "root[2](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[3](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[4](l,Delta_2[0](l,l)))",
+          "root[2](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[3](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[4](l,Delta_2[1](l,l)))",
+          "root[2](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[3](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[4](l,Delta_2[2](l,l)))",
+          "root[2](Delta_2[0](l,Delta_2[3](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[3](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[3](l,l)))",
+          "root[2](Delta_2[3](l,Delta_2[3](l,l)))",
+          "root[2](Delta_2[4](l,Delta_2[3](l,l)))",
+          "root[2](Delta_2[0](l,Delta_2[4](l,l)))",
+          "root[2](Delta_2[1](l,Delta_2[4](l,l)))",
+          "root[2](Delta_2[2](l,Delta_2[4](l,l)))",
+          "root[2](Delta_2[3](l,Delta_2[4](l,l)))",
+          "root[2](Delta_2[4](l,Delta_2[4](l,l)))",
+          "root[2](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[3](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[4](Delta_2[0](l,l),l))",
+          "root[2](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[3](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[4](Delta_2[1](l,l),l))",
+          "root[2](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[2](Delta_2[3](Delta_2[2](l,l),l))",
+          "root[2](Delta_2[4](Delta_2[2](l,l),l))",
+          "root[2](Delta_2[0](Delta_2[3](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[3](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[3](l,l),l))",
+          "root[2](Delta_2[3](Delta_2[3](l,l),l))",
+          "root[2](Delta_2[4](Delta_2[3](l,l),l))",
+          "root[2](Delta_2[0](Delta_2[4](l,l),l))",
+          "root[2](Delta_2[1](Delta_2[4](l,l),l))",
+          "root[2](Delta_2[2](Delta_2[4](l,l),l))",
+          "root[2](Delta_2[3](Delta_2[4](l,l),l))",
+          "root[2](Delta_2[4](Delta_2[4](l,l),l))",
+          "root[2](Delta_3[0](l,l,l))",
+          "root[2](Delta_3[1](l,l,l))",
+          "root[2](Delta_3[2](l,l,l))",
+          "root[2](Delta_3[3](l,l,l))",
+          "root[2](Delta_3[4](l,l,l))",
+          "root[2](Delta_3[5](l,l,l))",
+          "root[2](Delta_3[6](l,l,l))",
+          "root[2](Delta_3[7](l,l,l))",
+          "root[2](Delta_3[8](l,l,l))",
+          "root[2](Delta_3[9](l,l,l))",
+          "root[2](Delta_3[10](l,l,l))",
+          "root[2](Delta_3[11](l,l,l))",
+          "root[2](Delta_3[12](l,l,l))",
+          "root[2](Delta_3[13](l,l,l))",
+          "root[2](Delta_3[14](l,l,l))",
+          "root[2](Delta_3[15](l,l,l))",
+          "root[2](Delta_3[16](l,l,l))",
+          "root[2](Delta_3[17](l,l,l))",
+          "root[2](Delta_3[18](l,l,l))",
+          "root[2](Delta_3[19](l,l,l))",
+          "root[3](Delta_2[0](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[3](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[4](l,Delta_2[0](l,l)))",
+          "root[3](Delta_2[0](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[3](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[4](l,Delta_2[1](l,l)))",
+          "root[3](Delta_2[0](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[3](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[4](l,Delta_2[2](l,l)))",
+          "root[3](Delta_2[0](l,Delta_2[3](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[3](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[3](l,l)))",
+          "root[3](Delta_2[3](l,Delta_2[3](l,l)))",
+          "root[3](Delta_2[4](l,Delta_2[3](l,l)))",
+          "root[3](Delta_2[0](l,Delta_2[4](l,l)))",
+          "root[3](Delta_2[1](l,Delta_2[4](l,l)))",
+          "root[3](Delta_2[2](l,Delta_2[4](l,l)))",
+          "root[3](Delta_2[3](l,Delta_2[4](l,l)))",
+          "root[3](Delta_2[4](l,Delta_2[4](l,l)))",
+          "root[3](Delta_2[0](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[3](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[4](Delta_2[0](l,l),l))",
+          "root[3](Delta_2[0](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[3](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[4](Delta_2[1](l,l),l))",
+          "root[3](Delta_2[0](Delta_2[2](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[2](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[2](l,l),l))",
+          "root[3](Delta_2[3](Delta_2[2](l,l),l))",
+          "root[3](Delta_2[4](Delta_2[2](l,l),l))",
+          "root[3](Delta_2[0](Delta_2[3](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[3](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[3](l,l),l))",
+          "root[3](Delta_2[3](Delta_2[3](l,l),l))",
+          "root[3](Delta_2[4](Delta_2[3](l,l),l))",
+          "root[3](Delta_2[0](Delta_2[4](l,l),l))",
+          "root[3](Delta_2[1](Delta_2[4](l,l),l))",
+          "root[3](Delta_2[2](Delta_2[4](l,l),l))",
+          "root[3](Delta_2[3](Delta_2[4](l,l),l))",
+          "root[3](Delta_2[4](Delta_2[4](l,l),l))",
+          "root[3](Delta_3[0](l,l,l))",
+          "root[3](Delta_3[1](l,l,l))",
+          "root[3](Delta_3[2](l,l,l))",
+          "root[3](Delta_3[3](l,l,l))",
+          "root[3](Delta_3[4](l,l,l))",
+          "root[3](Delta_3[5](l,l,l))",
+          "root[3](Delta_3[6](l,l,l))",
+          "root[3](Delta_3[7](l,l,l))",
+          "root[3](Delta_3[8](l,l,l))",
+          "root[3](Delta_3[9](l,l,l))",
+          "root[3](Delta_3[10](l,l,l))",
+          "root[3](Delta_3[11](l,l,l))",
+          "root[3](Delta_3[12](l,l,l))",
+          "root[3](Delta_3[13](l,l,l))",
+          "root[3](Delta_3[14](l,l,l))",
+          "root[3](Delta_3[15](l,l,l))",
+          "root[3](Delta_3[16](l,l,l))",
+          "root[3](Delta_3[17](l,l,l))",
+          "root[3](Delta_3[18](l,l,l))",
+          "root[3](Delta_3[19](l,l,l))"
+        ]
+      },
+      "encoding": "prefix depth-first Delta word; l=true leaf; constructor suffix [c] is a finite color; false slots are suppressed and recoverable from the model metadata",
+      "maximum_true_leaves": 3,
+      "status": "verified"
+    },
+    "data/terms.json": {
+      "oeis_prefix_checked": [
+        1,
+        4,
+        20,
+        280,
+        4660,
+        86728
+      ],
+      "status": "verified",
+      "terms": [
+        1,
+        4,
+        20,
+        280,
+        4660,
+        86728,
+        1727880,
+        36047280,
+        777470580,
+        17195957480,
+        387906427480,
+        8890184148560,
+        206419640698440,
+        4845319424269520,
+        114791477960006800,
+        2741248077305459040,
+        65915164046356799220,
+        1594598219827695833640,
+        38782974229616694079800,
+        947763561432218916176400,
+        23260169594331647559707160,
+        573055291303968526824841840,
+        14167513861517398219221337200,
+        351372806952476563815640528800
+      ]
+    },
+    "data/tree_model.json": {
+      "attempts": [
+        {
+          "approach": "shift equation, integral finite-color grammar, coefficient comparison",
+          "result": "pass",
+          "terms_tested": 23
+        }
+      ],
+      "branch_multiplicities": {
+        "Delta_2": 5,
+        "Delta_3": 20,
+        "Delta_4": 40,
+        "Delta_5": 32
+      },
+      "classification": "colored_unweighted",
+      "component": "tree_model",
+      "normalization": "A(x)=1+(4)*T(x)",
+      "recursive_equation": "T=x+5*T^2+20*T^3+40*T^4+32*T^5",
+      "status": "verified",
+      "word_model": {
+        "alphabet": [
+          "l",
+          "Delta_2",
+          "Delta_3",
+          "Delta_4",
+          "Delta_5"
+        ],
+        "colors": "branch multiplicity labels distinguish constructors of the same arity",
+        "false_leaves": "restored as the q-k unused positions of a full Delta_q slot mask",
+        "true_leaf": "l",
+        "validity": "depth-first tree word; total weight -1; every proper prefix has nonnegative open-slot balance",
+        "weights": {
+          "Delta_2": 1,
+          "Delta_3": 2,
+          "Delta_4": 3,
+          "Delta_5": 4,
+          "l": -1
+        }
+      }
+    },
+    "input/case_spec.json": {
+      "b": 32,
+      "c": 12,
+      "equation": "13*A(x)=12+32*x+A(x)^5",
+      "linear_coefficient_d": "4",
+      "q": 5,
+      "r": 13,
+      "status": "verified"
+    }
+  },
+  "note": "Full matrix entries remain at the precise canonical source above to avoid overwhelming the presentation PDF.",
+  "resolved_certificate": {
+    "denominator_base": "-32*u**5 - 40*u**4 - 20*u**3 - 5*u**2 + u",
+    "denominator_power": 3,
+    "formula": "R(n,u)=N(n,u)/rho(u)^(q-2)",
+    "numerator_N": "-10485760000*n**3*u**16 - 41943040000*n**3*u**15 - 78643200000*n**3*u**14 - 91750400000*n**3*u**13 - 72523776000*n**3*u**12 - 38658048000*n**3*u**11 - 12153856000*n**3*u**10 - 366080000*n**3*u**9 + 1711590400*n**3*u**8 + 824012800*n**3*u**7 + 128419200*n**3*u**6 - 37086400*n**3*u**5 - 20544160*n**3*u**4 - 2084560*n**3*u**3 + 674140*n**3*u**2 + 189790*n**3*u - 14771*n**3 - 44040192000*n**2*u**16 - 176160768000*n**2*u**15 - 330301440000*n**2*u**14 - 385351680000*n**2*u**13 - 304855449600*n**2*u**12 - 163278028800*n**2*u**11 - 52506009600*n**2*u**10 - 2923008000*n**2*u**9 + 6357575680*n**2*u**8 + 3177589760*n**2*u**7 + 522336640*n**2*u**6 - 123306880*n**2*u**5 - 71909520*n**2*u**4 - 7472360*n**2*u**3 + 2125900*n**2*u**2 + 590410*n**2*u - 44313*n**2 - 54945382400*n*u**16 - 219781529600*n*u**15 - 412090368000*n*u**14 - 480772096000*n*u**13 - 380944711680*n*u**12 - 205977354240*n*u**11 - 69265940480*n*u**10 - 7311462400*n*u**9 + 5662940160*n*u**8 + 3135616000*n*u**7 + 554235520*n*u**6 - 91889280*n*u**5 - 57512480*n*u**4 - 5616760*n*u**3 + 1525440*n*u**2 + 400620*n*u - 29542*n - 19377684480*u**16 - 77510737920*u**15 - 145332633600*u**14 - 169554739200*u**13 - 134811156480*u**12 - 74482974720*u**11 - 27581030400*u**10 - 5724364800*u**9 - 3548160*u**8 + 328796160*u**7 + 61353600*u**6 - 6652800*u**5 - 1626240*u**4 + 147840*u**3"
+  },
+  "resolved_certificate_source": "release/certificate_payload.json.gz#/objects/rational_certificate",
+  "resolved_matrices_sha256": "401fed22bf3abe62e268ffee3de3a61744aad35b3b6e305de6539a40fa4315fe",
+  "resolved_matrices_source": "release/certificate_payload.json.gz#/objects/matrices",
+  "resolved_ode": {
+    "boundary_polynomial": "0",
+    "coefficient_correspondence": {
+      "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
+      "samples": [
+        {
+          "difference": "0",
+          "n": 1,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 2,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 3,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 4,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 5,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 6,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 7,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 8,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 9,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 10,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 11,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 12,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 13,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 14,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        },
+        {
+          "difference": "0",
+          "n": 15,
+          "ode_coefficient": "0",
+          "recurrence_residual": "0"
+        }
+      ]
+    },
+    "ordinary_derivative_form": {
+      "coefficients": [
+        "591360*x**4",
+        "-16320000*x**5 - 6120000*x**4",
+        "-37440000*x**6 - 28080000*x**5 - 5265000*x**4",
+        "-16000000*x**7 - 18000000*x**6 - 6750000*x**5 - 843750*x**4",
+        "-1600000*x**8 - 2400000*x**7 - 1350000*x**6 - 337500*x**5 + 14771*x**4"
+      ],
+      "identity": "sum_j C_j(x) d^j A_q(x)/dx^j = B_q(x)",
+      "order": 4
+    },
+    "series": "A_q(x)",
+    "status": "complete",
+    "theta_definition": "theta=x*d/dx",
+    "theta_operator": {
+      "identity": "L_q(x,theta)=sum_{r=0}^{s} x^(s-r) P_r(theta-r)",
+      "terms": [
+        {
+          "polynomial_in_theta": "-1600000*theta**4 - 6400000*theta**3 - 7040000*theta**2 - 1280000*theta + 591360",
+          "shift": 0,
+          "source": "P_0(theta-0)",
+          "x_power": 4
+        },
+        {
+          "polynomial_in_theta": "-2400000*theta**4 - 3600000*theta**3 - 480000*theta**2 + 360000*theta",
+          "shift": 1,
+          "source": "P_1(theta-1)",
+          "x_power": 3
+        },
+        {
+          "polynomial_in_theta": "-1350000*theta**4 + 1350000*theta**3 + 135000*theta**2 - 135000*theta",
+          "shift": 2,
+          "source": "P_2(theta-2)",
+          "x_power": 2
+        },
+        {
+          "polynomial_in_theta": "-337500*theta**4 + 1181250*theta**3 - 1181250*theta**2 + 337500*theta",
+          "shift": 3,
+          "source": "P_3(theta-3)",
+          "x_power": 1
+        },
+        {
+          "polynomial_in_theta": "14771*theta**4 - 88626*theta**3 + 162481*theta**2 - 88626*theta",
+          "shift": 4,
+          "source": "P_4(theta-4)",
+          "x_power": 0
+        }
+      ]
+    },
+    "validity": {
+      "safe_series_exponent_range": [
+        0,
+        19
+      ],
+      "source_recurrence_valid_from_n": 1
+    },
+    "verification": {
+      "recurrence_coefficient_correspondence": {
+        "checked_n": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15
+        ],
+        "max_absolute_difference": 0,
+        "pass": true,
+        "relation": "ODE coefficient equals recurrence residual"
+      },
+      "series_residual": {
+        "checked_exponents": [
+          0,
+          19
+        ],
+        "max_absolute_residual": 0,
+        "pass": true,
+        "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+      }
+    }
+  },
+  "resolved_ode_source": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
+  "resolved_recurrence": {
+    "coefficients": [
+      "-1600000*n**4 - 6400000*n**3 - 7040000*n**2 - 1280000*n + 591360",
+      "-2400000*n**4 - 13200000*n**3 - 25680000*n**2 - 21000000*n - 6120000",
+      "-1350000*n**4 - 9450000*n**3 - 24165000*n**2 - 26595000*n - 10530000",
+      "-337500*n**4 - 2868750*n**3 - 8775000*n**2 - 11306250*n - 5062500",
+      "14771*n**4 + 147710*n**3 + 516985*n**2 + 738550*n + 354504"
+    ],
+    "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+    "order": 4,
+    "valid_from_n": 1
+  },
+  "resolved_recurrence_source": "release/certificate_payload.json.gz#/objects/p_recurrence",
+  "schema_version": "1.0",
+  "status": "verified"
+}

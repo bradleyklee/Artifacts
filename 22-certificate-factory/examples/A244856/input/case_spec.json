@@ -1,0 +1,8 @@
+{
+  "equation": "(5-1*x)*A(x)=4+A(x)^4",
+  "linear_coefficient_d": "1",
+  "q": 4,
+  "r": 5,
+  "s": 1,
+  "status": "verified"
+}

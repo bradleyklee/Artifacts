@@ -1,0 +1,62 @@
+{
+  "checks": {
+    "Gx_Ux_Vx_split": {
+      "detail": "0",
+      "pass": true
+    },
+    "Gx_inverse_replayed": {
+      "detail": "0",
+      "pass": true
+    },
+    "Gx_invertible": {
+      "detail": "0",
+      "pass": true
+    },
+    "X_rank_nullity": {
+      "detail": "0",
+      "pass": true
+    },
+    "corrected_integrand_certificate": {
+      "detail": "0",
+      "pass": true
+    },
+    "normalized_q3_translator_detected_inapplicable": {
+      "detail": "0",
+      "pass": true
+    },
+    "published_terms_recurrence": {
+      "detail": "0",
+      "pass": true
+    },
+    "recurrence_ode_correspondence": {
+      "detail": "0",
+      "pass": true
+    },
+    "recurrence_ode_series": {
+      "detail": "0",
+      "pass": true
+    }
+  },
+  "passed_checks": 9,
+  "statistics": {
+    "Gx_determinant": "-27*x**4 + 540*x**3 - 4050*x**2 + 13500*x - 491",
+    "Gx_nonzero": 36,
+    "Gx_shape": [
+      8,
+      8
+    ],
+    "X_rank": 3,
+    "X_shape": [
+      3,
+      4
+    ],
+    "certificate_degree_u": 10,
+    "certificate_degree_x": 4,
+    "ode_for_A_prime_order": 3,
+    "peak_rss_kib": 74560,
+    "recurrence_order": 5,
+    "wall_seconds": 8.18998242699945
+  },
+  "status": "verified",
+  "total_checks": 9
+}

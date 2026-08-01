@@ -1,0 +1,13 @@
+{
+  "checks": {
+    "defining_equation_terms_integral": {
+      "count": 24,
+      "status": "pass"
+    },
+    "oeis_initial_terms_match": {
+      "count": 6,
+      "status": "pass"
+    }
+  },
+  "status": "verified"
+}

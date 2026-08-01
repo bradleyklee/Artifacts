@@ -1,0 +1,8 @@
+{
+  "case_id": "A120594",
+  "last_completed_stage": "term recurrence checks",
+  "learned": "G/U/V, rank/nullity, certificate construction, cleared telescoping identity, and term checks passed. A normalized-q4 worked-example assertion was incorrectly applied to a scaled q4 kernel.",
+  "reason_code": "normalization_specific_validation_guard",
+  "resource_failure": false,
+  "status": "resolved_in_same_shot"
+}

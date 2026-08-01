@@ -256,7 +256,16 @@ def progress(stage: str, message: str) -> None:
     emit_progress(stage, message)
 
 
-def build_case(q: int, case_dir: Path, term_limit: int) -> dict:
+def build_case(
+    q: int,
+    case_dir: Path,
+    term_limit: int,
+    *,
+    D_override: sp.Expr | None = None,
+    terms_override: list[int] | None = None,
+    check_normalized_plaintext: bool = True,
+    initial_vector_override: sp.Matrix | None = None,
+) -> dict:
     started = time.perf_counter()
     cpu_started = time.process_time()
     stage_started = started
@@ -279,7 +288,7 @@ def build_case(q: int, case_dir: Path, term_limit: int) -> dict:
     case_dir.mkdir(parents=True, exist_ok=True)
 
     mark("INPUT", f"q={q}; term_limit={term_limit}; output={display_path(case_dir)}")
-    D = D_q(q)
+    D = D_q(q) if D_override is None else sp.expand(D_override)
     rho = sp.expand(u * D)
     degree = sp.degree(rho, u)
     if degree != q:
@@ -333,8 +342,11 @@ def build_case(q: int, case_dir: Path, term_limit: int) -> dict:
     finish_stage("UVJ")
     progress("U/V/J", "exact split G*[U;V]=E verified")
     mark("POLE LOWERING", f"reducing {q} shifts one at a time")
-    initial_vector = sp.zeros(q, 1)
-    initial_vector[0] = 1
+    initial_vector = sp.zeros(q, 1) if initial_vector_override is None else initial_vector_override
+    if initial_vector.shape != (q, 1):
+        raise AssertionError("initial_vector_override must have shape (q,1)")
+    if initial_vector_override is None:
+        initial_vector[0] = 1
 
     reduced_columns: list[sp.Matrix] = []
     shift_records: list[list[dict]] = []
@@ -481,7 +493,13 @@ def build_case(q: int, case_dir: Path, term_limit: int) -> dict:
     mark("TERM CHECKS", f"computing independent terms through n={term_limit}")
 
     # Independent term checks from the multinomial profile formula.
-    terms = [profile_count(q, index) for index in range(term_limit + 1)]
+    terms = (
+        [profile_count(q, index) for index in range(term_limit + 1)]
+        if terms_override is None
+        else terms_override[: term_limit + 1]
+    )
+    if len(terms) != term_limit + 1:
+        raise AssertionError("terms_override is shorter than term_limit+1")
     recurrence_checks: list[tuple[int, int]] = []
     for start in range(1, term_limit - q + 2):
         residual = sum(
@@ -513,7 +531,7 @@ def build_case(q: int, case_dir: Path, term_limit: int) -> dict:
         "empty object (count 1)",
         "",
     ]
-    for leaves in range(1, 4):
+    for leaves in range(1, 4) if check_normalized_plaintext else ():
         trees = plaintext_trees(q, leaves)
         expected = terms[leaves]
         if len(trees) != expected:
@@ -533,7 +551,7 @@ def build_case(q: int, case_dir: Path, term_limit: int) -> dict:
 
     # q=4 must reproduce the worked recurrence exactly.
     q4_match = None
-    if q == 4:
+    if q == 4 and D_override is None:
         expected_q4 = sp.Matrix(
             [
                 -8 * (4 * n + 5) * (2 * n + 1) * (4 * n - 1),
@@ -706,7 +724,7 @@ def build_case(q: int, case_dir: Path, term_limit: int) -> dict:
             "certificate_numerator_polynomial": True,
             "cleared_telescoping_identity_zero": True,
             "multinomial_recurrence_checks_zero": True,
-            "plaintext_counts_match_multinomial_n0_n3": True,
+            "plaintext_counts_match_multinomial_n0_n3": check_normalized_plaintext,
         },
         "elapsed_seconds": elapsed,
     }

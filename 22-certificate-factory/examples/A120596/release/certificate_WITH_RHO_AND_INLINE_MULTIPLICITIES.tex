@@ -1,0 +1,55 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=.25in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,xcolor,tikz,hyperref,embedfile,microtype}
+\usetikzlibrary{trees}
+\hypersetup{colorlinks=true,urlcolor=blue!55!black}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\linespread{1.035}\selectfont
+\definecolor{navy}{RGB}{25,54,86}
+\definecolor{soft}{RGB}{244,247,250}
+\tikzset{branch/.style={circle,draw=navy,line width=.6pt,inner sep=2pt},trueleaf/.style={circle,draw=navy,fill=navy,inner sep=2.1pt},falseleaf/.style={circle,draw=navy,fill=white,inner sep=1.8pt}}
+\newcommand{\sectionbar}[1]{\vspace{3pt}{\color{navy}\bfseries #1}\par\vspace{2pt}\hrule\vspace{4pt}}
+\begin{document}
+\enlargethispage{.12in}
+
+\embedfile[desc={A120596 exact certificate payload},mimetype=application/json]{certificate_payload.json}
+{\color{navy}\LARGE\bfseries A120596 concise calculus certificate}\hfill{\small VERIFIED}\\[-1pt]
+{\small Bradley Klee, \quad Mech.An.ika Sol (Open AI) \hfill July 31, 2026}
+
+\sectionbar{Definition and first terms}
+\(\displaystyle 6\,A(x)=5+1\,x+A(x)^{5}\), with the origin-normalized solution.\\
+{\footnotesize Normalization/grammar: \texttt{A(x)=1+(1)*T(x); T=x+10*T\textasciicircum{}2+10*T\textasciicircum{}3+5*T\textasciicircum{}4+1*T\textasciicircum{}5}.}\\
+\(a(0),\ldots,a(7)=1,1,10,210,5505,161601,5082420,167451780\).\\[2pt]
+{\small Kernel used throughout: \(\displaystyle \rho(u)=u\,(1-10\,u^{1}-10\,u^{2}-5\,u^{3}-1\,u^{4})\), so \(x=\rho(T(x))\).}
+
+\sectionbar{Typogeometry}
+\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[trueleaf] (n0) {};\end{tikzpicture}\\[2pt]{\normalsize\texttt{1x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=orange!24] (n0) {} child {node[trueleaf] (n1) {}} child {node[trueleaf] (n2) {}} child {node[falseleaf] (n3) {}} child {node[falseleaf] (n4) {}} child {node[falseleaf] (n5) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{1,1,0,0,0\}x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=green!20] (n0) {} child {node[falseleaf] (n1) {}} child {node[falseleaf] (n2) {}} child {node[falseleaf] (n3) {}} child {node[trueleaf] (n4) {}} child {node[trueleaf] (n5) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{0,0,0,1,1\}x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=violet!16] (n0) {} child {node[trueleaf] (n1) {}} child {node[trueleaf] (n2) {}} child {node[trueleaf] (n3) {}} child {node[falseleaf] (n4) {}} child {node[falseleaf] (n5) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{1,1,1,0,0\}x1}}\end{minipage}
+
+{\footnotesize literal 5-slot geometry; empty positions are shown. Filled endpoints are true leaves; open endpoints are false/empty leaves. For colored grammars, color is genuine constructor data and is not silently converted into a positional zero pattern.}
+
+{\footnotesize Typogeometric constructor codes and multiplicities: \(\Delta_{2}\!:\,10,\;\Delta_{3}\!:\,10,\;\Delta_{4}\!:\,5,\;\Delta_{5}\!:\,1\).}
+
+\sectionbar{Coefficient and contour extraction}
+{\footnotesize \[\begin{gathered}\mathcal K_n=\{(k_1,\ldots,k_4)\in\mathbb Z_{\ge0}^{4}:\sum_{j=1}^{4}jk_j=n-1\},\quad K=\sum_{j=1}^{4}k_j,\\a(n)=\frac{1}{n}\sum_{\boldsymbol k\in\mathcal K_n}\binom{n+K-1}{K}\binom{K}{k_1,\ldots,k_4}10^{k_1} 10^{k_2} 5^{k_3} 1^{k_4}.\end{gathered}\]}
+\(a(n)=\dfrac{1}{2\pi i n}\oint_\gamma\dfrac{du}{\rho(u)^n},\quad n\ge1.\)
+
+\sectionbar{Recurrence}
+{\footnotesize \(\sum_{r=0}^{4}P_r(n)a(n+r)=0\), \(n\ge 1\), with \[\begin{aligned}P_{0}(n)&=-3125\,n^{4} - 12500\,n^{3} - 13750\,n^{2} - 2500\,n + 1155\\P_{1}(n)&=-62500\,n^{4} - 343750\,n^{3} - 668750\,n^{2} - 546875\,n - 159375\\P_{2}(n)&=-468750\,n^{4} - 3281250\,n^{3} - 8390625\,n^{2} - 9234375\,n - 3656250\\P_{3}(n)&=-1562500\,n^{4} - 13281250\,n^{3} - 40625000\,n^{2} - 52343750\,n - 23437500\\P_{4}(n)&=37531\,n^{4} + 375310\,n^{3} + 1313585\,n^{2} + 1876550\,n + 900744\end{aligned}\]}
+
+\sectionbar{Differential equation}
+{\footnotesize The scalar linear ODE has order 4. It is obtained from the recurrence by the standard Euler-operator substitution. Exact coefficients and boundary polynomial: \texttt{case.json\#/objects/ode\_from\_recurrence}.}
+
+\sectionbar{Matrices, telescoper certificate, and checks}
+{\small \(\text{No compact matrix tuple is shown; see the embedded exact reduction data.}\)}
+\par\vspace{6pt}
+{\small\textbf{Certificate.}\par\smallskip\(\displaystyle R(n,u)=N(n,u)/\rho(u)^{3},\ \deg_uN=16.\)\par}
+\vspace{4pt}
+{\small Telescoping identity: \(\sum_r P_r(n)H_{n+r}(u)=\partial_u\!\left(R(n,u)H_n(u)\right).\)\par}
+\vspace{4pt}
+{\footnotesize Matrix dimensions: \(10\times 10\); remainder \(4\times 5\), rank 4, nullity 1. The exact telescoping residual is zero. The recurrence reconstructs all 24 stored terms; 6/6 published OEIS prefix terms match.\par}
+
+\vfill
+\colorbox{soft}{\parbox{.97\textwidth}{\tiny Canonical records: \texttt{data/tree\_model.json}, \texttt{data/contour.json}, \texttt{data/matrices.json}, \texttt{data/recurrence.json}, \texttt{data/ode.json}. Embedded payload contains exact sources and SHA-256 matrix identifiers. Compare with the verbose certificate for A120590.}}
+\end{document}

@@ -1,0 +1,28 @@
+{
+  "schema_version": "1.0",
+  "ordering_rule": "polynomial kernels by denominator degree, then observable powers, then rational descendants",
+  "limits": {
+    "address_space_mib": 1024,
+    "case_wall_seconds": 300,
+    "project_bytes": 10485760,
+    "shot_wall_seconds": 900
+  },
+  "queue": [
+    {"case_id": "A120594", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120595", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120597", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120598", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120599", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120601", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120602", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120603", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120604", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120605", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120606", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120607", "kernel_class": "polynomial", "status": "verified"},
+    {"case_id": "A120589", "kernel_class": "polynomial_fixed_seed", "status": "verified", "maximality_standout": true},
+    {"case_id": "A120591", "kernel_class": "polynomial_fixed_seed", "status": "verified"},
+    {"case_id": "A244627", "kernel_class": "rational_direct_x", "status": "verified"},
+    {"case_id": "A244856", "kernel_class": "rational_direct_x_and_attached_term_shift", "status": "verified"}
+  ]
+}

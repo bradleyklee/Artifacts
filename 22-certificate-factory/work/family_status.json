@@ -1,0 +1,23 @@
+{
+  "canonical_component_coverage": {
+    "certificate": "23/23",
+    "coefficient_formula": "23/23",
+    "contour": "23/23",
+    "inverse_map": "23/23 verified_or_not_applicable",
+    "matrices": "23/23",
+    "ode": "23/23 verified linear ODEs",
+    "recurrence": "23/23",
+    "terms": "23/23",
+    "tree_model": "23/23"
+  },
+  "case_directory_coverage": "23/23",
+  "case_states": {
+    "ANALYTIC_COMPLETE": 23,
+    "PARTIAL": 0
+  },
+  "exact_terms_generated": 552,
+  "oeis_prefix_terms_checked": 138,
+  "schema_version": "1.0",
+  "strict_target_count": 23,
+  "typogeometric_coefficient_checks": 529
+}

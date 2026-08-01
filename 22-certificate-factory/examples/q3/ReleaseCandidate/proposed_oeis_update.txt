@@ -16,7 +16,7 @@
 %F (27*x^2+162*x-13)*A''(x)+27*(x+3)*A'(x)-3*A(x)=0,
 %F with A(0)=1 and A'(0)=1. - Bradley Klee, Jul 30 2026
 
-%H Bradley Klee and Harm.On.ica S-O-L 5.6 (OpenAI), Ternatrees and OEIS
+%H Bradley Klee and Mech.An.ika Sol (Open AI), Ternatrees and OEIS
 %H A120590: All the must-have identities, herein derived or re-proven,
 %H [insert stable PDF URL].
 

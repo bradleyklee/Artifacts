@@ -1,0 +1,45 @@
+{
+  "policy": "Preserve verified computation knowledge without guessing OEIS identities.",
+  "runs": [
+    {
+      "q": 6,
+      "leading_terms": [1, 1, 15, 470, 18390, 805806],
+      "matrix_dimension": 12,
+      "peak_rss_kib": 162668,
+      "validation": "146/146",
+      "direct_ode": true,
+      "source": "runs/q6/case.json",
+      "mapping_status": "unresolved"
+    },
+    {
+      "q": 7,
+      "leading_terms": [1, 1, 21, 917, 50015, 3054975],
+      "matrix_dimension": 14,
+      "peak_rss_kib": 77308,
+      "validation": "103/103",
+      "direct_ode": false,
+      "source": "runs/q7/case.json",
+      "mapping_status": "unresolved"
+    },
+    {
+      "q": 8,
+      "leading_terms": [1, 1, 28, 1624, 117670, 9548392],
+      "matrix_dimension": 16,
+      "peak_rss_kib": 90256,
+      "validation": "126/126",
+      "direct_ode": false,
+      "source": "runs/q8/case.json",
+      "mapping_status": "unresolved"
+    },
+    {
+      "q": 9,
+      "leading_terms": [1, 1, 36, 2676, 248526, 25849278],
+      "matrix_dimension": 18,
+      "peak_rss_kib": 114300,
+      "validation": "152/152",
+      "direct_ode": false,
+      "source": "runs/q9/case.json",
+      "mapping_status": "unresolved"
+    }
+  ]
+}

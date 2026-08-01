@@ -1,0 +1,9 @@
+{
+  "D": "1-5*u^1-10*u^2-10*u^3-4*u^4",
+  "coefficient_integral": "a(n)=(2)/(2*pi*i*n) * integral_gamma du/rho(u)^n, n>=1",
+  "component": "contour",
+  "contour": "small positively oriented loop around u=0",
+  "ogf_integral": "A(x)=1-(2)/(2*pi*i)*integral_gamma log(1-x/rho(u)) du",
+  "rho": "u*(1-5*u^1-10*u^2-10*u^3-4*u^4)",
+  "status": "verified"
+}

@@ -1,0 +1,80 @@
+{
+  "package": "A244856_typogeometry_certificate_v1",
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 2377,
+      "sha256": "9213165341b91ce5b16fc7f198d01480237481470cea543ffbc1d30276b03670"
+    },
+    {
+      "path": "SOURCE.md",
+      "bytes": 187,
+      "sha256": "4348555990f81008c11f393ecd94ebf993eae9b1d3584868eff6f880fecbdab0"
+    },
+    {
+      "path": "VERIFIED_OUTPUT.txt",
+      "bytes": 252,
+      "sha256": "ffdd2c062b5ad0d171215dc6b88278d2265cc33f6ada0279879bf6cec66b5388"
+    },
+    {
+      "path": "code/enumerate_members.py",
+      "bytes": 1350,
+      "sha256": "848ee67ebee2bd9142a3419e1c6e68db5effbcf283da3062cb42e85a91abaaa8"
+    },
+    {
+      "path": "code/verify_all.py",
+      "bytes": 3861,
+      "sha256": "cab6b0c0a8f5faf6c8dc6155a7eeeaa318d51b500936d409a44ca79f6b6e97f9"
+    },
+    {
+      "path": "data/derived_terms_n0_n50.txt",
+      "bytes": 1939,
+      "sha256": "29f8c40a703b8f2e312695977bb89e1dd5e74197f93968c8051135f67afe0794"
+    },
+    {
+      "path": "data/members_n0_n4.txt",
+      "bytes": 51938,
+      "sha256": "2f6b495773667e0b413a96d0322c3e0e36b3e22550b1006f769bfa4ae0b1aa46"
+    },
+    {
+      "path": "data/oeis_initial_terms.json",
+      "bytes": 351,
+      "sha256": "d84165c6a1b1e6a2cbb00101a02d52f83babb27e759ea5bcf5a20f2efe687f7d"
+    },
+    {
+      "path": "docs/DERIVATION.md",
+      "bytes": 2346,
+      "sha256": "27cfc23ff622c62d70347912c9fd56b6d2447e9f1a629a494671d148496e82f1"
+    },
+    {
+      "path": "docs/HUMAN_EXPLAINER.md",
+      "bytes": 1645,
+      "sha256": "b704c649d3b97d1665750be020dffd1f376d490354543cab37f9754846fbde7d"
+    },
+    {
+      "path": "docs/MERGER_NOTES.md",
+      "bytes": 1478,
+      "sha256": "cae8e00cf674fb176fdbb176c2aab1f94e210fe169b0f31a4e894340e1cce8c0"
+    },
+    {
+      "path": "formal/A244856_statement.lean",
+      "bytes": 619,
+      "sha256": "e3fe5c517f35bf1b0309c2214e88b0c5e07ff72d0d3af489eb01a80d8483ec2e"
+    },
+    {
+      "path": "payload/certificate.json",
+      "bytes": 1690,
+      "sha256": "e0c353854ad91a965b16886aa386f17a45c59e0e023588d6b9b506802cb39b4c"
+    },
+    {
+      "path": "payload/pseudocode.md",
+      "bytes": 579,
+      "sha256": "d2d383ef8d023a878d7e02153fb05b8b85f984d0f4bccc06be01d4732b2b872f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 15,
+      "sha256": "21d3d3236fd5a56235fca5743339259461d587d5e309f67e5cbdd2cce59a671d"
+    }
+  ]
+}

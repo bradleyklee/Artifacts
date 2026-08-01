@@ -1,0 +1,9 @@
+{
+  "b": 125,
+  "c": 30,
+  "equation": "31*A(x)=30+125*x+A(x)^6",
+  "linear_coefficient_d": "5",
+  "q": 6,
+  "r": 31,
+  "status": "verified"
+}

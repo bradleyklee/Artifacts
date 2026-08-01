@@ -1,0 +1,78 @@
+{
+  "checks": {
+    "1": {
+      "enumerated": 2,
+      "pass": true,
+      "published_term": 2
+    },
+    "2": {
+      "enumerated": 6,
+      "pass": true,
+      "published_term": 6
+    },
+    "3": {
+      "enumerated": 40,
+      "pass": true,
+      "published_term": 40
+    }
+  },
+  "elements_by_true_leaf_count": {
+    "1": [
+      "root[0](l)",
+      "root[1](l)"
+    ],
+    "2": [
+      "root[0](Delta_2[0](l,l))",
+      "root[0](Delta_2[1](l,l))",
+      "root[0](Delta_2[2](l,l))",
+      "root[1](Delta_2[0](l,l))",
+      "root[1](Delta_2[1](l,l))",
+      "root[1](Delta_2[2](l,l))"
+    ],
+    "3": [
+      "root[0](Delta_2[0](l,Delta_2[0](l,l)))",
+      "root[0](Delta_2[1](l,Delta_2[0](l,l)))",
+      "root[0](Delta_2[2](l,Delta_2[0](l,l)))",
+      "root[0](Delta_2[0](l,Delta_2[1](l,l)))",
+      "root[0](Delta_2[1](l,Delta_2[1](l,l)))",
+      "root[0](Delta_2[2](l,Delta_2[1](l,l)))",
+      "root[0](Delta_2[0](l,Delta_2[2](l,l)))",
+      "root[0](Delta_2[1](l,Delta_2[2](l,l)))",
+      "root[0](Delta_2[2](l,Delta_2[2](l,l)))",
+      "root[0](Delta_2[0](Delta_2[0](l,l),l))",
+      "root[0](Delta_2[1](Delta_2[0](l,l),l))",
+      "root[0](Delta_2[2](Delta_2[0](l,l),l))",
+      "root[0](Delta_2[0](Delta_2[1](l,l),l))",
+      "root[0](Delta_2[1](Delta_2[1](l,l),l))",
+      "root[0](Delta_2[2](Delta_2[1](l,l),l))",
+      "root[0](Delta_2[0](Delta_2[2](l,l),l))",
+      "root[0](Delta_2[1](Delta_2[2](l,l),l))",
+      "root[0](Delta_2[2](Delta_2[2](l,l),l))",
+      "root[0](Delta_3[0](l,l,l))",
+      "root[0](Delta_3[1](l,l,l))",
+      "root[1](Delta_2[0](l,Delta_2[0](l,l)))",
+      "root[1](Delta_2[1](l,Delta_2[0](l,l)))",
+      "root[1](Delta_2[2](l,Delta_2[0](l,l)))",
+      "root[1](Delta_2[0](l,Delta_2[1](l,l)))",
+      "root[1](Delta_2[1](l,Delta_2[1](l,l)))",
+      "root[1](Delta_2[2](l,Delta_2[1](l,l)))",
+      "root[1](Delta_2[0](l,Delta_2[2](l,l)))",
+      "root[1](Delta_2[1](l,Delta_2[2](l,l)))",
+      "root[1](Delta_2[2](l,Delta_2[2](l,l)))",
+      "root[1](Delta_2[0](Delta_2[0](l,l),l))",
+      "root[1](Delta_2[1](Delta_2[0](l,l),l))",
+      "root[1](Delta_2[2](Delta_2[0](l,l),l))",
+      "root[1](Delta_2[0](Delta_2[1](l,l),l))",
+      "root[1](Delta_2[1](Delta_2[1](l,l),l))",
+      "root[1](Delta_2[2](Delta_2[1](l,l),l))",
+      "root[1](Delta_2[0](Delta_2[2](l,l),l))",
+      "root[1](Delta_2[1](Delta_2[2](l,l),l))",
+      "root[1](Delta_2[2](Delta_2[2](l,l),l))",
+      "root[1](Delta_3[0](l,l,l))",
+      "root[1](Delta_3[1](l,l,l))"
+    ]
+  },
+  "encoding": "prefix depth-first Delta word; l=true leaf; constructor suffix [c] is a finite color; false slots are suppressed and recoverable from the model metadata",
+  "maximum_true_leaves": 3,
+  "status": "verified"
+}

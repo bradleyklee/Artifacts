@@ -1,0 +1,9 @@
+{
+  "b": 1,
+  "c": 5,
+  "equation": "6*A(x)=5+1*x+A(x)^5",
+  "linear_coefficient_d": "1",
+  "q": 5,
+  "r": 6,
+  "status": "verified"
+}

@@ -1,63 +1,50 @@
-# 22-certificate-factory v0.2 — RELAY
+# 22-certificate-factory — 23-case illustrated release
 
-Generate exactly one certificate case per process. Exact validation is enabled by default.
+This revision contains the complete verified calculus for exactly 23 OEIS records:
+A120588–A120607, A244594, A244627, and A244856.
 
-## Fast default
+## Start here
 
-```bash
-python3 generate.py 9
-```
+- `ALL_23_ILLUSTRATED_CERTIFICATES.pdf` — conspicuous root-level copy of the complete current portfolio.
+- `release/ALL_23_CERTIFICATES_RHO_INLINE_v10.pdf` — current physical 24-page aggregate; it includes the cover and all 23 one-page certificates.
+- `ALL_23_CERTIFICATES_INLINE_MULTIPLICITIES_v7.pdf` and `release/HANNA_23_CALCULUS_CERTIFICATES.pdf` — compatibility links to that current aggregate, retained without duplicate PDF bytes.
+- `reports/REVISION_QUALITY_AUDIT.md` — independent exact-arithmetic coverage and release checks.
+- `work/OEIS_FIELD_DELTAS_23_CASES.md` — per-record comparison of existing OEIS content and proposed additions.
+- `work/OEIS_FIELD_ADDITIONS_23_CASES.txt` — paste-ready OEIS internal-field lines.
+- `examples/q3/ReleaseCandidate/A120590_ternatree_human.pdf` — the reviewed verbose q=3 explanatory model.
 
-This derives and emits:
+Each `examples/Axxxxxx/release/` directory contains a concise illustrated `certificate.tex`,
+`certificate.pdf`, fresh-named `certificate_WITH_INLINE_MULTIPLICITIES.pdf`/`.tex` copies, and
+`certificate_payload.json`. Every individual PDF embeds its payload.
+The combined portfolio embeds a SHA-256 index of all constituent certificates and payloads.
+The root-level and `release/` aggregate PDFs are byte-identical; the duplicate filename is
+intentional so the all-cases deliverable cannot be confused with an earlier individual PDF.
+Legible exact `G`, `U`, `V`, and `J` matrices are printed directly; larger matrices remain in
+their canonical case records. Every page includes the telescoper identity, its rational
+certificate form, a binomial/multinomial coefficient sum where available, and constructor
+multiplicities beside the typogeometric codes.
 
-- the algebraic OGF and typogeometric starting points;
-- `D_q(u)`, `rho_q(u)`, and the fully defined integrand `H_{q,n}(u)`;
-- exact bases and all fast-path matrices `G`, `G_inverse`, `E`, `U`, `V`, `J`, `X_full`, `X`;
-- every pole-lowering chain with input, `V`-certificate, and output vectors;
-- the primitive P-recurrence and rational recurrence certificate;
-- the standard ODE mechanically transformed from the P-recurrence;
-- coefficientwise recurrence–ODE compatibility witnesses;
-- dimensions, stage timings, environment metadata, peak RSS, and exact dynamic checks.
-
-## Slower dissertation-style ODE audit
-
-```bash
-python3 generate.py 5 --derive-ode-direct
-```
-
-The switch adds a second Klee-style matrix reduction based on repeated `x`-derivatives of
-
-```text
-F_q(x,u) = 1/(rho_q(u)-x),
-A_q'(x) = Res F_q(x,u) du.
-```
-
-It emits `Gx`, `Gx_inverse`, `Ux`, `Vx`, the derivative-remainder matrix, a direct ODE for `A_q'(x)`, and its rational `u`-derivative certificate. The checker converts that ODE back to a primitive coefficient recurrence and requires exact equality with the fast P-recurrence.
-
-Slow mode is a strict superset: it always includes all fast-path data.
-
-## Commands
+## Rebuild and verify
 
 ```bash
-# One q, fast path plus validation
-python3 generate.py 9
-
-# One q, both reductions plus validation
-python3 generate.py 5 --derive-ode-direct
-
-# Generation assertions only; skip the separate checker
-python3 generate.py 9 --skip-validate
-
-# Recheck an emitted blob without regenerating it
-python3 check.py runs/q9/case.json
-
-# Generate the included five-case direct-ODE smoke suite
-./run_examples_q2_q5.sh
-
-# External time/RSS audit
-./time_audit.sh 9 --skip-validate --output audit-runs
+python3 src/build_concise_certificates.py
+python3 src/build_certificate_portfolio.py
+python3 src/quality_check_revision.py
+python3 src/generate_oeis_field_deltas.py
 ```
 
-Each run prints the mathematical stage currently active. Direct mode separately reports parameter-dependent matrix assembly, determinant, inversion, every derivative reduction, ODE kernel solve, certificate assembly, and exact identity check.
+The release audit independently checks the defining equations (or companion power
+convolutions), all stored recurrence instances, every stored published prefix, PDF
+integrity, embedded-payload byte identity, and overfull-box-free TeX layout.
 
-Requirements: Python 3.10+ and SymPy.
+## Data organization
+
+Canonical material is organized by A-number under `examples/`. Four exceptional matrix
+pilots remain under `runs/` because their wrappers cite them directly. Legacy q-numbered
+runs, nested archives, duplicate A120590 review trees, build logs, and the multi-megabyte
+generated Markdown dump were staged outside the deliverable; the exact inventory and
+hashes are in `reports/PRUNING_LEDGER_2026-07-31.md`.
+
+The underlying general certificate generator remains available through `generate.py`,
+`run.py`, and `check.py`. Its symbolic generation path requires Python 3.10+ and SymPy;
+the presentation builders and arithmetic release audit do not require SymPy.

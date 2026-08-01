@@ -1,0 +1,9 @@
+{
+  "b": 1,
+  "c": 3,
+  "equation": "4*A(x)=3+1*x+A(x)^3",
+  "linear_coefficient_d": "1",
+  "q": 3,
+  "r": 4,
+  "status": "verified"
+}

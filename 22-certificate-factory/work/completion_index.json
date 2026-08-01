@@ -1,0 +1,399 @@
+{
+  "active_blockers": 0,
+  "analytic_complete": "23/23",
+  "cases": [
+    {
+      "case_id": "A120588",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120589",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "not_applicable",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120590",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120591",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "not_applicable",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120592",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120593",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120594",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120595",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120596",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120597",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120598",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120599",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120600",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120601",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120602",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120603",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120604",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120605",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120606",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A120607",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A244594",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A244627",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    },
+    {
+      "case_id": "A244856",
+      "components": {
+        "certificate": "verified",
+        "coefficient_formula": "verified",
+        "contour": "verified",
+        "explicit_set_elements": "verified",
+        "integrand_analysis": "verified",
+        "inverse_map": "verified",
+        "matrices": "verified",
+        "ode": "verified",
+        "recurrence": "verified",
+        "terms": "verified",
+        "tree_model": "verified"
+      },
+      "state": "ANALYTIC_COMPLETE"
+    }
+  ],
+  "schema_version": "1.0",
+  "strict_target_count": 23
+}

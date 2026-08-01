@@ -1,0 +1,9 @@
+{
+  "b": 27,
+  "c": 15,
+  "equation": "16*A(x)=15+27*x+A(x)^7",
+  "linear_coefficient_d": "3",
+  "q": 7,
+  "r": 16,
+  "status": "verified"
+}

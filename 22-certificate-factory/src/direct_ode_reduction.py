@@ -92,6 +92,8 @@ def build_direct_ode(
     *,
     progress: Callable[[str, str], None],
     expr_text: Callable[..., str],
+    numerator_seed: sp.Expr = sp.Integer(1),
+    denominator_g: sp.Expr | None = None,
 ) -> dict:
     started = time.perf_counter()
     stage_started = started
@@ -103,8 +105,11 @@ def build_direct_ode(
         stage_seconds[name] = now - stage_started
         stage_started = now
 
-    g = sp.expand(rho - x)
-    progress("ODE DIRECT", f"parameter-derivative reduction for F(x,u)=1/(rho(u)-x), q={q}")
+    seed = sp.expand(numerator_seed)
+    g = sp.expand(rho - x) if denominator_g is None else sp.expand(denominator_g)
+    if sp.degree(seed, u) >= q:
+        raise AssertionError("numerator seed degree must be below q")
+    progress("ODE DIRECT", f"parameter-derivative reduction for F(x,u)=seed(u)/g(x,u), q={q}")
     finish("input")
 
     progress("ODE Gx ASSEMBLY", f"building parameter-dependent {2*q}x{2*q} matrix")
@@ -152,7 +157,8 @@ def build_direct_ode(
     for derivative_order in range(q):
         progress("ODE DERIVATIVES", f"derivative {derivative_order}/{q-1}: {derivative_order} lowering step(s)")
         current = sp.zeros(q, 1)
-        current[0] = sp.factorial(derivative_order)
+        for degree in range(q):
+            current[degree] = sp.factorial(derivative_order) * seed.coeff(u, degree)
         steps: list[dict] = []
         internal: list[tuple[int, sp.Matrix]] = []
         for pole_parameter in range(derivative_order, 0, -1):
@@ -170,7 +176,7 @@ def build_direct_ode(
         internal_records.append(internal)
         derivative_records.append({
             "derivative_order": derivative_order,
-            "input_integrand": f"{math.factorial(derivative_order)}/g(x,u)^{derivative_order+1}",
+            "input_integrand": f"{math.factorial(derivative_order)}*seed(u)/g(x,u)^{derivative_order+1}",
             "steps": steps,
             "final_remainder_vector": _vector_json(current, expr_text),
         })
@@ -217,7 +223,7 @@ def build_direct_ode(
     finish("certificate_assembly")
 
     progress("ODE CHECK", "checking exact integrand-level differential identity")
-    left = sum(coefficients[j] * sp.factorial(j) * g ** (q - j - 1) for j in range(q))
+    left = sum(coefficients[j] * sp.factorial(j) * seed * g ** (q - j - 1) for j in range(q))
     right = sp.expand(g * sp.diff(numerator, u) - (q - 1) * sp.diff(g, u) * numerator)
     residual = sp.Poly(sp.together(left - right), x, u, domain=sp.QQ)
     if not residual.is_zero:
@@ -233,9 +239,10 @@ def build_direct_ode(
         "method": "repeated parameter differentiation followed by Hermite-Ostrogradsky reduction",
         "integrand": {
             "symbol": "F_q(x,u)",
-            "formula": "1/(rho_q(u)-x)",
+            "formula": f"({expr_text(seed)})/({expr_text(g)})",
             "residue_relation": "A_q'(x)=Res_{u=0} F_q(x,u) du",
             "denominator_g": expr_text(g),
+            "numerator_seed": expr_text(seed),
         },
         "bases": {
             "coefficient_order": "ascending powers of u",

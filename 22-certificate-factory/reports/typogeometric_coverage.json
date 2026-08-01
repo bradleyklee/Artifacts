@@ -1,0 +1,130 @@
+{
+  "checks": {
+    "A120588": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120589": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "parametric"
+    },
+    "A120590": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120591": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "parametric"
+    },
+    "A120592": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120593": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120594": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120595": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120596": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120597": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120598": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120599": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120600": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120601": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120602": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120603": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120604": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120605": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120606": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A120607": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A244594": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A244627": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    },
+    "A244856": {
+      "contour": "symbolic",
+      "geometry_terms": 23,
+      "ode": "dP/dx"
+    }
+  },
+  "matrix_extraction": {
+    "reason": "priority ladder completed geometry and contour first; derivative/shift reduction is the proposed next bounded shot",
+    "status": "not_attempted"
+  },
+  "q3_convention": "Delta_k has weight k-1; true leaf l has weight -1; false leaves restore unused full-slot positions",
+  "scope": {
+    "core": 20,
+    "descendants": 3,
+    "total": 23
+  },
+  "status": "verified"
+}

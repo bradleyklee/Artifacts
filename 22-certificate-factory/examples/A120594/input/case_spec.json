@@ -1,0 +1,9 @@
+{
+  "b": 8,
+  "c": 7,
+  "equation": "8*A(x)=7+8*x+A(x)^4",
+  "linear_coefficient_d": "2",
+  "q": 4,
+  "r": 8,
+  "status": "verified"
+}

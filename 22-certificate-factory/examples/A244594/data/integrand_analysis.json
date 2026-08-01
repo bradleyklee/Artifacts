@@ -1,0 +1,21 @@
+{
+  "direct_x_assessment": {
+    "degree_in_u": 3,
+    "generic_squarefree_witness": "discriminant_u(g_x)=-4*x**3 + 48*x**2 - 192*x + 13",
+    "kernel": "g_x(u)=p(u)-x*h(u)=-u**3 - 3*u**2 - u*x + u - x",
+    "result": "same_polynomial_algorithm",
+    "route": "apply the paper's G_x/U_x/V_x derivative reduction directly to 1/g_x; this is the preferred first implementation"
+  },
+  "integrand": "(1)*(u + 1)^n/(n*(-u**3 - 3*u**2 + u)^n)",
+  "kernel_class": "rational_rho_or_two_polynomial_hyperexponential",
+  "logarithmic_u_derivative": "n*((1)/(u + 1)-(-3*u**2 - 6*u + 1)/(-u**3 - 3*u**2 + u))",
+  "required_change": "implement direct-x polynomial reduction first; defer term-shift certificates until the two-factor lowering identity is derived and checked",
+  "resolution": "numerator-aware direct-x reduction verified",
+  "status": "verified",
+  "term_shift_assessment": {
+    "candidate": "two-factor Hermite reduction over poles p=0 and h=0, retaining exact n-dependent residues",
+    "reason": "the numerator h^n varies with n, so the single-polynomial rho G/U/V identity does not apply unchanged",
+    "result": "requires_generalization"
+  },
+  "term_shift_ratio": "n*(u + 1)^s/((n+s)*(-u**3 - 3*u**2 + u)^s)"
+}

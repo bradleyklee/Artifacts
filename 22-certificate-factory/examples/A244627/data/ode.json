@@ -1,0 +1,23 @@
+{
+  "canonical_source": "runs/A244627-direct-x-pilot/case.json#/ode_for_A",
+  "pilot_statistics": {
+    "Gx_determinant": "256*x**3 - 960*x**2 + 1200*x - 68",
+    "Gx_nonzero": 21,
+    "Gx_shape": [
+      6,
+      6
+    ],
+    "X_rank": 2,
+    "X_shape": [
+      2,
+      3
+    ],
+    "certificate_degree_u": 5,
+    "certificate_degree_x": 3,
+    "ode_for_A_prime_order": 2,
+    "peak_rss_kib": 64652,
+    "recurrence_order": 4,
+    "wall_seconds": 1.7213678419993812
+  },
+  "status": "verified"
+}

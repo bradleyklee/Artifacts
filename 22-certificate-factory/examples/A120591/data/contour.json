@@ -1,0 +1,7 @@
+{
+  "D": "1-3*u^1-1*u^2",
+  "component": "contour",
+  "contour": "small positively oriented loop around u=0",
+  "formula": "[x^n]A(x)^3=(3*1)/(2*pi*i*n)*integral_gamma (1+(1)*u)^2 du/(u^n*D(u)^n)",
+  "status": "verified"
+}

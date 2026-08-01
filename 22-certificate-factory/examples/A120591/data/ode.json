@@ -1,0 +1,24 @@
+{
+  "canonical_source": "release/certificate_payload.json.gz#/ode",
+  "statistics": {
+    "G_shape": [
+      6,
+      6
+    ],
+    "X_shape": [
+      3,
+      4
+    ],
+    "certificate_numerator_degree_n": 2,
+    "certificate_numerator_degree_u": 6,
+    "certificate_parameter_denominator": "n*u**2 + 2*n*u + n + u**2 + 2*u + 1",
+    "denominator_degree": 3,
+    "leading_zero_coefficients": 1,
+    "nullity": 1,
+    "rank": 3,
+    "recurrence_order": 3,
+    "remainder_dimension": 3,
+    "shift_columns": 4
+  },
+  "status": "verified"
+}

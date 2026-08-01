@@ -1,0 +1,31 @@
+{
+  "attempts": [
+    {
+      "approach": "shift equation, integral finite-color grammar, coefficient comparison",
+      "result": "pass",
+      "terms_tested": 23
+    }
+  ],
+  "branch_multiplicities": {
+    "Delta_2": 1
+  },
+  "classification": "literal_unweighted",
+  "component": "tree_model",
+  "normalization": "A(x)=1+(1)*T(x)",
+  "recursive_equation": "T=x+1*T^2",
+  "status": "verified",
+  "word_model": {
+    "alphabet": [
+      "l",
+      "Delta_2"
+    ],
+    "colors": "branch multiplicity labels distinguish constructors of the same arity",
+    "false_leaves": "restored as the q-k unused positions of a full Delta_q slot mask",
+    "true_leaf": "l",
+    "validity": "depth-first tree word; total weight -1; every proper prefix has nonnegative open-slot balance",
+    "weights": {
+      "Delta_2": 1,
+      "l": -1
+    }
+  }
+}

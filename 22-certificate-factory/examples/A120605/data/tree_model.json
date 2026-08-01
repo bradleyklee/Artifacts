@@ -1,0 +1,52 @@
+{
+  "attempts": [
+    {
+      "approach": "shift equation, integral finite-color grammar, coefficient comparison",
+      "result": "pass",
+      "terms_tested": 23
+    }
+  ],
+  "branch_multiplicities": {
+    "Delta_2": 9,
+    "Delta_3": 84,
+    "Delta_4": 504,
+    "Delta_5": 2016,
+    "Delta_6": 5376,
+    "Delta_7": 9216,
+    "Delta_8": 9216,
+    "Delta_9": 4096
+  },
+  "classification": "colored_unweighted",
+  "component": "tree_model",
+  "normalization": "A(x)=1+(4)*T(x)",
+  "recursive_equation": "T=x+9*T^2+84*T^3+504*T^4+2016*T^5+5376*T^6+9216*T^7+9216*T^8+4096*T^9",
+  "status": "verified",
+  "word_model": {
+    "alphabet": [
+      "l",
+      "Delta_2",
+      "Delta_3",
+      "Delta_4",
+      "Delta_5",
+      "Delta_6",
+      "Delta_7",
+      "Delta_8",
+      "Delta_9"
+    ],
+    "colors": "branch multiplicity labels distinguish constructors of the same arity",
+    "false_leaves": "restored as the q-k unused positions of a full Delta_q slot mask",
+    "true_leaf": "l",
+    "validity": "depth-first tree word; total weight -1; every proper prefix has nonnegative open-slot balance",
+    "weights": {
+      "Delta_2": 1,
+      "Delta_3": 2,
+      "Delta_4": 3,
+      "Delta_5": 4,
+      "Delta_6": 5,
+      "Delta_7": 6,
+      "Delta_8": 7,
+      "Delta_9": 8,
+      "l": -1
+    }
+  }
+}

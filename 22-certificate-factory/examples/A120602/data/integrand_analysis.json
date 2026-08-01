@@ -1,0 +1,18 @@
+{
+  "G": {
+    "definition": "coeff(rho*a-rho'*b), with deg(a),deg(b)<deg(rho)",
+    "invertibility_witness": "resultant(rho,rho')=204963525390625",
+    "shape": [
+      12,
+      12
+    ]
+  },
+  "expected_shift_count_for_first_nullvector": 6,
+  "integrand": "(5)/(n*(-125*u**6 - 150*u**5 - 75*u**4 - 20*u**3 - 3*u**2 + u)^n)",
+  "kernel_class": "polynomial_power",
+  "q3_algorithm_relation": "same exact G/U/V construction; replace hard-coded normalized rho_q by this rho",
+  "remainder_dimension": 5,
+  "required_change": "parameterize the existing polynomial-kernel entry point; no change to Lower(w,m)=U*w-J*V*w/m",
+  "status": "verified",
+  "term_shift_ratio": "n/((n+s)*(-125*u**6 - 150*u**5 - 75*u**4 - 20*u**3 - 3*u**2 + u)^s)"
+}

@@ -1,0 +1,29 @@
+{
+  "attempts": [
+    {
+      "approach": "rational inverse rearranged as positive recursive grammar",
+      "result": "pass",
+      "terms_tested": 23
+    }
+  ],
+  "branch_multiplicities": {
+    "Delta_2": 3,
+    "Delta_2_with_one_true_leaf_and_one_subtree": 1,
+    "Delta_3": 1
+  },
+  "classification": "colored_unweighted",
+  "component": "tree_model",
+  "normalization": "A(x)=1+(1)*T(x)",
+  "recursive_equation": "T=x+1*x*T+3*T^2+1*T^3",
+  "status": "verified",
+  "word_model": {
+    "alphabet": [
+      "l",
+      "Delta_2_marked",
+      "Delta_2",
+      "Delta_3"
+    ],
+    "true_false_encoding": "full ordered slots contain subtree/true leaves or false leaves; the marked Delta_2 constructor contains one new true leaf and one recursive subtree",
+    "unary_branching": "absent: x*T is represented by a genuinely binary Delta_2 node"
+  }
+}

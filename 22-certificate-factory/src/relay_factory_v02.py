@@ -45,10 +45,18 @@ def recurrence_to_ode(recurrence: list[sp.Expr], terms: list[int]) -> dict:
     z = sp.symbols("z")
     theta_terms: list[dict] = []
     derivative_coefficients: list[sp.Expr] = [sp.Integer(0)] * (
-        max(int(sp.degree(p, n)) for p in recurrence) + 1
+        max((int(sp.degree(p, n)) for p in recurrence if p != 0), default=0) + 1
     )
 
     for r, polynomial in enumerate(recurrence):
+        if polynomial == 0:
+            theta_terms.append({
+                "shift": r,
+                "x_power": s - r,
+                "polynomial_in_theta": "0",
+                "source": f"P_{r}(theta-{r})",
+            })
+            continue
         poly_theta = sp.expand(polynomial.subs(n, z - r))
         x_power = s - r
         theta_terms.append({

@@ -1,0 +1,7 @@
+PASS certificate.json schema sanity
+PASS literal grammar counts n=0..4 and exact n=2 member set
+PASS algebraic equation through x^18
+PASS Lagrange/residue terms n=0..18
+PASS recurrence n=0..14
+PASS exact creative-telescoping identity
+ALL CHECKS PASSED

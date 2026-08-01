@@ -1,0 +1,7 @@
+{
+  "required": [
+    "oeis_initial_terms_match",
+    "defining_equation_terms_integral"
+  ],
+  "status": "produced"
+}

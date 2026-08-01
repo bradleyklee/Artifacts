@@ -1,0 +1,24 @@
+{
+  "canonical_source": "release/certificate_payload.json.gz#/matrices",
+  "statistics": {
+    "G_shape": [
+      4,
+      4
+    ],
+    "X_shape": [
+      2,
+      3
+    ],
+    "certificate_numerator_degree_n": 1,
+    "certificate_numerator_degree_u": 2,
+    "certificate_parameter_denominator": "n*u + n + u + 1",
+    "denominator_degree": 2,
+    "leading_zero_coefficients": 1,
+    "nullity": 1,
+    "rank": 2,
+    "recurrence_order": 2,
+    "remainder_dimension": 2,
+    "shift_columns": 3
+  },
+  "status": "verified"
+}

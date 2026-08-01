@@ -1,0 +1,8 @@
+{
+  "required": [
+    "legacy_validation_all_pass",
+    "legacy_case_q_matches",
+    "canonical_paths_complete"
+  ],
+  "status": "produced"
+}

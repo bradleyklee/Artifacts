@@ -1,0 +1,43 @@
+{
+  "attempts": [
+    {
+      "approach": "shift equation, integral finite-color grammar, coefficient comparison",
+      "result": "pass",
+      "terms_tested": 23
+    }
+  ],
+  "branch_multiplicities": {
+    "Delta_2": 5,
+    "Delta_3": 20,
+    "Delta_4": 45,
+    "Delta_5": 54,
+    "Delta_6": 27
+  },
+  "classification": "colored_unweighted",
+  "component": "tree_model",
+  "normalization": "A(x)=1+(3)*T(x)",
+  "recursive_equation": "T=x+5*T^2+20*T^3+45*T^4+54*T^5+27*T^6",
+  "status": "verified",
+  "word_model": {
+    "alphabet": [
+      "l",
+      "Delta_2",
+      "Delta_3",
+      "Delta_4",
+      "Delta_5",
+      "Delta_6"
+    ],
+    "colors": "branch multiplicity labels distinguish constructors of the same arity",
+    "false_leaves": "restored as the q-k unused positions of a full Delta_q slot mask",
+    "true_leaf": "l",
+    "validity": "depth-first tree word; total weight -1; every proper prefix has nonnegative open-slot balance",
+    "weights": {
+      "Delta_2": 1,
+      "Delta_3": 2,
+      "Delta_4": 3,
+      "Delta_5": 4,
+      "Delta_6": 5,
+      "l": -1
+    }
+  }
+}

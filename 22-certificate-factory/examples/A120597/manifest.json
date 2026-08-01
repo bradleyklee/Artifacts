@@ -1,0 +1,72 @@
+{
+  "aliases": [],
+  "canonical": {
+    "case_spec": "input/case_spec.json",
+    "certificate": "data/certificate.json",
+    "checks": "checks/results.json",
+    "coefficient_formula": "data/coefficient_formula.json",
+    "human_text": "text/certificate.md",
+    "inverse_map": "data/inverse_map.json",
+    "matrices": "data/matrices.json",
+    "ode": "data/ode.json",
+    "recurrence": "data/recurrence.json",
+    "release_payload": "release/payload.json",
+    "terms": "data/terms.json",
+    "tree_model": "data/tree_model.json"
+  },
+  "case_id": "A120597",
+  "case_state": "ANALYTIC_COMPLETE",
+  "components": {
+    "certificate": {
+      "canonical_path": "data/certificate.json",
+      "status": "verified"
+    },
+    "coefficient_formula": {
+      "canonical_path": "data/coefficient_formula.json",
+      "status": "verified"
+    },
+    "contour": {
+      "canonical_path": "data/contour.json",
+      "status": "verified"
+    },
+    "explicit_set_elements": {
+      "canonical_path": "data/set_elements_n_le_3.json",
+      "status": "verified"
+    },
+    "integrand_analysis": {
+      "canonical_path": "data/integrand_analysis.json",
+      "status": "verified"
+    },
+    "inverse_map": {
+      "canonical_path": "data/inverse_map.json",
+      "status": "verified"
+    },
+    "matrices": {
+      "canonical_path": "data/matrices.json",
+      "status": "verified"
+    },
+    "ode": {
+      "canonical_path": "data/ode.json",
+      "status": "verified"
+    },
+    "recurrence": {
+      "canonical_path": "data/recurrence.json",
+      "status": "verified"
+    },
+    "terms": {
+      "canonical_path": "data/terms.json",
+      "status": "verified"
+    },
+    "tree_model": {
+      "canonical_path": "data/tree_model.json",
+      "status": "verified"
+    }
+  },
+  "family": "hanna_core_A120588_A120607",
+  "oeis_identity": {
+    "status": "verified",
+    "url": "https://oeis.org/A120597"
+  },
+  "schema_version": "1.0",
+  "target_kind": "core_algebraic"
+}

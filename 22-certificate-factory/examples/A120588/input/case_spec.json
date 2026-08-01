@@ -1,0 +1,9 @@
+{
+  "b": 1,
+  "c": 2,
+  "equation": "3*A(x)=2+1*x+A(x)^2",
+  "linear_coefficient_d": "1",
+  "q": 2,
+  "r": 3,
+  "status": "verified"
+}

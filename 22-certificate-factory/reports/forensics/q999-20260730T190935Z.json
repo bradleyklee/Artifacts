@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "generate.py",
+    "999"
+  ],
+  "last_completed_stage": null,
+  "learned": "No mathematical computation started.",
+  "limits": {
+    "address_space_mib": 1024,
+    "project_mib": 0,
+    "wall_seconds": 300
+  },
+  "project_bytes_before": 10328766,
+  "q": 999,
+  "reason_code": "project_size_limit",
+  "started_utc": "20260730T190935Z",
+  "status": "blocked",
+  "stderr_tail": []
+}

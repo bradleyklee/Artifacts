@@ -1,0 +1,23 @@
+{
+  "canonical_source": "runs/A244594-direct-x-pilot/case.json#/recurrence",
+  "pilot_statistics": {
+    "Gx_determinant": "4*x**3 - 48*x**2 + 192*x - 13",
+    "Gx_nonzero": 21,
+    "Gx_shape": [
+      6,
+      6
+    ],
+    "X_rank": 2,
+    "X_shape": [
+      2,
+      3
+    ],
+    "certificate_degree_u": 5,
+    "certificate_degree_x": 3,
+    "ode_for_A_prime_order": 2,
+    "peak_rss_kib": 63524,
+    "recurrence_order": 4,
+    "wall_seconds": 1.6377752100006546
+  },
+  "status": "verified"
+}

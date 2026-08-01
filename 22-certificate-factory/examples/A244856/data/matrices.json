@@ -1,0 +1,23 @@
+{
+  "canonical_source": "runs/A244856-direct-x-pilot/case.json#/direct_reduction_base_matrices/matrices",
+  "pilot_statistics": {
+    "Gx_determinant": "-27*x**4 + 540*x**3 - 4050*x**2 + 13500*x - 491",
+    "Gx_nonzero": 36,
+    "Gx_shape": [
+      8,
+      8
+    ],
+    "X_rank": 3,
+    "X_shape": [
+      3,
+      4
+    ],
+    "certificate_degree_u": 10,
+    "certificate_degree_x": 4,
+    "ode_for_A_prime_order": 3,
+    "peak_rss_kib": 74560,
+    "recurrence_order": 5,
+    "wall_seconds": 8.18998242699945
+  },
+  "status": "verified"
+}

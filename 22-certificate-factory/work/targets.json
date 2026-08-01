@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0",
+  "scope_status": "closed_under_verified_explicit_relationships",
+  "strict_target_count": 23,
+  "families": [
+    {
+      "family_id": "hanna_core_A120588_A120607",
+      "scope_status": "closed",
+      "targets": [
+        "A120588", "A120589", "A120590", "A120591", "A120592",
+        "A120593", "A120594", "A120595", "A120596", "A120597",
+        "A120598", "A120599", "A120600", "A120601", "A120602",
+        "A120603", "A120604", "A120605", "A120606", "A120607"
+      ],
+      "primary_count": 18,
+      "observable_power_companions": {
+        "A120589": "A120588",
+        "A120591": "A120590"
+      }
+    },
+    {
+      "family_id": "hanna_direct_composition_descendants",
+      "scope_status": "closed_from_current_recursive_crawl",
+      "requires": ["rational_or_denominator_cleared_inverse_map"],
+      "targets": ["A244594", "A244627", "A244856"],
+      "parents": {
+        "A244594": "A120590",
+        "A244627": "A120592",
+        "A244856": "A120593"
+      }
+    }
+  ],
+  "explicit_exclusions": {
+    "A245009": "No verified explicit relationship; earlier inclusion was search-context contamination.",
+    "A245043": "No verified explicit relationship; earlier inclusion was search-context contamination."
+  },
+  "future_queue": "Broader Paul Hanna series-reversion and composition sequences; not part of this strict run."
+}

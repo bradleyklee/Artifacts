@@ -1,0 +1,190 @@
+{
+  "case_count": 23,
+  "cases": [
+    {
+      "case_id": "A120588",
+      "payload": "examples/A120588/release/certificate_payload.json",
+      "pdf": "examples/A120588/release/certificate.pdf",
+      "pdf_bytes": 248586,
+      "pdf_sha256": "667678fc05a6979c9b0d9620ac97b8d6319d00cf66d5811fcb6d91d519ad9521",
+      "tex": "examples/A120588/release/certificate.tex"
+    },
+    {
+      "case_id": "A120589",
+      "payload": "examples/A120589/release/certificate_payload.json",
+      "pdf": "examples/A120589/release/certificate.pdf",
+      "pdf_bytes": 231621,
+      "pdf_sha256": "d43d1ad04959521c7899f861e4622289b056d39cbfa7a12ce34ca848a472933d",
+      "tex": "examples/A120589/release/certificate.tex"
+    },
+    {
+      "case_id": "A120590",
+      "payload": "examples/A120590/release/certificate_payload.json",
+      "pdf": "examples/A120590/release/certificate.pdf",
+      "pdf_bytes": 252256,
+      "pdf_sha256": "3c2ad00b95ba1db4ec755de771124fd12da577fdde4a3bbbc5d50441ffd3c739",
+      "tex": "examples/A120590/release/certificate.tex"
+    },
+    {
+      "case_id": "A120591",
+      "payload": "examples/A120591/release/certificate_payload.json",
+      "pdf": "examples/A120591/release/certificate.pdf",
+      "pdf_bytes": 234990,
+      "pdf_sha256": "7d7e1d93839ac2450aa4a293eeffa323f8214876121ca6d1fa71000f816f6dd1",
+      "tex": "examples/A120591/release/certificate.tex"
+    },
+    {
+      "case_id": "A120592",
+      "payload": "examples/A120592/release/certificate_payload.json",
+      "pdf": "examples/A120592/release/certificate.pdf",
+      "pdf_bytes": 253402,
+      "pdf_sha256": "9ce54eb9147ecfdd3beeec349eea3579d619d7f447f8122a3c1818aac7469fe6",
+      "tex": "examples/A120592/release/certificate.tex"
+    },
+    {
+      "case_id": "A120593",
+      "payload": "examples/A120593/release/certificate_payload.json",
+      "pdf": "examples/A120593/release/certificate.pdf",
+      "pdf_bytes": 255070,
+      "pdf_sha256": "f68611e97674b3d74e91f4a941bcc91e3bfe559a75727e0fa73814e2cb521c06",
+      "tex": "examples/A120593/release/certificate.tex"
+    },
+    {
+      "case_id": "A120594",
+      "payload": "examples/A120594/release/certificate_payload.json",
+      "pdf": "examples/A120594/release/certificate.pdf",
+      "pdf_bytes": 254994,
+      "pdf_sha256": "9bb2adb59817e164827772561ab7f1c33dce9cf20a8229f793c9a548aaa9075d",
+      "tex": "examples/A120594/release/certificate.tex"
+    },
+    {
+      "case_id": "A120595",
+      "payload": "examples/A120595/release/certificate_payload.json",
+      "pdf": "examples/A120595/release/certificate.pdf",
+      "pdf_bytes": 254697,
+      "pdf_sha256": "6474674495219559f26321352f0d4621767d91f86f2250bdf539141aa442da7d",
+      "tex": "examples/A120595/release/certificate.tex"
+    },
+    {
+      "case_id": "A120596",
+      "payload": "examples/A120596/release/certificate_payload.json",
+      "pdf": "examples/A120596/release/certificate.pdf",
+      "pdf_bytes": 255641,
+      "pdf_sha256": "c1600de83c6730953f8d3fc849f4c9179725a1681d7fde9ba57910d52433708d",
+      "tex": "examples/A120596/release/certificate.tex"
+    },
+    {
+      "case_id": "A120597",
+      "payload": "examples/A120597/release/certificate_payload.json",
+      "pdf": "examples/A120597/release/certificate.pdf",
+      "pdf_bytes": 256730,
+      "pdf_sha256": "002bd448c3e89d4ff2a4242b3b255f7f62f20a9f3ed0231b0c3701a2d016618f",
+      "tex": "examples/A120597/release/certificate.tex"
+    },
+    {
+      "case_id": "A120598",
+      "payload": "examples/A120598/release/certificate_payload.json",
+      "pdf": "examples/A120598/release/certificate.pdf",
+      "pdf_bytes": 255532,
+      "pdf_sha256": "87acfad311bbfcd0b8049827bf63c828d35d2517d4b2fc3fa7d6eabc95dc0c42",
+      "tex": "examples/A120598/release/certificate.tex"
+    },
+    {
+      "case_id": "A120599",
+      "payload": "examples/A120599/release/certificate_payload.json",
+      "pdf": "examples/A120599/release/certificate.pdf",
+      "pdf_bytes": 256363,
+      "pdf_sha256": "83651187c6dcc6f00365a8d1f2d501db7191c8ba1afb8dfcafd6e76dcbea4c55",
+      "tex": "examples/A120599/release/certificate.tex"
+    },
+    {
+      "case_id": "A120600",
+      "payload": "examples/A120600/release/certificate_payload.json",
+      "pdf": "examples/A120600/release/certificate.pdf",
+      "pdf_bytes": 257643,
+      "pdf_sha256": "7cf0636b4eb85a8c3a929de3b46e66fbdc753507b98130050b1153f45566b664",
+      "tex": "examples/A120600/release/certificate.tex"
+    },
+    {
+      "case_id": "A120601",
+      "payload": "examples/A120601/release/certificate_payload.json",
+      "pdf": "examples/A120601/release/certificate.pdf",
+      "pdf_bytes": 258225,
+      "pdf_sha256": "944319de7693fb23a4565215605682e64bd44b71ce8bdd6c115b0bd825253852",
+      "tex": "examples/A120601/release/certificate.tex"
+    },
+    {
+      "case_id": "A120602",
+      "payload": "examples/A120602/release/certificate_payload.json",
+      "pdf": "examples/A120602/release/certificate.pdf",
+      "pdf_bytes": 257847,
+      "pdf_sha256": "382b7e8c1fad6fcc392cdd1721754fe0f0cf030a3ea07b70cfe6c4c8b793a8c0",
+      "tex": "examples/A120602/release/certificate.tex"
+    },
+    {
+      "case_id": "A120603",
+      "payload": "examples/A120603/release/certificate_payload.json",
+      "pdf": "examples/A120603/release/certificate.pdf",
+      "pdf_bytes": 263099,
+      "pdf_sha256": "9b24942ee782f176962f7340028b648e646851215cd9be3fb932a032450bab7c",
+      "tex": "examples/A120603/release/certificate.tex"
+    },
+    {
+      "case_id": "A120604",
+      "payload": "examples/A120604/release/certificate_payload.json",
+      "pdf": "examples/A120604/release/certificate.pdf",
+      "pdf_bytes": 268067,
+      "pdf_sha256": "f07ba93bc73c7a9bbeaec1b7451edddbb5919948df8cc63caec02ea0b739ddb2",
+      "tex": "examples/A120604/release/certificate.tex"
+    },
+    {
+      "case_id": "A120605",
+      "payload": "examples/A120605/release/certificate_payload.json",
+      "pdf": "examples/A120605/release/certificate.pdf",
+      "pdf_bytes": 276226,
+      "pdf_sha256": "ef78413400121883516a24b0f4819a819b176968b9be49225b801d3c791ff52e",
+      "tex": "examples/A120605/release/certificate.tex"
+    },
+    {
+      "case_id": "A120606",
+      "payload": "examples/A120606/release/certificate_payload.json",
+      "pdf": "examples/A120606/release/certificate.pdf",
+      "pdf_bytes": 271222,
+      "pdf_sha256": "c171db18b67ab041bf96b5b0cf3e4a4e9abf71f38fd5a7619ff695f5280923a2",
+      "tex": "examples/A120606/release/certificate.tex"
+    },
+    {
+      "case_id": "A120607",
+      "payload": "examples/A120607/release/certificate_payload.json",
+      "pdf": "examples/A120607/release/certificate.pdf",
+      "pdf_bytes": 279454,
+      "pdf_sha256": "cb1102c4ffed9adf6ab08c02c3635bf6624eceb4dff3e70ebcce77c648faf746",
+      "tex": "examples/A120607/release/certificate.tex"
+    },
+    {
+      "case_id": "A244594",
+      "payload": "examples/A244594/release/certificate_payload.json",
+      "pdf": "examples/A244594/release/certificate.pdf",
+      "pdf_bytes": 253408,
+      "pdf_sha256": "ad2289c85776d758f68f8838a7431b5eea3301524de61a6eda993224e61438ca",
+      "tex": "examples/A244594/release/certificate.tex"
+    },
+    {
+      "case_id": "A244627",
+      "payload": "examples/A244627/release/certificate_payload.json",
+      "pdf": "examples/A244627/release/certificate.pdf",
+      "pdf_bytes": 256356,
+      "pdf_sha256": "b1bdba748cbdbadf6774424697ed3848f08b17c00211395a06b5a60ceadc0130",
+      "tex": "examples/A244627/release/certificate.tex"
+    },
+    {
+      "case_id": "A244856",
+      "payload": "examples/A244856/release/certificate_payload.json",
+      "pdf": "examples/A244856/release/certificate.pdf",
+      "pdf_bytes": 257227,
+      "pdf_sha256": "ca96b0e84c5acd01ad1ec1f6b2c53139ee013316fc9b138096238d7eaf9c52c5",
+      "tex": "examples/A244856/release/certificate.tex"
+    }
+  ],
+  "status": "built"
+}

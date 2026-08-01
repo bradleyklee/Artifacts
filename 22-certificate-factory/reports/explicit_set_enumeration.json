@@ -1,0 +1,399 @@
+{
+  "case_count": 23,
+  "checks": {
+    "A120588": {
+      "1": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "2": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "3": {
+        "enumerated": 2,
+        "pass": true,
+        "published_term": 2
+      }
+    },
+    "A120589": {
+      "1": {
+        "enumerated": 2,
+        "pass": true,
+        "published_term": 2
+      },
+      "2": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "3": {
+        "enumerated": 6,
+        "pass": true,
+        "published_term": 6
+      }
+    },
+    "A120590": {
+      "1": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "2": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "3": {
+        "enumerated": 19,
+        "pass": true,
+        "published_term": 19
+      }
+    },
+    "A120591": {
+      "1": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "2": {
+        "enumerated": 12,
+        "pass": true,
+        "published_term": 12
+      },
+      "3": {
+        "enumerated": 76,
+        "pass": true,
+        "published_term": 76
+      }
+    },
+    "A120592": {
+      "1": {
+        "enumerated": 2,
+        "pass": true,
+        "published_term": 2
+      },
+      "2": {
+        "enumerated": 6,
+        "pass": true,
+        "published_term": 6
+      },
+      "3": {
+        "enumerated": 40,
+        "pass": true,
+        "published_term": 40
+      }
+    },
+    "A120593": {
+      "1": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "2": {
+        "enumerated": 6,
+        "pass": true,
+        "published_term": 6
+      },
+      "3": {
+        "enumerated": 76,
+        "pass": true,
+        "published_term": 76
+      }
+    },
+    "A120594": {
+      "1": {
+        "enumerated": 2,
+        "pass": true,
+        "published_term": 2
+      },
+      "2": {
+        "enumerated": 6,
+        "pass": true,
+        "published_term": 6
+      },
+      "3": {
+        "enumerated": 44,
+        "pass": true,
+        "published_term": 44
+      }
+    },
+    "A120595": {
+      "1": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "2": {
+        "enumerated": 6,
+        "pass": true,
+        "published_term": 6
+      },
+      "3": {
+        "enumerated": 36,
+        "pass": true,
+        "published_term": 36
+      }
+    },
+    "A120596": {
+      "1": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "2": {
+        "enumerated": 10,
+        "pass": true,
+        "published_term": 10
+      },
+      "3": {
+        "enumerated": 210,
+        "pass": true,
+        "published_term": 210
+      }
+    },
+    "A120597": {
+      "1": {
+        "enumerated": 2,
+        "pass": true,
+        "published_term": 2
+      },
+      "2": {
+        "enumerated": 10,
+        "pass": true,
+        "published_term": 10
+      },
+      "3": {
+        "enumerated": 120,
+        "pass": true,
+        "published_term": 120
+      }
+    },
+    "A120598": {
+      "1": {
+        "enumerated": 5,
+        "pass": true,
+        "published_term": 5
+      },
+      "2": {
+        "enumerated": 10,
+        "pass": true,
+        "published_term": 10
+      },
+      "3": {
+        "enumerated": 90,
+        "pass": true,
+        "published_term": 90
+      }
+    },
+    "A120599": {
+      "1": {
+        "enumerated": 4,
+        "pass": true,
+        "published_term": 4
+      },
+      "2": {
+        "enumerated": 20,
+        "pass": true,
+        "published_term": 20
+      },
+      "3": {
+        "enumerated": 280,
+        "pass": true,
+        "published_term": 280
+      }
+    },
+    "A120600": {
+      "1": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "2": {
+        "enumerated": 15,
+        "pass": true,
+        "published_term": 15
+      },
+      "3": {
+        "enumerated": 470,
+        "pass": true,
+        "published_term": 470
+      }
+    },
+    "A120601": {
+      "1": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "2": {
+        "enumerated": 15,
+        "pass": true,
+        "published_term": 15
+      },
+      "3": {
+        "enumerated": 210,
+        "pass": true,
+        "published_term": 210
+      }
+    },
+    "A120602": {
+      "1": {
+        "enumerated": 5,
+        "pass": true,
+        "published_term": 5
+      },
+      "2": {
+        "enumerated": 15,
+        "pass": true,
+        "published_term": 15
+      },
+      "3": {
+        "enumerated": 190,
+        "pass": true,
+        "published_term": 190
+      }
+    },
+    "A120603": {
+      "1": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "2": {
+        "enumerated": 21,
+        "pass": true,
+        "published_term": 21
+      },
+      "3": {
+        "enumerated": 399,
+        "pass": true,
+        "published_term": 399
+      }
+    },
+    "A120604": {
+      "1": {
+        "enumerated": 4,
+        "pass": true,
+        "published_term": 4
+      },
+      "2": {
+        "enumerated": 28,
+        "pass": true,
+        "published_term": 28
+      },
+      "3": {
+        "enumerated": 616,
+        "pass": true,
+        "published_term": 616
+      }
+    },
+    "A120605": {
+      "1": {
+        "enumerated": 4,
+        "pass": true,
+        "published_term": 4
+      },
+      "2": {
+        "enumerated": 36,
+        "pass": true,
+        "published_term": 36
+      },
+      "3": {
+        "enumerated": 984,
+        "pass": true,
+        "published_term": 984
+      }
+    },
+    "A120606": {
+      "1": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "2": {
+        "enumerated": 12,
+        "pass": true,
+        "published_term": 12
+      },
+      "3": {
+        "enumerated": 180,
+        "pass": true,
+        "published_term": 180
+      }
+    },
+    "A120607": {
+      "1": {
+        "enumerated": 3,
+        "pass": true,
+        "published_term": 3
+      },
+      "2": {
+        "enumerated": 15,
+        "pass": true,
+        "published_term": 15
+      },
+      "3": {
+        "enumerated": 270,
+        "pass": true,
+        "published_term": 270
+      }
+    },
+    "A244594": {
+      "1": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "2": {
+        "enumerated": 4,
+        "pass": true,
+        "published_term": 4
+      },
+      "3": {
+        "enumerated": 29,
+        "pass": true,
+        "published_term": 29
+      }
+    },
+    "A244627": {
+      "1": {
+        "enumerated": 2,
+        "pass": true,
+        "published_term": 2
+      },
+      "2": {
+        "enumerated": 10,
+        "pass": true,
+        "published_term": 10
+      },
+      "3": {
+        "enumerated": 84,
+        "pass": true,
+        "published_term": 84
+      }
+    },
+    "A244856": {
+      "1": {
+        "enumerated": 1,
+        "pass": true,
+        "published_term": 1
+      },
+      "2": {
+        "enumerated": 7,
+        "pass": true,
+        "published_term": 7
+      },
+      "3": {
+        "enumerated": 95,
+        "pass": true,
+        "published_term": 95
+      }
+    }
+  },
+  "maximum_true_leaves": 3,
+  "published_term_comparisons": 69,
+  "status": "verified"
+}

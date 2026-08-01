@@ -1,0 +1,12 @@
+{
+  "active": [],
+  "active_case_count": 0,
+  "resolved": "All strict-scope analytic blockers resolved in shots 6-9.",
+  "resource_policy": {
+    "address_space_mib": 1024,
+    "case_wall_seconds": 300,
+    "project_bytes": 10485760,
+    "shot_wall_seconds": 900
+  },
+  "schema_version": "1.0"
+}

@@ -1,0 +1,24 @@
+{
+  "canonical_source": "release/certificate_payload.json.gz#/objects/p_recurrence",
+  "statistics": {
+    "G_nonzero": 200,
+    "G_shape": [
+      20,
+      20
+    ],
+    "X_rank": 9,
+    "X_shape": [
+      9,
+      10
+    ],
+    "certificate_degree_n": 8,
+    "certificate_degree_u": 81,
+    "checks_passed": 11,
+    "checks_total": 11,
+    "denominator_degree": 10,
+    "nullity": 1,
+    "recurrence_degree": 9,
+    "recurrence_order": 9
+  },
+  "status": "verified"
+}
