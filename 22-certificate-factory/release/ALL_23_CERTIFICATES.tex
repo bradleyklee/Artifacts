@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=.7in]{geometry}
+\usepackage{xcolor,hyperref,pdfpages,embedfile,booktabs,tabularx}
+\hypersetup{colorlinks=true,urlcolor=blue!55!black}
+\definecolor{navy}{RGB}{25,54,86}
+\pagestyle{empty}
+\begin{document}
+\embedfile[desc={23-case certificate payload index},mimetype=application/json]{HANNA_23_PAYLOAD_INDEX.json}
+{\color{navy}\Huge\bfseries Illustrated calculus certificates}\par
+\vspace{4mm}{\Large 23 typogeometric OEIS cases}\par
+\vspace{8mm}
+This portfolio presents one concise certificate per case: defining relation, first terms,
+typogeometric trees, exact contour extraction, recurrence, differential equation, and
+matrix-reduction dimensions. Each constituent PDF embeds its exact JSON payload; this
+combined PDF embeds a SHA-256 index pointing to every constituent payload and certificate.
+
+\vspace{6mm}
+\textbf{Scope.} A120588--A120607, A244594, A244627, and A244856.\\
+\textbf{Quality status.} All 23 defining relations, published prefixes, recurrence
+instances, PDF structures, embedded payloads, and page layouts pass the release audit.\\
+\textbf{Detailed reference.} The reviewed A120590 q=3 paper remains separately available
+as the verbose explanatory example; these pages deliberately filter each record to its
+most useful verified facts.
+
+\vfill
+Bradley Klee, \quad Mech.An.ika Sol (Open AI)\hfill July 31, 2026
+\newpage
+\includepdf[pages=-,pagecommand={}]{../examples/A120588/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120589/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120590/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120591/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120592/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120593/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120594/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120595/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120596/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120597/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120598/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120599/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120600/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120601/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120602/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120603/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120604/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120605/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120606/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A120607/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A244594/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A244627/release/certificate.pdf}
+\includepdf[pages=-,pagecommand={}]{../examples/A244856/release/certificate.pdf}
+\end{document}

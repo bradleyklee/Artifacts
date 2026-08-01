@@ -140,52 +140,218 @@
       "status": "verified"
     },
     "data/ode.json": {
-      "canonical_source": "runs/A120592-polynomial-pilot/case.json#/objects/ode_from_recurrence",
-      "pilot_statistics": {
-        "G_determinant": "-68",
-        "G_nonzero": 18,
-        "G_shape": [
-          6,
-          6
-        ],
-        "X_rank": 2,
-        "X_shape": [
-          2,
-          3
-        ],
-        "certificate_degree_n": 1,
-        "certificate_degree_u": 4,
-        "certificate_denominator_power": 1,
-        "peak_rss_kib": 60048,
-        "recurrence_degree": 2,
-        "recurrence_order": 2,
-        "wall_seconds": 0.531084354000086
+      "boundary_polynomial": "0",
+      "canonicalized_from": "runs/A120592-polynomial-pilot/case.json#/objects/ode_from_recurrence",
+      "coefficient_correspondence": {
+        "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
+        "samples": [
+          {
+            "difference": "0",
+            "n": 1,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 2,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 3,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 4,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 5,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 6,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 7,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 8,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 9,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 10,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 11,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 12,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 13,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 14,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 15,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 16,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 17,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 18,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          },
+          {
+            "difference": "0",
+            "n": 19,
+            "ode_coefficient": "0",
+            "recurrence_residual": "0"
+          }
+        ]
       },
-      "status": "verified"
+      "ordinary_derivative_form": {
+        "coefficients": [
+          "12*x**2",
+          "-108*x**3 - 108*x**2",
+          "-108*x**4 - 216*x**3 + 17*x**2"
+        ],
+        "identity": "sum_j C_j(x) d^j A_q(x)/dx^j = B_q(x)",
+        "order": 2
+      },
+      "series": "A_q(x)",
+      "status": "complete",
+      "theta_definition": "theta=x*d/dx",
+      "theta_operator": {
+        "identity": "L_q(x,theta)=sum_{r=0}^{s} x^(s-r) P_r(theta-r)",
+        "terms": [
+          {
+            "polynomial_in_theta": "-108*theta**2 + 12",
+            "shift": 0,
+            "source": "P_0(theta-0)",
+            "x_power": 2
+          },
+          {
+            "polynomial_in_theta": "-216*theta**2 + 108*theta",
+            "shift": 1,
+            "source": "P_1(theta-1)",
+            "x_power": 1
+          },
+          {
+            "polynomial_in_theta": "17*theta**2 - 17*theta",
+            "shift": 2,
+            "source": "P_2(theta-2)",
+            "x_power": 0
+          }
+        ]
+      },
+      "validity": {
+        "safe_series_exponent_range": [
+          0,
+          21
+        ],
+        "source_recurrence_valid_from_n": 1
+      },
+      "verification": {
+        "recurrence_coefficient_correspondence": {
+          "checked_n": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ],
+          "max_absolute_difference": 0,
+          "pass": true,
+          "relation": "ODE coefficient equals recurrence residual"
+        },
+        "series_residual": {
+          "checked_exponents": [
+            0,
+            21
+          ],
+          "max_absolute_residual": 0,
+          "pass": true,
+          "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+        }
+      }
     },
     "data/recurrence.json": {
-      "canonical_source": "runs/A120592-polynomial-pilot/case.json#/objects/p_recurrence",
-      "pilot_statistics": {
-        "G_determinant": "-68",
-        "G_nonzero": 18,
-        "G_shape": [
-          6,
-          6
-        ],
-        "X_rank": 2,
-        "X_shape": [
-          2,
-          3
-        ],
-        "certificate_degree_n": 1,
-        "certificate_degree_u": 4,
-        "certificate_denominator_power": 1,
-        "peak_rss_kib": 60048,
-        "recurrence_degree": 2,
-        "recurrence_order": 2,
-        "wall_seconds": 0.531084354000086
-      },
-      "status": "verified"
+      "canonicalized_from": "runs/A120592-polynomial-pilot/case.json#/objects/p_recurrence",
+      "coefficients": [
+        "-108*n**2 + 12",
+        "-216*n**2 - 324*n - 108",
+        "17*n**2 + 51*n + 34"
+      ],
+      "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+      "order": 2,
+      "status": "verified",
+      "valid_from_n": 1
     },
     "data/set_elements_n_le_3.json": {
       "checks": {
@@ -348,16 +514,19 @@
   },
   "note": "Full matrix entries remain at the precise canonical source above to avoid overwhelming the presentation PDF.",
   "resolved_certificate": {
+    "canonicalized_from": "runs/A120592-polynomial-pilot/case.json#/objects/rational_certificate",
     "denominator_base": "-2*u**3 - 3*u**2 + u",
     "denominator_power": 1,
     "formula": "R(n,u)=N(n,u)/rho(u)^(q-2)",
-    "numerator_N": "-72*n*u**4 - 144*n*u**3 + 42*n*u**2 + 114*n*u - 17*n - 24*u**4 - 48*u**3 - 6*u**2 + 6*u"
+    "numerator_N": "-72*n*u**4 - 144*n*u**3 + 42*n*u**2 + 114*n*u - 17*n - 24*u**4 - 48*u**3 - 6*u**2 + 6*u",
+    "status": "verified"
   },
-  "resolved_certificate_source": "runs/A120592-polynomial-pilot/case.json#/objects/rational_certificate",
-  "resolved_matrices_sha256": "0b1aae4a70c4d24c6883e3fd8602177a1e90937117edaac131997e7556744236",
-  "resolved_matrices_source": "runs/A120592-polynomial-pilot/case.json#/objects/matrices",
+  "resolved_certificate_source": "data/certificate.json",
+  "resolved_matrices_sha256": "1fb38c7c122278bbcb2ea6148c256c7904bf294c1d5f92a7893bbd56f6b431b9",
+  "resolved_matrices_source": "data/matrices.json",
   "resolved_ode": {
     "boundary_polynomial": "0",
+    "canonicalized_from": "runs/A120592-polynomial-pilot/case.json#/objects/ode_from_recurrence",
     "coefficient_correspondence": {
       "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
       "samples": [
@@ -557,8 +726,9 @@
       }
     }
   },
-  "resolved_ode_source": "runs/A120592-polynomial-pilot/case.json#/objects/ode_from_recurrence",
+  "resolved_ode_source": "data/ode.json",
   "resolved_recurrence": {
+    "canonicalized_from": "runs/A120592-polynomial-pilot/case.json#/objects/p_recurrence",
     "coefficients": [
       "-108*n**2 + 12",
       "-216*n**2 - 324*n - 108",
@@ -566,9 +736,10 @@
     ],
     "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
     "order": 2,
+    "status": "verified",
     "valid_from_n": 1
   },
-  "resolved_recurrence_source": "runs/A120592-polynomial-pilot/case.json#/objects/p_recurrence",
+  "resolved_recurrence_source": "data/recurrence.json",
   "schema_version": "1.0",
   "status": "verified"
 }

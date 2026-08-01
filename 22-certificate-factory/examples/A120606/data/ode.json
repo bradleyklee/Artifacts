@@ -1,24 +1,160 @@
 {
-  "canonical_source": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
-  "statistics": {
-    "G_nonzero": 162,
-    "G_shape": [
-      18,
-      18
-    ],
-    "X_rank": 8,
-    "X_shape": [
-      8,
-      9
-    ],
-    "certificate_degree_n": 7,
-    "certificate_degree_u": 64,
-    "checks_passed": 11,
-    "checks_total": 11,
-    "denominator_degree": 9,
-    "nullity": 1,
-    "recurrence_degree": 8,
-    "recurrence_order": 8
+  "boundary_polynomial": "0",
+  "canonicalized_from": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
+  "coefficient_correspondence": {
+    "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
+    "samples": [
+      {
+        "difference": "0",
+        "n": 1,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 2,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 3,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 4,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 5,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 6,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 7,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      }
+    ]
   },
-  "status": "verified"
+  "ordinary_derivative_form": {
+    "coefficients": [
+      "4011058905828975*x**8",
+      "-363508228979510895*x**9 - 157071456966455325*x**8",
+      "-1663468916430505905*x**10 - 1437565730248585350*x**9 - 310585188633953625*x**8",
+      "-1974825457913578410*x**11 - 2559958926925009050*x**10 - 1106155091881176750*x**9 - 159322749859428750*x**8",
+      "-938928468843224055*x**12 - 1622839328864831700*x**11 - 1051840305745724250*x**10 - 302999265029632500*x**9 - 32731402086534375*x**8",
+      "-209424325596026310*x**13 - 452459962707464250*x**12 - 391014782586697500*x**11 - 168957004821412500*x**10 - 36503056597218750*x**9 - 3154585138031250*x**8",
+      "-23000496591939678*x**14 - 59630917090213980*x**13 - 64416114140663250*x**12 - 37112164525485000*x**11 - 12027090355481250*x**10 - 2078756357737500*x**9 - 149704675968750*x**8",
+      "-1189593207657972*x**15 - 3598152294767940*x**14 - 4664271493217700*x**13 - 3359043256432500*x**12 - 1451438444137500*x**11 - 376298855887500*x**10 - 54199423687500*x**9 - 3345643437500*x**8",
+      "-22876792454961*x**16 - 79080270214680*x**15 - 119596704954300*x**14 - 103355177121000*x**13 - 55824555543750*x**12 - 19297377225000*x**11 - 4169186437500*x**10 - 514714375000*x**9 + 26495939759*x**8"
+    ],
+    "identity": "sum_j C_j(x) d^j A_q(x)/dx^j = B_q(x)",
+    "order": 8
+  },
+  "series": "A_q(x)",
+  "status": "complete",
+  "theta_definition": "theta=x*d/dx",
+  "theta_operator": {
+    "identity": "L_q(x,theta)=sum_{r=0}^{s} x^(s-r) P_r(theta-r)",
+    "terms": [
+      {
+        "polynomial_in_theta": "-22876792454961*theta**8 - 549043018919064*theta**7 - 5385366401619708*theta**6 - 27757174845352680*theta**5 - 80229423696855174*theta**4 - 127475638246726056*theta**3 - 98636991848159292*theta**2 - 23451714129423960*theta + 4011058905828975",
+        "shift": 0,
+        "source": "P_0(theta-0)",
+        "x_power": 8
+      },
+      {
+        "polynomial_in_theta": "-79080270214680*theta**8 - 1383904728756900*theta**7 - 9533565909214200*theta**6 - 32675528317871250*theta**5 - 57520066887110520*theta**4 - 46982521443078900*theta**3 - 11075037526917000*theta**2 + 2178248116708125*theta",
+        "shift": 1,
+        "source": "P_1(theta-1)",
+        "x_power": 7
+      },
+      {
+        "polynomial_in_theta": "-119596704954300*theta**8 - 1315563754497300*theta**7 - 4976551778376150*theta**6 - 6611040079418250*theta**5 + 1627269844227300*theta**4 + 8762058182310300*theta**3 + 3245752292984775*theta**2 - 612328002276375*theta",
+        "shift": 2,
+        "source": "P_2(theta-2)",
+        "x_power": 6
+      },
+      {
+        "polynomial_in_theta": "-103355177121000*theta**8 - 465098297044500*theta**7 + 147376826635500*theta**6 + 2469040342335000*theta**5 + 1322398064106000*theta**4 - 2411372690354250*theta**3 - 1199654930234250*theta**2 + 240665861677500*theta",
+        "shift": 3,
+        "source": "P_3(theta-3)",
+        "x_power": 5
+      },
+      {
+        "polynomial_in_theta": "-55824555543750*theta**8 + 111649111087500*theta**7 + 477610086318750*theta**6 - 682300123312500*theta**5 - 1072676364834375*theta**4 + 828791721056250*theta**3 + 506773120021875*theta**2 - 114022994793750*theta",
+        "shift": 4,
+        "source": "P_4(theta-4)",
+        "x_power": 4
+      },
+      {
+        "polynomial_in_theta": "-19297377225000*theta**8 + 164027706412500*theta**7 - 390235850550000*theta**6 - 2680191281250*theta**5 + 807273613912500*theta**4 - 386483582756250*theta**3 - 236928909262500*theta**2 + 64324590750000*theta",
+        "shift": 5,
+        "source": "P_5(theta-5)",
+        "x_power": 3
+      },
+      {
+        "polynomial_in_theta": "-4169186437500*theta**8 + 62537796562500*theta**7 - 353994811406250*theta**6 + 932276411718750*theta**5 - 1109544042468750*theta**4 + 413444321718750*theta**3 + 105773804062500*theta**2 - 46324293750000*theta",
+        "shift": 6,
+        "source": "P_6(theta-6)",
+        "x_power": 2
+      },
+      {
+        "polynomial_in_theta": "-514714375000*theta**8 + 11066359062500*theta**7 - 95479516562500*theta**6 + 423352573437500*theta**5 - 1025053677812500*theta**4 + 1325904230000000*theta**3 - 824572428750000*theta**2 + 185297175000000*theta",
+        "shift": 7,
+        "source": "P_7(theta-7)",
+        "x_power": 1
+      },
+      {
+        "polynomial_in_theta": "26495939759*theta**8 - 741886313252*theta**7 + 8531692602398*theta**6 - 51932041927640*theta**5 + 179351016228671*theta**4 - 347944680915188*theta**3 + 346248940770612*theta**2 - 133539536385360*theta",
+        "shift": 8,
+        "source": "P_8(theta-8)",
+        "x_power": 0
+      }
+    ]
+  },
+  "validity": {
+    "safe_series_exponent_range": [
+      0,
+      15
+    ],
+    "source_recurrence_valid_from_n": 1
+  },
+  "verification": {
+    "recurrence_coefficient_correspondence": {
+      "checked_n": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "max_absolute_difference": 0,
+      "pass": true,
+      "relation": "ODE coefficient equals recurrence residual"
+    },
+    "series_residual": {
+      "checked_exponents": [
+        0,
+        15
+      ],
+      "max_absolute_residual": 0,
+      "pass": true,
+      "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+    }
+  }
 }

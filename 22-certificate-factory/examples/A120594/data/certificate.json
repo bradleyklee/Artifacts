@@ -1,24 +1,8 @@
 {
-  "canonical_source": "release/certificate_payload.json.gz#/objects/rational_certificate",
-  "statistics": {
-    "G_nonzero": 32,
-    "G_shape": [
-      8,
-      8
-    ],
-    "X_rank": 3,
-    "X_shape": [
-      3,
-      4
-    ],
-    "certificate_degree_n": 2,
-    "certificate_degree_u": 9,
-    "checks_passed": 7,
-    "checks_total": 7,
-    "denominator_degree": 4,
-    "nullity": 1,
-    "recurrence_degree": 3,
-    "recurrence_order": 3
-  },
+  "canonicalized_from": "release/certificate_payload.json.gz#/objects/rational_certificate",
+  "denominator_base": "-2*u**4 - 4*u**3 - 3*u**2 + u",
+  "denominator_power": 2,
+  "formula": "R(n,u)=N(n,u)/rho(u)^(q-2)",
+  "numerator_N": "512*n**2*u**9 + 2304*n**2*u**8 + 4608*n**2*u**7 + 3968*n**2*u**6 - 192*n**2*u**5 - 3264*n**2*u**4 - 1664*n**2*u**3 + 600*n**2*u**2 + 642*n**2*u - 89*n**2 + 896*n*u**9 + 4032*n*u**8 + 8064*n*u**7 + 7136*n*u**6 + 408*n*u**5 - 4572*n*u**4 - 2420*n*u**3 + 618*n*u**2 + 696*n*u - 89*n + 320*u**9 + 1440*u**8 + 2880*u**7 + 2720*u**6 + 880*u**5 - 440*u**4 - 160*u**3 + 40*u**2",
   "status": "verified"
 }

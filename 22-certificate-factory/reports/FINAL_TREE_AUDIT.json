@@ -1,0 +1,12 @@
+{
+  "aggregate_pdf": "release/ALL_23_CERTIFICATES.pdf",
+  "aggregate_pdf_sha256": "1a38f3b798cdfe7ad1afa5cc20dfae98953277bca643378fc589d6fb46c8c34a",
+  "broken_or_missing": [],
+  "case_count": 23,
+  "compressed_full_matrix_records_checked": 5,
+  "project_bytes": 9975670,
+  "project_ceiling_bytes": 10485760,
+  "required_case_files_checked": 230,
+  "status": "pass",
+  "under_size_ceiling": true
+}

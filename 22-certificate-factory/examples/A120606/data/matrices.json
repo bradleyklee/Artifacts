@@ -1,24 +1,35 @@
 {
-  "canonical_source": "release/certificate_payload.json.gz#/objects/matrices",
+  "canonical_source": "data/matrices_full.json.gz",
+  "compressed_sha256": "673fbde22ff98069f0f4a8608611fdb5df1fa5aaf86f8c4dce959caa3aa2d363",
+  "compression": "gzip",
+  "full_components": [
+    "G",
+    "G_inverse",
+    "J",
+    "U",
+    "V",
+    "X",
+    "X_full",
+    "embedding_E"
+  ],
+  "printed_components": [
+    "G",
+    "U",
+    "V",
+    "J"
+  ],
   "statistics": {
-    "G_nonzero": 162,
     "G_shape": [
       18,
       18
     ],
-    "X_rank": 8,
     "X_shape": [
       8,
       9
     ],
-    "certificate_degree_n": 7,
-    "certificate_degree_u": 64,
-    "checks_passed": 11,
-    "checks_total": 11,
-    "denominator_degree": 9,
     "nullity": 1,
-    "recurrence_degree": 8,
-    "recurrence_order": 8
+    "rank": 8
   },
-  "status": "verified"
+  "status": "verified",
+  "uncompressed_sha256": "e7a9a9e6b91ef373b7a596084bbae0ecadf28d7db1ed966694311fdddb6e5f33"
 }

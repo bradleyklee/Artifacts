@@ -20,7 +20,7 @@ def main():
     cases = []
     for cid in IDS:
         directory = ROOT / "examples" / cid / "release"
-        pdf, payload = directory / "certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf", directory / "certificate_payload.json"
+        pdf, payload = directory / "certificate.pdf", directory / "certificate_payload.json"
         g, x, rank, nullity = matrix_summary(ROOT / "examples" / cid)
         cases.append({
             "case_id": cid,
@@ -32,8 +32,8 @@ def main():
         })
     index = release / "HANNA_23_PAYLOAD_INDEX.json"
     index.write_text(json.dumps({"schema_version": "1.0", "date": "2026-07-31", "case_count": 23, "cases": cases}, indent=2, sort_keys=True) + "\n")
-    include = "\n".join(rf"\includepdf[pages=-,pagecommand={{}}]{{../examples/{cid}/release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf}}" for cid in IDS)
-    tex = release / "HANNA_23_CALCULUS_CERTIFICATES.tex"
+    include = "\n".join(rf"\includepdf[pages=-,pagecommand={{}}]{{../examples/{cid}/release/certificate.pdf}}" for cid in IDS)
+    tex = release / "ALL_23_CERTIFICATES.tex"
     tex.write_text(r"""\documentclass[11pt]{article}
 \usepackage[letterpaper,margin=.7in]{geometry}
 \usepackage{xcolor,hyperref,pdfpages,embedfile,booktabs,tabularx}

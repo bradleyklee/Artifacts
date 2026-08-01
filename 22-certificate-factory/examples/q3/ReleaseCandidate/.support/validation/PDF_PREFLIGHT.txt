@@ -1,6 +1,0 @@
-PDF: A120590_Ternatrees.pdf
-Pages: 16
-Encrypted: False
-Openable (PyMuPDF): True
-Likely scanned: False
-XFA present: False

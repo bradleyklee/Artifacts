@@ -1,23 +1,7 @@
 {
-  "canonical_source": "runs/A244627-direct-x-pilot/case.json#/corrected_numerator_aware_reduction/certificate",
-  "pilot_statistics": {
-    "Gx_determinant": "256*x**3 - 960*x**2 + 1200*x - 68",
-    "Gx_nonzero": 21,
-    "Gx_shape": [
-      6,
-      6
-    ],
-    "X_rank": 2,
-    "X_shape": [
-      2,
-      3
-    ],
-    "certificate_degree_u": 5,
-    "certificate_degree_x": 3,
-    "ode_for_A_prime_order": 2,
-    "peak_rss_kib": 64652,
-    "recurrence_order": 4,
-    "wall_seconds": 1.7213678419993812
-  },
+  "canonicalized_from": "runs/A244627-direct-x-pilot/case.json#/corrected_numerator_aware_reduction/certificate",
+  "denominator_base": "-2*u**3 - 3*u**2 - 2*u*x + u - x",
+  "denominator_power": 2,
+  "numerator": "1024*u**5*x**2 - 2560*u**5*x + 1600*u**5 + 2560*u**4*x**2 - 6400*u**4*x + 4000*u**4 + 512*u**3*x**3 + 640*u**3*x**2 - 4000*u**3*x + 3576*u**3 + 768*u**2*x**3 - 704*u**2*x**2 - 1840*u**2*x + 2764*u**2 + 384*u*x**3 - 224*u*x**2 - 88*u*x + 142*u + 64*x**3 + 16*x**2 + 236*x - 85",
   "status": "verified"
 }

@@ -1,24 +1,14 @@
 {
-  "canonical_source": "release/certificate_payload.json.gz#/objects/p_recurrence",
-  "statistics": {
-    "G_nonzero": 50,
-    "G_shape": [
-      10,
-      10
-    ],
-    "X_rank": 4,
-    "X_shape": [
-      4,
-      5
-    ],
-    "certificate_degree_n": 3,
-    "certificate_degree_u": 16,
-    "checks_passed": 7,
-    "checks_total": 7,
-    "denominator_degree": 5,
-    "nullity": 1,
-    "recurrence_degree": 4,
-    "recurrence_order": 4
-  },
-  "status": "verified"
+  "canonicalized_from": "release/certificate_payload.json.gz#/objects/p_recurrence",
+  "coefficients": [
+    "-1953125*n**4 - 7812500*n**3 - 8593750*n**2 - 1562500*n + 721875",
+    "-1812500*n**4 - 9968750*n**3 - 19393750*n**2 - 15859375*n - 4621875",
+    "-630750*n**4 - 4415250*n**3 - 11290425*n**2 - 12425775*n - 4919850",
+    "-97556*n**4 - 829226*n**3 - 2536456*n**2 - 3268126*n - 1463340",
+    "10267*n**4 + 102670*n**3 + 359345*n**2 + 513350*n + 246408"
+  ],
+  "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+  "order": 4,
+  "status": "verified",
+  "valid_from_n": 1
 }

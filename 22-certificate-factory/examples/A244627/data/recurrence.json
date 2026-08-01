@@ -1,23 +1,7 @@
-{
-  "canonical_source": "runs/A244627-direct-x-pilot/case.json#/recurrence",
-  "pilot_statistics": {
-    "Gx_determinant": "256*x**3 - 960*x**2 + 1200*x - 68",
-    "Gx_nonzero": 21,
-    "Gx_shape": [
-      6,
-      6
-    ],
-    "X_rank": 2,
-    "X_shape": [
-      2,
-      3
-    ],
-    "certificate_degree_u": 5,
-    "certificate_degree_x": 3,
-    "ode_for_A_prime_order": 2,
-    "peak_rss_kib": 64652,
-    "recurrence_order": 4,
-    "wall_seconds": 1.7213678419993812
-  },
-  "status": "verified"
-}
+[
+  "256*n**3 + 128*n**2 - 128*n",
+  "-1280*n**3 - 3360*n**2 - 2720*n - 640",
+  "2400*n**3 + 11400*n**2 + 17800*n + 9200",
+  "-1568*n**3 - 11590*n**2 - 28158*n - 22500",
+  "85*n**3 + 765*n**2 + 2210*n + 2040"
+]

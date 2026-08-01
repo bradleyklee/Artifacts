@@ -1,24 +1,12 @@
 {
-  "canonical_source": "runs/A120592-polynomial-pilot/case.json#/objects/p_recurrence",
-  "pilot_statistics": {
-    "G_determinant": "-68",
-    "G_nonzero": 18,
-    "G_shape": [
-      6,
-      6
-    ],
-    "X_rank": 2,
-    "X_shape": [
-      2,
-      3
-    ],
-    "certificate_degree_n": 1,
-    "certificate_degree_u": 4,
-    "certificate_denominator_power": 1,
-    "peak_rss_kib": 60048,
-    "recurrence_degree": 2,
-    "recurrence_order": 2,
-    "wall_seconds": 0.531084354000086
-  },
-  "status": "verified"
+  "canonicalized_from": "runs/A120592-polynomial-pilot/case.json#/objects/p_recurrence",
+  "coefficients": [
+    "-108*n**2 + 12",
+    "-216*n**2 - 324*n - 108",
+    "17*n**2 + 51*n + 34"
+  ],
+  "identity": "sum_{r=0}^{q-1} P_r(n) a(n+r) = 0",
+  "order": 2,
+  "status": "verified",
+  "valid_from_n": 1
 }

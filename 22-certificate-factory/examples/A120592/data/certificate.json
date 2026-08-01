@@ -1,24 +1,8 @@
 {
-  "canonical_source": "runs/A120592-polynomial-pilot/case.json#/objects/rational_certificate",
-  "pilot_statistics": {
-    "G_determinant": "-68",
-    "G_nonzero": 18,
-    "G_shape": [
-      6,
-      6
-    ],
-    "X_rank": 2,
-    "X_shape": [
-      2,
-      3
-    ],
-    "certificate_degree_n": 1,
-    "certificate_degree_u": 4,
-    "certificate_denominator_power": 1,
-    "peak_rss_kib": 60048,
-    "recurrence_degree": 2,
-    "recurrence_order": 2,
-    "wall_seconds": 0.531084354000086
-  },
+  "canonicalized_from": "runs/A120592-polynomial-pilot/case.json#/objects/rational_certificate",
+  "denominator_base": "-2*u**3 - 3*u**2 + u",
+  "denominator_power": 1,
+  "formula": "R(n,u)=N(n,u)/rho(u)^(q-2)",
+  "numerator_N": "-72*n*u**4 - 144*n*u**3 + 42*n*u**2 + 114*n*u - 17*n - 24*u**4 - 48*u**3 - 6*u**2 + 6*u",
   "status": "verified"
 }

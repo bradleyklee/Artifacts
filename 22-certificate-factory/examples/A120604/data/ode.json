@@ -1,24 +1,167 @@
 {
-  "canonical_source": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
-  "statistics": {
-    "G_nonzero": 128,
-    "G_shape": [
-      16,
+  "boundary_polynomial": "0",
+  "canonicalized_from": "release/certificate_payload.json.gz#/objects/ode_from_recurrence",
+  "coefficient_correspondence": {
+    "formula": "[x^(n+s)](L_q A_q-B_q)=sum_r P_r(n)a_q(n+r)",
+    "samples": [
+      {
+        "difference": "0",
+        "n": 1,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 2,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 3,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 4,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 5,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 6,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 7,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 8,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      },
+      {
+        "difference": "0",
+        "n": 9,
+        "ode_coefficient": "0",
+        "recurrence_residual": "0"
+      }
+    ]
+  },
+  "ordinary_derivative_form": {
+    "coefficients": [
+      "7695929180160*x**7",
+      "-551730806784000*x**8 - 198278258688000*x**7",
+      "-2219107764142080*x**9 - 1594983705477120*x**8 - 286598634577920*x**7",
+      "-2224480667566080*x**10 - 2398268219719680*x**9 - 861877641461760*x**8 - 103245759133440*x**7",
+      "-853689174589440*x**11 - 1227178188472320*x**10 - 661525742223360*x**9 - 158490542407680*x**8 - 14239384669440*x**7",
+      "-143769735266304*x**12 - 258336243056640*x**11 - 185679174696960*x**10 - 66728453406720*x**9 - 11990268971520*x**8 - 861800582328*x**7",
+      "-10582799417344*x**13 - 22819161243648*x**12 - 20501590179840*x**11 - 9823678627840*x**10 - 2647788380160*x**9 - 380619579648*x**8 - 22797526906*x**7",
+      "-274877906944*x**14 - 691489734656*x**13 - 745512370176*x**12 - 446530846720*x**11 - 160472023040*x**10 - 34601779968*x**9 - 4145004892*x**8 + 124902511*x**7"
+    ],
+    "identity": "sum_j C_j(x) d^j A_q(x)/dx^j = B_q(x)",
+    "order": 7
+  },
+  "series": "A_q(x)",
+  "status": "complete",
+  "theta_definition": "theta=x*d/dx",
+  "theta_operator": {
+    "identity": "L_q(x,theta)=sum_{r=0}^{s} x^(s-r) P_r(theta-r)",
+    "terms": [
+      {
+        "polynomial_in_theta": "-274877906944*theta**7 - 4810363371520*theta**6 - 33131377721344*theta**5 - 113494510796800*theta**4 - 199558206324736*theta**3 - 162562331115520*theta**2 - 37899139547136*theta + 7695929180160",
+        "shift": 0,
+        "source": "P_0(theta-0)",
+        "x_power": 7
+      },
+      {
+        "polynomial_in_theta": "-691489734656*theta**7 - 8297876815872*theta**6 - 37059527966720*theta**5 - 75199508643840*theta**4 - 65635645128704*theta**3 - 14989255507968*theta**2 + 3595045109760*theta",
+        "shift": 1,
+        "source": "P_1(theta-1)",
+        "x_power": 6
+      },
+      {
+        "polynomial_in_theta": "-745512370176*theta**7 - 4845830406144*theta**6 - 8619986780160*theta**5 + 582431539200*theta**4 + 10651398782976*theta**3 + 3857971912704*theta**2 - 880472678400*theta",
+        "shift": 2,
+        "source": "P_2(theta-2)",
+        "x_power": 5
+      },
+      {
+        "polynomial_in_theta": "-446530846720*theta**7 - 446530846720*theta**6 + 2483827834880*theta**5 + 1981480632320*theta**4 - 2636777731840*theta**3 - 1243549162240*theta**2 + 308080120320*theta",
+        "shift": 3,
+        "source": "P_3(theta-3)",
+        "x_power": 4
+      },
+      {
+        "polynomial_in_theta": "-160472023040*theta**7 + 722124103680*theta**6 - 356047301120*theta**5 - 1451770333440*theta**4 + 922714132480*theta**3 + 458849690880*theta**2 - 135398269440*theta",
+        "shift": 4,
+        "source": "P_4(theta-4)",
+        "x_power": 3
+      },
+      {
+        "polynomial_in_theta": "-34601779968*theta**7 + 346017799680*theta**6 - 1207818382008*theta**5 + 1697649829680*theta**4 - 716905628712*theta**3 - 162195843600*theta**2 + 77854004928*theta",
+        "shift": 5,
+        "source": "P_5(theta-5)",
+        "x_power": 2
+      },
+      {
+        "polynomial_in_theta": "-4145004892*theta**7 + 64247575826*theta**6 - 383412952510*theta**5 + 1108788808610*theta**4 - 1602044390758*theta**3 + 1065266257244*theta**2 - 248700293520*theta",
+        "shift": 6,
+        "source": "P_6(theta-6)",
+        "x_power": 1
+      },
+      {
+        "polynomial_in_theta": "124902511*theta**7 - 2622952731*theta**6 + 21857939425*theta**5 - 91803345585*theta**4 + 202841677864*theta**3 - 220328029404*theta**2 + 89929807920*theta",
+        "shift": 7,
+        "source": "P_7(theta-7)",
+        "x_power": 0
+      }
+    ]
+  },
+  "validity": {
+    "safe_series_exponent_range": [
+      0,
       16
     ],
-    "X_rank": 7,
-    "X_shape": [
-      7,
-      8
-    ],
-    "certificate_degree_n": 6,
-    "certificate_degree_u": 49,
-    "checks_passed": 7,
-    "checks_total": 7,
-    "denominator_degree": 8,
-    "nullity": 1,
-    "recurrence_degree": 7,
-    "recurrence_order": 7
+    "source_recurrence_valid_from_n": 1
   },
-  "status": "verified"
+  "verification": {
+    "recurrence_coefficient_correspondence": {
+      "checked_n": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "max_absolute_difference": 0,
+      "pass": true,
+      "relation": "ODE coefficient equals recurrence residual"
+    },
+    "series_residual": {
+      "checked_exponents": [
+        0,
+        16
+      ],
+      "max_absolute_residual": 0,
+      "pass": true,
+      "relation": "L_q A_q-B_q=0 coefficientwise on the safe emitted range"
+    }
+  }
 }

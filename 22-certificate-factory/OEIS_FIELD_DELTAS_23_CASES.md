@@ -1,1 +1,0 @@
-work/OEIS_FIELD_DELTAS_23_CASES.md

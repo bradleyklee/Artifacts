@@ -1,1 +1,55 @@
-certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.tex
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=.25in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,xcolor,tikz,hyperref,embedfile,microtype}
+\usetikzlibrary{trees}
+\hypersetup{colorlinks=true,urlcolor=blue!55!black}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\linespread{1.035}\selectfont
+\definecolor{navy}{RGB}{25,54,86}
+\definecolor{soft}{RGB}{244,247,250}
+\tikzset{branch/.style={circle,draw=navy,line width=.6pt,inner sep=2pt},trueleaf/.style={circle,draw=navy,fill=navy,inner sep=2.1pt},falseleaf/.style={circle,draw=navy,fill=white,inner sep=1.8pt}}
+\newcommand{\sectionbar}[1]{\vspace{3pt}{\color{navy}\bfseries #1}\par\vspace{2pt}\hrule\vspace{4pt}}
+\begin{document}
+\enlargethispage{.12in}
+
+\embedfile[desc={A120589 exact certificate payload},mimetype=application/json]{certificate_payload.json}
+{\color{navy}\LARGE\bfseries A120589 concise calculus certificate}\hfill{\small VERIFIED}\\[-1pt]
+{\small Bradley Klee, \quad Mech.An.ika Sol (Open AI) \hfill July 31, 2026}
+
+\sectionbar{Definition and first terms}
+\(\displaystyle A(x)=A_{\mathrm{parent}}(x)^{2},\quad A_{\mathrm{parent}}(x)=A_{120588}(x)\), with the origin-normalized solution.\\
+{\footnotesize Normalization/grammar: \texttt{ordered forest of 2 parent A120588 typogeometries}.}\\
+\(a(0),\ldots,a(7)=1,2,3,6,15,42,126,396\).\\[2pt]
+{\small Kernel used throughout: \(\displaystyle \rho(u)=u\left(1-1\,u^{1}\right)\), so \(x=\rho(T(x))\).}
+
+\sectionbar{Typogeometry}
+\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=blue!18] (n0) {} child {node[falseleaf] (n1) {}} child {node[trueleaf] (n2) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{0,1\}x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=orange!24] (n0) {} child {node[falseleaf] (n1) {}} child {node[branch,fill=green!20] (n2) {} child {node[trueleaf] (n3) {}} child {node[trueleaf] (n4) {}}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{0,\{1,1\}\}x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=green!20] (n0) {} child {node[falseleaf] (n1) {}} child {node[branch,fill=violet!16] (n2) {} child {node[trueleaf] (n3) {}} child {node[branch,fill=blue!18] (n4) {} child {node[trueleaf] (n5) {}} child {node[trueleaf] (n6) {}}}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{0,\{1,\{1,1\}\}\}x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=violet!16] (n0) {} child {node[branch,fill=blue!18] (n1) {} child {node[branch,fill=orange!24] (n2) {} child {node[trueleaf] (n3) {}} child {node[trueleaf] (n4) {}}} child {node[trueleaf] (n5) {}}} child {node[falseleaf] (n6) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{\{\{1,1\},1\},0\}x1}}\end{minipage}
+
+{\footnotesize forest slots are explicit; 0 denotes an empty slot. Filled endpoints are true leaves; open endpoints are false/empty leaves. For colored grammars, color is genuine constructor data and is not silently converted into a positional zero pattern.}
+
+{\footnotesize Typogeometric constructor codes and multiplicities: \(\Delta_{2}\!:\,1\).}
+
+\sectionbar{Coefficient and contour extraction}
+{\footnotesize \[\begin{gathered}p(n)=[x^n]A_{\rm parent}(x),\\a(n)=\sum_{\substack{n_1,\ldots,n_2\ge0\\n_1+\cdots+n_2=n}}\prod_{j=1}^{2}p(n_j).\end{gathered}\]}
+\([x^n]A(x)^{2}=\dfrac{2}{2\pi i n}\oint_\gamma\dfrac{(1+u)^{1}\,du}{u^nD(u)^n}.\)
+
+\sectionbar{Recurrence}
+{\footnotesize \(\sum_{r=0}^{2}P_r(n)a(n+r)=0\), \(n\ge 1\), with \[\begin{aligned}P_{0}(n)&=0\\P_{1}(n)&=-4\,n - 2\\P_{2}(n)&=n + 2\end{aligned}\]}
+
+\sectionbar{Differential equation}
+{\footnotesize \[\left(2\,x\right)A(x)+\left(-4\,x^{2} + x\right)A'(x)=2\,x^{2} + 4\,x.\]}
+
+\sectionbar{Matrices, telescoper certificate, and checks}
+{\small \(\text{No compact matrix tuple is shown; see the embedded exact reduction data.}\)}
+\par\vspace{6pt}
+{\small\textbf{Certificate.}\par\smallskip\(\displaystyle R(n,u)=N(n,u)/(-u^{2} + u)^{1}.\)\par}
+\vspace{4pt}
+{\small Telescoping identity: \(\sum_r P_r(n)H_{n+r}(u)=\partial_u\!\left(R(n,u)H_n(u)\right).\)\par}
+\vspace{4pt}
+{\footnotesize Matrix dimensions: \(4\times 4\); remainder \(2\times 3\), rank 2, nullity 1. The exact telescoping residual is zero. The recurrence reconstructs all 24 stored terms; 6/6 published OEIS prefix terms match.\par}
+
+\vfill
+\colorbox{soft}{\parbox{.97\textwidth}{\tiny Canonical records: \texttt{data/tree\_model.json}, \texttt{data/contour.json}, \texttt{data/matrices.json}, \texttt{data/recurrence.json}, \texttt{data/ode.json}. Embedded payload contains exact sources and SHA-256 matrix identifiers. Compare with the verbose certificate for A120590.}}
+\end{document}

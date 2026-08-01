@@ -232,7 +232,11 @@ def matrix_summary(case: Path):
     obj = obj.get("matrices", obj)
     gobj = obj.get("G", obj.get("Gx"))
     xobj = obj["X"]
-    g, x = gobj["shape"], xobj["shape"]
+    def shape(value):
+        if isinstance(value, dict):
+            return value["shape"]
+        return [len(value), len(value[0]) if value else 0]
+    g, x = shape(gobj), shape(xobj)
     return g, x, x[0], 1
 
 
@@ -495,7 +499,7 @@ def compile_tex(tex: Path):
     if check.returncode:
         raise RuntimeError(f"Staged PDF integrity check failed: {staged}")
     published = release / "certificate.pdf"
-    os.replace(staged, published.resolve())
+    os.replace(staged, published)
     return published
 
 
@@ -507,19 +511,6 @@ def main():
         payload = compact_payload(case)
         tex = build_tex(case, payload)
         pdf = compile_tex(tex)
-        named_pdf = case / "release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf"
-        named_tex = case / "release/certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.tex"
-        if not named_pdf.exists() or not os.path.samefile(pdf, named_pdf):
-            shutil.copy2(pdf, named_pdf)
-        if not named_tex.exists() or not os.path.samefile(tex, named_tex):
-            shutil.copy2(tex, named_tex)
-        (case / "release/certificate.pdf.status.json").write_text(json.dumps({
-            "status": "verified",
-            "pdf": "certificate.pdf",
-            "tex": "certificate.tex",
-            "embedded_payload": "certificate_payload.json",
-            "fresh_named_copy": "certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
-        }, indent=2, sort_keys=True) + "\n")
         results.append({"case_id": cid, "tex": str(tex.relative_to(ROOT)), "pdf": str(pdf.relative_to(ROOT)), "payload": str(payload.relative_to(ROOT)), "pdf_bytes": pdf.stat().st_size, "pdf_sha256": sha(pdf)})
     # A managed/networked filesystem can very occasionally expose a short PDF
     # immediately after TeX exits.  Never publish such a file: validate and

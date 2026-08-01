@@ -1,7 +1,0 @@
-{
-  "embedded_payload": "certificate_payload.json",
-  "fresh_named_copy": "certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.pdf",
-  "pdf": "certificate.pdf",
-  "status": "verified",
-  "tex": "certificate.tex"
-}

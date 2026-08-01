@@ -1,23 +1,7 @@
 {
-  "canonical_source": "runs/A244594-direct-x-pilot/case.json#/corrected_numerator_aware_reduction/certificate",
-  "pilot_statistics": {
-    "Gx_determinant": "4*x**3 - 48*x**2 + 192*x - 13",
-    "Gx_nonzero": 21,
-    "Gx_shape": [
-      6,
-      6
-    ],
-    "X_rank": 2,
-    "X_shape": [
-      2,
-      3
-    ],
-    "certificate_degree_u": 5,
-    "certificate_degree_x": 3,
-    "ode_for_A_prime_order": 2,
-    "peak_rss_kib": 63524,
-    "recurrence_order": 4,
-    "wall_seconds": 1.6377752100006546
-  },
+  "canonicalized_from": "runs/A244594-direct-x-pilot/case.json#/corrected_numerator_aware_reduction/certificate",
+  "denominator_base": "-u**3 - 3*u**2 - u*x + u - x",
+  "denominator_power": 2,
+  "numerator": "4*u**5*x**2 - 32*u**5*x + 64*u**5 + 20*u**4*x**2 - 160*u**4*x + 320*u**4 + 2*u**3*x**3 + 16*u**3*x**2 - 224*u**3*x + 593*u**3 + 6*u**2*x**3 - 11*u**2*x**2 - 200*u**2*x + 835*u**2 + 6*u*x**3 - 10*u*x**2 - 46*u*x + 203*u + 2*x**3 + x**2 + 58*x - 52",
   "status": "verified"
 }

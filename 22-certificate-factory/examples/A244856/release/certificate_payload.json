@@ -341,8 +341,8 @@
     "identity_reduced": "sum_j p_j(n)*R^j/(n+j) = dC/dt + n*(R'/R)*C"
   },
   "resolved_certificate_source": "release/attached_order4_certificate.json#/certificate",
-  "resolved_matrices_sha256": "17ecf7ef4fc8145b1682bae11e2cb5d5995a3cce5cb0cc51f1b439e693c669f7",
-  "resolved_matrices_source": "runs/A244856-direct-x-pilot/case.json#/direct_reduction_base_matrices/matrices",
+  "resolved_matrices_sha256": "02c2ef3f0158f31baf9c131c666a49e53f3b87500e9e0309e5fe46ca6d5c7a7d",
+  "resolved_matrices_source": "data/matrices.json",
   "resolved_ode": {
     "boundary_polynomial": "0",
     "coefficient_correspondence": {

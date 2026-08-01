@@ -1,1 +1,0 @@
-%N Coefficients in the power-series expansion of the holomorphic solution of (27*x^2+162*x-13)*A''+(27*x+81)*A'-3*A=0 with A(0)=1, equivalently the number of rooted planar trees where each internal node has either 2 children (in 3 colors) or 3 children.

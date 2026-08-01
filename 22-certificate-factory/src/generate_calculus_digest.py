@@ -45,9 +45,6 @@ def dimensions(root,case):
     if o is None:o=w.get("matrices",w)
     labels=("Gx","Ux","Vx","J","X") if "Gx" in o else ("G","U","V","J","X")
     result={k:shape(o[k]) for k in labels if k in o}
-    if case.name.startswith("A244"):
-        run=read_json(root/f"runs/{case.name}-direct-x-pilot/case.json")
-        result["X"]=shape(run["corrected_numerator_aware_reduction"]["X"])
     return result
 def px(P):
     degree=max((int(sp.degree(v,n)) for v in P if v!=0),default=0)

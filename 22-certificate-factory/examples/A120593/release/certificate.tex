@@ -1,1 +1,55 @@
-certificate_WITH_RHO_AND_INLINE_MULTIPLICITIES.tex
+\documentclass[11pt]{article}
+\usepackage[letterpaper,margin=.25in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,array,tabularx,xcolor,tikz,hyperref,embedfile,microtype}
+\usetikzlibrary{trees}
+\hypersetup{colorlinks=true,urlcolor=blue!55!black}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\linespread{1.035}\selectfont
+\definecolor{navy}{RGB}{25,54,86}
+\definecolor{soft}{RGB}{244,247,250}
+\tikzset{branch/.style={circle,draw=navy,line width=.6pt,inner sep=2pt},trueleaf/.style={circle,draw=navy,fill=navy,inner sep=2.1pt},falseleaf/.style={circle,draw=navy,fill=white,inner sep=1.8pt}}
+\newcommand{\sectionbar}[1]{\vspace{3pt}{\color{navy}\bfseries #1}\par\vspace{2pt}\hrule\vspace{4pt}}
+\begin{document}
+\enlargethispage{.12in}
+
+\embedfile[desc={A120593 exact certificate payload},mimetype=application/json]{certificate_payload.json}
+{\color{navy}\LARGE\bfseries A120593 concise calculus certificate}\hfill{\small VERIFIED}\\[-1pt]
+{\small Bradley Klee, \quad Mech.An.ika Sol (Open AI) \hfill July 31, 2026}
+
+\sectionbar{Definition and first terms}
+\(\displaystyle 5\,A(x)=4+1\,x+A(x)^{4}\), with the origin-normalized solution.\\
+{\footnotesize Normalization/grammar: \texttt{A(x)=1+(1)*T(x); T=x+6*T\textasciicircum{}2+4*T\textasciicircum{}3+1*T\textasciicircum{}4}.}\\
+\(a(0),\ldots,a(7)=1,1,6,76,1201,21252,402892,8001412\).\\[2pt]
+{\small Kernel used throughout: \(\displaystyle \rho(u)=u\,(1-6\,u^{1}-4\,u^{2}-1\,u^{3})\), so \(x=\rho(T(x))\).}
+
+\sectionbar{Typogeometry}
+\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[trueleaf] (n0) {};\end{tikzpicture}\\[2pt]{\normalsize\texttt{1x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=orange!24] (n0) {} child {node[trueleaf] (n1) {}} child {node[trueleaf] (n2) {}} child {node[falseleaf] (n3) {}} child {node[falseleaf] (n4) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{1,1,0,0\}x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=green!20] (n0) {} child {node[falseleaf] (n1) {}} child {node[falseleaf] (n2) {}} child {node[trueleaf] (n3) {}} child {node[trueleaf] (n4) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{0,0,1,1\}x1}}\end{minipage}\begin{minipage}[t]{.235\textwidth}\centering \begin{tikzpicture}[level distance=9mm,level 1/.style={sibling distance=10mm},level 2/.style={sibling distance=6mm},scale=.82,transform shape] \node[branch,fill=violet!16] (n0) {} child {node[trueleaf] (n1) {}} child {node[trueleaf] (n2) {}} child {node[trueleaf] (n3) {}} child {node[falseleaf] (n4) {}};\end{tikzpicture}\\[2pt]{\normalsize\texttt{\{1,1,1,0\}x1}}\end{minipage}
+
+{\footnotesize literal 4-slot geometry; empty positions are shown. Filled endpoints are true leaves; open endpoints are false/empty leaves. For colored grammars, color is genuine constructor data and is not silently converted into a positional zero pattern.}
+
+{\footnotesize Typogeometric constructor codes and multiplicities: \(\Delta_{2}\!:\,6,\;\Delta_{3}\!:\,4,\;\Delta_{4}\!:\,1\).}
+
+\sectionbar{Coefficient and contour extraction}
+{\footnotesize \[\begin{gathered}\mathcal K_n=\{(k_1,\ldots,k_3)\in\mathbb Z_{\ge0}^{3}:\sum_{j=1}^{3}jk_j=n-1\},\quad K=\sum_{j=1}^{3}k_j,\\a(n)=\frac{1}{n}\sum_{\boldsymbol k\in\mathcal K_n}\binom{n+K-1}{K}\binom{K}{k_1,\ldots,k_3}6^{k_1} 4^{k_2} 1^{k_3}.\end{gathered}\]}
+\(a(n)=\dfrac{1}{2\pi i n}\oint_\gamma\dfrac{du}{\rho(u)^n},\quad n\ge1.\)
+
+\sectionbar{Recurrence}
+{\footnotesize \(\sum_{r=0}^{3}P_r(n)a(n+r)=0\), \(n\ge 1\), with \[\begin{aligned}P_{0}(n)&=-256\,n^{3} - 384\,n^{2} - 48\,n + 40\\P_{1}(n)&=-3072\,n^{3} - 9216\,n^{2} - 8896\,n - 2752\\P_{2}(n)&=-12288\,n^{3} - 55296\,n^{2} - 79872\,n - 36864\\P_{3}(n)&=491\,n^{3} + 2946\,n^{2} + 5401\,n + 2946\end{aligned}\]}
+
+\sectionbar{Differential equation}
+{\footnotesize \[\begin{aligned}&\left(40\,x^{3}\right)A(x)+\left(-688\,x^{4} - 2752\,x^{3}\right)A'(x)\\[-1pt]&+\left(-1152\,x^{5} - 9216\,x^{4} - 18432\,x^{3}\right)A^{(2)}(x)+\left(-256\,x^{6} - 3072\,x^{5} - 12288\,x^{4} + 491\,x^{3}\right)A^{(3)}(x)=0.\end{aligned}\]}
+
+\sectionbar{Matrices, telescoper certificate, and checks}
+\begingroup\renewcommand{\arraystretch}{1.42}\setlength{\arraycolsep}{5pt}{\small\[\displaystyle U=\begin{pmatrix}\frac{11536}{491}&\frac{900}{491}&\frac{60}{491}&\frac{4}{491}\\\frac{11040}{491}&\frac{736}{491}&\frac{180}{491}&\frac{12}{491}\\\frac{3600}{491}&\frac{240}{491}&\frac{16}{491}&\frac{132}{491}\\0&0&0&0\end{pmatrix},\quad V=\begin{pmatrix}-1&0&0&0\\\frac{5644}{491}&\frac{409}{491}&\frac{60}{491}&\frac{4}{491}\\\frac{3660}{491}&\frac{244}{491}&\frac{49}{491}&\frac{36}{491}\\\frac{900}{491}&\frac{60}{491}&\frac{4}{491}&\frac{33}{491}\end{pmatrix},\quad J=\begin{pmatrix}0&1&0&0\\0&0&2&0\\0&0&0&3\\0&0&0&0\end{pmatrix}\]}\endgroup
+\par\vspace{6pt}
+{\small\textbf{Certificate.}\par\smallskip\(\displaystyle R(n,u)=N(n,u)/\rho(u)^{2},\ \deg_uN=9.\)\par}
+\vspace{4pt}
+{\small Telescoping identity: \(\sum_r P_r(n)H_{n+r}(u)=\partial_u\!\left(R(n,u)H_n(u)\right).\)\par}
+\vspace{4pt}
+{\footnotesize Matrix dimensions: \(8\times 8\); remainder \(3\times 4\), rank 3, nullity 1. The exact telescoping residual is zero. The recurrence reconstructs all 24 stored terms; 6/6 published OEIS prefix terms match.\par}
+
+\vfill
+\colorbox{soft}{\parbox{.97\textwidth}{\tiny Canonical records: \texttt{data/tree\_model.json}, \texttt{data/contour.json}, \texttt{data/matrices.json}, \texttt{data/recurrence.json}, \texttt{data/ode.json}. Embedded payload contains exact sources and SHA-256 matrix identifiers. Compare with the verbose certificate for A120590.}}
+\end{document}

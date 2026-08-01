@@ -1,24 +1,7 @@
 {
-  "canonical_source": "release/certificate_payload.json.gz#/certificate",
-  "statistics": {
-    "G_shape": [
-      6,
-      6
-    ],
-    "X_shape": [
-      3,
-      4
-    ],
-    "certificate_numerator_degree_n": 2,
-    "certificate_numerator_degree_u": 6,
-    "certificate_parameter_denominator": "n*u**2 + 2*n*u + n + u**2 + 2*u + 1",
-    "denominator_degree": 3,
-    "leading_zero_coefficients": 1,
-    "nullity": 1,
-    "rank": 3,
-    "recurrence_order": 3,
-    "remainder_dimension": 3,
-    "shift_columns": 4
-  },
+  "N": "-9*n**2*u**6/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 54*n**2*u**5/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 75*n**2*u**4/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) + 60*n**2*u**3/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) + 161*n**2*u**2/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) + 58*n**2*u/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 13*n**2/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 18*n*u**6/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 108*n*u**5/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 142*n*u**4/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) + 125*n*u**3/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) + 225*n*u**2/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) + 35*n*u/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 13*n/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 8*u**6/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 48*u**5/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 56*u**4/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) + 48*u**3/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1) - 8*u**2/(n*u**2 + 2*n*u + n + u**2 + 2*u + 1)",
+  "canonicalized_from": "release/certificate_payload.json.gz#/certificate",
+  "denominator_base": "-u**3 - 3*u**2 + u",
+  "denominator_power": 2,
   "status": "verified"
 }

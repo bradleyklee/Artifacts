@@ -1,24 +1,6 @@
-{
-  "canonical_source": "release/certificate_payload.json.gz#/recurrence",
-  "statistics": {
-    "G_shape": [
-      6,
-      6
-    ],
-    "X_shape": [
-      3,
-      4
-    ],
-    "certificate_numerator_degree_n": 2,
-    "certificate_numerator_degree_u": 6,
-    "certificate_parameter_denominator": "n*u**2 + 2*n*u + n + u**2 + 2*u + 1",
-    "denominator_degree": 3,
-    "leading_zero_coefficients": 1,
-    "nullity": 1,
-    "rank": 3,
-    "recurrence_order": 3,
-    "remainder_dimension": 3,
-    "shift_columns": 4
-  },
-  "status": "verified"
-}
+[
+  "0",
+  "-27*n**2 - 54*n - 24",
+  "-162*n**2 - 567*n - 486",
+  "13*n**2 + 65*n + 78"
+]
