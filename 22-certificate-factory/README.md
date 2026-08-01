@@ -9,7 +9,7 @@ A120588–A120607, A244594, A244627, and A244856.
 - `reports/REVISION_QUALITY_AUDIT.md` — independent exact-arithmetic coverage and release checks.
 - `work/OEIS_FIELD_DELTAS_23_CASES.md` — per-record comparison of existing OEIS content and proposed additions.
 - `work/OEIS_FIELD_ADDITIONS_23_CASES.txt` — paste-ready OEIS internal-field lines.
-- `examples/q3/ReleaseCandidate/A120590_ternatree_human.pdf` — the reviewed verbose q=3 explanatory model.
+- `A120590_ternatree_final.pdf` — the reviewed verbose q=3 explanatory model.
 
 Each `examples/Axxxxxx/release/` directory contains one concise illustrated
 `certificate.tex`, one `certificate.pdf`, and `certificate_payload.json`. Every
