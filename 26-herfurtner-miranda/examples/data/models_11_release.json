@@ -188,7 +188,7 @@
         "hamiltonian_Q_file": "certificates/hamiltonian_Q_model_2.txt",
         "laurent_R_file": "certificates/laurent_R_model_2.txt",
         "angular_recurrence": null,
-        "laurent_identity": "one-variable Laurent telescoping identity from the pilot",
+        "laurent_identity": "one-variable Laurent telescoping identity from the exact worked certificate",
         "residuals": "exactly zero"
       }
     },

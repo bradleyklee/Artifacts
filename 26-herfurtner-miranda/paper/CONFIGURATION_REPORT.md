@@ -1,4 +1,4 @@
-# Configuration-first Miranda/Herfurtner scan v2
+# Miranda/Herfurtner configuration report
 
 ## Reproduced database counts
 

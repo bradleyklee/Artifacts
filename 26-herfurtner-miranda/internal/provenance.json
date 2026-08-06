@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "public_status": "complete",
+  "complete_models": [1, 2, 3, 5, 7, 9],
+  "historical_workflow_groups": {
+    "legacy": [1, 2, 3, 9],
+    "promoted": [5, 7],
+    "pilot_note": "Model 2's Laurent proof was first packaged separately."
+  },
+  "public_policy": "Historical workflow groups do not affect correctness and are not shown in public output."
+}

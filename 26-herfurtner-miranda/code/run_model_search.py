@@ -6,6 +6,7 @@ import argparse
 import itertools
 import json
 import sys
+import textwrap
 from collections import defaultdict
 from pathlib import Path
 from time import perf_counter
@@ -23,6 +24,10 @@ DATA = ROOT / "examples" / "data"
 KNOWN_FILE = DATA / "models_11_release.json"
 TARGET_FILE = DATA / "four_fibre_allowable_v2.json"
 OUTPUT_FILE = DATA / "model_search_results.json"
+PUBLIC_CATALOGUE = ROOT / "examples" / "public" / "catalogue"
+CATALOGUE_TEXT = PUBLIC_CATALOGUE / "CURVES.txt"
+CATALOGUE_JSON = PUBLIC_CATALOGUE / "curves.json"
+COMPLETE_FILE = ROOT / "examples" / "public" / "complete_cases.json"
 
 
 def progress(text: str) -> None:
@@ -41,22 +46,59 @@ def invariant_key(result: dict[str, object]) -> tuple[str, str, str]:
     )
 
 
+def exact_terms(expression: str) -> list[dict[str, object]]:
+    p_symbol, q_symbol = sp.symbols("p q")
+    value = sp.sympify(expression, locals={"p": p_symbol, "q": q_symbol})
+    polynomial = sp.Poly(value, p_symbol, q_symbol)
+    return [
+        {
+            "p_power": powers[0],
+            "q_power": powers[1],
+            "coefficient": sp.sstr(coefficient),
+        }
+        for powers, coefficient in polynomial.terms()
+    ]
+
+
 def load_known_catalog() -> list[dict[str, object]]:
     source = json.loads(KNOWN_FILE.read_text())
+    complete_source = json.loads(COMPLETE_FILE.read_text())
+    complete = {item["model"]: item for item in complete_source["models"]}
+    family_names = {
+        "harmonic_plus_cubic": "harmonic cubic",
+        "two_node_structured_quartic": "structured quartic",
+    }
     rows = []
-    for model in source["models"]:
-        fibers = canonical_fibers(model["fibres"])
+    for item in source["models"]:
+        fibers = canonical_fibers(item["fibres"])
+        index = item["index"]
+        status = "complete" if index in complete else "incomplete"
+        oeis_id = complete.get(index, {}).get("oeis_id")
         rows.append({
             "code": fiber_code(fibers),
-            "fibers": list(fibers),
-            "index": model["index"],
-            "family": model["family"],
-            "hamiltonian_2H": model["hamiltonian_2H"],
-            "laurent_status": (
-                "found" if model.get("laurent_model") else "open"
+            "fiber_classification": list(fibers),
+            "model_number": index,
+            "presentation_number": 1,
+            "plane_model_type": family_names.get(
+                item["family"], item["family"]
             ),
+            "family_key": item["family"],
+            "hamiltonian_2H": item["hamiltonian_2H"],
+            "hamiltonian_terms": exact_terms(item["hamiltonian_2H"]),
+            "arithmetic_scale": item["observed_small_scale_M"],
+            "period_status": "exact",
+            "laurent_status": status,
+            "status": status,
+            "oeis_id": oeis_id,
         })
-    return sorted(rows, key=lambda row: row["code"])
+    return sorted(
+        rows,
+        key=lambda row: (
+            row["code"],
+            row["model_number"],
+            row["presentation_number"],
+        ),
+    )
 
 
 def load_targets() -> set[tuple[str, ...]]:
@@ -172,15 +214,75 @@ def summarize_hits(
     return rows
 
 
-def print_known(rows: list[dict[str, object]]) -> None:
-    print(f"Known exact catalog ({len(rows)})")
-    print("Kodaira code                     Model  Family")
-    print("-------------------------------  -----  ---------------------------")
+def catalogue_text(
+    rows: list[dict[str, object]],
+    verbose: bool = False,
+) -> str:
+    lines = [
+        f"Retained curve catalogue ({len(rows)})",
+        "",
+        "MODEL  FIBERS                SCALE     STATUS      HAMILTONIAN",
+        "-----  --------------------  --------  ----------  ----------------",
+    ]
     for row in rows:
-        print(
-            f"{row['code']:<31}  {row['index']:>5}  "
-            f"{row['family']}"
+        prefix = (
+            f"{row['model_number']:<5}  "
+            f"{row['code']:<20}  "
+            f"{str(row['arithmetic_scale']):>8}  "
+            f"{row['status']:<10}  "
         )
+        equation = f"2H = {row['hamiltonian_2H']}"
+        wrapped = textwrap.wrap(
+            equation,
+            width=max(20, 80-len(prefix)),
+            break_long_words=False,
+            break_on_hyphens=False,
+        ) or [""]
+        lines.append(prefix + wrapped[0])
+        continuation = " " * len(prefix)
+        lines.extend(continuation + part for part in wrapped[1:])
+        if verbose:
+            details = (
+                f"type={row['plane_model_type']}; "
+                f"period={row['period_status']}; "
+                f"Laurent={row['laurent_status']}; "
+                f"OEIS={row['oeis_id'] or '-'}"
+            )
+            detail_lines = textwrap.wrap(
+                details,
+                width=72,
+                initial_indent="        ",
+                subsequent_indent="        ",
+                break_long_words=False,
+                break_on_hyphens=False,
+            )
+            lines.extend(detail_lines)
+    return "\n".join(lines) + "\n"
+
+
+def write_catalogue(rows: list[dict[str, object]]) -> None:
+    PUBLIC_CATALOGUE.mkdir(parents=True, exist_ok=True)
+    CATALOGUE_TEXT.write_text(catalogue_text(rows), encoding="utf-8")
+    payload = {
+        "schema_version": 1,
+        "sort_order": [
+            "fiber classification",
+            "model number",
+            "presentation number",
+        ],
+        "curves": rows,
+    }
+    CATALOGUE_JSON.write_text(
+        json.dumps(payload, indent=2) + "\n",
+        encoding="utf-8",
+    )
+
+
+def print_catalogue(
+    rows: list[dict[str, object]],
+    verbose: bool = False,
+) -> None:
+    print(catalogue_text(rows, verbose=verbose), end="")
 
 
 def print_search(rows: list[dict[str, object]]) -> None:
@@ -206,7 +308,17 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--known-only",
         action="store_true",
-        help="print the trusted 11-model catalog without searching",
+        help="backward-compatible alias for --print-catalogue",
+    )
+    parser.add_argument(
+        "--print-catalogue",
+        action="store_true",
+        help="print the retained curve catalogue without searching",
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="include period, Laurent, model-type, and OEIS metadata",
     )
     parser.add_argument(
         "--cubic-bound",
@@ -237,8 +349,9 @@ def main() -> None:
         raise SystemExit("--progress-every must be positive")
 
     known = load_known_catalog()
-    print_known(known)
-    if args.known_only:
+    write_catalogue(known)
+    if args.known_only or args.print_catalogue:
+        print_catalogue(known, verbose=args.verbose)
         return
 
     allowed = load_targets()
@@ -288,6 +401,9 @@ def main() -> None:
     except ValueError:
         display_output = args.output
     print(f"JSON: {display_output}")
+    print()
+    print_catalogue(known, verbose=args.verbose)
+    print("Catalogue JSON: examples/public/catalogue/curves.json")
 
 
 if __name__ == "__main__":

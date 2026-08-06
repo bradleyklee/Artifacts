@@ -1,0 +1,616 @@
+{
+  "schema_version": 1,
+  "sort_order": [
+    "fiber classification",
+    "model number",
+    "presentation number"
+  ],
+  "curves": [
+    {
+      "code": "I1 I1 I1 I3*",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "I1",
+        "I3*"
+      ],
+      "model_number": 4,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "8*p**4 - 8*p**3 - 16*p**2*q**2 + p**2 + 8*p*q**2 + 8*q**4 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "8"
+        },
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "-8"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "-16"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "8"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "8"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 1,
+      "period_status": "exact",
+      "laurent_status": "incomplete",
+      "status": "incomplete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1 I1 III*",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "model_number": 1,
+      "presentation_number": 1,
+      "plane_model_type": "harmonic cubic",
+      "family_key": "harmonic_plus_cubic",
+      "hamiltonian_2H": "p**2 + p*q**2 + q**3 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 3,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 32,
+      "period_status": "exact",
+      "laurent_status": "complete",
+      "status": "complete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1 I1* I3",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "I1*",
+        "I3"
+      ],
+      "model_number": 7,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "p**4 + p**3 + 2*p**2*q**2 + p**2*q + p**2 + p*q**2 + q**4 + q**3 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "2"
+        },
+        {
+          "p_power": 2,
+          "q_power": 1,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 3,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 2,
+      "period_status": "exact",
+      "laurent_status": "complete",
+      "status": "complete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1 I1* III",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "I1*",
+        "III"
+      ],
+      "model_number": 8,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "5*p**4/32 - p**3 - 5*p**2*q**2/16 + p**2 + p*q**2 + 5*q**4/32 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "5/32"
+        },
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "-1"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "-5/16"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "5/32"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 128,
+      "period_status": "exact",
+      "laurent_status": "incomplete",
+      "status": "incomplete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1 I2 I2*",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "I2",
+        "I2*"
+      ],
+      "model_number": 5,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "180*p**4 - 4*p**3 - 90*p**2*q**2 - 32*p**2*q + p**2 + p*q**2 + 45*q**4/4 + 8*q**3 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "180"
+        },
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "-4"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "-90"
+        },
+        {
+          "p_power": 2,
+          "q_power": 1,
+          "coefficient": "-32"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "45/4"
+        },
+        {
+          "p_power": 0,
+          "q_power": 3,
+          "coefficient": "8"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 16,
+      "period_status": "exact",
+      "laurent_status": "complete",
+      "status": "complete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1 I2 IV*",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "I2",
+        "IV*"
+      ],
+      "model_number": 2,
+      "presentation_number": 1,
+      "plane_model_type": "harmonic cubic",
+      "family_key": "harmonic_plus_cubic",
+      "hamiltonian_2H": "p**3 + p**2 + q**3 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 3,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 32,
+      "period_status": "exact",
+      "laurent_status": "complete",
+      "status": "complete",
+      "oeis_id": "A303790"
+    },
+    {
+      "code": "I1 I1 I2* II",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "I2*",
+        "II"
+      ],
+      "model_number": 6,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "88209*p**4/2368 - 27*p**3/37 - 3267*p**2*q**2/32 - 63*sqrt(111)*p**2*q/37 + p**2 + p*q**2 + 4477*q**4/64 + 7*sqrt(111)*q**3/3 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "88209/2368"
+        },
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "-27/37"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "-3267/32"
+        },
+        {
+          "p_power": 2,
+          "q_power": 1,
+          "coefficient": "-63*sqrt(111)/37"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "4477/64"
+        },
+        {
+          "p_power": 0,
+          "q_power": 3,
+          "coefficient": "7*sqrt(111)/3"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 262848,
+      "period_status": "exact",
+      "laurent_status": "incomplete",
+      "status": "incomplete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1 II IV*",
+      "fiber_classification": [
+        "I1",
+        "I1",
+        "II",
+        "IV*"
+      ],
+      "model_number": 3,
+      "presentation_number": 1,
+      "plane_model_type": "harmonic cubic",
+      "family_key": "harmonic_plus_cubic",
+      "hamiltonian_2H": "-p**3 - 3*p**2*q + p**2 - 2*q**3 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "-1"
+        },
+        {
+          "p_power": 2,
+          "q_power": 1,
+          "coefficient": "-3"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 3,
+          "coefficient": "-2"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 32,
+      "period_status": "exact",
+      "laurent_status": "complete",
+      "status": "complete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1* I2 I2",
+      "fiber_classification": [
+        "I1",
+        "I1*",
+        "I2",
+        "I2"
+      ],
+      "model_number": 9,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "16*p**4 - 8*p**2*q**2 + p**2 + q**4 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "16"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "-8"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 16,
+      "period_status": "exact",
+      "laurent_status": "complete",
+      "status": "complete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1* I2 II",
+      "fiber_classification": [
+        "I1",
+        "I1*",
+        "I2",
+        "II"
+      ],
+      "model_number": 10,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "9*p**4/32 - p**3 - 9*p**2*q**2/16 + p**2 + p*q**2 + 9*q**4/32 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "9/32"
+        },
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "-1"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "-9/16"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "9/32"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 128,
+      "period_status": "exact",
+      "laurent_status": "incomplete",
+      "status": "incomplete",
+      "oeis_id": null
+    },
+    {
+      "code": "I1 I1* II II",
+      "fiber_classification": [
+        "I1",
+        "I1*",
+        "II",
+        "II"
+      ],
+      "model_number": 11,
+      "presentation_number": 1,
+      "plane_model_type": "structured quartic",
+      "family_key": "two_node_structured_quartic",
+      "hamiltonian_2H": "p**4/4 - 42*sqrt(2)*p**3/73 - p**2*q**2 - 30*sqrt(2)*p**2*q/73 + p**2 + 84*sqrt(2)*p*q**2/73 + q**4 + 60*sqrt(2)*q**3/73 + q**2",
+      "hamiltonian_terms": [
+        {
+          "p_power": 4,
+          "q_power": 0,
+          "coefficient": "1/4"
+        },
+        {
+          "p_power": 3,
+          "q_power": 0,
+          "coefficient": "-42*sqrt(2)/73"
+        },
+        {
+          "p_power": 2,
+          "q_power": 2,
+          "coefficient": "-1"
+        },
+        {
+          "p_power": 2,
+          "q_power": 1,
+          "coefficient": "-30*sqrt(2)/73"
+        },
+        {
+          "p_power": 2,
+          "q_power": 0,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 1,
+          "q_power": 2,
+          "coefficient": "84*sqrt(2)/73"
+        },
+        {
+          "p_power": 0,
+          "q_power": 4,
+          "coefficient": "1"
+        },
+        {
+          "p_power": 0,
+          "q_power": 3,
+          "coefficient": "60*sqrt(2)/73"
+        },
+        {
+          "p_power": 0,
+          "q_power": 2,
+          "coefficient": "1"
+        }
+      ],
+      "arithmetic_scale": 341056,
+      "period_status": "exact",
+      "laurent_status": "incomplete",
+      "status": "incomplete",
+      "oeis_id": null
+    }
+  ]
+}

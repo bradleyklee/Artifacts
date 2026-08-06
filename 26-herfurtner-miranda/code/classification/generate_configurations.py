@@ -375,7 +375,7 @@ def report_text(audit: dict[str, object], four: dict[str, object]) -> str:
         if row["status"] == "impossible_exceptional"
     ]
     lines = [
-        "# Configuration-first Miranda/Herfurtner scan v2",
+        "# Miranda/Herfurtner configuration report",
         "",
         "## Reproduced database counts",
         "",

@@ -1,5 +1,5 @@
 {
-  "release": "HERFURTNER_MIRANDA_RELEASE_v3",
+  "release": "HERFURTNER_MIRANDA_RELEASE",
   "ledger_date": "2026-08-05",
   "status_vocabulary": {
     "exact_certificate": "constant-term identity plus exact differential/recurrence certificate is stored",

@@ -1,5 +1,5 @@
 {
-  "release": "HERFURTNER_MIRANDA_RELEASE_v3",
+  "release": "HERFURTNER_MIRANDA_RELEASE",
   "classification": {
     "derived_by": "code/classification/generate_configurations.py",
     "raw_euler_sum_12": 379,
@@ -12,55 +12,37 @@
     "nonconstant_J_four_fiber_targets": 56,
     "constant_J_four_fiber_targets": 3,
     "rederived_from_scratch": true,
-    "exactly_matches_recovered_audit": true
+    "exactly_matches_checked_data": true
   },
-  "verified": {
-    "baseline_cubic_plane_models": 3,
-    "baseline_two_node_quartic_plane_models": 8,
-    "baseline_total_plane_models": 11,
-    "baseline_period_series": 11,
-    "baseline_double_exact_period_Laurent_models": [
-      1,
-      2,
-      3,
-      5,
-      7,
-      9
-    ],
-    "A303790_packet": true,
+  "models": {
+    "retained_plane_models": 11,
+    "exact_period_series": 11,
+    "complete": {
+      "status": "complete",
+      "models": [1, 2, 3, 5, 7, 9],
+      "verifier": "code/certificates/verify_complete_cases.py"
+    },
+    "incomplete": {
+      "status": "incomplete",
+      "models": [4, 6, 8, 10, 11]
+    },
     "oeis_exact_match": {
       "model": 2,
       "id": "A303790"
     }
   },
-  "open": {
-    "remaining_baseline_Laurent_models": [
-      4,
-      6,
-      8,
-      10,
-      11
-    ],
-    "remaining_four_fiber_targets_outside_baseline_families": 45
+  "coverage": {
+    "harmonic_cubic_configurations": 3,
+    "structured_quartic_configurations": 8,
+    "total_configurations": 11,
+    "remaining_targets": 45
   },
   "bounded_exclusions": {
-    "palindromic_product_degree_5_6": [
-      4,
-      8,
-      10
-    ],
-    "rank2_four_pair_support_box": [
-      4,
-      8,
-      10
-    ]
+    "palindromic_product_degree_5_6": [4, 8, 10],
+    "rank2_four_pair_support_box": [4, 8, 10]
   },
-  "auxiliary_not_in_default_pipeline": {
-    "tacnode_presentations": [
-      "T0",
-      "T1"
-    ],
-    "note": "Retained from v2; not counted as progress on the intended quartic coefficient search."
-  },
-  "truth_note": "This repair restores classification and runnable checks. It claims no new plane model or Laurent polynomial."
+  "auxiliary": {
+    "tacnode_presentations": ["T0", "T1"],
+    "counted_in_default_coverage": false
+  }
 }

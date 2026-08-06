@@ -1,0 +1,40 @@
+Retained curve catalogue (11)
+
+MODEL  FIBERS                SCALE     STATUS      HAMILTONIAN
+-----  --------------------  --------  ----------  ----------------
+4      I1 I1 I1 I3*                 1  incomplete  2H = 8*p**4 - 8*p**3 -
+                                                   16*p**2*q**2 + p**2 +
+                                                   8*p*q**2 + 8*q**4 + q**2
+1      I1 I1 I1 III*               32  complete    2H = p**2 + p*q**2 + q**3 +
+                                                   q**2
+7      I1 I1 I1* I3                 2  complete    2H = p**4 + p**3 +
+                                                   2*p**2*q**2 + p**2*q + p**2 +
+                                                   p*q**2 + q**4 + q**3 + q**2
+8      I1 I1 I1* III              128  incomplete  2H = 5*p**4/32 - p**3 -
+                                                   5*p**2*q**2/16 + p**2 +
+                                                   p*q**2 + 5*q**4/32 + q**2
+5      I1 I1 I2 I2*                16  complete    2H = 180*p**4 - 4*p**3 -
+                                                   90*p**2*q**2 - 32*p**2*q +
+                                                   p**2 + p*q**2 + 45*q**4/4 +
+                                                   8*q**3 + q**2
+2      I1 I1 I2 IV*                32  complete    2H = p**3 + p**2 + q**3 +
+                                                   q**2
+6      I1 I1 I2* II            262848  incomplete  2H = 88209*p**4/2368 -
+                                                   27*p**3/37 -
+                                                   3267*p**2*q**2/32 -
+                                                   63*sqrt(111)*p**2*q/37 + p**2
+                                                   + p*q**2 + 4477*q**4/64 +
+                                                   7*sqrt(111)*q**3/3 + q**2
+3      I1 I1 II IV*                32  complete    2H = -p**3 - 3*p**2*q + p**2
+                                                   - 2*q**3 + q**2
+9      I1 I1* I2 I2                16  complete    2H = 16*p**4 - 8*p**2*q**2 +
+                                                   p**2 + q**4 + q**2
+10     I1 I1* I2 II               128  incomplete  2H = 9*p**4/32 - p**3 -
+                                                   9*p**2*q**2/16 + p**2 +
+                                                   p*q**2 + 9*q**4/32 + q**2
+11     I1 I1* II II            341056  incomplete  2H = p**4/4 -
+                                                   42*sqrt(2)*p**3/73 -
+                                                   p**2*q**2 -
+                                                   30*sqrt(2)*p**2*q/73 + p**2 +
+                                                   84*sqrt(2)*p*q**2/73 + q**4 +
+                                                   60*sqrt(2)*q**3/73 + q**2

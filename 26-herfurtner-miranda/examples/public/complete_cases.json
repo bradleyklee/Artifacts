@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "complete",
+  "verification_command": "python3 code/certificates/verify_complete_cases.py",
+  "required_checks": [
+    "exact Hamiltonian certificate",
+    "exact Laurent certificate",
+    "matching annihilator",
+    "matching recurrence",
+    "matching initial terms",
+    "exact residual zero"
+  ],
+  "models": [
+    {"model": 1, "status": "complete"},
+    {"model": 2, "status": "complete", "oeis_id": "A303790"},
+    {"model": 3, "status": "complete"},
+    {"model": 5, "status": "complete"},
+    {"model": 7, "status": "complete"},
+    {"model": 9, "status": "complete"}
+  ]
+}

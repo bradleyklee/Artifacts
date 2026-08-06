@@ -7,7 +7,7 @@
       "exact_witness_count": 3,
       "candidate_without_witness_count": 0,
       "excluded_count": 53,
-      "wall_seconds": 0.052843345999988856,
+      "wall_seconds": 0.04169089599997733,
       "records": [
         {
           "target": [
@@ -790,7 +790,7 @@
       "exact_witness_count": 8,
       "candidate_without_witness_count": 0,
       "excluded_count": 48,
-      "wall_seconds": 0.12364142299999514,
+      "wall_seconds": 0.08965114900001936,
       "records": [
         {
           "target": [

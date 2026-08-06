@@ -1,12 +1,20 @@
-# Reverified models 5 and 7
+# Exact certificates for models 5 and 7
 
-These files were once quarantined because an earlier packaging run reported a
-failed assertion. In this release they are promoted after a clean audit checked:
+These files provide the exact Hamiltonian and Laurent certificates used by the
+unified complete-case verifier.
 
-- the exact scalar Hamiltonian certificate modulo 2H-E;
-- the exact Laurent telescoping identity;
-- the first 12 constant-term coefficients against the stored plane period;
-- the recurrence obtained from the Laurent certificate against the stored
-  second-order period equation.
+The checks include
 
-Run `python code/certificates/verify_promoted_cases.py` from the release root.
+```text
+exact scalar Hamiltonian residual modulo 2H-E
+exact Laurent telescoping residual
+12 direct constant-term coefficients
+Laurent-to-period annihilator comparison
+31 stored recurrence terms
+```
+
+Run all complete cases with
+
+```text
+python3 code/certificates/verify_complete_cases.py
+```

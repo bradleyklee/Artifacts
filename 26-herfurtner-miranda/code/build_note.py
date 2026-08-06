@@ -25,7 +25,7 @@ styles.add(ParagraphStyle(name="SmallX", parent=styles["BodyText"], fontSize=8.2
 def footer(canvas, doc):
     canvas.saveState()
     canvas.setFont("Helvetica", 8)
-    canvas.drawString(0.65 * inch, 0.42 * inch, "Miranda-Herfurtner release v2 - 2026-08-05")
+    canvas.drawString(0.65 * inch, 0.42 * inch, "Miranda-Herfurtner exact model catalogue")
     canvas.drawRightString(7.85 * inch, 0.42 * inch, f"page {doc.page}")
     canvas.restoreState()
 
@@ -36,7 +36,7 @@ def P(text, style="BodyX"):
 
 story = [
     P("Miranda-Herfurtner Plane Hamiltonian Search", "TitleCenter"),
-    P("Release v2: curve models, Laurent periods, and OEIS ledger", "Heading2"),
+    P("Curve models, Laurent periods, and OEIS ledger", "Heading2"),
     P(
         "This artifact treats two searches as equally important: finding useful plane curve presentations of elliptic families, and finding Laurent polynomials whose constant terms reproduce the corresponding period series. All examples are organized directly under <font name='Courier'>examples/</font>."
     ),
@@ -156,7 +156,7 @@ doc = SimpleDocTemplate(
     leftMargin=0.65 * inch,
     topMargin=0.62 * inch,
     bottomMargin=0.65 * inch,
-    title="Miranda-Herfurtner Plane Hamiltonian Search - Release v2",
+    title="Miranda-Herfurtner Plane Hamiltonian Search",
     author="Research artifact",
 )
 doc.build(story, onFirstPage=footer, onLaterPages=footer)

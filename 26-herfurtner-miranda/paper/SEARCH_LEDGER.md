@@ -62,7 +62,7 @@ For models 4, 8, and 10, the recorded degree-5/6 palindromic product search and
 the 495-support rank-two search produced no accepted Laurent polynomial.  These
 are bounded exclusions only; they do not establish nonexistence.
 
-## Auxiliary work retained from v2
+## Auxiliary work
 
 The T0/T1 tacnode calculations remain in the repository for reference.  They
 are not part of the intended search family, are not run by the release audit,
