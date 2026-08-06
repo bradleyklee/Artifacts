@@ -1,0 +1,4 @@
+sympy>=1.14,<2
+numpy>=2,<3
+scipy>=1.16,<2
+pytest>=9,<10

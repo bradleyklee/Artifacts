@@ -1,0 +1,49 @@
+{
+  "model": {
+    "hamiltonian": "p**3 + p**2 + q**3 + q**2",
+    "fiber_configuration": [
+      "I1",
+      "I1",
+      "I2",
+      "IV*"
+    ],
+    "critical_values": [
+      "0",
+      "4/27",
+      "8/27",
+      "infinity"
+    ],
+    "geometric_variable": "x = 27*E/4",
+    "arithmetic_variable": "t = E/32 = x/216"
+  },
+  "two_disks": {
+    "involution": "(p,q) -> (-p-2/3,-q-2/3)",
+    "identity": "K(involution(p,q)) = 8/27 - K(p,q)",
+    "period_near_minimum": "Pi_0(E) = sum A_n*(E/32)^n",
+    "period_near_maximum": "Pi_8(E) = sum A_n*((8/27-E)/32)^n, with cycle orientation chosen to give Pi_8(8/27)=1"
+  },
+  "rotation": {
+    "p": "(u+v)/sqrt(2)",
+    "q": "(u-v)/sqrt(2)",
+    "rotated_hamiltonian": "sqrt(2)*u**3/2 + u**2 + 3*sqrt(2)*u*v**2/2 + v**2",
+    "real_separatrix_factorization": "sqrt(2)*(u + sqrt(2)/3)*(u**2 + 2*sqrt(2)*u/3 + 3*v**2 - 4/9)/2",
+    "wick_hamiltonian": "sqrt(2)*u**3/2 + u**2 - 3*sqrt(2)*u*y**2/2 - y**2",
+    "wick_separatrix_factorization": "-3*sqrt(2)*(u + sqrt(2)/3)*(-u**2/3 - 2*sqrt(2)*u/9 + y**2 + 4/27)/2"
+  },
+  "operator_E": {
+    "A2": "E*(27*E - 8)*(27*E - 4)",
+    "A1": "2187*E**2 - 648*E + 32",
+    "A0": "15*(27*E - 4)"
+  },
+  "operator_t": {
+    "A2": "t*(108*t - 1)*(216*t - 1)",
+    "A1": "69984*t**2 - 648*t + 1",
+    "A0": "60*(216*t - 1)"
+  },
+  "laurent": {
+    "B": "w + 3 + 3/w + w**(-2)",
+    "C": "y**3 - 6*y**2 + 3*y + 20 + 3/y - 6/y**2 + y**(-3)",
+    "Phi": "(w + 1)**3*(y + 1)**2*(y**2 - 4*y + 1)**2/(w**2*y**3)",
+    "identity": "A_n = [Phi(w,y)^n]_0"
+  }
+}

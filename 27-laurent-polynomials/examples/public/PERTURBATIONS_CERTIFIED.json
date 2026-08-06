@@ -1,0 +1,486 @@
+{
+  "schema": "laurent-period-certified-perturbations-v2",
+  "base": "regression:triangle",
+  "base_F": "x + y + 1/(x*y)",
+  "controls": {
+    "radius": 2,
+    "coefficients": [
+      1
+    ],
+    "max_added_terms": 1,
+    "pair_limit": 24,
+    "max_order": 4,
+    "max_support_level": 2,
+    "case_timeout": 60.0
+  },
+  "elapsed_seconds": 144.201965,
+  "records": [
+    {
+      "F": "x + y + 1/x + 1/(x*y)",
+      "certificate": {
+        "layer_basis_sizes": [
+          13,
+          13
+        ],
+        "matrix_shape": [
+          41,
+          52
+        ],
+        "support_family": "newton",
+        "support_level": 2
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 1.600662,
+      "operator": "99*t**5*theta**2 + 297*t**5*theta + 198*t**5 + 412*t**4*theta**2 + 1000*t**4*theta + 588*t**4 + 360*t**3*theta**2 + 936*t**3*theta + 564*t**3 + 55*t**2*theta**2 + 128*t**2*theta + 64*t**2 - 17*t*theta**2 + t*theta - 8*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 2,
+        "shift_degree": 5,
+        "support_family": "newton",
+        "support_level": 2,
+        "terms": 39,
+        "trials": 12
+      },
+      "recurrence": {
+        "0": "-8*theta**2",
+        "1": "-17*theta**2 + theta",
+        "2": "55*theta**2 + 128*theta + 64",
+        "3": "360*theta**2 + 936*theta + 564",
+        "4": "412*theta**2 + 1000*theta + 588",
+        "5": "99*theta**2 + 297*theta + 198"
+      },
+      "status": "certificate_found",
+      "index": 1,
+      "kind": "single",
+      "radius": 1,
+      "exponents": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "F": "x + y + y/x + 1/(x*y)",
+      "certificate": {
+        "layer_basis_sizes": [
+          16,
+          16
+        ],
+        "matrix_shape": [
+          51,
+          64
+        ],
+        "support_family": "newton",
+        "support_level": 2
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 3.712707,
+      "operator": "819*t**7*theta**2 + 2457*t**7*theta + 1638*t**7 + 1592*t**6*theta**2 + 4640*t**6*theta + 3048*t**6 + 1675*t**5*theta**2 + 5759*t**5*theta + 4056*t**5 + 903*t**4*theta**2 + 3168*t**4*theta + 2136*t**4 + 193*t**3*theta**2 + 631*t**3*theta + 378*t**3 - 24*t**2*theta**2 + 4*t**2*theta - 15*t*theta**2 + t*theta - 7*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 2,
+        "shift_degree": 7,
+        "support_family": "newton",
+        "support_level": 2,
+        "terms": 47,
+        "trials": 16
+      },
+      "recurrence": {
+        "0": "-7*theta**2",
+        "1": "-15*theta**2 + theta",
+        "2": "-24*theta**2 + 4*theta",
+        "3": "193*theta**2 + 631*theta + 378",
+        "4": "903*theta**2 + 3168*theta + 2136",
+        "5": "1675*theta**2 + 5759*theta + 4056",
+        "6": "1592*theta**2 + 4640*theta + 3048",
+        "7": "819*theta**2 + 2457*theta + 1638"
+      },
+      "status": "certificate_found",
+      "index": 2,
+      "kind": "single",
+      "radius": 1,
+      "exponents": [
+        [
+          -1,
+          1
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "F": "x + y + 1/y + 1/(x*y)",
+      "certificate": {
+        "layer_basis_sizes": [
+          13,
+          13
+        ],
+        "matrix_shape": [
+          41,
+          52
+        ],
+        "support_family": "newton",
+        "support_level": 2
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 1.502875,
+      "operator": "99*t**5*theta**2 + 297*t**5*theta + 198*t**5 + 412*t**4*theta**2 + 1000*t**4*theta + 588*t**4 + 360*t**3*theta**2 + 936*t**3*theta + 564*t**3 + 55*t**2*theta**2 + 128*t**2*theta + 64*t**2 - 17*t*theta**2 + t*theta - 8*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 2,
+        "shift_degree": 5,
+        "support_family": "newton",
+        "support_level": 2,
+        "terms": 39,
+        "trials": 12
+      },
+      "recurrence": {
+        "0": "-8*theta**2",
+        "1": "-17*theta**2 + theta",
+        "2": "55*theta**2 + 128*theta + 64",
+        "3": "360*theta**2 + 936*theta + 564",
+        "4": "412*theta**2 + 1000*theta + 588",
+        "5": "99*theta**2 + 297*theta + 198"
+      },
+      "status": "certificate_found",
+      "index": 3,
+      "kind": "single",
+      "radius": 1,
+      "exponents": [
+        [
+          0,
+          -1
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "F": "x + x/y + y + 1/(x*y)",
+      "certificate": {
+        "layer_basis_sizes": [
+          16,
+          16
+        ],
+        "matrix_shape": [
+          51,
+          64
+        ],
+        "support_family": "newton",
+        "support_level": 2
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 3.411158,
+      "operator": "819*t**7*theta**2 + 2457*t**7*theta + 1638*t**7 + 1592*t**6*theta**2 + 4640*t**6*theta + 3048*t**6 + 1675*t**5*theta**2 + 5759*t**5*theta + 4056*t**5 + 903*t**4*theta**2 + 3168*t**4*theta + 2136*t**4 + 193*t**3*theta**2 + 631*t**3*theta + 378*t**3 - 24*t**2*theta**2 + 4*t**2*theta - 15*t*theta**2 + t*theta - 7*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 2,
+        "shift_degree": 7,
+        "support_family": "newton",
+        "support_level": 2,
+        "terms": 47,
+        "trials": 16
+      },
+      "recurrence": {
+        "0": "-7*theta**2",
+        "1": "-15*theta**2 + theta",
+        "2": "-24*theta**2 + 4*theta",
+        "3": "193*theta**2 + 631*theta + 378",
+        "4": "903*theta**2 + 3168*theta + 2136",
+        "5": "1675*theta**2 + 5759*theta + 4056",
+        "6": "1592*theta**2 + 4640*theta + 3048",
+        "7": "819*theta**2 + 2457*theta + 1638"
+      },
+      "status": "certificate_found",
+      "index": 4,
+      "kind": "single",
+      "radius": 1,
+      "exponents": [
+        [
+          1,
+          -1
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "F": "x*y + x + y + 1/(x*y)",
+      "certificate": {
+        "layer_basis_sizes": [
+          13,
+          13
+        ],
+        "matrix_shape": [
+          41,
+          52
+        ],
+        "support_family": "newton",
+        "support_level": 2
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 1.943738,
+      "operator": "99*t**5*theta**2 + 297*t**5*theta + 198*t**5 + 412*t**4*theta**2 + 1000*t**4*theta + 588*t**4 + 360*t**3*theta**2 + 936*t**3*theta + 564*t**3 + 55*t**2*theta**2 + 128*t**2*theta + 64*t**2 - 17*t*theta**2 + t*theta - 8*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 2,
+        "shift_degree": 5,
+        "support_family": "newton",
+        "support_level": 2,
+        "terms": 39,
+        "trials": 12
+      },
+      "recurrence": {
+        "0": "-8*theta**2",
+        "1": "-17*theta**2 + theta",
+        "2": "55*theta**2 + 128*theta + 64",
+        "3": "360*theta**2 + 936*theta + 564",
+        "4": "412*theta**2 + 1000*theta + 588",
+        "5": "99*theta**2 + 297*theta + 198"
+      },
+      "status": "certificate_found",
+      "index": 5,
+      "kind": "single",
+      "radius": 1,
+      "exponents": [
+        [
+          1,
+          1
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "F": "x + y + 1/(x*y) + 1/(x**2*y**2)",
+      "certificate": {
+        "layer_basis_sizes": [
+          5,
+          14,
+          28,
+          47
+        ],
+        "matrix_shape": [
+          68,
+          188
+        ],
+        "support_family": "newton",
+        "support_level": 1
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 28.171945,
+      "operator": "11063520000*t**9*theta**4 + 110635200000*t**9*theta**3 + 387223200000*t**9*theta**2 + 553176000000*t**9*theta + 265524480000*t**9 + 511980000*t**8*theta**4 + 2472780000*t**8*theta**3 + 2037180000*t**8*theta**2 - 3518220000*t**8*theta - 3594600000*t**8 + 1459674467*t**7*theta**4 + 3555406104*t**7*theta**3 - 5654463617*t**7*theta**2 - 19956116574*t**7*theta - 12205921320*t**7 - 66592240*t**6*theta**4 - 392415520*t**6*theta**3 - 848494370*t**6*theta**2 - 788696330*t**6*theta - 266025240*t**6 - 71332550*t**5*theta**4 - 201001700*t**5*theta**3 - 545614200*t**5*theta**2 - 439986750*t**5*theta - 133680600*t**5 - 55242596*t**4*theta**4 + 281322212*t**4*theta**3 - 349180192*t**4*theta**2 + 3272500*t**4*theta + 1359000*t**4 + 2159027*t**3*theta**4 - 5240820*t**3*theta**3 + 4735121*t**3*theta**2 + 1334968*t**3*theta + 540000*t**3 + 1396724*t**2*theta**4 - 4197532*t**2*theta**3 + 2947646*t**2*theta**2 + 2*t**2*theta - 4080*t*theta**4 + 4960*t*theta**3 - 3340*t*theta**2 + 40*t*theta - 1600*theta**4 + 1600*theta**3 - 400*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 4,
+        "shift_degree": 9,
+        "support_family": "newton",
+        "support_level": 1,
+        "terms": 76,
+        "trials": 40
+      },
+      "recurrence": {
+        "0": "-1600*theta**4 + 1600*theta**3 - 400*theta**2",
+        "1": "-4080*theta**4 + 4960*theta**3 - 3340*theta**2 + 40*theta",
+        "2": "1396724*theta**4 - 4197532*theta**3 + 2947646*theta**2 + 2*theta",
+        "3": "2159027*theta**4 - 5240820*theta**3 + 4735121*theta**2 + 1334968*theta + 540000",
+        "4": "-55242596*theta**4 + 281322212*theta**3 - 349180192*theta**2 + 3272500*theta + 1359000",
+        "5": "-71332550*theta**4 - 201001700*theta**3 - 545614200*theta**2 - 439986750*theta - 133680600",
+        "6": "-66592240*theta**4 - 392415520*theta**3 - 848494370*theta**2 - 788696330*theta - 266025240",
+        "7": "1459674467*theta**4 + 3555406104*theta**3 - 5654463617*theta**2 - 19956116574*theta - 12205921320",
+        "8": "511980000*theta**4 + 2472780000*theta**3 + 2037180000*theta**2 - 3518220000*theta - 3594600000",
+        "9": "11063520000*theta**4 + 110635200000*theta**3 + 387223200000*theta**2 + 553176000000*theta + 265524480000"
+      },
+      "status": "certificate_found",
+      "index": 6,
+      "kind": "single",
+      "radius": 2,
+      "exponents": [
+        [
+          -2,
+          -2
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "F": "x + y + 1/(x*y) + 1/(x**2*y)",
+      "certificate": {
+        "layer_basis_sizes": [
+          16,
+          16
+        ],
+        "matrix_shape": [
+          51,
+          64
+        ],
+        "support_family": "newton",
+        "support_level": 2
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 3.021296,
+      "operator": "819*t**7*theta**2 + 2457*t**7*theta + 1638*t**7 + 1592*t**6*theta**2 + 4640*t**6*theta + 3048*t**6 + 1675*t**5*theta**2 + 5759*t**5*theta + 4056*t**5 + 903*t**4*theta**2 + 3168*t**4*theta + 2136*t**4 + 193*t**3*theta**2 + 631*t**3*theta + 378*t**3 - 24*t**2*theta**2 + 4*t**2*theta - 15*t*theta**2 + t*theta - 7*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 2,
+        "shift_degree": 7,
+        "support_family": "newton",
+        "support_level": 2,
+        "terms": 47,
+        "trials": 16
+      },
+      "recurrence": {
+        "0": "-7*theta**2",
+        "1": "-15*theta**2 + theta",
+        "2": "-24*theta**2 + 4*theta",
+        "3": "193*theta**2 + 631*theta + 378",
+        "4": "903*theta**2 + 3168*theta + 2136",
+        "5": "1675*theta**2 + 5759*theta + 4056",
+        "6": "1592*theta**2 + 4640*theta + 3048",
+        "7": "819*theta**2 + 2457*theta + 1638"
+      },
+      "status": "certificate_found",
+      "index": 7,
+      "kind": "single",
+      "radius": 2,
+      "exponents": [
+        [
+          -2,
+          -1
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "F": "x + y + 1/(x*y) + x**(-2)",
+      "certificate": {
+        "layer_basis_sizes": [
+          6,
+          17,
+          34,
+          57
+        ],
+        "matrix_shape": [
+          82,
+          228
+        ],
+        "support_family": "newton",
+        "support_level": 1
+      },
+      "checks": {
+        "divergence_identity_exact": true,
+        "operator_certified_by_GUVJ_identity": true,
+        "operator_from_finite_term_fit": true,
+        "operator_from_joint_exact_identity": false,
+        "recurrence_replay_exact": true
+      },
+      "elapsed_seconds": 32.165867,
+      "operator": "729*t**3*theta**4 + 4374*t**3*theta**3 + 9477*t**3*theta**2 + 8748*t**3*theta + 2916*t**3 - 16*theta**4 + 48*theta**3 - 36*theta**2",
+      "operator_stats": {
+        "discovery": "exact constant terms with held-out replay",
+        "minimal_order_proved": false,
+        "order": 4,
+        "shift_degree": 3,
+        "support_family": "newton",
+        "support_level": 1,
+        "terms": 40,
+        "trials": 34
+      },
+      "recurrence": {
+        "0": "-16*theta**4 + 48*theta**3 - 36*theta**2",
+        "3": "729*theta**4 + 4374*theta**3 + 9477*theta**2 + 8748*theta + 2916"
+      },
+      "status": "certificate_found",
+      "index": 8,
+      "kind": "single",
+      "radius": 2,
+      "exponents": [
+        [
+          -2,
+          0
+        ]
+      ],
+      "coefficients": [
+        1
+      ]
+    },
+    {
+      "status": "resource_timeout",
+      "message": "per-case resource control expired; this is not a mathematical failure",
+      "index": 9,
+      "kind": "single",
+      "radius": 2,
+      "exponents": [
+        [
+          -2,
+          1
+        ]
+      ],
+      "coefficients": [
+        1
+      ],
+      "F": "x + y + 1/(x*y) + y/x**2"
+    }
+  ]
+}

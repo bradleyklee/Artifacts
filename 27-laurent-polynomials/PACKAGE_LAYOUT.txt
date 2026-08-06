@@ -1,0 +1,14 @@
+Laurent_period_tool_2026-08-06
+
+README.md                         public status and command reference
+WALKTHROUGH_PUBLIC.md             public user walkthrough
+examples/public/                  public canonical and regression data
+examples/private/README.md        private status and command reference
+examples/private/WALKTHROUGH_PRIVATE.md
+examples/private/platonic/        private canonical data
+code/example.py                   colleague-facing command
+code/guvj/                        general G,U,V,J implementation
+paper/ and note.pdf               public paper materials
+pseudo/                           algorithm and replay pseudocode
+
+The public release builder excludes examples/private/.

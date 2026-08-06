@@ -1,0 +1,167 @@
+{
+  "schema": "laurent-public-catalogue-verification-v1",
+  "model_count": 11,
+  "complete_double_certificate_count": 4,
+  "models": [
+    {
+      "index": 1,
+      "fibres": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "complete",
+      "hamiltonian_certificate": true,
+      "laurent_certificate": true
+    },
+    {
+      "index": 2,
+      "fibres": [
+        "I1",
+        "I1",
+        "I2",
+        "IV*"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "complete",
+      "hamiltonian_certificate": true,
+      "laurent_certificate": true,
+      "a303790_replay": [
+        "scalar certificate residual: 0 modulo K-E",
+        "Laurent certificate residual: 0",
+        "First coefficients: [1, 60, 7380, 1090320, 176978340, 30471320880, 5461962826320, 1007754602437440, 189974650649174820, 36407481107391279600]",
+        "Same t-operator obtained exactly"
+      ]
+    },
+    {
+      "index": 3,
+      "fibres": [
+        "I1",
+        "I1",
+        "II",
+        "IV*"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "complete",
+      "hamiltonian_certificate": true,
+      "laurent_certificate": true
+    },
+    {
+      "index": 4,
+      "fibres": [
+        "I1",
+        "I1",
+        "I1",
+        "I3*"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "open",
+      "hamiltonian_certificate": false,
+      "laurent_certificate": false
+    },
+    {
+      "index": 5,
+      "fibres": [
+        "I1",
+        "I1",
+        "I2",
+        "I2*"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "open",
+      "hamiltonian_certificate": false,
+      "laurent_certificate": false
+    },
+    {
+      "index": 6,
+      "fibres": [
+        "I1",
+        "I1",
+        "I2*",
+        "II"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "open",
+      "hamiltonian_certificate": false,
+      "laurent_certificate": false
+    },
+    {
+      "index": 7,
+      "fibres": [
+        "I1",
+        "I1",
+        "I1*",
+        "I3"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "open",
+      "hamiltonian_certificate": false,
+      "laurent_certificate": false
+    },
+    {
+      "index": 8,
+      "fibres": [
+        "I1",
+        "I1",
+        "I1*",
+        "III"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "open",
+      "hamiltonian_certificate": false,
+      "laurent_certificate": false
+    },
+    {
+      "index": 9,
+      "fibres": [
+        "I1",
+        "I1*",
+        "I2",
+        "I2"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "complete",
+      "hamiltonian_certificate": true,
+      "laurent_certificate": true
+    },
+    {
+      "index": 10,
+      "fibres": [
+        "I1",
+        "I1*",
+        "I2",
+        "II"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "open",
+      "hamiltonian_certificate": false,
+      "laurent_certificate": false
+    },
+    {
+      "index": 11,
+      "fibres": [
+        "I1",
+        "I1*",
+        "II",
+        "II"
+      ],
+      "coefficient_count": 31,
+      "ode_coefficients_checked": 29,
+      "laurent_status": "open",
+      "hamiltonian_certificate": false,
+      "laurent_certificate": false
+    }
+  ]
+}

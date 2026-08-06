@@ -1,0 +1,72 @@
+{
+  "schema": "laurent-period-public-stats-v1",
+  "canonical_baseline": {
+    "records": 11,
+    "laurent_realizations": 4,
+    "complete_double_certificates": 4,
+    "verification": "11/11 records; 4/4 complete certificates"
+  },
+  "systematic_perturbations": {
+    "base": "regression:triangle",
+    "completed_records": 9,
+    "status_counts": {
+      "operator_found": 8,
+      "search_controls_exhausted": 1
+    },
+    "operator_order_counts": {
+      "2": 6,
+      "4": 2
+    },
+    "controls": {
+      "radius": 2,
+      "coefficients": [
+        1
+      ],
+      "max_order": 4,
+      "max_shift": 9,
+      "max_dilation": 2,
+      "certificates": false,
+      "case_timeout": 60.0
+    }
+  },
+  "higher_order_regressions": [
+    {
+      "F": "x + y + y**2/x + 1/(x*y)",
+      "order": 3,
+      "shift_degree": 6,
+      "term_count": 50,
+      "dilation": 2,
+      "matrix_shape": [
+        91,
+        114
+      ],
+      "pole_layers": 3,
+      "checks": {
+        "operator_held_out_exact": true,
+        "divergence_identity_exact": true,
+        "recurrence_replay_exact": true
+      },
+      "rational_reconstruction_degree_bound": null,
+      "exact_solve_field": "Q(t)"
+    },
+    {
+      "F": "x + y**2 + y + 1/(x*y)",
+      "order": 4,
+      "shift_degree": 9,
+      "term_count": 76,
+      "dilation": 2,
+      "matrix_shape": [
+        100,
+        112
+      ],
+      "pole_layers": 4,
+      "checks": {
+        "operator_held_out_exact": true,
+        "divergence_identity_exact": true,
+        "recurrence_replay_exact": true
+      },
+      "rational_reconstruction_degree_bound": null,
+      "exact_solve_field": "Q(t)"
+    }
+  ]
+}

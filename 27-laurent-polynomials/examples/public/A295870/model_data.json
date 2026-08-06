@@ -1,0 +1,19 @@
+{
+  "oeis": "A295870",
+  "role": "primary public use case",
+  "hamiltonian_2H": "p^2 + q^2 - 4*(q^2 - p^2)*q",
+  "laurent_polynomial": "((1+x)^3/x)*((1+y+y^2+y^3)^2/y^3)",
+  "coefficient_identity": "A_n = [F(x,y)^n]_0",
+  "first_terms": [
+    "1",
+    "12",
+    "660",
+    "48720",
+    "4005540",
+    "349260912",
+    "31626298704",
+    "2940502593600"
+  ],
+  "theta_operator": "41472*t**3*theta**2 + 41472*t**3*theta + 9216*t**3 - 6432*t**2*theta**2 - 1728*t**2*theta - 288*t**2 + 164*t*theta**2 + 68*t*theta + 12*t - theta**2",
+  "reference_certificate": "certificates/reference_guvj_certificate.json"
+}

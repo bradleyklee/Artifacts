@@ -1,0 +1,20 @@
+# Private research data must never be staged or pushed.
+/examples/private/
+
+# Generated Python and test files.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated TeX files.
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+
+# Generated archives and local recovery files.
+*.zip
+*.tar
+*.tar.gz
+/recovery/

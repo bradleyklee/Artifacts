@@ -1,0 +1,7 @@
+Public example: OEIS A303790
+
+model_data.json contains the exact model, critical values, involution, operators,
+and Laurent polynomial.
+
+certificates/ contains the exact scalar-period and Laurent certificate records,
+the rational Laurent witness, and regenerated coefficients.

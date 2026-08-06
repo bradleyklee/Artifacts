@@ -1,0 +1,354 @@
+\documentclass[11pt]{article}
+\usepackage[margin=0.82in]{geometry}
+\usepackage{amsmath,amssymb,mathtools,booktabs,array,hyperref,microtype,enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.46em}
+\setlist{nosep,leftmargin=*}
+\newcommand{\Dx}{D_x}
+\newcommand{\Dy}{D_y}
+\title{Exact Reduction Certificates for Laurent Periods\\[1mm]
+\large The $G,U,V,J,A,\Xi$ formalism}
+\author{Bradley Klee and Mech.An.ika Sol (Open AI)}
+\date{August 5, 2026\\Public draft with one worked example}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We consider Laurent polynomials
+$F\in\mathbb Q[x^{\pm1},y^{\pm1}]$ and their constant-term power series
+\[
+  \Phi(t)
+  =
+  \left[\frac{1}{1-tF}\right]_0
+  =
+  \sum_{n\ge0}[F^n]_0t^n.
+\]
+A finite exact reduction constructs a differential annihilator $A$ for
+$\Phi$ together with an explicit certificate $\Xi=(\Xi_x,\Xi_y)$.
+The general symbolic implementation uses the $G,U,V,J$ formalism developed in
+Chapter~3 of Bradley Klee's dissertation.  The coefficient matrix $G$
+records the reduction identity, its solution gives the reduced part $U$
+and certificate data $V$, and $J$ records the derivative correction made
+when the pole order is lowered.  Linear dependence among the resulting
+finite-dimensional data gives $A$, while the accumulated $V$-data give
+$\Xi$ without a second solve.  The worked public example is the cubic
+Hamiltonian recorded with OEIS A303790; its factorization gives a shorter
+Laurent telescoper, paired with an independent Hamiltonian certificate.  The
+accompanying exact data reproduce its coefficient sequence, differential
+equation, recurrence, and both certificate checks.
+\end{abstract}
+
+\section{Formal reductions}
+
+Put $K=\mathbb Q(t)$ and
+\[
+  \rho=1-tF,
+  \qquad
+  \Dx=x\frac{\partial}{\partial x},
+  \qquad
+  \Dy=y\frac{\partial}{\partial y}.
+\]
+The coefficient of $x^0y^0$ in either $\Dx(R)$ or $\Dy(R)$ is zero.
+Thus a pair of rational functions $\Xi=(\Xi_x,\Xi_y)$ satisfying
+\begin{equation}\label{eq:certificate-goal}
+  A\!\left(\frac1\rho\right)=\Dx(\Xi_x)+\Dy(\Xi_y)
+\end{equation}
+proves $A\Phi=0$.
+
+Fix a positive integer $r$.  Let $w,a,b_x,b_y$ be Laurent
+polynomials.  If
+\begin{equation}\label{eq:scalar-split}
+  w=\rho a-\Dx(\rho)b_x-\Dy(\rho)b_y,
+\end{equation}
+then the product rule gives the reduction identity
+\begin{align}
+  \frac{w}{\rho^{r+1}}
+  &={}
+  \frac{a-\frac1r\bigl(\Dx(b_x)+\Dy(b_y)\bigr)}{\rho^r}
+  +\Dx\!\left(\frac{b_x}{r\rho^r}\right)
+  +\Dy\!\left(\frac{b_y}{r\rho^r}\right).
+  \label{eq:scalar-lowering}
+\end{align}
+Thus lowering the pole order of $w/\rho^{r+1}$ reduces to solving
+\eqref{eq:scalar-split} for $(a,b_x,b_y)$.  The relevant linear map is
+\begin{equation}\label{eq:coefficient-map}
+  (a,b_x,b_y)\longmapsto
+  \rho a-\Dx(\rho)b_x-\Dy(\rho)b_y.
+\end{equation}
+
+Let $B=(b_1,\ldots,b_d)$ be the ordered
+Laurent-monomial basis for each of $a,b_x,b_y$.  Let
+$C=(c_1,\ldots,c_m)$ be an ordered Laurent-monomial basis large enough
+to contain $B$, $FB$, $\Dx(F)B$, and $\Dy(F)B$.  For a coefficient
+column $q=(q_1,\ldots,q_d)^T\in K^d$, write
+\[
+  \langle q\rangle=\sum_{j=1}^d q_jb_j.
+\]
+Angle brackets always reconstruct a Laurent polynomial in the basis $B$.
+The rows of $G$ are indexed by the basis $C$, and its columns are indexed
+by three ordered copies of $B$, corresponding to $a,b_x,b_y$.
+
+The matrix
+\[
+  E\in K^{m\times d}
+\]
+is the inclusion of the $B$-space into the $C$-space.  Its $j$th column
+is $b_j$ written in the basis $C$.
+
+The matrix
+\[
+  G\in K^{m\times3d}
+\]
+represents the map \eqref{eq:coefficient-map}.  We compute
+\[
+  U,V_x,V_y\in K^{d\times d}
+\]
+from the exact matrix identity
+\begin{equation}\label{eq:G-inversion}
+  G
+  \begin{pmatrix}U\\V_x\\V_y\end{pmatrix}=E.
+\end{equation}
+The stacked matrix has size $3d\times d$, so both sides of
+\eqref{eq:G-inversion} have size $m\times d$.
+
+For any $q\in K^d$, multiplication of \eqref{eq:G-inversion} by $q$
+gives
+\[
+  G
+  \begin{pmatrix}Uq\\V_xq\\V_yq\end{pmatrix}=Eq.
+\]
+Therefore the Laurent polynomial $w=\langle q\rangle$ is split by
+\eqref{eq:scalar-split} with
+\[
+  a=\langle Uq\rangle,
+  \qquad
+  b_x=\langle V_xq\rangle,
+  \qquad
+  b_y=\langle V_yq\rangle.
+\]
+
+If $G$ is square and nonsingular, then
+\[
+  \begin{pmatrix}U\\V_x\\V_y\end{pmatrix}=G^{-1}E.
+\]
+If $G$ is rectangular, exact Gauss--Jordan elimination is applied to the
+augmented system.  Free variables are set to zero, and the resulting
+solution is accepted only when substitution gives zero residual in
+\eqref{eq:G-inversion}.
+
+Put
+\[
+  V=\begin{pmatrix}V_x\\V_y\end{pmatrix}\in K^{2d\times d}.
+\]
+The matrix
+\[
+  J\in K^{d\times2d}
+\]
+represents differentiation of the certificate numerators:
+\[
+  \left\langle J
+  \begin{pmatrix}q_x\\q_y\end{pmatrix}\right\rangle
+  =\Dx\langle q_x\rangle+\Dy\langle q_y\rangle.
+\]
+Substitution in \eqref{eq:scalar-lowering} gives the one-step reduction
+matrix
+\begin{equation}\label{eq:Lower}
+  \operatorname{Lower}_r=U-\frac1rJV\in K^{d\times d}.
+\end{equation}
+A kernel relation among reduced coefficient columns gives $A$; the same
+linear combination of the stored $V_x,V_y$ columns gives $\Xi$.
+
+\section{Example}
+
+\textbf{The cubic Hamiltonian and OEIS A303790.}
+
+Let
+\begin{equation}\label{eq:A303790-K}
+  K(p,q)=p^2+q^2+p^3+q^3,
+  \qquad t=E/32.
+\end{equation}
+The normalized period at either finite center has the form
+\[
+  \Pi(E)=\sum_{n\ge0}A_n(E/32)^n.
+\]
+The equality of the two local coefficient sequences follows from the affine
+involution $(p,q)\mapsto(-p-2/3,-q-2/3)$, which sends $K$ to $8/27-K$.
+
+Define the integral Laurent polynomial
+\begin{equation}\label{eq:A303790-F}
+  F_{303790}(w,y)=
+  \frac{(w+1)^3(y+1)^2(y^2-4y+1)^2}{w^2y^3}.
+\end{equation}
+Lagrange inversion for the radial equation gives the exact coefficient
+identity
+\begin{equation}\label{eq:A303790-CT}
+  A_n=[F_{303790}(w,y)^n]_0.
+\end{equation}
+Thus integrality is immediate.
+
+For the exact recurrence proof, factor $F_{303790}=B(w)C(y)$.  The
+$w$-factor gives $[B^n]_0=\binom{3n}{2n}$.  For the $y$-factor, the supplied
+rational function $R(n,y)$ satisfies
+\begin{equation}\label{eq:A303790-R}
+  P_0(n)+P_1(n)C+P_2(n)C^2
+  =y\frac{\partial R}{\partial y}
+   +n\,y\frac{C'}{C}R.
+\end{equation}
+After multiplication by $C^n$, the right side is
+$y\,\partial_y(RC^n)$ and has zero constant term.  Combining the resulting
+recurrence for $[C^n]_0$ with the exact ratio for $\binom{3n}{2n}$ gives
+\begin{equation}\label{eq:A303790-recurrence}
+  (n+1)^2A_{n+1}
+  -12(27n^2+27n+5)A_n
+  +2592(3n-2)(3n+2)A_{n-1}=0.
+\end{equation}
+The full $P_0,P_1,P_2,R$ data are kept in the accompanying exact certificate.
+
+For $Y(t)=\sum_{n\ge0}A_nt^n$, this is equivalent to
+\begin{equation}\label{eq:A303790-ODE}
+\begin{aligned}
+  &t(108t-1)(216t-1)Y''
+  +(69984t^2-648t+1)Y'\\
+  &\hspace{43mm}+60(216t-1)Y=0.
+\end{aligned}
+\end{equation}
+The independent Hamiltonian certificate proves
+\[
+  E(27E-8)(27E-4)\Pi''
+  +(2187E^2-648E+32)\Pi'
+  +15(27E-4)\Pi=0.
+\]
+Substitution of $E=32t$ gives exactly \eqref{eq:A303790-ODE}.  Both certificate
+residuals are zero by exact coefficient reduction.  The first values are
+\[
+  1,60,7380,1090320,176978340,30471320880,\ldots,
+\]
+in agreement with OEIS A303790.
+
+\clearpage
+\section{General $G,U,V,J$ pseudocode}
+
+The public A303790 packet also contains the shorter factorized replay used in
+the worked example.  The following is the general matrix-reduction route.
+
+\begingroup
+\fontsize{9.5}{10.9}\selectfont
+\begin{enumerate}[label=\texttt{\arabic*.},leftmargin=2.7em,itemsep=0.22em,topsep=0pt]
+\item Read $F$ as an exact Laurent polynomial; set $\rho=1-tF$ and list the exponent pairs occurring in $1$ and $F$.
+\item Form every pairwise sum of those exponent pairs; let $B$ be all integer points in their convex hull, ordered lexicographically.
+\item Let $C$ be the union of $B$ with every translate $B+(i,j)$ for which $x^iy^j$ occurs in $F$; order $C$ lexicographically.
+\item Represent Laurent polynomials on $B$ or $C$ by exact coefficient dictionaries keyed by exponent pairs.
+\item For each $b_j$ in $B$, place the $C$-coordinates of $\rho b_j$, $-\Dx(\rho)b_j$, and $-\Dy(\rho)b_j$ in columns $j$, $d+j$, and $2d+j$ of $G\in K^{m\times3d}$.
+\item Build $E\in K^{m\times d}$ and $J\in K^{d\times2d}$ in the ordered bases $B,C$.
+\item Solve $G(U,V_x,V_y)^T=E$ by exact Gauss--Jordan elimination, or solve only $G(u,v_x,v_y)^T=Ef_2$ when only the $F^2$ column is required; then impose $\operatorname{Lower}_2f_2=\alpha r+\beta f$.
+\item Evaluate this system at the first regular integer value of $t$; perform exact Gauss--Jordan elimination.
+\item At successive regular integer values of $t$, solve that same square block exactly over $\mathbb Q$; keep training values and three held-out values.
+\item For each unknown coefficient, reconstruct the rational function of least total numerator-plus-denominator degree fitting the training values; reject it unless it also fits every held-out value.
+\item Set all free unknowns to zero, rebuild the symbolic solution, and substitute it into the original block system over $\mathbb Q(t)$.
+\item Clear stated denominators, expand in the declared monomial basis, and require every coefficient of every residual to be zero.
+\item Extract the selected column vectors $u,v_x,v_y$ and $\alpha,\beta$; verify $G(u,v_x,v_y)^T=Ef_2$ and $\operatorname{Lower}_2f_2=\alpha r+\beta f$.
+\item Form $X=\bigl(\begin{smallmatrix}1&0&2\alpha\\0&1&2\beta\end{smallmatrix}\bigr)$; compute a nonzero kernel vector and normalize it by denominator clearing, polynomial-gcd removal, integer-content removal, and sign fixing.
+\item Write the normalized vector as $(p_0,p_1,p_2)^T$; set $A=p_0+p_1\partial_t+p_2\partial_t^2$ and $\Xi=(p_2\langle v_x\rangle/\rho^2,p_2\langle v_y\rangle/\rho^2)$.
+\item Verify $Xp=0$ and verify the cleared coefficient identity corresponding to
+      $A(1/\rho)=\Dx(\Xi_x)+\Dy(\Xi_y)$.
+\item Convert $A$ to $\sum_k t^kQ_k(\theta)$ with $\theta=t\partial_t$; output
+      $\sum_kQ_k(n-k)[F^{n-k}]_0=0$.
+\item Generate the requested constant terms by lattice convolution; test the recurrence on all available indices and compare the first five values with direct power expansion.
+\item Serialize the ordered bases, sparse matrices, reduction data, $A$, $\Xi$, recurrence, constant terms, and exact pass/fail checks; verify all declared dimensions and nonzero counts.
+\item Report elapsed time after basis construction, matrix construction, the exact solve, reduction replay, certificate replay, term generation, and serialization; stop at the first failed check.
+\item Do not call a generic simplification routine.  Use only named operations whose effects are visible in the proof record.
+\end{enumerate}
+\endgroup
+
+\clearpage
+\section{Algorithm and data model}
+
+The public package contains the exact A303790 replay, the eleven-record
+public catalogue, the catalogue verifier, the generic $G,U,V,J$ implementation,
+and its JSON Schema.  The Python source and schema remain separate files rather
+than typeset appendices.  This PDF explains the calculation; the package files
+supply the literal executable identities and coefficient data.  No private
+reference record is copied into the public artifact.
+
+The public replay verifies every stored coefficient list and differential
+equation, then repeats both exact certificates for each completed catalogue
+entry.  The A303790 scalar and Laurent certificates are also replayed by their
+independent scripts.  The generic $G,U,V,J$ verifier takes an explicit data root,
+rebuilds $G$ and $J$ from the stated Laurent polynomial, and writes its report
+beside the selected data rather than into the code directory.
+
+A complete $G,U,V,J$ certificate record contains the following information:
+\begin{center}
+\small
+\begin{tabular}{>{\ttfamily}p{0.28\textwidth}p{0.62\textwidth}}
+\toprule
+schema & format name and version\\
+model & stable model name\\
+input & $F$, $\rho$, coefficient field, basis rule, and requested term counts\\
+basis & the ordered exponent pairs used for the unknown and output spaces\\
+matrices & sparse exact records for $G$ and $J$\\
+reduction & matrix dimensions, selected column vectors $u,v_x,v_y$, $\alpha,\beta$, and the reduced column\\
+reduced\_columns\_X & the two-row matrix whose kernel gives $A$\\
+annihilator\_A & derivative form and $\theta$ form\\
+certificate\_Xi & complete rational $\Xi_x,\Xi_y$, stored numerators, denominator power, and the exact identity\\
+recurrence & the polynomials $Q_k$ and the indexing convention\\
+constant\_terms & independently generated reference values\\
+checks & exact replay results, all required to be true\\
+\bottomrule
+\end{tabular}
+\end{center}
+Matrices and vectors are stored with their dimensions, deterministic labels,
+declared nonzero counts, and sorted sparse coordinates.  Rational expressions
+are stored after explicit denominator collection and cancellation.  Unknown
+fields are rejected, and a publication record is accepted only when every
+required proof check is true.
+
+The principal public commands, run from the project root, are
+\begin{verbatim}
+python code/run_examples.py public
+python code/build_public_release.py Laurent_period_public_release.zip
+\end{verbatim}
+The first command writes its exact report below \texttt{examples/public/}; the
+second uses an explicit allowlist and rejects every private data path.  Timing
+measurements are kept in the root README rather than in the mathematical
+certificate records.
+
+\begin{thebibliography}{9}
+
+\bibitem{Klee}
+B. J. Klee,
+\emph{An Update on the Computational Theory of Hamiltonian Period Functions},
+Ph.D. dissertation, University of Arkansas, Fayetteville, December 2020,
+especially Chapter~3.
+
+\bibitem{BDS}
+A. Bostan, L. Dumont, and B. Salvy,
+``Algebraic Diagonals and Walks: Algorithms, Bounds, Complexity,''
+\emph{Journal of Symbolic Computation} 83 (2017), 68--92.
+
+\bibitem{BCChL}
+A. Bostan, S. Chen, F. Chyzak, and Z. Li,
+``Complexity of creative telescoping for bivariate rational functions,''
+\emph{Proceedings of ISSAC 2010}, 203--210.
+
+\bibitem{AZ}
+G. Almkvist and D. Zeilberger,
+``The method of differentiating under the integral sign,''
+\emph{Journal of Symbolic Computation} 10 (1990), 571--591.
+
+\bibitem{A303790}
+OEIS Foundation Inc., \emph{The On-Line Encyclopedia of Integer Sequences},
+A303790.
+
+\bibitem{SymPy}
+A. Meurer et al.,
+``SymPy: symbolic computing in Python,''
+\emph{PeerJ Computer Science} 3 (2017), e103.
+
+\end{thebibliography}
+
+\end{document}

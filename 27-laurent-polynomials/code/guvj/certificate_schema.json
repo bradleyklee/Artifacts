@@ -1,0 +1,416 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:laurent-period-guvj-certificate:v1",
+  "title": "Laurent period GUVJ certificate",
+  "type": "object",
+  "required": [
+    "schema",
+    "model",
+    "input",
+    "basis",
+    "matrices",
+    "reduction",
+    "reduced_columns_X",
+    "annihilator_A",
+    "certificate_Xi",
+    "recurrence",
+    "constant_terms",
+    "checks"
+  ],
+  "properties": {
+    "schema": {
+      "const": "laurent-period-guvj-certificate-v1"
+    },
+    "model": {
+      "type": "string"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "F",
+        "rho",
+        "coefficient_field",
+        "dilation",
+        "term_count",
+        "direct_check_count"
+      ],
+      "properties": {
+        "F": {
+          "type": "string"
+        },
+        "rho": {
+          "type": "string"
+        },
+        "coefficient_field": {
+          "const": "Q(t)"
+        },
+        "dilation": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "term_count": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "direct_check_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "basis": {
+      "type": "object",
+      "required": [
+        "B",
+        "C"
+      ],
+      "properties": {
+        "B": {
+          "$ref": "#/$defs/latticePointArray"
+        },
+        "C": {
+          "$ref": "#/$defs/latticePointArray"
+        }
+      },
+      "additionalProperties": false
+    },
+    "matrices": {
+      "type": "object",
+      "required": [
+        "G",
+        "J"
+      ],
+      "properties": {
+        "G": {
+          "$ref": "#/$defs/sparseMatrix"
+        },
+        "J": {
+          "$ref": "#/$defs/sparseMatrix"
+        }
+      },
+      "additionalProperties": false
+    },
+    "reduction": {
+      "type": "object",
+      "required": [
+        "identity",
+        "lowering",
+        "U",
+        "Vx",
+        "Vy",
+        "alpha",
+        "beta",
+        "U_expression",
+        "Vx_expression",
+        "Vy_expression",
+        "Lower2_expression"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string"
+        },
+        "lowering": {
+          "type": "string"
+        },
+        "U": {
+          "$ref": "#/$defs/sparseVector"
+        },
+        "Vx": {
+          "$ref": "#/$defs/sparseVector"
+        },
+        "Vy": {
+          "$ref": "#/$defs/sparseVector"
+        },
+        "alpha": {
+          "type": "string"
+        },
+        "beta": {
+          "type": "string"
+        },
+        "U_expression": {
+          "type": "string"
+        },
+        "Vx_expression": {
+          "type": "string"
+        },
+        "Vy_expression": {
+          "type": "string"
+        },
+        "Lower2_expression": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "reduced_columns_X": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "array",
+        "minItems": 3,
+        "maxItems": 3,
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "annihilator_A": {
+      "type": "object",
+      "required": [
+        "standard_form",
+        "theta_form"
+      ],
+      "properties": {
+        "standard_form": {
+          "type": "object",
+          "required": [
+            "p0",
+            "p1",
+            "p2",
+            "meaning"
+          ],
+          "properties": {
+            "p0": {
+              "type": "string"
+            },
+            "p1": {
+              "type": "string"
+            },
+            "p2": {
+              "type": "string"
+            },
+            "meaning": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        },
+        "theta_form": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "certificate_Xi": {
+      "type": "object",
+      "required": [
+        "identity",
+        "construction",
+        "Xi_x",
+        "Xi_y",
+        "Xi_x_expression",
+        "Xi_y_expression"
+      ],
+      "properties": {
+        "identity": {
+          "type": "string"
+        },
+        "construction": {
+          "type": "string"
+        },
+        "Xi_x": {
+          "$ref": "#/$defs/sparseVector"
+        },
+        "Xi_y": {
+          "$ref": "#/$defs/sparseVector"
+        },
+        "Xi_x_expression": {
+          "type": "string"
+        },
+        "Xi_y_expression": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "recurrence": {
+      "type": "object",
+      "required": [
+        "convention",
+        "shift_polynomials"
+      ],
+      "properties": {
+        "convention": {
+          "type": "string"
+        },
+        "shift_polynomials": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "constant_terms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "checks": {
+      "type": "object",
+      "required": [
+        "GUVJ_reduction_exact",
+        "X_kernel_exact",
+        "Xi_certificate_exact",
+        "recurrence_exact_on_computed_terms",
+        "direct_power_terms_exact"
+      ],
+      "properties": {
+        "GUVJ_reduction_exact": {
+          "const": true
+        },
+        "X_kernel_exact": {
+          "const": true
+        },
+        "Xi_certificate_exact": {
+          "const": true
+        },
+        "recurrence_exact_on_computed_terms": {
+          "const": true
+        },
+        "direct_power_terms_exact": {
+          "const": true
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "latticePoint": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "integer"
+        }
+      ]
+    },
+    "latticePointArray": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/latticePoint"
+      }
+    },
+    "sparseMatrix": {
+      "type": "object",
+      "required": [
+        "shape",
+        "rows",
+        "columns",
+        "entries",
+        "nonzero_count"
+      ],
+      "properties": {
+        "shape": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "prefixItems": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "integer"
+            }
+          ]
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "columns": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "prefixItems": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "nonzero_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "sparseVector": {
+      "type": "object",
+      "required": [
+        "shape",
+        "labels",
+        "entries",
+        "nonzero_count"
+      ],
+      "properties": {
+        "shape": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "prefixItems": [
+            {
+              "type": "integer"
+            },
+            {
+              "const": 1
+            }
+          ]
+        },
+        "labels": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "entries": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "prefixItems": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          }
+        },
+        "nonzero_count": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}
