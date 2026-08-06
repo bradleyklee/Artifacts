@@ -1,0 +1,2137 @@
+{
+  "scope": "56 allowable four-fiber configurations with nonconstant J",
+  "families": [
+    {
+      "family": "harmonic_plus_cubic",
+      "target_count": 56,
+      "exact_witness_count": 3,
+      "candidate_without_witness_count": 0,
+      "excluded_count": 53,
+      "wall_seconds": 0.052843345999988856,
+      "records": [
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1",
+            "I9"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "I1",
+              "III*"
+            ],
+            "c4": "3*alpha + 1",
+            "c6": "-(45*alpha - 2)/2",
+            "delta": "27*alpha*(4*alpha**2 - 71*alpha + 8)/4",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "4*alpha**2 - 71*alpha + 8",
+                "factor_degree": 2,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              }
+            ],
+            "infinity": {
+              "fiber": "III*",
+              "v_c4": 3,
+              "v_c6": 5,
+              "v_delta": 9
+            },
+            "euler_total": 12,
+            "parameters": {
+              "a": "0",
+              "b": "0",
+              "c": "1",
+              "d": "1"
+            },
+            "reduced_parameters": {
+              "K": "-3",
+              "M": "-180",
+              "L": "0"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (0)*p^3 + (0)*p^2*q + (1)*p*q^2 + (1)*q^3"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1",
+            "I3*"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2",
+            "I8"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I8",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "I2",
+              "IV*"
+            ],
+            "c4": "1",
+            "c6": "(729*alpha**2 - 216*alpha + 8)/8",
+            "delta": "-27*alpha*(27*alpha - 8)*(27*alpha - 4)**2/64",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "27*alpha - 8",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "27*alpha - 4",
+                "factor_degree": 1,
+                "fiber": "I2",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 2
+              }
+            ],
+            "infinity": {
+              "fiber": "IV*",
+              "v_c4": 4,
+              "v_c6": 4,
+              "v_delta": 8
+            },
+            "euler_total": 12,
+            "parameters": {
+              "a": "1",
+              "b": "0",
+              "c": "0",
+              "d": "1"
+            },
+            "reduced_parameters": {
+              "K": "0",
+              "M": "-216",
+              "L": "729"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (0)*p^2*q + (0)*p*q^2 + (1)*q^3"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "II",
+            "IV*"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "II",
+              "IV*"
+            ],
+            "c4": "1 - 27*alpha",
+            "c6": "(27*alpha - 1)*(81*alpha - 2)/2",
+            "delta": "-27*alpha*(27*alpha - 1)**2*(243*alpha - 8)/4",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "243*alpha - 8",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "27*alpha - 1",
+                "factor_degree": 1,
+                "fiber": "II",
+                "v_c4": 1,
+                "v_c6": 1,
+                "v_delta": 2
+              }
+            ],
+            "infinity": {
+              "fiber": "IV*",
+              "v_c4": 3,
+              "v_c6": 4,
+              "v_delta": 8
+            },
+            "euler_total": 12,
+            "parameters": {
+              "a": "-1",
+              "b": "-3",
+              "c": "0",
+              "d": "-2"
+            },
+            "reduced_parameters": {
+              "K": "27",
+              "M": "-540",
+              "L": "8748"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (-1)*p^3 + (-3)*p^2*q + (0)*p*q^2 + (-2)*q^3"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2",
+            "I2*"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2*",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I7",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I7",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I7",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1*",
+            "I3"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1*",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1*",
+            "I2",
+            "I2"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1*",
+            "I2",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1*",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I6",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I3",
+            "I6"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I6",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I6",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I6",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I6",
+            "II",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I1",
+            "I4"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I1",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I3",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I2",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I2",
+            "I2",
+            "I2"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I2",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I5",
+            "I5"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I4",
+            "I5",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I5",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I5",
+            "II",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I3",
+            "I5",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "I5",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I5",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I5",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I5",
+            "II",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I2",
+            "I4",
+            "I4"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I4",
+            "I4",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I4",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I4",
+            "II",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I4",
+            "II",
+            "II",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "I4",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "I4",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I4",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I4",
+            "II",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I2",
+            "IV",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "I3",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "II",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "III",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "I3",
+            "I3",
+            "I3"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "I3",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "III",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        }
+      ]
+    },
+    {
+      "family": "two_node_structured_quartic",
+      "target_count": 56,
+      "exact_witness_count": 8,
+      "candidate_without_witness_count": 0,
+      "excluded_count": 48,
+      "wall_seconds": 0.12364142299999514,
+      "records": [
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1",
+            "I9"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1",
+            "I3*"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "I1",
+              "I3*"
+            ],
+            "c4": "1024*alpha**2 + 320*alpha + 1",
+            "c6": "-32768*alpha**3 - 15360*alpha**2 - 1248*alpha + 1",
+            "delta": "-3456*alpha*(1024*alpha**2 + 352*alpha - 1)",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "1024*alpha**2 + 352*alpha - 1",
+                "factor_degree": 2,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              }
+            ],
+            "infinity": {
+              "fiber": "I3*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 9
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "1",
+              "U": "64",
+              "V": "0",
+              "mu": "8"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1)*p^2)*(sqrt(64)*p + sqrt(0)*q) + (8)*(q^2 - (1)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2",
+            "I8"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I8",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "II",
+            "IV*"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2",
+            "I2*"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "I2",
+              "I2*"
+            ],
+            "c4": "32400*alpha**2 + 1680*alpha + 1",
+            "c6": "-(90*alpha + 1)*(64800*alpha**2 + 4320*alpha - 1)",
+            "delta": "2700*alpha*(81*alpha + 5)*(320*alpha - 1)**2",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "81*alpha + 5",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "320*alpha - 1",
+                "factor_degree": 1,
+                "fiber": "I2",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 2
+              }
+            ],
+            "infinity": {
+              "fiber": "I2*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 8
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "4",
+              "U": "1",
+              "V": "64",
+              "mu": "45/4"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (4)*p^2)*(sqrt(1)*p + sqrt(64)*q) + (45/4)*(q^2 - (4)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I2*",
+            "II"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "I2*",
+              "II"
+            ],
+            "c4": "(333*alpha + 16)*(1185921*alpha + 592)/9472",
+            "c6": "-(333*alpha + 16)*(143352944559*alpha**2 + 3551255136*alpha - 350464)/5607424",
+            "delta": "-140625*alpha*(333*alpha + 16)**2*(74713023*alpha - 21904)/29986576",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "74713023*alpha - 21904",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "333*alpha + 16",
+                "factor_degree": 1,
+                "fiber": "II",
+                "v_c4": 1,
+                "v_c6": 1,
+                "v_delta": 2
+              }
+            ],
+            "infinity": {
+              "fiber": "I2*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 8
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "27/37",
+              "U": "1",
+              "V": "1813/3",
+              "mu": "4477/64"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (27/37)*p^2)*(sqrt(1)*p + sqrt(1813/3)*q) + (4477/64)*(q^2 - (27/37)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I7",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I7",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I7",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1*",
+            "I3"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "I1*",
+              "I3"
+            ],
+            "c4": "16*alpha**2 - 4*alpha + 1",
+            "c6": "64*alpha**3 + 30*alpha**2 - 6*alpha + 1",
+            "delta": "-108*alpha**3*(64*alpha**2 - 13*alpha + 2)",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I3",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": "3"
+              },
+              {
+                "location_factor": "64*alpha**2 - 13*alpha + 2",
+                "factor_degree": 2,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              }
+            ],
+            "infinity": {
+              "fiber": "I1*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 7
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "-1",
+              "U": "1",
+              "V": "1",
+              "mu": "1"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (-1)*p^2)*(sqrt(1)*p + sqrt(1)*q) + (1)*(q^2 - (-1)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I1*",
+            "III"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1",
+              "I1*",
+              "III"
+            ],
+            "c4": "(alpha + 8)*(25*alpha + 8)/64",
+            "c6": "-(alpha + 8)**2*(125*alpha - 8)/512",
+            "delta": "-27*alpha*(alpha + 8)**3*(125*alpha - 24)/8192",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "125*alpha - 24",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "alpha + 8",
+                "factor_degree": 1,
+                "fiber": "III",
+                "v_c4": 1,
+                "v_c6": 2,
+                "v_delta": 3
+              }
+            ],
+            "infinity": {
+              "fiber": "I1*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 7
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "1",
+              "U": "1",
+              "V": "0",
+              "mu": "5/32"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1)*p^2)*(sqrt(1)*p + sqrt(0)*q) + (5/32)*(q^2 - (1)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1*",
+            "I2",
+            "I2"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1*",
+              "I2",
+              "I2"
+            ],
+            "c4": "256*alpha**2 - 332*alpha + 1",
+            "c6": "-(16*alpha - 1)*(256*alpha**2 + 868*alpha + 1)",
+            "delta": "-2700*alpha*(4*alpha + 1)**2*(64*alpha + 1)**2",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "4*alpha + 1",
+                "factor_degree": 1,
+                "fiber": "I2",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 2
+              },
+              {
+                "location_factor": "64*alpha + 1",
+                "factor_degree": 1,
+                "fiber": "I2",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 2
+              }
+            ],
+            "infinity": {
+              "fiber": "I1*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 7
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "4",
+              "U": "0",
+              "V": "0",
+              "mu": "1"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (4)*p^2)*(sqrt(0)*p + sqrt(0)*q) + (1)*(q^2 - (4)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1*",
+            "I2",
+            "II"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1*",
+              "I2",
+              "II"
+            ],
+            "c4": "(3*alpha - 8)*(27*alpha - 8)/64",
+            "c6": "-(27*alpha - 8)*(27*alpha**2 + 288*alpha + 64)/512",
+            "delta": "-27*alpha*(5*alpha + 8)**2*(27*alpha - 8)**2/8192",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "5*alpha + 8",
+                "factor_degree": 1,
+                "fiber": "I2",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 2
+              },
+              {
+                "location_factor": "27*alpha - 8",
+                "factor_degree": 1,
+                "fiber": "II",
+                "v_c4": 1,
+                "v_c6": 1,
+                "v_delta": 2
+              }
+            ],
+            "infinity": {
+              "fiber": "I1*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 7
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "1",
+              "U": "1",
+              "V": "0",
+              "mu": "9/32"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1)*p^2)*(sqrt(1)*p + sqrt(0)*q) + (9/32)*(q^2 - (1)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1*",
+            "II",
+            "II"
+          ],
+          "status": "exists_verified",
+          "structural_candidate": true,
+          "witness": {
+            "fibers": [
+              "I1",
+              "I1*",
+              "II",
+              "II"
+            ],
+            "c4": "(21316*alpha**2 - 21559*alpha + 5329)/5329",
+            "c6": "-(2*alpha - 1)*(21316*alpha**2 - 21559*alpha + 5329)/5329",
+            "delta": "-243*alpha*(21316*alpha**2 - 21559*alpha + 5329)**2/151334226289",
+            "finite": [
+              {
+                "location_factor": "alpha",
+                "factor_degree": 1,
+                "fiber": "I1",
+                "v_c4": 0,
+                "v_c6": 0,
+                "v_delta": 1
+              },
+              {
+                "location_factor": "21316*alpha**2 - 21559*alpha + 5329",
+                "factor_degree": 2,
+                "fiber": "II",
+                "v_c4": 1,
+                "v_c6": 1,
+                "v_delta": 2
+              }
+            ],
+            "infinity": {
+              "fiber": "I1*",
+              "v_c4": 2,
+              "v_c6": 3,
+              "v_delta": 7
+            },
+            "euler_total": 12,
+            "parameters": {
+              "r": "1/2",
+              "U": "14112/5329",
+              "V": "7200/5329",
+              "mu": "1"
+            },
+            "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1/2)*p^2)*(sqrt(14112/5329)*p + sqrt(7200/5329)*q) + (1)*(q^2 - (1/2)*p^2)^2"
+          }
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I6",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I3",
+            "I6"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I6",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I6",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I6",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I6",
+            "II",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I1",
+            "I4"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I1",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I3",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "I2",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I1",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I2",
+            "I2",
+            "I2"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I0*",
+            "I2",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I1",
+            "I5",
+            "I5"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I4",
+            "I5",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I2",
+            "I5",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I5",
+            "II",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I3",
+            "I5",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "I5",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I5",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I5",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I5",
+            "II",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I2",
+            "I4",
+            "I4"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I4",
+            "I4",
+            "II",
+            "II"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I1",
+            "I4",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I4",
+            "II",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I4",
+            "II",
+            "II",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "I4",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "I4",
+            "II",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I4",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I4",
+            "II",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I2",
+            "IV",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "I3",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "I3",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "II",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I2",
+            "III",
+            "III",
+            "IV"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "I3",
+            "I3",
+            "I3"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "I3",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        },
+        {
+          "target": [
+            "I3",
+            "III",
+            "III",
+            "III"
+          ],
+          "status": "excluded_by_infinity_fiber",
+          "structural_candidate": false,
+          "witness": null
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "cubic_exact": 3,
+    "quartic_exact": 8,
+    "overlap": 0,
+    "union_exact": 11,
+    "complement_exact_within_these_two_classes": 45
+  },
+  "union_targets": [
+    [
+      "I1",
+      "I1",
+      "I1",
+      "I3*"
+    ],
+    [
+      "I1",
+      "I1",
+      "I1",
+      "III*"
+    ],
+    [
+      "I1",
+      "I1",
+      "I1*",
+      "I3"
+    ],
+    [
+      "I1",
+      "I1",
+      "I1*",
+      "III"
+    ],
+    [
+      "I1",
+      "I1",
+      "I2",
+      "I2*"
+    ],
+    [
+      "I1",
+      "I1",
+      "I2",
+      "IV*"
+    ],
+    [
+      "I1",
+      "I1",
+      "I2*",
+      "II"
+    ],
+    [
+      "I1",
+      "I1",
+      "II",
+      "IV*"
+    ],
+    [
+      "I1",
+      "I1*",
+      "I2",
+      "I2"
+    ],
+    [
+      "I1",
+      "I1*",
+      "I2",
+      "II"
+    ],
+    [
+      "I1",
+      "I1*",
+      "II",
+      "II"
+    ]
+  ],
+  "complement_targets": [
+    [
+      "I1",
+      "I1",
+      "I1",
+      "I9"
+    ],
+    [
+      "I1",
+      "I1",
+      "I2",
+      "I8"
+    ],
+    [
+      "I1",
+      "I1",
+      "I8",
+      "II"
+    ],
+    [
+      "I1",
+      "I1",
+      "I7",
+      "III"
+    ],
+    [
+      "I1",
+      "I2",
+      "I7",
+      "II"
+    ],
+    [
+      "I1",
+      "I7",
+      "II",
+      "II"
+    ],
+    [
+      "I1",
+      "I1",
+      "I6",
+      "IV"
+    ],
+    [
+      "I1",
+      "I2",
+      "I3",
+      "I6"
+    ],
+    [
+      "I1",
+      "I2",
+      "I6",
+      "III"
+    ],
+    [
+      "I1",
+      "I6",
+      "II",
+      "III"
+    ],
+    [
+      "I2",
+      "I6",
+      "II",
+      "II"
+    ],
+    [
+      "I6",
+      "II",
+      "II",
+      "II"
+    ],
+    [
+      "I0*",
+      "I1",
+      "I1",
+      "I4"
+    ],
+    [
+      "I0*",
+      "I1",
+      "I1",
+      "IV"
+    ],
+    [
+      "I0*",
+      "I1",
+      "I3",
+      "II"
+    ],
+    [
+      "I0*",
+      "I1",
+      "I2",
+      "III"
+    ],
+    [
+      "I0*",
+      "I1",
+      "II",
+      "III"
+    ],
+    [
+      "I0*",
+      "I2",
+      "I2",
+      "I2"
+    ],
+    [
+      "I0*",
+      "I2",
+      "II",
+      "II"
+    ],
+    [
+      "I1",
+      "I1",
+      "I5",
+      "I5"
+    ],
+    [
+      "I1",
+      "I4",
+      "I5",
+      "II"
+    ],
+    [
+      "I1",
+      "I2",
+      "I5",
+      "IV"
+    ],
+    [
+      "I1",
+      "I5",
+      "II",
+      "IV"
+    ],
+    [
+      "I1",
+      "I3",
+      "I5",
+      "III"
+    ],
+    [
+      "I2",
+      "I3",
+      "I5",
+      "II"
+    ],
+    [
+      "I1",
+      "I5",
+      "III",
+      "III"
+    ],
+    [
+      "I2",
+      "I5",
+      "II",
+      "III"
+    ],
+    [
+      "I5",
+      "II",
+      "II",
+      "III"
+    ],
+    [
+      "I2",
+      "I2",
+      "I4",
+      "I4"
+    ],
+    [
+      "I4",
+      "I4",
+      "II",
+      "II"
+    ],
+    [
+      "I1",
+      "I4",
+      "III",
+      "IV"
+    ],
+    [
+      "I2",
+      "I4",
+      "II",
+      "IV"
+    ],
+    [
+      "I4",
+      "II",
+      "II",
+      "IV"
+    ],
+    [
+      "I2",
+      "I3",
+      "I4",
+      "III"
+    ],
+    [
+      "I3",
+      "I4",
+      "II",
+      "III"
+    ],
+    [
+      "I2",
+      "I4",
+      "III",
+      "III"
+    ],
+    [
+      "I4",
+      "II",
+      "III",
+      "III"
+    ],
+    [
+      "I2",
+      "I2",
+      "IV",
+      "IV"
+    ],
+    [
+      "I2",
+      "I3",
+      "I3",
+      "IV"
+    ],
+    [
+      "I2",
+      "I3",
+      "III",
+      "IV"
+    ],
+    [
+      "I3",
+      "II",
+      "III",
+      "IV"
+    ],
+    [
+      "I2",
+      "III",
+      "III",
+      "IV"
+    ],
+    [
+      "I3",
+      "I3",
+      "I3",
+      "I3"
+    ],
+    [
+      "I3",
+      "I3",
+      "III",
+      "III"
+    ],
+    [
+      "I3",
+      "III",
+      "III",
+      "III"
+    ]
+  ]
+}

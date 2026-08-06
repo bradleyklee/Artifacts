@@ -1,0 +1,18 @@
+{
+  "search": "centrally symmetric rank-2 Laurent supports",
+  "models": [4, 8, 10],
+  "support_box": {
+    "canonical_vectors": "primitive or nonprimitive exponent representatives (x,y) with 0 <= x <= 2 and -2 <= y <= 2, one representative from each sign pair",
+    "monomial_pairs_per_candidate": 4,
+    "distinct_support_sets_examined": 495
+  },
+  "coefficient_rule": "integer coefficients; g0 is fixed by the first reduced moment; coefficient tuples are exhaustively restricted by the second reduced moment",
+  "filter": "exact constant terms of G^3 and G^4",
+  "result": {
+    "model_4": "no candidate matches the third reduced moment",
+    "model_8": "no candidate matches the third reduced moment",
+    "model_10": "no candidate matches the third reduced moment"
+  },
+  "status": "exact_bounded_exclusion",
+  "scope_warning": "This excludes only the stated four-pair support box. It does not exclude larger supports, more variables, nonsymmetric supports, rational coefficients followed by scaling, or mutation-equivalent presentations outside the box."
+}

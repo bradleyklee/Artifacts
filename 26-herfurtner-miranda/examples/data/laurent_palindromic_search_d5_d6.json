@@ -1,0 +1,54 @@
+{
+  "ansatz": "F=((1+w)^2/w)*G(z), G=g0+sum_{k=1}^d gk(z^k+z^-k)",
+  "results": [
+    {
+      "model": 4,
+      "degree": 5,
+      "sum_squares": 452,
+      "square_vectors": 77760,
+      "third_moment_matches": 4,
+      "fourth_moment_matches": 0
+    },
+    {
+      "model": 4,
+      "degree": 6,
+      "sum_squares": 452,
+      "square_vectors": 3218040,
+      "third_moment_matches": 76,
+      "fourth_moment_matches": 0
+    },
+    {
+      "model": 8,
+      "degree": 5,
+      "sum_squares": 1673,
+      "square_vectors": 485760,
+      "third_moment_matches": 2,
+      "fourth_moment_matches": 0
+    },
+    {
+      "model": 8,
+      "degree": 6,
+      "sum_squares": 1673,
+      "square_vectors": 32901120,
+      "third_moment_matches": 182,
+      "fourth_moment_matches": 0
+    },
+    {
+      "model": 10,
+      "degree": 5,
+      "sum_squares": 1153,
+      "square_vectors": 339840,
+      "third_moment_matches": 42,
+      "fourth_moment_matches": 0
+    },
+    {
+      "model": 10,
+      "degree": 6,
+      "sum_squares": 1153,
+      "square_vectors": 15952920,
+      "third_moment_matches": 786,
+      "fourth_moment_matches": 0
+    }
+  ],
+  "conclusion": "No degree-5 or degree-6 integer palindromic G matches the first four reduced moments for models 4, 8, or 10."
+}

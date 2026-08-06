@@ -1,0 +1,4621 @@
+{
+  "count": 279,
+  "configurations": [
+    {
+      "fibers": [
+        "II*",
+        "II"
+      ],
+      "fiber_count": 2,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 4,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "II*",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 4,
+      "j_degree": 2,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4*",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I9",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III*",
+        "III"
+      ],
+      "fiber_count": 2,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 5,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III*",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 5,
+      "j_degree": 3,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III*",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 4,
+      "j_degree": 1,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III*",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 4,
+      "j_degree": 3,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3*",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3*",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I8",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I8",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I8",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "IV"
+      ],
+      "fiber_count": 2,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 4,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "I3",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "III",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 4,
+      "j_degree": 1,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 4,
+      "j_degree": 2,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "II",
+        "II"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 3,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 3,
+      "j_degree": 2,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV*",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2*",
+        "III",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 5,
+      "j_degree": 3,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2*",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 6,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2*",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2*",
+        "II",
+        "II"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 4,
+      "j_degree": 2,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2*",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2*",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I7",
+        "III",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 14,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I7",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 14,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I7",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 14,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I7",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 7,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I7",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 7,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I7",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 7,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "I4",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "IV",
+        "I1"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 2,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "I3",
+        "II"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "I3",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "III",
+        "I2"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 3,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "III",
+        "II"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 1,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "III",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 3,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "I2",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 3,
+      "j_degree": 2,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1*",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "IV",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "I3",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "I3",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "III",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 5,
+      "j_degree": 9,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "III",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 7,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "III",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I6",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I0*"
+      ],
+      "fiber_count": 2,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 6,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I4",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "IV",
+        "II"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "IV",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 2,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I3",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I3",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "III",
+        "III"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "III",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 3,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "III",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 1,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "III",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 3,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I2",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 6,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 2,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 3,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 3,
+      "j_degree": 2,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I0*",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I5",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 25,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I4",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 20,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I4",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 20,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "IV",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 30,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "IV",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 15,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "IV",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 15,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I3",
+        "III",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 30,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I3",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 30,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I3",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 30,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I3",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 15,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I3",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 15,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "III",
+        "III",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 20,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "III",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 20,
+      "genus_drop_sum": 4,
+      "j_degree": 7,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "III",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 20,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "III",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 10,
+      "genus_drop_sum": 3,
+      "j_degree": 5,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "III",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 10,
+      "genus_drop_sum": 3,
+      "j_degree": 7,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "III",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 10,
+      "genus_drop_sum": 3,
+      "j_degree": 9,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I2",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 20,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 20,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I2",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 10,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 10,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 10,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "II",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 5,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 5,
+      "genus_drop_sum": 2,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 5,
+      "genus_drop_sum": 2,
+      "j_degree": 10,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I5",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 5,
+      "genus_drop_sum": 2,
+      "j_degree": 12,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I4",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 64,
+      "genus_drop_sum": 6,
+      "j_degree": 12,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I4",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I4",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I4",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I4",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "IV",
+        "III",
+        "I1"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 5,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "IV",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "IV",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "IV",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "IV",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "IV",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "III",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 48,
+      "genus_drop_sum": 5,
+      "j_degree": 9,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "III",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 7,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "III",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "I2",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 48,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I3",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "III",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "III",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "III",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "I2",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 5,
+      "j_degree": 9,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 7,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 5,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 7,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "III",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 9,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "I2",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 64,
+      "genus_drop_sum": 6,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "II",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 8,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 10,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I4",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 12,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "IV",
+        "IV"
+      ],
+      "fiber_count": 3,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 27,
+      "genus_drop_sum": 3,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "IV",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "IV",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "IV",
+        "II",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "IV",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "I3",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 54,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "I3",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 27,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "III",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 4,
+      "j_degree": 5,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "III",
+        "II"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 3,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "III",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 5,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "I2",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I3",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 8,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "III",
+        "III",
+        "I2"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 2,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "III",
+        "III",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 2,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "III",
+        "I2",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 5,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "III",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 3,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "III",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 5,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "III",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 3,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "III",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 5,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "I2",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 8,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "II",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 4,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 6,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "IV",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 8,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I3",
+        "I3"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 8,
+      "root_discriminant_product": 81,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I3",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 7,
+      "root_discriminant_product": 54,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I3",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 27,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "III",
+        "III"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "III",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "III",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 7,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "III",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 9,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I2",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 36,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 18,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 10,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I3",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 9,
+      "genus_drop_sum": 2,
+      "j_degree": 12,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "III",
+        "III"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 3,
+      "extra_ramification": 0,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "III",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "III",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "III",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "I2",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 48,
+      "genus_drop_sum": 5,
+      "j_degree": 9,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "I2",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 7,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 5,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 7,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 9,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 3,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 5,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 7,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "III",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 9,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 48,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "I2",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 24,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "I2",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 12,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "II",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 8,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 10,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 6,
+      "genus_drop_sum": 2,
+      "j_degree": 12,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "II",
+        "II",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 6,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 8,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 10,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I3",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 10,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 3,
+      "genus_drop_sum": 1,
+      "j_degree": 12,
+      "extra_ramification": 6,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "III",
+        "III"
+      ],
+      "fiber_count": 4,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "III",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 3,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "III",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 3,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "I2",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 5,
+      "j_degree": 6,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "I2",
+        "I2",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 4,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 5,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 2,
+      "extra_ramification": 1,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 2,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 4,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "III",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 5,
+      "j_degree": 9,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "I2",
+        "I2",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 7,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 9,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "I2",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 5,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 7,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 9,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "II",
+        "II",
+        "II",
+        "I1"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 3,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 5,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 7,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 9,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 3,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 5,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 7,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "III",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 10,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 9,
+      "extra_ramification": 6,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "I2"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 6,
+      "root_discriminant_product": 64,
+      "genus_drop_sum": 6,
+      "j_degree": 12,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 5,
+      "root_discriminant_product": 32,
+      "genus_drop_sum": 5,
+      "j_degree": 12,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "II",
+        "II"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 8,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 10,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 4,
+      "root_discriminant_product": 16,
+      "genus_drop_sum": 4,
+      "j_degree": 12,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 6,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 8,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 10,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 3,
+      "root_discriminant_product": 8,
+      "genus_drop_sum": 3,
+      "j_degree": 12,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "II",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 4,
+      "extra_ramification": 2,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 6,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 8,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 10,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 10,
+      "root_rank_sum": 2,
+      "root_discriminant_product": 4,
+      "genus_drop_sum": 2,
+      "j_degree": 12,
+      "extra_ramification": 6,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "II",
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 7,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 4,
+      "extra_ramification": 3,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 6,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 8,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 10,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 10,
+      "extra_ramification": 6,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I2",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 11,
+      "root_rank_sum": 1,
+      "root_discriminant_product": 2,
+      "genus_drop_sum": 1,
+      "j_degree": 12,
+      "extra_ramification": 7,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "II",
+        "II",
+        "II",
+        "II",
+        "II",
+        "II"
+      ],
+      "fiber_count": 6,
+      "root_rank_sum": 0,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 0,
+      "j_degree": 0,
+      "extra_ramification": null,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "II",
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 8,
+      "root_rank_sum": 0,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 0,
+      "j_degree": 4,
+      "extra_ramification": 4,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "II",
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 9,
+      "root_rank_sum": 0,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 0,
+      "j_degree": 6,
+      "extra_ramification": 5,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "II",
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 10,
+      "root_rank_sum": 0,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 0,
+      "j_degree": 8,
+      "extra_ramification": 6,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "II",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 11,
+      "root_rank_sum": 0,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 0,
+      "j_degree": 10,
+      "extra_ramification": 7,
+      "status": "allowable"
+    },
+    {
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1",
+        "I1"
+      ],
+      "fiber_count": 12,
+      "root_rank_sum": 0,
+      "root_discriminant_product": 1,
+      "genus_drop_sum": 0,
+      "j_degree": 12,
+      "extra_ramification": 8,
+      "status": "allowable"
+    }
+  ]
+}

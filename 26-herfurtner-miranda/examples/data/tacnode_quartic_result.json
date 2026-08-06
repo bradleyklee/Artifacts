@@ -1,0 +1,122 @@
+{
+  "search": "one-fixed-tacnode harmonic quartic stratum",
+  "status": "verified_new_plane_presentation_no_new_fiber_configuration",
+  "quartic_genus_one_taxonomy": {
+    "2+2": "two ordinary double points; implemented structured family gives 8 configurations",
+    "2+1+1": "the double point must acquire delta 2; the A3 tacnode conditions are solved here",
+    "3+1": "a multiplicity-three point has delta at least 3 and does not give a generic genus-one quartic",
+    "4": "a multiplicity-four point has delta at least 6 and does not give a generic genus-one quartic"
+  },
+  "tacnode_parameterization": "p^2+q^2+2s*p^2*q+v*p*q^2+w*q^3+s^2*p^2*q^2+s*v*p*q^3+c*q^4",
+  "examples": {
+    "T0_holomorphic": {
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "c4": "3*alpha + 1",
+      "c6": "-(45*alpha - 2)/2",
+      "delta": "27*alpha*(4*alpha**2 - 71*alpha + 8)/4",
+      "finite": [
+        {
+          "location_factor": "alpha",
+          "factor_degree": 1,
+          "fiber": "I1",
+          "v_c4": 0,
+          "v_c6": 0,
+          "v_delta": 1
+        },
+        {
+          "location_factor": "4*alpha**2 - 71*alpha + 8",
+          "factor_degree": 2,
+          "fiber": "I1",
+          "v_c4": 0,
+          "v_c6": 0,
+          "v_delta": 1
+        }
+      ],
+      "infinity": {
+        "fiber": "III*",
+        "v_c4": 3,
+        "v_c6": 5,
+        "v_delta": 9
+      },
+      "euler_total": 12,
+      "parameters": {
+        "s": "0",
+        "v": "0",
+        "w": "1",
+        "c": "-1/4"
+      },
+      "A": "1",
+      "hamiltonian_2H": "p^2 + q^2 + (0)*p^2*q + (0)*p*q^2 + (1)*q^3 + (0)*p^2*q^2 + (0)*p*q^3 + (-1/4)*q^4",
+      "local_check": {
+        "quadratic_cone": "z**2",
+        "cubic_restriction_on_tangent": "0",
+        "quartic_restriction_on_tangent": "-1/4",
+        "generic_type": "A3 tacnode when the quartic restriction is nonzero"
+      },
+      "projected_quartic": "(1)*x^4 - (4)*x^3 - 4*x^2 + 4*E",
+      "normalized_time_form": "dx/((1+(0)*x)*sqrt(Q))",
+      "time_form_type": "holomorphic",
+      "period_form_warning": "For s nonzero the extra factor 1/(1+s*x) makes the Hamiltonian time form meromorphic, so its period need not satisfy the order-two holomorphic elliptic equation."
+    },
+    "T1_meromorphic": {
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "c4": "3*alpha + 1",
+      "c6": "-(45*alpha - 2)/2",
+      "delta": "27*alpha*(4*alpha**2 - 71*alpha + 8)/4",
+      "finite": [
+        {
+          "location_factor": "alpha",
+          "factor_degree": 1,
+          "fiber": "I1",
+          "v_c4": 0,
+          "v_c6": 0,
+          "v_delta": 1
+        },
+        {
+          "location_factor": "4*alpha**2 - 71*alpha + 8",
+          "factor_degree": 2,
+          "fiber": "I1",
+          "v_c4": 0,
+          "v_c6": 0,
+          "v_delta": 1
+        }
+      ],
+      "infinity": {
+        "fiber": "III*",
+        "v_c4": 3,
+        "v_c6": 5,
+        "v_delta": 9
+      },
+      "euler_total": 12,
+      "parameters": {
+        "s": "1",
+        "v": "0",
+        "w": "1",
+        "c": "-1/4"
+      },
+      "A": "1",
+      "hamiltonian_2H": "p^2 + q^2 + (2)*p^2*q + (0)*p*q^2 + (1)*q^3 + (1)*p^2*q^2 + (0)*p*q^3 + (-1/4)*q^4",
+      "local_check": {
+        "quadratic_cone": "(x + z)**2",
+        "cubic_restriction_on_tangent": "0",
+        "quartic_restriction_on_tangent": "-(4*alpha + 1)/4",
+        "generic_type": "A3 tacnode when the quartic restriction is nonzero"
+      },
+      "projected_quartic": "(1)*x^4 - (4)*x^3 - 4*x^2 + 4*E",
+      "normalized_time_form": "dx/((1+(1)*x)*sqrt(Q))",
+      "time_form_type": "meromorphic_third_kind",
+      "period_form_warning": "For s nonzero the extra factor 1/(1+s*x) makes the Hamiltonian time form meromorphic, so its period need not satisfy the order-two holomorphic elliptic equation."
+    }
+  },
+  "conclusion": "For A=v^2-4c nonzero, c4 and c6 have degrees 1 and 1 while Delta has degree 3; the fiber at infinity is III*. Generic finite roots are three I1 fibers. This stratum therefore adds plane models but not a new four-fiber configuration."
+}

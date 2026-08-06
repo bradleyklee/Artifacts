@@ -1,0 +1,466 @@
+{
+  "release": "HERFURTNER_MIRANDA_RELEASE_v3",
+  "ledger_date": "2026-08-05",
+  "status_vocabulary": {
+    "exact_certificate": "constant-term identity plus exact differential/recurrence certificate is stored",
+    "open": "period is known but no accepted Laurent polynomial certificate is stored",
+    "matched": "exact prefix matched an OEIS entry",
+    "no_exact_prefix_match_located": "the recorded exact-prefix searches found no match; this is not an absence proof"
+  },
+  "summary": {
+    "baseline_fiber_configurations": 11,
+    "baseline_plane_models": 11,
+    "new_plane_presentations_this_round": 0,
+    "baseline_laurent_complete": 6,
+    "new_presentations_with_transferred_laurent_coverage": 1,
+    "new_period_sequences_this_round": 0,
+    "oeis_exact_matches_located": 1,
+    "classification_raw_euler_sum_12": 379,
+    "classification_allowable": 279,
+    "four_fibre_allowable": 59,
+    "four_fibre_nonconstant_J_targets": 56,
+    "auxiliary_tacnode_presentations_retained": 2
+  },
+  "models": [
+    {
+      "id": "1",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "family": "harmonic_plus_cubic",
+      "hamiltonian_2H": "p**2 + p*q**2 + q**3 + q**2",
+      "period_scale_M": 32,
+      "period_prefix": [
+        "1",
+        "36",
+        "5460",
+        "1053360",
+        "225765540",
+        "51354038736"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "exact_certificate",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2",
+        "IV*"
+      ],
+      "family": "harmonic_plus_cubic",
+      "hamiltonian_2H": "p**3 + p**2 + q**3 + q**2",
+      "period_scale_M": 32,
+      "period_prefix": [
+        "1",
+        "60",
+        "7380",
+        "1090320",
+        "176978340",
+        "30471320880"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "exact_certificate",
+      "oeis": {
+        "status": "matched",
+        "oeis_id": "A303790",
+        "url": "https://oeis.org/A303790",
+        "checked_on": "2026-08-05",
+        "match": "exact stored prefix at arithmetic scale 32"
+      }
+    },
+    {
+      "id": "3",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "II",
+        "IV*"
+      ],
+      "family": "harmonic_plus_cubic",
+      "hamiltonian_2H": "-p**3 - 3*p**2*q + p**2 - 2*q**3 + q**2",
+      "period_scale_M": 32,
+      "period_prefix": [
+        "1",
+        "276",
+        "162900",
+        "114036720",
+        "86213649060",
+        "68134782892176"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "exact_certificate",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "I3*"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "8*p**4 - 8*p**3 - 16*p**2*q**2 + p**2 + 8*p*q**2 + 8*q**4 + q**2",
+      "period_scale_M": 1,
+      "period_prefix": [
+        "1",
+        "40",
+        "7824",
+        "1905280",
+        "514454080",
+        "147316861440"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "open",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2",
+        "I2*"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "180*p**4 - 4*p**3 - 90*p**2*q**2 - 32*p**2*q + p**2 + p*q**2 + 45*q**4/4 + 8*q**3 + q**2",
+      "period_scale_M": 16,
+      "period_prefix": [
+        "1",
+        "780",
+        "2328900",
+        "8245950000",
+        "32279873062500",
+        "133738001891550000"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "exact_certificate",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2*",
+        "II"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "88209*p**4/2368 - 27*p**3/37 - 3267*p**2*q**2/32 - 63*sqrt(111)*p**2*q/37 + p**2 + p*q**2 + 4477*q**4/64 + 7*sqrt(111)*q**3/3 + q**2",
+      "period_scale_M": 262848,
+      "period_prefix": [
+        "1",
+        "106995138",
+        "52462784497618566",
+        "32223140858644874987820180",
+        "21963446414107132723645939518598470",
+        "15881586277715448802581393102414771429549948"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "open",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1*",
+        "I3"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "p**4 + p**3 + 2*p**2*q**2 + p**2*q + p**2 + p*q**2 + q**4 + q**3 + q**2",
+      "period_scale_M": 2,
+      "period_prefix": [
+        "1",
+        "2",
+        "-6",
+        "-160",
+        "-1190",
+        "252"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "exact_certificate",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1*",
+        "III"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "5*p**4/32 - p**3 - 5*p**2*q**2/16 + p**2 + p*q**2 + 5*q**4/32 + q**2",
+      "period_scale_M": 128,
+      "period_prefix": [
+        "1",
+        "76",
+        "28740",
+        "13134640",
+        "6661655140",
+        "3583121952816"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "open",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1*",
+        "I2",
+        "I2"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "16*p**4 - 8*p**2*q**2 + p**2 + q**4 + q**2",
+      "period_scale_M": 16,
+      "period_prefix": [
+        "1",
+        "-172",
+        "95076",
+        "-67123120",
+        "52467923620",
+        "-43442031698352"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "exact_certificate",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "10",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1*",
+        "I2",
+        "II"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "9*p**4/32 - p**3 - 9*p**2*q**2/16 + p**2 + p*q**2 + 9*q**4/32 + q**2",
+      "period_scale_M": 128,
+      "period_prefix": [
+        "1",
+        "60",
+        "19236",
+        "5904240",
+        "2042060580",
+        "736451236080"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "open",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "11",
+      "kind": "baseline_plane_model",
+      "fibers": [
+        "I1",
+        "I1*",
+        "II",
+        "II"
+      ],
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "p**4/4 - 42*sqrt(2)*p**3/73 - p**2*q**2 - 30*sqrt(2)*p**2*q/73 + p**2 + 84*sqrt(2)*p*q**2/73 + q**4 + 60*sqrt(2)*q**3/73 + q**2",
+      "period_scale_M": 341056,
+      "period_prefix": [
+        "1",
+        "344404",
+        "180218586084",
+        "106087550833641040",
+        "66344688205941020431780",
+        "43143121408244659936095107664"
+      ],
+      "period_status": "31 exact coefficients and checked differential equation",
+      "laurent_status": "open",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof that the sequence is absent from OEIS under another scaling, shift, transform, or shorter prefix."
+      }
+    },
+    {
+      "id": "T0",
+      "kind": "auxiliary_tacnode_presentation_not_in_primary_search",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "family": "one_tacnode_harmonic_quartic",
+      "hamiltonian_2H": "p^2+q^2+q^3-q^4/4",
+      "period_scale_M": 32,
+      "period_prefix": [
+        "1",
+        "36",
+        "5460",
+        "1053360",
+        "225765540",
+        "51354038736"
+      ],
+      "period_status": "termwise equal to baseline model 1 for all 31 stored terms; same normalized elliptic invariants",
+      "laurent_status": "covered_by_baseline_model_1_certificate",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "relation": "same sequence as baseline model 1",
+        "caution": "Search status is not a proof of absence under transforms."
+      },
+      "primary_search_status": "retained_from_v2_not_counted_as_new_result"
+    },
+    {
+      "id": "T1",
+      "kind": "auxiliary_tacnode_presentation_not_in_primary_search",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "family": "one_tacnode_harmonic_quartic",
+      "hamiltonian_2H": "p^2+q^2+2*p^2*q+q^3+p^2*q^2-q^4/4",
+      "period_scale_M": 32,
+      "period_prefix": [
+        "1",
+        "76",
+        "12084",
+        "2361680",
+        "509004580",
+        "116126173296"
+      ],
+      "period_status": "51 exact coefficients; order-three equation checked on 48 series equations",
+      "laurent_status": "open",
+      "oeis": {
+        "status": "no_exact_prefix_match_located",
+        "checked_on": "2026-08-05",
+        "method": "exact quoted prefix search restricted to oeis.org",
+        "caution": "Search status is not a proof of absence under transforms."
+      },
+      "primary_search_status": "retained_from_v2_not_counted_as_new_result"
+    }
+  ],
+  "search_rounds": [
+    {
+      "id": "G1-tacnode",
+      "workstream": "curve_models",
+      "status": "verified",
+      "result": "Solved a one-fixed-tacnode quartic parameterization. For A=v^2-4c nonzero its generic four-fiber configuration is III*+I1+I1+I1. T0 and T1 are explicit plane presentations.",
+      "data_file": "examples/data/tacnode_quartic_result.json"
+    },
+    {
+      "id": "L1-palindromic-d5-d6",
+      "workstream": "laurent_polynomials",
+      "status": "exact_bounded_exclusion",
+      "result": "For baseline models 4, 8 and 10, no integer palindromic G of degree 5 or 6 makes F=((1+w)^2/w)G reproduce the first four reduced moments.",
+      "data_file": "examples/data/laurent_palindromic_search_d5_d6.json"
+    },
+    {
+      "id": "L2-rank2-four-pair-box",
+      "workstream": "laurent_polynomials",
+      "status": "exact_bounded_exclusion",
+      "result": "For baseline models 4, 8 and 10, none of 495 centrally symmetric four-pair supports in the stated rank-2 box reaches the third reduced moment.",
+      "data_file": "examples/data/laurent_rank2_search_box.json"
+    },
+    {
+      "id": "L3-transfer-T0",
+      "workstream": "laurent_polynomials",
+      "status": "verified_transfer",
+      "result": "T0 has exactly the baseline model-1 period, so the stored model-1 Laurent polynomial and certificate cover T0.",
+      "data_file": "examples/data/tacnode_period_result.json"
+    },
+    {
+      "id": "classification_first_repair_v3",
+      "kind": "infrastructure_recovery",
+      "status": "success",
+      "results": {
+        "classification_generator_restored": true,
+        "audit_exact_match": true,
+        "counts": "379 -> 293 -> 279; four-fibre 85 -> 69 -> 59 = 56 + 3",
+        "pytest_dependency_removed": true,
+        "new_plane_models": 0,
+        "new_laurent_models": 0
+      }
+    }
+  ],
+  "next_queue": {
+    "curve_models": [
+      "Classify the delta-two unibranch boundary (ramphoid-cusp type) and degenerate tacnode cases at infinity.",
+      "Check whether the two-node invariant parameterization misses rational presentations even when it covers the geometric class.",
+      "After the quartic boundary is exhausted, prescribe delta-three singularity clusters for quintics so the generic normalization remains genus one."
+    ],
+    "laurent_polynomials": [
+      "Search T1 as a period of a meromorphic differential: allow three variables and order-three recurrences rather than forcing a reflexive-polygon order-two template.",
+      "For models 4, 8 and 10, move to five or six monomial pairs, nonsymmetric supports, and mutation templates; use the known ODE recurrence as an early exact filter.",
+      "Normalize models 6 and 11 before support search so their large arithmetic scales do not dominate coefficient solving."
+    ],
+    "oeis": [
+      "Repeat exact-prefix checks whenever a normalization changes.",
+      "Search transformed sequences separately: signs, shifts, binomially reduced sequences, and primitive rescalings.",
+      "Record a direct OEIS identifier only after exact term-by-term confirmation."
+    ]
+  }
+}

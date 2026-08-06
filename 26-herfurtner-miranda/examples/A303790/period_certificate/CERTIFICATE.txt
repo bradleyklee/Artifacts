@@ -1,0 +1,46 @@
+A303790 cubic scalar period certificate
+========================================
+
+Hamiltonian:
+    K(p,q) = p^2 + q^2 + p^3 + q^3
+
+Energy curve:
+    K(p,q) = E
+
+Period form:
+    omega_E = 2*dq / K_p
+            = 2*dq / (p*(3*p+2))
+
+Energy derivative at fixed q:
+    D_E = (1/K_p)*partial_p
+
+Picard-Fuchs operator:
+    L_E = A2(E)*D_E^2 + A1(E)*D_E + A0(E)
+
+where
+    A2(E) = E*(27*E - 8)*(27*E - 4)
+    A1(E) = 2187*E**2 - 648*E + 32
+    A0(E) = 15*(27*E - 4)
+
+Certificate function:
+    Xi(E,p,q) = V(E,p,q) / K_p^3
+
+with
+
+V(E,p,q) =
+-4374*E**2*p*q - 1458*E**2*p - 1458*E**2*q - 486*E*p**2*q - 162*E*p**2 + 7290*E*p*q**4 + 9720*E*p*q**3 + 2430*E*p*q**2 + 432*E*p*q + 306*E*p + 2430*E*q**4 + 2268*E*q**3 - 162*E*q**2 + 144*E*q + 30*E - 648*p**2*q**4 - 864*p**2*q**3 + 264*p**2*q + 34*p**2 - 648*p*q**5 - 2592*p*q**4 - 2538*p*q**3 - 402*p*q**2 + 192*p*q + 486*q**6 + 756*q**5 - 378*q**4 - 774*q**3 - 62*q**2 + 64*q
+
+Exact identity on K=E:
+    L_E(2/K_p)
+      = partial_q Xi - (K_q/K_p)*partial_p Xi.
+
+Equivalently:
+    L_E(omega_E) = d Xi
+
+on the energy curve.
+
+Therefore, for every closed cycle gamma_E avoiding the poles,
+    L_E integral_(gamma_E) omega_E = 0.
+
+Verification:
+    numerator remainder modulo K-E = 0

@@ -1,0 +1,341 @@
+{
+  "truth_status": "search plan; geometric assignments are hypotheses until proved by local delta and invariant calculations",
+  "baseline": {
+    "historical_nonconstant_J_targets": 56,
+    "verified_plane_models": 11,
+    "uncovered_targets": 45,
+    "verified_double_certificate_period_models": 6,
+    "remaining_period_models_without_Laurent_realization": [
+      4,
+      6,
+      8,
+      10,
+      11
+    ]
+  },
+  "priority_bands": [
+    {
+      "rank": 1,
+      "name": "I0* collision boundary",
+      "reason": "Closest missing infinity type to the existing two-point quartic family; test boundary collisions before opening a larger family.",
+      "targets": [
+        [
+          "I0*",
+          "I1",
+          "I1",
+          "I4"
+        ],
+        [
+          "I0*",
+          "I1",
+          "I1",
+          "IV"
+        ],
+        [
+          "I0*",
+          "I1",
+          "I3",
+          "II"
+        ],
+        [
+          "I0*",
+          "I1",
+          "I2",
+          "III"
+        ],
+        [
+          "I0*",
+          "I1",
+          "II",
+          "III"
+        ],
+        [
+          "I0*",
+          "I2",
+          "I2",
+          "I2"
+        ],
+        [
+          "I0*",
+          "I2",
+          "II",
+          "II"
+        ]
+      ]
+    },
+    {
+      "rank": 2,
+      "name": "Large multiplicative fiber I6-I9",
+      "reason": "Likely to appear on the least-collided one-point delta-2 strata; finite discriminant factor patterns are comparatively simple.",
+      "targets": [
+        [
+          "I1",
+          "I1",
+          "I1",
+          "I9"
+        ],
+        [
+          "I1",
+          "I1",
+          "I2",
+          "I8"
+        ],
+        [
+          "I1",
+          "I1",
+          "I8",
+          "II"
+        ],
+        [
+          "I1",
+          "I1",
+          "I7",
+          "III"
+        ],
+        [
+          "I1",
+          "I2",
+          "I7",
+          "II"
+        ],
+        [
+          "I1",
+          "I7",
+          "II",
+          "II"
+        ],
+        [
+          "I1",
+          "I1",
+          "I6",
+          "IV"
+        ],
+        [
+          "I1",
+          "I2",
+          "I3",
+          "I6"
+        ],
+        [
+          "I1",
+          "I2",
+          "I6",
+          "III"
+        ],
+        [
+          "I1",
+          "I6",
+          "II",
+          "III"
+        ],
+        [
+          "I2",
+          "I6",
+          "II",
+          "II"
+        ],
+        [
+          "I6",
+          "II",
+          "II",
+          "II"
+        ]
+      ]
+    },
+    {
+      "rank": 3,
+      "name": "Middle multiplicative fibers I4-I5",
+      "reason": "Requires more finite-fiber collisions; search after the generic one-point strata are understood.",
+      "targets": [
+        [
+          "I1",
+          "I1",
+          "I5",
+          "I5"
+        ],
+        [
+          "I1",
+          "I4",
+          "I5",
+          "II"
+        ],
+        [
+          "I1",
+          "I2",
+          "I5",
+          "IV"
+        ],
+        [
+          "I1",
+          "I5",
+          "II",
+          "IV"
+        ],
+        [
+          "I1",
+          "I3",
+          "I5",
+          "III"
+        ],
+        [
+          "I2",
+          "I3",
+          "I5",
+          "II"
+        ],
+        [
+          "I1",
+          "I5",
+          "III",
+          "III"
+        ],
+        [
+          "I2",
+          "I5",
+          "II",
+          "III"
+        ],
+        [
+          "I5",
+          "II",
+          "II",
+          "III"
+        ],
+        [
+          "I2",
+          "I2",
+          "I4",
+          "I4"
+        ],
+        [
+          "I4",
+          "I4",
+          "II",
+          "II"
+        ],
+        [
+          "I1",
+          "I4",
+          "III",
+          "IV"
+        ],
+        [
+          "I2",
+          "I4",
+          "II",
+          "IV"
+        ],
+        [
+          "I4",
+          "II",
+          "II",
+          "IV"
+        ],
+        [
+          "I2",
+          "I3",
+          "I4",
+          "III"
+        ],
+        [
+          "I3",
+          "I4",
+          "II",
+          "III"
+        ],
+        [
+          "I2",
+          "I4",
+          "III",
+          "III"
+        ],
+        [
+          "I4",
+          "II",
+          "III",
+          "III"
+        ]
+      ]
+    },
+    {
+      "rank": 4,
+      "name": "Balanced small or additive fibers",
+      "reason": "Most collision-heavy targets; use them to test completeness only after normal forms and boundary ideals are available.",
+      "targets": [
+        [
+          "I2",
+          "I2",
+          "IV",
+          "IV"
+        ],
+        [
+          "I2",
+          "I3",
+          "I3",
+          "IV"
+        ],
+        [
+          "I2",
+          "I3",
+          "III",
+          "IV"
+        ],
+        [
+          "I3",
+          "II",
+          "III",
+          "IV"
+        ],
+        [
+          "I2",
+          "III",
+          "III",
+          "IV"
+        ],
+        [
+          "I3",
+          "I3",
+          "I3",
+          "I3"
+        ],
+        [
+          "I3",
+          "I3",
+          "III",
+          "III"
+        ],
+        [
+          "I3",
+          "III",
+          "III",
+          "III"
+        ]
+      ]
+    }
+  ],
+  "period_priority": [
+    {
+      "rank": 1,
+      "models": [
+        4
+      ],
+      "reason": "Small arithmetic scale and a simple V=0 structured quartic; best isolated test for a new sparse Laurent support."
+    },
+    {
+      "rank": 2,
+      "models": [
+        8,
+        10
+      ],
+      "reason": "Same r=1, U=1, V=0 subfamily with two special mu values; search a parameterized Laurent family instead of two separate guesses."
+    },
+    {
+      "rank": 3,
+      "models": [
+        6,
+        11
+      ],
+      "reason": "Large rational parameters and scales; defer until support families and normalization rules are better understood."
+    }
+  ]
+}

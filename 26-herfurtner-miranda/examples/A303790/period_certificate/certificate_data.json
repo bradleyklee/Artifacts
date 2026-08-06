@@ -1,0 +1,22 @@
+{
+  "hamiltonian": "K = p^2 + q^2 + p^3 + q^3",
+  "energy_curve": "K = E",
+  "period_form": "omega_E = 2*dq/K_p",
+  "energy_derivative": "D_E = (1/K_p)*partial_p at fixed q",
+  "operator": {
+    "A2": "E*(27*E - 8)*(27*E - 4)",
+    "A1": "2187*E**2 - 648*E + 32",
+    "A0": "15*(27*E - 4)",
+    "identity": "L_E = A2*D_E^2 + A1*D_E + A0"
+  },
+  "certificate": {
+    "Xi": "(-4374*E**2*p*q - 1458*E**2*p - 1458*E**2*q - 486*E*p**2*q - 162*E*p**2 + 7290*E*p*q**4 + 9720*E*p*q**3 + 2430*E*p*q**2 + 432*E*p*q + 306*E*p + 2430*E*q**4 + 2268*E*q**3 - 162*E*q**2 + 144*E*q + 30*E - 648*p**2*q**4 - 864*p**2*q**3 + 264*p**2*q + 34*p**2 - 648*p*q**5 - 2592*p*q**4 - 2538*p*q**3 - 402*p*q**2 + 192*p*q + 486*q**6 + 756*q**5 - 378*q**4 - 774*q**3 - 62*q**2 + 64*q)/(27*p**6 + 54*p**5 + 36*p**4 + 8*p**3)",
+    "V": "-4374*E**2*p*q - 1458*E**2*p - 1458*E**2*q - 486*E*p**2*q - 162*E*p**2 + 7290*E*p*q**4 + 9720*E*p*q**3 + 2430*E*p*q**2 + 432*E*p*q + 306*E*p + 2430*E*q**4 + 2268*E*q**3 - 162*E*q**2 + 144*E*q + 30*E - 648*p**2*q**4 - 864*p**2*q**3 + 264*p**2*q + 34*p**2 - 648*p*q**5 - 2592*p*q**4 - 2538*p*q**3 - 402*p*q**2 + 192*p*q + 486*q**6 + 756*q**5 - 378*q**4 - 774*q**3 - 62*q**2 + 64*q",
+    "denominator": "K_p^3 = p^3*(3*p+2)^3"
+  },
+  "verification": {
+    "curve_derivative": "dXi/dq = Xi_q - (K_q/K_p)*Xi_p",
+    "numerator_remainder_mod_K_minus_E": "0",
+    "status": "exact residual zero"
+  }
+}

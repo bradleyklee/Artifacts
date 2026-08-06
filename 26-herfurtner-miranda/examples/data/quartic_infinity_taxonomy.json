@@ -1,0 +1,54 @@
+{
+  "ambient_family": "F_E = H4 + Z*H3 + Z^2*(X^2+Y^2) - E*Z^4",
+  "arithmetic_genus": 3,
+  "required_total_delta": 2,
+  "root_partitions": [
+    {
+      "partition": "1+1+1+1",
+      "generic_status": "smooth at infinity; genus 3",
+      "priority": "exclude unless extra non-root conditions are found"
+    },
+    {
+      "partition": "2+1+1",
+      "generic_status": "one candidate singular point; normally at most delta 1 after imposing H3(root)=0",
+      "priority": "prove exclusion or identify exceptional delta-2 jets"
+    },
+    {
+      "partition": "2+2",
+      "generic_status": "general two-distinct-point case: H4=mu*L2^2, H3=L2*L1",
+      "coverage_status": "existing class; boundary tangent-cone strata remain",
+      "priority": "audit degenerations, do not repeat generic search"
+    },
+    {
+      "partition": "3+1",
+      "generic_status": "one-point collision; possible delta-2 strata",
+      "candidate_local_types": [
+        "A3",
+        "A4",
+        "other delta-2 degeneration"
+      ],
+      "priority": "high"
+    },
+    {
+      "partition": "4",
+      "generic_status": "single point at infinity; possible delta-2 strata",
+      "candidate_local_types": [
+        "A3",
+        "A4",
+        "higher collision"
+      ],
+      "priority": "high"
+    }
+  ],
+  "truth_status": {
+    "proved": [
+      "generic genus-one quartic requires total delta 2 at infinity",
+      "two distinct double roots plus generic-fiber singularity conditions imply H4=mu*L2^2 and H3=L2*L1"
+    ],
+    "to_prove": [
+      "complete local delta classification for partitions 2+1+1, 3+1, 4",
+      "invariant degree profiles for each retained stratum",
+      "maximum Herfurtner coverage of all quartic strata"
+    ]
+  }
+}

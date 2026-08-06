@@ -1,0 +1,1328 @@
+{
+  "scope": {
+    "cubic_coefficients": [
+      -3,
+      3
+    ],
+    "cubic_tuples": 2400,
+    "quartic_witnesses_rechecked": 8,
+    "allowable_nonconstant_j_targets": 56
+  },
+  "known_catalog": [
+    {
+      "code": "I1 I1 I1 I3*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "I3*"
+      ],
+      "index": 4,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "8*p**4 - 8*p**3 - 16*p**2*q**2 + p**2 + 8*p*q**2 + 8*q**4 + q**2",
+      "laurent_status": "open"
+    },
+    {
+      "code": "I1 I1 I1 III*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "index": 1,
+      "family": "harmonic_plus_cubic",
+      "hamiltonian_2H": "p**2 + p*q**2 + q**3 + q**2",
+      "laurent_status": "found"
+    },
+    {
+      "code": "I1 I1 I1* I3",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1*",
+        "I3"
+      ],
+      "index": 7,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "p**4 + p**3 + 2*p**2*q**2 + p**2*q + p**2 + p*q**2 + q**4 + q**3 + q**2",
+      "laurent_status": "found"
+    },
+    {
+      "code": "I1 I1 I1* III",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1*",
+        "III"
+      ],
+      "index": 8,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "5*p**4/32 - p**3 - 5*p**2*q**2/16 + p**2 + p*q**2 + 5*q**4/32 + q**2",
+      "laurent_status": "open"
+    },
+    {
+      "code": "I1 I1 I2 I2*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2",
+        "I2*"
+      ],
+      "index": 5,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "180*p**4 - 4*p**3 - 90*p**2*q**2 - 32*p**2*q + p**2 + p*q**2 + 45*q**4/4 + 8*q**3 + q**2",
+      "laurent_status": "found"
+    },
+    {
+      "code": "I1 I1 I2 IV*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2",
+        "IV*"
+      ],
+      "index": 2,
+      "family": "harmonic_plus_cubic",
+      "hamiltonian_2H": "p**3 + p**2 + q**3 + q**2",
+      "laurent_status": "found"
+    },
+    {
+      "code": "I1 I1 I2* II",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2*",
+        "II"
+      ],
+      "index": 6,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "88209*p**4/2368 - 27*p**3/37 - 3267*p**2*q**2/32 - 63*sqrt(111)*p**2*q/37 + p**2 + p*q**2 + 4477*q**4/64 + 7*sqrt(111)*q**3/3 + q**2",
+      "laurent_status": "open"
+    },
+    {
+      "code": "I1 I1 II IV*",
+      "fibers": [
+        "I1",
+        "I1",
+        "II",
+        "IV*"
+      ],
+      "index": 3,
+      "family": "harmonic_plus_cubic",
+      "hamiltonian_2H": "-p**3 - 3*p**2*q + p**2 - 2*q**3 + q**2",
+      "laurent_status": "found"
+    },
+    {
+      "code": "I1 I1* I2 I2",
+      "fibers": [
+        "I1",
+        "I1*",
+        "I2",
+        "I2"
+      ],
+      "index": 9,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "16*p**4 - 8*p**2*q**2 + p**2 + q**4 + q**2",
+      "laurent_status": "found"
+    },
+    {
+      "code": "I1 I1* I2 II",
+      "fibers": [
+        "I1",
+        "I1*",
+        "I2",
+        "II"
+      ],
+      "index": 10,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "9*p**4/32 - p**3 - 9*p**2*q**2/16 + p**2 + p*q**2 + 9*q**4/32 + q**2",
+      "laurent_status": "open"
+    },
+    {
+      "code": "I1 I1* II II",
+      "fibers": [
+        "I1",
+        "I1*",
+        "II",
+        "II"
+      ],
+      "index": 11,
+      "family": "two_node_structured_quartic",
+      "hamiltonian_2H": "p**4/4 - 42*sqrt(2)*p**3/73 - p**2*q**2 - 30*sqrt(2)*p**2*q/73 + p**2 + 84*sqrt(2)*p*q**2/73 + q**4 + 60*sqrt(2)*q**3/73 + q**2",
+      "laurent_status": "open"
+    }
+  ],
+  "summary": {
+    "raw_presentations": 244,
+    "kodaira_codes_found": 11,
+    "invariant_models_found": 52,
+    "new_kodaira_codes": []
+  },
+  "results_by_kodaira_code": [
+    {
+      "code": "I1 I1 I1 I3*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "I3*"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "I3*"
+          ],
+          "parameters": {
+            "r": "1",
+            "U": "64",
+            "V": "0",
+            "mu": "8"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1)*p^2)*(sqrt(64)*p + sqrt(0)*q) + (8)*(q^2 - (1)*p^2)^2",
+          "c4": "1024*alpha**2 + 320*alpha + 1",
+          "c6": "-32768*alpha**3 - 15360*alpha**2 - 1248*alpha + 1",
+          "delta": "-3456*alpha*(1024*alpha**2 + 352*alpha - 1)"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1 I1 III*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1",
+        "III*"
+      ],
+      "presentations": 88,
+      "invariant_models": 11,
+      "families": [
+        "harmonic_plus_cubic"
+      ],
+      "representatives": [
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "3",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (3)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "27*alpha + 1",
+          "c6": "-(405*alpha - 2)/2",
+          "delta": "243*alpha*(324*alpha**2 - 639*alpha + 8)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "2",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (2)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "12*alpha + 1",
+          "c6": "-(315*alpha - 2)/2",
+          "delta": "27*alpha*(256*alpha**2 - 3611*alpha + 52)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "1",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (1)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "3*alpha + 1",
+          "c6": "-(261*alpha - 2)/2",
+          "delta": "27*alpha*(4*alpha**2 - 2519*alpha + 40)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "3",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (3)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "27*alpha + 1",
+          "c6": "1 - 135*alpha",
+          "delta": "27*alpha*(729*alpha**2 - 594*alpha + 13)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "3",
+            "c": "0",
+            "d": "-1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (3)*p^2*q + (0)*p*q^2 + (-1)*q^3",
+          "c4": "54*alpha + 1",
+          "c6": "1 - 189*alpha",
+          "delta": "27*alpha*(27*alpha - 4)*(216*alpha - 5)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "2",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (2)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "12*alpha + 1",
+          "c6": "1 - 90*alpha",
+          "delta": "108*alpha*(16*alpha**2 - 71*alpha + 2)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "1",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (1)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "3*alpha + 1",
+          "c6": "1 - 63*alpha",
+          "delta": "27*alpha*(alpha**2 - 146*alpha + 5)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "3",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (3)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "27*alpha + 1",
+          "c6": "-(189*alpha - 2)/2",
+          "delta": "27*alpha*(27*alpha - 8)*(108*alpha - 5)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "2",
+            "c": "1",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (2)*p^2*q + (1)*p*q^2 + (0)*q^3",
+          "c4": "6*alpha + 1",
+          "c6": "1 - 45*alpha",
+          "delta": "27*alpha*(8*alpha**2 - 71*alpha + 4)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "2",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (2)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "12*alpha + 1",
+          "c6": "-(99*alpha - 2)/2",
+          "delta": "27*alpha*(256*alpha**2 - 299*alpha + 20)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1",
+            "III*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "1",
+            "c": "0",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (1)*p^2*q + (0)*p*q^2 + (0)*q^3",
+          "c4": "3*alpha + 1",
+          "c6": "-(45*alpha - 2)/2",
+          "delta": "27*alpha*(4*alpha**2 - 71*alpha + 8)/4"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1 I1* I3",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1*",
+        "I3"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1*",
+            "I3"
+          ],
+          "parameters": {
+            "r": "-1",
+            "U": "1",
+            "V": "1",
+            "mu": "1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (-1)*p^2)*(sqrt(1)*p + sqrt(1)*q) + (1)*(q^2 - (-1)*p^2)^2",
+          "c4": "16*alpha**2 - 4*alpha + 1",
+          "c6": "64*alpha**3 + 30*alpha**2 - 6*alpha + 1",
+          "delta": "-108*alpha**3*(64*alpha**2 - 13*alpha + 2)"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1 I1* III",
+      "fibers": [
+        "I1",
+        "I1",
+        "I1*",
+        "III"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I1*",
+            "III"
+          ],
+          "parameters": {
+            "r": "1",
+            "U": "1",
+            "V": "0",
+            "mu": "5/32"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1)*p^2)*(sqrt(1)*p + sqrt(0)*q) + (5/32)*(q^2 - (1)*p^2)^2",
+          "c4": "(alpha + 8)*(25*alpha + 8)/64",
+          "c6": "-(alpha + 8)**2*(125*alpha - 8)/512",
+          "delta": "-27*alpha*(alpha + 8)**3*(125*alpha - 24)/8192"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1 I2 I2*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2",
+        "I2*"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "I2*"
+          ],
+          "parameters": {
+            "r": "4",
+            "U": "1",
+            "V": "64",
+            "mu": "45/4"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (4)*p^2)*(sqrt(1)*p + sqrt(64)*q) + (45/4)*(q^2 - (4)*p^2)^2",
+          "c4": "32400*alpha**2 + 1680*alpha + 1",
+          "c6": "-(90*alpha + 1)*(64800*alpha**2 + 4320*alpha - 1)",
+          "delta": "2700*alpha*(81*alpha + 5)*(320*alpha - 1)**2"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1 I2 IV*",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2",
+        "IV*"
+      ],
+      "presentations": 116,
+      "invariant_models": 29,
+      "families": [
+        "harmonic_plus_cubic"
+      ],
+      "representatives": [
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "2",
+            "c": "2",
+            "d": "3"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (2)*p^2*q + (2)*p*q^2 + (3)*q^3",
+          "c4": "1 - 84*alpha",
+          "c6": "(46305*alpha**2 - 1224*alpha + 8)/8",
+          "delta": "-27*alpha*(343*alpha - 4)**2*(675*alpha - 8)/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "2",
+            "c": "-2",
+            "d": "-3"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (2)*p^2*q + (-2)*p*q^2 + (-3)*q^3",
+          "c4": "132*alpha + 1",
+          "c6": "(35937*alpha**2 - 3816*alpha + 8)/8",
+          "delta": "-27*alpha*(27*alpha - 8)*(1331*alpha - 20)**2/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "1",
+            "c": "1",
+            "d": "3"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (1)*p^2*q + (1)*p*q^2 + (3)*q^3",
+          "c4": "1 - 48*alpha",
+          "c6": "6912*alpha**2 - 180*alpha + 1",
+          "delta": "-216*alpha*(54*alpha - 1)*(64*alpha - 1)**2"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "1",
+            "c": "-1",
+            "d": "-3"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (1)*p^2*q + (-1)*p*q^2 + (-3)*q^3",
+          "c4": "60*alpha + 1",
+          "c6": "6750*alpha**2 - 342*alpha + 1",
+          "delta": "-108*alpha*(27*alpha - 2)*(125*alpha - 2)**2"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "0",
+            "c": "2",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (0)*p^2*q + (2)*p*q^2 + (0)*q^3",
+          "c4": "1 - 42*alpha",
+          "c6": "(9*alpha - 2)*(72*alpha - 1)/2",
+          "delta": "-27*alpha*(8*alpha + 1)**2*(243*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "0",
+            "c": "1",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (0)*p^2*q + (1)*p*q^2 + (0)*q^3",
+          "c4": "1 - 24*alpha",
+          "c6": "(81*alpha**2 - 180*alpha + 2)/2",
+          "delta": "-27*alpha*(alpha + 2)**2*(243*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "0",
+            "c": "0",
+            "d": "3"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (0)*p^2*q + (0)*p*q^2 + (3)*q^3",
+          "c4": "1",
+          "c6": "(59049*alpha**2 - 1944*alpha + 8)/8",
+          "delta": "-243*alpha*(243*alpha - 8)*(243*alpha - 4)**2/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "0",
+            "c": "-1",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (0)*p^2*q + (-1)*p*q^2 + (0)*q^3",
+          "c4": "30*alpha + 1",
+          "c6": "-(81*alpha**2 + 342*alpha - 2)/2",
+          "delta": "-27*alpha*(alpha - 4)**2*(243*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "0",
+            "c": "-2",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (0)*p^2*q + (-2)*p*q^2 + (0)*q^3",
+          "c4": "66*alpha + 1",
+          "c6": "-(648*alpha**2 + 477*alpha - 2)/2",
+          "delta": "-27*alpha*(8*alpha - 5)**2*(243*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "0",
+            "c": "-3",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (0)*p^2*q + (-3)*p*q^2 + (0)*q^3",
+          "c4": "108*alpha + 1",
+          "c6": "-(2187*alpha**2 + 648*alpha - 2)/2",
+          "delta": "-243*alpha*(9*alpha - 2)**2*(243*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "3",
+            "c": "3",
+            "d": "2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (3)*p^2*q + (3)*p*q^2 + (2)*q^3",
+          "c4": "1 - 54*alpha",
+          "c6": "(3645*alpha**2 - 864*alpha + 8)/8",
+          "delta": "-27*alpha*(27*alpha + 4)**2*(675*alpha - 8)/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "3",
+            "c": "-3",
+            "d": "-2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (3)*p^2*q + (-3)*p*q^2 + (-2)*q^3",
+          "c4": "162*alpha + 1",
+          "c6": "-(19683*alpha**2 + 3456*alpha - 8)/8",
+          "delta": "-27*alpha*(27*alpha - 8)*(729*alpha - 20)**2/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "1",
+            "c": "1",
+            "d": "2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (1)*p^2*q + (1)*p*q^2 + (2)*q^3",
+          "c4": "1 - 30*alpha",
+          "c6": "(10125*alpha**2 - 576*alpha + 8)/8",
+          "delta": "-27*alpha*(125*alpha - 4)**2*(243*alpha - 8)/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "1",
+            "c": "-1",
+            "d": "-2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (1)*p^2*q + (-1)*p*q^2 + (-2)*q^3",
+          "c4": "42*alpha + 1",
+          "c6": "(9261*alpha**2 - 1440*alpha + 8)/8",
+          "delta": "-27*alpha*(27*alpha - 8)*(343*alpha - 12)**2/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "0",
+            "c": "1",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (0)*p^2*q + (1)*p*q^2 + (0)*q^3",
+          "c4": "1 - 15*alpha",
+          "c6": "27*alpha**2 - 36*alpha + 1",
+          "delta": "-27*alpha*(alpha + 1)**2*(27*alpha - 1)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "0",
+            "c": "0",
+            "d": "2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (0)*p^2*q + (0)*p*q^2 + (2)*q^3",
+          "c4": "1",
+          "c6": "1458*alpha**2 - 108*alpha + 1",
+          "delta": "-108*alpha*(27*alpha - 2)*(27*alpha - 1)**2"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "0",
+            "c": "-1",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (0)*p^2*q + (-1)*p*q^2 + (0)*q^3",
+          "c4": "21*alpha + 1",
+          "c6": "-27*alpha**2 - 90*alpha + 1",
+          "delta": "-27*alpha*(alpha - 3)**2*(27*alpha - 1)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "0",
+            "c": "-2",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (0)*p^2*q + (-2)*p*q^2 + (0)*q^3",
+          "c4": "48*alpha + 1",
+          "c6": "-216*alpha**2 - 144*alpha + 1",
+          "delta": "-432*alpha*(2*alpha - 1)**2*(27*alpha - 1)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "0",
+            "c": "-3",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (0)*p^2*q + (-3)*p*q^2 + (0)*q^3",
+          "c4": "81*alpha + 1",
+          "c6": "-729*alpha**2 - 216*alpha + 1",
+          "delta": "-27*alpha*(27*alpha - 5)**2*(27*alpha - 1)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "2",
+            "c": "2",
+            "d": "1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (2)*p^2*q + (2)*p*q^2 + (1)*q^3",
+          "c4": "1 - 12*alpha",
+          "c6": "(81*alpha**2 - 360*alpha + 8)/8",
+          "delta": "-27*alpha*(alpha + 4)**2*(243*alpha - 8)/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "2",
+            "c": "-2",
+            "d": "-1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (2)*p^2*q + (-2)*p*q^2 + (-1)*q^3",
+          "c4": "60*alpha + 1",
+          "c6": "-(3375*alpha**2 + 1224*alpha - 8)/8",
+          "delta": "-27*alpha*(27*alpha - 8)*(125*alpha - 12)**2/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "0",
+            "c": "3",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (0)*p^2*q + (3)*p*q^2 + (0)*q^3",
+          "c4": "1",
+          "c6": "(729*alpha**2 - 108*alpha + 2)/2",
+          "delta": "-27*alpha*(27*alpha - 4)*(27*alpha - 2)**2/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "0",
+            "c": "2",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (0)*p^2*q + (2)*p*q^2 + (0)*q^3",
+          "c4": "1 - 6*alpha",
+          "c6": "(216*alpha**2 - 45*alpha + 2)/2",
+          "delta": "-27*alpha*(8*alpha - 1)**2*(27*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "0",
+            "c": "0",
+            "d": "1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (0)*p^2*q + (0)*p*q^2 + (1)*q^3",
+          "c4": "1",
+          "c6": "(729*alpha**2 - 216*alpha + 8)/8",
+          "delta": "-27*alpha*(27*alpha - 8)*(27*alpha - 4)**2/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "0",
+            "c": "-1",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (0)*p^2*q + (-1)*p*q^2 + (0)*q^3",
+          "c4": "12*alpha + 1",
+          "c6": "-(27*alpha**2 + 72*alpha - 2)/2",
+          "delta": "-27*alpha*(alpha - 2)**2*(27*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "1",
+            "b": "0",
+            "c": "-2",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (1)*p^3 + (0)*p^2*q + (-2)*p*q^2 + (0)*q^3",
+          "c4": "30*alpha + 1",
+          "c6": "-(216*alpha**2 + 153*alpha - 2)/2",
+          "delta": "-27*alpha*(8*alpha - 3)**2*(27*alpha - 4)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "0",
+            "b": "3",
+            "c": "3",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (0)*p^3 + (3)*p^2*q + (3)*p*q^2 + (0)*q^3",
+          "c4": "54*alpha + 1",
+          "c6": "-(2187*alpha**2 + 1296*alpha - 8)/8",
+          "delta": "-243*alpha*(9*alpha - 4)**2*(243*alpha - 8)/64"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "0",
+            "b": "2",
+            "c": "2",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (0)*p^3 + (2)*p^2*q + (2)*p*q^2 + (0)*q^3",
+          "c4": "24*alpha + 1",
+          "c6": "-54*alpha**2 - 72*alpha + 1",
+          "delta": "-108*alpha*(alpha - 1)**2*(27*alpha - 2)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "0",
+            "b": "1",
+            "c": "1",
+            "d": "0"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (0)*p^3 + (1)*p^2*q + (1)*p*q^2 + (0)*q^3",
+          "c4": "6*alpha + 1",
+          "c6": "-(27*alpha**2 + 144*alpha - 8)/8",
+          "delta": "-27*alpha*(alpha - 4)**2*(27*alpha - 8)/64"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1 I2* II",
+      "fibers": [
+        "I1",
+        "I1",
+        "I2*",
+        "II"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1",
+            "I2*",
+            "II"
+          ],
+          "parameters": {
+            "r": "27/37",
+            "U": "1",
+            "V": "1813/3",
+            "mu": "4477/64"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (27/37)*p^2)*(sqrt(1)*p + sqrt(1813/3)*q) + (4477/64)*(q^2 - (27/37)*p^2)^2",
+          "c4": "(333*alpha + 16)*(1185921*alpha + 592)/9472",
+          "c6": "-(333*alpha + 16)*(143352944559*alpha**2 + 3551255136*alpha - 350464)/5607424",
+          "delta": "-140625*alpha*(333*alpha + 16)**2*(74713023*alpha - 21904)/29986576"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1 II IV*",
+      "fibers": [
+        "I1",
+        "I1",
+        "II",
+        "IV*"
+      ],
+      "presentations": 32,
+      "invariant_models": 4,
+      "families": [
+        "harmonic_plus_cubic"
+      ],
+      "representatives": [
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "II",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "3",
+            "c": "0",
+            "d": "2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (3)*p^2*q + (0)*p*q^2 + (2)*q^3",
+          "c4": "1 - 27*alpha",
+          "c6": "(27*alpha - 1)*(297*alpha - 2)/2",
+          "delta": "-27*alpha*(27*alpha - 1)**2*(3267*alpha - 40)/4"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "II",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "3",
+            "b": "0",
+            "c": "3",
+            "d": "2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (3)*p^3 + (0)*p^2*q + (3)*p*q^2 + (2)*q^3",
+          "c4": "1 - 54*alpha",
+          "c6": "(54*alpha - 1)*(81*alpha - 1)",
+          "delta": "-27*alpha*(54*alpha - 1)**2*(243*alpha - 4)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "II",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "3",
+            "c": "0",
+            "d": "2"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (3)*p^2*q + (0)*p*q^2 + (2)*q^3",
+          "c4": "1 - 27*alpha",
+          "c6": "(27*alpha - 1)*(81*alpha - 1)",
+          "delta": "-27*alpha*(27*alpha - 1)**2*(243*alpha - 5)"
+        },
+        {
+          "family": "harmonic_plus_cubic",
+          "fibers": [
+            "I1",
+            "I1",
+            "II",
+            "IV*"
+          ],
+          "parameters": {
+            "a": "2",
+            "b": "0",
+            "c": "3",
+            "d": "1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (2)*p^3 + (0)*p^2*q + (3)*p*q^2 + (1)*q^3",
+          "c4": "1 - 27*alpha",
+          "c6": "(27*alpha - 1)*(81*alpha - 2)/2",
+          "delta": "-27*alpha*(27*alpha - 1)**2*(243*alpha - 8)/4"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1* I2 I2",
+      "fibers": [
+        "I1",
+        "I1*",
+        "I2",
+        "I2"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1*",
+            "I2",
+            "I2"
+          ],
+          "parameters": {
+            "r": "4",
+            "U": "0",
+            "V": "0",
+            "mu": "1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (4)*p^2)*(sqrt(0)*p + sqrt(0)*q) + (1)*(q^2 - (4)*p^2)^2",
+          "c4": "256*alpha**2 - 332*alpha + 1",
+          "c6": "-(16*alpha - 1)*(256*alpha**2 + 868*alpha + 1)",
+          "delta": "-2700*alpha*(4*alpha + 1)**2*(64*alpha + 1)**2"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1* I2 II",
+      "fibers": [
+        "I1",
+        "I1*",
+        "I2",
+        "II"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1*",
+            "I2",
+            "II"
+          ],
+          "parameters": {
+            "r": "1",
+            "U": "1",
+            "V": "0",
+            "mu": "9/32"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1)*p^2)*(sqrt(1)*p + sqrt(0)*q) + (9/32)*(q^2 - (1)*p^2)^2",
+          "c4": "(3*alpha - 8)*(27*alpha - 8)/64",
+          "c6": "-(27*alpha - 8)*(27*alpha**2 + 288*alpha + 64)/512",
+          "delta": "-27*alpha*(5*alpha + 8)**2*(27*alpha - 8)**2/8192"
+        }
+      ]
+    },
+    {
+      "code": "I1 I1* II II",
+      "fibers": [
+        "I1",
+        "I1*",
+        "II",
+        "II"
+      ],
+      "presentations": 1,
+      "invariant_models": 1,
+      "families": [
+        "two_node_structured_quartic"
+      ],
+      "representatives": [
+        {
+          "family": "two_node_structured_quartic",
+          "fibers": [
+            "I1",
+            "I1*",
+            "II",
+            "II"
+          ],
+          "parameters": {
+            "r": "1/2",
+            "U": "14112/5329",
+            "V": "7200/5329",
+            "mu": "1"
+          },
+          "hamiltonian_2H": "p^2 + q^2 + (q^2 - (1/2)*p^2)*(sqrt(14112/5329)*p + sqrt(7200/5329)*q) + (1)*(q^2 - (1/2)*p^2)^2",
+          "c4": "(21316*alpha**2 - 21559*alpha + 5329)/5329",
+          "c6": "-(2*alpha - 1)*(21316*alpha**2 - 21559*alpha + 5329)/5329",
+          "delta": "-243*alpha*(21316*alpha**2 - 21559*alpha + 5329)**2/151334226289"
+        }
+      ]
+    }
+  ]
+}
