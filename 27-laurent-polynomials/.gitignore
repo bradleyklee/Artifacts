@@ -18,3 +18,8 @@ __pycache__/
 *.tar
 *.tar.gz
 /recovery/
+
+# Project-local scratch and generated user results.
+/.tmp/
+/results/
+/certificate-*.json

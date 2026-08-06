@@ -41,8 +41,6 @@ def replay_public() -> None:
     run([sys.executable, str(CODE_ROOT / "public" / "verify_catalogue.py")])
 
 
-
-
 def derive_public_guvj() -> None:
     """Recompute every distinct canonical public Laurent model."""
     output_root = PROJECT_ROOT / "results" / "public" / "canonical"
@@ -55,14 +53,14 @@ def derive_public_guvj() -> None:
         ("public:9", "catalogue-model-9.json"),
     )
     for model, filename in models:
-        run([
-            sys.executable,
-            str(CODE_ROOT / "example.py"),
-            "certify",
-            model,
-            "--output",
-            str(output_root / filename),
-        ])
+        command = [sys.executable, str(CODE_ROOT / "example.py")]
+        if model.startswith("public:"):
+            command.extend(["derive", "--model", model])
+        else:
+            command.extend(["certify", model])
+        command.extend(["--output", str(output_root / filename)])
+        run(command)
+
 
 def replay_private(data_root: Path) -> None:
     """Verify a G,U,V,J dataset under the explicitly selected data root."""

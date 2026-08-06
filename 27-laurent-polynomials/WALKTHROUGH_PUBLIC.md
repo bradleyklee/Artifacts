@@ -6,7 +6,7 @@ to enter a new Laurent polynomial.
 ## 1. Check the installation
 
 ```text
-python code/example.py list --scope public
+python3 code/example.py list --scope public
 pytest -q code/tests code/test_00_order4_joint.py
 ```
 
@@ -14,13 +14,13 @@ pytest -q code/tests code/test_00_order4_joint.py
 
 ```text
 mkdir -p results/public
-python code/example.py certify A295870 \
+python3 code/example.py certify A295870 \
   --output results/public/A295870.json
 ```
 
 A successful run ends with `Certificate complete` and reports PASS for the
-exact G,U,V,J identity, divergence identity, recurrence replay, and finite-term
-operator discovery.
+exact G,U,V,J identity, divergence identity, and recurrence replay.  Operator
+discovery methods are reported as `used` or `not used`, not PASS or FAIL.
 
 The input is
 
@@ -35,15 +35,15 @@ separability when it is available and uses two one-variable convolutions.
 ## 3. Recompute A303790
 
 ```text
-python code/example.py certify A303790 \
+python3 code/example.py certify A303790 \
   --output results/public/A303790.json
 ```
 
 The stored A303790-specific replays can also be run directly:
 
 ```text
-python code/a303790/verify_scalar_certificate.py
-python code/a303790/derive_and_verify_laurent.py
+python3 code/a303790/verify_scalar_certificate.py
+python3 code/a303790/derive_and_verify_laurent.py
 ```
 
 The general `certify` command is the colleague-facing route.  The two shorter
@@ -52,7 +52,7 @@ scripts remain as independent checks for the worked paper example.
 ## 4. Enter another example
 
 ```text
-python code/example.py derive \
+python3 code/example.py derive \
   --F "x + y + 1/(x*y) + y^2" \
   --output results/public/order4_triangle.json
 ```
@@ -67,8 +67,27 @@ constant terms, recurrence, basis data, matrix dimensions, witness layers, and
 all exact checks.
 
 ```text
-python -m json.tool results/public/A295870.json | less
+python3 -m json.tool results/public/A295870.json | less
 ```
+
+
+## Replay every public canonical example
+
+Replay the eleven stored catalogue records only:
+
+```text
+python3 code/run_examples.py public
+```
+
+Replay those records and recompute every distinct canonical public Laurent
+model through the general G,U,V,J solver:
+
+```text
+python3 code/run_examples.py public --derive-guvj
+```
+
+The full command writes new certificates below
+`results/public/canonical/`.  It does not run the perturbation search.
 
 ## 6. Reproduce the known failure
 
