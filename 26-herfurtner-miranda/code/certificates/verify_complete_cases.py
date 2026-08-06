@@ -545,30 +545,12 @@ def verify_coefficients(index: int, count: int = 12) -> None:
         raise AssertionError(f"first {count} coefficients do not match")
 
 
-def hamiltonian_detail(index: int) -> str:
-    if index in (1, 2, 3, 9):
-        certificate = model(index)["certificate"]
-        p_file = OLD_CERT / Path(certificate["hamiltonian_P_file"]).name
-        q_file = OLD_CERT / Path(certificate["hamiltonian_Q_file"]).name
-        loc = {"E": E, "alpha": E, "p": p, "q": q}
-        P = sp.Poly(sp.sympify(p_file.read_text(), locals=loc), p, q, E)
-        Q = sp.Poly(sp.sympify(q_file.read_text(), locals=loc), p, q, E)
-        return f"P/Q terms {len(P.terms())}/{len(Q.terms())}"
-    return "scalar remainder modulo 2H-E"
-
-
-def laurent_detail(index: int) -> str:
-    expression, variables = laurent_expression(index)
-    support = len(sparse_expr(expression, variables))
-    return f"support {support}; {len(variables)} variable(s)"
-
-
-STAGES: tuple[tuple[str, Callable[[int], None], Callable[[int], str]], ...] = (
-    ("Hamiltonian certificate", verify_hamiltonian, hamiltonian_detail),
-    ("Laurent certificate", verify_laurent, laurent_detail),
-    ("annihilator comparison", verify_annihilator, lambda _: "exact"),
-    ("recurrence check", verify_stored_recurrence, lambda _: "31 terms"),
-    ("coefficient check", verify_coefficients, lambda _: "12 direct terms"),
+STAGES: tuple[tuple[str, Callable[[int], None]], ...] = (
+    ("Hamiltonian certificate", verify_hamiltonian),
+    ("Laurent certificate", verify_laurent),
+    ("annihilator comparison", verify_annihilator),
+    ("recurrence check", verify_stored_recurrence),
+    ("coefficient check", verify_coefficients),
 )
 
 
@@ -577,7 +559,7 @@ class VerificationReport:
     requested: tuple[int, ...]
     passed_models: set[int] = field(default_factory=set)
     stage_counts: dict[str, int] = field(
-        default_factory=lambda: {name: 0 for name, _, _ in STAGES}
+        default_factory=lambda: {name: 0 for name, _ in STAGES}
     )
 
 
@@ -595,7 +577,7 @@ def print_summary(report: VerificationReport) -> None:
         "coefficient check": "Coefficient checks",
     }
     width = max(len(value) for value in labels.values())
-    for stage, _, _ in STAGES:
+    for stage, _ in STAGES:
         print(
             f"{labels[stage]+':':<{width+1}} "
             f"{report.stage_counts[stage]} passed"
@@ -611,9 +593,9 @@ def run_verification(
         raise ValueError(f"not complete: {', '.join(map(str, unknown))}")
     report = VerificationReport(requested=requested)
     for index in requested:
-        for stage, check, detail in STAGES:
+        for stage, check in STAGES:
             progress(
-                f"model {index}: {stage} started ({detail(index)})",
+                f"model {index}: {stage} started",
                 enabled=progress_enabled,
             )
             try:

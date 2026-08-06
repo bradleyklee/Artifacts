@@ -43,7 +43,7 @@ The verifier uses exact arithmetic and prints readable progress throughout.
 Run
 
 ```text
-python3 search_curves.py --print-catalogue
+python3 code/search_curves.py --print-catalogue
 ```
 
 The public catalogue is also stored in
@@ -53,8 +53,14 @@ examples/public/catalogue/CURVES.txt
 examples/public/catalogue/curves.json
 ```
 
-The text file prints every retained Hamiltonian with its fibre classification,
-scale, and final status. The JSON file retains exact coefficients and metadata.
+The text file prints every retained Hamiltonian beneath its fibre
+classification, scale, and final status. The JSON file retains exact
+coefficients and metadata.
+
+The default bounded search also prints all 52 invariant models found in the
+244 presentations of the default coefficient box. Each model is indexed by
+Kodaira code and includes its presentation count, representative parameters,
+and representative Hamiltonian.
 
 ## Classification and coverage
 

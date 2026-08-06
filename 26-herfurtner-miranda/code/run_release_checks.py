@@ -56,7 +56,7 @@ run(unittest_command, ROOT / "code" / "certificates")
 # 56-target nonconstant-J four-fibre slice.
 run([sys.executable, "run_scan.py"], ROOT / "code" / "plane_scan")
 run(
-    [sys.executable, "run_model_search.py", "--known-only"],
+    [sys.executable, "search_curves.py", "--known-only"],
     ROOT / "code",
 )
 run(unittest_command, ROOT / "code" / "plane_scan")

@@ -15,7 +15,7 @@ sys.path.insert(0, str(CODE_DIR))
 import verify_complete_cases as complete
 import verify_legacy_cases as old_a
 import verify_promoted_cases as old_b
-import run_model_search as search
+import search_curves as search
 
 
 class CompleteCaseInterfaceTests(unittest.TestCase):
@@ -51,6 +51,27 @@ class CompleteCaseInterfaceTests(unittest.TestCase):
         )
         self.assertTrue(all(row["hamiltonian_terms"] for row in rows))
         text = search.catalogue_text(rows, verbose=True)
+        self.assertNotIn("HAMILTONIAN", text.splitlines()[2])
+        self.assertIn("\n       2H = ", text)
+        self.assertTrue(all(len(line) <= 80 for line in text.splitlines()))
+
+    def test_search_json_lists_all_invariant_models(self) -> None:
+        data = json.loads(search.OUTPUT_FILE.read_text())
+        rows = data["results_by_kodaira_code"]
+        models = [
+            model
+            for row in rows
+            for model in row["models"]
+        ]
+        self.assertEqual(len(rows), 11)
+        self.assertEqual(len(models), 52)
+        self.assertEqual(
+            sum(model["presentation_count"] for model in models),
+            244,
+        )
+        self.assertTrue(all(model["presentations"] for model in models))
+        text = search.search_text(rows)
+        self.assertIn("Invariant models (52)", text)
         self.assertTrue(all(len(line) <= 80 for line in text.splitlines()))
 
 

@@ -2,12 +2,14 @@
 
 ## 1. Purpose
 
-This artifact classifies allowable four-fibre configurations, searches for
-plane Hamiltonian realizations, computes period data, tests Laurent models,
-and replays every retained exact result.
+This artifact records a validated curve dataset and replays its exact
+Hamiltonian and Laurent certificates. It also contains bounded exploratory
+searches for additional plane Hamiltonian presentations.
 
 The public release presents one validated dataset. Discovery history and old
-workflow distinctions are kept under `internal/`.
+workflow distinctions are kept under `internal/`. The main public operation is
+the exact complete-case verifier; catalogue printing is the main inspection
+command, while bounded curve search is advanced exploratory use.
 
 ## 2. Mathematical input and output
 
@@ -71,9 +73,9 @@ python3 code/certificates/verify_complete_cases.py
 ```
 
 The verifier prints each major stage when it starts and passes, including the
-model number, elapsed time, useful support sizes or certificate sizes, and the
-exact failing stage if a check fails. Every terminal line is at most 80
-columns.
+model number, elapsed time, and exact failing stage if a check fails. Compact
+stage messages avoid wrapped parenthetical details. Every terminal line is at
+most 80 columns.
 
 Run the complete release audit with
 
@@ -87,8 +89,8 @@ Print every retained Hamiltonian, sorted by fibre classification and model
 number:
 
 ```text
-python3 search_curves.py --print-catalogue
-python3 search_curves.py --print-catalogue --verbose
+python3 code/search_curves.py --print-catalogue
+python3 code/search_curves.py --print-catalogue --verbose
 ```
 
 A normal bounded search also prints the catalogue after the search results.
@@ -128,21 +130,27 @@ internal/                  provenance and development history
 
 ## 8. Advanced implementation details
 
-The bounded model search is
+The bounded presentation search is
 
 ```text
-python3 search_curves.py
+python3 code/search_curves.py
 ```
 
 Use a larger cubic coefficient box with
 
 ```text
-python3 search_curves.py --cubic-bound 4 --progress-every 500
+python3 code/search_curves.py --cubic-bound 4 --progress-every 500
 ```
 
+A presentation is one exact coefficient tuple and its plane Hamiltonian. An
+invariant model groups presentations having the same stored `c4`, `c6`, and
+discriminant. This is the search program's exact deduplication rule; it is not
+a claim that differently normalized invariant triples cannot be isomorphic.
+
 The search reads the generated target ledger, rechecks all retained quartic
-witnesses, groups exact hits by fibre classification, prints progress, and
-writes `examples/data/model_search_results.json`.
+witnesses, groups exact hits by fibre classification and invariant model,
+prints all invariant models, and writes
+`examples/data/model_search_results.json`.
 
 Exact verification uses explicit polynomial operations, sparse Laurent
 arithmetic, coefficient extraction, and named recurrence transformations.

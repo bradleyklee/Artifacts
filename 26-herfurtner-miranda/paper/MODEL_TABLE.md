@@ -17,5 +17,5 @@
 Hamiltonians and exact metadata are printed by
 
 ```text
-python3 search_curves.py --print-catalogue --verbose
+python3 code/search_curves.py --print-catalogue --verbose
 ```
