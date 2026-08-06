@@ -251,7 +251,11 @@ def main() -> None:
     write_json(report_path, report)
     print(f"PASS: {len(models)}/11 public period records", flush=True)
     print("PASS: 4/4 complete double certificates", flush=True)
-    print(f"report: {report_path}", flush=True)
+    try:
+        shown_report = report_path.resolve().relative_to(PROJECT_ROOT)
+    except ValueError:
+        shown_report = report_path
+    print(f"report: {shown_report}", flush=True)
 
 
 if __name__ == "__main__":

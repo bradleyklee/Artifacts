@@ -31,6 +31,7 @@ import argparse
 import json
 import math
 import sys
+import textwrap
 import time
 from collections import defaultdict
 from contextlib import contextmanager
@@ -47,15 +48,86 @@ x, y, t, theta, n = sp.symbols("x y t theta n")
 Point = Tuple[int, int]
 
 
+def theta_operator_lines(operator: sp.Expr) -> List[str]:
+    """Order by powers of t and factor each coefficient in theta."""
+    expression = sp.expand(sp.sympify(operator))
+    polynomial = sp.Poly(expression, t)
+    lines: List[str] = []
+    for power in range(polynomial.degree() + 1):
+        coefficient = sp.factor(polynomial.coeff_monomial(t**power))
+        if coefficient == 0:
+            continue
+        negative = coefficient.could_extract_minus_sign()
+        body = -coefficient if negative else coefficient
+        if power == 0:
+            term_text = str(body)
+        else:
+            t_text = "t" if power == 1 else f"t**{power}"
+            numeric, remainder = body.as_coeff_Mul()
+            factors: List[str] = []
+            if numeric != 1:
+                factors.append(str(numeric))
+            factors.append(t_text)
+            if remainder != 1:
+                remainder_text = str(remainder)
+                if isinstance(remainder, sp.Add):
+                    remainder_text = f"({remainder_text})"
+                factors.append(remainder_text)
+            term_text = "*".join(factors)
+        if not lines:
+            lines.append(("- " if negative else "") + term_text)
+        else:
+            lines.append(("- " if negative else "+ ") + term_text)
+    return lines or ["0"]
+
+
 @dataclass
 class Progress:
-    """Report major stages and elapsed wall time to a text stream."""
+    """Report major stages with every physical line at most ``width`` columns."""
 
     total: int
     enabled: bool = True
     stream: TextIO = sys.stderr
+    width: int = 80
     index: int = 0
     started: float = field(default_factory=time.perf_counter)
+
+    def emit(
+        self,
+        message: str,
+        *,
+        indent: str = "",
+        continuation: str = "      ",
+    ) -> None:
+        if not self.enabled:
+            return
+        lines = textwrap.wrap(
+            str(message),
+            width=self.width,
+            initial_indent=indent,
+            subsequent_indent=continuation,
+            break_long_words=True,
+            break_on_hyphens=False,
+        ) or [indent]
+        for line in lines:
+            print(line, file=self.stream, flush=True)
+
+    def emit_done(self, elapsed: float, details: dict) -> None:
+        base = f"[{self.index}/{self.total}] done in {elapsed:.3f} s"
+        ordinary = [(key, value) for key, value in details.items() if key != "A_theta"]
+        current = base
+        for key, value in ordinary:
+            addition = f" | {key}={value}"
+            if len(current) + len(addition) <= self.width:
+                current += addition
+            else:
+                self.emit(current)
+                current = f"      {key}={value}"
+        self.emit(current)
+        if "A_theta" in details:
+            self.emit("A_theta =", indent="      ", continuation="      ")
+            for line in theta_operator_lines(details["A_theta"]):
+                self.emit(line, indent="          ", continuation="          ")
 
     @contextmanager
     def stage(self, label: str) -> Iterator[dict]:
@@ -63,34 +135,25 @@ class Progress:
         stage_start = time.perf_counter()
         details: dict = {}
         if self.enabled:
-            print(f"[{self.index}/{self.total}] {label} ...", file=self.stream, flush=True)
+            self.emit(f"[{self.index}/{self.total}] {label} ...")
         try:
             yield details
         except Exception as exc:
             if self.enabled:
                 elapsed = time.perf_counter() - stage_start
-                print(
-                    f"[{self.index}/{self.total}] FAILED after {elapsed:.3f} s: {exc}",
-                    file=self.stream,
-                    flush=True,
+                self.emit(
+                    f"[{self.index}/{self.total}] FAILED after {elapsed:.3f} s: {exc}"
                 )
             raise
         else:
             if self.enabled:
                 elapsed = time.perf_counter() - stage_start
-                suffix = ""
-                if details:
-                    suffix = " | " + ", ".join(f"{key}={value}" for key, value in details.items())
-                print(
-                    f"[{self.index}/{self.total}] done in {elapsed:.3f} s{suffix}",
-                    file=self.stream,
-                    flush=True,
-                )
+                self.emit_done(elapsed, details)
 
     def finish(self) -> None:
         if self.enabled:
             elapsed = time.perf_counter() - self.started
-            print(f"[done] total wall time {elapsed:.3f} s", file=self.stream, flush=True)
+            self.emit(f"[done] total wall time {elapsed:.3f} s")
 
 
 def cancel_rational(expr: sp.Expr) -> sp.Expr:
@@ -746,7 +809,7 @@ def derive_certificate(F: sp.Expr, *, model: str = "custom", dilation: int = 2,
     with progress.stage("derive A and verify the Xi certificate") as info:
         X, p0, p1, p2, A_theta = derive_operator(alpha, beta)
         Xi = verify_Xi(F, rho, basis, G, E, J, RHO, p0, p1, p2, V)
-        info["A_theta"] = display_expr(A_theta)
+        info["A_theta"] = A_theta
 
     with progress.stage("generate and cross-check reference terms") as info:
         recurrence, terms = checked_term_data(

@@ -3,16 +3,36 @@
 from __future__ import annotations
 
 import argparse
+import shlex
 import subprocess
 import sys
+import textwrap
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 CODE_ROOT = PROJECT_ROOT / "code"
 
 
+def displayed_argument(argument: str) -> str:
+    """Use short project-relative paths in echoed commands."""
+    if Path(argument) == Path(sys.executable):
+        return "python3"
+    try:
+        return str(Path(argument).resolve().relative_to(PROJECT_ROOT))
+    except (OSError, ValueError):
+        return argument
+
+
 def run(command: list[str]) -> None:
-    print("+", " ".join(command), flush=True)
+    shown = shlex.join([displayed_argument(argument) for argument in command])
+    for line in textwrap.wrap(
+        "+ " + shown,
+        width=80,
+        subsequent_indent="  ",
+        break_long_words=True,
+        break_on_hyphens=False,
+    ) or ["+"]:
+        print(line, flush=True)
     subprocess.run(command, cwd=PROJECT_ROOT, check=True)
 
 
@@ -20,6 +40,29 @@ def replay_public() -> None:
     """Verify only records stored under examples/public/."""
     run([sys.executable, str(CODE_ROOT / "public" / "verify_catalogue.py")])
 
+
+
+
+def derive_public_guvj() -> None:
+    """Recompute every distinct canonical public Laurent model."""
+    output_root = PROJECT_ROOT / "results" / "public" / "canonical"
+    output_root.mkdir(parents=True, exist_ok=True)
+    models = (
+        ("A295870", "A295870.json"),
+        ("public:1", "catalogue-model-1.json"),
+        ("A303790", "A303790.json"),
+        ("public:3", "catalogue-model-3.json"),
+        ("public:9", "catalogue-model-9.json"),
+    )
+    for model, filename in models:
+        run([
+            sys.executable,
+            str(CODE_ROOT / "example.py"),
+            "certify",
+            model,
+            "--output",
+            str(output_root / filename),
+        ])
 
 def replay_private(data_root: Path) -> None:
     """Verify a G,U,V,J dataset under the explicitly selected data root."""
@@ -51,20 +94,20 @@ def main() -> None:
     parser.add_argument(
         "--derive-guvj",
         action="store_true",
-        help="re-solve the selected G,U,V,J records after replaying them",
+        help="re-solve canonical G,U,V,J records after replay",
     )
     args = parser.parse_args()
 
     if args.scope in {"public", "all"}:
         replay_public()
+        if args.derive_guvj:
+            derive_public_guvj()
     if args.scope in {"private", "all"}:
         if args.data_root is None:
             parser.error("--data-root is required for private or all scope")
         replay_private(args.data_root)
         if args.derive_guvj:
             derive_private_guvj(args.data_root)
-    elif args.derive_guvj:
-        parser.error("--derive-guvj applies only when a G,U,V,J data root is selected")
 
 
 if __name__ == "__main__":

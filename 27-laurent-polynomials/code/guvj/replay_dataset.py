@@ -11,6 +11,7 @@ from pathlib import Path
 
 CODE_ROOT = Path(__file__).resolve().parent
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+SCRATCH_ROOT = PROJECT_ROOT / ".tmp"
 
 
 def read_json(path: Path):
@@ -33,7 +34,10 @@ def main() -> None:
 
     models = read_json(data_root / "models.json")["models"]
     results = []
-    with tempfile.TemporaryDirectory(prefix="guvj-replay-") as temporary:
+    SCRATCH_ROOT.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(
+        prefix="guvj-replay-", dir=SCRATCH_ROOT
+    ) as temporary:
         temporary_root = Path(temporary)
         for index, model in enumerate(models, start=1):
             name = model["model"]

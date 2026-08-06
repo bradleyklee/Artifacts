@@ -26,6 +26,15 @@ from sympy.polys.modulargcd import _integer_rational_reconstruction
 x, y, t, theta, n = sp.symbols("x y t theta n")
 Point = Tuple[int, int]
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+SCRATCH_ROOT = PROJECT_ROOT / ".tmp"
+
+
+def scratch_root() -> Path:
+    """Return the project-local scratch root; never use system /tmp."""
+    SCRATCH_ROOT.mkdir(parents=True, exist_ok=True)
+    return SCRATCH_ROOT
+
 
 def cancel(expr: sp.Expr) -> sp.Expr:
     return sp.cancel(sp.sympify(expr))
@@ -1789,7 +1798,9 @@ result = solver.reconstruct_gaussian_from_samples(*arguments)
 with open(sys.argv[3], 'wb') as stream:
     pickle.dump(result, stream, protocol=pickle.HIGHEST_PROTOCOL)
 """
-    with tempfile.TemporaryDirectory(prefix="guvj_gaussian_") as directory:
+    with tempfile.TemporaryDirectory(
+        prefix="guvj_gaussian_", dir=scratch_root()
+    ) as directory:
         input_path = os.path.join(directory, "input.pkl")
         output_path = os.path.join(directory, "output.pkl")
         with open(input_path, "wb") as stream:

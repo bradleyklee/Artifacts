@@ -160,11 +160,60 @@ def wrapped(label: str, value: Any, indent: int = 2) -> None:
         print(continuation + line)
 
 
+
+
+def operator_lines(operator: Any) -> list[str]:
+    """Format an operator by powers of t with factored theta coefficients."""
+    expression = sp.expand(sp.sympify(operator))
+    polynomial = sp.Poly(expression, sp.Symbol("t"))
+    variable = sp.Symbol("t")
+    lines: list[str] = []
+    for power in range(polynomial.degree() + 1):
+        coefficient = sp.factor(polynomial.coeff_monomial(variable**power))
+        if coefficient == 0:
+            continue
+        negative = coefficient.could_extract_minus_sign()
+        body = -coefficient if negative else coefficient
+        body_text = str(body)
+        if power == 0:
+            term_text = body_text
+        else:
+            t_text = "t" if power == 1 else f"t**{power}"
+            numeric, remainder = body.as_coeff_Mul()
+            factors: list[str] = []
+            if numeric != 1:
+                factors.append(str(numeric))
+            factors.append(t_text)
+            if remainder != 1:
+                remainder_text = str(remainder)
+                if isinstance(remainder, sp.Add):
+                    remainder_text = f"({remainder_text})"
+                factors.append(remainder_text)
+            term_text = "*".join(factors)
+        if not lines:
+            lines.append(("- " if negative else "") + term_text)
+        else:
+            lines.append(("- " if negative else "+ ") + term_text)
+    return lines or ["0"]
+
+
+def print_operator(operator: Any) -> None:
+    print("  operator:")
+    for line in operator_lines(operator):
+        pieces = textwrap.wrap(
+            line,
+            width=WIDTH - 4,
+            break_long_words=False,
+            break_on_hyphens=False,
+        ) or [""]
+        for piece in pieces:
+            print("    " + piece)
+
 def print_certificate_summary(record: dict[str, Any], output: Path) -> None:
     stats = record["operator_stats"]
     certificate = record["certificate"]
     print("Certificate complete")
-    wrapped("operator", record["operator"])
+    print_operator(record["operator"])
     wrapped("order", stats["order"])
     wrapped("shift degree", stats["shift_degree"])
     if "dilation" in certificate:
@@ -177,7 +226,10 @@ def print_certificate_summary(record: dict[str, Any], output: Path) -> None:
     wrapped("linear solver", certificate.get("linear_solver", "unknown"))
     wrapped("output", output)
     print("  checks:")
-    method_flags = {"operator_from_joint_exact_identity"}
+    method_flags = {
+        "operator_from_joint_exact_identity",
+        "operator_from_finite_term_fit",
+    }
     for name, passed in record["checks"].items():
         if name in method_flags:
             value = "used" if passed else "not used"
