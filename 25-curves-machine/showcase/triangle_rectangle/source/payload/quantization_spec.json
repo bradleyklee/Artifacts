@@ -1,0 +1,22 @@
+{
+  "schema": "period-figure-tangent-matched-action-quantization/1.2",
+  "normalization": "alpha=2H in [0,1], p_new=2*p_old, q_new=2*q_old",
+  "level_count": 11,
+  "index_range": "n=0,...,L-1",
+  "fraction": "f_n=(n+1/2)/L",
+  "action_definition": "I_real(alpha)=Area(C_alpha^real)/(2*pi)",
+  "real_branch": {
+    "centers": ["(p,q)=(0,0)", "(p,q)=(0,-4)"],
+    "energy_interval": "0<alpha<1",
+    "separatrix": "alpha=1",
+    "rule": "invert normalized real action at f_n"
+  },
+  "abel_wick_matching": {
+    "substitution": "p=iU",
+    "center": "(U,q)=(0,-2)",
+    "energy_rule": "alpha_wick=alpha_real",
+    "tangency": "at p=U=0 the real and Wick curves share turning points and tangent lines"
+  },
+  "generator": "generate_quantized_levels.py",
+  "checked_table": "quantized_levels_for_figure.csv"
+}

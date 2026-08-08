@@ -1,0 +1,431 @@
+PROOF OF RAMANUJAN'S E4 ~ K^4 IDENTITY
+Triangle-Rectangle certificate, page 2
+Plain-text working draft
+
+STATUS
+
+This is an editable proof-flow document, not final certificate prose.
+The goal is to make every change of curve, period, and parameter explicit before
+we compress the argument back onto one certificate page.
+
+
+0. WHAT PAGE 2 SHOULD PROVE
+
+The endpoint is the identity
+
+  E4(tau) = (2 K(k) / pi)^4 * (1 - k^2 k'^2),
+
+where
+
+  k'^2 = 1 - k^2,
+  tau = i K(k') / K(k).
+
+Ramanujan uses the nome
+
+  q_R = exp(-pi K(k') / K(k)) = exp(pi i tau).
+
+The standard Eisenstein-series nome is
+
+  Q = q_R^2 = exp(2 pi i tau),
+
+so
+
+  E4(tau) = 1 + 240 * sum_{n >= 1} n^3 Q^n / (1 - Q^n).
+
+The page must not assume the E4-K^4 identity.  It should derive it from the
+period of the selected plane curve, together with one independently proved
+modular-uniformization lemma.
+
+
+1. THE GENERAL RECTANGLE-TRIANGLE FAMILY
+
+Start with the two-coefficient harmonic family
+
+  2 H_{c1,c2}(p,q)
+    = p^2 + q^2
+      + c1 * (q^3 - 3 p^2 q)
+      + c2 * (q^2 - 3 p^2)^2.
+
+The cubic harmonic is the triangle term.  The quartic harmonic is the
+rectangle/square term.
+
+When c1 is nonzero, scale coordinates and energy so that c1 = 1.  The remaining
+dimensionless parameter is
+
+  mu = c2 / c1^2.
+
+The normalized one-parameter family is therefore
+
+  2 H_mu(p,q)
+    = p^2 + q^2
+      + (q^3 - 3 p^2 q)
+      + mu * (q^2 - 3 p^2)^2.
+
+This family must be stated before specializing to mu = 1/4.  Otherwise the
+reader cannot see what has been specialized or why.
+
+
+2. WHY CHOOSE mu = 1/4?
+
+For the normalized family, direct substitution gives
+
+  H_mu(p,-2-q) - H_mu(p,q)
+    = -(4 mu - 1) * (q + 1) * (3 p^2 - q^2 - 2 q - 2).
+
+If the formula is written for 2 H_mu rather than H_mu, the right side is twice
+this expression.
+
+Therefore mu = 1/4 is the unique member invariant under
+
+  q -> -2 - q.
+
+The shift
+
+  x = q + 1
+
+centers the reflection at x = 0.  This is the geometric reason the normalized
+elliptic model becomes an even quartic.  It is also why mu = 1/4 is much easier
+than generic mu: the branch geometry descends through x -> -x.
+
+Proof-flow point:
+
+  The special value mu = 1/4 is selected by symmetry before any modular
+  identity is invoked.
+
+
+3. BIRATIONAL NORMALIZATION OF THE PLANE CURVE
+
+For mu = 1/4, set
+
+  u = q - sqrt(3) p,
+  v = q + sqrt(3) p,
+  x = u + 1.
+
+Define
+
+  A(u) = u^2/4 + u/2 + 1/3,
+  B(u) = u^2/2 + u/3,
+  y = 2 A(u) v + B(u).
+
+Then the energy curve 2 H = alpha becomes
+
+  12 y^2 = -x^4 + (2 + 12 alpha) x^2 + 4 alpha - 1,
+
+and the period differential becomes
+
+  omega = dx / (sqrt(3) y).
+
+The inverse map is explicit:
+
+  u = x - 1,
+  v = (y - B(u)) / (2 A(u)),
+  q = (u + v) / 2,
+  p = (v - u) / (2 sqrt(3)).
+
+Thus this step is birational over Q(sqrt(3), alpha).
+
+Recommended language:
+
+  "birational normalization to an even quartic"
+
+Do not call every later rescaling rational.  Standard Jacobi and Legendre
+normalizations require chosen square roots of branch-point expressions.
+
+The quartic discriminant is
+
+  Disc_x[-x^4 + (2 + 12 alpha) x^2 + 4 alpha - 1]
+    = -4096 alpha^2 (4 alpha - 1) (9 alpha + 4)^2.
+
+Therefore the finite singular fibers are
+
+  alpha = 0,
+  alpha = 1/4,
+  alpha = -4/9.
+
+The zero alpha = 2/3 in the page-1 self-adjoint operator is apparent.  It is
+not a collision of elliptic branch points.
+
+
+4. THE SIGNATURE-4 PERIOD: PARAMETERS [1/4, 3/4; 1]
+
+Set
+
+  A0 = 1 + 6 alpha,
+  d  = sqrt(1 - 4 alpha).
+
+Define the rational signature-4 coordinate
+
+  z4(alpha)
+    = 1 - d^2 / A0^2
+    = 4 alpha (4 + 9 alpha) / (1 + 6 alpha)^2.
+
+After scaling x by a fourth root of 1 - 4 alpha, the even quartic becomes a
+Jacobi-type reciprocal quartic.  The important point for the certificate is
+that z4 is rational in alpha.
+
+The normalized real period should be written as
+
+  T1(alpha)
+    = (1 + 6 alpha)^(-1/2)
+      * F(1/4, 3/4; 1; z4(alpha)),
+
+where F(a,b;c;z) denotes the Gauss hypergeometric function.
+
+This is the requested [1/4, 3/4; 1] period form.
+
+A compact exact proof can proceed by differential equations:
+
+  1. Start from the Gauss equation for F(1/4,3/4;1;z4).
+  2. Pull it back through z4 = z4(alpha).
+  3. Include the prefactor (1 + 6 alpha)^(-1/2).
+  4. Verify that the result is the page-1 Picard-Fuchs operator.
+  5. Use T1(0) = 1 to select the correct local solution.
+
+This avoids hiding an algebraic fourth-root scaling under the phrase
+"rational Jacobi transform."
+
+
+5. FROM THE EVEN QUARTIC TO LEGENDRE FORM
+
+For 0 < alpha < 1/4, define
+
+  R_plus  = 1 + 6 alpha + 2 sqrt(alpha (4 + 9 alpha)),
+  R_minus = 1 + 6 alpha - 2 sqrt(alpha (4 + 9 alpha)),
+  a = sqrt(R_plus),
+  b = sqrt(R_minus),
+  k = (a - b) / (a + b),
+  m = k^2.
+
+Then
+
+  12 y^2 = (a^2 - x^2) (x^2 - b^2),
+
+and
+
+  m(alpha)
+    = (1 + 6 alpha - sqrt(1 - 4 alpha))
+      / (1 + 6 alpha + sqrt(1 - 4 alpha)).
+
+The signature-4 and Legendre parameters satisfy
+
+  z4 = 4 m / (1 + m)^2,
+
+and, on the branch with m(0) = 0,
+
+  m = (1 - sqrt(1 - z4)) / (1 + sqrt(1 - z4)).
+
+Use the birational change
+
+  U = k (x + b) / (x - b),
+
+  V = sqrt(3) (U - k)^2 y / (b (a - b)).
+
+This gives the Legendre curve
+
+  V^2 = U (U - 1) (U - m),
+
+and transforms the differential to
+
+  omega = -2/(a + b) * dU/V.
+
+Therefore
+
+  F(1/2, 1/2; 1; m) = 2 K(k) / pi,
+
+and
+
+  T1(alpha)
+    = 2/(a + b) * F(1/2,1/2;1;m)
+    = 4 K(k) / (pi (a + b)).
+
+The quadratic hypergeometric transformation is
+
+  F(1/4,3/4;1; 4m/(1+m)^2)
+    = sqrt(1 + m) * F(1/2,1/2;1;m).
+
+Together with
+
+  (a + b)^2 (1 + m) = 4 (1 + 6 alpha),
+
+this proves that the signature-4 and Legendre formulas are the same period.
+
+
+6. WALK THE ENERGY PARAMETER THROUGH THE WHOLE CHAIN
+
+The page should display the parameter chain explicitly:
+
+  alpha
+    -> z4(alpha) = 4 alpha (4 + 9 alpha) / (1 + 6 alpha)^2
+    -> m(alpha)  = (1 - sqrt(1 - z4)) / (1 + sqrt(1 - z4))
+    -> X = 1728/j.
+
+For the Legendre parameter m,
+
+  X(m)
+    = 27 m^2 (1 - m)^2
+      / (4 (1 - m + m^2)^3).
+
+Eliminating m gives the rational cubic map
+
+  X(z4)
+    = 27 z4^2 (1 - z4) / (4 - 3 z4)^3.
+
+Substituting z4(alpha) gives
+
+  X(alpha) = chi(alpha)
+    = -27 alpha^2 (4 alpha - 1) (9 alpha + 4)^2
+      / (4 (1 + 9 alpha^2)^3).
+
+The second hypergeometric transformation is
+
+  F(1/12,5/12;1; X(z4))
+    = (1 - 3 z4/4)^(1/4) * F(1/4,3/4;1;z4),
+
+with both sides normalized to 1 at z4 = 0.
+
+Since
+
+  1 - 3 z4/4
+    = (1 + 9 alpha^2) / (1 + 6 alpha)^2,
+
+all three period forms become one equivalence:
+
+  T1(alpha)
+    = (1 + 6 alpha)^(-1/2)
+      * F(1/4,3/4;1;z4(alpha))
+
+    = 2/(a + b)
+      * F(1/2,1/2;1;m(alpha))
+
+    = (1 + 9 alpha^2)^(-1/4)
+      * F(1/12,5/12;1;X(alpha)).
+
+This should be the central display on page 2.
+
+
+7. THE MODULAR LEMMA AND THE NON-CIRCULAR ENDPOINT
+
+The remaining modular lemma is
+
+  F(1/12,5/12;1; 1728/j(tau)) = E4(tau)^(1/4),
+
+with the branch normalized to 1 at the cusp tau = i infinity.
+
+To avoid circular reasoning, prove this independently by showing that, as a
+function of X = 1728/j, the function G(X) = E4(tau)^(1/4) satisfies
+
+  X(1 - X) G'' + (1 - 3X/2) G' - 5G/144 = 0,
+
+and has the local normalization
+
+  G(0) = 1.
+
+This can be derived from the Ramanujan differential system for E2, E4, and E6,
+together with the definition of j.  It can also be checked by an exact
+modular-form calculation plus uniqueness of the normalized local solution.
+
+It must not be derived by first assuming the target E4-K^4 formula.
+
+Now use the algebraic identity
+
+  (a + b)^4 (1 - m + m^2) = 16 (1 + 9 alpha^2).
+
+The period equivalence and modular lemma give
+
+  E4(tau)^(1/4)
+    = (1 + 9 alpha^2)^(1/4) T1(alpha)
+    = (1 + 9 alpha^2)^(1/4) * 4 K(k)/(pi (a + b)).
+
+Raise both sides to the fourth power:
+
+  E4(tau)
+    = (2 K(k)/pi)^4 * (1 - m + m^2).
+
+Since m = k^2 and k'^2 = 1 - k^2,
+
+  1 - m + m^2
+    = 1 - k^2 + k^4
+    = 1 - k^2 k'^2.
+
+Therefore
+
+  E4(tau) = (2 K(k)/pi)^4 * (1 - k^2 k'^2).
+
+
+8. IS THIS RAMANUJAN'S ASSUMED IDENTITY?
+
+The final equality is the identity Ramanujan records in section 9 of
+"Modular equations and approximations to pi."
+
+However, the entire curve-period chain is not itself Ramanujan's identity.
+It becomes a proof only after the modular lemma
+
+  F(1/12,5/12;1;1728/j) = E4^(1/4)
+
+has been proved independently.
+
+If that lemma is justified by first assuming the E4-K^4 formula, the argument
+is circular.
+
+Recommended summary sentence:
+
+  The plane curve forces one period through the signature-4, Legendre, and
+  modular hypergeometric coordinates.  An independent modular differential-
+  equation calculation identifies the final normalized solution with
+  E4^(1/4).  The resulting fourth-power equality is Ramanujan's recorded
+  E4-K^4 identity.
+
+
+9. PROPOSED FINAL PAGE-2 FLOW
+
+Stage 1. Family and special value
+
+  Introduce (c1,c2), reduce to mu = c2/c1^2, and prove that mu = 1/4 is the
+  unique reflection-symmetric value.
+
+Stage 2. Plane curve to even quartic
+
+  Give the birational map, transformed differential, and quartic discriminant.
+
+Stage 3. Hypergeometric ladder
+
+  Display alpha -> z4 -> m -> X, together with the [1/4,3/4], [1/2,1/2],
+  and [1/12,5/12] period forms.
+
+Stage 4. Modular lemma
+
+  State exactly how E4^(1/4) is identified without assuming the target identity.
+
+Stage 5. Conclusion
+
+  Use the algebraic prefactor identity to obtain Ramanujan's formula.
+
+The branch-point details and the apparent-singularity remark can remain, but
+they should support this chain rather than interrupt it.
+
+
+10. OPEN DECISIONS BEFORE TYPESETTING PAGE 2
+
+1. Show the full two-parameter family (c1,c2), or describe it in one sentence
+   before writing mu = c2/c1^2?
+
+2. Use "Jacobi form" for the even reciprocal quartic, or display a separately
+   scaled standard Jacobi quartic?  The first choice is cleaner and avoids
+   pretending the fourth-root scaling is rational over Q(alpha).
+
+3. Prove the [1/4,3/4] formula by direct integral substitution or by exact
+   pullback of the Gauss equation?  The ODE pullback is shorter and easier to
+   audit.
+
+4. How much of the modular differential-equation proof fits on the page?  At
+   minimum, state the differential equation and cusp normalization.  Put the
+   full symbolic derivation in the embedded payload.
+
+5. Keep the plane coordinate q, Ramanujan's nome q_R, and the standard modular
+   nome Q visibly distinct.
+
+
+REFERENCE
+
+S. Ramanujan, "Modular equations and approximations to pi," Quarterly Journal
+of Mathematics 45 (1914), 350-372, especially section 9.

@@ -1,0 +1,37 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0010",
+  "slug": "simple_cubic_factor",
+  "display_name": "Simple Cubic-Factor Model",
+  "aliases": [
+    "simple_cubic_factor_exact_reductive"
+  ],
+  "domain": "plane",
+  "status": "exact_certificate",
+  "summary": "Curated exact reductive example imported from the mixed quartic factory corpus.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed exact-record check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py P0010",
+      "cost": "normal"
+    },
+    {
+      "label": "Exact reductive reconstruction",
+      "cwd": "code/plane/search_analyze/quartic_order2_locus",
+      "command": "python3 src/exact_reductive_generic.py models/simple_cubic_factor.json --order 2 --q-bound 5 --output /tmp/P0010_exact_reductive.json",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-001_INDUCTIVE_SERIES_DISCOVERY.md",
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/quartic_order2/simple_cubic_factor_exact_reductive.json"
+  ]
+}

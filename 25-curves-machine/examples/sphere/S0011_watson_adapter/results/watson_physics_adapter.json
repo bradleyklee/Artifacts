@@ -1,0 +1,63 @@
+{
+  "fixed_J_convention": "J^2=L2, p=J_a, transverse ladder J_+=J_b+iJ_c",
+  "quantum_to_classical": "anticommutators replaced by twice the commuting product; this is the principal symbol",
+  "watson_1968": {
+    "rotational_term": "1/2*(Pi-pi)_alpha*mu_alpha_beta*(Pi-pi)_beta",
+    "vibrational_term": "1/2*sum_k P_k^2",
+    "quantum_potential": "-hbar^2/8*sum_alpha mu_alpha_alpha",
+    "ordinary_potential": "V",
+    "classical_scope": "sphere-curve code uses the rotational principal symbol at fixed J^2"
+  },
+  "cases": {
+    "A_through_quartic": {
+      "harmonic_support": [
+        0,
+        2
+      ],
+      "algorithm_class": "DihedralODE",
+      "coefficients": {
+        "0": "A*p**2 + B*L2/2 - B*p**2/2 + C*L2/2 - C*p**2/2 - DeltaJ*L2**2 - DeltaJK*L2*p**2 - DeltaK*p**4",
+        "2": "B*L2/2 - B*p**2/2 - C*L2/2 + C*p**2/2 - 2*L2**2*deltaJ + 2*L2*deltaJ*p**2 - 2*L2*deltaK*p**2 + 2*deltaK*p**4"
+      }
+    },
+    "A_through_sextic": {
+      "harmonic_support": [
+        0,
+        2
+      ],
+      "algorithm_class": "DihedralODE",
+      "coefficients": {
+        "0": "A*p**2 + B*L2/2 - B*p**2/2 + C*L2/2 - C*p**2/2 - DeltaJ*L2**2 - DeltaJK*L2*p**2 - DeltaK*p**4 + HJ*L2**3 + HJK*L2**2*p**2 + HK*p**6 + HKJ*L2*p**4",
+        "2": "B*L2/2 - B*p**2/2 - C*L2/2 + C*p**2/2 + 2*L2**3*phiJ - 2*L2**2*deltaJ - 2*L2**2*p**2*phiJ + 2*L2**2*p**2*phiJK + 2*L2*deltaJ*p**2 - 2*L2*deltaK*p**2 - 2*L2*p**4*phiJK + 2*L2*p**4*phiK + 2*deltaK*p**4 - 2*p**6*phiK"
+      }
+    },
+    "S_through_quartic": {
+      "harmonic_support": [
+        0,
+        2,
+        4
+      ],
+      "algorithm_class": "general implicit-angle reduction",
+      "coefficients": {
+        "0": "A*p**2 + B*L2/2 - B*p**2/2 + C*L2/2 - C*p**2/2 - DeltaJ*L2**2 - DeltaJK*L2*p**2 - DeltaK*p**4",
+        "2": "B*L2/2 - B*p**2/2 - C*L2/2 + C*p**2/2 + 2*L2**2*deltaJ - 2*L2*deltaJ*p**2",
+        "4": "2*L2**2*deltaK - 4*L2*deltaK*p**2 + 2*deltaK*p**4"
+      }
+    },
+    "S_through_sextic": {
+      "harmonic_support": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "algorithm_class": "general implicit-angle reduction",
+      "coefficients": {
+        "0": "A*p**2 + B*L2/2 - B*p**2/2 + C*L2/2 - C*p**2/2 - DeltaJ*L2**2 - DeltaJK*L2*p**2 - DeltaK*p**4 + HJ*L2**3 + HJK*L2**2*p**2 + HK*p**6 + HKJ*L2*p**4",
+        "2": "B*L2/2 - B*p**2/2 - C*L2/2 + C*p**2/2 + 2*L2**3*phiJ + 2*L2**2*deltaJ - 2*L2**2*p**2*phiJ - 2*L2*deltaJ*p**2",
+        "4": "2*L2**3*phiJK + 2*L2**2*deltaK - 4*L2**2*p**2*phiJK - 4*L2*deltaK*p**2 + 2*L2*p**4*phiJK + 2*deltaK*p**4",
+        "6": "2*L2**3*phiK - 6*L2**2*p**2*phiK + 6*L2*p**4*phiK - 2*p**6*phiK"
+      }
+    }
+  }
+}

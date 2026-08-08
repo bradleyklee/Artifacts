@@ -1,0 +1,74 @@
+{
+  "example_id": "mechanical_q_cubic_quartic",
+  "prime": 65497,
+  "alpha": 7,
+  "p_degrees": [
+    0,
+    1
+  ],
+  "records": [
+    {
+      "order": 2,
+      "q_bound": 0,
+      "rows": 12,
+      "exact_columns": 2,
+      "rank_C": 2,
+      "rank_CW": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 1,
+      "rows": 14,
+      "exact_columns": 4,
+      "rank_C": 4,
+      "rank_CW": 7,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 2,
+      "rows": 15,
+      "exact_columns": 6,
+      "rank_C": 6,
+      "rank_CW": 9,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 3,
+      "rows": 16,
+      "exact_columns": 8,
+      "rank_C": 8,
+      "rank_CW": 11,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 4,
+      "rows": 16,
+      "exact_columns": 10,
+      "rank_C": 9,
+      "rank_CW": 12,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 5,
+      "rows": 18,
+      "exact_columns": 12,
+      "rank_C": 11,
+      "rank_CW": 14,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 6,
+      "rows": 19,
+      "exact_columns": 14,
+      "rank_C": 13,
+      "rank_CW": 15,
+      "relation_dimension": 1
+    }
+  ]
+}

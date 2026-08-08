@@ -1,0 +1,9 @@
+OPERATOR_LADDER_400
+order  4, degree 14: 396 exact coefficient equations, zero residual
+order  5, degree 10: 395 exact coefficient equations, zero residual
+order  6, degree  8: 394 exact coefficient equations, zero residual
+order  8, degree  7: 392 exact coefficient equations, zero residual
+order 12, degree  6: 388 exact coefficient equations, zero residual
+DEGREE_LE_5_EXCLUSION_MOD_1000003
+orders 1..56: full column rank; no nonzero operator of degree <= 5
+OPERATOR_LADDER_400_PASS

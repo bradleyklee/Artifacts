@@ -1,0 +1,383 @@
+PROOF OF RAMANUJAN'S E4 ~ K^4 IDENTITY
+Triangle-Rectangle certificate, page 2
+Plain-text working draft, version 2
+
+STATUS
+
+This is an editable proof-flow document, not final certificate prose.
+
+The proof is elementary in structure:
+
+  plane curve
+    -> even quartic
+    -> signature-4 period
+    -> Legendre period
+    -> modular period
+    -> Ramanujan's E4-K^4 identity.
+
+The curve changes are explicit algebraic or birational transforms.
+The parameter changes are checked by exact ODE pullbacks. The final
+page should show this chain without introducing unnecessary notation.
+
+
+0. TARGET
+
+Prove
+
+  E4(tau) = (2 K(k) / pi)^4 * (1 - k^2 k'^2),
+
+where k'^2 = 1 - k^2 and tau is the period ratio of the Legendre curve.
+
+This is the identity recorded by Ramanujan. Historical notation and
+additional references can remain in the embedded payload.
+
+
+1. THE NORMALIZED RECTANGLE-TRIANGLE FAMILY
+
+Start directly with
+
+  2 H_mu(p,q)
+    = p^2 + q^2
+      + (q^3 - 3 p^2 q)
+      + mu * (q^2 - 3 p^2)^2.
+
+The cubic term is the triangle contribution. The quartic term is the
+rectangle contribution. The single parameter mu measures their relative
+strength after normalization.
+
+
+2. WHY mu = 1/4?
+
+Direct substitution gives
+
+  H_mu(p,-2-q) - H_mu(p,q)
+    = -(4 mu - 1)
+      * (q + 1)
+      * (3 p^2 - q^2 - 2 q - 2).
+
+Therefore mu = 1/4 is the unique member invariant under
+
+  q -> -2 - q.
+
+The shift
+
+  x = q + 1
+
+centers this reflection at x = 0.
+
+The fixed point
+
+  (p,q) = (0,-1)
+
+is the hyperbolic saddle between the two wells. It lies on the critical
+energy
+
+  alpha = 2H = 1/4.
+
+
+3. PLANE CURVE TO EVEN QUARTIC
+
+Set mu = 1/4 and write
+
+  2H = alpha.
+
+Use
+
+  u = q - sqrt(3) p,
+  v = q + sqrt(3) p,
+  x = u + 1,
+
+together with
+
+  A(u) = u^2/4 + u/2 + 1/3,
+  B(u) = u^2/2 + u/3,
+  y = 2 A(u) v + B(u).
+
+Then the energy curve becomes
+
+  12 y^2
+    = -x^4 + (2 + 12 alpha) x^2 + 4 alpha - 1,
+
+and the period differential becomes
+
+  omega = dx / (sqrt(3) y).
+
+The inverse map is
+
+  u = x - 1,
+  v = (y - B(u)) / (2 A(u)),
+  q = (u + v) / 2,
+  p = (v - u) / (2 sqrt(3)).
+
+Thus the original energy curve and the even quartic have the same period.
+
+
+4. SIGNATURE-4 PERIOD
+
+Set
+
+  A0 = 1 + 6 alpha,
+  d  = sqrt(1 - 4 alpha),
+
+and define
+
+  z4(alpha)
+    = 1 - d^2/A0^2
+    = 4 alpha (4 + 9 alpha) / (1 + 6 alpha)^2.
+
+The even quartic can be scaled to a reciprocal Jacobi-type quartic.
+The useful point is that its period parameter z4 is rational in alpha.
+
+The normalized period is
+
+  T1(alpha)
+    = (1 + 6 alpha)^(-1/2)
+      * F(1/4,3/4;1;z4(alpha)).
+
+Here F(a,b;c;z) is the Gauss hypergeometric function.
+
+This formula is checked by one ODE pullback:
+
+  1. take the Gauss equation for F(1/4,3/4;1;z);
+  2. substitute z = z4(alpha);
+  3. include the factor (1 + 6 alpha)^(-1/2);
+  4. recover the page-1 Picard-Fuchs equation;
+  5. use T1(0) = 1 to select the period branch.
+
+
+5. EVEN QUARTIC TO LEGENDRE FORM
+
+For 0 < alpha < 1/4, define
+
+  R_plus  = 1 + 6 alpha + 2 sqrt(alpha (4 + 9 alpha)),
+  R_minus = 1 + 6 alpha - 2 sqrt(alpha (4 + 9 alpha)),
+
+  a = sqrt(R_plus),
+  b = sqrt(R_minus),
+
+  k = (a - b) / (a + b),
+  m = k^2.
+
+Then
+
+  12 y^2 = (a^2 - x^2)(x^2 - b^2),
+
+and
+
+  m(alpha)
+    = (1 + 6 alpha - sqrt(1 - 4 alpha))
+      / (1 + 6 alpha + sqrt(1 - 4 alpha)).
+
+Use the birational change
+
+  U = k (x + b) / (x - b),
+
+  V = sqrt(3) (U - k)^2 y
+      / (b (a - b)).
+
+It gives
+
+  V^2 = U(U - 1)(U - m),
+
+and
+
+  omega = -2/(a + b) * dU/V.
+
+Therefore
+
+  F(1/2,1/2;1;m) = 2 K(k)/pi,
+
+and
+
+  T1(alpha)
+    = 2/(a + b) * F(1/2,1/2;1;m)
+    = 4 K(k) / (pi (a + b)).
+
+The two period parameters satisfy
+
+  z4 = 4m/(1 + m)^2,
+
+or, on the branch m(0) = 0,
+
+  m = (1 - sqrt(1 - z4))
+      / (1 + sqrt(1 - z4)).
+
+The corresponding quadratic pullback is
+
+  F(1/4,3/4;1;4m/(1+m)^2)
+    = sqrt(1+m) * F(1/2,1/2;1;m).
+
+Together with
+
+  (a + b)^2 (1 + m) = 4(1 + 6 alpha),
+
+this proves that the signature-4 and Legendre formulas are the same
+period.
+
+
+6. WALK THE ENERGY PARAMETER TO THE MODULAR FORM
+
+The whole parameter chain is
+
+  alpha
+    -> z4(alpha)
+    -> m(alpha)
+    -> X(alpha) = 1728/j.
+
+For the Legendre parameter,
+
+  X(m)
+    = 27 m^2 (1 - m)^2
+      / (4 (1 - m + m^2)^3).
+
+Eliminating m gives
+
+  X(z4)
+    = 27 z4^2 (1 - z4)
+      / (4 - 3 z4)^3.
+
+Substituting z4(alpha) gives
+
+  X(alpha)
+    = -27 alpha^2 (4 alpha - 1) (9 alpha + 4)^2
+      / (4 (1 + 9 alpha^2)^3).
+
+The next ODE pullback is
+
+  F(1/12,5/12;1;X(z4))
+    = (1 - 3 z4/4)^(1/4)
+      * F(1/4,3/4;1;z4),
+
+with both sides equal to 1 at z4 = 0.
+
+Since
+
+  1 - 3 z4/4
+    = (1 + 9 alpha^2)/(1 + 6 alpha)^2,
+
+the same period has the three forms
+
+  T1(alpha)
+    = (1 + 6 alpha)^(-1/2)
+      * F(1/4,3/4;1;z4(alpha))
+
+    = 2/(a + b)
+      * F(1/2,1/2;1;m(alpha))
+
+    = (1 + 9 alpha^2)^(-1/4)
+      * F(1/12,5/12;1;X(alpha)).
+
+This is the central display for page 2.
+
+
+7. FINAL ODE PULLBACK TO E4
+
+As a function of
+
+  X = 1728/j(tau),
+
+the normalized function
+
+  G(X) = E4(tau)^(1/4)
+
+satisfies
+
+  X(1-X) G''
+    + (1 - 3X/2) G'
+    - 5G/144
+    = 0,
+
+with
+
+  G(0) = 1.
+
+Therefore
+
+  F(1/12,5/12;1;1728/j(tau))
+    = E4(tau)^(1/4).
+
+This is the final ODE identification. It does not assume the target
+E4-K^4 identity.
+
+
+8. CONCLUSION
+
+From the common period,
+
+  E4(tau)^(1/4)
+    = (1 + 9 alpha^2)^(1/4)
+      * 4 K(k)/(pi (a + b)).
+
+Also,
+
+  (a + b)^4 (1 - m + m^2)
+    = 16(1 + 9 alpha^2).
+
+Raise the period identity to the fourth power:
+
+  E4(tau)
+    = (2 K(k)/pi)^4
+      * (1 - m + m^2).
+
+Since
+
+  m = k^2,
+  k'^2 = 1 - k^2,
+
+we have
+
+  1 - m + m^2
+    = 1 - k^2 + k^4
+    = 1 - k^2 k'^2.
+
+Hence
+
+  E4(tau)
+    = (2 K(k)/pi)^4
+      * (1 - k^2 k'^2).
+
+This is Ramanujan's recorded E4-K^4 identity.
+
+
+9. FINAL PAGE-2 LAYOUT
+
+Block 1: Special Hamiltonian
+
+  State H_mu and show that mu = 1/4 is the unique reflection-symmetric
+  member. Mention that q = -1 is the saddle between the wells.
+
+Block 2: Birational quartic
+
+  Give the map to
+
+    12 y^2
+      = -x^4 + (2 + 12 alpha)x^2 + 4 alpha - 1,
+
+  and state the transformed differential.
+
+Block 3: One period, three coordinates
+
+  Display
+
+    alpha -> z4 -> m -> X
+
+  and the three equal hypergeometric period forms.
+
+Block 4: Final ODE identification
+
+  State the X-equation for E4^(1/4), the normalization at X = 0, and
+  conclude that it equals F(1/12,5/12;1;X).
+
+Block 5: Ramanujan identity
+
+  Use the one algebraic prefactor identity and take fourth powers.
+
+Detailed branch choices, symbolic residuals, historical notation, and
+expanded ODE pullback checks belong in the embedded payload.
+
+
+REFERENCE
+
+S. Ramanujan,
+"Modular equations and approximations to pi,"
+Quarterly Journal of Mathematics 45 (1914), 350-372.

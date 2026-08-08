@@ -1,0 +1,29 @@
+{
+  "model": "icosahedral",
+  "degree_in_J": 6,
+  "source_formula": "Harter-Weeks sixth-rank rotational-energy surface, fivefold axis",
+  "energy_convention": "alpha=(16*H_HarterWeeks+5)/21; H(north pole)=1; saddle=0; threefold=-5/27",
+  "hamiltonian_cartesian": "2*Jx**5*Jz + 5*Jx**4*Jz**2 - 20*Jx**3*Jy**2*Jz + 10*Jx**2*Jy**2*Jz**2 - 5*Jx**2*Jz**4 + 10*Jx*Jy**4*Jz + 5*Jy**4*Jz**2 - 5*Jy**2*Jz**4 + Jz**6",
+  "h1_lambda": "11*lambda**6 - 15*lambda**4 + 5*lambda**2",
+  "h2_lambda": "2*lambda*(1 - lambda**2)**(5/2)",
+  "angular_form": "H=h1(lambda)+h2(lambda)*cos(5*phi)",
+  "eliminated_P": "-25*alpha**2 + 550*alpha*x**6 - 750*alpha*x**4 + 250*alpha*x**2 - 3125*x**12 + 8750*x**10 - 9375*x**8 + 4750*x**6 - 1125*x**4 + 100*x**2",
+  "eliminated_P_degree": 12,
+  "tested_max_order": 2,
+  "seconds": 1.1948534890000246,
+  "status": "exact_closed",
+  "actual_operator_order": 2,
+  "operator_low_to_high": [
+    "25 - 105*alpha",
+    "-324*alpha**2 + 176*alpha + 20",
+    "4*alpha*(1 - alpha)*(27*alpha + 5)"
+  ],
+  "raw_common_ratio_to_chapter4": "-1",
+  "reduced_matrix_shape": [
+    11,
+    3
+  ],
+  "primitive": "x*(450*alpha**3 - 4950*alpha**2*x**6 + 4500*alpha**2*x**4 + 250*alpha**2*x**2 - 750*alpha**2 + 26250*alpha*x**10 - 68250*alpha*x**8 + 69800*alpha*x**6 - 34500*alpha*x**4 + 7750*alpha*x**2 + 21*alpha*z**2 - 500*alpha - 6250*x**10 + 16250*x**8 - 15250*x**6 + 6000*x**4 - 800*x**2 - 5*z**2)/(4*z**3)",
+  "primitive_chars": 296,
+  "exact_residual": "0"
+}

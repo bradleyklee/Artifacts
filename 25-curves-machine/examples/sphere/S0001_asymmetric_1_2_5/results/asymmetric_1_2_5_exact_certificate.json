@@ -1,0 +1,26 @@
+{
+  "model": "H=X+2Y+5Z on X+Y+Z=1",
+  "chart": {"u": "Jz^2", "v": "cos(phi)^2", "y_relation": "y^2=u*v*(1-v)"},
+  "energy_convention": "alpha=H",
+  "fiber": "-alpha+u*v+3*u-v+2",
+  "period_differential": "-dv/(4*y*(v+3))",
+  "search": {
+    "order": 2,
+    "operator_alpha_degree": 3,
+    "primitive_u_degree": 0,
+    "primitive_v_degree": 6,
+    "primitive_alpha_degree": 3,
+    "matrix_shape": [50, 40],
+    "nullity": 1
+  },
+  "operator_coefficients_low_to_high": [
+    "2*(3*alpha-8)",
+    "8*(3*alpha^2-16*alpha+17)",
+    "8*(alpha-5)*(alpha-2)*(alpha-1)"
+  ],
+  "dissertation_operator_common_scale": "-2",
+  "primitive": "v^2*(v-1)^2/(y^3*(v+3))",
+  "exact_quotient_residual": "0",
+  "status": "exact reconstructed certificate"
+}
+

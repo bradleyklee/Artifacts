@@ -1,0 +1,704 @@
+[start] shard=08/10 jobs=273 limit=30s
+[1/273] id=3618 tag=d202931380 start width=8
+[1/273] id=3618 tag=d202931380 running elapsed=10s limit=30s
+[1/273] id=3618 tag=d202931380 running elapsed=20s limit=30s
+[1/273] id=3618 tag=d202931380 running elapsed=30s limit=30s
+[1/273] id=3618 tag=d202931380 done status=timeout L=- sec=30.03
+[2/273] id=3628 tag=794da021a2 start width=8
+[2/273] id=3628 tag=794da021a2 running elapsed=10s limit=30s
+[2/273] id=3628 tag=794da021a2 running elapsed=20s limit=30s
+[2/273] id=3628 tag=794da021a2 running elapsed=30s limit=30s
+[2/273] id=3628 tag=794da021a2 done status=timeout L=- sec=30.05
+[3/273] id=4088 tag=78160667a7 start width=8
+[3/273] id=4088 tag=78160667a7 done status=optimal L=46 sec=7.73
+[4/273] id=4098 tag=a5eb57a99c start width=8
+[4/273] id=4098 tag=a5eb57a99c done status=optimal L=46 sec=9.84
+[5/273] id=4288 tag=1a6463631d start width=8
+[5/273] id=4288 tag=1a6463631d running elapsed=10s limit=30s
+[5/273] id=4288 tag=1a6463631d done status=optimal L=36 sec=14.41
+[6/273] id=4318 tag=b182e866da start width=8
+[6/273] id=4318 tag=b182e866da done status=optimal L=20 sec=2.75
+[7/273] id=4348 tag=9d041d8ecd start width=8
+[7/273] id=4348 tag=9d041d8ecd done status=infeasible L=- sec=5.47
+[8/273] id=4358 tag=e950a8c077 start width=8
+[8/273] id=4358 tag=e950a8c077 running elapsed=10s limit=30s
+[8/273] id=4358 tag=e950a8c077 done status=infeasible L=- sec=10.82
+[9/273] id=4418 tag=33c19d4b94 start width=8
+[9/273] id=4418 tag=33c19d4b94 done status=infeasible L=- sec=0.03
+[10/273] id=4438 tag=30cf38a3b1 start width=8
+[10/273] id=4438 tag=30cf38a3b1 done status=infeasible L=- sec=0.08
+[11/273] id=4448 tag=7cb6334224 start width=8
+[11/273] id=4448 tag=7cb6334224 done status=infeasible L=- sec=0.04
+[12/273] id=4468 tag=e53282152d start width=8
+[12/273] id=4468 tag=e53282152d done status=infeasible L=- sec=0.09
+[13/273] id=4498 tag=b11a70ce02 start width=8
+[13/273] id=4498 tag=b11a70ce02 done status=optimal L=24 sec=2.03
+[14/273] id=4588 tag=b9cbe104b0 start width=8
+[14/273] id=4588 tag=b9cbe104b0 done status=optimal L=36 sec=9.15
+[15/273] id=4688 tag=e4d3a65f1d start width=8
+[15/273] id=4688 tag=e4d3a65f1d done status=optimal L=48 sec=7.43
+[16/273] id=4698 tag=005b709fca start width=8
+[16/273] id=4698 tag=005b709fca running elapsed=10s limit=30s
+[16/273] id=4698 tag=005b709fca done status=optimal L=48 sec=13.54
+[17/273] id=4758 tag=84ece1d618 start width=8
+[17/273] id=4758 tag=84ece1d618 done status=infeasible L=- sec=0.03
+[18/273] id=4778 tag=12cc8e374b start width=8
+[18/273] id=4778 tag=12cc8e374b done status=infeasible L=- sec=0.07
+[19/273] id=4888 tag=a744cadb2a start width=8
+[19/273] id=4888 tag=a744cadb2a done status=optimal L=32 sec=8.90
+[20/273] id=4918 tag=ea789517f1 start width=8
+[20/273] id=4918 tag=ea789517f1 running elapsed=10s limit=30s
+[20/273] id=4918 tag=ea789517f1 done status=optimal L=28 sec=14.01
+[21/273] id=4978 tag=c6708d66a7 start width=8
+[21/273] id=4978 tag=c6708d66a7 done status=infeasible L=- sec=0.07
+[22/273] id=5018 tag=73c390549b start width=8
+[22/273] id=5018 tag=73c390549b done status=infeasible L=- sec=0.03
+[23/273] id=5038 tag=48cac5a238 start width=8
+[23/273] id=5038 tag=48cac5a238 done status=infeasible L=- sec=0.07
+[24/273] id=5048 tag=283edd3071 start width=8
+[24/273] id=5048 tag=283edd3071 done status=infeasible L=- sec=0.03
+[25/273] id=5068 tag=042ac7c3f7 start width=8
+[25/273] id=5068 tag=042ac7c3f7 done status=infeasible L=- sec=0.07
+[26/273] id=5348 tag=bdd5e2c04a start width=8
+[26/273] id=5348 tag=bdd5e2c04a done status=infeasible L=- sec=0.03
+[27/273] id=5428 tag=3cadaf91b7 start width=8
+[27/273] id=5428 tag=3cadaf91b7 done status=infeasible L=- sec=0.08
+[28/273] id=5478 tag=d6e8732ac0 start width=8
+[28/273] id=5478 tag=d6e8732ac0 done status=infeasible L=- sec=0.03
+[29/273] id=5658 tag=6f72d74bf3 start width=8
+[29/273] id=5658 tag=6f72d74bf3 done status=infeasible L=- sec=0.04
+[30/273] id=5678 tag=d423a88963 start width=8
+[30/273] id=5678 tag=d423a88963 running elapsed=10s limit=30s
+[30/273] id=5678 tag=d423a88963 done status=optimal L=36 sec=10.48
+[31/273] id=5738 tag=0469242b3f start width=8
+[31/273] id=5738 tag=0469242b3f done status=infeasible L=- sec=0.03
+[32/273] id=5748 tag=ad0fb44c6a start width=8
+[32/273] id=5748 tag=ad0fb44c6a done status=optimal L=32 sec=4.91
+[33/273] id=5778 tag=b1130ea3ed start width=8
+[33/273] id=5778 tag=b1130ea3ed done status=infeasible L=- sec=0.02
+[34/273] id=5858 tag=8983135234 start width=8
+[34/273] id=5858 tag=8983135234 done status=infeasible L=- sec=0.05
+[35/273] id=5868 tag=ca90f08290 start width=8
+[35/273] id=5868 tag=ca90f08290 done status=optimal L=44 sec=0.22
+[36/273] id=5898 tag=7a91e8a71d start width=8
+[36/273] id=5898 tag=7a91e8a71d done status=infeasible L=- sec=0.09
+[37/273] id=5908 tag=6509298bfb start width=8
+[37/273] id=5908 tag=6509298bfb done status=infeasible L=- sec=0.04
+[38/273] id=6008 tag=b0ec713523 start width=8
+[38/273] id=6008 tag=b0ec713523 done status=optimal L=22 sec=0.90
+[39/273] id=6058 tag=95f7b96fff start width=8
+[39/273] id=6058 tag=95f7b96fff done status=infeasible L=- sec=0.03
+[40/273] id=6178 tag=70b8c0d844 start width=8
+[40/273] id=6178 tag=70b8c0d844 done status=infeasible L=- sec=0.07
+[41/273] id=6238 tag=b1c65c715f start width=8
+[41/273] id=6238 tag=b1c65c715f done status=infeasible L=- sec=0.04
+[42/273] id=6418 tag=793834f6c5 start width=8
+[42/273] id=6418 tag=793834f6c5 done status=infeasible L=- sec=0.08
+[43/273] id=6518 tag=0e1a5efd10 start width=8
+[43/273] id=6518 tag=0e1a5efd10 done status=optimal L=22 sec=0.16
+[44/273] id=6548 tag=d33dad9f22 start width=8
+[44/273] id=6548 tag=d33dad9f22 done status=infeasible L=- sec=0.03
+[45/273] id=6558 tag=50797a6e3c start width=8
+[45/273] id=6558 tag=50797a6e3c done status=optimal L=20 sec=0.17
+[46/273] id=6568 tag=8d4b3f725d start width=8
+[46/273] id=6568 tag=8d4b3f725d done status=optimal L=20 sec=0.29
+[47/273] id=6618 tag=19bc7ad7a1 start width=8
+[47/273] id=6618 tag=19bc7ad7a1 running elapsed=10s limit=30s
+[47/273] id=6618 tag=19bc7ad7a1 running elapsed=20s limit=30s
+[47/273] id=6618 tag=19bc7ad7a1 running elapsed=30s limit=30s
+[47/273] id=6618 tag=19bc7ad7a1 done status=timeout L=- sec=30.04
+[48/273] id=6658 tag=b9c76fed47 start width=8
+[48/273] id=6658 tag=b9c76fed47 done status=optimal L=36 sec=7.09
+[49/273] id=6758 tag=4ae23b53ff start width=8
+[49/273] id=6758 tag=4ae23b53ff done status=optimal L=20 sec=0.30
+[50/273] id=6778 tag=d2054fa2a2 start width=8
+[50/273] id=6778 tag=d2054fa2a2 done status=infeasible L=- sec=0.07
+[51/273] id=6798 tag=9d5891bd37 start width=8
+[51/273] id=6798 tag=9d5891bd37 done status=infeasible L=- sec=0.04
+[52/273] id=6808 tag=0597ecb562 start width=8
+[52/273] id=6808 tag=0597ecb562 done status=infeasible L=- sec=0.08
+[53/273] id=6828 tag=10b7a8e6fe start width=8
+[53/273] id=6828 tag=10b7a8e6fe done status=infeasible L=- sec=0.03
+[54/273] id=6958 tag=9f54a88ae0 start width=8
+[54/273] id=6958 tag=9f54a88ae0 done status=optimal L=30 sec=0.59
+[55/273] id=6978 tag=fa86eadba4 start width=8
+[55/273] id=6978 tag=fa86eadba4 running elapsed=10s limit=30s
+[55/273] id=6978 tag=fa86eadba4 running elapsed=20s limit=30s
+[55/273] id=6978 tag=fa86eadba4 running elapsed=30s limit=30s
+[55/273] id=6978 tag=fa86eadba4 done status=timeout L=- sec=30.06
+[56/273] id=7258 tag=c7624c3f94 start width=8
+[56/273] id=7258 tag=c7624c3f94 done status=infeasible L=- sec=0.07
+[57/273] id=7268 tag=0502edf23f start width=8
+[57/273] id=7268 tag=0502edf23f done status=optimal L=20 sec=0.58
+[58/273] id=7418 tag=11c1ecb11a start width=8
+[58/273] id=7418 tag=11c1ecb11a done status=infeasible L=- sec=0.07
+[59/273] id=7488 tag=4e0cc11654 start width=8
+[59/273] id=7488 tag=4e0cc11654 done status=optimal L=40 sec=0.18
+[60/273] id=7618 tag=7d067efd64 start width=8
+[60/273] id=7618 tag=7d067efd64 running elapsed=10s limit=30s
+[60/273] id=7618 tag=7d067efd64 running elapsed=20s limit=30s
+[60/273] id=7618 tag=7d067efd64 done status=infeasible L=- sec=22.19
+[61/273] id=7628 tag=d268a248e1 start width=8
+[61/273] id=7628 tag=d268a248e1 running elapsed=10s limit=30s
+[61/273] id=7628 tag=d268a248e1 running elapsed=20s limit=30s
+[61/273] id=7628 tag=d268a248e1 done status=infeasible L=- sec=21.74
+[62/273] id=7638 tag=b9d3c4ceda start width=8
+[62/273] id=7638 tag=b9d3c4ceda done status=optimal L=28 sec=0.14
+[63/273] id=7658 tag=64dda48f48 start width=8
+[63/273] id=7658 tag=64dda48f48 done status=infeasible L=- sec=0.06
+[64/273] id=7708 tag=e85b2e73d8 start width=8
+[64/273] id=7708 tag=e85b2e73d8 running elapsed=10s limit=30s
+[64/273] id=7708 tag=e85b2e73d8 running elapsed=20s limit=30s
+[64/273] id=7708 tag=e85b2e73d8 running elapsed=30s limit=30s
+[64/273] id=7708 tag=e85b2e73d8 done status=timeout L=- sec=30.03
+[65/273] id=7718 tag=4519deca01 start width=8
+[65/273] id=7718 tag=4519deca01 done status=infeasible L=- sec=0.06
+[66/273] id=7728 tag=31eeb636e6 start width=8
+[66/273] id=7728 tag=31eeb636e6 running elapsed=10s limit=30s
+[66/273] id=7728 tag=31eeb636e6 running elapsed=20s limit=30s
+[66/273] id=7728 tag=31eeb636e6 running elapsed=30s limit=30s
+[66/273] id=7728 tag=31eeb636e6 done status=timeout L=- sec=30.04
+[67/273] id=7748 tag=341cb0f2b5 start width=8
+[67/273] id=7748 tag=341cb0f2b5 done status=infeasible L=- sec=0.07
+[68/273] id=7828 tag=9dcdf1b5c0 start width=8
+[68/273] id=7828 tag=9dcdf1b5c0 done status=optimal L=28 sec=4.10
+[69/273] id=7948 tag=064cc5bb5d start width=8
+[69/273] id=7948 tag=064cc5bb5d done status=optimal L=24 sec=0.19
+[70/273] id=8028 tag=3d0694cb59 start width=8
+[70/273] id=8028 tag=3d0694cb59 done status=optimal L=34 sec=0.46
+[71/273] id=8058 tag=c77ee28ad0 start width=8
+[71/273] id=8058 tag=c77ee28ad0 done status=optimal L=44 sec=0.66
+[72/273] id=8088 tag=d4c1d0d04b start width=8
+[72/273] id=8088 tag=d4c1d0d04b running elapsed=10s limit=30s
+[72/273] id=8088 tag=d4c1d0d04b running elapsed=20s limit=30s
+[72/273] id=8088 tag=d4c1d0d04b running elapsed=30s limit=30s
+[72/273] id=8088 tag=d4c1d0d04b done status=timeout L=- sec=30.04
+[73/273] id=8118 tag=bc071f804c start width=8
+[73/273] id=8118 tag=bc071f804c done status=optimal L=30 sec=0.44
+[74/273] id=8158 tag=fc9e99092b start width=8
+[74/273] id=8158 tag=fc9e99092b done status=infeasible L=- sec=0.04
+[75/273] id=8178 tag=67768be4bb start width=8
+[75/273] id=8178 tag=67768be4bb done status=infeasible L=- sec=0.07
+[76/273] id=8278 tag=57dfa0304d start width=8
+[76/273] id=8278 tag=57dfa0304d running elapsed=10s limit=30s
+[76/273] id=8278 tag=57dfa0304d running elapsed=20s limit=30s
+[76/273] id=8278 tag=57dfa0304d running elapsed=30s limit=30s
+[76/273] id=8278 tag=57dfa0304d done status=timeout L=- sec=30.06
+[77/273] id=8368 tag=9ca9d722a6 start width=8
+[77/273] id=8368 tag=9ca9d722a6 done status=infeasible L=- sec=0.09
+[78/273] id=8378 tag=d725449ce8 start width=8
+[78/273] id=8378 tag=d725449ce8 running elapsed=10s limit=30s
+[78/273] id=8378 tag=d725449ce8 running elapsed=20s limit=30s
+[78/273] id=8378 tag=d725449ce8 running elapsed=30s limit=30s
+[78/273] id=8378 tag=d725449ce8 done status=timeout L=- sec=30.20
+[79/273] id=8388 tag=e33d4b54c9 start width=8
+[79/273] id=8388 tag=e33d4b54c9 running elapsed=10s limit=30s
+[79/273] id=8388 tag=e33d4b54c9 running elapsed=20s limit=30s
+[79/273] id=8388 tag=e33d4b54c9 running elapsed=30s limit=30s
+[79/273] id=8388 tag=e33d4b54c9 done status=timeout L=- sec=30.08
+[80/273] id=8398 tag=cfeb155e9c start width=8
+[80/273] id=8398 tag=cfeb155e9c done status=infeasible L=- sec=0.06
+[81/273] id=8418 tag=c83bac3427 start width=8
+[81/273] id=8418 tag=c83bac3427 done status=infeasible L=- sec=0.07
+[82/273] id=8458 tag=70c00229c3 start width=8
+[82/273] id=8458 tag=70c00229c3 done status=infeasible L=- sec=0.03
+[83/273] id=8468 tag=5d18a4ec20 start width=8
+[83/273] id=8468 tag=5d18a4ec20 done status=infeasible L=- sec=0.07
+[84/273] id=8478 tag=75228beca0 start width=8
+[84/273] id=8478 tag=75228beca0 done status=infeasible L=- sec=0.08
+[85/273] id=8488 tag=9adc047f14 start width=8
+[85/273] id=8488 tag=9adc047f14 done status=infeasible L=- sec=0.07
+[86/273] id=8588 tag=4de6ba801f start width=8
+[86/273] id=8588 tag=4de6ba801f running elapsed=10s limit=30s
+[86/273] id=8588 tag=4de6ba801f running elapsed=20s limit=30s
+[86/273] id=8588 tag=4de6ba801f running elapsed=30s limit=30s
+[86/273] id=8588 tag=4de6ba801f done status=timeout L=- sec=30.06
+[87/273] id=8708 tag=b3deaaa842 start width=8
+[87/273] id=8708 tag=b3deaaa842 done status=optimal L=30 sec=0.17
+[88/273] id=8778 tag=c28cae8ae2 start width=8
+[88/273] id=8778 tag=c28cae8ae2 done status=infeasible L=- sec=0.09
+[89/273] id=8868 tag=3fc12be2cb start width=8
+[89/273] id=8868 tag=3fc12be2cb done status=infeasible L=- sec=0.03
+[90/273] id=8998 tag=bbd8ee1beb start width=8
+[90/273] id=8998 tag=bbd8ee1beb done status=infeasible L=- sec=0.03
+[91/273] id=9058 tag=385c595036 start width=8
+[91/273] id=9058 tag=385c595036 running elapsed=10s limit=30s
+[91/273] id=9058 tag=385c595036 running elapsed=20s limit=30s
+[91/273] id=9058 tag=385c595036 running elapsed=30s limit=30s
+[91/273] id=9058 tag=385c595036 done status=timeout L=- sec=30.07
+[92/273] id=9068 tag=005d2ed2fa start width=8
+[92/273] id=9068 tag=005d2ed2fa running elapsed=10s limit=30s
+[92/273] id=9068 tag=005d2ed2fa running elapsed=20s limit=30s
+[92/273] id=9068 tag=005d2ed2fa running elapsed=30s limit=30s
+[92/273] id=9068 tag=005d2ed2fa done status=timeout L=- sec=30.03
+[93/273] id=9118 tag=8b0ad4f7d0 start width=8
+[93/273] id=9118 tag=8b0ad4f7d0 done status=infeasible L=- sec=0.02
+[94/273] id=9238 tag=46e5f906e7 start width=8
+[94/273] id=9238 tag=46e5f906e7 done status=infeasible L=- sec=0.02
+[95/273] id=9408 tag=afe83e9543 start width=8
+[95/273] id=9408 tag=afe83e9543 done status=optimal L=30 sec=2.83
+[96/273] id=9518 tag=f792baa8f3 start width=8
+[96/273] id=9518 tag=f792baa8f3 running elapsed=10s limit=30s
+[96/273] id=9518 tag=f792baa8f3 running elapsed=20s limit=30s
+[96/273] id=9518 tag=f792baa8f3 running elapsed=30s limit=30s
+[96/273] id=9518 tag=f792baa8f3 done status=timeout L=- sec=30.04
+[97/273] id=9528 tag=c2369957d0 start width=8
+[97/273] id=9528 tag=c2369957d0 done status=optimal L=36 sec=6.33
+[98/273] id=9548 tag=2c34eb2d2f start width=8
+[98/273] id=9548 tag=2c34eb2d2f done status=infeasible L=- sec=0.03
+[99/273] id=9578 tag=882215dc03 start width=8
+[99/273] id=9578 tag=882215dc03 done status=infeasible L=- sec=0.06
+[100/273] id=9588 tag=cfc7eda4ec start width=8
+[100/273] id=9588 tag=cfc7eda4ec done status=infeasible L=- sec=0.07
+[101/273] id=9598 tag=0c8906cd20 start width=8
+[101/273] id=9598 tag=0c8906cd20 running elapsed=10s limit=30s
+[101/273] id=9598 tag=0c8906cd20 running elapsed=20s limit=30s
+[101/273] id=9598 tag=0c8906cd20 running elapsed=30s limit=30s
+[101/273] id=9598 tag=0c8906cd20 done status=timeout L=- sec=30.05
+[102/273] id=9608 tag=07ee9a1c9b start width=8
+[102/273] id=9608 tag=07ee9a1c9b done status=infeasible L=- sec=0.03
+[103/273] id=9618 tag=6f32811a6e start width=8
+[103/273] id=9618 tag=6f32811a6e done status=infeasible L=- sec=0.04
+[104/273] id=9648 tag=e777cb0235 start width=8
+[104/273] id=9648 tag=e777cb0235 done status=infeasible L=- sec=0.03
+[105/273] id=9668 tag=d65bf1b3cb start width=8
+[105/273] id=9668 tag=d65bf1b3cb done status=infeasible L=- sec=0.03
+[106/273] id=9708 tag=09c0569680 start width=8
+[106/273] id=9708 tag=09c0569680 done status=optimal L=34 sec=3.39
+[107/273] id=9718 tag=de574a514e start width=8
+[107/273] id=9718 tag=de574a514e done status=optimal L=30 sec=6.35
+[108/273] id=9838 tag=5ccead157a start width=8
+[108/273] id=9838 tag=5ccead157a done status=infeasible L=- sec=0.03
+[109/273] id=9848 tag=53c75a2579 start width=8
+[109/273] id=9848 tag=53c75a2579 done status=infeasible L=- sec=7.43
+[110/273] id=9988 tag=33ebdcc1bb start width=8
+[110/273] id=9988 tag=33ebdcc1bb done status=infeasible L=- sec=0.07
+[111/273] id=9998 tag=d40b09e184 start width=8
+[111/273] id=9998 tag=d40b09e184 done status=infeasible L=- sec=0.13
+[112/273] id=10018 tag=2e944a9b6c start width=8
+[112/273] id=10018 tag=2e944a9b6c running elapsed=10s limit=30s
+[112/273] id=10018 tag=2e944a9b6c running elapsed=20s limit=30s
+[112/273] id=10018 tag=2e944a9b6c running elapsed=30s limit=30s
+[112/273] id=10018 tag=2e944a9b6c done status=timeout L=- sec=30.05
+[113/273] id=10148 tag=39db21fe57 start width=8
+[113/273] id=10148 tag=39db21fe57 done status=infeasible L=- sec=0.03
+[114/273] id=10248 tag=2da1f841ef start width=8
+[114/273] id=10248 tag=2da1f841ef running elapsed=10s limit=30s
+[114/273] id=10248 tag=2da1f841ef running elapsed=20s limit=30s
+[114/273] id=10248 tag=2da1f841ef running elapsed=30s limit=30s
+[114/273] id=10248 tag=2da1f841ef done status=timeout L=- sec=30.04
+[115/273] id=10298 tag=a9f6b8bb6b start width=8
+[115/273] id=10298 tag=a9f6b8bb6b done status=infeasible L=- sec=0.02
+[116/273] id=10328 tag=922462b829 start width=8
+[116/273] id=10328 tag=922462b829 done status=infeasible L=- sec=0.02
+[117/273] id=10468 tag=7febf967dd start width=8
+[117/273] id=10468 tag=7febf967dd done status=optimal L=24 sec=0.15
+[118/273] id=10608 tag=2912275229 start width=8
+[118/273] id=10608 tag=2912275229 running elapsed=10s limit=30s
+[118/273] id=10608 tag=2912275229 running elapsed=20s limit=30s
+[118/273] id=10608 tag=2912275229 done status=infeasible L=- sec=21.42
+[119/273] id=10638 tag=8a4c3fcdd6 start width=8
+[119/273] id=10638 tag=8a4c3fcdd6 done status=optimal L=32 sec=4.20
+[120/273] id=10808 tag=9604e955e5 start width=8
+[120/273] id=10808 tag=9604e955e5 running elapsed=10s limit=30s
+[120/273] id=10808 tag=9604e955e5 running elapsed=20s limit=30s
+[120/273] id=10808 tag=9604e955e5 running elapsed=30s limit=30s
+[120/273] id=10808 tag=9604e955e5 done status=timeout L=- sec=30.04
+[121/273] id=10928 tag=30dafa909d start width=8
+[121/273] id=10928 tag=30dafa909d done status=optimal L=30 sec=0.36
+[122/273] id=11328 tag=76783561e1 start width=8
+[122/273] id=11328 tag=76783561e1 running elapsed=10s limit=30s
+[122/273] id=11328 tag=76783561e1 running elapsed=20s limit=30s
+[122/273] id=11328 tag=76783561e1 running elapsed=30s limit=30s
+[122/273] id=11328 tag=76783561e1 done status=timeout L=- sec=30.04
+[123/273] id=11658 tag=2ef73eb8a3 start width=8
+[123/273] id=11658 tag=2ef73eb8a3 done status=infeasible L=- sec=0.06
+[124/273] id=11738 tag=864875387f start width=8
+[124/273] id=11738 tag=864875387f done status=infeasible L=- sec=0.03
+[125/273] id=11748 tag=bf322ac4aa start width=8
+[125/273] id=11748 tag=bf322ac4aa done status=infeasible L=- sec=0.07
+[126/273] id=11858 tag=de530c5f92 start width=8
+[126/273] id=11858 tag=de530c5f92 done status=infeasible L=- sec=0.03
+[127/273] id=11878 tag=1db0089c80 start width=8
+[127/273] id=11878 tag=1db0089c80 done status=infeasible L=- sec=0.03
+[128/273] id=12048 tag=c1d7b33bb3 start width=8
+[128/273] id=12048 tag=c1d7b33bb3 running elapsed=10s limit=30s
+[128/273] id=12048 tag=c1d7b33bb3 done status=optimal L=32 sec=16.09
+[129/273] id=12068 tag=cffbb13cba start width=8
+[129/273] id=12068 tag=cffbb13cba done status=infeasible L=- sec=0.02
+[130/273] id=12198 tag=3396fc59a0 start width=8
+[130/273] id=12198 tag=3396fc59a0 done status=infeasible L=- sec=0.02
+[131/273] id=12208 tag=1ad15d7e1c start width=8
+[131/273] id=12208 tag=1ad15d7e1c done status=infeasible L=- sec=0.02
+[132/273] id=12228 tag=cea7e48c74 start width=8
+[132/273] id=12228 tag=cea7e48c74 done status=infeasible L=- sec=0.02
+[133/273] id=12308 tag=da6258a1e9 start width=8
+[133/273] id=12308 tag=da6258a1e9 done status=infeasible L=- sec=0.02
+[134/273] id=12328 tag=fadaeeff23 start width=8
+[134/273] id=12328 tag=fadaeeff23 done status=infeasible L=- sec=0.02
+[135/273] id=12338 tag=2ea567c214 start width=8
+[135/273] id=12338 tag=2ea567c214 done status=optimal L=44 sec=0.35
+[136/273] id=12348 tag=d2e5062e23 start width=8
+[136/273] id=12348 tag=d2e5062e23 done status=infeasible L=- sec=0.02
+[137/273] id=12368 tag=7a82232891 start width=8
+[137/273] id=12368 tag=7a82232891 done status=infeasible L=- sec=0.03
+[138/273] id=12698 tag=a91bb38990 start width=8
+[138/273] id=12698 tag=a91bb38990 running elapsed=10s limit=30s
+[138/273] id=12698 tag=a91bb38990 running elapsed=20s limit=30s
+[138/273] id=12698 tag=a91bb38990 running elapsed=30s limit=30s
+[138/273] id=12698 tag=a91bb38990 done status=timeout L=- sec=30.03
+[139/273] id=12738 tag=0dd657ecf5 start width=8
+[139/273] id=12738 tag=0dd657ecf5 done status=infeasible L=- sec=0.07
+[140/273] id=12748 tag=4d02d2470e start width=8
+[140/273] id=12748 tag=4d02d2470e done status=optimal L=30 sec=2.78
+[141/273] id=12768 tag=e645eefecd start width=8
+[141/273] id=12768 tag=e645eefecd done status=optimal L=34 sec=5.83
+[142/273] id=12778 tag=fc47dd3280 start width=8
+[142/273] id=12778 tag=fc47dd3280 done status=optimal L=36 sec=2.63
+[143/273] id=12798 tag=fb5352ee1f start width=8
+[143/273] id=12798 tag=fb5352ee1f running elapsed=10s limit=30s
+[143/273] id=12798 tag=fb5352ee1f done status=infeasible L=- sec=10.68
+[144/273] id=12948 tag=8ee8f57142 start width=8
+[144/273] id=12948 tag=8ee8f57142 running elapsed=10s limit=30s
+[144/273] id=12948 tag=8ee8f57142 done status=infeasible L=- sec=18.38
+[145/273] id=13018 tag=6e2c782c66 start width=8
+[145/273] id=13018 tag=6e2c782c66 done status=optimal L=48 sec=2.21
+[146/273] id=13138 tag=aefb4789a6 start width=8
+[146/273] id=13138 tag=aefb4789a6 done status=infeasible L=- sec=0.03
+[147/273] id=13148 tag=d647c657c9 start width=8
+[147/273] id=13148 tag=d647c657c9 done status=infeasible L=- sec=0.03
+[148/273] id=13158 tag=ffce65f673 start width=8
+[148/273] id=13158 tag=ffce65f673 done status=infeasible L=- sec=0.03
+[149/273] id=13168 tag=43e057901b start width=8
+[149/273] id=13168 tag=43e057901b done status=infeasible L=- sec=0.03
+[150/273] id=13178 tag=38c77364d3 start width=8
+[150/273] id=13178 tag=38c77364d3 done status=infeasible L=- sec=0.04
+[151/273] id=13188 tag=8aa48c7457 start width=8
+[151/273] id=13188 tag=8aa48c7457 done status=infeasible L=- sec=0.03
+[152/273] id=13198 tag=18b851d32f start width=8
+[152/273] id=13198 tag=18b851d32f done status=infeasible L=- sec=0.03
+[153/273] id=13208 tag=2f9a251112 start width=8
+[153/273] id=13208 tag=2f9a251112 done status=infeasible L=- sec=0.03
+[154/273] id=13218 tag=9c561fb340 start width=8
+[154/273] id=13218 tag=9c561fb340 done status=infeasible L=- sec=0.03
+[155/273] id=13228 tag=100779475f start width=8
+[155/273] id=13228 tag=100779475f done status=infeasible L=- sec=0.03
+[156/273] id=13238 tag=54276458ff start width=8
+[156/273] id=13238 tag=54276458ff done status=infeasible L=- sec=0.03
+[157/273] id=13248 tag=788500d989 start width=8
+[157/273] id=13248 tag=788500d989 done status=infeasible L=- sec=0.03
+[158/273] id=13258 tag=dbfa1757a6 start width=8
+[158/273] id=13258 tag=dbfa1757a6 done status=infeasible L=- sec=0.03
+[159/273] id=13268 tag=2780caf0ad start width=8
+[159/273] id=13268 tag=2780caf0ad done status=infeasible L=- sec=0.03
+[160/273] id=13288 tag=a10d97f8b7 start width=8
+[160/273] id=13288 tag=a10d97f8b7 running elapsed=10s limit=30s
+[160/273] id=13288 tag=a10d97f8b7 running elapsed=20s limit=30s
+[160/273] id=13288 tag=a10d97f8b7 running elapsed=30s limit=30s
+[160/273] id=13288 tag=a10d97f8b7 done status=timeout L=- sec=30.04
+[161/273] id=13328 tag=96e13252a4 start width=8
+[161/273] id=13328 tag=96e13252a4 done status=optimal L=30 sec=1.08
+[162/273] id=13388 tag=79767e6ed3 start width=8
+[162/273] id=13388 tag=79767e6ed3 done status=infeasible L=- sec=0.03
+[163/273] id=13398 tag=e31beacbc8 start width=8
+[163/273] id=13398 tag=e31beacbc8 done status=infeasible L=- sec=0.06
+[164/273] id=13408 tag=da9a31e018 start width=8
+[164/273] id=13408 tag=da9a31e018 done status=optimal L=34 sec=4.36
+[165/273] id=13418 tag=ef2c4ddbb6 start width=8
+[165/273] id=13418 tag=ef2c4ddbb6 done status=infeasible L=- sec=0.05
+[166/273] id=13438 tag=3218a279da start width=8
+[166/273] id=13438 tag=3218a279da running elapsed=10s limit=30s
+[166/273] id=13438 tag=3218a279da running elapsed=20s limit=30s
+[166/273] id=13438 tag=3218a279da running elapsed=30s limit=30s
+[166/273] id=13438 tag=3218a279da done status=timeout L=- sec=30.03
+[167/273] id=13458 tag=537aa357fb start width=8
+[167/273] id=13458 tag=537aa357fb done status=infeasible L=- sec=0.07
+[168/273] id=13468 tag=81ebdd5fc6 start width=8
+[168/273] id=13468 tag=81ebdd5fc6 running elapsed=10s limit=30s
+[168/273] id=13468 tag=81ebdd5fc6 running elapsed=20s limit=30s
+[168/273] id=13468 tag=81ebdd5fc6 running elapsed=30s limit=30s
+[168/273] id=13468 tag=81ebdd5fc6 done status=timeout L=- sec=30.04
+[169/273] id=13478 tag=c2fd92ed10 start width=8
+[169/273] id=13478 tag=c2fd92ed10 done status=infeasible L=- sec=0.08
+[170/273] id=13518 tag=5dc2d417f9 start width=8
+[170/273] id=13518 tag=5dc2d417f9 done status=infeasible L=- sec=0.03
+[171/273] id=13528 tag=92971cae72 start width=8
+[171/273] id=13528 tag=92971cae72 done status=infeasible L=- sec=0.07
+[172/273] id=13648 tag=a377dd9cc1 start width=8
+[172/273] id=13648 tag=a377dd9cc1 done status=infeasible L=- sec=0.10
+[173/273] id=13658 tag=4fad1bde7f start width=8
+[173/273] id=13658 tag=4fad1bde7f done status=infeasible L=- sec=0.07
+[174/273] id=13668 tag=df78711586 start width=8
+[174/273] id=13668 tag=df78711586 done status=infeasible L=- sec=0.08
+[175/273] id=13678 tag=70ad799006 start width=8
+[175/273] id=13678 tag=70ad799006 done status=infeasible L=- sec=0.07
+[176/273] id=13688 tag=09fb337234 start width=8
+[176/273] id=13688 tag=09fb337234 done status=infeasible L=- sec=0.08
+[177/273] id=13698 tag=4abc60c0a8 start width=8
+[177/273] id=13698 tag=4abc60c0a8 done status=infeasible L=- sec=0.08
+[178/273] id=13708 tag=93d5cfbcfa start width=8
+[178/273] id=13708 tag=93d5cfbcfa done status=infeasible L=- sec=0.08
+[179/273] id=13718 tag=83d02bcbd1 start width=8
+[179/273] id=13718 tag=83d02bcbd1 done status=infeasible L=- sec=0.08
+[180/273] id=13728 tag=709a035ef9 start width=8
+[180/273] id=13728 tag=709a035ef9 done status=infeasible L=- sec=0.05
+[181/273] id=13738 tag=278476fb4f start width=8
+[181/273] id=13738 tag=278476fb4f done status=infeasible L=- sec=0.05
+[182/273] id=13748 tag=54ccb2aa28 start width=8
+[182/273] id=13748 tag=54ccb2aa28 done status=infeasible L=- sec=0.05
+[183/273] id=13888 tag=c2bf3a59e7 start width=8
+[183/273] id=13888 tag=c2bf3a59e7 done status=infeasible L=- sec=0.05
+[184/273] id=13898 tag=dfd5e62baa start width=8
+[184/273] id=13898 tag=dfd5e62baa done status=optimal L=30 sec=0.56
+[185/273] id=13928 tag=d260c6fd4a start width=8
+[185/273] id=13928 tag=d260c6fd4a running elapsed=10s limit=30s
+[185/273] id=13928 tag=d260c6fd4a running elapsed=20s limit=30s
+[185/273] id=13928 tag=d260c6fd4a running elapsed=30s limit=30s
+[185/273] id=13928 tag=d260c6fd4a done status=timeout L=- sec=30.03
+[186/273] id=14128 tag=7ed90aff1a start width=8
+[186/273] id=14128 tag=7ed90aff1a done status=infeasible L=- sec=0.10
+[187/273] id=14368 tag=32939db68a start width=8
+[187/273] id=14368 tag=32939db68a running elapsed=10s limit=30s
+[187/273] id=14368 tag=32939db68a running elapsed=20s limit=30s
+[187/273] id=14368 tag=32939db68a running elapsed=30s limit=30s
+[187/273] id=14368 tag=32939db68a done status=timeout L=- sec=30.04
+[188/273] id=14388 tag=525cd2329a start width=8
+[188/273] id=14388 tag=525cd2329a done status=infeasible L=- sec=0.07
+[189/273] id=14438 tag=bf67d5a343 start width=8
+[189/273] id=14438 tag=bf67d5a343 done status=optimal L=40 sec=0.28
+[190/273] id=14468 tag=ecbf221729 start width=8
+[190/273] id=14468 tag=ecbf221729 done status=infeasible L=- sec=0.04
+[191/273] id=14478 tag=c5a49a77ba start width=8
+[191/273] id=14478 tag=c5a49a77ba running elapsed=10s limit=30s
+[191/273] id=14478 tag=c5a49a77ba running elapsed=20s limit=30s
+[191/273] id=14478 tag=c5a49a77ba running elapsed=30s limit=30s
+[191/273] id=14478 tag=c5a49a77ba done status=timeout L=- sec=30.05
+[192/273] id=14528 tag=02096af68c start width=8
+[192/273] id=14528 tag=02096af68c running elapsed=10s limit=30s
+[192/273] id=14528 tag=02096af68c running elapsed=20s limit=30s
+[192/273] id=14528 tag=02096af68c running elapsed=30s limit=30s
+[192/273] id=14528 tag=02096af68c done status=timeout L=- sec=30.05
+[193/273] id=14548 tag=bd79f48e8a start width=8
+[193/273] id=14548 tag=bd79f48e8a done status=infeasible L=- sec=8.64
+[194/273] id=14588 tag=fa85d21d1c start width=8
+[194/273] id=14588 tag=fa85d21d1c running elapsed=10s limit=30s
+[194/273] id=14588 tag=fa85d21d1c running elapsed=20s limit=30s
+[194/273] id=14588 tag=fa85d21d1c running elapsed=30s limit=30s
+[194/273] id=14588 tag=fa85d21d1c done status=timeout L=- sec=30.07
+[195/273] id=14678 tag=ff91c9ce7e start width=8
+[195/273] id=14678 tag=ff91c9ce7e done status=optimal L=20 sec=0.36
+[196/273] id=14968 tag=26259b1729 start width=8
+[196/273] id=14968 tag=26259b1729 running elapsed=10s limit=30s
+[196/273] id=14968 tag=26259b1729 running elapsed=20s limit=30s
+[196/273] id=14968 tag=26259b1729 running elapsed=30s limit=30s
+[196/273] id=14968 tag=26259b1729 done status=timeout L=- sec=30.06
+[197/273] id=15018 tag=c1a02f2e37 start width=8
+[197/273] id=15018 tag=c1a02f2e37 done status=infeasible L=- sec=0.03
+[198/273] id=15038 tag=d3a8050475 start width=8
+[198/273] id=15038 tag=d3a8050475 done status=infeasible L=- sec=0.04
+[199/273] id=15048 tag=f7326f1dbe start width=8
+[199/273] id=15048 tag=f7326f1dbe done status=infeasible L=- sec=0.04
+[200/273] id=15058 tag=7ff1489f90 start width=8
+[200/273] id=15058 tag=7ff1489f90 done status=infeasible L=- sec=0.04
+[201/273] id=15068 tag=37e3491bc6 start width=8
+[201/273] id=15068 tag=37e3491bc6 done status=infeasible L=- sec=0.04
+[202/273] id=15078 tag=892f8e5063 start width=8
+[202/273] id=15078 tag=892f8e5063 done status=infeasible L=- sec=0.05
+[203/273] id=15088 tag=724c1fee02 start width=8
+[203/273] id=15088 tag=724c1fee02 done status=infeasible L=- sec=0.04
+[204/273] id=15278 tag=be411c1052 start width=8
+[204/273] id=15278 tag=be411c1052 running elapsed=10s limit=30s
+[204/273] id=15278 tag=be411c1052 running elapsed=20s limit=30s
+[204/273] id=15278 tag=be411c1052 running elapsed=30s limit=30s
+[204/273] id=15278 tag=be411c1052 done status=timeout L=- sec=30.06
+[205/273] id=15418 tag=d783c37cfc start width=8
+[205/273] id=15418 tag=d783c37cfc running elapsed=10s limit=30s
+[205/273] id=15418 tag=d783c37cfc running elapsed=20s limit=30s
+[205/273] id=15418 tag=d783c37cfc running elapsed=30s limit=30s
+[205/273] id=15418 tag=d783c37cfc done status=timeout L=- sec=30.06
+[206/273] id=15478 tag=4319b51b4c start width=8
+[206/273] id=15478 tag=4319b51b4c done status=infeasible L=- sec=0.10
+[207/273] id=15488 tag=12bad55bb8 start width=8
+[207/273] id=15488 tag=12bad55bb8 running elapsed=10s limit=30s
+[207/273] id=15488 tag=12bad55bb8 running elapsed=20s limit=30s
+[207/273] id=15488 tag=12bad55bb8 running elapsed=30s limit=30s
+[207/273] id=15488 tag=12bad55bb8 done status=timeout L=- sec=30.07
+[208/273] id=15508 tag=37e31bf516 start width=8
+[208/273] id=15508 tag=37e31bf516 running elapsed=10s limit=30s
+[208/273] id=15508 tag=37e31bf516 running elapsed=20s limit=30s
+[208/273] id=15508 tag=37e31bf516 running elapsed=30s limit=30s
+[208/273] id=15508 tag=37e31bf516 done status=timeout L=- sec=30.06
+[209/273] id=15618 tag=3b1cc6e85e start width=8
+[209/273] id=15618 tag=3b1cc6e85e done status=infeasible L=- sec=6.71
+[210/273] id=15818 tag=8a8a86edbd start width=8
+[210/273] id=15818 tag=8a8a86edbd done status=infeasible L=- sec=0.04
+[211/273] id=15848 tag=e4d7badc55 start width=8
+[211/273] id=15848 tag=e4d7badc55 done status=infeasible L=- sec=0.04
+[212/273] id=15958 tag=a5d2a12ef3 start width=8
+[212/273] id=15958 tag=a5d2a12ef3 done status=infeasible L=- sec=0.10
+[213/273] id=16118 tag=23fdecd4cc start width=8
+[213/273] id=16118 tag=23fdecd4cc done status=infeasible L=- sec=0.09
+[214/273] id=16168 tag=4b3c799e18 start width=8
+[214/273] id=16168 tag=4b3c799e18 done status=infeasible L=- sec=0.08
+[215/273] id=16218 tag=661e0a4990 start width=8
+[215/273] id=16218 tag=661e0a4990 done status=infeasible L=- sec=0.15
+[216/273] id=16238 tag=20174656ec start width=8
+[216/273] id=16238 tag=20174656ec done status=infeasible L=- sec=0.05
+[217/273] id=16358 tag=e93e296246 start width=8
+[217/273] id=16358 tag=e93e296246 done status=infeasible L=- sec=0.11
+[218/273] id=16448 tag=19561f7413 start width=16
+[218/273] id=16448 tag=19561f7413 done status=infeasible L=- sec=0.33
+[219/273] id=16508 tag=d2ad830de6 start width=16
+[219/273] id=16508 tag=d2ad830de6 done status=infeasible L=- sec=0.31
+[220/273] id=16528 tag=65ba336066 start width=16
+[220/273] id=16528 tag=65ba336066 done status=optimal L=28 sec=0.33
+[221/273] id=16548 tag=97654cabd0 start width=16
+[221/273] id=16548 tag=97654cabd0 done status=infeasible L=- sec=0.31
+[222/273] id=16818 tag=90ea52f011 start width=16
+[222/273] id=16818 tag=90ea52f011 done status=infeasible L=- sec=0.37
+[223/273] id=16828 tag=1e5dc51450 start width=16
+[223/273] id=16828 tag=1e5dc51450 done status=infeasible L=- sec=0.13
+[224/273] id=16848 tag=84f7dcb379 start width=16
+[224/273] id=16848 tag=84f7dcb379 done status=infeasible L=- sec=0.13
+[225/273] id=17638 tag=2288756d71 start width=16
+[225/273] id=17638 tag=2288756d71 done status=infeasible L=- sec=0.31
+[226/273] id=17728 tag=b46757b6e2 start width=16
+[226/273] id=17728 tag=b46757b6e2 running elapsed=10s limit=30s
+[226/273] id=17728 tag=b46757b6e2 running elapsed=20s limit=30s
+[226/273] id=17728 tag=b46757b6e2 running elapsed=30s limit=30s
+[226/273] id=17728 tag=b46757b6e2 done status=timeout L=- sec=34.01
+[227/273] id=19328 tag=8f3d5b809e start width=16
+[227/273] id=19328 tag=8f3d5b809e running elapsed=10s limit=30s
+[227/273] id=19328 tag=8f3d5b809e done status=optimal L=28 sec=10.10
+[228/273] id=20008 tag=2bdea38d52 start width=16
+[228/273] id=20008 tag=2bdea38d52 running elapsed=10s limit=30s
+[228/273] id=20008 tag=2bdea38d52 running elapsed=20s limit=30s
+[228/273] id=20008 tag=2bdea38d52 running elapsed=30s limit=30s
+[228/273] id=20008 tag=2bdea38d52 done status=timeout L=- sec=30.14
+[229/273] id=20178 tag=528cbcc696 start width=16
+[229/273] id=20178 tag=528cbcc696 done status=infeasible L=- sec=0.27
+[230/273] id=20878 tag=9520e8f0f8 start width=16
+[230/273] id=20878 tag=9520e8f0f8 done status=infeasible L=- sec=0.12
+[231/273] id=21138 tag=29dcc41a6e start width=16
+[231/273] id=21138 tag=29dcc41a6e done status=infeasible L=- sec=0.28
+[232/273] id=21158 tag=412397f40b start width=16
+[232/273] id=21158 tag=412397f40b done status=infeasible L=- sec=0.18
+[233/273] id=21188 tag=78eca84bef start width=16
+[233/273] id=21188 tag=78eca84bef done status=optimal L=32 sec=0.19
+[234/273] id=21798 tag=5d88c20ac1 start width=16
+[234/273] id=21798 tag=5d88c20ac1 running elapsed=10s limit=30s
+[234/273] id=21798 tag=5d88c20ac1 running elapsed=20s limit=30s
+[234/273] id=21798 tag=5d88c20ac1 running elapsed=30s limit=30s
+[234/273] id=21798 tag=5d88c20ac1 done status=timeout L=- sec=30.09
+[235/273] id=21808 tag=1aa73c7154 start width=16
+[235/273] id=21808 tag=1aa73c7154 done status=optimal L=50 sec=1.09
+[236/273] id=21818 tag=e789c84e2c start width=16
+[236/273] id=21818 tag=e789c84e2c done status=optimal L=32 sec=0.88
+[237/273] id=21838 tag=9d2339f0b7 start width=16
+[237/273] id=21838 tag=9d2339f0b7 done status=infeasible L=- sec=0.14
+[238/273] id=21878 tag=aa1e9ab211 start width=16
+[238/273] id=21878 tag=aa1e9ab211 done status=infeasible L=- sec=0.12
+[239/273] id=21898 tag=d43cba1973 start width=16
+[239/273] id=21898 tag=d43cba1973 done status=infeasible L=- sec=0.12
+[240/273] id=21908 tag=538d860f2c start width=16
+[240/273] id=21908 tag=538d860f2c done status=optimal L=32 sec=2.31
+[241/273] id=22208 tag=d09b359941 start width=16
+[241/273] id=22208 tag=d09b359941 running elapsed=10s limit=30s
+[241/273] id=22208 tag=d09b359941 running elapsed=20s limit=30s
+[241/273] id=22208 tag=d09b359941 running elapsed=30s limit=30s
+[241/273] id=22208 tag=d09b359941 done status=timeout L=- sec=30.14
+[242/273] id=22628 tag=c6e23a66e5 start width=16
+[242/273] id=22628 tag=c6e23a66e5 running elapsed=10s limit=30s
+[242/273] id=22628 tag=c6e23a66e5 running elapsed=20s limit=30s
+[242/273] id=22628 tag=c6e23a66e5 running elapsed=30s limit=30s
+[242/273] id=22628 tag=c6e23a66e5 done status=timeout L=- sec=30.10
+[243/273] id=24958 tag=9cbd8e4ce4 start width=16
+[243/273] id=24958 tag=9cbd8e4ce4 running elapsed=10s limit=30s
+[243/273] id=24958 tag=9cbd8e4ce4 running elapsed=20s limit=30s
+[243/273] id=24958 tag=9cbd8e4ce4 running elapsed=30s limit=30s
+[243/273] id=24958 tag=9cbd8e4ce4 done status=timeout L=- sec=31.08
+[244/273] id=24988 tag=e64d01d20e start width=16
+[244/273] id=24988 tag=e64d01d20e done status=infeasible L=- sec=0.09
+[245/273] id=25018 tag=d26f0437ab start width=16
+[245/273] id=25018 tag=d26f0437ab running elapsed=10s limit=30s
+[245/273] id=25018 tag=d26f0437ab done status=optimal L=38 sec=18.05
+[246/273] id=25378 tag=d95fa776a6 start width=16
+[246/273] id=25378 tag=d95fa776a6 running elapsed=10s limit=30s
+[246/273] id=25378 tag=d95fa776a6 done status=optimal L=26 sec=18.34
+[247/273] id=25758 tag=d37b83beab start width=16
+[247/273] id=25758 tag=d37b83beab done status=infeasible L=- sec=0.19
+[248/273] id=25788 tag=8ed4e598ca start width=16
+[248/273] id=25788 tag=8ed4e598ca running elapsed=10s limit=30s
+[248/273] id=25788 tag=8ed4e598ca done status=optimal L=26 sec=12.95
+[249/273] id=26208 tag=eaa3f39989 start width=16
+[249/273] id=26208 tag=eaa3f39989 running elapsed=10s limit=30s
+[249/273] id=26208 tag=eaa3f39989 running elapsed=20s limit=30s
+[249/273] id=26208 tag=eaa3f39989 done status=optimal L=26 sec=20.78
+[250/273] id=28948 tag=1e862d3568 start width=16
+[250/273] id=28948 tag=1e862d3568 done status=optimal L=42 sec=0.23
+[251/273] id=29078 tag=b19820754b start width=16
+[251/273] id=29078 tag=b19820754b done status=infeasible L=- sec=0.10
+[252/273] id=29088 tag=a36ba26af1 start width=16
+[252/273] id=29088 tag=a36ba26af1 done status=infeasible L=- sec=0.08
+[253/273] id=29098 tag=e9ebf484ff start width=16
+[253/273] id=29098 tag=e9ebf484ff done status=infeasible L=- sec=0.08
+[254/273] id=29128 tag=04215efd85 start width=16
+[254/273] id=29128 tag=04215efd85 done status=optimal L=42 sec=3.25
+[255/273] id=29178 tag=aea3ed13d8 start width=16
+[255/273] id=29178 tag=aea3ed13d8 done status=infeasible L=- sec=0.20
+[256/273] id=29188 tag=43c3a2b36e start width=16
+[256/273] id=29188 tag=43c3a2b36e done status=infeasible L=- sec=0.19
+[257/273] id=29308 tag=2d6915d445 start width=16
+[257/273] id=29308 tag=2d6915d445 done status=infeasible L=- sec=0.21
+[258/273] id=29378 tag=8b84e4c29c start width=16
+[258/273] id=29378 tag=8b84e4c29c done status=optimal L=44 sec=0.54
+[259/273] id=29428 tag=2e6eb9952b start width=16
+[259/273] id=29428 tag=2e6eb9952b done status=optimal L=42 sec=1.39
+[260/273] id=29518 tag=e7a461dac4 start width=16
+[260/273] id=29518 tag=e7a461dac4 done status=infeasible L=- sec=0.06
+[261/273] id=29528 tag=53fbc6aed5 start width=16
+[261/273] id=29528 tag=53fbc6aed5 done status=infeasible L=- sec=0.06
+[262/273] id=29558 tag=76e922d4f9 start width=16
+[262/273] id=29558 tag=76e922d4f9 done status=optimal L=40 sec=0.34
+[263/273] id=29698 tag=3918540a15 start width=16
+[263/273] id=29698 tag=3918540a15 running elapsed=10s limit=30s
+[263/273] id=29698 tag=3918540a15 running elapsed=20s limit=30s
+[263/273] id=29698 tag=3918540a15 running elapsed=30s limit=30s
+[263/273] id=29698 tag=3918540a15 done status=timeout L=- sec=30.08
+[264/273] id=29908 tag=557522ea9a start width=16
+[264/273] id=29908 tag=557522ea9a done status=infeasible L=- sec=0.05
+[265/273] id=30498 tag=195ab5f9c9 start width=16
+[265/273] id=30498 tag=195ab5f9c9 running elapsed=10s limit=30s
+[265/273] id=30498 tag=195ab5f9c9 running elapsed=20s limit=30s
+[265/273] id=30498 tag=195ab5f9c9 running elapsed=30s limit=30s
+[265/273] id=30498 tag=195ab5f9c9 done status=timeout L=- sec=30.07
+[266/273] id=30528 tag=7feb62dc2d start width=16
+[266/273] id=30528 tag=7feb62dc2d running elapsed=10s limit=30s
+[266/273] id=30528 tag=7feb62dc2d done status=optimal L=40 sec=15.07
+[267/273] id=31228 tag=38bfe0d6e1 start width=16
+[267/273] id=31228 tag=38bfe0d6e1 done status=infeasible L=- sec=0.14
+[268/273] id=31238 tag=9bf8dd3972 start width=16
+[268/273] id=31238 tag=9bf8dd3972 done status=infeasible L=- sec=0.06
+[269/273] id=31258 tag=39e5270996 start width=16
+[269/273] id=31258 tag=39e5270996 done status=infeasible L=- sec=0.06
+[270/273] id=31538 tag=f94be2eb65 start width=16
+[270/273] id=31538 tag=f94be2eb65 running elapsed=10s limit=30s
+[270/273] id=31538 tag=f94be2eb65 running elapsed=20s limit=30s
+[270/273] id=31538 tag=f94be2eb65 running elapsed=30s limit=30s
+[270/273] id=31538 tag=f94be2eb65 done status=timeout L=- sec=30.06
+[271/273] id=31798 tag=42e596b4c2 start width=16
+[271/273] id=31798 tag=42e596b4c2 running elapsed=10s limit=30s
+[271/273] id=31798 tag=42e596b4c2 running elapsed=20s limit=30s
+[271/273] id=31798 tag=42e596b4c2 running elapsed=30s limit=30s
+[271/273] id=31798 tag=42e596b4c2 done status=timeout L=- sec=30.06
+[272/273] id=31918 tag=80c9e96880 start width=16
+[272/273] id=31918 tag=80c9e96880 running elapsed=10s limit=30s
+[272/273] id=31918 tag=80c9e96880 running elapsed=20s limit=30s
+[272/273] id=31918 tag=80c9e96880 running elapsed=30s limit=30s
+[272/273] id=31918 tag=80c9e96880 done status=timeout L=- sec=30.04
+[273/273] id=31948 tag=3a69c3f752 start width=16
+[273/273] id=31948 tag=3a69c3f752 running elapsed=10s limit=30s
+[273/273] id=31948 tag=3a69c3f752 running elapsed=20s limit=30s
+[273/273] id=31948 tag=3a69c3f752 running elapsed=30s limit=30s
+[273/273] id=31948 tag=3a69c3f752 done status=timeout L=- sec=30.04
+[done] shard=08 completed=273

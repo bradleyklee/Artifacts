@@ -1,0 +1,53 @@
+# Square-hexagon closure replay
+# UTC: 2026-08-02T13:15:23Z
+
+$ python3 exact/verify_merged_certificate.py
+MERGED_CERTIFICATE_PASS
+q_bound_25 ranks: 39 40 (not in exact-image span)
+q_bound_27 ranks: 42 42 (in exact-image span)
+matrix at closure: 55 rows x 42 primitive columns
+rho=(2H)_p=2H_p; omega=dq/H_p=2*dq/rho
+Xi = V/rho^7, nonzero slots: 40, expanded terms: 514
+exact reduced residual: zero
+
+$ python3 exact/derive_deductive_certificate.py
+DEDUCTIVE_CERTIFICATE_PASS
+symbol minor: 419904*(n-(8r-3))*(n-(8r-4))*(n-(6r-3))
+exhaustive rank table: order, weight bound, rows, exact cols, rank C, rank [C|W], relations
+1 5 17 6 6 8 0
+2 13 29 18 18 21 0
+3 21 41 30 30 34 0
+4 29 53 42 42 46 1
+derived operator equals stored A4 exactly
+derived primitive equals stored V exactly
+nonzero primitive slots: 40 maximum source weight: 29
+
+$ python3 exact/verify_reduced_primitive.py
+REDUCED_PRIMITIVE_PASS
+V terms: 514
+V=q*U(alpha,p^2,q^2): yes
+numeric content: 1/2 (use 2V with 2A4 for integer data)
+gcd of the 40 alpha coefficient polynomials: 1
+normal form of V modulo <E-alpha,rho> is nonzero
+normal-form factors include q and the apparent S8(alpha)
+normal-form sha256: 09c6aa881abec4a35be1b8b4b9cc0e5187959ebd383f990f6cf78a455f963222
+
+$ python3 exact/verify_operator_ladder_400.py
+OPERATOR_LADDER_400
+order  4, degree 14: 396 exact coefficient equations, zero residual
+order  5, degree 10: 395 exact coefficient equations, zero residual
+order  6, degree  8: 394 exact coefficient equations, zero residual
+order  8, degree  7: 392 exact coefficient equations, zero residual
+order 12, degree  6: 388 exact coefficient equations, zero residual
+DEGREE_LE_5_EXCLUSION_MOD_1000003
+orders 1..56: full column rank; no nonzero operator of degree <= 5
+OPERATOR_LADDER_400_PASS
+
+$ python3 exact/verify_ore_relations.py
+A5 = B1 o A4: PASS (common denominator degree 8)
+A6 = B2 o A4: PASS (common denominator degree 16)
+A8 = B4 o A4: PASS (common denominator degree 32)
+A12 = B8 o A4: PASS (common denominator degree 64)
+ORE_RELATIONS_PASS
+
+FULL_CLOSURE_REPLAY_PASS

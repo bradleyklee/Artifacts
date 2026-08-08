@@ -1,0 +1,68 @@
+[
+  {
+    "order": 1,
+    "B": 3,
+    "rows": 26,
+    "C_columns": 10,
+    "W_columns": 2,
+    "C_num_degree": 2,
+    "C_den_degree": 0,
+    "W_num_degree": 1,
+    "W_den_degree": 0
+  },
+  {
+    "order": 2,
+    "B": 9,
+    "rows": 50,
+    "C_columns": 34,
+    "W_columns": 3,
+    "C_num_degree": 2,
+    "C_den_degree": 0,
+    "W_num_degree": 3,
+    "W_den_degree": 0
+  },
+  {
+    "order": 3,
+    "B": 15,
+    "rows": 74,
+    "C_columns": 58,
+    "W_columns": 4,
+    "C_num_degree": 2,
+    "C_den_degree": 0,
+    "W_num_degree": 4,
+    "W_den_degree": 0
+  },
+  {
+    "order": 4,
+    "B": 21,
+    "rows": 98,
+    "C_columns": 82,
+    "W_columns": 5,
+    "C_num_degree": 2,
+    "C_den_degree": 0,
+    "W_num_degree": 6,
+    "W_den_degree": 0
+  },
+  {
+    "order": 5,
+    "B": 27,
+    "rows": 122,
+    "C_columns": 106,
+    "W_columns": 6,
+    "C_num_degree": 2,
+    "C_den_degree": 0,
+    "W_num_degree": 7,
+    "W_den_degree": 0
+  },
+  {
+    "order": 6,
+    "B": 33,
+    "rows": 146,
+    "C_columns": 130,
+    "W_columns": 7,
+    "C_num_degree": 2,
+    "C_den_degree": 0,
+    "W_num_degree": 9,
+    "W_den_degree": 0
+  }
+]

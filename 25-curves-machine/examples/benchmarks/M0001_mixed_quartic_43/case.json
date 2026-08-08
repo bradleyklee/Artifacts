@@ -1,0 +1,43 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "M0001",
+  "slug": "mixed_quartic_43",
+  "display_name": "Mixed Quartic 43-Model Benchmark",
+  "aliases": [
+    "mixed_benchmark_43"
+  ],
+  "domain": "benchmarks",
+  "status": "43_of_43_mode_agreement",
+  "summary": "Balanced 43-model plane-polynomial benchmark with inductive/reductive mode agreement for every row.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed 43-row benchmark check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py M0001",
+      "cost": "normal"
+    },
+    {
+      "label": "Rebuild benchmark model corpus",
+      "cwd": "code/plane/search_analyze/mixed_quartic_benchmark",
+      "command": "python3 src/build_mixed_benchmark.py",
+      "cost": "normal"
+    },
+    {
+      "label": "Full 43-model benchmark",
+      "cwd": "code/plane/search_analyze/mixed_quartic_benchmark",
+      "command": "python3 src/run_benchmark.py --workers 4 --recompute",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-001_INDUCTIVE_SERIES_DISCOVERY.md",
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/benchmark"
+  ]
+}

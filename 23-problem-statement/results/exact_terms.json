@@ -1,0 +1,269 @@
+{
+  "model": {
+    "name": "first-resolution P^4 invariant",
+    "optimization_order": [
+      "For each labeled typogeometry, use the smallest inflation l with a feasible simple cycle.",
+      "At that l, minimize taxicab cycle length L.",
+      "Normalize by C = L / (l * 2^d).",
+      "For fixed n, maximize C over all labeled typogeometries."
+    ],
+    "warning": "This is lexicographic in l and L. It is not the infimum of L/(l*2^d) over all l.",
+    "grid_convention": "Paths run on vertices of the l*2^d by l*2^d nearest-neighbor grid; quadtree leaf regions label allowable representative vertices."
+  },
+  "exact_first_resolution_terms": [
+    {
+      "n": 2,
+      "typogeometry_count": 6,
+      "cyclic_orders_mod_dihedral": 1,
+      "raw_labeled_instances": 6,
+      "global_symmetry_classes": 2,
+      "first_resolution_value": 2.0,
+      "first_resolution_value_fraction": "2",
+      "maximum_taxicab_length": 4,
+      "metric_witness_count_among_classes": 2,
+      "taxicab_witness_count_among_classes": 2,
+      "inflation_histogram": {
+        "1": 2
+      },
+      "runtime_seconds": 0.003226757049560547
+    },
+    {
+      "n": 3,
+      "typogeometry_count": 76,
+      "cyclic_orders_mod_dihedral": 1,
+      "raw_labeled_instances": 76,
+      "global_symmetry_classes": 11,
+      "first_resolution_value": 2.0,
+      "first_resolution_value_fraction": "2",
+      "maximum_taxicab_length": 8,
+      "metric_witness_count_among_classes": 4,
+      "taxicab_witness_count_among_classes": 3,
+      "inflation_histogram": {
+        "1": 11
+      },
+      "runtime_seconds": 0.07689809799194336
+    },
+    {
+      "n": 4,
+      "typogeometry_count": 1201,
+      "cyclic_orders_mod_dihedral": 3,
+      "raw_labeled_instances": 3603,
+      "global_symmetry_classes": 479,
+      "first_resolution_value": 4.25,
+      "first_resolution_value_fraction": "17/4",
+      "maximum_taxicab_length": 36,
+      "metric_witness_count_among_classes": 2,
+      "taxicab_witness_count_among_classes": 1,
+      "inflation_histogram": {
+        "1": 406,
+        "2": 73
+      },
+      "runtime_seconds": null,
+      "runtime_note": "Exact completed in-memory run; all 479 records revalidated."
+    }
+  ],
+  "typogeometry_count_terms": [
+    {
+      "n": 1,
+      "a_n": 1
+    },
+    {
+      "n": 2,
+      "a_n": 6
+    },
+    {
+      "n": 3,
+      "a_n": 76
+    },
+    {
+      "n": 4,
+      "a_n": 1201
+    },
+    {
+      "n": 5,
+      "a_n": 21252
+    },
+    {
+      "n": 6,
+      "a_n": 402892
+    },
+    {
+      "n": 7,
+      "a_n": 8001412
+    },
+    {
+      "n": 8,
+      "a_n": 164321982
+    },
+    {
+      "n": 9,
+      "a_n": 3461110532
+    },
+    {
+      "n": 10,
+      "a_n": 74358814838
+    },
+    {
+      "n": 11,
+      "a_n": 1623152780808
+    },
+    {
+      "n": 12,
+      "a_n": 35897318940028
+    },
+    {
+      "n": 13,
+      "a_n": 802620009567628
+    },
+    {
+      "n": 14,
+      "a_n": 18112759482614328
+    },
+    {
+      "n": 15,
+      "a_n": 412020809942451504
+    },
+    {
+      "n": 16,
+      "a_n": 9437537418826749369
+    },
+    {
+      "n": 17,
+      "a_n": 217486633306640519124
+    },
+    {
+      "n": 18,
+      "a_n": 5038888894596723858484
+    },
+    {
+      "n": 19,
+      "a_n": 117303163927569738525484
+    },
+    {
+      "n": 20,
+      "a_n": 2742468972906020970441060
+    }
+  ],
+  "prompt_1324_check": {
+    "name": "unnested_1324",
+    "base_label_grid": [
+      [
+        1,
+        4
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "inflation": 2,
+    "depth": 1,
+    "grid_width": 4,
+    "taxicab_length": 12,
+    "normalized_value_fraction": "3",
+    "chosen_xy": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "segments_xy": [
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      [
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          3,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    ]
+  },
+  "validation": {
+    "n4_records_checked": 479,
+    "checks": [
+      "unit nearest-neighbor steps",
+      "edge uniqueness",
+      "degree two at every used vertex",
+      "cyclic segment endpoints",
+      "chosen representative lies in its labeled region",
+      "reported edge count equals taxicab length"
+    ],
+    "status": "PASS"
+  }
+}

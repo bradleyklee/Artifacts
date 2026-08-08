@@ -1,0 +1,8 @@
+{
+  "name": "triangle_hexagon",
+  "description": "circle plus triangle and hexagon harmonics",
+  "variables": ["p", "q"],
+  "parameter": "alpha",
+  "energy_E_equals_2H": "p^2 + q^2 + q^3 - 3*p^2*q + (q^6 - 15*p^2*q^4 + 15*p^4*q^2 - p^6)/4",
+  "lairez_input": "2/(E-alpha)"
+}

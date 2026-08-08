@@ -1,0 +1,22 @@
+{
+  "example_id": "q2_generic_no_reflection",
+  "prime": 65497,
+  "order": 6,
+  "degree": 31,
+  "train_terms": 260,
+  "full_terms": 340,
+  "matrix_shape": [
+    254,
+    224
+  ],
+  "free_column": 223,
+  "null_vector_sha256": "2102cf7559bfcbd750108e0c7da0f4338e9ea1484e27a478c180f9e2c22747a1",
+  "training": {
+    "pass": true,
+    "equations_checked": 254
+  },
+  "heldout": {
+    "pass": true,
+    "equations_checked": 80
+  }
+}

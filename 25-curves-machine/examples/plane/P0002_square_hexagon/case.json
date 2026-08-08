@@ -1,0 +1,43 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0002",
+  "slug": "square_hexagon",
+  "display_name": "Square-Hexagon",
+  "aliases": [
+    "plane.square_hexagon"
+  ],
+  "domain": "plane",
+  "status": "exact_certificate",
+  "summary": "Closed order-four plane-curve certificate with finite-support closure, reduced primitive, and a human certificate.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Merged exact certificate",
+      "cwd": "examples/plane/P0002_square_hexagon/scripts/runner",
+      "command": "python3 exact/verify_merged_certificate.py",
+      "cost": "normal"
+    },
+    {
+      "label": "Reduced primitive",
+      "cwd": "examples/plane/P0002_square_hexagon/scripts/runner",
+      "command": "python3 exact/verify_reduced_primitive.py",
+      "cost": "normal"
+    },
+    {
+      "label": "Full deductive derivation",
+      "cwd": "examples/plane/P0002_square_hexagon/scripts/runner",
+      "command": "python3 exact/derive_deductive_certificate.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md",
+    "pseudo/sphere/ALG-004_FINITE_SUPPORT_EXHAUSTIVENESS.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/plane_curves/square_hexagon_current"
+  ]
+}

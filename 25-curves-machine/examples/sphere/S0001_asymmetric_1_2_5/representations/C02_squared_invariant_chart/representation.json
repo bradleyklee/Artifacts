@@ -1,0 +1,16 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C02",
+  "slug": "squared_invariant_chart",
+  "name": "Squared-variable invariant chart",
+  "kind": "invariant_coordinates",
+  "variables": [
+    "X",
+    "Y",
+    "Z"
+  ],
+  "constraints": [
+    "X+Y+Z=1"
+  ],
+  "notes": ""
+}

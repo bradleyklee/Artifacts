@@ -1,0 +1,247 @@
+{
+  "example_id": "q1b",
+  "records": [
+    {
+      "order": 4,
+      "q_bound": 0,
+      "ambient_rows": 48,
+      "exact_columns": 2,
+      "rank_C": 2,
+      "rank_CW": 7,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 1,
+      "ambient_rows": 48,
+      "exact_columns": 4,
+      "rank_C": 4,
+      "rank_CW": 9,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 2,
+      "ambient_rows": 48,
+      "exact_columns": 6,
+      "rank_C": 6,
+      "rank_CW": 11,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 3,
+      "ambient_rows": 48,
+      "exact_columns": 8,
+      "rank_C": 8,
+      "rank_CW": 13,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 4,
+      "ambient_rows": 48,
+      "exact_columns": 10,
+      "rank_C": 10,
+      "rank_CW": 15,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 5,
+      "ambient_rows": 48,
+      "exact_columns": 12,
+      "rank_C": 12,
+      "rank_CW": 17,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 6,
+      "ambient_rows": 48,
+      "exact_columns": 14,
+      "rank_C": 14,
+      "rank_CW": 19,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 7,
+      "ambient_rows": 48,
+      "exact_columns": 16,
+      "rank_C": 16,
+      "rank_CW": 21,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 8,
+      "ambient_rows": 48,
+      "exact_columns": 18,
+      "rank_C": 18,
+      "rank_CW": 23,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 9,
+      "ambient_rows": 48,
+      "exact_columns": 20,
+      "rank_C": 20,
+      "rank_CW": 25,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 10,
+      "ambient_rows": 48,
+      "exact_columns": 22,
+      "rank_C": 22,
+      "rank_CW": 27,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 11,
+      "ambient_rows": 48,
+      "exact_columns": 24,
+      "rank_C": 24,
+      "rank_CW": 29,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 12,
+      "ambient_rows": 48,
+      "exact_columns": 26,
+      "rank_C": 26,
+      "rank_CW": 31,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 13,
+      "ambient_rows": 48,
+      "exact_columns": 28,
+      "rank_C": 28,
+      "rank_CW": 33,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 14,
+      "ambient_rows": 48,
+      "exact_columns": 30,
+      "rank_C": 30,
+      "rank_CW": 35,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 15,
+      "ambient_rows": 48,
+      "exact_columns": 32,
+      "rank_C": 32,
+      "rank_CW": 37,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 16,
+      "ambient_rows": 48,
+      "exact_columns": 34,
+      "rank_C": 34,
+      "rank_CW": 39,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 17,
+      "ambient_rows": 48,
+      "exact_columns": 36,
+      "rank_C": 36,
+      "rank_CW": 41,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 18,
+      "ambient_rows": 50,
+      "exact_columns": 38,
+      "rank_C": 38,
+      "rank_CW": 43,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 19,
+      "ambient_rows": 50,
+      "exact_columns": 40,
+      "rank_C": 40,
+      "rank_CW": 45,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 20,
+      "ambient_rows": 54,
+      "exact_columns": 42,
+      "rank_C": 42,
+      "rank_CW": 47,
+      "relation_dimension": 0,
+      "prime": 65521,
+      "alpha_value": 7
+    },
+    {
+      "order": 4,
+      "q_bound": 21,
+      "ambient_rows": 56,
+      "exact_columns": 44,
+      "rank_C": 44,
+      "rank_CW": 48,
+      "relation_dimension": 1,
+      "prime": 65521,
+      "alpha_value": 7
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "format": "curves-machine-showcase-catalog-v1",
+  "showcases": [
+    {
+      "case_id": "P0002",
+      "path": "showcase/square_hexagon"
+    },
+    {
+      "case_id": "P0003",
+      "path": "showcase/triangle_rectangle"
+    },
+    {
+      "case_id": "P0004",
+      "path": "showcase/circle_triangle_square"
+    }
+  ]
+}

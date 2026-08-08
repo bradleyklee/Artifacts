@@ -1,0 +1,249 @@
+{
+  "example_id": "chiral_control_02",
+  "category": "chiral_harmonic",
+  "model_path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/chiral_control_02.json",
+  "status": "PASS",
+  "quartic_infinity": {
+    "p4_nonzero": true,
+    "discriminant": "13542400/1275989841",
+    "squarefree_at_infinity": true
+  },
+  "inductive": [
+    {
+      "example_id": "chiral_control_02",
+      "prime": 65521,
+      "nterms": 270,
+      "max_order": 6,
+      "degree_cap": 35,
+      "records": [
+        {
+          "order": 1,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            269,
+            72
+          ],
+          "seconds_cap": 0.02229452133178711
+        },
+        {
+          "order": 2,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            268,
+            108
+          ],
+          "seconds_cap": 0.05342531204223633
+        },
+        {
+          "order": 3,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            267,
+            144
+          ],
+          "seconds_cap": 0.053804874420166016
+        },
+        {
+          "order": 4,
+          "degree_cap": 35,
+          "cap_nullity": 22,
+          "shape": [
+            266,
+            180
+          ],
+          "seconds_cap": 0.08907699584960938,
+          "first_degree": 14,
+          "first_nullity": 1,
+          "first_shape": [
+            266,
+            75
+          ]
+        }
+      ],
+      "first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "chiral_control_02",
+      "prime": 65497,
+      "nterms": 270,
+      "max_order": 6,
+      "degree_cap": 35,
+      "records": [
+        {
+          "order": 1,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            269,
+            72
+          ],
+          "seconds_cap": 0.018015146255493164
+        },
+        {
+          "order": 2,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            268,
+            108
+          ],
+          "seconds_cap": 0.05327200889587402
+        },
+        {
+          "order": 3,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            267,
+            144
+          ],
+          "seconds_cap": 0.05291175842285156
+        },
+        {
+          "order": 4,
+          "degree_cap": 35,
+          "cap_nullity": 22,
+          "shape": [
+            266,
+            180
+          ],
+          "seconds_cap": 0.08734941482543945,
+          "first_degree": 14,
+          "first_nullity": 1,
+          "first_shape": [
+            266,
+            75
+          ]
+        }
+      ],
+      "first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      }
+    }
+  ],
+  "inductive_agreement": true,
+  "first_hit": {
+    "order": 4,
+    "degree": 14,
+    "nullity": 1
+  },
+  "deductive_bound_status": "GENERIC_BOUND_APPLIED",
+  "reductive": [
+    {
+      "prime": 65521,
+      "alpha": 7,
+      "records": [
+        {
+          "order": 1,
+          "bound": 3,
+          "rows": 25,
+          "source_columns": 10,
+          "rank_C": 9,
+          "rank_CW": 11,
+          "relation_dimension": 0,
+          "seconds": 0.010466337203979492
+        },
+        {
+          "order": 2,
+          "bound": 9,
+          "rows": 50,
+          "source_columns": 34,
+          "rank_C": 33,
+          "rank_CW": 36,
+          "relation_dimension": 0,
+          "seconds": 0.10066342353820801
+        },
+        {
+          "order": 3,
+          "bound": 15,
+          "rows": 74,
+          "source_columns": 58,
+          "rank_C": 57,
+          "rank_CW": 61,
+          "relation_dimension": 0,
+          "seconds": 0.3081190586090088
+        },
+        {
+          "order": 4,
+          "bound": 21,
+          "rows": 98,
+          "source_columns": 82,
+          "rank_C": 81,
+          "rank_CW": 85,
+          "relation_dimension": 1,
+          "seconds": 1.0503370761871338
+        }
+      ],
+      "first_hit": {
+        "order": 4,
+        "relation_dimension": 1
+      }
+    },
+    {
+      "prime": 65497,
+      "alpha": 11,
+      "records": [
+        {
+          "order": 1,
+          "bound": 3,
+          "rows": 25,
+          "source_columns": 10,
+          "rank_C": 9,
+          "rank_CW": 11,
+          "relation_dimension": 0,
+          "seconds": 0.010534286499023438
+        },
+        {
+          "order": 2,
+          "bound": 9,
+          "rows": 50,
+          "source_columns": 34,
+          "rank_C": 33,
+          "rank_CW": 36,
+          "relation_dimension": 0,
+          "seconds": 0.10421967506408691
+        },
+        {
+          "order": 3,
+          "bound": 15,
+          "rows": 74,
+          "source_columns": 58,
+          "rank_C": 57,
+          "rank_CW": 61,
+          "relation_dimension": 0,
+          "seconds": 0.3055717945098877
+        },
+        {
+          "order": 4,
+          "bound": 21,
+          "rows": 98,
+          "source_columns": 82,
+          "rank_C": 81,
+          "rank_CW": 85,
+          "relation_dimension": 1,
+          "seconds": 0.9989321231842041
+        }
+      ],
+      "first_hit": {
+        "order": 4,
+        "relation_dimension": 1
+      }
+    }
+  ],
+  "reductive_agreement": true,
+  "reductive_first_hit": {
+    "order": 4,
+    "relation_dimension": 1
+  },
+  "mode_agreement": true,
+  "seconds_total": 8.125816583633423
+}

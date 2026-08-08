@@ -1,0 +1,301 @@
+{
+  "scope": "even powers of Jx,Jy,Jz only",
+  "odd_power_symmetry_breaking": "deferred",
+  "linear_exact_family": [
+    {
+      "parameters": {
+        "a": 1,
+        "b": 2,
+        "c": 5
+      },
+      "general_checkpoints": [
+        {
+          "v_degree": 5,
+          "matrix_shape": [
+            49,
+            36
+          ],
+          "rank": 36,
+          "nullity": 0,
+          "operator_relations": 0,
+          "nonzeros": 268,
+          "density": 0.15192743764172337,
+          "seconds": 3.7699057379995793
+        },
+        {
+          "v_degree": 6,
+          "matrix_shape": [
+            50,
+            40
+          ],
+          "rank": 39,
+          "nullity": 1,
+          "operator_relations": 1,
+          "nonzeros": 288,
+          "density": 0.144,
+          "seconds": 3.933713500000522
+        }
+      ],
+      "general_closing_v_degree": 6,
+      "dihedral_closing_lambda_degree": 0,
+      "dihedral_matrix_shape": [
+        28,
+        16
+      ],
+      "dihedral_G_shape": [
+        5,
+        5
+      ],
+      "operator_scale_dihedral_over_general": "2",
+      "primitive_difference_mod_curve": "0",
+      "operator_general": [
+        "2*(3*alpha - 8)",
+        "8*(3*alpha**2 - 16*alpha + 17)",
+        "8*(alpha - 5)*(alpha - 2)*(alpha - 1)"
+      ]
+    },
+    {
+      "parameters": {
+        "a": 0,
+        "b": 1,
+        "c": 3
+      },
+      "general_checkpoints": [
+        {
+          "v_degree": 5,
+          "matrix_shape": [
+            49,
+            36
+          ],
+          "rank": 36,
+          "nullity": 0,
+          "operator_relations": 0,
+          "nonzeros": 268,
+          "density": 0.15192743764172337,
+          "seconds": 3.2723733820002963
+        },
+        {
+          "v_degree": 6,
+          "matrix_shape": [
+            50,
+            40
+          ],
+          "rank": 39,
+          "nullity": 1,
+          "operator_relations": 1,
+          "nonzeros": 288,
+          "density": 0.144,
+          "seconds": 3.628895745000591
+        }
+      ],
+      "general_closing_v_degree": 6,
+      "dihedral_closing_lambda_degree": 0,
+      "dihedral_matrix_shape": [
+        28,
+        16
+      ],
+      "dihedral_G_shape": [
+        5,
+        5
+      ],
+      "operator_scale_dihedral_over_general": "2",
+      "primitive_difference_mod_curve": "0",
+      "operator_general": [
+        "2*(3*alpha - 4)",
+        "8*(3*alpha**2 - 8*alpha + 3)",
+        "8*alpha*(alpha - 3)*(alpha - 1)"
+      ]
+    },
+    {
+      "parameters": {
+        "a": 1,
+        "b": 3,
+        "c": 7
+      },
+      "general_checkpoints": [
+        {
+          "v_degree": 5,
+          "matrix_shape": [
+            49,
+            36
+          ],
+          "rank": 36,
+          "nullity": 0,
+          "operator_relations": 0,
+          "nonzeros": 296,
+          "density": 0.16780045351473924,
+          "seconds": 4.03083675400012
+        },
+        {
+          "v_degree": 6,
+          "matrix_shape": [
+            50,
+            40
+          ],
+          "rank": 39,
+          "nullity": 1,
+          "operator_relations": 1,
+          "nonzeros": 320,
+          "density": 0.16,
+          "seconds": 3.9831041209999967
+        }
+      ],
+      "general_closing_v_degree": 6,
+      "dihedral_closing_lambda_degree": 0,
+      "dihedral_matrix_shape": [
+        28,
+        16
+      ],
+      "dihedral_G_shape": [
+        5,
+        5
+      ],
+      "operator_scale_dihedral_over_general": "16",
+      "primitive_difference_mod_curve": "0",
+      "operator_general": [
+        "(3*alpha - 11)/4",
+        "3*alpha**2 - 22*alpha + 31",
+        "(alpha - 7)*(alpha - 3)*(alpha - 1)"
+      ]
+    },
+    {
+      "parameters": {
+        "a": -2,
+        "b": 2,
+        "c": 9
+      },
+      "general_checkpoints": [
+        {
+          "v_degree": 5,
+          "matrix_shape": [
+            49,
+            36
+          ],
+          "rank": 36,
+          "nullity": 0,
+          "operator_relations": 0,
+          "nonzeros": 296,
+          "density": 0.16780045351473924,
+          "seconds": 4.09681395699954
+        },
+        {
+          "v_degree": 6,
+          "matrix_shape": [
+            50,
+            40
+          ],
+          "rank": 39,
+          "nullity": 1,
+          "operator_relations": 1,
+          "nonzeros": 320,
+          "density": 0.16,
+          "seconds": 4.570701251000173
+        }
+      ],
+      "general_closing_v_degree": 6,
+      "dihedral_closing_lambda_degree": 0,
+      "dihedral_matrix_shape": [
+        28,
+        16
+      ],
+      "dihedral_G_shape": [
+        5,
+        5
+      ],
+      "operator_scale_dihedral_over_general": "128",
+      "primitive_difference_mod_curve": "0",
+      "operator_general": [
+        "3*(alpha - 3)/32",
+        "(3*alpha**2 - 18*alpha - 4)/8",
+        "(alpha - 9)*(alpha - 2)*(alpha + 2)/8"
+      ]
+    }
+  ],
+  "quartic_structural_catalog": [
+    {
+      "name": "linear_asymmetric",
+      "stratum": "linear",
+      "degree_u_F": 1,
+      "proven_quotient_u_max_degree": 0,
+      "degree_v_F": 1,
+      "reflection_v_to_1_minus_v": false,
+      "leading_u_coefficient": "v + 3",
+      "degree_v_discriminant_u": 0,
+      "discriminant_u": "1"
+    },
+    {
+      "name": "octahedral",
+      "stratum": "polyhedral",
+      "degree_u_F": 2,
+      "proven_quotient_u_max_degree": 1,
+      "degree_v_F": 2,
+      "reflection_v_to_1_minus_v": true,
+      "leading_u_coefficient": "4*(v**2 - v + 1)",
+      "degree_v_discriminant_u": 2,
+      "discriminant_u": "16*(alpha*v**2 - alpha*v + alpha - 2*v**2 + 2*v - 1)"
+    },
+    {
+      "name": "diagonal_quadratic_01",
+      "stratum": "diagonal",
+      "degree_u_F": 2,
+      "proven_quotient_u_max_degree": 1,
+      "degree_v_F": 2,
+      "reflection_v_to_1_minus_v": false,
+      "leading_u_coefficient": "3*v**2 - 4*v + 5",
+      "degree_v_discriminant_u": 2,
+      "discriminant_u": "12*alpha*v**2 - 16*alpha*v + 20*alpha - 56*v**2 + 44*v - 19"
+    },
+    {
+      "name": "reflection_xy",
+      "stratum": "reflection",
+      "degree_u_F": 2,
+      "proven_quotient_u_max_degree": 1,
+      "degree_v_F": 2,
+      "reflection_v_to_1_minus_v": true,
+      "leading_u_coefficient": "-v**2 + v + 10",
+      "degree_v_discriminant_u": 2,
+      "discriminant_u": "-4*alpha*v**2 + 4*alpha*v + 40*alpha + 20*v**2 - 20*v - 119"
+    },
+    {
+      "name": "factored_xy",
+      "stratum": "degenerate",
+      "degree_u_F": 2,
+      "proven_quotient_u_max_degree": 1,
+      "degree_v_F": 2,
+      "reflection_v_to_1_minus_v": true,
+      "leading_u_coefficient": "-v*(v - 1)",
+      "degree_v_discriminant_u": 2,
+      "discriminant_u": "-4*alpha*v*(v - 1)"
+    },
+    {
+      "name": "dense_01",
+      "stratum": "dense",
+      "degree_u_F": 2,
+      "proven_quotient_u_max_degree": 1,
+      "degree_v_F": 2,
+      "reflection_v_to_1_minus_v": false,
+      "leading_u_coefficient": "-3*(7*v**2 + v - 7)",
+      "degree_v_discriminant_u": 2,
+      "discriminant_u": "-84*alpha*v**2 - 12*alpha*v + 84*alpha + 3805*v**2 - 4754*v + 1213"
+    },
+    {
+      "name": "dense_02",
+      "stratum": "dense",
+      "degree_u_F": 2,
+      "proven_quotient_u_max_degree": 1,
+      "degree_v_F": 2,
+      "reflection_v_to_1_minus_v": false,
+      "leading_u_coefficient": "5*v**2 + 45*v - 27",
+      "degree_v_discriminant_u": 2,
+      "discriminant_u": "20*alpha*v**2 + 180*alpha*v - 108*alpha + 3436*v**2 - 2772*v + 1953"
+    }
+  ],
+  "empirical_bound_summary": {
+    "linear_general_minimal_v_degree_observed": 6,
+    "linear_dihedral_minimal_lambda_degree_observed": 0,
+    "linear_samples": 4,
+    "quartic_structural_samples": 7,
+    "proven_u_bound": "deg_u(P)<deg_u(F)",
+    "angular_support_bound_status": "empirical only; no theorem yet"
+  }
+}

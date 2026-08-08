@@ -1,0 +1,47 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0004",
+  "slug": "octahedral",
+  "display_name": "Octahedral Sphere Model",
+  "aliases": [
+    "octahedral_exact_invariant_certificate",
+    "octahedral_direct_degree7_certificate"
+  ],
+  "domain": "sphere",
+  "status": "exact_multi_chart_certificate",
+  "summary": "One octahedral model with exact direct-chart and invariant-quotient certificates and a verified pullback relation.",
+  "representations": [
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed coordinate-equivalence check",
+      "cwd": "examples/sphere/S0004_octahedral",
+      "command": "python3 scripts/check_filed_equivalence.py",
+      "cost": "normal"
+    },
+    {
+      "label": "Invariant-chart exact reconstruction",
+      "cwd": "code/sphere",
+      "command": "python3 algorithms/scripts/replay_even_sphere_octahedral.py",
+      "cost": "long"
+    },
+    {
+      "label": "Direct/invariant deductive comparison",
+      "cwd": "code/sphere",
+      "command": "python3 algorithms/scripts/replay_dihedral_sphere_comparison.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-008_EVEN_SPHERE_QUARTIC_FACTORY.md",
+    "pseudo/sphere/ALG-009_DIHEDRAL_ODE_SPHERE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/octahedral_direct_degree7_certificate.json",
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/octahedral_exact_invariant_certificate.json"
+  ]
+}

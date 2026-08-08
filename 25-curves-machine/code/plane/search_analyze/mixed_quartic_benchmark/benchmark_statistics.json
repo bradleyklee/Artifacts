@@ -1,0 +1,140 @@
+{
+  "models_total": 43,
+  "status_counts": {
+    "PASS": 43
+  },
+  "category_counts": {
+    "aligned_harmonic": 4,
+    "chiral_harmonic": 4,
+    "cubic_plus_radial": 3,
+    "dense_generic": 20,
+    "mechanical_rotated": 3,
+    "near-separable": 1,
+    "semidense_generic": 6,
+    "separable": 2
+  },
+  "inductive_order_counts": {
+    "2": 3,
+    "4": 3,
+    "6": 37
+  },
+  "inductive_order_degree_counts": {
+    "2,4": 3,
+    "4,13": 1,
+    "4,14": 2,
+    "6,20": 3,
+    "6,29": 3,
+    "6,31": 31
+  },
+  "reductive_order_counts": {
+    "2": 3,
+    "4": 3,
+    "6": 37
+  },
+  "mode_agreement_count": 43,
+  "deductive_generic_bound_count": 37,
+  "squarefree_at_infinity_count": 37,
+  "nontrivial_signed_symmetry_count": 4,
+  "generic_no_signed_symmetry_count": 26,
+  "runtime_seconds": {
+    "sum": 3397.9350118637085,
+    "median": 71.36351609230042,
+    "max": 147.71454501152039
+  },
+  "by_category": {
+    "aligned_harmonic": {
+      "count": 4,
+      "orders": {
+        "4": 2,
+        "6": 2
+      },
+      "degrees": {
+        "13": 1,
+        "14": 1,
+        "31": 2
+      },
+      "mode_agreement": 4,
+      "nontrivial_symmetry": 2
+    },
+    "chiral_harmonic": {
+      "count": 4,
+      "orders": {
+        "4": 1,
+        "6": 3
+      },
+      "degrees": {
+        "14": 1,
+        "29": 1,
+        "31": 2
+      },
+      "mode_agreement": 4,
+      "nontrivial_symmetry": 1
+    },
+    "cubic_plus_radial": {
+      "count": 3,
+      "orders": {
+        "6": 3
+      },
+      "degrees": {
+        "20": 3
+      },
+      "mode_agreement": 3,
+      "nontrivial_symmetry": 0
+    },
+    "dense_generic": {
+      "count": 20,
+      "orders": {
+        "6": 20
+      },
+      "degrees": {
+        "31": 20
+      },
+      "mode_agreement": 20,
+      "nontrivial_symmetry": 0
+    },
+    "mechanical_rotated": {
+      "count": 3,
+      "orders": {
+        "2": 3
+      },
+      "degrees": {
+        "4": 3
+      },
+      "mode_agreement": 3,
+      "nontrivial_symmetry": 1
+    },
+    "near-separable": {
+      "count": 1,
+      "orders": {
+        "6": 1
+      },
+      "degrees": {
+        "31": 1
+      },
+      "mode_agreement": 1,
+      "nontrivial_symmetry": 0
+    },
+    "semidense_generic": {
+      "count": 6,
+      "orders": {
+        "6": 6
+      },
+      "degrees": {
+        "31": 6
+      },
+      "mode_agreement": 6,
+      "nontrivial_symmetry": 0
+    },
+    "separable": {
+      "count": 2,
+      "orders": {
+        "6": 2
+      },
+      "degrees": {
+        "29": 2
+      },
+      "mode_agreement": 2,
+      "nontrivial_symmetry": 0
+    }
+  }
+}

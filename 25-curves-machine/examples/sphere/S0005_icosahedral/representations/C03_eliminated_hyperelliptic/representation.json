@@ -1,0 +1,14 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C03",
+  "slug": "eliminated_hyperelliptic",
+  "name": "Eliminated hyperelliptic model",
+  "kind": "hyperelliptic_model",
+  "variables": [
+    "x",
+    "z"
+  ],
+  "constraints": [],
+  "notes": "",
+  "global": false
+}

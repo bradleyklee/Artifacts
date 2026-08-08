@@ -1,0 +1,14 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C03",
+  "slug": "hyperelliptic_reduction",
+  "name": "Hyperelliptic reduction",
+  "kind": "hyperelliptic_model",
+  "variables": [
+    "x",
+    "y"
+  ],
+  "constraints": [],
+  "notes": "",
+  "global": false
+}

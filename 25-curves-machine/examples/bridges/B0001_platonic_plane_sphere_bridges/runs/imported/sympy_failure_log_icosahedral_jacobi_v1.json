@@ -1,0 +1,58 @@
+{
+  "date": "2026-08-03",
+  "cases": [
+    {
+      "id": "sympy_nested_radical_series_alpha_of_m_of_beta",
+      "operation": "series(alpha_of_m.subs(m, m_edge), beta, 0, 5)",
+      "symptoms": [
+        "entered assumptions/root sorting",
+        "attempted quartic root heuristics and multivariate integer factorization",
+        "hit 60 second execution cap"
+      ],
+      "mathematical_status": "no obstruction; numeric and recursive coefficient methods work",
+      "bypass": [
+        "keep alpha(z) exact",
+        "keep m(beta) implicit in sextic",
+        "compute branch coefficients recursively",
+        "use mpmath continuation for numerical branch tracking"
+      ]
+    },
+    {
+      "id": "sympy_radical_prefactor_simplification",
+      "operation": "simplify((1-3*z(m)/4)^(1/4)*sqrt(1+m) - (1-m+m^2)^(1/4))",
+      "symptoms": [
+        "failed to prove branch-sensitive radical identity directly"
+      ],
+      "mathematical_status": "identity verified exactly after taking fourth powers",
+      "bypass": [
+        "compare fourth powers",
+        "record root choice separately"
+      ]
+    },
+    {
+      "id": "sympy_large_series_root_sorting_second_locality",
+      "operation": "high-order simultaneous series solve near alpha=-4/9",
+      "symptoms": [
+        "expensive algebraic root sorting",
+        "60 second timeout"
+      ],
+      "mathematical_status": "not a negative result",
+      "bypass": [
+        "solve one coefficient per order",
+        "avoid generic solve over algebraic expressions"
+      ]
+    },
+    {
+      "id": "generated_python_caret_power_syntax",
+      "operation": "run generated Tschirnhaus verifier",
+      "symptoms": [
+        "TypeError because ^ was parsed as bitwise XOR"
+      ],
+      "mathematical_status": "code-generation defect, not mathematical obstruction",
+      "bypass": [
+        "replace ^ with **",
+        "rerun verifier"
+      ]
+    }
+  ]
+}

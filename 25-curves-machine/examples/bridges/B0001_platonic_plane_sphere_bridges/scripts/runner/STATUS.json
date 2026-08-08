@@ -1,0 +1,32 @@
+{
+  "project": "triangle_rectangle_platonic_bridge",
+  "date": "2026-08-03",
+  "exact": [
+    "triangle_rectangle_quartic_to_pq_certificate_map",
+    "octahedral_period_descent_to_rotation_quotient",
+    "octahedral_X0_2_isogeny_architecture",
+    "icosahedral_A4_genus3_intermediate_and_degree5_map_to_235II",
+    "icosahedral_physical_time_descent_to_235II",
+    "icosahedral_beta_to_z_to_alpha_base_tower",
+    "icosahedral_z_to_R_branchpoint_Tschirnhaus_map",
+    "generic_edge_D2_cubic_to_even_quartic_identity",
+    "even_quartic_to_triangle_rectangle_map"
+  ],
+  "provisional": [
+    "physical_edge_branch_selection_outside_local_interval",
+    "global_cycle_continuation",
+    "global_hypergeometric_period_identification",
+    "cleanest_possible_icosahedral_extraction"
+  ],
+  "open": [
+    "direct_low_degree_x2_extraction",
+    "sphere_invariants_to_pq_simplification",
+    "Lie_Poisson_differential_multiplier",
+    "face_and_vertex_locality_maps",
+    "Picard_Fuchs_and_monodromy_audit_all_families"
+  ],
+  "next": [
+    "clean_extraction.py",
+    "hypergeometric_branch_audit.py"
+  ]
+}

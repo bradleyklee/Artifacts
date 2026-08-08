@@ -1,0 +1,31 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0003",
+  "slug": "tetrahedral",
+  "display_name": "Tetrahedral Sphere Model",
+  "aliases": [
+    "tetrahedral_exact_certificate"
+  ],
+  "domain": "sphere",
+  "status": "exact_certificate",
+  "summary": "Exact tetrahedral sphere calculation closed in action-angle coordinates.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Tetrahedral replay",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/sphere/S0003_tetrahedral/runs/replay_output/examples/sphere_curves && CURVES_MACHINE_DATA_ROOT=../../examples/sphere/S0003_tetrahedral/runs/replay_output python3 algorithms/scripts/replay_tetrahedral_sphere.py",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-014_UNRESTRICTED_SPHERE_POLYNOMIAL_LOOP.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/tetrahedral_exact_certificate.json"
+  ]
+}

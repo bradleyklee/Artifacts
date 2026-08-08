@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "run_record.schema.json",
+  "title": "Algorithm run record",
+  "type": "object",
+  "required": [
+    "run_id",
+    "case_id",
+    "algorithm_id",
+    "mode",
+    "started_at",
+    "status",
+    "environment",
+    "bounds",
+    "artifacts"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "algorithm_id": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "inductive",
+        "deductive",
+        "hybrid",
+        "verification",
+        "benchmark"
+      ]
+    },
+    "started_at": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "environment": {
+      "type": "object"
+    },
+    "bounds": {
+      "type": "object"
+    },
+    "stage_timings_seconds": {
+      "type": "object"
+    },
+    "peak_memory_bytes": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "explored_region": {
+      "type": "array"
+    },
+    "last_verified_object": {},
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

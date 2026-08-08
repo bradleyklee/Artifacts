@@ -1,0 +1,10 @@
+{
+  "name": "elliptic_free_coefficients",
+  "description": "symbolic two-parameter elliptic quartic family",
+  "variables": ["p", "q"],
+  "parameter": "alpha",
+  "free_coefficients": ["c1", "c2"],
+  "energy_E_equals_2H": "p^2 + q^2 + c1*(q^3 - 3*p^2*q) + c2*(q^2 - 3*p^2)^2",
+  "model_notation": "alpha=2H",
+  "lairez_input": "2/(E-alpha)"
+}

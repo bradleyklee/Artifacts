@@ -1,0 +1,39 @@
+{
+  "source": "Bradley Klee dissertation, Chapter 4",
+  "energy_convention": "alpha=H on J.J=1",
+  "status": "transcribed; asymmetric-top chart identities independently checked",
+  "operators": {
+    "asymmetric_top": {
+      "hamiltonian": "a*Jx^2+b*Jy^2+c*Jz^2",
+      "sigma1": "a+b+c",
+      "sigma2": "a*b+b*c+c*a",
+      "coefficients_low_to_high": [
+        "Sigma1-3*alpha",
+        "-4*(Sigma2-2*alpha*Sigma1+3*alpha^2)",
+        "-4*(alpha-a)*(alpha-b)*(alpha-c)"
+      ]
+    },
+    "tetrahedral": {
+      "coefficients_low_to_high": [
+        "8*alpha",
+        "-9*(1-3*alpha^2)",
+        "-9*alpha*(1-alpha^2)"
+      ]
+    },
+    "octahedral": {
+      "coefficients_low_to_high": [
+        "9*(6-5*alpha)",
+        "-16*(12-22*alpha+9*alpha^2)",
+        "16*(2-3*alpha)*(1-alpha)*(2-alpha)"
+      ]
+    },
+    "icosahedral": {
+      "coefficients_low_to_high": [
+        "5*(5-21*alpha)",
+        "4*(5+44*alpha-81*alpha^2)",
+        "4*alpha*(5+27*alpha)*(1-alpha)"
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"primitive_certificate_record.schema.json","title":"Primitive/exact differential certificate","type":"object",
+  "required":["record_type","certificate_id","case_id","operator_ref","primitive_expression","identity","verification","status","source_ref"],
+  "properties":{"record_type":{"const":"primitive_certificate"},"certificate_id":{"type":"string"},"case_id":{"type":"string"},"operator_ref":{"type":"string"},"primitive_expression":{"type":["string","object"]},"identity":{"type":"string"},"verification":{"type":"object"},"status":{"enum":["verified","partial","assembly_incomplete","environment_blocked"]},"source_ref":{"type":"string"}},"additionalProperties":true
+}

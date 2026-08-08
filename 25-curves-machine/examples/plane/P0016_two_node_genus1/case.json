@@ -1,0 +1,30 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0016",
+  "slug": "two_node_genus1",
+  "display_name": "Two-Node Genus-One Annihilator",
+  "aliases": [
+    "two_node_genus1_annihilator"
+  ],
+  "domain": "plane",
+  "status": "verified_operator",
+  "summary": "Explicit annihilator construction for the two-node genus-one stratum.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Two-node annihilator",
+      "cwd": "examples/plane/P0016_two_node_genus1/scripts/runner",
+      "command": "bash run_all.sh",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/plane/PLANE_CURVE_ODE_PSEUDOCODE_V0_2.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/plane_curves/search_analyze/two_node_genus1_annihilator"
+  ]
+}

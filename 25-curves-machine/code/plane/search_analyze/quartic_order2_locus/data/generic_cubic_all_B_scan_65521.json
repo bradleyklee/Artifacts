@@ -1,0 +1,40 @@
+{
+  "example_id": "generic_cubic_all_B",
+  "prime": 65521,
+  "nterms": 165,
+  "max_order": 4,
+  "degree_cap": 20,
+  "records": [
+    {
+      "order": 1,
+      "degree_cap": 20,
+      "cap_nullity": 0,
+      "shape": [
+        164,
+        42
+      ],
+      "seconds_cap": 0.005322694778442383
+    },
+    {
+      "order": 2,
+      "degree_cap": 20,
+      "cap_nullity": 15,
+      "shape": [
+        163,
+        63
+      ],
+      "seconds_cap": 0.007458925247192383,
+      "first_degree": 6,
+      "first_nullity": 1,
+      "first_shape": [
+        163,
+        21
+      ]
+    }
+  ],
+  "first_hit": {
+    "order": 2,
+    "degree": 6,
+    "nullity": 1
+  }
+}

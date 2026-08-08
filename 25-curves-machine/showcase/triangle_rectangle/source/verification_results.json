@@ -1,0 +1,26 @@
+{
+  "schema": "triangle-rectangle-verification-results/1.0",
+  "summary": {
+    "status": "PASS",
+    "check_count": 17
+  },
+  "checks": {
+    "figure_midpoint_action_quantization": "PASS",
+    "mu_reflection_unique": "PASS",
+    "plane_operator_and_exact_certificate": "PASS",
+    "critical_points_and_abel_wick_center": "PASS",
+    "integer_period_series": "PASS",
+    "abel_wronskian_identity": "PASS",
+    "plane_birational_forward_inverse": "PASS",
+    "plane_invariant_differential": "PASS",
+    "jacobi_quartic_and_discriminant": "PASS",
+    "signature_four_ode_pullback": "PASS",
+    "legendre_birational_curve_and_differential": "PASS",
+    "signature_four_to_legendre_quadratic_pullback": "PASS",
+    "legendre_K_normalization": "PASS",
+    "alpha_m_X_parameter_chain": "PASS",
+    "legendre_to_modular_hypergeometric_pullback": "PASS",
+    "eisenstein_fourth_root_ode": "PASS",
+    "ramanujan_algebraic_factor": "PASS"
+  }
+}

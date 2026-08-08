@@ -1,0 +1,33 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0001",
+  "slug": "asymmetric_1_2_5",
+  "display_name": "Asymmetric Top 1-2-5",
+  "aliases": [
+    "sphere.asymmetric_top"
+  ],
+  "domain": "sphere",
+  "status": "exact_certificate",
+  "summary": "Exact order-two asymmetric-top certificate on the unit sphere.",
+  "representations": [
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "replay_commands": [
+    {
+      "label": "Asymmetric sphere replay",
+      "cwd": "code/sphere",
+      "command": "python3 algorithms/scripts/replay_even_sphere_asymmetric.py",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-007_SPHERE_CURVE_BRANCH.md",
+    "pseudo/sphere/ALG-009_DIHEDRAL_ODE_SPHERE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/asymmetric_1_2_5_exact_certificate.json"
+  ]
+}

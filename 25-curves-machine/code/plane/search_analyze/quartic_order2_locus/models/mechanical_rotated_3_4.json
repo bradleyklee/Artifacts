@@ -1,0 +1,116 @@
+{
+  "example_id": "mechanical_rotated_3_4",
+  "monomials": {
+    "3": [
+      [
+        0,
+        3,
+        "64/625"
+      ],
+      [
+        1,
+        2,
+        "144/625"
+      ],
+      [
+        2,
+        1,
+        "108/625"
+      ],
+      [
+        3,
+        0,
+        "27/625"
+      ]
+    ],
+    "4": [
+      [
+        0,
+        4,
+        "256/4375"
+      ],
+      [
+        1,
+        3,
+        "768/4375"
+      ],
+      [
+        2,
+        2,
+        "864/4375"
+      ],
+      [
+        3,
+        1,
+        "432/4375"
+      ],
+      [
+        4,
+        0,
+        "81/4375"
+      ]
+    ]
+  },
+  "notes": "rotated one-coordinate cubic+quartic potential",
+  "modes": {},
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 3,
+      "coefficient": "64/625"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "256/4375"
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "coefficient": "144/625"
+    },
+    {
+      "p": 1,
+      "q": 3,
+      "coefficient": "768/4375"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "108/625"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "864/4375"
+    },
+    {
+      "p": 3,
+      "q": 0,
+      "coefficient": "27/625"
+    },
+    {
+      "p": 3,
+      "q": 1,
+      "coefficient": "432/4375"
+    },
+    {
+      "p": 4,
+      "q": 0,
+      "coefficient": "81/4375"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(p,q)"
+  ]
+}

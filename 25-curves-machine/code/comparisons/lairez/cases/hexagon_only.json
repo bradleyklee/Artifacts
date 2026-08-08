@@ -1,0 +1,9 @@
+{
+  "name": "hexagon_only",
+  "description": "circle plus hexagon harmonic",
+  "variables": ["p", "q"],
+  "parameter": "alpha",
+  "energy_E_equals_2H": "p^2 + q^2 + (q^6 - 15*p^2*q^4 + 15*p^4*q^2 - p^6)/4",
+  "known_operator_order": 4,
+  "lairez_input": "2/(E-alpha)"
+}

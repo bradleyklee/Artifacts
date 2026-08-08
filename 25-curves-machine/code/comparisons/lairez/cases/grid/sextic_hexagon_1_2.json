@@ -1,0 +1,30 @@
+{
+  "name": "sextic_hexagon_1_2",
+  "description": "generated pure_sextic harmonic benchmark",
+  "benchmark_group": "pure_sextic",
+  "variables": [
+    "p",
+    "q"
+  ],
+  "parameter": "alpha",
+  "harmonic_terms": [
+    {
+      "degree": 6,
+      "mode": 6,
+      "coefficient": "1/2"
+    }
+  ],
+  "energy_E_equals_2H": "p^2 + q^2 + (1/2)*((1)*q^6 + (-15)*p^2*q^4 + (15)*p^4*q^2 + (-1)*p^6)",
+  "klee_config": {
+    "order": 4,
+    "weight_bound": 35,
+    "p_degrees": [
+      0,
+      2,
+      4
+    ],
+    "support": "even_p_odd_q_weighted"
+  },
+  "lairez_input": "2/(E-alpha)",
+  "known_operator_order": 4
+}

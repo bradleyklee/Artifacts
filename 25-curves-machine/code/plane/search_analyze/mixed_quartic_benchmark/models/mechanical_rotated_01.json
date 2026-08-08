@@ -1,0 +1,122 @@
+{
+  "example_id": "mechanical_rotated_01",
+  "category": "mechanical_rotated",
+  "notes": "cubic and quartic depend on one rational linear coordinate",
+  "seed": null,
+  "monomials": {
+    "3": [
+      [
+        0,
+        3,
+        "1/10"
+      ],
+      [
+        1,
+        2,
+        "3/10"
+      ],
+      [
+        2,
+        1,
+        "3/10"
+      ],
+      [
+        3,
+        0,
+        "1/10"
+      ]
+    ],
+    "4": [
+      [
+        0,
+        4,
+        "1/28"
+      ],
+      [
+        1,
+        3,
+        "1/7"
+      ],
+      [
+        2,
+        2,
+        "3/14"
+      ],
+      [
+        3,
+        1,
+        "1/7"
+      ],
+      [
+        4,
+        0,
+        "1/28"
+      ]
+    ]
+  },
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 3,
+      "coefficient": "1/10"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "1/28"
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "coefficient": "3/10"
+    },
+    {
+      "p": 1,
+      "q": 3,
+      "coefficient": "1/7"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "3/10"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "3/14"
+    },
+    {
+      "p": 3,
+      "q": 0,
+      "coefficient": "1/10"
+    },
+    {
+      "p": 3,
+      "q": 1,
+      "coefficient": "1/7"
+    },
+    {
+      "p": 4,
+      "q": 0,
+      "coefficient": "1/28"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(p,q)",
+    "(p,q)->(q,p)"
+  ],
+  "support_counts": {
+    "cubic": 4,
+    "quartic": 5
+  }
+}

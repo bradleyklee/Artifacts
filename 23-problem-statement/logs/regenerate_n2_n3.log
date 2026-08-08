@@ -1,0 +1,7 @@
+[n=2] trees=6 cyclic_orders=1 symmetry_classes=2
+[n=2,l=1] 2/2; still_unresolved=0; phase_elapsed=0.00s
+[n=2] C_first=2 max_L=4
+[n=3] trees=76 cyclic_orders=1 symmetry_classes=11
+[n=3,l=1] 11/11; still_unresolved=0; phase_elapsed=0.08s
+[n=3] C_first=2 max_L=8
+[done] total_runtime=0.12s output=/mnt/data/P4_consistent_extraction/results/small_levels

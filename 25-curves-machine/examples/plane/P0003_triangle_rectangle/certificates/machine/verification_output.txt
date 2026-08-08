@@ -1,0 +1,2 @@
+ALL CHECKS PASS
+19 proof-level checks passed; see verification_results.json and claim_index.json for row-by-row coverage.

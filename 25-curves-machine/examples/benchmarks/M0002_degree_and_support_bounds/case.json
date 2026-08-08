@@ -1,0 +1,31 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "M0002",
+  "slug": "degree_and_support_bounds",
+  "display_name": "Degree and Support Bounds Corpus",
+  "aliases": [
+    "quartic_bounds"
+  ],
+  "domain": "benchmarks",
+  "status": "coverage_data",
+  "summary": "Order/degree/support bound records used by plane and sphere search procedures.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Bound implementation smoke check",
+      "cwd": "code/sphere",
+      "command": "python3 algorithms/src/core/even_sphere_degree_bounds.py",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-013_EVEN_SPHERE_COHOMOLOGY_BOUNDS.md",
+    "pseudo/sphere/ALG-004_FINITE_SUPPORT_EXHAUSTIVENESS.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/bounds"
+  ]
+}

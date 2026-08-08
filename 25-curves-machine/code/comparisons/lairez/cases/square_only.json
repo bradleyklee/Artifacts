@@ -1,0 +1,9 @@
+{
+  "name": "square_only",
+  "description": "circle plus square harmonic",
+  "variables": ["p", "q"],
+  "parameter": "alpha",
+  "energy_E_equals_2H": "p^2 + q^2 + (p^4 - 6*p^2*q^2 + q^4)/4",
+  "known_operator_order": 2,
+  "lairez_input": "2/(E-alpha)"
+}

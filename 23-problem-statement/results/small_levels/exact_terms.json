@@ -1,0 +1,38 @@
+{
+  "model": "first feasible inflation, then shortest simple cycle",
+  "warning": "This is a lexicographic first-resolution invariant, not the infimum over all inflations.",
+  "summaries": [
+    {
+      "n": 2,
+      "typogeometry_count": 6,
+      "cyclic_orders_mod_dihedral": 1,
+      "raw_labeled_instances": 6,
+      "global_symmetry_classes": 2,
+      "first_resolution_value": 2.0,
+      "first_resolution_value_fraction": "2",
+      "maximum_taxicab_length": 4,
+      "metric_witness_count_among_classes": 2,
+      "taxicab_witness_count_among_classes": 2,
+      "inflation_histogram": {
+        "1": 2
+      },
+      "runtime_seconds": 0.0051462650299072266
+    },
+    {
+      "n": 3,
+      "typogeometry_count": 76,
+      "cyclic_orders_mod_dihedral": 1,
+      "raw_labeled_instances": 76,
+      "global_symmetry_classes": 11,
+      "first_resolution_value": 2.0,
+      "first_resolution_value_fraction": "2",
+      "maximum_taxicab_length": 8,
+      "metric_witness_count_among_classes": 4,
+      "taxicab_witness_count_among_classes": 3,
+      "inflation_histogram": {
+        "1": 11
+      },
+      "runtime_seconds": 0.08339333534240723
+    }
+  ]
+}

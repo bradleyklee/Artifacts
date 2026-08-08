@@ -1,0 +1,619 @@
+{
+  "identity": "A_2(omega)=d(Xi)",
+  "Xi": "V/rho^3",
+  "denominator_exponent": 3,
+  "source_basis_full": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ]
+  ],
+  "nonzero_coefficient_blocks": [
+    {
+      "p": 0,
+      "q": 0,
+      "coefficient": "-816*alpha**4 - 2466*alpha**3 + 1266*alpha**2 - 84*alpha"
+    },
+    {
+      "p": 0,
+      "q": 1,
+      "coefficient": "-2448*alpha**4 + 13530*alpha**3 - 6824*alpha**2 + 762*alpha - 36"
+    },
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "-2448*alpha**4 + 4410*alpha**3 + 6337*alpha**2 - 2811*alpha + 210"
+    },
+    {
+      "p": 0,
+      "q": 3,
+      "coefficient": "-816*alpha**4 - 31170*alpha**3 + 7331*alpha**2 + 1719*alpha - 66"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "-24480*alpha**3 - 19070*alpha**2 + 10284*alpha - 726"
+    },
+    {
+      "p": 0,
+      "q": 5,
+      "coefficient": "-4896*alpha**3 + 12370*alpha**2 - 4512*alpha - 78"
+    },
+    {
+      "p": 0,
+      "q": 6,
+      "coefficient": "53788*alpha**2 - 20622*alpha + 840"
+    },
+    {
+      "p": 0,
+      "q": 7,
+      "coefficient": "40324*alpha**2 - 15330*alpha + 696"
+    },
+    {
+      "p": 0,
+      "q": 8,
+      "coefficient": "12240*alpha**2 - 4644*alpha + 216"
+    },
+    {
+      "p": 0,
+      "q": 9,
+      "coefficient": "1360*alpha**2 - 516*alpha + 24"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "-816*alpha**4 - 650*alpha**3 + 3475*alpha**2 - 1089*alpha + 102"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "-816*alpha**4 + 6966*alpha**3 - 25545*alpha**2 + 8199*alpha - 774"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "-1632*alpha**3 + 32390*alpha**2 - 11292*alpha + 1086"
+    },
+    {
+      "p": 2,
+      "q": 3,
+      "coefficient": "-22304*alpha**3 + 74226*alpha**2 - 23820*alpha + 2250"
+    },
+    {
+      "p": 2,
+      "q": 4,
+      "coefficient": "-16320*alpha**3 - 62860*alpha**2 + 23430*alpha - 2280"
+    },
+    {
+      "p": 2,
+      "q": 5,
+      "coefficient": "-3264*alpha**3 - 123004*alpha**2 + 43158*alpha - 4152"
+    },
+    {
+      "p": 2,
+      "q": 6,
+      "coefficient": "-55216*alpha**2 + 19236*alpha - 1848"
+    },
+    {
+      "p": 2,
+      "q": 7,
+      "coefficient": "-7888*alpha**2 + 2748*alpha - 264"
+    }
+  ],
+  "nonzero_block_count": 18,
+  "expanded_alpha_p_q_terms": [
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 0,
+      "coefficient": "-84"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 0,
+      "coefficient": "1266"
+    },
+    {
+      "alpha_power": 3,
+      "p": 0,
+      "q": 0,
+      "coefficient": "-2466"
+    },
+    {
+      "alpha_power": 4,
+      "p": 0,
+      "q": 0,
+      "coefficient": "-816"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 1,
+      "coefficient": "-36"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 1,
+      "coefficient": "762"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 1,
+      "coefficient": "-6824"
+    },
+    {
+      "alpha_power": 3,
+      "p": 0,
+      "q": 1,
+      "coefficient": "13530"
+    },
+    {
+      "alpha_power": 4,
+      "p": 0,
+      "q": 1,
+      "coefficient": "-2448"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 2,
+      "coefficient": "210"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 2,
+      "coefficient": "-2811"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 2,
+      "coefficient": "6337"
+    },
+    {
+      "alpha_power": 3,
+      "p": 0,
+      "q": 2,
+      "coefficient": "4410"
+    },
+    {
+      "alpha_power": 4,
+      "p": 0,
+      "q": 2,
+      "coefficient": "-2448"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 3,
+      "coefficient": "-66"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 3,
+      "coefficient": "1719"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 3,
+      "coefficient": "7331"
+    },
+    {
+      "alpha_power": 3,
+      "p": 0,
+      "q": 3,
+      "coefficient": "-31170"
+    },
+    {
+      "alpha_power": 4,
+      "p": 0,
+      "q": 3,
+      "coefficient": "-816"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 4,
+      "coefficient": "-726"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 4,
+      "coefficient": "10284"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 4,
+      "coefficient": "-19070"
+    },
+    {
+      "alpha_power": 3,
+      "p": 0,
+      "q": 4,
+      "coefficient": "-24480"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 5,
+      "coefficient": "-78"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 5,
+      "coefficient": "-4512"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 5,
+      "coefficient": "12370"
+    },
+    {
+      "alpha_power": 3,
+      "p": 0,
+      "q": 5,
+      "coefficient": "-4896"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 6,
+      "coefficient": "840"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 6,
+      "coefficient": "-20622"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 6,
+      "coefficient": "53788"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 7,
+      "coefficient": "696"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 7,
+      "coefficient": "-15330"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 7,
+      "coefficient": "40324"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 8,
+      "coefficient": "216"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 8,
+      "coefficient": "-4644"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 8,
+      "coefficient": "12240"
+    },
+    {
+      "alpha_power": 0,
+      "p": 0,
+      "q": 9,
+      "coefficient": "24"
+    },
+    {
+      "alpha_power": 1,
+      "p": 0,
+      "q": 9,
+      "coefficient": "-516"
+    },
+    {
+      "alpha_power": 2,
+      "p": 0,
+      "q": 9,
+      "coefficient": "1360"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 0,
+      "coefficient": "102"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 0,
+      "coefficient": "-1089"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 0,
+      "coefficient": "3475"
+    },
+    {
+      "alpha_power": 3,
+      "p": 2,
+      "q": 0,
+      "coefficient": "-650"
+    },
+    {
+      "alpha_power": 4,
+      "p": 2,
+      "q": 0,
+      "coefficient": "-816"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 1,
+      "coefficient": "-774"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 1,
+      "coefficient": "8199"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 1,
+      "coefficient": "-25545"
+    },
+    {
+      "alpha_power": 3,
+      "p": 2,
+      "q": 1,
+      "coefficient": "6966"
+    },
+    {
+      "alpha_power": 4,
+      "p": 2,
+      "q": 1,
+      "coefficient": "-816"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 2,
+      "coefficient": "1086"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 2,
+      "coefficient": "-11292"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 2,
+      "coefficient": "32390"
+    },
+    {
+      "alpha_power": 3,
+      "p": 2,
+      "q": 2,
+      "coefficient": "-1632"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 3,
+      "coefficient": "2250"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 3,
+      "coefficient": "-23820"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 3,
+      "coefficient": "74226"
+    },
+    {
+      "alpha_power": 3,
+      "p": 2,
+      "q": 3,
+      "coefficient": "-22304"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 4,
+      "coefficient": "-2280"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 4,
+      "coefficient": "23430"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 4,
+      "coefficient": "-62860"
+    },
+    {
+      "alpha_power": 3,
+      "p": 2,
+      "q": 4,
+      "coefficient": "-16320"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 5,
+      "coefficient": "-4152"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 5,
+      "coefficient": "43158"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 5,
+      "coefficient": "-123004"
+    },
+    {
+      "alpha_power": 3,
+      "p": 2,
+      "q": 5,
+      "coefficient": "-3264"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 6,
+      "coefficient": "-1848"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 6,
+      "coefficient": "19236"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 6,
+      "coefficient": "-55216"
+    },
+    {
+      "alpha_power": 0,
+      "p": 2,
+      "q": 7,
+      "coefficient": "-264"
+    },
+    {
+      "alpha_power": 1,
+      "p": 2,
+      "q": 7,
+      "coefficient": "2748"
+    },
+    {
+      "alpha_power": 2,
+      "p": 2,
+      "q": 7,
+      "coefficient": "-7888"
+    }
+  ],
+  "expanded_term_count": 71,
+  "zero_source_slots": [
+    [
+      2,
+      8
+    ],
+    [
+      2,
+      9
+    ]
+  ]
+}

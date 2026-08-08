@@ -1,0 +1,14 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C01",
+  "slug": "cartesian_quartic",
+  "name": "Cartesian quartic model",
+  "kind": "plane_cartesian",
+  "variables": [
+    "p",
+    "q"
+  ],
+  "constraints": [],
+  "notes": "",
+  "global": true
+}

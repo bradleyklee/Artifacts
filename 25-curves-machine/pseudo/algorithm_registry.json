@@ -1,0 +1,881 @@
+{
+  "format": "algorithm-registry-v1",
+  "algorithms": [
+    {
+      "algorithm_id": "ALG-INDUCTIVE-SERIES-001",
+      "name": "Exact/modular period-series discovery and ODE guessing",
+      "origin": [
+        "steve_baseline"
+      ],
+      "mode": "inductive",
+      "status": "regression_backed",
+      "pseudocode_refs": [
+        "Steve ALG-001"
+      ],
+      "success_cases": [
+        "plane.triangle_square",
+        "plane.square_hexagon"
+      ],
+      "known_limits": [
+        "Energy-degree bound not universal."
+      ],
+      "implementation_paths": [
+        "backends/plane_curves/search_analyze/quartic_order6_drill",
+        "backends/steve_baseline (materialized algorithms/src/core/exact_period_series.py)"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-REDUCTIVE-NULLSPACE-001",
+      "name": "Exact derivative-class reduction and simultaneous operator/primitive nullspace",
+      "origin": [
+        "steve_baseline",
+        "triangle_rectangle"
+      ],
+      "mode": "deductive",
+      "status": "coverage_backend",
+      "pseudocode_refs": [
+        "Steve ALG-002",
+        "PSEUDO-REDUCTION-SEARCH-001"
+      ],
+      "success_cases": [
+        "plane.triangle_square",
+        "plane.square_hexagon"
+      ],
+      "known_limits": [
+        "Generic asymmetric order-six exact reconstruction remains expensive."
+      ],
+      "implementation_paths": [
+        "backends/plane_curves/square_hexagon_current/exact",
+        "backends/plane_curves/search_analyze/q2_order6_engine"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-EXPLICIT-QUOTIENT-AUDIT-001",
+      "name": "Explicit quotient matrix and kernel audit",
+      "origin": [
+        "steve_baseline"
+      ],
+      "mode": "verification",
+      "status": "regression_backed",
+      "pseudocode_refs": [
+        "Steve ALG-003"
+      ],
+      "success_cases": [
+        "plane.square_hexagon"
+      ],
+      "known_limits": [],
+      "implementation_paths": [
+        "backends/plane_curves/square_hexagon_current/exact/verify_merged_certificate.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-FINITE-SUPPORT-001",
+      "name": "Finite support exhaustiveness for squarefree quartics",
+      "origin": [
+        "steve_baseline",
+        "triangle_rectangle"
+      ],
+      "mode": "deductive",
+      "status": "coverage_backend",
+      "pseudocode_refs": [
+        "Steve ALG-004"
+      ],
+      "success_cases": [
+        "plane.square_hexagon",
+        "plane.generic_squarefree_quartic"
+      ],
+      "known_limits": [
+        "Degenerate leading quartic strata need stratified fallback bounds."
+      ],
+      "implementation_paths": [
+        "backends/plane_curves/search_analyze/q2_order6_engine",
+        "backends/plane_curves/square_hexagon_current/exact"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-PRIMITIVE-VERIFY-001",
+      "name": "Primitive reconstruction and independent exact verification",
+      "origin": [
+        "steve_baseline",
+        "triangle_rectangle"
+      ],
+      "mode": "verification",
+      "status": "regression_backed",
+      "pseudocode_refs": [
+        "Steve ALG-005"
+      ],
+      "success_cases": [
+        "plane.triangle_square",
+        "plane.square_hexagon"
+      ],
+      "known_limits": [],
+      "implementation_paths": [
+        "backends/plane_curves/square_hexagon_current/exact/verify_reduced_primitive.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-GUVJ-001",
+      "name": "Reusable G,U,V,J pole-lowering engine",
+      "origin": [
+        "steve_baseline",
+        "triangle_rectangle"
+      ],
+      "mode": "deductive",
+      "status": "implemented",
+      "pseudocode_refs": [
+        "Steve ALG-006"
+      ],
+      "success_cases": [],
+      "known_limits": [
+        "Pseudocode exists; paired certificates still often replay through one-shot exact-image method."
+      ],
+      "implementation_paths": [
+        "backends/plane_curves/pseudocode",
+        "branches/worktrees/steve_baseline/.../ALG-006_GUVJ_REUSABLE_REDUCTION.md"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-GENERAL-MU-ELLIPTIC-001",
+      "name": "General-mu triangle-rectangle Picard-Fuchs and elliptic normalization",
+      "origin": [
+        "triangle_rectangle"
+      ],
+      "mode": "hybrid",
+      "status": "regression_backed",
+      "pseudocode_refs": [
+        "TriangleRectangle general-mu derivation"
+      ],
+      "success_cases": [
+        "plane.triangle_rectangle",
+        "plane.free_c1_c2"
+      ],
+      "known_limits": [
+        "Not yet integrated into generic search front end."
+      ],
+      "implementation_paths": [
+        "backends/plane_curves/triangle_rectangle_showcase/scripts/derive_general_mu_picard_fuchs.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-QUARTIC-BOUNDS-001",
+      "name": "Universal and stratum-aware quartic support/order bounds",
+      "origin": [
+        "steve_baseline",
+        "triangle_rectangle"
+      ],
+      "mode": "deductive",
+      "status": "implemented",
+      "pseudocode_refs": [
+        "ANY_QUARTIC_REDUCTIVE_ALGORITHM"
+      ],
+      "success_cases": [
+        "plane.generic_squarefree_quartic"
+      ],
+      "known_limits": [
+        "Degenerate-at-infinity fallback incomplete."
+      ],
+      "implementation_paths": [
+        "backends/plane_curves/search_analyze/q2_order6_engine",
+        "branches/worktrees/steve_baseline/.../quartic_universal_bounds.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-MODULAR-REDUCTION-001",
+      "name": "Modular reductive screening and CRT reconstruction",
+      "origin": [
+        "triangle_rectangle"
+      ],
+      "mode": "hybrid",
+      "status": "implemented",
+      "pseudocode_refs": [
+        "Q2 order-six engine notes"
+      ],
+      "success_cases": [
+        "plane.generic_squarefree_quartic"
+      ],
+      "known_limits": [
+        "Exact reconstruction/height control can dominate."
+      ],
+      "implementation_paths": [
+        "backends/plane_curves/search_analyze/q2_order6_engine"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "finite fields",
+        "Q via reconstruction"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact",
+        "modular"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-SPHERE-BRANCH-001",
+      "name": "General sphere-curve inductive/reductive workflow",
+      "origin": [
+        "sphere_curves"
+      ],
+      "mode": "hybrid",
+      "status": "implemented",
+      "pseudocode_refs": [
+        "Sphere ALG-007"
+      ],
+      "success_cases": [
+        "sphere.asymmetric_top"
+      ],
+      "known_limits": [
+        "No universal sphere primitive-support bound."
+      ],
+      "implementation_paths": [
+        "backends/sphere_curves/algorithms"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact",
+        "modular",
+        "numerical"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-DIHEDRAL-SPHERE-001",
+      "name": "Dihedral sphere reduction",
+      "origin": [
+        "sphere_curves"
+      ],
+      "mode": "deductive",
+      "status": "regression_backed",
+      "pseudocode_refs": [
+        "Sphere ALG-009"
+      ],
+      "success_cases": [
+        "sphere.asymmetric_top"
+      ],
+      "known_limits": [],
+      "implementation_paths": [
+        "backends/sphere_curves/algorithms/src/core/dihedral_ode_sphere.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-EVEN-SPHERE-001",
+      "name": "Even sphere quartic factory and refinement loop",
+      "origin": [
+        "sphere_curves"
+      ],
+      "mode": "hybrid",
+      "status": "implemented",
+      "pseudocode_refs": [
+        "Sphere ALG-008",
+        "Sphere ALG-010",
+        "Sphere ALG-013"
+      ],
+      "success_cases": [],
+      "known_limits": [
+        "Primitive-support bounds must be separated from cohomological order bounds."
+      ],
+      "implementation_paths": [
+        "backends/sphere_curves/algorithms/src/core/even_sphere_quartic_factory.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-ICOSAHEDRAL-REDUCE-001",
+      "name": "Icosahedral normalize-eliminate-reduce",
+      "origin": [
+        "sphere_curves"
+      ],
+      "mode": "deductive",
+      "status": "success_recorded",
+      "pseudocode_refs": [
+        "Sphere ALG-015"
+      ],
+      "success_cases": [
+        "sphere.icosahedral"
+      ],
+      "known_limits": [
+        "Perturbed order-six null-vector reconstruction remains expensive."
+      ],
+      "implementation_paths": [
+        "backends/sphere_curves/algorithms/src/core/icosahedral_sphere.py",
+        "backends/sphere_curves/algorithms/scripts/replay_icosahedral_sphere.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-PERTURB-RECORD-001",
+      "name": "Perturb, reduce columns, checkpoint ranks, then reconstruct",
+      "origin": [
+        "sphere_curves"
+      ],
+      "mode": "hybrid",
+      "status": "implemented",
+      "pseudocode_refs": [
+        "Sphere ALG-016"
+      ],
+      "success_cases": [
+        "sphere.icosahedral_plus_jz2"
+      ],
+      "known_limits": [
+        "Rational-function nullspace normalization needs modular interpolation."
+      ],
+      "implementation_paths": [
+        "backends/sphere_curves/algorithms/scripts/run_icosahedral_perturbation.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact",
+        "modular"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-LAIREZ-ADAPTER-001",
+      "name": "Klee action-period to Lairez rational-integral adapter",
+      "origin": [
+        "pierre_comparison"
+      ],
+      "mode": "hybrid",
+      "status": "regression_backed",
+      "pseudocode_refs": [
+        "comparisons/lairez/recovered_extraction/pierre_periods_comparison/PSEUDOCODE.md"
+      ],
+      "success_cases": [
+        "plane.triangle_square",
+        "plane.square_hexagon",
+        "plane.triangle_rectangle"
+      ],
+      "known_limits": [
+        "Requires upstream Magma package for native execution."
+      ],
+      "implementation_paths": [
+        "backends/pierre_comparison/python_port/adapter.py",
+        "backends/pierre_comparison/generated_magma"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-LAIREZ-PORT-001",
+      "name": "Executable SymPy port of Lairez-style reduction with cached rank profiles",
+      "origin": [
+        "pierre_comparison"
+      ],
+      "mode": "deductive",
+      "status": "success_recorded",
+      "pseudocode_refs": [
+        "comparisons/lairez/recovered_extraction/pierre_periods_comparison/PSEUDOCODE.md"
+      ],
+      "success_cases": [
+        "plane.triangle_square",
+        "plane.square_hexagon",
+        "plane.triangle_rectangle"
+      ],
+      "known_limits": [
+        "Not a complete port of Pierre Lairez's extended Rham-Koszul and modular machinery."
+      ],
+      "implementation_paths": [
+        "backends/pierre_comparison/python_port/lairez_port.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-LAIREZ-CERT-TRANSPORT-001",
+      "name": "Affine homotopy certificate transport and local verification",
+      "origin": [
+        "pierre_comparison"
+      ],
+      "mode": "deductive",
+      "status": "implemented",
+      "pseudocode_refs": [
+        "comparisons/lairez/recovered_extraction/pierre_periods_comparison/PSEUDOCODE.md"
+      ],
+      "success_cases": [
+        "plane.triangle_square"
+      ],
+      "known_limits": [
+        "Square-hexagon global expansion exceeded time bound; structured local ledger should be retained."
+      ],
+      "implementation_paths": [
+        "backends/pierre_comparison/python_port/klee_triangle_square_derivation.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-HYBRID-PRIMITIVE-001",
+      "name": "Lairez operator followed by Klee canonical curve-primitive reconstruction",
+      "origin": [
+        "pierre_comparison",
+        "triangle_rectangle"
+      ],
+      "mode": "hybrid",
+      "status": "success_recorded",
+      "pseudocode_refs": [
+        "comparisons/lairez/recovered_extraction/pierre_periods_comparison/PSEUDOCODE.md"
+      ],
+      "success_cases": [
+        "plane.triangle_square"
+      ],
+      "known_limits": [
+        "Avoid rebuilding duplicate exact-image matrices."
+      ],
+      "implementation_paths": [
+        "backends/pierre_comparison/python_port/hybrid_primitive_reconstruction.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    },
+    {
+      "algorithm_id": "ALG-FREE-COEFFICIENT-PROFILE-001",
+      "name": "Symbolic free-coefficient rank profile with specialization fallback",
+      "origin": [
+        "pierre_comparison",
+        "triangle_rectangle"
+      ],
+      "mode": "hybrid",
+      "status": "success_recorded",
+      "pseudocode_refs": [
+        "comparisons/lairez/recovered_extraction/pierre_periods_comparison/FREE_COEFFICIENT_PSEUDOCODE.md"
+      ],
+      "success_cases": [
+        "plane.free_c1_c2"
+      ],
+      "known_limits": [
+        "Larger families may require interpolation and exact symbolic replay."
+      ],
+      "implementation_paths": [
+        "backends/pierre_comparison/python_port/benchmark_free_specializations.py",
+        "backends/pierre_comparison/python_port/verify_free_specializations.py"
+      ],
+      "inputs": [
+        "model/Hamiltonian record",
+        "energy parameter convention"
+      ],
+      "outputs": [
+        "operator or relation",
+        "verification/reduction data"
+      ],
+      "coefficient_fields": [
+        "Q",
+        "Q(alpha)"
+      ],
+      "bounds": {
+        "status": "declared in implementation or case record"
+      },
+      "failure_modes": [
+        "timeout",
+        "insufficient bound",
+        "rank/no relation",
+        "exact reconstruction or certificate assembly gap"
+      ],
+      "exactness_modes": [
+        "exact"
+      ]
+    }
+  ]
+}

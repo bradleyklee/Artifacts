@@ -1,0 +1,310 @@
+{
+  "example_id": "q2_generic_no_reflection",
+  "prime": 65521,
+  "alpha": 7,
+  "p_degrees": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "records": [
+    {
+      "order": 6,
+      "q_bound": 0,
+      "rows": 142,
+      "exact_columns": 4,
+      "rank_C": 4,
+      "rank_CW": 11,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 1,
+      "rows": 142,
+      "exact_columns": 8,
+      "rank_C": 8,
+      "rank_CW": 15,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 2,
+      "rows": 142,
+      "exact_columns": 12,
+      "rank_C": 12,
+      "rank_CW": 19,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 3,
+      "rows": 142,
+      "exact_columns": 16,
+      "rank_C": 16,
+      "rank_CW": 23,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 4,
+      "rows": 142,
+      "exact_columns": 20,
+      "rank_C": 20,
+      "rank_CW": 27,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 5,
+      "rows": 142,
+      "exact_columns": 24,
+      "rank_C": 24,
+      "rank_CW": 31,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 6,
+      "rows": 142,
+      "exact_columns": 28,
+      "rank_C": 28,
+      "rank_CW": 35,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 7,
+      "rows": 142,
+      "exact_columns": 32,
+      "rank_C": 32,
+      "rank_CW": 39,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 8,
+      "rows": 142,
+      "exact_columns": 36,
+      "rank_C": 36,
+      "rank_CW": 43,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 9,
+      "rows": 142,
+      "exact_columns": 40,
+      "rank_C": 40,
+      "rank_CW": 47,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 10,
+      "rows": 142,
+      "exact_columns": 44,
+      "rank_C": 44,
+      "rank_CW": 51,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 11,
+      "rows": 142,
+      "exact_columns": 48,
+      "rank_C": 48,
+      "rank_CW": 55,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 12,
+      "rows": 142,
+      "exact_columns": 52,
+      "rank_C": 52,
+      "rank_CW": 59,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 13,
+      "rows": 142,
+      "exact_columns": 56,
+      "rank_C": 56,
+      "rank_CW": 63,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 14,
+      "rows": 142,
+      "exact_columns": 60,
+      "rank_C": 60,
+      "rank_CW": 67,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 15,
+      "rows": 142,
+      "exact_columns": 64,
+      "rank_C": 64,
+      "rank_CW": 71,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 16,
+      "rows": 142,
+      "exact_columns": 68,
+      "rank_C": 68,
+      "rank_CW": 75,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 17,
+      "rows": 142,
+      "exact_columns": 72,
+      "rank_C": 72,
+      "rank_CW": 79,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 18,
+      "rows": 142,
+      "exact_columns": 76,
+      "rank_C": 76,
+      "rank_CW": 83,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 19,
+      "rows": 142,
+      "exact_columns": 80,
+      "rank_C": 80,
+      "rank_CW": 87,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 20,
+      "rows": 142,
+      "exact_columns": 84,
+      "rank_C": 84,
+      "rank_CW": 91,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 21,
+      "rows": 142,
+      "exact_columns": 88,
+      "rank_C": 88,
+      "rank_CW": 95,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 22,
+      "rows": 142,
+      "exact_columns": 92,
+      "rank_C": 92,
+      "rank_CW": 99,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 23,
+      "rows": 142,
+      "exact_columns": 96,
+      "rank_C": 96,
+      "rank_CW": 103,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 24,
+      "rows": 142,
+      "exact_columns": 100,
+      "rank_C": 100,
+      "rank_CW": 107,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 25,
+      "rows": 142,
+      "exact_columns": 104,
+      "rank_C": 104,
+      "rank_CW": 111,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 26,
+      "rows": 142,
+      "exact_columns": 108,
+      "rank_C": 108,
+      "rank_CW": 115,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 27,
+      "rows": 142,
+      "exact_columns": 112,
+      "rank_C": 112,
+      "rank_CW": 119,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 28,
+      "rows": 142,
+      "exact_columns": 116,
+      "rank_C": 116,
+      "rank_CW": 123,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 29,
+      "rows": 146,
+      "exact_columns": 120,
+      "rank_C": 120,
+      "rank_CW": 127,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 30,
+      "rows": 146,
+      "exact_columns": 124,
+      "rank_C": 124,
+      "rank_CW": 131,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 31,
+      "rows": 154,
+      "exact_columns": 128,
+      "rank_C": 128,
+      "rank_CW": 135,
+      "relation_dimension": 0
+    },
+    {
+      "order": 6,
+      "q_bound": 32,
+      "rows": 158,
+      "exact_columns": 132,
+      "rank_C": 132,
+      "rank_CW": 138,
+      "relation_dimension": 1
+    }
+  ]
+}

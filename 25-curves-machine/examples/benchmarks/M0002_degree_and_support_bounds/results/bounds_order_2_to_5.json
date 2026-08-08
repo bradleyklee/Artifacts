@@ -1,0 +1,198 @@
+{
+  "status": "GENERIC_FULL_QUARTIC_ORDER_2_TO_5_BOUNDS_PASS",
+  "input_class": "all rational E(p,q) with total degree <= 4; generic branch requires degree-four part to have no repeated projective direction",
+  "full_model_includes_degrees": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "source_bound_formula": "B_r = 6*r - 3",
+  "source_basis": "p^i q^j with 0 <= i <= 3 and i+j <= B_r",
+  "source_column_formula": "24*r - 14",
+  "ambient_row_bound_formula": "24*r + 6",
+  "combined_column_bound_formula": "25*r - 13",
+  "test_model": "2*p**4 + p**3*q + p**3 - p**2*q**2 - 2*p**2*q + 2*p**2 + 2*p*q**3 + p*q**2 + p*q + p + 3*q**4 + 2*q**3 + 3*q**2 - 2*q + 2",
+  "quartic_leading_part": "2*p**4 + p**3*q - p**2*q**2 + 2*p*q**3 + 3*q**4",
+  "leading_part_nondegeneracy_check": "24001",
+  "orders": [
+    {
+      "order": 2,
+      "source_weight_bound": 9,
+      "primitive_denominator_power": 3,
+      "common_derivative_denominator_power": 5,
+      "source_column_bound": 34,
+      "derivative_columns": 3,
+      "combined_column_bound": 37,
+      "ambient_row_bound": 54,
+      "two_prime_tests": [
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 2,
+          "weight_bound": 9,
+          "prime": 65521,
+          "alpha": 7,
+          "rows": 50,
+          "row_theoretical_bound": 54,
+          "exact_columns": 34,
+          "exact_column_formula": 34,
+          "rank_C": 33,
+          "rank_CW": 36,
+          "derivative_quotient_rank": 3,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        },
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 2,
+          "weight_bound": 9,
+          "prime": 65497,
+          "alpha": 11,
+          "rows": 50,
+          "row_theoretical_bound": 54,
+          "exact_columns": 34,
+          "exact_column_formula": 34,
+          "rank_C": 33,
+          "rank_CW": 36,
+          "derivative_quotient_rank": 3,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "source_weight_bound": 15,
+      "primitive_denominator_power": 5,
+      "common_derivative_denominator_power": 7,
+      "source_column_bound": 58,
+      "derivative_columns": 4,
+      "combined_column_bound": 62,
+      "ambient_row_bound": 78,
+      "two_prime_tests": [
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 3,
+          "weight_bound": 15,
+          "prime": 65521,
+          "alpha": 7,
+          "rows": 74,
+          "row_theoretical_bound": 78,
+          "exact_columns": 58,
+          "exact_column_formula": 58,
+          "rank_C": 57,
+          "rank_CW": 61,
+          "derivative_quotient_rank": 4,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        },
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 3,
+          "weight_bound": 15,
+          "prime": 65497,
+          "alpha": 11,
+          "rows": 74,
+          "row_theoretical_bound": 78,
+          "exact_columns": 58,
+          "exact_column_formula": 58,
+          "rank_C": 57,
+          "rank_CW": 61,
+          "derivative_quotient_rank": 4,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "source_weight_bound": 21,
+      "primitive_denominator_power": 7,
+      "common_derivative_denominator_power": 9,
+      "source_column_bound": 82,
+      "derivative_columns": 5,
+      "combined_column_bound": 87,
+      "ambient_row_bound": 102,
+      "two_prime_tests": [
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 4,
+          "weight_bound": 21,
+          "prime": 65521,
+          "alpha": 7,
+          "rows": 98,
+          "row_theoretical_bound": 102,
+          "exact_columns": 82,
+          "exact_column_formula": 82,
+          "rank_C": 81,
+          "rank_CW": 86,
+          "derivative_quotient_rank": 5,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        },
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 4,
+          "weight_bound": 21,
+          "prime": 65497,
+          "alpha": 11,
+          "rows": 98,
+          "row_theoretical_bound": 102,
+          "exact_columns": 82,
+          "exact_column_formula": 82,
+          "rank_C": 81,
+          "rank_CW": 86,
+          "derivative_quotient_rank": 5,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "source_weight_bound": 27,
+      "primitive_denominator_power": 9,
+      "common_derivative_denominator_power": 11,
+      "source_column_bound": 106,
+      "derivative_columns": 6,
+      "combined_column_bound": 112,
+      "ambient_row_bound": 126,
+      "two_prime_tests": [
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 5,
+          "weight_bound": 27,
+          "prime": 65521,
+          "alpha": 7,
+          "rows": 122,
+          "row_theoretical_bound": 126,
+          "exact_columns": 106,
+          "exact_column_formula": 106,
+          "rank_C": 105,
+          "rank_CW": 111,
+          "derivative_quotient_rank": 6,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        },
+        {
+          "example_id": "full_15_coefficient_quartic",
+          "order": 5,
+          "weight_bound": 27,
+          "prime": 65497,
+          "alpha": 11,
+          "rows": 122,
+          "row_theoretical_bound": 126,
+          "exact_columns": 106,
+          "exact_column_formula": 106,
+          "rank_C": 105,
+          "rank_CW": 111,
+          "derivative_quotient_rank": 6,
+          "relation_dimension": 0,
+          "status": "NO_RELATION_AT_CERTIFIED_BOUND"
+        }
+      ]
+    }
+  ],
+  "remaining_gap": "degenerate degree-four leading part requires lower-band stopping analysis"
+}

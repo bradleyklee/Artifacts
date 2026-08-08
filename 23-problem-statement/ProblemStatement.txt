@@ -1,0 +1,344 @@
+Polya Path Permutations Problem (P^4)
+→ we renamed it!
+
+The starting place for this project is a preprint of Richard E. Schwartz
+building on a children's book he wrote. Here it is:
+
+https://www.math.brown.edu/reschwar/Papers/salesman.pdf
+
+The children's book is discussed here:
+
+https://www.youtube.com/watch?v=PAfipT-NWlg
+
+R. E. Schwartz calls the problem "Topological Salesperson", which is stretchy
+nomenclature, but not ours. Please allow me to explain:
+
+We will work in the context of an [1, l*2^d] x [1, l*2^d] integer grid graph
+where allowable paths use the usual ENWS nearest neighbor steps. A /Polya path/
+is a closed 2-valent ENWS sequence that returns to its initial condition while
+staying within the (l,d)-expansive bounding square. By 2-valent we mean that
+every path vertex has two incident path edges; we also require the path to be
+non-self-intersecting, so a Polya path might also be called a Jordan path, or a
+"topological circumference".
+
+In jest, notice that TTSP and TCP^2 just aren't as concise as P^4. Well, I guess
+that gives us a criterion to decide with...
+
+For example, ENWS is the smallest Polya path of length 4. It fits in the square
+with l=1, d=1. The next smallest Polya path has length 6: EENWWS and needs l=1,
+d=2 while leaving space. Paths like these have been studied since at least the
+days of POLYA. Closed paths allowing self-intersection were some of the first
+examples where ordinary differential equations connected to enumerative
+combinatorics.
+
+I can't remember now if Polya or anyone else had filtered all closed paths to
+non-crossing closed paths, so I'll offer a beginner question here:
+
+Question. What is the count a(n) of length-n 2-valent Polya Paths? Is the
+generating function differentiably finite?
+
+Now, Schwartz's problem in real-valued, continuous geometry starts from an
+ordered point set in a unit square and asks for bounds on the length of the
+shortest circumference joining them. Actually it asks for a line, but that adds
+at worst a factor of two when closing a disk of almost no area.
+
+More specifically, the ask is for an infimum bound sensitive only to the number
+of points and not their arrangement. An infimum is the greatest lower bound of a
+set. In this case we have a set of minimum circumferences that varies over point
+arrangements. Some arrangements are more difficult to connect than others. There
+is at least one arrangement that is most difficult to connect. The circumference
+obtained for this most difficult case is the infimum.
+
+Difficulty, of course, is a concept from physics that has to do with work,
+energy, efficiency, etc. Here we're taking the simplistic view that essentially
+length is difficulty. We're looking for an infimum circumference passing through
+a set of n points which are also labeled into a cyclic order.
+
+By an okay tree construction, Schwartz obtains that:
+
+O(N) < C(N) < O(N^(3/2)), with C for Circumference.
+
+This is a tight bound when you consider how easy it is to obtain the strictly
+worse result O(N^2) on a nice set of almost-grid points.
+
+In fact, a static model like the dyadic flatenoid might only give a bound
+O(infinity) when applied to a well-designed pathological limit. Seriously,
+it's easy to find bad constructions that don't work in general.
+
+The biggest difficulty of this problem is just that: There's always going to be
+another pathological point set to worry about, and there's literally no way to
+brute force every possible circumstance for N points because the geometry is
+real geometry.
+
+Or is there a way to brute force it all? Obviously not, well, not unless we go
+to discrete math.
+
+Topology and computer science and maybe even physics all give us tools we can
+use to convert the ambiguity of a continuous unit square into something
+discrete, definite and combinatorial. This something can then be subject to
+rigorous enumeration as we have already seen in the case of ENWS Polya paths.
+
+Here's the basic idea: We need to find out how much open space is around a point
+and allow movement of the point in that open space.
+
+That's where topology enters, because we might even transform the underlying
+manifold. We're going to skip that part for now with the assumption that
+local frame transform machinery is already there in math and-or physics.
+
+Instead, let's go to the computer science department to ask the question: What
+is a Quadtree?
+
+Answer: It's a very useful tool for locating points in a unit square, and we can
+combine it with topology to obtain a rigorous but simple domain set.
+
+With the quadtree you recursively divide single unit squares into sets of 4 unit
+squares eventually obtaining a grid of size [1, 2^d] x [1, 2^d]. Let's say that
+you have an image whose pixel length and width are multiples of 2^d for some d.
+You can group pixels together into rectangular image parts and then reconstruct
+the image recursively using the quadtree, which is more precisely described as
+the hierarchical adjacency graph associated to ordered subset inclusions.
+
+To computer scientists, this is already well known. There's a sizeable
+quadtree literature out there including one memorable item about a cat
+who gets stuck in a quadtree.
+
+We need to clarify in our math context what the quadtree structure is, and how
+it can be used to work toward a solution of the P^4.
+
+Finitely many points are distributed in a unit square with a recursive 4-ary
+ruling, viz. nested, hierarchical 2x2 subsets. We introduce a 4-ary tree that
+locates each point in its own square while also leaving some squares empty.
+
+An empty square does not need to be subdivided. If a square contains two or more
+points, it needs to be divided into 2x2 squares, possibly recursively. Typically
+we do this rigidly with each of the four squares in the 2x2 arrangement having
+the same area. After finitely many divisions, we obtain an imperfect quadtree
+pointing to n points on n true leaves.
+
+Next we forget branches not ending at a true leaf point in order to obtain a
+topologically flexible structure. If the divide-and-prune process has produced
+singleton branches, next we "renormalize" the tree graph by omitting the
+valence-1 vertex and connecting the parent directly to its unique second
+descendant. Repeating to a fixed point avoids the possibility of unnecessarily
+deep trees and fixes a maximum depth per choice of integer n.
+
+Let's briefly stop and mention that there is some topology hidden here because
+implicitly when a renormalization happens, there must be a lot of space around
+some points that have been jammed too closely together. Elimination of singleton
+nodes can then be viewed as a mapping that rescales those points into the
+surrounding empty space. Topology and/or manifold theory provide the tools for
+doing those transforms in a rigorously invertible way. We'll get back to that
+later!
+
+Now let i, j, k count nodes with x = 2, 3 or 4 valence, respectively, and
+distinguish branch-like symbols bₓ from true leaves l₀. Each branch introduces
+a differential toward leaf count
+
+X: bₓ : X ↦ X′ = X + x - 1.
+
+Summing over all branch nodes, starting from one root (X=1) and ending in n true
+leaves, we obtain 1 + i + 2j + 3k - n = 0. The total number of nodes, including
+the root and true leaves, is m = i + j + k + n. The raw multinomial ordering of
+these symbols is
+
+binom(m; n,i,j,k) = m! / n! i! j! k!
+
+Take any linear ordering of the bₓ and l₀ symbols. Cyclically shift it until the
+partial sums from X = 1 reach zero only after the final term. This is the unique
+shift that reads as a valid rooted tree, so we divide by m. A b₂ branching has
+six distinct positional realizations, while a b₃ branching has only four. We
+therefore multiply by 6^i 4^j to obtain the closed-form summand:
+
+t(n) = 6^i 4^j * (n + i + j + k - 1)!/ n! i! j! k!
+
+Where the a(n) = sum t(n) is taken over all nonnegative indices i, j, k ≥ 0
+subject to the zero-sum constraint: 1 + i + 2j + 3k - n = 0.
+
+What exactly does this integer sequence count? We've already pretty much spelled
+out things like these typogeometries:
+
+a(1) = 1
+
+▪
+×1
+
+a(2) = 6
+
+⟨□□▪▪⟩
+×4
+
+⟨□▪□▪⟩
+×2
+
+a(3) = 76
+
+⟨□▪▪▪⟩
+×4
+
+⟨□□▪⟨□□▪▪⟩⟩
+×8
+
+⟨□□▪⟨□▪□▪⟩⟩
+×8
+
+⟨□□▪⟨□▪▪□⟩⟩
+×8
+
+⟨□□▪⟨▪□□▪⟩⟩
+×8
+
+⟨□□▪⟨▪□▪□⟩⟩
+×8
+
+⟨□□▪⟨▪▪□□⟩⟩
+×8
+
+⟨□▪□⟨□□▪▪⟩⟩
+×8
+
+⟨□▪□⟨□▪□▪⟩⟩
+×4
+
+⟨□▪□⟨□▪▪□⟩⟩
+×8
+
+⟨□▪□⟨▪□▪□⟩⟩
+×4
+
+To give another hint, if you don't have a better method already, try composing
+over the unique valid order of the b_x l_0 sequences, then add □'s back in as
+necessary. Do this until you get complete sets with all valid elements and
+correct total counts.
+
+What we haven't explained is how we're going to use these as labels for
+instances of the P^4. First, we map the 4-ary linear structure CCW to 2x2
+squares to obtain the correct quadtree geometry where a tree of depth d requires
+a grid of at least [1, 2^d] x [1, 2^d] to contain all points. For points on
+coarse levels we associate all squares falling in their entire larger quadtree
+square as vertices where the one free point could possibly fall.
+
+As necessary, we even allow freedom for every point by introducing l x l squares
+at every quadtree leaf, true and false. This will sometimes help us in the
+sequel when we give the constraints for computing Polya path lengths.
+
+First let's just work easy cases by hand. At a(2), we have only ⟨□□▪▪⟩ and
+⟨□▪□▪⟩ to worry about. Both of them are solved by the length-four ENWS path.
+A metric length C(2) = 2 is then obtained by dividing taxicab length 4 by
+the step size l*2^d.
+
+Similarly at a(3) we do not have to yet worry about the order of points because
+transpositions act as reflections.
+
+We can inflate the item ⟨⟨□▪□▪⟩□▪□⟩ into two dimensions:
+
+▪▪□□
+▪▪□□
+□□□▪
+□□▪□
+
+And draw the typogeometric solution NNWWSSEE as:
+
+▪▪□□
+▪...
+□.□.
+□...
+
+Notice that it only has to visit one square in the coarse point to the NW,
+and that more space is left for traversal if necessary.
+
+I'm pretty sure just by looking at pictures that taxicab length 8 is the
+longest path possible, but someone might want to check that.
+
+A nuance is that longest taxicab path might not be longest circumference
+due to recursive divisions. To compare lengths with our previous result
+we need to divide by the scale factor 2^d, and then find: C(3)=8/2^2=2
+that the three-point infimum circumference is the same as the two-point
+infimum circumference. Again, a computer-double check would be nice.
+
+Things begin to get weirder at four points when *permutations* begin to
+matter. The simplest element ⟨▪▪▪▪⟩ can become ⟨1234⟩ or ⟨1324⟩. The second
+item cannot be solved with l = 1, so we have to go to l=2 in order to find
+the following solution:
+
+fg56
+e147
+d238
+cba9
+
+This smallest dyadic flatenoid, the simple horseshoe baker's fold, has apparent
+length 16, but each length is only 1/(l*2^d) = 1/(2*2^1) = 1/4, so the metric
+length of the curve is now C = 4 rather than C = 2.
+
+It's interesting to note that if we allowed the continuous limit where l goes
+to infinity, and we push vertices to box corners, we can approach the absolute
+continuous infimum of 4 + sqrt(2) by pixelating a pythagorean diagonal. The fact
+that C = 4 is lesser completely depends on motion to corners. Choosing quadrant
+centers we decrease the circumference by a factor 2 and C = 4 > 2 + Sqrt(2)/2.
+Again, we'll have to return to calculations like these later.
+
+Question. Is C=4 the infimum value for all 1201 four-point typogeometries, or is
+there a nested geometry where the smallest circumference has C>4?
+
+The generalization of this question to higher n seems to be a well-posed
+question, though certainly not easy. It's a bit like the Hamiltonian path
+problem and might ultimately need NP-complete methods.
+
+Before leaving off let's sketch out exactly what's needed.
+
+(1) a function from typogeometries such as ⟨⟨□▪□▪⟩□▪□⟩ to two-dimensional grid
+    geometries of size [1, l*2^d] x [1, l*2^d] , where d is fixed and l
+    increases from 1 as necessary.
+
+(2) an algorithmic understanding of the notions: coarse points, sequencing of
+    coarse points, how a Polya Path passes through a sequence of coarse points,
+    when a Polya path can't pass through a sequence of coarse points, when
+    l should increase and when it shouldn't.
+
+(3) enumeration per typogeometry of all valid Polya paths, only increasing l
+    when a path can't be found, only increasing l +1 at a time, and ultimately
+    finding the minimum circumference of the particular typogeometry and chosen
+    ordering.
+
+(4) for emphasis let's mention that empty squares are labeled 0, while the
+    squares belonging to coarse points are labeled 1 through N according to the
+    chosen point ordering. As a Polya Path passes through squares, it inherits
+    their labels and produces a digit string. The required ordering is valid
+    when 1,2,...,N occurs as a subsequence of that string, read cyclically. For
+    example, 0,1,3,4,0,3,2,3,1,4 is valid for four points because 1,2,3,4 can be
+    checked off in that order. The first passage through 4 is not checked off
+    because 2 and 3 have not yet been checked off.
+
+    Geometrically, the actual point associated with a coarse point may lie in
+    any square belonging to that coarse point. If the Polya Path passes through
+    the coarse point too early, it can avoid the actual point there and find it
+    explicitly in a different square later. A Polya Path can revisit coarse
+    points on other squares it has not previously seen, but no square can ever
+    be visited twice.
+
+(5) for emphasis let's also reiterate that l only increases when a valid Polya
+    Path does not exist, and we stop increasing l when a valid Polya Path is
+    found. Adding rows and columns introduces too much uncertainty, so we
+    have chosen to multiply them, which also adds space to coarse points,
+    making the problem easier to solve.
+
+(6) comprehensive enumeration over all a(n) elements of the set of quadtree
+    typogeometries with n points. Then compare minimum circumferences to find
+    the maximum, also the infimum of the set. We want to know extrema of both
+    taxicab distance and metric circumference, and make notes when extrema
+    happen for different typogeometries. Or does the infimum taxicab distance
+    always lead to infimum metric circumference?
+
+Once it's well understood that searches are deterministic and well-defined, we
+just turn the crank and see how far we can get by brute force. Probably not far.
+
+Once we've exhausted our most rigorous methods, then we get to a seventh point
+where heuristics matter:
+
+(7) Randomly search large geometries for new infimum records.
+
+Point (7) is where we're most likely to get a sense of the asymptotics of the
+P^4 question: as the number of points n goes to infinity, how does the infimum
+circumference C(n) behave? Is it linear, or even quadratic? We need to do some
+more experiments before a clear hypothesis can even be formed.
+
+

@@ -1,0 +1,76 @@
+{
+  "schema": "plane-curve-search-status-v1",
+  "example_id": "weird_quintic_p_even",
+  "status": "inductive modular operator found; exact reductive certificate open",
+  "inductive": {
+    "exact_period_terms": 360,
+    "series_file": "data/series_360.json",
+    "candidate": {
+      "order": 9,
+      "degree": 22,
+      "unknown_coefficients": 230
+    },
+    "modular_training": {
+      "terms": 260,
+      "equations": 251,
+      "rank": 229,
+      "nullity": 1
+    },
+    "heldout": {
+      "additional_equations_per_prime": 100,
+      "primes": [
+        65521,
+        65519
+      ],
+      "all_zero": true
+    },
+    "lower_box_exclusion": {
+      "statement": "At each of primes 65521 and 65519, every identifiable polynomial-coefficient box of orders 1 through 8 has full column rank; at order 9, degrees 0 through 21 have full column rank and degree 22 has nullity one.",
+      "proof_type": "finite modular screen, not a characteristic-zero minimality theorem"
+    },
+    "tradeoff_hits": [
+      {
+        "order": 10,
+        "degree": 18,
+        "nullity_mod_p": 3
+      },
+      {
+        "order": 11,
+        "degree": 15,
+        "nullity_mod_p": 1
+      },
+      {
+        "order": 14,
+        "degree": 12,
+        "nullity_mod_p": 1
+      }
+    ]
+  },
+  "reductive": {
+    "symmetry_sector": "p-even primitive numerator; no q parity restriction",
+    "completed_bounds": {
+      "order_1_q_bound": 16,
+      "order_2_q_bound": 14,
+      "order_3_q_bound": 10
+    },
+    "relations_found": 0,
+    "status": "bounded failure only; expected order 9 is beyond the present symbolic one-shot reducer budget",
+    "trace_file": "data/reductive_bounded_search.json"
+  },
+  "exact_operator_reconstruction": {
+    "status": "open",
+    "attempt": "CRT plus rational reconstruction with P_9 alpha^22 normalized to 1",
+    "progress": "{'prime_count': 251, 'prime': 62659, 'modulus_digits': 1207, 'free_column': 229, 'all_reconstructed': False, 'reconstructed_count': 153}",
+    "interpretation": "The modular relation is stable, but the normalized rational coefficients were not uniquely reconstructed within the attempted modulus. Do not publish an exact operator yet."
+  },
+  "certificate": {
+    "operator_exact": false,
+    "primitive_recovered": false,
+    "identity_verified": false
+  },
+  "next_steps": [
+    "Use modular Hermite reduction directly, avoiding full rational operator reconstruction first.",
+    "Alternatively reconstruct a lower-degree higher-order tradeoff operator, then factor/right-gcd it modularly.",
+    "Develop the reusable GUVJ reducer for p-even/all-q sectors."
+  ]
+}

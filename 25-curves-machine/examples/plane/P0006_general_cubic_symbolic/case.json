@@ -1,0 +1,30 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0006",
+  "slug": "general_cubic_symbolic",
+  "display_name": "General Cubic Symbolic Family",
+  "aliases": [
+    "general_cubic"
+  ],
+  "domain": "plane",
+  "status": "exact_symbolic_operator",
+  "summary": "General cubic invariants and order-two operator derivation with exact specialization and modular-series checks.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "General cubic verification",
+      "cwd": "examples/plane/P0006_general_cubic_symbolic/scripts/runner",
+      "command": "bash run_verification.sh",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/plane/PLANE_CURVE_ODE_PSEUDOCODE_V0_2.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/plane_curves/search_analyze/general_cubic_symbolic"
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "example_id": "m4_quartic_axis",
+  "monomials": {
+    "3": [],
+    "4": [
+      [
+        0,
+        4,
+        "18/77"
+      ],
+      [
+        2,
+        2,
+        "-52/77"
+      ],
+      [
+        4,
+        0,
+        "18/77"
+      ]
+    ]
+  },
+  "modes": {
+    "C4": "1/7",
+    "R4": "1/11"
+  },
+  "notes": "single angular frequency m=4 plus radial quartic",
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "18/77"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "-52/77"
+    },
+    {
+      "p": 4,
+      "q": 0,
+      "coefficient": "18/77"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(-p,-q)",
+    "(p,q)->(-p,q)",
+    "(p,q)->(p,-q)",
+    "(p,q)->(p,q)",
+    "(p,q)->(-q,-p)",
+    "(p,q)->(-q,p)",
+    "(p,q)->(q,-p)",
+    "(p,q)->(q,p)"
+  ]
+}

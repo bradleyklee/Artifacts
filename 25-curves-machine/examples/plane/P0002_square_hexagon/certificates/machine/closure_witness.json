@@ -1,0 +1,61 @@
+{
+  "model": "square_hexagon_factorized",
+  "alpha_convention": "alpha=2H",
+  "energy": "p^2+q^2-2*p^2*q^2+(1/4)*p^2*(p^2-3*q^2)^2",
+  "rho": "d(2H)/dp = p*(3*p^4-12*p^2*q^2+9*q^4-8*q^2+4)/2",
+  "period_form": "omega=dq/H_p=2*dq/rho",
+  "certificate": "A4(omega)=d(V/rho^7)",
+  "symbol_minor": "419904*(n-(8*r-3))*(n-(8*r-4))*(n-(6*r-3))",
+  "exhaustive_rank_table": [
+    {
+      "order": 1,
+      "weight_bound": 5,
+      "rows": 17,
+      "exact_columns": 6,
+      "rank_exact": 6,
+      "rank_augmented": 8,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 13,
+      "rows": 29,
+      "exact_columns": 18,
+      "rank_exact": 18,
+      "rank_augmented": 21,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 21,
+      "rows": 41,
+      "exact_columns": 30,
+      "rank_exact": 30,
+      "rank_augmented": 34,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 29,
+      "rows": 53,
+      "exact_columns": 42,
+      "rank_exact": 42,
+      "rank_augmented": 46,
+      "relation_dimension": 1
+    }
+  ],
+  "derived_operator_matches_stored": true,
+  "derived_primitive_matches_stored": true,
+  "primitive_nonzero_slots": 40,
+  "primitive_expanded_terms": 514,
+  "primitive_numeric_content": "1/2",
+  "primitive_alpha_polynomial_gcd": "1",
+  "primitive_pole_reduced": true,
+  "pole_test_ideal": [
+    "2H-alpha",
+    "rho"
+  ],
+  "pole_test_normal_form": "15*q*(2404239084*alpha**8 - 22448717379*alpha**7 + 16752988620*alpha**6 - 120418068744*alpha**5 - 163919968272*alpha**4 + 178534770624*alpha**3 - 49764209536*alpha**2 + 35868448768*alpha - 20307957760)*(-3188646*alpha**9 + 3188646*alpha**8*q**6 - 25509168*alpha**8*q**4 + 121168548*alpha**8*q**2 + 134631720*alpha**8 + 19131876*alpha**7*q**10 - 148803480*alpha**7*q**8 + 128963016*alpha**7*q**6 - 191987982*alpha**7*q**4 - 227692944*alpha**7*q**2 - 380048112*alpha**7 + 53852688*alpha**6*q**10 - 50388480*alpha**6*q**8 + 477675792*alpha**6*q**6 - 772477560*alpha**6*q**4 + 1165910112*alpha**6*q**2 + 297939141*alpha**6 + 178249248*alpha**5*q**10 - 556652736*alpha**5*q**8 + 394241499*alpha**5*q**6 + 356881464*alpha**5*q**4 - 1452095262*alpha**5*q**2 - 30529224*alpha**5 - 239192190*alpha**4*q**10 + 818205300*alpha**4*q**8 - 1003159296*alpha**4*q**6 + 468748305*alpha**4*q**4 + 947899152*alpha**4*q**2 - 129749292*alpha**4 + 147747888*alpha**3*q**10 - 649534464*alpha**3*q**8 + 985247964*alpha**3*q**6 - 990198408*alpha**3*q**4 - 137019480*alpha**3*q**2 + 68547840*alpha**3 + 23144616*alpha**2*q**10 + 119846160*alpha**2*q**8 - 218338592*alpha**2*q**6 + 458037204*alpha**2*q**4 - 92075904*alpha**2*q**2 - 2744192*alpha**2 - 37635840*alpha*q**10 + 53305344*alpha*q**8 - 77217216*alpha*q**6 - 13830528*alpha*q**4 + 10245504*alpha*q**2 - 1050624*alpha - 2042496*q**10 + 4992768*q**8 - 7968256*q**6 + 5030592*q**4 - 1210368*q**2 + 201728)/(2*alpha - 1)",
+  "pole_test_normal_form_sha256": "09c6aa881abec4a35be1b8b4b9cc0e5187959ebd383f990f6cf78a455f963222",
+  "integer_version": "2*A4(omega)=d((2V)/rho^7)"
+}

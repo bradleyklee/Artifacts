@@ -1,0 +1,38 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0012",
+  "slug": "single_harmonic_catalog",
+  "display_name": "Unrestricted Single-Harmonic Catalog",
+  "aliases": [
+    "single_harmonic_catalog"
+  ],
+  "domain": "sphere",
+  "status": "benchmark_study",
+  "summary": "Filed sphere calculation/study from the verified sphere branch.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed single-harmonic check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py S0012",
+      "cost": "normal"
+    },
+    {
+      "label": "Full single-harmonic replay",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/sphere/S0012_single_harmonic_catalog/runs/replay_output/examples/sphere_curves && CURVES_MACHINE_DATA_ROOT=../../examples/sphere/S0012_single_harmonic_catalog/runs/replay_output python3 algorithms/scripts/replay_unrestricted_single_harmonic.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-014_UNRESTRICTED_SPHERE_POLYNOMIAL_LOOP.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/unrestricted_single_harmonic_benchmark.json",
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/showcase_period_data.json"
+  ]
+}

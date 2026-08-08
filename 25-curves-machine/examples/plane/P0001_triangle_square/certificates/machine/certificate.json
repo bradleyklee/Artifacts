@@ -1,0 +1,43 @@
+{
+  "schema": "plane-curve-reductive-certificate-v1",
+  "example_id": "triangle_square",
+  "title": "Mixed triangle-square plane-curve period certificate",
+  "status": "exact order-two reductive certificate",
+  "attribution": {
+    "research_model_and_direction": "Bradley Klee",
+    "privacy": "unpublished research; NO POACHING"
+  },
+  "conventions": {
+    "coefficient_field": "Q(alpha)",
+    "curve_ring": "Q(alpha)[p,q]/(E-alpha)",
+    "rho_definition": "rho=partial_p(E)=2*H_p",
+    "period_form": "omega=2*dq/rho=dq/H_p",
+    "derivative_numerator_recurrence": {
+      "N0": "2",
+      "N_next": "N[j+1]=rho*partial_p(N[j])-(2*j+1)*N[j]*partial_p(rho)",
+      "order_r_common_denominator": "rho^(2*r+1)"
+    },
+    "exact_image_map": {
+      "primitive": "Xi=V/rho^m, m=2*r-1",
+      "tangent_derivative": "D(f)=rho*partial_q(f)-partial_q(E)*partial_p(f)",
+      "dot_rho": "D(rho)=rho*partial_q(rho)-partial_q(E)*partial_p(rho)",
+      "numerator": "C_m(V)=rho*D(V)-m*D(rho)*V"
+    },
+    "reductive_relation": "find nonzero P with W*P in image(C), equivalently ker([C|W]) or ker(R) for R=W-CX"
+  },
+  "model": {
+    "E_equals": "2H",
+    "E": "p**2+q**2+q**3-3*p**2*q+(p**4-6*p**2*q**2+q**4)/4",
+    "curve_equation": "E(p,q)=alpha",
+    "rho": "p*(p**2+2-6*q-3*q**2)",
+    "symmetry_sector": "even in p",
+    "normalization": "T(0)=2*pi"
+  },
+  "reduction_file": "reduction.json",
+  "operator_file": "operator.json",
+  "primitive_file": "primitive.json",
+  "proof_strength": {
+    "closure": "exact in the declared order-two source space",
+    "lower_order": "order one excluded through q-bound 16; a general finite stopping theorem is not included here"
+  }
+}

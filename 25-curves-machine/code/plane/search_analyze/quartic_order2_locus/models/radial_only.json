@@ -1,0 +1,64 @@
+{
+  "example_id": "radial_only",
+  "monomials": {
+    "3": [],
+    "4": [
+      [
+        0,
+        4,
+        "1/7"
+      ],
+      [
+        2,
+        2,
+        "2/7"
+      ],
+      [
+        4,
+        0,
+        "1/7"
+      ]
+    ]
+  },
+  "modes": {
+    "R4": "1/7"
+  },
+  "notes": "pure radial quartic",
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "1/7"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "2/7"
+    },
+    {
+      "p": 4,
+      "q": 0,
+      "coefficient": "1/7"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(-p,-q)",
+    "(p,q)->(-p,q)",
+    "(p,q)->(p,-q)",
+    "(p,q)->(p,q)",
+    "(p,q)->(-q,-p)",
+    "(p,q)->(-q,p)",
+    "(p,q)->(q,-p)",
+    "(p,q)->(q,p)"
+  ]
+}

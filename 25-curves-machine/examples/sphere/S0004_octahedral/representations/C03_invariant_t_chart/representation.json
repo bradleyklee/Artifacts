@@ -1,0 +1,18 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C03",
+  "slug": "invariant_t_chart",
+  "name": "Reflection-invariant chart",
+  "kind": "invariant_coordinates",
+  "variables": [
+    "u",
+    "t",
+    "w"
+  ],
+  "constraints": [
+    "t=v*(1-v)",
+    "w^2=u*t*(1-4*t)"
+  ],
+  "notes": "",
+  "global": false
+}

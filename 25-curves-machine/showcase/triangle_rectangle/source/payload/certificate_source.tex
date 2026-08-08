@@ -1,0 +1,281 @@
+\documentclass[9pt]{extarticle}
+\usepackage[letterpaper,margin=0.34in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{charter}
+\usepackage{euler}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{array,tabularx}
+\usepackage{ragged2e}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\jot}{1.5pt}
+\setlength{\tabcolsep}{2pt}
+\newcommand{\pa}{\partial_{\alpha}}
+\newcommand{\DoubleRule}{\par\vspace{3pt}\hrule height 0.65pt\vspace{1.3pt}\hrule height 0.28pt\vspace{5.2pt}}
+\newcolumntype{H}{>{\bfseries\raggedright\arraybackslash}p{1.02in}}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcolumntype{J}{>{\bfseries\raggedright\arraybackslash}p{1.16in}}
+\begin{document}
+\enlargethispage{28pt}
+\vspace*{-10pt}
+
+\noindent
+\begin{minipage}[t]{0.66\textwidth}
+{\fontsize{12.1}{13.6}\selectfont\bfseries Triangle--Rectangle Genus-One Periods Certificate\par}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}
+\raggedleft{\fontsize{8.4}{9.8}\selectfont Bradley Klee, Mech.An.ika Sol (Open AI)\par}
+\end{minipage}
+\par\vspace{3.5pt}
+\noindent\rule{\textwidth}{0.45pt}
+\vspace{7.0pt}
+
+\noindent\includegraphics[width=0.985\textwidth]{assets/geometry_period.pdf}\par
+\vspace{-3pt}
+\noindent
+\begin{minipage}[t]{0.485\textwidth}
+\centering\textbf{(a)} Real and Complex cycles, by Abel--Wick transform.
+\end{minipage}\hfill
+\begin{minipage}[t]{0.485\textwidth}
+\centering\textbf{(b)} Periods and Abel's identity.
+\end{minipage}
+\par
+\DoubleRule
+
+{\fontsize{8.72}{10.65}\selectfont
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}H@{\hspace{0.10in}}Y@{}}
+The $\mu$-stratum &
+$\displaystyle 2H_\mu=p^2+q^2+\frac12(q^3-3p^2q)+\mu(q^2-3p^2)^2,\qquad \alpha=2H_\mu.$ \\[4pt]
+Transform &
+$\displaystyle 2H_\mu(p,-4-q)-2H_\mu(p,q)=-(16\mu-1)(q+2)(3p^2-q^2-4q-8),$ \\[-1pt]
+& $\displaystyle q\mapsto-4-q\quad\Longrightarrow\quad\mu=\frac1{16},\qquad (p,q)=(0,-2),\quad\alpha=1.$ \\[5pt]
+Curve &
+$\displaystyle \alpha=2H=p^2+q^2+\frac12(q^3-3p^2q)+\frac{(q^2-3p^2)^2}{16},\qquad
+\rho=(2H)_p=\frac p4\bigl(9p^2-3(q+2)^2+20\bigr).$ \\[6pt]
+Period form &
+$\displaystyle \omega=\frac{2\,dq}{\rho}=\frac{dq}{H_p}.$ \\[3pt]
+Real period &
+$\displaystyle T_1(\alpha)=\frac1{2\pi}\oint_{\gamma_\alpha^{(1)}}\omega,\qquad
+T_1(0)=1,\qquad \gamma_\alpha^{(1)}\subset(p,q)\text{ around }(0,0).$ \\[3pt]
+Complex period &
+$\displaystyle T_2(\alpha)=\frac{\sqrt5}{4\pi}\oint_{\gamma_\alpha^{(2)}}i\omega,\qquad
+T_2(1)=1,\qquad \gamma_\alpha^{(2)}\subset(ip,q)\text{ around }(0,-2).$
+\end{tabularx}
+}
+
+\DoubleRule
+
+{\fontsize{8.72}{10.65}\selectfont
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{@{}H@{\hspace{0.10in}}Y@{}}
+Annihilator &
+$\displaystyle A_\alpha=P_0+P_1\pa+P_2\pa^2,$\qquad
+$\displaystyle P_0=\frac34\alpha(9\alpha-64),$ \\
+& $\displaystyle P_1=54\alpha^3-195\alpha^2-112\alpha+128,$\qquad
+$\displaystyle P_2=\alpha(\alpha-1)(3\alpha-8)(9\alpha+16).$ \\[6pt]
+Factorization &
+$\displaystyle P_1=P_2'-\frac6{3\alpha-8}P_2,$
+\qquad
+$\displaystyle A_\alpha=(3\alpha-8)^2\pa\!\left(\frac{P_2}{(3\alpha-8)^2}\pa\right)+P_0.$ \\[6pt]
+Abel's identity &
+$\displaystyle
+\frac{\alpha(\alpha-1)(9\alpha+16)}{3\alpha-8}
+\bigl(T_2T_1'-T_1T_2'\bigr)=\frac{\sqrt5}{\pi}.$
+\end{tabularx}
+}
+
+{\fontsize{7.72}{9.95}\selectfont
+\renewcommand{\arraystretch}{1.16}
+\begin{tabularx}{\textwidth}{@{}H@{\hspace{0.10in}}Y@{}}
+Certificate &
+Set $x=q+2$. Then
+$\displaystyle \Xi=\frac{V(\alpha,p,x)}{8\rho^3},\qquad A_\alpha\circ\omega=d\Xi,$ where \\[2pt]
+& $\displaystyle
+V=x\Bigl[
+27\alpha^3(9p^2-3x^2+80)
++3\alpha^2(189p^2x^2-270p^2-27x^4+126x^2+280)$ \\
+& $\displaystyle\hspace{3.1em}
++2\alpha(-27p^2x^4-648p^2x^2+4008p^2+9x^6-156x^4+456x^2+1120)$ \\
+& $\displaystyle\hspace{3.1em}
++8(3x^2-16)(-9p^2x^2+108p^2+3x^4-32x^2+80)
+\Bigr].$
+\end{tabularx}
+}
+
+\DoubleRule
+
+{\fontsize{7.62}{10.38}\selectfont
+\renewcommand{\arraystretch}{1.23}
+\begin{tabularx}{\textwidth}{@{}H@{\hspace{0.10in}}Y@{}}
+Pullback data &
+$\displaystyle D=(16+9\alpha^2)^{1/4},\qquad
+X=-\frac{108\alpha^2(\alpha-1)(9\alpha+16)^2}{(16+9\alpha^2)^3},\qquad
+\sigma=\frac{(3\alpha+2)(32-48\alpha-9\alpha^2)}{(16+9\alpha^2)^{3/2}},\quad \sigma^2=1-X.$ \\[5pt]
+& $\displaystyle D_2=(25-18\beta+9\beta^2)^{1/4},\qquad
+X_2=\frac{108\beta(1-\beta)^2(25-9\beta)^2}{(25-18\beta+9\beta^2)^3},\qquad \beta=1-\alpha.$ \\[6pt]
+Local periods &
+$\displaystyle T_1(\alpha)=\frac2D\,{}_2F_1\!\left(\frac1{12},\frac5{12};1;X\right),\qquad
+T_2(1-\beta)=\frac{\sqrt5}{D_2}\,{}_2F_1\!\left(\frac1{12},\frac5{12};1;X_2\right).$ \\[7pt]
+Series &
+$\displaystyle T_1(16x)=1+24x^2+120x^3+2520x^4+25200x^5+397320x^6+5045040x^7+\cdots,$ \\
+& $\displaystyle T_2(1-400x)=1+132x+29220x^2+7816080x^3+2324945700x^4+738712234512x^5+\cdots.$ \\[7pt]
+Global basis &
+$\displaystyle
+\psi_0(\alpha)=\frac{2\sqrt\pi}{D\,\Gamma(11/12)\Gamma(7/12)}
+{}_2F_1\!\left(\frac1{12},\frac5{12};\frac12;1-X\right),$ \\[6pt]
+& $\displaystyle
+\psi_1(\alpha)=-\frac{4\sqrt\pi\,\sigma}{D\,\Gamma(1/12)\Gamma(5/12)}
+{}_2F_1\!\left(\frac{11}{12},\frac7{12};\frac32;1-X\right).$ \\[8pt]
+Global periods &
+$\displaystyle T_1(\alpha)=\psi_0(\alpha)+\psi_1(\alpha),\qquad
+T_2(\alpha)=\frac{\sqrt5}{2}\bigl(\psi_0(\alpha)-\psi_1(\alpha)\bigr).$
+\end{tabularx}
+}
+
+\clearpage
+\enlargethispage{24pt}
+\vspace*{-10pt}
+\noindent
+\begin{minipage}[t]{0.70\textwidth}
+{\fontsize{12.1}{13.6}\selectfont\bfseries Proof of Ramanujan's $E_4\sim K^4$ identity\par}
+\end{minipage}\hfill
+\begin{minipage}[t]{0.27\textwidth}
+\raggedleft{\fontsize{8.15}{9.5}\selectfont Bradley Klee, Mech.An.ika Sol (Open AI)\par}
+\end{minipage}
+\par\vspace{3.5pt}
+\noindent\rule{\textwidth}{0.45pt}
+\vspace{5.0pt}
+
+{\fontsize{9.15}{13.15}\selectfont
+\renewcommand{\arraystretch}{1.32}
+\begin{tabularx}{\textwidth}{@{}J@{\hspace{0.10in}}Y@{}}
+Birational maps &
+$\displaystyle
+u=\frac{q-\sqrt3\,p}{2},
+\quad v=\frac{q+\sqrt3\,p}{2},
+\quad A(u)=\frac{3u^2+6u+4}{12},
+\quad B(u)=\frac{u(3u+2)}6,$ \\
+& $\displaystyle
+x=u+1,
+\qquad y=2A(u)v+B(u),$ \\
+& $\displaystyle
+q=x-1+\frac{y-B(x-1)}{2A(x-1)},
+\qquad
+p=\frac1{\sqrt3}\!\left[\frac{y-B(x-1)}{2A(x-1)}-(x-1)\right].$ \\[10pt]
+
+Jacobi quartic &
+$\displaystyle
+12y^2=-x^4+(2+3\alpha)x^2+\alpha-1,
+\qquad
+\omega=\frac{dx}{\sqrt3\,y}.$ \\[9pt]
+
+Quartic period &
+$\displaystyle
+T_1(\alpha)=\sqrt{\frac2{2+3\alpha}}\,
+{}_2F_1\!\left(\frac14,\frac34;1;z_4\right),
+\qquad
+z_4=\frac{\alpha(9\alpha+16)}{(3\alpha+2)^2}.$ \\[10pt]
+
+Birational again &
+{\fontsize{8.55}{11.2}\selectfont $\displaystyle
+z_4=\frac{4m}{(1+m)^2},\qquad
+ a^2,b^2=\frac{2+3\alpha\pm\sqrt{\alpha(16+9\alpha)}}2,\qquad
+k=\frac{a-b}{a+b},\qquad m=k^2.$} \\[7pt]
+& $\displaystyle
+U=k\frac{x+b}{x-b},
+\qquad
+V=\frac{\sqrt3\,(U-k)^2y}{b(a-b)},$ \\[6pt]
+& $\displaystyle
+x=b\frac{U+k}{U-k},
+\qquad
+y=\frac{b(a-b)}{\sqrt3\,(U-k)^2}V.$ \\[10pt]
+
+Legendre cubic &
+$\displaystyle
+V^2=U(U-1)(U-m),
+\qquad
+\omega=-\frac{2}{a+b}\frac{dU}{V}.$ \\[9pt]
+
+Cubic period &
+$\displaystyle
+T_1(\alpha)=\frac{2}{a+b}
+\,{}_2F_1\!\left(\frac12,\frac12;1;m\right)
+=\frac{4K(k)}{\pi(a+b)}.$ \\[10pt]
+
+Three periods &
+{\fontsize{8.55}{11.2}\selectfont $\displaystyle
+T_1(\alpha)=\sqrt{\frac2{2+3\alpha}}\,{}_2F_1\!\left(\frac14,\frac34;1;z_4\right)
+=\frac{2}{a+b}\,{}_2F_1\!\left(\frac12,\frac12;1;m\right)
+=\frac{4K(k)}{\pi(a+b)}.$} \\[12pt]
+\end{tabularx}
+}
+
+\DoubleRule
+
+{\fontsize{8.85}{12.55}\selectfont
+\renewcommand{\arraystretch}{1.28}
+\begin{tabularx}{\textwidth}{@{}J@{\hspace{0.10in}}Y@{}}
+Modular data &
+$\displaystyle
+\tau(\alpha)=i\,\frac{K(k')}{K(k)},
+\qquad X=\frac{1728}{j(\tau)}.$ \\[8pt]
+
+Parameter chain &
+$\displaystyle
+m=k^2=\frac{3\alpha+2-2\sqrt{1-\alpha}}{3\alpha+2+2\sqrt{1-\alpha}},
+\qquad
+X=\frac{27m^2(1-m)^2}{4(1-m+m^2)^3}=X(\alpha).$ \\[9pt]
+
+$j$-line solution &
+$\displaystyle
+\mathcal E_4(\alpha)=\frac D2T_1(\alpha)
+={}_2F_1\!\left(\frac1{12},\frac5{12};1;X\right),$ \\[5pt]
+& $\displaystyle
+\mathcal L_X=X(1-X)\partial_X^2+\left(1-\frac32X\right)\partial_X-\frac5{144},$ \\[4pt]
+& $\displaystyle
+\mathcal L_X\mathcal E_4=\mathcal L_X E_4(\tau)^{1/4}=0,
+\qquad \mathcal E_4(0)=E_4(i\infty)^{1/4}=1.$ \\[8pt]
+
+Fourth power &
+$\displaystyle
+E_4(\tau(\alpha))
+=\mathcal E_4(\alpha)^4
+=\left(1+\frac{9\alpha^2}{16}\right)T_1(\alpha)^4
+=\left(1+\frac{9\alpha^2}{16}\right)\left(\frac{4K(k)}{\pi(a+b)}\right)^4.$ \\[8pt]
+
+Algebraic factor &
+$\displaystyle
+(a+b)^4(1-m+m^2)=16+9\alpha^2,
+\qquad
+1-m+m^2=1-k^2{k'}^2.$ \\[8pt]
+
+Ramanujan &
+$\displaystyle
+E_4(\tau)=\left(\frac{2K(k)}{\pi}\right)^4
+\bigl(1-k^2{k'}^2\bigr).$ \\[7pt]
+
+\end{tabularx}
+}
+
+\DoubleRule
+
+{\fontsize{8.45}{11.65}\selectfont
+\begin{quote}
+\itshape
+``9. We may get a still closer approximation from the following results.
+It is known that
+\vspace{2pt}
+\[
+1+240\sum_{r=1}^{\infty}\frac{r^3q^{2r}}{1-q^{2r}}
+=\left(\frac{2K}{\pi}\right)^4\!\left(1-k^2{k'}^2\right),
+\qquad \ldots''
+\]
+\normalfont\hfill --- S. Ramanujan, \emph{Modular equations and approximations to $\pi$}, \S9 (1914).
+\end{quote}
+}
+
+\end{document}

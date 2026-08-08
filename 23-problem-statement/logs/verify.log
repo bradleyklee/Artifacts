@@ -1,0 +1,7 @@
+PASS manifest has 31,968 classes
+PASS unresolved count is 2,811
+PASS all unresolved IDs occur in manifest
+PASS record brace code stable
+PASS record exact length 48
+PASS level reports 1-5 exist
+SUMMARY 6/6

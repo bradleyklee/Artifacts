@@ -1,0 +1,1167 @@
+{
+  "example_id": "q1b",
+  "prime": 65521,
+  "alpha": 7,
+  "records": [
+    {
+      "order": 1,
+      "weight_bound": 0,
+      "rows": 10,
+      "columns": 1,
+      "rank_C": 1,
+      "rank_CW": 3,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 1,
+      "rows": 11,
+      "columns": 2,
+      "rank_C": 2,
+      "rank_CW": 4,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 2,
+      "rows": 14,
+      "columns": 4,
+      "rank_C": 4,
+      "rank_CW": 6,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 3,
+      "rows": 14,
+      "columns": 6,
+      "rank_C": 6,
+      "rank_CW": 8,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 4,
+      "rows": 18,
+      "columns": 8,
+      "rank_C": 8,
+      "rank_CW": 10,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 5,
+      "rows": 20,
+      "columns": 10,
+      "rank_C": 10,
+      "rank_CW": 12,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 6,
+      "rows": 22,
+      "columns": 12,
+      "rank_C": 12,
+      "rank_CW": 14,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 7,
+      "rows": 24,
+      "columns": 14,
+      "rank_C": 14,
+      "rank_CW": 16,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 8,
+      "rows": 26,
+      "columns": 16,
+      "rank_C": 16,
+      "rank_CW": 18,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 9,
+      "rows": 28,
+      "columns": 18,
+      "rank_C": 18,
+      "rank_CW": 20,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 10,
+      "rows": 30,
+      "columns": 20,
+      "rank_C": 20,
+      "rank_CW": 22,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 11,
+      "rows": 32,
+      "columns": 22,
+      "rank_C": 22,
+      "rank_CW": 24,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 12,
+      "rows": 34,
+      "columns": 24,
+      "rank_C": 24,
+      "rank_CW": 26,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 13,
+      "rows": 36,
+      "columns": 26,
+      "rank_C": 26,
+      "rank_CW": 28,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 14,
+      "rows": 38,
+      "columns": 28,
+      "rank_C": 28,
+      "rank_CW": 30,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 15,
+      "rows": 40,
+      "columns": 30,
+      "rank_C": 30,
+      "rank_CW": 32,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 16,
+      "rows": 42,
+      "columns": 32,
+      "rank_C": 32,
+      "rank_CW": 34,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 17,
+      "rows": 44,
+      "columns": 34,
+      "rank_C": 34,
+      "rank_CW": 36,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 18,
+      "rows": 46,
+      "columns": 36,
+      "rank_C": 36,
+      "rank_CW": 38,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 19,
+      "rows": 48,
+      "columns": 38,
+      "rank_C": 38,
+      "rank_CW": 40,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 20,
+      "rows": 50,
+      "columns": 40,
+      "rank_C": 40,
+      "rank_CW": 42,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 21,
+      "rows": 52,
+      "columns": 42,
+      "rank_C": 42,
+      "rank_CW": 44,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 22,
+      "rows": 54,
+      "columns": 44,
+      "rank_C": 44,
+      "rank_CW": 46,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 23,
+      "rows": 56,
+      "columns": 46,
+      "rank_C": 46,
+      "rank_CW": 48,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 24,
+      "rows": 58,
+      "columns": 48,
+      "rank_C": 48,
+      "rank_CW": 50,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 25,
+      "rows": 60,
+      "columns": 50,
+      "rank_C": 50,
+      "rank_CW": 52,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 26,
+      "rows": 62,
+      "columns": 52,
+      "rank_C": 52,
+      "rank_CW": 54,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 27,
+      "rows": 64,
+      "columns": 54,
+      "rank_C": 54,
+      "rank_CW": 56,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 1,
+      "weight_bound": 28,
+      "rows": 66,
+      "columns": 56,
+      "rank_C": 56,
+      "rank_CW": 58,
+      "derivative_quotient_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 0,
+      "rows": 24,
+      "columns": 1,
+      "rank_C": 1,
+      "rank_CW": 4,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 1,
+      "rows": 24,
+      "columns": 2,
+      "rank_C": 2,
+      "rank_CW": 5,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 2,
+      "rows": 24,
+      "columns": 4,
+      "rank_C": 4,
+      "rank_CW": 7,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 3,
+      "rows": 24,
+      "columns": 6,
+      "rank_C": 6,
+      "rank_CW": 9,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 4,
+      "rows": 24,
+      "columns": 8,
+      "rank_C": 8,
+      "rank_CW": 11,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 5,
+      "rows": 24,
+      "columns": 10,
+      "rank_C": 10,
+      "rank_CW": 13,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 6,
+      "rows": 24,
+      "columns": 12,
+      "rank_C": 12,
+      "rank_CW": 15,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 7,
+      "rows": 24,
+      "columns": 14,
+      "rank_C": 14,
+      "rank_CW": 17,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 8,
+      "rows": 26,
+      "columns": 16,
+      "rank_C": 16,
+      "rank_CW": 19,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 9,
+      "rows": 26,
+      "columns": 18,
+      "rank_C": 18,
+      "rank_CW": 21,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 10,
+      "rows": 30,
+      "columns": 20,
+      "rank_C": 20,
+      "rank_CW": 23,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 11,
+      "rows": 32,
+      "columns": 22,
+      "rank_C": 22,
+      "rank_CW": 25,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 12,
+      "rows": 34,
+      "columns": 24,
+      "rank_C": 24,
+      "rank_CW": 27,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 13,
+      "rows": 36,
+      "columns": 26,
+      "rank_C": 26,
+      "rank_CW": 29,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 14,
+      "rows": 38,
+      "columns": 28,
+      "rank_C": 28,
+      "rank_CW": 31,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 15,
+      "rows": 40,
+      "columns": 30,
+      "rank_C": 30,
+      "rank_CW": 33,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 16,
+      "rows": 42,
+      "columns": 32,
+      "rank_C": 32,
+      "rank_CW": 35,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 17,
+      "rows": 44,
+      "columns": 34,
+      "rank_C": 34,
+      "rank_CW": 37,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 18,
+      "rows": 46,
+      "columns": 36,
+      "rank_C": 36,
+      "rank_CW": 39,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 19,
+      "rows": 48,
+      "columns": 38,
+      "rank_C": 38,
+      "rank_CW": 41,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 20,
+      "rows": 50,
+      "columns": 40,
+      "rank_C": 40,
+      "rank_CW": 43,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 21,
+      "rows": 52,
+      "columns": 42,
+      "rank_C": 42,
+      "rank_CW": 45,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 22,
+      "rows": 54,
+      "columns": 44,
+      "rank_C": 44,
+      "rank_CW": 47,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 23,
+      "rows": 56,
+      "columns": 46,
+      "rank_C": 46,
+      "rank_CW": 49,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 24,
+      "rows": 58,
+      "columns": 48,
+      "rank_C": 48,
+      "rank_CW": 51,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 25,
+      "rows": 60,
+      "columns": 50,
+      "rank_C": 50,
+      "rank_CW": 53,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 26,
+      "rows": 62,
+      "columns": 52,
+      "rank_C": 52,
+      "rank_CW": 55,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 27,
+      "rows": 64,
+      "columns": 54,
+      "rank_C": 54,
+      "rank_CW": 57,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "weight_bound": 28,
+      "rows": 66,
+      "columns": 56,
+      "rank_C": 56,
+      "rank_CW": 59,
+      "derivative_quotient_rank": 3,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 0,
+      "rows": 36,
+      "columns": 1,
+      "rank_C": 1,
+      "rank_CW": 5,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 1,
+      "rows": 36,
+      "columns": 2,
+      "rank_C": 2,
+      "rank_CW": 6,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 2,
+      "rows": 36,
+      "columns": 4,
+      "rank_C": 4,
+      "rank_CW": 8,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 3,
+      "rows": 36,
+      "columns": 6,
+      "rank_C": 6,
+      "rank_CW": 10,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 4,
+      "rows": 36,
+      "columns": 8,
+      "rank_C": 8,
+      "rank_CW": 12,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 5,
+      "rows": 36,
+      "columns": 10,
+      "rank_C": 10,
+      "rank_CW": 14,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 6,
+      "rows": 36,
+      "columns": 12,
+      "rank_C": 12,
+      "rank_CW": 16,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 7,
+      "rows": 36,
+      "columns": 14,
+      "rank_C": 14,
+      "rank_CW": 18,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 8,
+      "rows": 36,
+      "columns": 16,
+      "rank_C": 16,
+      "rank_CW": 20,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 9,
+      "rows": 36,
+      "columns": 18,
+      "rank_C": 18,
+      "rank_CW": 22,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 10,
+      "rows": 36,
+      "columns": 20,
+      "rank_C": 20,
+      "rank_CW": 24,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 11,
+      "rows": 36,
+      "columns": 22,
+      "rank_C": 22,
+      "rank_CW": 26,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 12,
+      "rows": 36,
+      "columns": 24,
+      "rank_C": 24,
+      "rank_CW": 28,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 13,
+      "rows": 36,
+      "columns": 26,
+      "rank_C": 26,
+      "rank_CW": 30,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 14,
+      "rows": 38,
+      "columns": 28,
+      "rank_C": 28,
+      "rank_CW": 32,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 15,
+      "rows": 38,
+      "columns": 30,
+      "rank_C": 30,
+      "rank_CW": 34,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 16,
+      "rows": 42,
+      "columns": 32,
+      "rank_C": 32,
+      "rank_CW": 36,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 17,
+      "rows": 44,
+      "columns": 34,
+      "rank_C": 34,
+      "rank_CW": 38,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 18,
+      "rows": 46,
+      "columns": 36,
+      "rank_C": 36,
+      "rank_CW": 40,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 19,
+      "rows": 48,
+      "columns": 38,
+      "rank_C": 38,
+      "rank_CW": 42,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 20,
+      "rows": 50,
+      "columns": 40,
+      "rank_C": 40,
+      "rank_CW": 44,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 21,
+      "rows": 52,
+      "columns": 42,
+      "rank_C": 42,
+      "rank_CW": 46,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 22,
+      "rows": 54,
+      "columns": 44,
+      "rank_C": 44,
+      "rank_CW": 48,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 23,
+      "rows": 56,
+      "columns": 46,
+      "rank_C": 46,
+      "rank_CW": 50,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 24,
+      "rows": 58,
+      "columns": 48,
+      "rank_C": 48,
+      "rank_CW": 52,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 25,
+      "rows": 60,
+      "columns": 50,
+      "rank_C": 50,
+      "rank_CW": 54,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 26,
+      "rows": 62,
+      "columns": 52,
+      "rank_C": 52,
+      "rank_CW": 56,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 27,
+      "rows": 64,
+      "columns": 54,
+      "rank_C": 54,
+      "rank_CW": 58,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 3,
+      "weight_bound": 28,
+      "rows": 66,
+      "columns": 56,
+      "rank_C": 56,
+      "rank_CW": 60,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 0,
+      "rows": 48,
+      "columns": 1,
+      "rank_C": 1,
+      "rank_CW": 6,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 1,
+      "rows": 48,
+      "columns": 2,
+      "rank_C": 2,
+      "rank_CW": 7,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 2,
+      "rows": 48,
+      "columns": 4,
+      "rank_C": 4,
+      "rank_CW": 9,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 3,
+      "rows": 48,
+      "columns": 6,
+      "rank_C": 6,
+      "rank_CW": 11,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 4,
+      "rows": 48,
+      "columns": 8,
+      "rank_C": 8,
+      "rank_CW": 13,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 5,
+      "rows": 48,
+      "columns": 10,
+      "rank_C": 10,
+      "rank_CW": 15,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 6,
+      "rows": 48,
+      "columns": 12,
+      "rank_C": 12,
+      "rank_CW": 17,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 7,
+      "rows": 48,
+      "columns": 14,
+      "rank_C": 14,
+      "rank_CW": 19,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 8,
+      "rows": 48,
+      "columns": 16,
+      "rank_C": 16,
+      "rank_CW": 21,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 9,
+      "rows": 48,
+      "columns": 18,
+      "rank_C": 18,
+      "rank_CW": 23,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 10,
+      "rows": 48,
+      "columns": 20,
+      "rank_C": 20,
+      "rank_CW": 25,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 11,
+      "rows": 48,
+      "columns": 22,
+      "rank_C": 22,
+      "rank_CW": 27,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 12,
+      "rows": 48,
+      "columns": 24,
+      "rank_C": 24,
+      "rank_CW": 29,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 13,
+      "rows": 48,
+      "columns": 26,
+      "rank_C": 26,
+      "rank_CW": 31,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 14,
+      "rows": 48,
+      "columns": 28,
+      "rank_C": 28,
+      "rank_CW": 33,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 15,
+      "rows": 48,
+      "columns": 30,
+      "rank_C": 30,
+      "rank_CW": 35,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 16,
+      "rows": 48,
+      "columns": 32,
+      "rank_C": 32,
+      "rank_CW": 37,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 17,
+      "rows": 48,
+      "columns": 34,
+      "rank_C": 34,
+      "rank_CW": 39,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 18,
+      "rows": 48,
+      "columns": 36,
+      "rank_C": 36,
+      "rank_CW": 41,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 19,
+      "rows": 48,
+      "columns": 38,
+      "rank_C": 38,
+      "rank_CW": 43,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 20,
+      "rows": 50,
+      "columns": 40,
+      "rank_C": 40,
+      "rank_CW": 45,
+      "derivative_quotient_rank": 5,
+      "relation_dimension": 0
+    },
+    {
+      "order": 4,
+      "weight_bound": 21,
+      "rows": 50,
+      "columns": 42,
+      "rank_C": 42,
+      "rank_CW": 46,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    },
+    {
+      "order": 4,
+      "weight_bound": 22,
+      "rows": 54,
+      "columns": 44,
+      "rank_C": 44,
+      "rank_CW": 48,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    },
+    {
+      "order": 4,
+      "weight_bound": 23,
+      "rows": 56,
+      "columns": 46,
+      "rank_C": 46,
+      "rank_CW": 50,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    },
+    {
+      "order": 4,
+      "weight_bound": 24,
+      "rows": 58,
+      "columns": 48,
+      "rank_C": 48,
+      "rank_CW": 52,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    },
+    {
+      "order": 4,
+      "weight_bound": 25,
+      "rows": 60,
+      "columns": 50,
+      "rank_C": 50,
+      "rank_CW": 54,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    },
+    {
+      "order": 4,
+      "weight_bound": 26,
+      "rows": 62,
+      "columns": 52,
+      "rank_C": 52,
+      "rank_CW": 56,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    },
+    {
+      "order": 4,
+      "weight_bound": 27,
+      "rows": 64,
+      "columns": 54,
+      "rank_C": 54,
+      "rank_CW": 58,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    },
+    {
+      "order": 4,
+      "weight_bound": 28,
+      "rows": 66,
+      "columns": 56,
+      "rank_C": 56,
+      "rank_CW": 60,
+      "derivative_quotient_rank": 4,
+      "relation_dimension": 1
+    }
+  ]
+}

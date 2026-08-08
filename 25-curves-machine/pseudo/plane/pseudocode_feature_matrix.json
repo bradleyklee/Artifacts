@@ -1,0 +1,193 @@
+{
+  "version": "0.1.0",
+  "features": [
+    "algebraic_function_field",
+    "annihilator",
+    "canonical_remainders",
+    "certificate",
+    "certificate_reconstruction",
+    "exact_differentials",
+    "finite_poles",
+    "hermite_reduction",
+    "infinity_basis",
+    "matrix_solve",
+    "nullspace",
+    "odd_denominator_powers",
+    "parameter_differentiation",
+    "symmetry_compression"
+  ],
+  "rows": [
+    {
+      "id": "DISSERTATION-EXP-TO-ODE",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": true,
+        "canonical_remainders": false,
+        "certificate": true,
+        "certificate_reconstruction": false,
+        "exact_differentials": true,
+        "finite_poles": false,
+        "hermite_reduction": true,
+        "infinity_basis": false,
+        "matrix_solve": true,
+        "nullspace": true,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": true,
+        "symmetry_compression": false
+      }
+    },
+    {
+      "id": "DISSERTATION-HYPERELLIPTIC-TO-ODE",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": true,
+        "canonical_remainders": false,
+        "certificate": true,
+        "certificate_reconstruction": false,
+        "exact_differentials": true,
+        "finite_poles": false,
+        "hermite_reduction": true,
+        "infinity_basis": false,
+        "matrix_solve": false,
+        "nullspace": true,
+        "odd_denominator_powers": true,
+        "parameter_differentiation": true,
+        "symmetry_compression": false
+      }
+    },
+    {
+      "id": "DISSERTATION-DIHEDRAL-TO-ODE",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": true,
+        "canonical_remainders": false,
+        "certificate": true,
+        "certificate_reconstruction": false,
+        "exact_differentials": true,
+        "finite_poles": false,
+        "hermite_reduction": true,
+        "infinity_basis": false,
+        "matrix_solve": false,
+        "nullspace": true,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": true,
+        "symmetry_compression": true
+      }
+    },
+    {
+      "id": "PSEUDO-RESIDUAL-HERMITE-001",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": false,
+        "canonical_remainders": true,
+        "certificate": false,
+        "certificate_reconstruction": true,
+        "exact_differentials": false,
+        "finite_poles": true,
+        "hermite_reduction": false,
+        "infinity_basis": "planned",
+        "matrix_solve": false,
+        "nullspace": true,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": false,
+        "symmetry_compression": false
+      }
+    },
+    {
+      "id": "PSEUDO-GD-REDUCE-001",
+      "values": {
+        "algebraic_function_field": true,
+        "annihilator": false,
+        "canonical_remainders": true,
+        "certificate": false,
+        "certificate_reconstruction": true,
+        "exact_differentials": false,
+        "finite_poles": true,
+        "hermite_reduction": false,
+        "infinity_basis": true,
+        "matrix_solve": false,
+        "nullspace": true,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": false,
+        "symmetry_compression": false
+      }
+    },
+    {
+      "id": "PSEUDO-META-SEARCH-001",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": false,
+        "canonical_remainders": false,
+        "certificate": false,
+        "certificate_reconstruction": false,
+        "exact_differentials": false,
+        "finite_poles": false,
+        "hermite_reduction": false,
+        "infinity_basis": false,
+        "matrix_solve": false,
+        "nullspace": false,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": false,
+        "symmetry_compression": false
+      }
+    },
+    {
+      "id": "PSEUDO-REDUCTION-SEARCH-001",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": false,
+        "canonical_remainders": false,
+        "certificate": false,
+        "certificate_reconstruction": false,
+        "exact_differentials": false,
+        "finite_poles": false,
+        "hermite_reduction": false,
+        "infinity_basis": false,
+        "matrix_solve": false,
+        "nullspace": false,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": false,
+        "symmetry_compression": false
+      }
+    },
+    {
+      "id": "PSEUDO-ANNIHILATOR-RELATIONS-001",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": false,
+        "canonical_remainders": false,
+        "certificate": false,
+        "certificate_reconstruction": false,
+        "exact_differentials": false,
+        "finite_poles": false,
+        "hermite_reduction": false,
+        "infinity_basis": false,
+        "matrix_solve": false,
+        "nullspace": false,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": false,
+        "symmetry_compression": false
+      }
+    },
+    {
+      "id": "PSEUDO-SQUARE-HEXAGON-STRATA-001",
+      "values": {
+        "algebraic_function_field": false,
+        "annihilator": false,
+        "canonical_remainders": false,
+        "certificate": false,
+        "certificate_reconstruction": false,
+        "exact_differentials": false,
+        "finite_poles": false,
+        "hermite_reduction": false,
+        "infinity_basis": false,
+        "matrix_solve": false,
+        "nullspace": false,
+        "odd_denominator_powers": false,
+        "parameter_differentiation": false,
+        "symmetry_compression": false
+      }
+    }
+  ],
+  "scoring_note": "No numeric similarity score is yet assigned. Any future score must publish feature weights and preserve the raw feature matrix."
+}

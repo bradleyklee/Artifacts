@@ -1,0 +1,38 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0007",
+  "slug": "q2_generic",
+  "display_name": "Generic Asymmetric Q2 Quartic",
+  "aliases": [
+    "q2_generic",
+    "plane.generic_squarefree_quartic"
+  ],
+  "domain": "plane",
+  "status": "exact_order6_certificate",
+  "summary": "Dense asymmetric squarefree quartic with exact order-six operator, 100-term verification, degree bounds, and a large primitive certificate.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Exact operator versus 100-term series",
+      "cwd": "examples/plane/P0007_q2_generic/scripts/runner",
+      "command": "python3 scripts/verify_q2_exact_operator.py data/q2_operator_exact.json data/q2_series_100.json --output /tmp/q2_verify.json",
+      "cost": "normal"
+    },
+    {
+      "label": "Full sparse primitive identity",
+      "cwd": "examples/plane/P0007_q2_generic/scripts/runner",
+      "command": "python3 scripts/verify_q2_certificate_from_json.py --model data/q2_generic.json --src src --operator-verified data/q2_operator_exact_verified.json --certificate data/q2_primitive_certificate_shift.json",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md",
+    "pseudo/sphere/ALG-004_FINITE_SUPPORT_EXHAUSTIVENESS.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/plane_curves/search_analyze/q2_order6_engine"
+  ]
+}

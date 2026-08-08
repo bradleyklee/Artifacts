@@ -1,0 +1,104 @@
+{
+  "classifications": {
+    "generic_maximal_quartic": {
+      "H": "p**4 + 2*p**3*q + p**3 + 3*p**2*q**2 - 2*p**2*q + p**2 + 5*p*q**3 + 3*p*q**2 + 7*q**4 - q**3 + q**2",
+      "F_homogeneous": "-alpha*z**4 + p**4 + 2*p**3*q + p**3*z + 3*p**2*q**2 - 2*p**2*q*z + p**2*z**2 + 5*p*q**3 + 3*p*q**2*z + 7*q**4 - q**3*z + q**2*z**2",
+      "degree": 4,
+      "singularities_at_infinity": [],
+      "delta_total": 0,
+      "geometric_genus": 3,
+      "verdict": "no_binary_elliptic_addition_on_original_curve",
+      "note": "generic alpha: affine critical fibers excluded because alpha is transcendental"
+    },
+    "generic_even_quartic_original_curve": {
+      "H": "p**4 + 2*p**3*q + 3*p**2*q**2 + p**2 + 5*p*q**3 + 7*q**4 + q**2",
+      "F_homogeneous": "-alpha*z**4 + p**4 + 2*p**3*q + 3*p**2*q**2 + p**2*z**2 + 5*p*q**3 + 7*q**4 + q**2*z**2",
+      "degree": 4,
+      "singularities_at_infinity": [],
+      "delta_total": 0,
+      "geometric_genus": 3,
+      "verdict": "no_binary_elliptic_addition_on_original_curve",
+      "note": "generic alpha: affine critical fibers excluded because alpha is transcendental"
+    },
+    "edwards_two_node_quartic": {
+      "H": "-p**2*q**2 + p**2 + q**2",
+      "F_homogeneous": "-alpha*z**4 - p**2*q**2 + p**2*z**2 + q**2*z**2",
+      "degree": 4,
+      "singularities_at_infinity": [
+        {
+          "point": "[1:0:0]",
+          "delta": 1,
+          "trace": [
+            {
+              "depth": 0,
+              "multiplicity": 2,
+              "tangent_cone": "-(u - v)*(u + v)",
+              "equation": "-alpha*v**4 + u**2*v**2 - u**2 + v**2"
+            }
+          ]
+        },
+        {
+          "point": "[0:1:0]",
+          "delta": 1,
+          "trace": [
+            {
+              "depth": 0,
+              "multiplicity": 2,
+              "tangent_cone": "-(u - v)*(u + v)",
+              "equation": "-alpha*v**4 + u**2*v**2 - u**2 + v**2"
+            }
+          ]
+        }
+      ],
+      "delta_total": 2,
+      "geometric_genus": 1,
+      "verdict": "geometrically_genus_one_base_point_required",
+      "note": "generic alpha: affine critical fibers excluded because alpha is transcendental"
+    },
+    "mechanical_tacnode_quartic": {
+      "H": "p**2 + q**4 + q**2",
+      "F_homogeneous": "-alpha*z**4 + p**2*z**2 + q**4 + q**2*z**2",
+      "degree": 4,
+      "singularities_at_infinity": [
+        {
+          "point": "[1:0:0]",
+          "delta": 2,
+          "trace": [
+            {
+              "depth": 0,
+              "multiplicity": 2,
+              "tangent_cone": "v**2",
+              "equation": "-alpha*v**4 + u**4 + u**2*v**2 + v**2"
+            },
+            {
+              "tangent": "0",
+              "chart": "y=xv",
+              "subtrace": [
+                {
+                  "depth": 1,
+                  "multiplicity": 2,
+                  "tangent_cone": "u**2 + w0**2",
+                  "equation": "-alpha*u**2*w0**4 + u**2*w0**2 + u**2 + w0**2"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delta_total": 2,
+      "geometric_genus": 1,
+      "verdict": "geometrically_genus_one_base_point_required",
+      "note": "generic alpha: affine critical fibers excluded because alpha is transcendental"
+    },
+    "cubic_terms_destroy_edwards_nodes": {
+      "H": "p**3 - p**2*q**2 + p**2 + q**3 + q**2",
+      "F_homogeneous": "-alpha*z**4 + p**3*z - p**2*q**2 + p**2*z**2 + q**3*z + q**2*z**2",
+      "degree": 4,
+      "singularities_at_infinity": [],
+      "delta_total": 0,
+      "geometric_genus": 3,
+      "verdict": "no_binary_elliptic_addition_on_original_curve",
+      "note": "generic alpha: affine critical fibers excluded because alpha is transcendental"
+    }
+  }
+}

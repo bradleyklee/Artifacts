@@ -1,0 +1,62 @@
+{
+  "example_id": "quartic_m2_m4",
+  "monomials": {
+    "3": [],
+    "4": [
+      [
+        0,
+        4,
+        "271/819"
+      ],
+      [
+        2,
+        2,
+        "-20/39"
+      ],
+      [
+        4,
+        0,
+        "37/819"
+      ]
+    ]
+  },
+  "modes": {
+    "Q2R2": "1/7",
+    "C4": "1/9",
+    "R4": "1/13"
+  },
+  "notes": "two quartic frequencies m=2 and m=4",
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "271/819"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "-20/39"
+    },
+    {
+      "p": 4,
+      "q": 0,
+      "coefficient": "37/819"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(-p,-q)",
+    "(p,q)->(-p,q)",
+    "(p,q)->(p,-q)",
+    "(p,q)->(p,q)"
+  ]
+}

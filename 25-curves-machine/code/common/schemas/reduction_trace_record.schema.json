@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"reduction_trace_record.schema.json","title":"Reduction trace","type":"object",
+  "required":["record_type","case_id","algorithm_id","coefficient_field","basis_convention","steps","result_status","source_ref"],
+  "properties":{"record_type":{"const":"reduction_trace"},"case_id":{"type":"string"},"algorithm_id":{"type":"string"},"coefficient_field":{"type":"string"},"basis_convention":{"type":"string"},"bounds":{"type":"object"},"steps":{"type":"array"},"result_status":{"type":"string"},"source_ref":{"type":"string"}},"additionalProperties":true
+}

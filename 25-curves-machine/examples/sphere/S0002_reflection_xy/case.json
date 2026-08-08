@@ -1,0 +1,32 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0002",
+  "slug": "reflection_xy",
+  "display_name": "Reflection-XY Sphere Quartic",
+  "aliases": [
+    "reflection_xy_exact_certificate"
+  ],
+  "domain": "sphere",
+  "status": "exact_order4_certificate",
+  "summary": "Reflection quotient lowers the generic even-quartic ceiling and closes at exact order four.",
+  "representations": [
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "replay_commands": [
+    {
+      "label": "Reflection quotient replay",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/sphere/S0002_reflection_xy/runs/replay_output/examples/sphere_curves ../../examples/sphere/S0002_reflection_xy/runs/replay_output/bounds && CURVES_MACHINE_DATA_ROOT=../../examples/sphere/S0002_reflection_xy/runs/replay_output python3 algorithms/scripts/replay_even_sphere_reflection.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-013_EVEN_SPHERE_COHOMOLOGY_BOUNDS.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/reflection_xy_exact_certificate.json"
+  ]
+}

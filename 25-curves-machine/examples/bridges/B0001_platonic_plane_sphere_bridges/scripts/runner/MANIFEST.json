@@ -1,0 +1,154 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 612,
+      "sha256": "a8c3280c686447ebe121ff82f93e708644466492ab5c06b023efc14fbc09cbaf"
+    },
+    {
+      "path": "STATUS.json",
+      "bytes": 1100,
+      "sha256": "54ee4685a599034b8fefe2fa6798f0e63c1b7014685aa4c9bc8a9fc3231d9409"
+    },
+    {
+      "path": "TEST_RESULTS.txt",
+      "bytes": 1919,
+      "sha256": "e25dddcb1c88c5f440b71a1899a514ecae4a40d55aa62970ae57a8adec0247d7"
+    },
+    {
+      "path": "TRANSFER.md",
+      "bytes": 6360,
+      "sha256": "9f674d090a470fe5f735dee0122db7e4b6de647157e490986d94f0129593e903"
+    },
+    {
+      "path": "code/verify_icosahedral_branchpoint_tschirnhaus_map_v1.py",
+      "bytes": 1092,
+      "sha256": "272828e7cb211130bcccf1b67767110478544290c46a30a8bc5d4357559293fd"
+    },
+    {
+      "path": "code/verify_icosahedral_quotient_to_even_quartic_exact_proof_v1.py",
+      "bytes": 473,
+      "sha256": "f7aa152f954a9c3327203a339976e149b26938cf69cb5155d5169e5c81d281d7"
+    },
+    {
+      "path": "code/verify_icosahedral_to_triangle_rectangle_native_v1.py",
+      "bytes": 777,
+      "sha256": "a44c7dfddda8fb1f24c0cf1782098bfa4fe105a22867cc06964a51fad3bff569"
+    },
+    {
+      "path": "code/verify_platonic_paper_comparison.py",
+      "bytes": 4940,
+      "sha256": "7e7d1433280aeed2e91617e8267d04a85c15bb0c7bc1108864147d65f6785e6e"
+    },
+    {
+      "path": "code/verify_triangle_rectangle_icosahedral_bridge_v1.py",
+      "bytes": 9302,
+      "sha256": "52569b566bb314739f59b15473a82457a0765b982104ac2385d0a9523b7ccdfe"
+    },
+    {
+      "path": "code/verify_triangle_rectangle_octahedral_bridge_v1.py",
+      "bytes": 6556,
+      "sha256": "7095e2047764828ff05684f5b39eb17497eb4f0c6b9656adbcc97755b98f6f91"
+    },
+    {
+      "path": "data/icosahedral_D2_pairing_numeric_v1.json",
+      "bytes": 4802,
+      "sha256": "1d9a31b33603b6561418267d89b68106a6d51e18ea84d670fa063b42107a5a93"
+    },
+    {
+      "path": "data/icosahedral_branchpoint_tschirnhaus_map_v1.json",
+      "bytes": 1192,
+      "sha256": "ee6991e7cf65be597efb7d47b74b4dbda86d7684c9f44d3ebd789e6cde146a88"
+    },
+    {
+      "path": "data/icosahedral_direct_quartic_numeric_v1.json",
+      "bytes": 2009,
+      "sha256": "8cafa4ac49e1fa97282da7a578ec4086a086173c021ea9495c8d7729ef36c937"
+    },
+    {
+      "path": "data/icosahedral_jacobi_numeric_branch_tests_v1.json",
+      "bytes": 3023,
+      "sha256": "fe5909746771d1b5b959954cdee0e86c0b275081b4bdca64f037f64b68f4f8cf"
+    },
+    {
+      "path": "data/icosahedral_quotient_to_even_quartic_exact_proof_v1.json",
+      "bytes": 735,
+      "sha256": "ad51c55c05d0dd4979ce59929ccff77f3f9978cf41d2b50a73a81f1cfa2249d9"
+    },
+    {
+      "path": "data/icosahedral_to_triangle_rectangle_native_v1.json",
+      "bytes": 2623,
+      "sha256": "71d00a266a00c27b3663c3bb124fd5ee748288cb7ba2e67d10cacd0094fba669"
+    },
+    {
+      "path": "data/platonic_paper_comparison.json",
+      "bytes": 741,
+      "sha256": "5c6111f61eb516dbf090d8fe3f8a6dbfec7aa504c394907dde99bb276a34e981"
+    },
+    {
+      "path": "data/triangle_rectangle_icosahedral_bridge_v1.json",
+      "bytes": 1276,
+      "sha256": "360e714d5322ca2244d4c3d9acce4536662e37ec6b596a228fd1c1bc9906213d"
+    },
+    {
+      "path": "data/triangle_rectangle_octahedral_bridge_v1.json",
+      "bytes": 1372,
+      "sha256": "21d9123e636d6b2d4b3d27920be7c170650e26ee3e08f1f91ff2e4a707c9e9e7"
+    },
+    {
+      "path": "failures/sympy_failure_log_icosahedral_jacobi_v1.json",
+      "bytes": 1924,
+      "sha256": "05b6c55ee2c99fd93e74f74a5d20aea2ea6661dee75d64235fb266d0bb64e559"
+    },
+    {
+      "path": "failures/sympy_failure_log_icosahedral_jacobi_v1.md",
+      "bytes": 1720,
+      "sha256": "14cfc7828f9bb1bbc70f199f0f9a47e496c8ce4b766969e122d88094d48cd65b"
+    },
+    {
+      "path": "notes/icosahedral_branchpoint_tschirnhaus_map_v1.md",
+      "bytes": 3052,
+      "sha256": "63d3166f37f5f7950b6ab1d870b3fe0fdf95f6c96c839c6f94663b35772580f5"
+    },
+    {
+      "path": "notes/icosahedral_jacobi_numeric_branch_tests_v1.md",
+      "bytes": 1539,
+      "sha256": "88bc77be00cf80aa526b5fb81848cd938c474a74dd6cac20a44adee2f59e10a4"
+    },
+    {
+      "path": "notes/icosahedral_quotient_to_even_quartic_exact_proof_v1.md",
+      "bytes": 2457,
+      "sha256": "e111e57230bcc6391ebe59c9b8dbf8f58c8fa74238043df68cc0ce55c8162112"
+    },
+    {
+      "path": "notes/icosahedral_to_triangle_rectangle_native_v1.md",
+      "bytes": 4048,
+      "sha256": "c164c07777111fa64968524989f1489f6007cb71f3f6698de24daad28bac394d"
+    },
+    {
+      "path": "notes/platonic_paper_comparison.md",
+      "bytes": 2912,
+      "sha256": "4a6b9be560182443a2329058d8a71cfb649e2a2f5511d25abd4fe5a6ba200bae"
+    },
+    {
+      "path": "notes/triangle_rectangle_icosahedral_bridge_v1.md",
+      "bytes": 5566,
+      "sha256": "b17dc21102731fe3c094e01807d8a132c42f4f1cb32503120d290e9dfc26bfa7"
+    },
+    {
+      "path": "notes/triangle_rectangle_octahedral_bridge_v1.md",
+      "bytes": 4773,
+      "sha256": "37c9bb7a242c099b1830d22a9bbf84636dcf92bb930dec054115b68fe1e82aae"
+    },
+    {
+      "path": "references/the_platonic_elliptic_surfaces_2026-08-03.pdf",
+      "bytes": 15250202,
+      "sha256": "8663a220eb5f11d1f584768152d3ccc71617f8506071698155fb0aa79996e95b"
+    },
+    {
+      "path": "references/triangle_rectangle_genus_one_periods_certificate_v5_1.pdf",
+      "bytes": 507843,
+      "sha256": "373660f9f9745b2c1a96aabea5839db62b45e1da919cc35fcf8ac761b9b24272"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schema": "period-certificate-timing-comparison-v1",
+  "date": "2026-08-02",
+  "research_owner": "Bradley Klee",
+  "environment": {
+    "cpu": "Intel Xeon Platinum 8370C @ 2.80GHz",
+    "logical_cpus_visible": 9,
+    "threads_per_core": 1,
+    "ram_visible_gib": 15,
+    "swap": "none",
+    "kernel": "Linux 6.12.13 x86_64",
+    "python": "3.12.13 Clang 21.1.4",
+    "sympy": "1.14.0",
+    "numpy_in_benchmark_venv": false,
+    "scipy_in_benchmark_venv": false,
+    "worker_policy": "square-hexagon Klee replay uses fresh exact subprocesses; all symbolic workers single-threaded"
+  },
+  "measurements": [
+    {
+      "engine": "Klee support-driven exact-image",
+      "case": "square_hexagon",
+      "task": "full basis-free derivation orders 1-4, operator normalization, primitive reconstruction, explicit-quotient comparison",
+      "runs_wall_seconds": [61.11, 64.74, 60.92],
+      "median_wall_seconds": 61.11,
+      "mean_wall_seconds": 62.2567,
+      "status": "PASS",
+      "output": "operator and primitive agree exactly with stored certificate"
+    },
+    {
+      "engine": "Klee support-driven trace",
+      "case": "triangle_square",
+      "task": "reduction trace and exact residual verification using stored certificate data",
+      "runs_wall_seconds": [42.68, 39.94, 38.77],
+      "median_wall_seconds": 39.94,
+      "mean_wall_seconds": 40.4633,
+      "status": "PASS",
+      "warning": "verification/trace workload, not a from-scratch operator derivation"
+    },
+    {
+      "engine": "SymPy classical Griffiths-Dwork port of Lairez core",
+      "case": "triangle_square",
+      "task": "from-scratch operator derivation with original-Jacobian witness ledger",
+      "runs_wall_seconds": [2.5845],
+      "setup_seconds": 0.0815,
+      "exact_reduction_seconds": 2.5030,
+      "status": "PASS",
+      "output": "known order-two operator reproduced coefficient-for-coefficient",
+      "warning": "one run; primitive ledger retained but not yet assembled"
+    },
+    {
+      "engine": "SymPy classical Griffiths-Dwork port of Lairez core",
+      "case": "square_hexagon",
+      "task": "from-scratch operator derivation with original-Jacobian witness ledger",
+      "runs_wall_seconds": [160.6270],
+      "setup_seconds": 0.1308,
+      "exact_reduction_seconds": 160.4962,
+      "first_derivative_seconds": 0.0026,
+      "status": "PASS",
+      "output": "known order-four operator reproduced coefficient-for-coefficient",
+      "warning": "not a faithful port of Lairez's extended Rham-Koszul/profile/modular machinery"
+    },
+    {
+      "engine": "Pierre Lairez Magma periods",
+      "case": "triangle_square and square_hexagon",
+      "task": "full Periods calculation",
+      "status": "NOT_MEASURED",
+      "reason": "Magma runtime unavailable in this environment"
+    },
+    {
+      "engine": "faithful SymPy port of Lairez extended machinery",
+      "case": "triangle_square and square_hexagon",
+      "task": "Rham-Koszul reduction with certificate, profiles, evaluation/interpolation and modular reconstruction",
+      "status": "NOT_IMPLEMENTED_YET",
+      "reason": "current port contains only classical projective Jacobian reduction"
+    }
+  ],
+  "comparison_rule": "Do not rank engines unless task scope, certificate output, exactness, cold/warm policy and completion status match."
+}

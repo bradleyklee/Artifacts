@@ -1,0 +1,127 @@
+{
+  "schema": "plane_curve_derivation_pipeline_v1",
+  "conventions": {
+    "E": "2H",
+    "rho": "partial_p(E)=2H_p",
+    "omega": "2*dq/rho=dq/H_p",
+    "curve_ring": "Q(alpha)[p,q]/(E-alpha)"
+  },
+  "algorithms": [
+    {
+      "id": "ALG-001",
+      "name": "inductive_series_discovery",
+      "proof_role": "discovery_and_cross_check",
+      "input": [
+        "E in action-angle form"
+      ],
+      "output": [
+        "exact period series",
+        "candidate operators"
+      ],
+      "implemented": true
+    },
+    {
+      "id": "ALG-002",
+      "name": "reductive_nullspace_certificate",
+      "proof_role": "primary certificate derivation",
+      "input": [
+        "polynomial E",
+        "symmetry sector",
+        "finite basis policy"
+      ],
+      "output": [
+        "first operator",
+        "primitive",
+        "rank trace"
+      ],
+      "implemented": true
+    },
+    {
+      "id": "ALG-003",
+      "name": "explicit_quotient_audit",
+      "proof_role": "human-auditable reduced derivative matrix",
+      "input": [
+        "C",
+        "W"
+      ],
+      "output": [
+        "R",
+        "ker(R)",
+        "primitive coefficients"
+      ],
+      "implemented": true
+    },
+    {
+      "id": "ALG-004",
+      "name": "finite_support_exhaustiveness",
+      "proof_role": "turn bounded search into deduction",
+      "input": [
+        "leading exact-image action",
+        "filtration"
+      ],
+      "output": [
+        "stopping bound",
+        "resonances"
+      ],
+      "implemented_for": [
+        "square_hexagon"
+      ]
+    },
+    {
+      "id": "ALG-005",
+      "name": "primitive_reconstruction_verify",
+      "proof_role": "independent literal identity verification",
+      "input": [
+        "E",
+        "operator",
+        "primitive"
+      ],
+      "output": [
+        "zero curve-reduced residual",
+        "serialized payload"
+      ],
+      "implemented": true
+    },
+    {
+      "id": "ALG-006",
+      "name": "GUVJ_reusable_reduction",
+      "proof_role": "reusable pole-by-pole engine",
+      "input": [
+        "E",
+        "compatible finite bases"
+      ],
+      "output": [
+        "G",
+        "U",
+        "V",
+        "J",
+        "reduced derivative classes"
+      ],
+      "status": "pseudocode_complete_pair_replay_pending"
+    }
+  ],
+  "examples": {
+    "triangle_square": {
+      "config": "configs/triangle_square.json",
+      "successful_order": 2
+    },
+    "square_hexagon": {
+      "config": "configs/square_hexagon.json",
+      "successful_order": 4
+    }
+  },
+  "primary_flow": [
+    "ALG-002",
+    "ALG-004",
+    "ALG-005"
+  ],
+  "discovery_flow": [
+    "ALG-001",
+    "ALG-002",
+    "ALG-005"
+  ],
+  "reusable_engine_target": [
+    "ALG-006",
+    "ALG-005"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "energy_convention": "alpha=H",
+  "coefficient_order": ["c0","cx","cy","cz","cxx","cyy","czz","cxy","cyz","czx"],
+  "models": [
+    {"name":"linear_asymmetric","coefficients":[0,1,2,5,0,0,0,0,0,0],"stratum":"linear"},
+    {"name":"octahedral","coefficients":[0,0,0,0,2,2,2,0,0,0],"stratum":"polyhedral"},
+    {"name":"diagonal_quadratic_01","coefficients":[0,1,-1,2,1,2,3,0,0,0],"stratum":"diagonal"},
+    {"name":"reflection_xy","coefficients":[1,2,2,-1,3,3,5,7,-2,-2],"stratum":"reflection"},
+    {"name":"factored_xy","coefficients":[0,0,0,0,0,0,0,1,0,0],"stratum":"degenerate"},
+    {"name":"dense_01","coefficients":[1,2,-3,5,7,-11,13,17,-19,23],"stratum":"dense"},
+    {"name":"dense_02","coefficients":[-2,3,5,-7,11,13,-17,19,23,-29],"stratum":"dense"}
+  ]
+}
+

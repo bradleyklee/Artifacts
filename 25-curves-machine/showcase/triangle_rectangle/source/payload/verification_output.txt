@@ -1,0 +1,2 @@
+ALL CHECKS PASS
+35 proof-level checks passed; all data were regenerated in the alpha in [0,1] normalization.

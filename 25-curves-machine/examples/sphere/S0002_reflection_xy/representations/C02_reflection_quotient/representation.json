@@ -1,0 +1,14 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C02",
+  "slug": "reflection_quotient",
+  "name": "Reflection-invariant quotient",
+  "kind": "invariant_coordinates",
+  "variables": [
+    "u",
+    "t"
+  ],
+  "constraints": [],
+  "notes": "",
+  "global": false
+}

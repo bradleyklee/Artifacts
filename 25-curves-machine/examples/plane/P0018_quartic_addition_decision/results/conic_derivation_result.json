@@ -1,0 +1,59 @@
+{
+  "conic_coefficients": {
+    "a": "x1*y2 - x1 - x2*y1 + x2",
+    "b": "-x1*y1*y2 + x1*y1 + x2*y1*y2 - x2*y2",
+    "c": "x1*x2*(y1 - y2)"
+  },
+  "direct_residual": {
+    "xR": "-(x1 - x2)*(d*x1**2*y1**2*y2**2 - 2*d*x1**2*y1**2*y2 + d*x1**2*y1**2 - d*x2**2*y1**2*y2**2 + 2*d*x2**2*y1*y2**2 - d*x2**2*y2**2 - x1**2*y2**2 + 2*x1**2*y2 - x1**2 + x2**2*y1**2 - 2*x2**2*y1 + x2**2)/(d*x1**2*y1**2*y2**2 - 2*d*x1**2*y1**2*y2 + d*x1**2*y1**2 - 2*d*x1*x2*y1**2*y2**2 + 2*d*x1*x2*y1**2*y2 + 2*d*x1*x2*y1*y2**2 - 2*d*x1*x2*y1*y2 + d*x2**2*y1**2*y2**2 - 2*d*x2**2*y1*y2**2 + d*x2**2*y2**2 - x1**2*y2**2 + 2*x1**2*y2 - x1**2 + 2*x1*x2*y1*y2 - 2*x1*x2*y1 - 2*x1*x2*y2 + 2*x1*x2 - x2**2*y1**2 + 2*x2**2*y1 - x2**2)",
+    "yR_length": 2353
+  },
+  "sum_rule": "(X,Y)=(xR,-yR)",
+  "compact_law": {
+    "X": "(x1*y2 + x2*y1)/(d*x1*x2*y1*y2 + 1)",
+    "Y": "(-x1*x2 + y1*y2)/(-d*x1*x2*y1*y2 + 1)"
+  },
+  "ansatz_groebner_basis": [
+    "cpar - 1",
+    "epar + 1",
+    "gpar + 1"
+  ],
+  "exact_symbolic_checks": {
+    "curve_closure": {
+      "ok": true,
+      "remainder": "0"
+    },
+    "omega_input_1": {
+      "ok": true,
+      "remainder": "0"
+    },
+    "omega_input_2": {
+      "ok": true,
+      "remainder": "0"
+    }
+  },
+  "fresh_direct_vs_compact": [
+    {
+      "input": [
+        "19/64",
+        "-4",
+        "2",
+        "-4/5",
+        "2/3"
+      ],
+      "direct_X_minus_compact_X": "0",
+      "direct_Y_minus_compact_Y": "0"
+    },
+    {
+      "input": [
+        "8/3",
+        "-4",
+        "3/5",
+        "-3/2",
+        "1/2"
+      ],
+      "direct_X_minus_compact_X": "0",
+      "direct_Y_minus_compact_Y": "0"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "order": 2,
+  "normalization": "primitive integer polynomial vector, derivative order ascending",
+  "polynomials": [
+    {
+      "derivative_order": 0,
+      "expression": "408*alpha**3 + 645*alpha**2 - 261*alpha + 27",
+      "degree": 3,
+      "coefficients_ascending": [
+        "27",
+        "-261",
+        "645",
+        "408"
+      ]
+    },
+    {
+      "derivative_order": 1,
+      "expression": "1632*alpha**4 + 5736*alpha**3 - 2827*alpha**2 + 426*alpha - 18",
+      "degree": 4,
+      "coefficients_ascending": [
+        "-18",
+        "426",
+        "-2827",
+        "5736",
+        "1632"
+      ]
+    },
+    {
+      "derivative_order": 2,
+      "expression": "544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha",
+      "degree": 5,
+      "coefficients_ascending": [
+        "0",
+        "-18",
+        "315",
+        "-1747",
+        "2964",
+        "544"
+      ]
+    }
+  ],
+  "operator_expression": "P0 + P1*D_alpha + P2*D_alpha^2",
+  "source_null_vector_polynomial": [
+    "408*alpha**3 + 645*alpha**2 - 261*alpha + 27",
+    "1632*alpha**4 + 5736*alpha**3 - 2827*alpha**2 + 426*alpha - 18",
+    "544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha"
+  ],
+  "source_null_vector_rational_top_monic": [
+    "408*alpha**3/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha) + 645*alpha**2/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha) - 261*alpha/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha) + 27/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha)",
+    "1632*alpha**4/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha) + 5736*alpha**3/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha) - 2827*alpha**2/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha) + 426*alpha/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha) - 18/(544*alpha**5 + 2964*alpha**4 - 1747*alpha**3 + 315*alpha**2 - 18*alpha)",
+    "1"
+  ]
+}

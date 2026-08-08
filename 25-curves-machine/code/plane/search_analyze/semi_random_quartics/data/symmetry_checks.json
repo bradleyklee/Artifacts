@@ -1,0 +1,33 @@
+{
+  "q1b": [
+    {
+      "swap": false,
+      "p_sign": -1,
+      "q_sign": 1
+    },
+    {
+      "swap": false,
+      "p_sign": 1,
+      "q_sign": 1
+    }
+  ],
+  "q1e": [
+    {
+      "swap": false,
+      "p_sign": -1,
+      "q_sign": 1
+    },
+    {
+      "swap": false,
+      "p_sign": 1,
+      "q_sign": 1
+    }
+  ],
+  "q2": [
+    {
+      "swap": false,
+      "p_sign": 1,
+      "q_sign": 1
+    }
+  ]
+}

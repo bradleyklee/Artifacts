@@ -1,0 +1,13 @@
+{
+  "curve": "a1*x*y - a2*x**2 + a3*y - a4*x - a6 - x**3 + y**2",
+  "invariant_differential_denominator": "2*y + a1*x + a3",
+  "lambda": "(y1 - y2)/(x1 - x2)",
+  "nu": "(x1*y2 - x2*y1)/(x1 - x2)",
+  "x_sum": "-(-a1*x1*y1 + a1*x1*y2 + a1*x2*y1 - a1*x2*y2 + a2*x1**2 - 2*a2*x1*x2 + a2*x2**2 + x1**3 - x1**2*x2 - x1*x2**2 + x2**3 - y1**2 + 2*y1*y2 - y2**2)/(x1 - x2)**2",
+  "y_sum": "(-a1**2*x1**2*y1 + a1**2*x1**2*y2 + 2*a1**2*x1*x2*y1 - 2*a1**2*x1*x2*y2 - a1**2*x2**2*y1 + a1**2*x2**2*y2 + a1*a2*x1**3 - 3*a1*a2*x1**2*x2 + 3*a1*a2*x1*x2**2 - a1*a2*x2**3 + a1*x1**4 - 2*a1*x1**3*x2 + 2*a1*x1*x2**3 - 2*a1*x1*y1**2 + 4*a1*x1*y1*y2 - 2*a1*x1*y2**2 - a1*x2**4 + 2*a1*x2*y1**2 - 4*a1*x2*y1*y2 + 2*a1*x2*y2**2 + a2*x1**2*y1 - a2*x1**2*y2 - 2*a2*x1*x2*y1 + 2*a2*x1*x2*y2 + a2*x2**2*y1 - a2*x2**2*y2 - a3*x1**3 + 3*a3*x1**2*x2 - 3*a3*x1*x2**2 + a3*x2**3 + x1**3*y1 - 2*x1**3*y2 + 3*x1**2*x2*y2 - 3*x1*x2**2*y1 + 2*x2**3*y1 - x2**3*y2 - y1**3 + 3*y1**2*y2 - 3*y1*y2**2 + y2**3)/(x1 - x2)**3",
+  "curve_closure_remainder": "0",
+  "differential_residual_1_remainder": "0",
+  "differential_residual_2_remainder": "0",
+  "factored_differential_residual_1": "(a1*x1 - a1*x2 + 2*y1 - 2*y2)*(-a1*x1*y1 + a1*x2*y2 + a2*x1**2 - a2*x2**2 - a3*y1 + a3*y2 + a4*x1 - a4*x2 + x1**3 - x2**3 - y1**2 + y2**2)/(x1 - x2)**3",
+  "status": "PASS"
+}

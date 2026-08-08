@@ -1,0 +1,37 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0008",
+  "slug": "q1b_nonradial",
+  "display_name": "Q1b Nonradial Quartic",
+  "aliases": [
+    "q1b_exact_backsolve"
+  ],
+  "domain": "plane",
+  "status": "exact_certificate",
+  "summary": "Curated exact reductive example imported from the mixed quartic factory corpus.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed exact-record check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py P0008",
+      "cost": "normal"
+    },
+    {
+      "label": "Q1b exact backsolve",
+      "cwd": "code/plane/search_analyze/semi_random_quartics/src",
+      "command": "python3 q1b_exact_backsolve.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-001_INDUCTIVE_SERIES_DISCOVERY.md",
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/quartic_order4/q1b_exact_backsolve.json"
+  ]
+}

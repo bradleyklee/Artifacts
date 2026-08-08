@@ -1,0 +1,12 @@
+{
+  "format": "curves-machine-transform-v1",
+  "transform_id": "T01",
+  "source_representation": "C02",
+  "target_representation": "C03",
+  "forward_map": {
+    "t": "v*(1-v)",
+    "w": "y*(1-2*v)"
+  },
+  "operator_common_scale": "8",
+  "verification": "Filed in octahedral_direct_degree7_certificate.json"
+}

@@ -1,0 +1,15 @@
+{
+  "maximal_form": "H=H4+H3+H2+H1+H0 with H4=k*Q2^2 and H3=Q2*L1",
+  "Q2_chart": "t**2*w + t*v + u",
+  "L1_chart": "r + s*t",
+  "H2_chart": "A + B*t + C*t**2",
+  "tangent_cone": "(4*k*root**2*w**2 + 4*k*root*v*w + k*v**2)*xi^2 + (2*r*root*w + r*v + 2*root**2*s*w + root*s*v)*xi*z + (A + B*root + C*root**2)*z^2",
+  "tangent_discriminant": "(2*root*w + v)**2*(-4*A*k - 4*B*k*root - 4*C*k*root**2 + r**2 + 2*r*root*s + root**2*s**2)",
+  "generic_conditions": [
+    "disc(Q2) != 0 (two distinct directions at infinity)",
+    "L1(root)^2 - 4*k*H2(root) != 0 at both roots (ordinary nodes)",
+    "generic energy alpha avoids affine critical values"
+  ],
+  "conclusion": "two ordinary nodes, total delta=2, geometric genus=1",
+  "rational_branch_test": "At a K-rational root of Q2, a normalization branch is K-rational when L1(root)^2-4*k*H2(root) is a square in K."
+}

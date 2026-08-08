@@ -1,0 +1,21 @@
+MERGED_CERTIFICATE_PASS
+q_bound_25 ranks: 39 40 (not in exact-image span)
+q_bound_27 ranks: 42 42 (in exact-image span)
+matrix at closure: 55 rows x 42 primitive columns
+rho=(2H)_p=2H_p; omega=dq/H_p=2*dq/rho
+Xi = V/rho^7, nonzero slots: 40, expanded terms: 514
+exact reduced residual: zero
+OPERATOR_LADDER_400
+order  4, degree 14: 396 exact coefficient equations, zero residual
+order  5, degree 10: 395 exact coefficient equations, zero residual
+order  6, degree  8: 394 exact coefficient equations, zero residual
+order  8, degree  7: 392 exact coefficient equations, zero residual
+order 12, degree  6: 388 exact coefficient equations, zero residual
+DEGREE_LE_5_EXCLUSION_MOD_1000003
+orders 1..56: full column rank; no nonzero operator of degree <= 5
+OPERATOR_LADDER_400_PASS
+A5 = B1 o A4: PASS (common denominator degree 8)
+A6 = B2 o A4: PASS (common denominator degree 16)
+A8 = B4 o A4: PASS (common denominator degree 32)
+A12 = B8 o A4: PASS (common denominator degree 64)
+ORE_RELATIONS_PASS

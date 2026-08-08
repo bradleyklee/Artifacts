@@ -1,0 +1,81 @@
+{
+  "example_id": "mix_m1_m2",
+  "monomials": {
+    "3": [
+      [
+        0,
+        3,
+        "1/7"
+      ],
+      [
+        2,
+        1,
+        "1/7"
+      ]
+    ],
+    "4": [
+      [
+        0,
+        4,
+        "22/117"
+      ],
+      [
+        2,
+        2,
+        "2/13"
+      ],
+      [
+        4,
+        0,
+        "-4/117"
+      ]
+    ]
+  },
+  "modes": {
+    "L3q": "1/7",
+    "Q2R2": "1/9",
+    "R4": "1/13"
+  },
+  "notes": "two frequencies m=1 and m=2",
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 3,
+      "coefficient": "1/7"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "22/117"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "1/7"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "2/13"
+    },
+    {
+      "p": 4,
+      "q": 0,
+      "coefficient": "-4/117"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(-p,q)",
+    "(p,q)->(p,q)"
+  ]
+}

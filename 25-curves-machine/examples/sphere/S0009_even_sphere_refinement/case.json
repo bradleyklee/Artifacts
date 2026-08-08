@@ -1,0 +1,38 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0009",
+  "slug": "even_sphere_refinement",
+  "display_name": "Even Sphere Refinement Study",
+  "aliases": [
+    "even_sphere_refinement"
+  ],
+  "domain": "sphere",
+  "status": "data_study",
+  "summary": "Filed sphere calculation/study from the verified sphere branch.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed study check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py S0009",
+      "cost": "normal"
+    },
+    {
+      "label": "Full refinement replay",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/sphere/S0009_even_sphere_refinement/runs/replay_output/examples/sphere_curves && cp ../../examples/sphere/S0009_even_sphere_refinement/results/even_quartic_catalog.json ../../examples/sphere/S0009_even_sphere_refinement/runs/replay_output/examples/sphere_curves/ && CURVES_MACHINE_DATA_ROOT=../../examples/sphere/S0009_even_sphere_refinement/runs/replay_output python3 algorithms/scripts/run_even_sphere_refinement_loop.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-010_EVEN_SPHERE_REFINEMENT_LOOP.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/even_sphere_refinement_stats.json",
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/even_quartic_catalog.json"
+  ]
+}

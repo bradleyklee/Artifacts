@@ -1,0 +1,38 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0005",
+  "slug": "free_c1_c2",
+  "display_name": "Free c1,c2 Triangle-Rectangle Family",
+  "aliases": [
+    "plane.free_c1_c2",
+    "elliptic_free_coefficients"
+  ],
+  "domain": "plane",
+  "status": "symbolic_operator",
+  "summary": "Symbolic free-coefficient family and specialization grid retained from the independent comparison implementation.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Verify free specializations",
+      "cwd": "code/comparisons/lairez",
+      "command": "python3 verify_free_specializations.py free_coefficients_symbolic_result.json",
+      "cost": "normal"
+    },
+    {
+      "label": "Benchmark free specializations",
+      "cwd": "code/comparisons/lairez",
+      "command": "python3 benchmark_free_specializations.py --help",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/comparisons/lairez/FREE_COEFFICIENT_PSEUDOCODE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/pierre_comparison/cases/elliptic_free_coefficients.json",
+    "backends/pierre_comparison/timing/free_coefficients_symbolic_result.json"
+  ]
+}

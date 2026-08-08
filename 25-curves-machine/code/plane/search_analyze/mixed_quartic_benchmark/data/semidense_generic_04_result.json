@@ -1,0 +1,329 @@
+{
+  "example_id": "semidense_generic_04",
+  "category": "semidense_generic",
+  "model_path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/semidense_generic_04.json",
+  "status": "PASS",
+  "quartic_infinity": {
+    "p4_nonzero": true,
+    "discriminant": "2383/2560000",
+    "squarefree_at_infinity": true
+  },
+  "inductive": [
+    {
+      "example_id": "semidense_generic_04",
+      "prime": 65521,
+      "nterms": 270,
+      "max_order": 6,
+      "degree_cap": 35,
+      "records": [
+        {
+          "order": 1,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            269,
+            72
+          ],
+          "seconds_cap": 0.01041722297668457
+        },
+        {
+          "order": 2,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            268,
+            108
+          ],
+          "seconds_cap": 0.03597855567932129
+        },
+        {
+          "order": 3,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            267,
+            144
+          ],
+          "seconds_cap": 0.0418548583984375
+        },
+        {
+          "order": 4,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            266,
+            180
+          ],
+          "seconds_cap": 0.06632828712463379
+        },
+        {
+          "order": 5,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            265,
+            216
+          ],
+          "seconds_cap": 0.08925199508666992
+        },
+        {
+          "order": 6,
+          "degree_cap": 35,
+          "cap_nullity": 5,
+          "shape": [
+            264,
+            252
+          ],
+          "seconds_cap": 0.20573973655700684,
+          "first_degree": 31,
+          "first_nullity": 1,
+          "first_shape": [
+            264,
+            224
+          ]
+        }
+      ],
+      "first_hit": {
+        "order": 6,
+        "degree": 31,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "semidense_generic_04",
+      "prime": 65497,
+      "nterms": 270,
+      "max_order": 6,
+      "degree_cap": 35,
+      "records": [
+        {
+          "order": 1,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            269,
+            72
+          ],
+          "seconds_cap": 0.022150516510009766
+        },
+        {
+          "order": 2,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            268,
+            108
+          ],
+          "seconds_cap": 0.033104896545410156
+        },
+        {
+          "order": 3,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            267,
+            144
+          ],
+          "seconds_cap": 0.06998848915100098
+        },
+        {
+          "order": 4,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            266,
+            180
+          ],
+          "seconds_cap": 0.08743476867675781
+        },
+        {
+          "order": 5,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            265,
+            216
+          ],
+          "seconds_cap": 0.1178274154663086
+        },
+        {
+          "order": 6,
+          "degree_cap": 35,
+          "cap_nullity": 5,
+          "shape": [
+            264,
+            252
+          ],
+          "seconds_cap": 0.15975618362426758,
+          "first_degree": 31,
+          "first_nullity": 1,
+          "first_shape": [
+            264,
+            224
+          ]
+        }
+      ],
+      "first_hit": {
+        "order": 6,
+        "degree": 31,
+        "nullity": 1
+      }
+    }
+  ],
+  "inductive_agreement": true,
+  "first_hit": {
+    "order": 6,
+    "degree": 31,
+    "nullity": 1
+  },
+  "deductive_bound_status": "GENERIC_BOUND_APPLIED",
+  "reductive": [
+    {
+      "prime": 65521,
+      "alpha": 7,
+      "records": [
+        {
+          "order": 1,
+          "bound": 3,
+          "rows": 25,
+          "source_columns": 10,
+          "rank_C": 9,
+          "rank_CW": 11,
+          "relation_dimension": 0,
+          "seconds": 0.02477288246154785
+        },
+        {
+          "order": 2,
+          "bound": 9,
+          "rows": 50,
+          "source_columns": 34,
+          "rank_C": 33,
+          "rank_CW": 36,
+          "relation_dimension": 0,
+          "seconds": 0.20183873176574707
+        },
+        {
+          "order": 3,
+          "bound": 15,
+          "rows": 74,
+          "source_columns": 58,
+          "rank_C": 57,
+          "rank_CW": 61,
+          "relation_dimension": 0,
+          "seconds": 0.68863844871521
+        },
+        {
+          "order": 4,
+          "bound": 21,
+          "rows": 98,
+          "source_columns": 82,
+          "rank_C": 81,
+          "rank_CW": 86,
+          "relation_dimension": 0,
+          "seconds": 2.646979570388794
+        },
+        {
+          "order": 5,
+          "bound": 27,
+          "rows": 122,
+          "source_columns": 106,
+          "rank_C": 105,
+          "rank_CW": 111,
+          "relation_dimension": 0,
+          "seconds": 7.5301995277404785
+        },
+        {
+          "order": 6,
+          "bound": 33,
+          "rows": 146,
+          "source_columns": 130,
+          "rank_C": 129,
+          "rank_CW": 135,
+          "relation_dimension": 1,
+          "seconds": 25.3145010471344
+        }
+      ],
+      "first_hit": {
+        "order": 6,
+        "relation_dimension": 1
+      }
+    },
+    {
+      "prime": 65497,
+      "alpha": 11,
+      "records": [
+        {
+          "order": 1,
+          "bound": 3,
+          "rows": 25,
+          "source_columns": 10,
+          "rank_C": 9,
+          "rank_CW": 11,
+          "relation_dimension": 0,
+          "seconds": 0.04398202896118164
+        },
+        {
+          "order": 2,
+          "bound": 9,
+          "rows": 50,
+          "source_columns": 34,
+          "rank_C": 33,
+          "rank_CW": 36,
+          "relation_dimension": 0,
+          "seconds": 0.2025892734527588
+        },
+        {
+          "order": 3,
+          "bound": 15,
+          "rows": 74,
+          "source_columns": 58,
+          "rank_C": 57,
+          "rank_CW": 61,
+          "relation_dimension": 0,
+          "seconds": 0.6632139682769775
+        },
+        {
+          "order": 4,
+          "bound": 21,
+          "rows": 98,
+          "source_columns": 82,
+          "rank_C": 81,
+          "rank_CW": 86,
+          "relation_dimension": 0,
+          "seconds": 2.6982486248016357
+        },
+        {
+          "order": 5,
+          "bound": 27,
+          "rows": 122,
+          "source_columns": 106,
+          "rank_C": 105,
+          "rank_CW": 111,
+          "relation_dimension": 0,
+          "seconds": 9.784815549850464
+        },
+        {
+          "order": 6,
+          "bound": 33,
+          "rows": 146,
+          "source_columns": 130,
+          "rank_C": 129,
+          "rank_CW": 135,
+          "relation_dimension": 1,
+          "seconds": 21.2682626247406
+        }
+      ],
+      "first_hit": {
+        "order": 6,
+        "relation_dimension": 1
+      }
+    }
+  ],
+  "reductive_agreement": true,
+  "reductive_first_hit": {
+    "order": 6,
+    "relation_dimension": 1
+  },
+  "mode_agreement": true,
+  "seconds_total": 80.10267639160156
+}

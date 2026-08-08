@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "policy": {
+    "quantity": "T(alpha)/(2*pi)",
+    "integerization": "choose the smallest positive integer K found from exact denominators such that b_n = K^n*c_n is integral for all computed terms",
+    "oeis_queries": [
+      "b_n",
+      "(-1)^n*b_n",
+      "short exact prefixes",
+      "shifted or decimated variants when structurally motivated"
+    ],
+    "minimum_prefix_terms": 6,
+    "verify_beyond_search_prefix": true
+  },
+  "results": [
+    {
+      "example_id": "simple_cubic_factor",
+      "model": "E=p^2+q^2+(p+q)*(p-q)^2/5",
+      "energy_scale_K": 200,
+      "identity": "T(200*x)/(2*pi)=Sum b_n*x^n",
+      "integer_terms": [
+        "1",
+        "12",
+        "420",
+        "18480",
+        "900900",
+        "46558512",
+        "2498640144",
+        "137680171200",
+        "7735904619300",
+        "441233078286000"
+      ],
+      "oeis_id": "A000897",
+      "match": "exact"
+    },
+    {
+      "example_id": "cubic_three_lines",
+      "model": "E=p^2+q^2+q*(p-q)*(p+q)/5",
+      "energy_scale_K": 400,
+      "identity": "T(400*x)/(2*pi)=Sum b_n*x^n",
+      "integer_terms": [
+        "1",
+        "12",
+        "660",
+        "48720",
+        "4005540",
+        "349260912",
+        "31626298704",
+        "2940502593600",
+        "278788387440420",
+        "26831860080682800"
+      ],
+      "oeis_id": "A295870",
+      "match": "exact"
+    },
+    {
+      "example_id": "simple_even_quartic",
+      "model": "E=p^2+q^2+(p^4+p^2*q^2)/4",
+      "energy_scale_K": 16,
+      "identity": "T(16*x)/(2*pi)=Sum (-1)^n*A002894(n)*x^n; equivalently T(-16*x)/(2*pi)=Sum A002894(n)*x^n",
+      "integer_terms": [
+        "1",
+        "-4",
+        "36",
+        "-400",
+        "4900",
+        "-63504",
+        "853776",
+        "-11778624",
+        "165636900",
+        "-2363904400"
+      ],
+      "oeis_id": "A002894",
+      "match": "exact_up_to_alternating_sign"
+    },
+    {
+      "example_id": "mechanical_q_cubic_quartic",
+      "model": "E=p^2+q^2+q^3/5+q^4/7",
+      "energy_scale_K": 11200,
+      "identity": "T(11200*x)/(2*pi)=Sum b_n*x^n",
+      "integer_terms": [
+        "1",
+        "-780",
+        "-412860",
+        "15713599440",
+        "-106247131770780",
+        "403294558262515920"
+      ],
+      "oeis_id": null,
+      "match": "no_exact_match_identified_in_initial_search"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "example_id": "even_quartic_generic_A",
+  "prime": 65497,
+  "alpha": 7,
+  "p_degrees": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "records": [
+    {
+      "order": 2,
+      "q_bound": 0,
+      "rows": 38,
+      "exact_columns": 4,
+      "rank_C": 4,
+      "rank_CW": 7,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 1,
+      "rows": 42,
+      "exact_columns": 8,
+      "rank_C": 8,
+      "rank_CW": 11,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 2,
+      "rows": 42,
+      "exact_columns": 12,
+      "rank_C": 12,
+      "rank_CW": 15,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 3,
+      "rows": 46,
+      "exact_columns": 16,
+      "rank_C": 16,
+      "rank_CW": 19,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 4,
+      "rows": 46,
+      "exact_columns": 20,
+      "rank_C": 20,
+      "rank_CW": 23,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 5,
+      "rows": 50,
+      "exact_columns": 24,
+      "rank_C": 24,
+      "rank_CW": 27,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 6,
+      "rows": 50,
+      "exact_columns": 28,
+      "rank_C": 28,
+      "rank_CW": 31,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 7,
+      "rows": 54,
+      "exact_columns": 32,
+      "rank_C": 32,
+      "rank_CW": 35,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 8,
+      "rows": 62,
+      "exact_columns": 36,
+      "rank_C": 36,
+      "rank_CW": 38,
+      "relation_dimension": 1
+    }
+  ]
+}

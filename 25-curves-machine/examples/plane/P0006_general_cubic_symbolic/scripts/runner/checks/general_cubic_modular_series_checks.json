@@ -1,0 +1,16 @@
+[
+  {
+    "example": "generic_cubic_all_B",
+    "prime": 65497,
+    "checked_coefficients": 172,
+    "bad_count": 0,
+    "first_bad": []
+  },
+  {
+    "example": "generic_cubic_all_B",
+    "prime": 65521,
+    "checked_coefficients": 172,
+    "bad_count": 0,
+    "first_bad": []
+  }
+]

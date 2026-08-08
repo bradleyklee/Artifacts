@@ -1,0 +1,982 @@
+{
+  "seconds": 16.186500549316406,
+  "count": 40,
+  "top": [
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "degree": 2,
+      "operator": [
+        "3",
+        "32*alpha - 50",
+        "16*alpha**2 - 50*alpha"
+      ],
+      "score": [
+        2,
+        5,
+        9
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "degree": 2,
+      "operator": [
+        "6",
+        "54*alpha - 50",
+        "27*alpha**2 - 50*alpha"
+      ],
+      "score": [
+        2,
+        5,
+        9
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "degree": 2,
+      "operator": [
+        "3",
+        "32*alpha - 50",
+        "16*alpha**2 - 50*alpha"
+      ],
+      "score": [
+        2,
+        5,
+        9
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "degree": 2,
+      "operator": [
+        "6",
+        "54*alpha - 50",
+        "27*alpha**2 - 50*alpha"
+      ],
+      "score": [
+        2,
+        5,
+        9
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "degree": 2,
+      "operator": [
+        "3",
+        "32*alpha - 400",
+        "16*alpha**2 - 400*alpha"
+      ],
+      "score": [
+        3,
+        5,
+        11
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        0,
+        0
+      ],
+      "degree": 2,
+      "operator": [
+        "3",
+        "32*alpha - 400",
+        "16*alpha**2 - 400*alpha"
+      ],
+      "score": [
+        3,
+        5,
+        11
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        0,
+        1
+      ],
+      "degree": 2,
+      "operator": [
+        "6",
+        "54*alpha - 100",
+        "27*alpha**2 - 100*alpha"
+      ],
+      "score": [
+        3,
+        5,
+        11
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "degree": 2,
+      "operator": [
+        "6",
+        "54*alpha - 100",
+        "27*alpha**2 - 100*alpha"
+      ],
+      "score": [
+        3,
+        5,
+        11
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 2,
+      "operator": [
+        "15",
+        "216*alpha - 400",
+        "108*alpha**2 - 400*alpha"
+      ],
+      "score": [
+        3,
+        5,
+        14
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "degree": 2,
+      "operator": [
+        "15",
+        "216*alpha - 400",
+        "108*alpha**2 - 400*alpha"
+      ],
+      "score": [
+        3,
+        5,
+        14
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        0,
+        -1
+      ],
+      "degree": 3,
+      "operator": [
+        "405*alpha - 1500",
+        "2187*alpha**2 - 16200*alpha + 20000",
+        "729*alpha**3 - 8100*alpha**2 + 20000*alpha"
+      ],
+      "score": [
+        5,
+        8,
+        33
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        0,
+        1
+      ],
+      "degree": 3,
+      "operator": [
+        "405*alpha - 1500",
+        "2187*alpha**2 - 16200*alpha + 20000",
+        "729*alpha**3 - 8100*alpha**2 + 20000*alpha"
+      ],
+      "score": [
+        5,
+        8,
+        33
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        0,
+        1,
+        -1
+      ],
+      "degree": 4,
+      "operator": [
+        "3*alpha**2 + 60*alpha + 18000",
+        "32*alpha**3 - 8060*alpha**2 + 284000*alpha - 400000",
+        "16*alpha**4 - 7420*alpha**3 + 162000*alpha**2 - 400000*alpha"
+      ],
+      "score": [
+        6,
+        11,
+        44
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 4,
+      "operator": [
+        "3*alpha**2 + 60*alpha + 18000",
+        "32*alpha**3 - 8060*alpha**2 + 284000*alpha - 400000",
+        "16*alpha**4 - 7420*alpha**3 + 162000*alpha**2 - 400000*alpha"
+      ],
+      "score": [
+        6,
+        11,
+        44
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        0,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "3*alpha**2 + 60*alpha + 18000",
+        "32*alpha**3 - 8060*alpha**2 + 284000*alpha - 400000",
+        "16*alpha**4 - 7420*alpha**3 + 162000*alpha**2 - 400000*alpha"
+      ],
+      "score": [
+        6,
+        11,
+        44
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "3*alpha**2 + 60*alpha + 18000",
+        "32*alpha**3 - 8060*alpha**2 + 284000*alpha - 400000",
+        "16*alpha**4 - 7420*alpha**3 + 162000*alpha**2 - 400000*alpha"
+      ],
+      "score": [
+        6,
+        11,
+        44
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        0,
+        -1
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 - 225*alpha + 3750",
+        "162*alpha**3 - 6375*alpha**2 + 72500*alpha - 125000",
+        "81*alpha**4 - 5025*alpha**3 + 51250*alpha**2 - 125000*alpha"
+      ],
+      "score": [
+        6,
+        11,
+        44
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        -1,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 - 225*alpha + 3750",
+        "162*alpha**3 - 6375*alpha**2 + 72500*alpha - 125000",
+        "81*alpha**4 - 5025*alpha**3 + 51250*alpha**2 - 125000*alpha"
+      ],
+      "score": [
+        6,
+        11,
+        44
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        -1,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 - 450*alpha + 15000",
+        "162*alpha**3 - 12750*alpha**2 + 290000*alpha - 1000000",
+        "81*alpha**4 - 10050*alpha**3 + 205000*alpha**2 - 1000000*alpha"
+      ],
+      "score": [
+        7,
+        11,
+        51
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 - 450*alpha + 15000",
+        "162*alpha**3 - 12750*alpha**2 + 290000*alpha - 1000000",
+        "81*alpha**4 - 10050*alpha**3 + 205000*alpha**2 - 1000000*alpha"
+      ],
+      "score": [
+        7,
+        11,
+        51
+      ],
+      "symmetry_count": 2,
+      "symmetries": [
+        "(p,q)->(p,q)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "18*alpha**4 - 1800*alpha**3 + 121500*alpha**2 - 1350000*alpha + 7500000",
+        "162*alpha**5 - 27780*alpha**4 + 1692000*alpha**3 - 26640000*alpha**2 + 156000000*alpha - 200000000",
+        "81*alpha**6 - 18060*alpha**5 + 1053000*alpha**4 - 19040000*alpha**3 + 114000000*alpha**2 - 200000000*alpha"
+      ],
+      "score": [
+        9,
+        17,
+        107
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "18*alpha**4 - 1800*alpha**3 + 121500*alpha**2 - 1350000*alpha + 7500000",
+        "162*alpha**5 - 27780*alpha**4 + 1692000*alpha**3 - 26640000*alpha**2 + 156000000*alpha - 200000000",
+        "81*alpha**6 - 18060*alpha**5 + 1053000*alpha**4 - 19040000*alpha**3 + 114000000*alpha**2 - 200000000*alpha"
+      ],
+      "score": [
+        9,
+        17,
+        107
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "18*alpha**4 - 1800*alpha**3 + 121500*alpha**2 - 1350000*alpha + 7500000",
+        "162*alpha**5 - 27780*alpha**4 + 1692000*alpha**3 - 26640000*alpha**2 + 156000000*alpha - 200000000",
+        "81*alpha**6 - 18060*alpha**5 + 1053000*alpha**4 - 19040000*alpha**3 + 114000000*alpha**2 - 200000000*alpha"
+      ],
+      "score": [
+        9,
+        17,
+        107
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        -1,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "18*alpha**4 - 1800*alpha**3 + 121500*alpha**2 - 1350000*alpha + 7500000",
+        "162*alpha**5 - 27780*alpha**4 + 1692000*alpha**3 - 26640000*alpha**2 + 156000000*alpha - 200000000",
+        "81*alpha**6 - 18060*alpha**5 + 1053000*alpha**4 - 19040000*alpha**3 + 114000000*alpha**2 - 200000000*alpha"
+      ],
+      "score": [
+        9,
+        17,
+        107
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        -1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "486*alpha**4 + 23400*alpha**3 - 127500*alpha**2 - 44250000*alpha + 337500000",
+        "4374*alpha**5 - 107100*alpha**4 + 860000*alpha**3 - 244000000*alpha**2 + 4700000000*alpha - 5000000000",
+        "2187*alpha**6 - 155700*alpha**5 + 3445000*alpha**4 - 62000000*alpha**3 + 2250000000*alpha**2 - 5000000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        121
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "486*alpha**4 + 23400*alpha**3 - 127500*alpha**2 - 44250000*alpha + 337500000",
+        "4374*alpha**5 - 107100*alpha**4 + 860000*alpha**3 - 244000000*alpha**2 + 4700000000*alpha - 5000000000",
+        "2187*alpha**6 - 155700*alpha**5 + 3445000*alpha**4 - 62000000*alpha**3 + 2250000000*alpha**2 - 5000000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        121
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        1,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "486*alpha**4 + 23400*alpha**3 - 127500*alpha**2 - 44250000*alpha + 337500000",
+        "4374*alpha**5 - 107100*alpha**4 + 860000*alpha**3 - 244000000*alpha**2 + 4700000000*alpha - 5000000000",
+        "2187*alpha**6 - 155700*alpha**5 + 3445000*alpha**4 - 62000000*alpha**3 + 2250000000*alpha**2 - 5000000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        121
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "486*alpha**4 + 23400*alpha**3 - 127500*alpha**2 - 44250000*alpha + 337500000",
+        "4374*alpha**5 - 107100*alpha**4 + 860000*alpha**3 - 244000000*alpha**2 + 4700000000*alpha - 5000000000",
+        "2187*alpha**6 - 155700*alpha**5 + 3445000*alpha**4 - 62000000*alpha**3 + 2250000000*alpha**2 - 5000000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        121
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "23958*alpha**4 + 1544400*alpha**3 - 16372500*alpha**2 + 53250000*alpha - 56250000",
+        "215622*alpha**5 + 6180900*alpha**4 - 113150000*alpha**3 + 549500000*alpha**2 - 1025000000*alpha + 625000000",
+        "107811*alpha**6 + 953700*alpha**5 - 41642500*alpha**4 + 281500000*alpha**3 - 712500000*alpha**2 + 625000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        133
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "23958*alpha**4 + 1544400*alpha**3 - 16372500*alpha**2 + 53250000*alpha - 56250000",
+        "215622*alpha**5 + 6180900*alpha**4 - 113150000*alpha**3 + 549500000*alpha**2 - 1025000000*alpha + 625000000",
+        "107811*alpha**6 + 953700*alpha**5 - 41642500*alpha**4 + 281500000*alpha**3 - 712500000*alpha**2 + 625000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        133
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "23958*alpha**4 + 1544400*alpha**3 - 16372500*alpha**2 + 53250000*alpha - 56250000",
+        "215622*alpha**5 + 6180900*alpha**4 - 113150000*alpha**3 + 549500000*alpha**2 - 1025000000*alpha + 625000000",
+        "107811*alpha**6 + 953700*alpha**5 - 41642500*alpha**4 + 281500000*alpha**3 - 712500000*alpha**2 + 625000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        133
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "23958*alpha**4 + 1544400*alpha**3 - 16372500*alpha**2 + 53250000*alpha - 56250000",
+        "215622*alpha**5 + 6180900*alpha**4 - 113150000*alpha**3 + 549500000*alpha**2 - 1025000000*alpha + 625000000",
+        "107811*alpha**6 + 953700*alpha**5 - 41642500*alpha**4 + 281500000*alpha**3 - 712500000*alpha**2 + 625000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        133
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "536238*alpha**4 - 13768650*alpha**3 + 96525000*alpha**2 - 262125000*alpha + 243750000",
+        "4826142*alpha**5 - 106489650*alpha**4 + 818490000*alpha**3 - 2848500000*alpha**2 + 4500000000*alpha - 2500000000",
+        "2413071*alpha**6 - 52000950*alpha**5 + 428077500*alpha**4 - 1703500000*alpha**3 + 3300000000*alpha**2 - 2500000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        149
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "536238*alpha**4 - 13768650*alpha**3 + 96525000*alpha**2 - 262125000*alpha + 243750000",
+        "4826142*alpha**5 - 106489650*alpha**4 + 818490000*alpha**3 - 2848500000*alpha**2 + 4500000000*alpha - 2500000000",
+        "2413071*alpha**6 - 52000950*alpha**5 + 428077500*alpha**4 - 1703500000*alpha**3 + 3300000000*alpha**2 - 2500000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        149
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "536238*alpha**4 - 13768650*alpha**3 + 96525000*alpha**2 - 262125000*alpha + 243750000",
+        "4826142*alpha**5 - 106489650*alpha**4 + 818490000*alpha**3 - 2848500000*alpha**2 + 4500000000*alpha - 2500000000",
+        "2413071*alpha**6 - 52000950*alpha**5 + 428077500*alpha**4 - 1703500000*alpha**3 + 3300000000*alpha**2 - 2500000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        149
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "536238*alpha**4 - 13768650*alpha**3 + 96525000*alpha**2 - 262125000*alpha + 243750000",
+        "4826142*alpha**5 - 106489650*alpha**4 + 818490000*alpha**3 - 2848500000*alpha**2 + 4500000000*alpha - 2500000000",
+        "2413071*alpha**6 - 52000950*alpha**5 + 428077500*alpha**4 - 1703500000*alpha**3 + 3300000000*alpha**2 - 2500000000*alpha"
+      ],
+      "score": [
+        10,
+        17,
+        149
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        -1,
+        0,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "219006*alpha**4 + 15478425*alpha**3 - 302898750*alpha**2 + 1455937500*alpha - 2109375000",
+        "1971054*alpha**5 + 33283875*alpha**4 - 2225705000*alpha**3 + 16197250000*alpha**2 - 40250000000*alpha + 31250000000",
+        "985527*alpha**6 - 14564175*alpha**5 - 801403750*alpha**4 + 8534750000*alpha**3 - 28500000000*alpha**2 + 31250000000*alpha"
+      ],
+      "score": [
+        11,
+        17,
+        156
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "219006*alpha**4 + 15478425*alpha**3 - 302898750*alpha**2 + 1455937500*alpha - 2109375000",
+        "1971054*alpha**5 + 33283875*alpha**4 - 2225705000*alpha**3 + 16197250000*alpha**2 - 40250000000*alpha + 31250000000",
+        "985527*alpha**6 - 14564175*alpha**5 - 801403750*alpha**4 + 8534750000*alpha**3 - 28500000000*alpha**2 + 31250000000*alpha"
+      ],
+      "score": [
+        11,
+        17,
+        156
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        0,
+        -1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "219006*alpha**4 + 15478425*alpha**3 - 302898750*alpha**2 + 1455937500*alpha - 2109375000",
+        "1971054*alpha**5 + 33283875*alpha**4 - 2225705000*alpha**3 + 16197250000*alpha**2 - 40250000000*alpha + 31250000000",
+        "985527*alpha**6 - 14564175*alpha**5 - 801403750*alpha**4 + 8534750000*alpha**3 - 28500000000*alpha**2 + 31250000000*alpha"
+      ],
+      "score": [
+        11,
+        17,
+        156
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "family": "cubic",
+      "coeffs": [
+        1,
+        1,
+        0,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "219006*alpha**4 + 15478425*alpha**3 - 302898750*alpha**2 + 1455937500*alpha - 2109375000",
+        "1971054*alpha**5 + 33283875*alpha**4 - 2225705000*alpha**3 + 16197250000*alpha**2 - 40250000000*alpha + 31250000000",
+        "985527*alpha**6 - 14564175*alpha**5 - 801403750*alpha**4 + 8534750000*alpha**3 - 28500000000*alpha**2 + 31250000000*alpha"
+      ],
+      "score": [
+        11,
+        17,
+        156
+      ],
+      "symmetry_count": 1,
+      "symmetries": [
+        "(p,q)->(p,q)"
+      ]
+    }
+  ]
+}

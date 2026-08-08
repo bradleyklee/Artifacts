@@ -1,0 +1,8 @@
+{
+  "format": "curves-machine-showcase-v1",
+  "case_id": "P0002",
+  "certificate": "certificate.pdf",
+  "source": "source",
+  "original_release_path": "backends/plane_curves/square_hexagon_current/square_hexagon_plane_curve_certificate_2026-08-02.pdf",
+  "sha256": "083485fddef32376294fb8ecd6168a3cf1ab75500e119d65426533e2770974cf"
+}

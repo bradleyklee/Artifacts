@@ -1,0 +1,1490 @@
+{
+  "seconds": 10.565269708633423,
+  "count": 60,
+  "results": [
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "degree": 2,
+      "operator": [
+        "1",
+        "8*alpha + 4",
+        "4*alpha**2 + 4*alpha"
+      ],
+      "score": [
+        1,
+        5,
+        5
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        1,
+        0,
+        0
+      ],
+      "degree": 2,
+      "operator": [
+        "1",
+        "8*alpha + 4",
+        "4*alpha**2 + 4*alpha"
+      ],
+      "score": [
+        1,
+        5,
+        5
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        0,
+        -1
+      ],
+      "degree": 3,
+      "operator": [
+        "3*alpha",
+        "12*alpha**2 - 4",
+        "4*alpha**3 - 4*alpha"
+      ],
+      "score": [
+        2,
+        5,
+        6
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "degree": 3,
+      "operator": [
+        "3*alpha",
+        "12*alpha**2 - 64",
+        "4*alpha**3 - 64*alpha"
+      ],
+      "score": [
+        2,
+        5,
+        8
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,p)",
+        "(p,q)->(q,-p)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "degree": 3,
+      "operator": [
+        "3*alpha",
+        "12*alpha**2 - 16",
+        "4*alpha**3 - 16*alpha"
+      ],
+      "score": [
+        2,
+        5,
+        8
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 3,
+      "operator": [
+        "3*alpha + 3",
+        "12*alpha**2 + 24*alpha + 8",
+        "4*alpha**3 + 12*alpha**2 + 8*alpha"
+      ],
+      "score": [
+        2,
+        8,
+        11
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)",
+        "(p,q)->(-q,p)",
+        "(p,q)->(q,-p)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        -1,
+        -1,
+        0
+      ],
+      "degree": 3,
+      "operator": [
+        "3*alpha + 4",
+        "12*alpha**2 + 32*alpha - 64",
+        "4*alpha**3 + 16*alpha**2 - 64*alpha"
+      ],
+      "score": [
+        2,
+        8,
+        13
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,p)",
+        "(p,q)->(q,-p)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        1,
+        -1,
+        0
+      ],
+      "degree": 3,
+      "operator": [
+        "3*alpha - 4",
+        "12*alpha**2 - 32*alpha - 64",
+        "4*alpha**3 - 16*alpha**2 - 64*alpha"
+      ],
+      "score": [
+        2,
+        8,
+        13
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,p)",
+        "(p,q)->(q,-p)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        -1,
+        0,
+        1
+      ],
+      "degree": 3,
+      "operator": [
+        "3*alpha + 5",
+        "12*alpha**2 + 40*alpha + 16",
+        "4*alpha**3 + 20*alpha**2 + 16*alpha"
+      ],
+      "score": [
+        2,
+        8,
+        13
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)",
+        "(p,q)->(-q,p)",
+        "(p,q)->(q,-p)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      "degree": 3,
+      "operator": [
+        "9*alpha + 7",
+        "36*alpha**2 + 56*alpha + 16",
+        "12*alpha**3 + 28*alpha**2 + 16*alpha"
+      ],
+      "score": [
+        2,
+        8,
+        14
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)",
+        "(p,q)->(-q,p)",
+        "(p,q)->(q,-p)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "degree": 4,
+      "operator": [
+        "alpha**2 - 12*alpha - 16",
+        "8*alpha**3 - 20*alpha**2 - 224*alpha + 128",
+        "4*alpha**4 + 12*alpha**3 - 144*alpha**2 + 128*alpha"
+      ],
+      "score": [
+        3,
+        11,
+        23
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "alpha**2 + 12*alpha - 16",
+        "8*alpha**3 + 20*alpha**2 - 224*alpha - 128",
+        "4*alpha**4 - 12*alpha**3 - 144*alpha**2 - 128*alpha"
+      ],
+      "score": [
+        3,
+        11,
+        23
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        -1,
+        1,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "9*alpha**2 + 44*alpha + 16",
+        "36*alpha**3 + 208*alpha**2 + 192*alpha - 256",
+        "12*alpha**4 + 80*alpha**3 + 64*alpha**2 - 256*alpha"
+      ],
+      "score": [
+        3,
+        11,
+        25
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        1,
+        1,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "9*alpha**2 - 44*alpha + 16",
+        "36*alpha**3 - 208*alpha**2 + 192*alpha + 256",
+        "12*alpha**4 - 80*alpha**3 + 64*alpha**2 + 256*alpha"
+      ],
+      "score": [
+        3,
+        11,
+        25
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)",
+        "(p,q)->(-q,-p)",
+        "(p,q)->(q,p)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        -1,
+        0,
+        -1
+      ],
+      "degree": 5,
+      "operator": [
+        "30*alpha**3 - 33*alpha**2 + 10*alpha + 1",
+        "120*alpha**4 - 144*alpha**3 + 8*alpha**2 + 40*alpha - 16",
+        "40*alpha**5 - 52*alpha**4 - 24*alpha**3 + 52*alpha**2 - 16*alpha"
+      ],
+      "score": [
+        3,
+        14,
+        28
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      "degree": 5,
+      "operator": [
+        "30*alpha**3 + 33*alpha**2 + 10*alpha - 1",
+        "120*alpha**4 + 144*alpha**3 + 8*alpha**2 - 40*alpha - 16",
+        "40*alpha**5 + 52*alpha**4 - 24*alpha**3 - 52*alpha**2 - 16*alpha"
+      ],
+      "score": [
+        3,
+        14,
+        28
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(-p,q)",
+        "(p,q)->(p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 - 576*alpha - 3072",
+        "162*alpha**3 - 960*alpha**2 - 34816*alpha + 16384",
+        "81*alpha**4 + 768*alpha**3 - 18944*alpha**2 + 16384*alpha"
+      ],
+      "score": [
+        5,
+        11,
+        40
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 + 576*alpha - 3072",
+        "162*alpha**3 + 960*alpha**2 - 34816*alpha - 16384",
+        "81*alpha**4 - 768*alpha**3 - 18944*alpha**2 - 16384*alpha"
+      ],
+      "score": [
+        5,
+        11,
+        40
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 + 576*alpha - 3072",
+        "162*alpha**3 + 960*alpha**2 - 34816*alpha - 16384",
+        "81*alpha**4 - 768*alpha**3 - 18944*alpha**2 - 16384*alpha"
+      ],
+      "score": [
+        5,
+        11,
+        40
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "degree": 4,
+      "operator": [
+        "18*alpha**2 + 576*alpha - 3072",
+        "162*alpha**3 + 960*alpha**2 - 34816*alpha - 16384",
+        "81*alpha**4 - 768*alpha**3 - 18944*alpha**2 - 16384*alpha"
+      ],
+      "score": [
+        5,
+        11,
+        40
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        -1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 + alpha**3 - 120*alpha**2 - 1504*alpha - 1024",
+        "8*alpha**5 + 135*alpha**4 + 184*alpha**3 - 7328*alpha**2 - 12288*alpha + 8192",
+        "4*alpha**6 + 103*alpha**5 + 412*alpha**4 - 2272*alpha**3 - 7168*alpha**2 + 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        52
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        1,
+        -1
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 + alpha**3 - 120*alpha**2 - 1504*alpha - 1024",
+        "8*alpha**5 + 135*alpha**4 + 184*alpha**3 - 7328*alpha**2 - 12288*alpha + 8192",
+        "4*alpha**6 + 103*alpha**5 + 412*alpha**4 - 2272*alpha**3 - 7168*alpha**2 + 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        52
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        -1,
+        -1,
+        0,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 - alpha**3 - 120*alpha**2 + 1504*alpha - 1024",
+        "8*alpha**5 - 135*alpha**4 + 184*alpha**3 + 7328*alpha**2 - 12288*alpha - 8192",
+        "4*alpha**6 - 103*alpha**5 + 412*alpha**4 + 2272*alpha**3 - 7168*alpha**2 - 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        52
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 - alpha**3 - 120*alpha**2 + 1504*alpha - 1024",
+        "8*alpha**5 - 135*alpha**4 + 184*alpha**3 + 7328*alpha**2 - 12288*alpha - 8192",
+        "4*alpha**6 - 103*alpha**5 + 412*alpha**4 + 2272*alpha**3 - 7168*alpha**2 - 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        52
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 - 31*alpha**3 - 284*alpha**2 - 1152*alpha + 2048",
+        "8*alpha**5 - 85*alpha**4 - 1724*alpha**3 - 3968*alpha**2 + 28672*alpha + 32768",
+        "4*alpha**6 - 5*alpha**5 - 830*alpha**4 - 512*alpha**3 + 19456*alpha**2 + 32768*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        53
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        1,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 - 31*alpha**3 - 284*alpha**2 - 1152*alpha + 2048",
+        "8*alpha**5 - 85*alpha**4 - 1724*alpha**3 - 3968*alpha**2 + 28672*alpha + 32768",
+        "4*alpha**6 - 5*alpha**5 - 830*alpha**4 - 512*alpha**3 + 19456*alpha**2 + 32768*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        53
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        -1,
+        0,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 + 31*alpha**3 - 284*alpha**2 + 1152*alpha + 2048",
+        "8*alpha**5 + 85*alpha**4 - 1724*alpha**3 + 3968*alpha**2 + 28672*alpha - 32768",
+        "4*alpha**6 + 5*alpha**5 - 830*alpha**4 + 512*alpha**3 + 19456*alpha**2 - 32768*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        53
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "alpha**4 - 31*alpha**3 - 284*alpha**2 - 1152*alpha + 2048",
+        "8*alpha**5 - 85*alpha**4 - 1724*alpha**3 - 3968*alpha**2 + 28672*alpha + 32768",
+        "4*alpha**6 - 5*alpha**5 - 830*alpha**4 - 512*alpha**3 + 19456*alpha**2 + 32768*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        53
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        -1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "9*alpha**4 + 33*alpha**3 + 272*alpha**2 + 1568*alpha + 2048",
+        "72*alpha**5 + 615*alpha**4 + 3280*alpha**3 + 12768*alpha**2 + 24576*alpha + 8192",
+        "36*alpha**6 + 423*alpha**5 + 2408*alpha**4 + 7328*alpha**3 + 14336*alpha**2 + 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        59
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        0,
+        1,
+        1,
+        1
+      ],
+      "degree": 6,
+      "operator": [
+        "9*alpha**4 + 33*alpha**3 + 272*alpha**2 + 1568*alpha + 2048",
+        "72*alpha**5 + 615*alpha**4 + 3280*alpha**3 + 12768*alpha**2 + 24576*alpha + 8192",
+        "36*alpha**6 + 423*alpha**5 + 2408*alpha**4 + 7328*alpha**3 + 14336*alpha**2 + 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        59
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "9*alpha**4 + 33*alpha**3 + 272*alpha**2 + 1568*alpha + 2048",
+        "72*alpha**5 + 615*alpha**4 + 3280*alpha**3 + 12768*alpha**2 + 24576*alpha + 8192",
+        "36*alpha**6 + 423*alpha**5 + 2408*alpha**4 + 7328*alpha**3 + 14336*alpha**2 + 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        59
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        1,
+        1,
+        0,
+        0
+      ],
+      "degree": 6,
+      "operator": [
+        "9*alpha**4 + 33*alpha**3 + 272*alpha**2 + 1568*alpha + 2048",
+        "72*alpha**5 + 615*alpha**4 + 3280*alpha**3 + 12768*alpha**2 + 24576*alpha + 8192",
+        "36*alpha**6 + 423*alpha**5 + 2408*alpha**4 + 7328*alpha**3 + 14336*alpha**2 + 8192*alpha"
+      ],
+      "score": [
+        5,
+        17,
+        59
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        1,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "1023*alpha**5 - 2124*alpha**4 + 4416*alpha**3 - 4992*alpha**2 + 3072",
+        "4092*alpha**6 - 8064*alpha**5 + 8448*alpha**4 + 4608*alpha**3 - 28672*alpha**2 + 49152*alpha - 16384",
+        "1364*alpha**7 - 2544*alpha**6 - 1792*alpha**5 + 20736*alpha**4 - 36864*alpha**3 + 36864*alpha**2 - 16384*alpha"
+      ],
+      "score": [
+        5,
+        19,
+        83
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "1023*alpha**5 + 2124*alpha**4 + 4416*alpha**3 + 4992*alpha**2 - 3072",
+        "4092*alpha**6 + 8064*alpha**5 + 8448*alpha**4 - 4608*alpha**3 - 28672*alpha**2 - 49152*alpha - 16384",
+        "1364*alpha**7 + 2544*alpha**6 - 1792*alpha**5 - 20736*alpha**4 - 36864*alpha**3 - 36864*alpha**2 - 16384*alpha"
+      ],
+      "score": [
+        5,
+        19,
+        83
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        -1,
+        0,
+        -1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "1023*alpha**5 + 2124*alpha**4 + 4416*alpha**3 + 4992*alpha**2 - 3072",
+        "4092*alpha**6 + 8064*alpha**5 + 8448*alpha**4 - 4608*alpha**3 - 28672*alpha**2 - 49152*alpha - 16384",
+        "1364*alpha**7 + 2544*alpha**6 - 1792*alpha**5 - 20736*alpha**4 - 36864*alpha**3 - 36864*alpha**2 - 16384*alpha"
+      ],
+      "score": [
+        5,
+        19,
+        83
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        1,
+        0,
+        1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "1023*alpha**5 + 2124*alpha**4 + 4416*alpha**3 + 4992*alpha**2 - 3072",
+        "4092*alpha**6 + 8064*alpha**5 + 8448*alpha**4 - 4608*alpha**3 - 28672*alpha**2 - 49152*alpha - 16384",
+        "1364*alpha**7 + 2544*alpha**6 - 1792*alpha**5 - 20736*alpha**4 - 36864*alpha**3 - 36864*alpha**2 - 16384*alpha"
+      ],
+      "score": [
+        5,
+        19,
+        83
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        -1,
+        0,
+        0,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "16131*alpha**5 - 23478*alpha**4 + 24132*alpha**3 - 15984*alpha**2 + 6624*alpha",
+        "64524*alpha**6 - 106320*alpha**5 + 99012*alpha**4 - 49440*alpha**3 + 12832*alpha**2 + 16384*alpha - 8192",
+        "21508*alpha**7 - 39576*alpha**6 + 29956*alpha**5 + 5680*alpha**4 - 29856*alpha**3 + 20480*alpha**2 - 8192*alpha"
+      ],
+      "score": [
+        6,
+        19,
+        92
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        -1,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "16131*alpha**5 + 23478*alpha**4 + 24132*alpha**3 + 15984*alpha**2 + 6624*alpha",
+        "64524*alpha**6 + 106320*alpha**5 + 99012*alpha**4 + 49440*alpha**3 + 12832*alpha**2 - 16384*alpha - 8192",
+        "21508*alpha**7 + 39576*alpha**6 + 29956*alpha**5 - 5680*alpha**4 - 29856*alpha**3 - 20480*alpha**2 - 8192*alpha"
+      ],
+      "score": [
+        6,
+        19,
+        92
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "16131*alpha**5 + 23478*alpha**4 + 24132*alpha**3 + 15984*alpha**2 + 6624*alpha",
+        "64524*alpha**6 + 106320*alpha**5 + 99012*alpha**4 + 49440*alpha**3 + 12832*alpha**2 - 16384*alpha - 8192",
+        "21508*alpha**7 + 39576*alpha**6 + 29956*alpha**5 - 5680*alpha**4 - 29856*alpha**3 - 20480*alpha**2 - 8192*alpha"
+      ],
+      "score": [
+        6,
+        19,
+        92
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        1,
+        0,
+        0,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "16131*alpha**5 - 23478*alpha**4 + 24132*alpha**3 - 15984*alpha**2 + 6624*alpha",
+        "64524*alpha**6 - 106320*alpha**5 + 99012*alpha**4 - 49440*alpha**3 + 12832*alpha**2 + 16384*alpha - 8192",
+        "21508*alpha**7 - 39576*alpha**6 + 29956*alpha**5 + 5680*alpha**4 - 29856*alpha**3 + 20480*alpha**2 - 8192*alpha"
+      ],
+      "score": [
+        6,
+        19,
+        92
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        0,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "729*alpha**5 - 4131*alpha**4 + 10692*alpha**3 - 8712*alpha**2 - 9984*alpha + 12288",
+        "2916*alpha**6 - 15552*alpha**5 + 25380*alpha**4 + 28728*alpha**3 - 168192*alpha**2 + 204800*alpha - 65536",
+        "972*alpha**7 - 4860*alpha**6 - 108*alpha**5 + 50076*alpha**4 - 138240*alpha**3 + 157696*alpha**2 - 65536*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        93
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "729*alpha**5 + 4131*alpha**4 + 10692*alpha**3 + 8712*alpha**2 - 9984*alpha - 12288",
+        "2916*alpha**6 + 15552*alpha**5 + 25380*alpha**4 - 28728*alpha**3 - 168192*alpha**2 - 204800*alpha - 65536",
+        "972*alpha**7 + 4860*alpha**6 - 108*alpha**5 - 50076*alpha**4 - 138240*alpha**3 - 157696*alpha**2 - 65536*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        93
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        -1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "729*alpha**5 + 4131*alpha**4 + 10692*alpha**3 + 8712*alpha**2 - 9984*alpha - 12288",
+        "2916*alpha**6 + 15552*alpha**5 + 25380*alpha**4 - 28728*alpha**3 - 168192*alpha**2 - 204800*alpha - 65536",
+        "972*alpha**7 + 4860*alpha**6 - 108*alpha**5 - 50076*alpha**4 - 138240*alpha**3 - 157696*alpha**2 - 65536*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        93
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "729*alpha**5 + 4131*alpha**4 + 10692*alpha**3 + 8712*alpha**2 - 9984*alpha - 12288",
+        "2916*alpha**6 + 15552*alpha**5 + 25380*alpha**4 - 28728*alpha**3 - 168192*alpha**2 - 204800*alpha - 65536",
+        "972*alpha**7 + 4860*alpha**6 - 108*alpha**5 - 50076*alpha**4 - 138240*alpha**3 - 157696*alpha**2 - 65536*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        93
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        -1,
+        0,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "2511*alpha**5 - 6574*alpha**4 - 132*alpha**3 + 18560*alpha**2 - 22656*alpha + 8192",
+        "10044*alpha**6 - 10928*alpha**5 - 85820*alpha**4 + 260800*alpha**3 - 305024*alpha**2 + 163840*alpha - 32768",
+        "3348*alpha**7 + 1480*alpha**6 - 66748*alpha**5 + 189536*alpha**4 - 234112*alpha**3 + 139264*alpha**2 - 32768*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        99
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        1,
+        0,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "2511*alpha**5 + 6574*alpha**4 - 132*alpha**3 - 18560*alpha**2 - 22656*alpha - 8192",
+        "10044*alpha**6 + 10928*alpha**5 - 85820*alpha**4 - 260800*alpha**3 - 305024*alpha**2 - 163840*alpha - 32768",
+        "3348*alpha**7 - 1480*alpha**6 - 66748*alpha**5 - 189536*alpha**4 - 234112*alpha**3 - 139264*alpha**2 - 32768*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        99
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        1,
+        -1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "2511*alpha**5 + 6574*alpha**4 - 132*alpha**3 - 18560*alpha**2 - 22656*alpha - 8192",
+        "10044*alpha**6 + 10928*alpha**5 - 85820*alpha**4 - 260800*alpha**3 - 305024*alpha**2 - 163840*alpha - 32768",
+        "3348*alpha**7 - 1480*alpha**6 - 66748*alpha**5 - 189536*alpha**4 - 234112*alpha**3 - 139264*alpha**2 - 32768*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        99
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "2511*alpha**5 + 6574*alpha**4 - 132*alpha**3 - 18560*alpha**2 - 22656*alpha - 8192",
+        "10044*alpha**6 + 10928*alpha**5 - 85820*alpha**4 - 260800*alpha**3 - 305024*alpha**2 - 163840*alpha - 32768",
+        "3348*alpha**7 - 1480*alpha**6 - 66748*alpha**5 - 189536*alpha**4 - 234112*alpha**3 - 139264*alpha**2 - 32768*alpha"
+      ],
+      "score": [
+        6,
+        20,
+        99
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        -1,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "345*alpha**5 - 6000*alpha**4 + 25728*alpha**3 - 26688*alpha**2 - 42240*alpha + 76800",
+        "1380*alpha**6 - 21504*alpha**5 + 85056*alpha**4 + 12288*alpha**3 - 656384*alpha**2 + 1146880*alpha - 409600",
+        "460*alpha**7 - 6336*alpha**6 + 18752*alpha**5 + 72704*alpha**4 - 482304*alpha**3 + 819200*alpha**2 - 409600*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        100
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        0,
+        -1,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "345*alpha**5 + 6000*alpha**4 + 25728*alpha**3 + 26688*alpha**2 - 42240*alpha - 76800",
+        "1380*alpha**6 + 21504*alpha**5 + 85056*alpha**4 - 12288*alpha**3 - 656384*alpha**2 - 1146880*alpha - 409600",
+        "460*alpha**7 + 6336*alpha**6 + 18752*alpha**5 - 72704*alpha**4 - 482304*alpha**3 - 819200*alpha**2 - 409600*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        100
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        -1,
+        0,
+        1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "345*alpha**5 + 6000*alpha**4 + 25728*alpha**3 + 26688*alpha**2 - 42240*alpha - 76800",
+        "1380*alpha**6 + 21504*alpha**5 + 85056*alpha**4 - 12288*alpha**3 - 656384*alpha**2 - 1146880*alpha - 409600",
+        "460*alpha**7 + 6336*alpha**6 + 18752*alpha**5 - 72704*alpha**4 - 482304*alpha**3 - 819200*alpha**2 - 409600*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        100
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        1,
+        0,
+        -1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "345*alpha**5 + 6000*alpha**4 + 25728*alpha**3 + 26688*alpha**2 - 42240*alpha - 76800",
+        "1380*alpha**6 + 21504*alpha**5 + 85056*alpha**4 - 12288*alpha**3 - 656384*alpha**2 - 1146880*alpha - 409600",
+        "460*alpha**7 + 6336*alpha**6 + 18752*alpha**5 - 72704*alpha**4 - 482304*alpha**3 - 819200*alpha**2 - 409600*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        100
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        -1,
+        0,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "483*alpha**5 + 9234*alpha**4 + 61484*alpha**3 + 163296*alpha**2 + 109440*alpha - 102400",
+        "1932*alpha**6 + 36336*alpha**5 + 245236*alpha**4 + 649312*alpha**3 + 171648*alpha**2 - 1556480*alpha - 819200",
+        "644*alpha**7 + 11912*alpha**6 + 76468*alpha**5 + 161328*alpha**4 - 211072*alpha**3 - 1126400*alpha**2 - 819200*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        108
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        0,
+        1,
+        1,
+        0,
+        -1
+      ],
+      "degree": 7,
+      "operator": [
+        "483*alpha**5 - 9234*alpha**4 + 61484*alpha**3 - 163296*alpha**2 + 109440*alpha + 102400",
+        "1932*alpha**6 - 36336*alpha**5 + 245236*alpha**4 - 649312*alpha**3 + 171648*alpha**2 + 1556480*alpha - 819200",
+        "644*alpha**7 - 11912*alpha**6 + 76468*alpha**5 - 161328*alpha**4 - 211072*alpha**3 + 1126400*alpha**2 - 819200*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        108
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        -1,
+        -1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "483*alpha**5 + 9234*alpha**4 + 61484*alpha**3 + 163296*alpha**2 + 109440*alpha - 102400",
+        "1932*alpha**6 + 36336*alpha**5 + 245236*alpha**4 + 649312*alpha**3 + 171648*alpha**2 - 1556480*alpha - 819200",
+        "644*alpha**7 + 11912*alpha**6 + 76468*alpha**5 + 161328*alpha**4 - 211072*alpha**3 - 1126400*alpha**2 - 819200*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        108
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        -1,
+        1,
+        0
+      ],
+      "degree": 7,
+      "operator": [
+        "483*alpha**5 + 9234*alpha**4 + 61484*alpha**3 + 163296*alpha**2 + 109440*alpha - 102400",
+        "1932*alpha**6 + 36336*alpha**5 + 245236*alpha**4 + 649312*alpha**3 + 171648*alpha**2 - 1556480*alpha - 819200",
+        "644*alpha**7 + 11912*alpha**6 + 76468*alpha**5 + 161328*alpha**4 - 211072*alpha**3 - 1126400*alpha**2 - 819200*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        108
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        -1,
+        0,
+        0,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "15114*alpha**5 + 111075*alpha**4 + 326544*alpha**3 + 456648*alpha**2 + 302880*alpha + 76800",
+        "60456*alpha**6 + 542352*alpha**5 + 1887840*alpha**4 + 3231960*alpha**3 + 2870368*alpha**2 + 1249280*alpha + 204800",
+        "20152*alpha**7 + 213468*alpha**6 + 849200*alpha**5 + 1676332*alpha**4 + 1762848*alpha**3 + 947200*alpha**2 + 204800*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        122
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        -1,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "15114*alpha**5 + 111075*alpha**4 + 326544*alpha**3 + 456648*alpha**2 + 302880*alpha + 76800",
+        "60456*alpha**6 + 542352*alpha**5 + 1887840*alpha**4 + 3231960*alpha**3 + 2870368*alpha**2 + 1249280*alpha + 204800",
+        "20152*alpha**7 + 213468*alpha**6 + 849200*alpha**5 + 1676332*alpha**4 + 1762848*alpha**3 + 947200*alpha**2 + 204800*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        122
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "15114*alpha**5 + 111075*alpha**4 + 326544*alpha**3 + 456648*alpha**2 + 302880*alpha + 76800",
+        "60456*alpha**6 + 542352*alpha**5 + 1887840*alpha**4 + 3231960*alpha**3 + 2870368*alpha**2 + 1249280*alpha + 204800",
+        "20152*alpha**7 + 213468*alpha**6 + 849200*alpha**5 + 1676332*alpha**4 + 1762848*alpha**3 + 947200*alpha**2 + 204800*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        122
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    },
+    {
+      "coeffs": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "degree": 7,
+      "operator": [
+        "15114*alpha**5 + 111075*alpha**4 + 326544*alpha**3 + 456648*alpha**2 + 302880*alpha + 76800",
+        "60456*alpha**6 + 542352*alpha**5 + 1887840*alpha**4 + 3231960*alpha**3 + 2870368*alpha**2 + 1249280*alpha + 204800",
+        "20152*alpha**7 + 213468*alpha**6 + 849200*alpha**5 + 1676332*alpha**4 + 1762848*alpha**3 + 947200*alpha**2 + 204800*alpha"
+      ],
+      "score": [
+        7,
+        20,
+        122
+      ],
+      "symmetries": [
+        "(p,q)->(-p,-q)",
+        "(p,q)->(p,q)"
+      ]
+    }
+  ]
+}

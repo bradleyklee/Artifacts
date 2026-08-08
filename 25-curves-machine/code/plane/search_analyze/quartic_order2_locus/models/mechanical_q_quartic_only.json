@@ -1,0 +1,38 @@
+{
+  "example_id": "mechanical_q_quartic_only",
+  "monomials": {
+    "3": [],
+    "4": [
+      [
+        0,
+        4,
+        "1/7"
+      ]
+    ]
+  },
+  "notes": "p^2+q^2+b q^4",
+  "modes": {},
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "1/7"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(-p,-q)",
+    "(p,q)->(-p,q)",
+    "(p,q)->(p,-q)",
+    "(p,q)->(p,q)"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "failure_record.schema.json",
+  "title": "Failure or computational-limit record",
+  "type": "object",
+  "required": [
+    "failure_id",
+    "case_id",
+    "algorithm_id",
+    "failure_class",
+    "reproducible",
+    "partial_artifacts"
+  ],
+  "properties": {
+    "failure_id": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "algorithm_id": {
+      "type": "string"
+    },
+    "failure_class": {
+      "enum": [
+        "bounded_failure",
+        "method_gap",
+        "timeout",
+        "memory_overflow",
+        "bug",
+        "environment_blocker",
+        "exact_reconstruction",
+        "certificate_assembly",
+        "unknown_bound"
+      ]
+    },
+    "reproducible": {
+      "type": "boolean"
+    },
+    "command": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "bounds": {
+      "type": "object"
+    },
+    "environment": {
+      "type": "object"
+    },
+    "partial_artifacts": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "last_verified_object": {},
+    "next_action": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

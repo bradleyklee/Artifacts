@@ -1,0 +1,1 @@
+{"example_id":"q1d","E":"p^2+q^2+(p^4-2p^2q^2+3q^4)/4+(p^2q-2q^3)/4","symmetry":{"p_reflection":true,"q_reflection":false},"monomials":{"3":[[2,1,"1/4"],[0,3,"-1/2"]],"4":[[4,0,"1/4"],[2,2,"-1/2"],[0,4,"3/4"]]}}

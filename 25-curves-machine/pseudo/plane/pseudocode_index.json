@@ -1,0 +1,107 @@
+{
+  "version": "0.1.0",
+  "candidates": [
+    {
+      "id": "DISSERTATION-EXP-TO-ODE",
+      "title": "ExpToODE",
+      "status": "portfolio_regression",
+      "role": "univariate rational/exponential creative telescoping",
+      "features": {
+        "parameter_differentiation": true,
+        "hermite_reduction": true,
+        "matrix_solve": true,
+        "exact_differentials": true,
+        "nullspace": true,
+        "certificate": true,
+        "annihilator": true
+      }
+    },
+    {
+      "id": "DISSERTATION-HYPERELLIPTIC-TO-ODE",
+      "title": "HyperellipticToODE",
+      "status": "portfolio_regression",
+      "role": "univariate algebraic square-root reduction",
+      "features": {
+        "parameter_differentiation": true,
+        "hermite_reduction": true,
+        "odd_denominator_powers": true,
+        "exact_differentials": true,
+        "nullspace": true,
+        "certificate": true,
+        "annihilator": true
+      }
+    },
+    {
+      "id": "DISSERTATION-DIHEDRAL-TO-ODE",
+      "title": "DihedralToODE",
+      "status": "exact_on_examples",
+      "role": "symmetry-compressed action-coordinate reduction",
+      "features": {
+        "symmetry_compression": true,
+        "parameter_differentiation": true,
+        "hermite_reduction": true,
+        "exact_differentials": true,
+        "nullspace": true,
+        "certificate": true,
+        "annihilator": true
+      }
+    },
+    {
+      "id": "PSEUDO-RESIDUAL-HERMITE-001",
+      "title": "Residual Hermite reduction",
+      "status": "specified",
+      "role": "pole-by-pole reduction to finite remainder vectors",
+      "features": {
+        "finite_poles": true,
+        "infinity_basis": "planned",
+        "canonical_remainders": true,
+        "nullspace": true,
+        "certificate_reconstruction": true
+      },
+      "note": "Recovered candidate record; full historical pseudocode should be imported rather than silently rewritten."
+    },
+    {
+      "id": "PSEUDO-GD-REDUCE-001",
+      "title": "Generalized derivative reduction",
+      "status": "specified",
+      "role": "stronger algebraic-function reduction candidate",
+      "features": {
+        "algebraic_function_field": true,
+        "finite_poles": true,
+        "infinity_basis": true,
+        "canonical_remainders": true,
+        "nullspace": true,
+        "certificate_reconstruction": true
+      },
+      "note": "Recovered candidate record; full historical pseudocode should be imported rather than silently rewritten."
+    },
+    {
+      "id": "PSEUDO-META-SEARCH-001",
+      "title": "Algorithm-space portfolio search",
+      "status": "specified",
+      "role": "outer search over reduction algorithms",
+      "pseudocode_file": "algorithms/PSEUDO-META-SEARCH-001.md"
+    },
+    {
+      "id": "PSEUDO-REDUCTION-SEARCH-001",
+      "title": "Single-Hamiltonian reduction search",
+      "status": "specified",
+      "role": "inner search through coordinate and reduction choices",
+      "pseudocode_file": "algorithms/PSEUDO-REDUCTION-SEARCH-001.md"
+    },
+    {
+      "id": "PSEUDO-ANNIHILATOR-RELATIONS-001",
+      "title": "Annihilator relation analyzer",
+      "status": "specified",
+      "role": "identify nice coefficient relations and hidden structure",
+      "pseudocode_file": "algorithms/PSEUDO-ANNIHILATOR-RELATIONS-001.md"
+    },
+    {
+      "id": "PSEUDO-SQUARE-HEXAGON-STRATA-001",
+      "title": "Square-hexagon strata search",
+      "status": "specified",
+      "role": "current application and algorithm-training case",
+      "pseudocode_file": "algorithms/PSEUDO-SQUARE-HEXAGON-STRATA-001.md"
+    }
+  ]
+}

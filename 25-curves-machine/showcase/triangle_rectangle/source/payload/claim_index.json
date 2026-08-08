@@ -1,0 +1,167 @@
+{
+  "schema": "triangle-rectangle-claim-index/1.6",
+  "purpose": "Map each visible row to current-normalization payload data and executable checks.",
+  "rows": [
+    {
+      "page": 1,
+      "label": "Figure (a)",
+      "payload_paths": [
+        "figure_quantization",
+        "critical_points"
+      ],
+      "checks": [
+        "figure_midpoint_action_quantization",
+        "critical_points_and_contour_centers"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "The mu-stratum / Transform",
+      "payload_paths": [
+        "curve"
+      ],
+      "checks": [
+        "mu_reflection_unique",
+        "normalization_equivalence_and_period_form"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Curve / Period form",
+      "payload_paths": [
+        "curve.equation",
+        "curve.rho",
+        "curve.period_form"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Real period / Complex period",
+      "payload_paths": [
+        "periods",
+        "critical_points"
+      ],
+      "checks": [
+        "critical_points_and_contour_centers",
+        "integer_period_series",
+        "abel_wronskian_identity"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Annihilator / Factorization",
+      "payload_paths": [
+        "operator"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Abel's identity",
+      "payload_paths": [
+        "abel_identity"
+      ],
+      "checks": [
+        "abel_wronskian_identity",
+        "displayed_basis_abel_identity_numerical"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Certificate",
+      "payload_paths": [
+        "certificate"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Pullback data / Local periods / Global basis / Global periods",
+      "payload_paths": [
+        "hypergeometric"
+      ],
+      "checks": [
+        "signature_four_ode_pullback",
+        "local_X_period_formula_before_fold",
+        "displayed_reflected_local_period",
+        "displayed_psi0_annihilator_exact",
+        "displayed_psi1_annihilator_exact",
+        "modular_period_superposition",
+        "displayed_periods_quartic_quadrature"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Series",
+      "payload_paths": [
+        "periods.T1.series",
+        "periods.T2.series"
+      ],
+      "checks": [
+        "integer_period_series",
+        "exact_displayed_endpoint_series"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Birational maps / Jacobi quartic",
+      "payload_paths": [
+        "elliptic_normalization"
+      ],
+      "checks": [
+        "plane_birational_forward_inverse",
+        "plane_invariant_differential",
+        "jacobi_quartic_and_discriminant"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Quartic period / Three periods",
+      "payload_paths": [
+        "hypergeometric.z4",
+        "jacobi_legendre"
+      ],
+      "checks": [
+        "signature_four_ode_pullback",
+        "z4_endpoint_value",
+        "signature_four_to_legendre_quadratic_pullback",
+        "legendre_K_normalization"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Modular data / Parameter chain / j-line solution",
+      "payload_paths": [
+        "modular",
+        "hypergeometric.X",
+        "hypergeometric.sigma"
+      ],
+      "checks": [
+        "alpha_m_X_parameter_chain",
+        "fold_point_X_and_m",
+        "exact_signed_square_connection_coordinate",
+        "eisenstein_fourth_root_ode",
+        "continued_eisenstein_root_global_branch"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Fourth power / Algebraic factor / Ramanujan",
+      "payload_paths": [
+        "modular"
+      ],
+      "checks": [
+        "eisenstein_fourth_root_ode",
+        "ramanujan_algebraic_factor",
+        "ramanujan_lambert_series_against_K"
+      ]
+    }
+  ]
+}

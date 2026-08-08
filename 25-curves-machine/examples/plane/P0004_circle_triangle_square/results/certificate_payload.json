@@ -1,0 +1,101 @@
+{
+  "abel_identity": {
+    "page_normalization": "z*(z+6)*(4z-1)*(8z-1)/(17z-3)*(T1*T2'-T2*T1')=sqrt(5)/pi",
+    "saddle_normalized_branch": "z*(z+6)*(4z-1)*(8z-1)/(17z-3)*(T1*T2_saddle'-T2_saddle*T1')=sqrt(14)/(2*pi)"
+  },
+  "critical_points": {
+    "barrier_center": {
+      "alpha": "1/4",
+      "hamiltonian_hessian_after_p_wick": [
+        [
+          "-5/2",
+          "0"
+        ],
+        [
+          "0",
+          "-1/2"
+        ]
+      ],
+      "harmonic_frequency": "sqrt(5)/2",
+      "harmonic_period_for_i_omega": "4*pi/sqrt(5)",
+      "hessian_determinant": "-5",
+      "p_wick_expansion": "1/4+(U^4+6*U^2*Q^2-10*U^2+Q^4-2*Q^2)/4",
+      "p_wick_shifted_center": [
+        "iU=0",
+        "q+1=0"
+      ],
+      "point": [
+        "0",
+        "-1"
+      ]
+    },
+    "real_well_1": {
+      "alpha": "0",
+      "point": [
+        "0",
+        "0"
+      ]
+    },
+    "real_well_2": {
+      "alpha": "0",
+      "point": [
+        "0",
+        "-2"
+      ]
+    },
+    "upper_saddle": {
+      "alpha": "1/8",
+      "hessian_determinant": "-14",
+      "point": [
+        "1/2",
+        "-1+sqrt(7)/2"
+      ]
+    }
+  },
+  "curve": {
+    "equation": "alpha=p^2+q^2+q^3-3*p^2*q+(p^4-6*p^2*q^2+q^4)/4",
+    "parameter": "alpha=2H",
+    "period_form": "omega=2*dq/rho=dq/H_p",
+    "rho": "p*(p^2+2-6*q-3*q^2)"
+  },
+  "figure_quantization": {
+    "action": "I=Area(C_E)/(2*pi)",
+    "convention": "L midpoint action levels f_n=(n+1/2)/L, n=0,...,L-1",
+    "generator": "generate_quantized_levels.py",
+    "level_count": 11,
+    "specification": "quantization_spec.json",
+    "table": "quantized_levels_for_figure.csv"
+  },
+  "periods": {
+    "T1": {
+      "cycle": "real oval around (p,q)=(0,0)",
+      "integerized_series": "T1(8x)=1+12x+372x^2+15120x^3+706020x^4+35692272x^5+...",
+      "normalization": "T1(0)=1"
+    },
+    "T2": {
+      "cycle": "full p-Wick oval gamma_z^(2) in (ip,q) around (0,-1)",
+      "definition": "T2(z)=sqrt(5)/(4*pi)*integral_{gamma_z^(2)} i*omega",
+      "harmonic_frequency": "sqrt(5)/2",
+      "harmonic_period": "4*pi/sqrt(5)",
+      "integerized_series": "T2(1/4-100x)=1+108x+24420x^2+6819120x^3+2096600100x^4+681263917488x^5+...",
+      "normalization": "T2(1/4)=1",
+      "relation_to_saddle_normalized_branch": "T2=sqrt(10/7)*T2_saddle, where T2_saddle(1/8)=1 and T2_saddle(1/4)=sqrt(7/10)",
+      "value_at_1_8": "sqrt(10/7)"
+    }
+  },
+  "schema": "circle-triangle-square-certificate-v1.1",
+  "title": "Circle Triangle Square Periods certificate",
+  "verification": {
+    "command": "python3 verify_certificate.py",
+    "exact_checks": true,
+    "expected_stdout_contains": "PASS",
+    "high_precision_abel_check_digits": 38,
+    "high_precision_connection_check_digits": 35,
+    "high_precision_green_cycle_quadrature": true,
+    "page_series_centered_at": "z=1/4",
+    "proof_level_check_count": 13,
+    "claim_index": "claim_index.json",
+    "verification_results": "verification_results.json",
+    "quantized_level_replay": true
+  }
+}

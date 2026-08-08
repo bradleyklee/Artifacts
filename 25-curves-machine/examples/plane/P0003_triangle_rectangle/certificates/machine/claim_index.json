@@ -1,0 +1,281 @@
+{
+  "schema": "triangle-rectangle-visible-claim-index/1.0",
+  "purpose": "Map every visible certificate row to data and executable checks.",
+  "rows": [
+    {
+      "page": 1,
+      "label": "Figure (a): quantized cycles",
+      "payload_paths": [
+        "figure_quantization"
+      ],
+      "checks": [
+        "figure_midpoint_action_quantization"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "The mu-stratum",
+      "payload_paths": [
+        "curve.mu_family",
+        "curve.parameter"
+      ],
+      "checks": [
+        "mu_reflection_unique"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Transform",
+      "payload_paths": [
+        "curve.reflection_defect",
+        "curve.distinguished_mu",
+        "critical_points.barrier_center"
+      ],
+      "checks": [
+        "mu_reflection_unique",
+        "critical_points_and_abel_wick_center"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Curve",
+      "payload_paths": [
+        "curve.equation",
+        "curve.rho"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Period form",
+      "payload_paths": [
+        "curve.period_form"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Real period",
+      "payload_paths": [
+        "periods.T1"
+      ],
+      "checks": [
+        "integer_period_series",
+        "abel_wronskian_identity"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Complex period",
+      "payload_paths": [
+        "periods.T2"
+      ],
+      "checks": [
+        "critical_points_and_abel_wick_center",
+        "integer_period_series",
+        "abel_wronskian_identity"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Hypergeometric",
+      "payload_paths": [
+        "hypergeometric.T1",
+        "hypergeometric.chi"
+      ],
+      "checks": [
+        "legendre_to_modular_hypergeometric_pullback"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Abel's identity",
+      "payload_paths": [
+        "abel_identity"
+      ],
+      "checks": [
+        "abel_wronskian_identity"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Annihilator",
+      "payload_paths": [
+        "operator"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Factorization",
+      "payload_paths": [
+        "operator.self_adjoint"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Certificate",
+      "payload_paths": [
+        "certificate"
+      ],
+      "checks": [
+        "plane_operator_and_exact_certificate"
+      ]
+    },
+    {
+      "page": 1,
+      "label": "Series",
+      "payload_paths": [
+        "periods.T1.integerized_series",
+        "periods.T2.integerized_series"
+      ],
+      "checks": [
+        "integer_period_series"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Birational maps",
+      "payload_paths": [
+        "elliptic_normalization.coordinates",
+        "elliptic_normalization.auxiliary"
+      ],
+      "checks": [
+        "plane_birational_forward_inverse",
+        "plane_invariant_differential"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Jacobi quartic",
+      "payload_paths": [
+        "elliptic_normalization.quartic",
+        "elliptic_normalization.differential"
+      ],
+      "checks": [
+        "jacobi_quartic_and_discriminant",
+        "plane_invariant_differential"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Quartic period",
+      "payload_paths": [
+        "proof_chain.signature_four"
+      ],
+      "checks": [
+        "signature_four_ode_pullback"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Birational again",
+      "payload_paths": [
+        "jacobi_legendre"
+      ],
+      "checks": [
+        "legendre_birational_curve_and_differential",
+        "signature_four_to_legendre_quadratic_pullback",
+        "alpha_m_X_parameter_chain"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Legendre cubic",
+      "payload_paths": [
+        "jacobi_legendre.curve",
+        "jacobi_legendre.differential"
+      ],
+      "checks": [
+        "legendre_birational_curve_and_differential"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Cubic period",
+      "payload_paths": [
+        "jacobi_legendre.period"
+      ],
+      "checks": [
+        "legendre_K_normalization"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Three periods",
+      "payload_paths": [
+        "proof_chain.three_periods",
+        "hypergeometric"
+      ],
+      "checks": [
+        "signature_four_ode_pullback",
+        "signature_four_to_legendre_quadratic_pullback",
+        "legendre_to_modular_hypergeometric_pullback",
+        "alpha_m_X_parameter_chain"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Eisenstein root",
+      "payload_paths": [
+        "modular.eisenstein_root"
+      ],
+      "checks": [
+        "eisenstein_fourth_root_ode"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Parameter chain",
+      "payload_paths": [
+        "modular.X",
+        "jacobi_legendre.k"
+      ],
+      "checks": [
+        "alpha_m_X_parameter_chain"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Same fourth root",
+      "payload_paths": [
+        "proof_chain.same_fourth_root"
+      ],
+      "checks": [
+        "legendre_to_modular_hypergeometric_pullback",
+        "eisenstein_fourth_root_ode"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Algebraic factor",
+      "payload_paths": [
+        "proof_chain.algebraic_factor"
+      ],
+      "checks": [
+        "ramanujan_algebraic_factor"
+      ]
+    },
+    {
+      "page": 2,
+      "label": "Ramanujan",
+      "payload_paths": [
+        "modular.ramanujan_identity",
+        "modular.source"
+      ],
+      "checks": [
+        "eisenstein_fourth_root_ode",
+        "ramanujan_algebraic_factor"
+      ]
+    }
+  ]
+}

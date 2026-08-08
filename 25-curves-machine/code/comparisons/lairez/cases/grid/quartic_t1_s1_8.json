@@ -1,0 +1,34 @@
+{
+  "name": "quartic_t1_s1_8",
+  "description": "generated mixed_quartic harmonic benchmark",
+  "benchmark_group": "mixed_quartic",
+  "variables": [
+    "p",
+    "q"
+  ],
+  "parameter": "alpha",
+  "harmonic_terms": [
+    {
+      "degree": 3,
+      "mode": 3,
+      "coefficient": "1"
+    },
+    {
+      "degree": 4,
+      "mode": 4,
+      "coefficient": "1/8"
+    }
+  ],
+  "energy_E_equals_2H": "p^2 + q^2 + (1)*((1)*q^3 + (-3)*p^2*q^1) + (1/8)*((1)*q^4 + (-6)*p^2*q^2 + (1)*p^4)",
+  "klee_config": {
+    "order": 4,
+    "q_degree": 21,
+    "p_degrees": [
+      0,
+      2
+    ],
+    "support": "rectangular"
+  },
+  "lairez_input": "2/(E-alpha)",
+  "scaling_invariant_tau_equals_c3_squared_over_c4": "8"
+}

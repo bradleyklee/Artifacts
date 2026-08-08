@@ -1,0 +1,437 @@
+{
+  "example_id": "weird_quintic_p_even",
+  "symmetry_sector": "p-even primitive numerator; no q parity restriction",
+  "records": [
+    {
+      "order": 1,
+      "q_bound": 0,
+      "ambient_rows": 20,
+      "exact_columns": 2,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0055
+    },
+    {
+      "order": 1,
+      "q_bound": 1,
+      "ambient_rows": 22,
+      "exact_columns": 4,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0117
+    },
+    {
+      "order": 1,
+      "q_bound": 2,
+      "ambient_rows": 24,
+      "exact_columns": 6,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.026
+    },
+    {
+      "order": 1,
+      "q_bound": 3,
+      "ambient_rows": 26,
+      "exact_columns": 8,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0615
+    },
+    {
+      "order": 1,
+      "q_bound": 4,
+      "ambient_rows": 28,
+      "exact_columns": 10,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.1333
+    },
+    {
+      "order": 1,
+      "q_bound": 5,
+      "ambient_rows": 30,
+      "exact_columns": 12,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.2514
+    },
+    {
+      "order": 1,
+      "q_bound": 6,
+      "ambient_rows": 32,
+      "exact_columns": 14,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.4238
+    },
+    {
+      "order": 1,
+      "q_bound": 7,
+      "ambient_rows": 34,
+      "exact_columns": 16,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.6349
+    },
+    {
+      "order": 1,
+      "q_bound": 8,
+      "ambient_rows": 36,
+      "exact_columns": 18,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.9353
+    },
+    {
+      "order": 1,
+      "q_bound": 9,
+      "ambient_rows": 38,
+      "exact_columns": 20,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 1.3201
+    },
+    {
+      "order": 1,
+      "q_bound": 10,
+      "ambient_rows": 40,
+      "exact_columns": 22,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 1.8103
+    },
+    {
+      "order": 1,
+      "q_bound": 11,
+      "ambient_rows": 42,
+      "exact_columns": 24,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 2.3731
+    },
+    {
+      "order": 1,
+      "q_bound": 12,
+      "ambient_rows": 44,
+      "exact_columns": 26,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 3.1438
+    },
+    {
+      "order": 1,
+      "q_bound": 13,
+      "ambient_rows": 46,
+      "exact_columns": 28,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 3.9816
+    },
+    {
+      "order": 1,
+      "q_bound": 14,
+      "ambient_rows": 48,
+      "exact_columns": 30,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 5.1891
+    },
+    {
+      "order": 1,
+      "q_bound": 15,
+      "ambient_rows": 50,
+      "exact_columns": 32,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 6.5424
+    },
+    {
+      "order": 1,
+      "q_bound": 16,
+      "ambient_rows": 52,
+      "exact_columns": 34,
+      "derivative_columns": 2,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 8.0863
+    },
+    {
+      "order": 2,
+      "q_bound": 0,
+      "ambient_rows": 34,
+      "exact_columns": 2,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0202
+    },
+    {
+      "order": 2,
+      "q_bound": 1,
+      "ambient_rows": 34,
+      "exact_columns": 4,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0325
+    },
+    {
+      "order": 2,
+      "q_bound": 2,
+      "ambient_rows": 34,
+      "exact_columns": 6,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0649
+    },
+    {
+      "order": 2,
+      "q_bound": 3,
+      "ambient_rows": 34,
+      "exact_columns": 8,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.1188
+    },
+    {
+      "order": 2,
+      "q_bound": 4,
+      "ambient_rows": 34,
+      "exact_columns": 10,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.2031
+    },
+    {
+      "order": 2,
+      "q_bound": 5,
+      "ambient_rows": 34,
+      "exact_columns": 12,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.3734
+    },
+    {
+      "order": 2,
+      "q_bound": 6,
+      "ambient_rows": 34,
+      "exact_columns": 14,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.5792
+    },
+    {
+      "order": 2,
+      "q_bound": 7,
+      "ambient_rows": 34,
+      "exact_columns": 16,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.8753
+    },
+    {
+      "order": 2,
+      "q_bound": 8,
+      "ambient_rows": 36,
+      "exact_columns": 18,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 1.2656
+    },
+    {
+      "order": 2,
+      "q_bound": 9,
+      "ambient_rows": 38,
+      "exact_columns": 20,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 1.7626
+    },
+    {
+      "order": 2,
+      "q_bound": 10,
+      "ambient_rows": 40,
+      "exact_columns": 22,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 2.3042
+    },
+    {
+      "order": 2,
+      "q_bound": 11,
+      "ambient_rows": 42,
+      "exact_columns": 24,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 3.0225
+    },
+    {
+      "order": 2,
+      "q_bound": 12,
+      "ambient_rows": 44,
+      "exact_columns": 26,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 3.9796
+    },
+    {
+      "order": 2,
+      "q_bound": 13,
+      "ambient_rows": 46,
+      "exact_columns": 28,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 5.0135
+    },
+    {
+      "order": 2,
+      "q_bound": 14,
+      "ambient_rows": 48,
+      "exact_columns": 30,
+      "derivative_columns": 3,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 6.5118
+    },
+    {
+      "order": 3,
+      "q_bound": 0,
+      "ambient_rows": 52,
+      "exact_columns": 2,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0803
+    },
+    {
+      "order": 3,
+      "q_bound": 1,
+      "ambient_rows": 52,
+      "exact_columns": 4,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.0955
+    },
+    {
+      "order": 3,
+      "q_bound": 2,
+      "ambient_rows": 52,
+      "exact_columns": 6,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.1551
+    },
+    {
+      "order": 3,
+      "q_bound": 3,
+      "ambient_rows": 52,
+      "exact_columns": 8,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.2298
+    },
+    {
+      "order": 3,
+      "q_bound": 4,
+      "ambient_rows": 52,
+      "exact_columns": 10,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.3586
+    },
+    {
+      "order": 3,
+      "q_bound": 5,
+      "ambient_rows": 52,
+      "exact_columns": 12,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.5829
+    },
+    {
+      "order": 3,
+      "q_bound": 6,
+      "ambient_rows": 52,
+      "exact_columns": 14,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 0.8916
+    },
+    {
+      "order": 3,
+      "q_bound": 7,
+      "ambient_rows": 52,
+      "exact_columns": 16,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 1.2713
+    },
+    {
+      "order": 3,
+      "q_bound": 8,
+      "ambient_rows": 52,
+      "exact_columns": 18,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 1.78
+    },
+    {
+      "order": 3,
+      "q_bound": 9,
+      "ambient_rows": 52,
+      "exact_columns": 20,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 2.3609
+    },
+    {
+      "order": 3,
+      "q_bound": 10,
+      "ambient_rows": 52,
+      "exact_columns": 22,
+      "derivative_columns": 4,
+      "combined_nullity": 0,
+      "relation_dimension": 0,
+      "seconds": 3.1069
+    }
+  ],
+  "status": "bounded search only; no finite stopping theorem supplied"
+}

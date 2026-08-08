@@ -1,0 +1,23 @@
+{
+  "status": "resolved",
+  "source_model": "Harter-Weeks sixth-rank icosahedral rotational-energy surface",
+  "source_url": "https://modphys.hosted.uark.edu/pdfs/Journal_Pdfs/Rotation%E2%80%93vibration_spectra_of_icosahedral_molecules._I._Icosahedral_symmetry_analysis_and_fine_structure_-_harter-weeks-jcp-1989.pdf",
+  "raw_energy_critical_values": ["1", "-5/9", "-5/16"],
+  "raw_reduction_operator_low_to_high": [
+    "140*alpha",
+    "2*(216*alpha^2-19*alpha-50)",
+    "(alpha-1)*(9*alpha+5)*(16*alpha+5)"
+  ],
+  "raw_reduction_matrix_shape": [11, 3],
+  "raw_reduction_residual": "0",
+  "comparison_result": "exact operator but not Chapter-4 energy convention",
+  "affine_adapter": "alpha_ch4=(16*alpha_raw+5)/21",
+  "critical_value_mapping": {
+    "1": "1",
+    "-5/9": "-5/27",
+    "-5/16": "0"
+  },
+  "chapter4_h1": "11*lambda^6-15*lambda^4+5*lambda^2",
+  "chapter4_h2": "2*lambda*(1-lambda^2)^(5/2)",
+  "chapter4_result_file": "icosahedral_search.json"
+}

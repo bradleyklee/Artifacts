@@ -1,0 +1,14 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C02",
+  "slug": "polar_period_chart",
+  "name": "Polar/action chart",
+  "kind": "action_angle",
+  "variables": [
+    "lambda",
+    "phi"
+  ],
+  "constraints": [],
+  "notes": "Used for contour and period reconstruction in the certificate payload.",
+  "global": false
+}

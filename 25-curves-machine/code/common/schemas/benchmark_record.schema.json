@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"benchmark_record.schema.json","title":"Benchmark and stage timing record","type":"object",
+  "required":["record_type","run_id","case_id","engine","workload","environment","timing_policy","status"],
+  "properties":{"record_type":{"const":"benchmark"},"run_id":{"type":"string"},"case_id":{"type":"string"},"engine":{"type":"string"},"workload":{"type":"object"},"environment":{"type":"object"},"timing_policy":{"type":"object"},"runs_wall_seconds":{"type":"array","items":{"type":"number"}},"stage_timings_seconds":{"type":"object"},"peak_memory_bytes":{"type":["integer","null"]},"status":{"type":"string"},"source_ref":{"type":"string"}},"additionalProperties":true
+}

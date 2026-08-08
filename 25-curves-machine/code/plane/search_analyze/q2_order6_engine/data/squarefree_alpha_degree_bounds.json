@@ -1,0 +1,240 @@
+{
+  "status": "SAFE_DEGREE_BOUND",
+  "scope": "squarefree quartic branch under the stated rank/nullity assumptions",
+  "records": [
+    {
+      "order": 1,
+      "support_bound": 3,
+      "source_columns_including_kernel": 10,
+      "gauge_fixed_source_columns": 9,
+      "derivative_column_alpha_degree_bounds": [
+        1,
+        0
+      ],
+      "sum_derivative_column_degree_bounds": 1,
+      "primitive_coordinate_degree_bound": 17,
+      "operator_coordinate_degree_bounds": [
+        18,
+        19
+      ],
+      "uniform_kernel_coordinate_degree_bound": 19,
+      "safe_projective_interpolation_samples": 39
+    },
+    {
+      "order": 2,
+      "support_bound": 9,
+      "source_columns_including_kernel": 34,
+      "gauge_fixed_source_columns": 33,
+      "derivative_column_alpha_degree_bounds": [
+        3,
+        2,
+        1
+      ],
+      "sum_derivative_column_degree_bounds": 6,
+      "primitive_coordinate_degree_bound": 70,
+      "operator_coordinate_degree_bounds": [
+        69,
+        70,
+        71
+      ],
+      "uniform_kernel_coordinate_degree_bound": 71,
+      "safe_projective_interpolation_samples": 143
+    },
+    {
+      "order": 3,
+      "support_bound": 15,
+      "source_columns_including_kernel": 58,
+      "gauge_fixed_source_columns": 57,
+      "derivative_column_alpha_degree_bounds": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "sum_derivative_column_degree_bounds": 10,
+      "primitive_coordinate_degree_bound": 122,
+      "operator_coordinate_degree_bounds": [
+        120,
+        121,
+        122,
+        123
+      ],
+      "uniform_kernel_coordinate_degree_bound": 123,
+      "safe_projective_interpolation_samples": 247
+    },
+    {
+      "order": 4,
+      "support_bound": 21,
+      "source_columns_including_kernel": 82,
+      "gauge_fixed_source_columns": 81,
+      "derivative_column_alpha_degree_bounds": [
+        6,
+        5,
+        4,
+        3,
+        2
+      ],
+      "sum_derivative_column_degree_bounds": 20,
+      "primitive_coordinate_degree_bound": 180,
+      "operator_coordinate_degree_bounds": [
+        176,
+        177,
+        178,
+        179,
+        180
+      ],
+      "uniform_kernel_coordinate_degree_bound": 180,
+      "safe_projective_interpolation_samples": 361
+    },
+    {
+      "order": 5,
+      "support_bound": 27,
+      "source_columns_including_kernel": 106,
+      "gauge_fixed_source_columns": 105,
+      "derivative_column_alpha_degree_bounds": [
+        7,
+        6,
+        5,
+        4,
+        3,
+        2
+      ],
+      "sum_derivative_column_degree_bounds": 27,
+      "primitive_coordinate_degree_bound": 235,
+      "operator_coordinate_degree_bounds": [
+        230,
+        231,
+        232,
+        233,
+        234,
+        235
+      ],
+      "uniform_kernel_coordinate_degree_bound": 235,
+      "safe_projective_interpolation_samples": 471
+    },
+    {
+      "order": 6,
+      "support_bound": 33,
+      "source_columns_including_kernel": 130,
+      "gauge_fixed_source_columns": 129,
+      "derivative_column_alpha_degree_bounds": [
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3
+      ],
+      "sum_derivative_column_degree_bounds": 42,
+      "primitive_coordinate_degree_bound": 298,
+      "operator_coordinate_degree_bounds": [
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297
+      ],
+      "uniform_kernel_coordinate_degree_bound": 298,
+      "safe_projective_interpolation_samples": 597
+    },
+    {
+      "order": 7,
+      "support_bound": 39,
+      "source_columns_including_kernel": 154,
+      "gauge_fixed_source_columns": 153,
+      "derivative_column_alpha_degree_bounds": [
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4,
+        3
+      ],
+      "sum_derivative_column_degree_bounds": 52,
+      "primitive_coordinate_degree_bound": 356,
+      "operator_coordinate_degree_bounds": [
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355
+      ],
+      "uniform_kernel_coordinate_degree_bound": 356,
+      "safe_projective_interpolation_samples": 713
+    },
+    {
+      "order": 8,
+      "support_bound": 45,
+      "source_columns_including_kernel": 178,
+      "gauge_fixed_source_columns": 177,
+      "derivative_column_alpha_degree_bounds": [
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4
+      ],
+      "sum_derivative_column_degree_bounds": 72,
+      "primitive_coordinate_degree_bound": 424,
+      "operator_coordinate_degree_bounds": [
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421,
+        422
+      ],
+      "uniform_kernel_coordinate_degree_bound": 424,
+      "safe_projective_interpolation_samples": 849
+    },
+    {
+      "order": 9,
+      "support_bound": 51,
+      "source_columns_including_kernel": 202,
+      "gauge_fixed_source_columns": 201,
+      "derivative_column_alpha_degree_bounds": [
+        13,
+        12,
+        11,
+        10,
+        9,
+        8,
+        7,
+        6,
+        5,
+        4
+      ],
+      "sum_derivative_column_degree_bounds": 85,
+      "primitive_coordinate_degree_bound": 485,
+      "operator_coordinate_degree_bounds": [
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483
+      ],
+      "uniform_kernel_coordinate_degree_bound": 485,
+      "safe_projective_interpolation_samples": 971
+    }
+  ]
+}

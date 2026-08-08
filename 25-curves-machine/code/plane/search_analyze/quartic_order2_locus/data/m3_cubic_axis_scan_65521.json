@@ -1,0 +1,40 @@
+{
+  "example_id": "m3_cubic_axis",
+  "prime": 65521,
+  "nterms": 200,
+  "max_order": 6,
+  "degree_cap": 35,
+  "records": [
+    {
+      "order": 1,
+      "degree_cap": 35,
+      "cap_nullity": 0,
+      "shape": [
+        199,
+        72
+      ],
+      "seconds_cap": 0.008229732513427734
+    },
+    {
+      "order": 2,
+      "degree_cap": 35,
+      "cap_nullity": 32,
+      "shape": [
+        198,
+        108
+      ],
+      "seconds_cap": 0.011966228485107422,
+      "first_degree": 4,
+      "first_nullity": 1,
+      "first_shape": [
+        198,
+        15
+      ]
+    }
+  ],
+  "first_hit": {
+    "order": 2,
+    "degree": 4,
+    "nullity": 1
+  }
+}

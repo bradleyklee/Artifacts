@@ -1,0 +1,54 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "B0001",
+  "slug": "platonic_plane_sphere_bridges",
+  "display_name": "Platonic Plane-Sphere Bridge Corpus",
+  "aliases": [
+    "platonic_bridge"
+  ],
+  "domain": "bridges",
+  "status": "mixed_exact_numeric",
+  "summary": "Exact and numerical maps connecting octahedral/icosahedral sphere quotients, even quartics, and Triangle-Rectangle models.",
+  "representations": [
+    "C01",
+    "C02",
+    "C03"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed bridge-data check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py B0001",
+      "cost": "normal"
+    },
+    {
+      "label": "Exact Tschirnhaus map",
+      "cwd": "examples/bridges/B0001_platonic_plane_sphere_bridges/scripts/runner",
+      "command": "python3 code/verify_icosahedral_branchpoint_tschirnhaus_map_v1.py",
+      "cost": "normal"
+    },
+    {
+      "label": "Exact cubic-to-even-quartic map",
+      "cwd": "examples/bridges/B0001_platonic_plane_sphere_bridges/scripts/runner",
+      "command": "python3 code/verify_icosahedral_quotient_to_even_quartic_exact_proof_v1.py",
+      "cost": "normal"
+    },
+    {
+      "label": "Full bridge verifier set",
+      "cwd": "examples/bridges/B0001_platonic_plane_sphere_bridges/scripts/runner",
+      "command": "for f in code/verify_*.py; do python3 \"$f\"; done",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-015_ICOSAHEDRAL_NORMALIZE_ELIMINATE_REDUCE.md"
+  ],
+  "related_cases": [
+    "P0003",
+    "S0004",
+    "S0005"
+  ],
+  "source_paths": [
+    "backends/sphere_curves/platonic_bridge"
+  ]
+}

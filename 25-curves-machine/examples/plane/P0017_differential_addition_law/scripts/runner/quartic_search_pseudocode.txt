@@ -1,0 +1,21 @@
+
+INPUT: quartic Hamiltonian H(p,q; parameters), energy alpha.
+
+1. Determine whether the normalized level curve has genus one, or whether the
+   time differential descends to a genus-one quotient.
+2. Search for a rational section O(alpha).  Without O there is no binary group
+   law over the coefficient field; continue instead with a ternary torsor law.
+3. Choose pole bounds from L(2O), L(3O), or from observed denominator divisors.
+4. Set rational ansatz M(P1,P2)=(P,Q).
+5. Impose:
+      H(P,Q)=alpha,
+      M(P,O)=P, M(O,Q)=Q,
+      H_p(P_i) Q_{q_i} - H_q(P_i) Q_{p_i} = H_p(M), i=1,2.
+6. Solve coefficient equations modularly, reconstruct over Q(parameters), and
+   verify exactly modulo the two input curve ideals.
+7. If binary search fails because no rational section exists, search ternary
+   tau(P,Q,R) with
+      tau^*omega = omega_P - omega_Q + omega_R.
+8. Once a rational point P0 is found after specialization, recover a binary law
+   by P (+) Q = tau(P,P0,Q), then generate/extrapolate rational points.
+

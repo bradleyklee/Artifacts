@@ -1,0 +1,60 @@
+{
+  "example_id": "factor_cubic_q_p2_plus_radial",
+  "prime": 65521,
+  "nterms": 165,
+  "max_order": 6,
+  "degree_cap": 35,
+  "records": [
+    {
+      "order": 1,
+      "degree_cap": 35,
+      "cap_nullity": 0,
+      "shape": [
+        164,
+        72
+      ],
+      "seconds_cap": 0.007590055465698242
+    },
+    {
+      "order": 2,
+      "degree_cap": 35,
+      "cap_nullity": 0,
+      "shape": [
+        163,
+        108
+      ],
+      "seconds_cap": 0.010644197463989258
+    },
+    {
+      "order": 3,
+      "degree_cap": 35,
+      "cap_nullity": 0,
+      "shape": [
+        162,
+        144
+      ],
+      "seconds_cap": 0.01578235626220703
+    },
+    {
+      "order": 4,
+      "degree_cap": 31,
+      "cap_nullity": 23,
+      "shape": [
+        161,
+        160
+      ],
+      "seconds_cap": 0.017466306686401367,
+      "first_degree": 9,
+      "first_nullity": 1,
+      "first_shape": [
+        161,
+        50
+      ]
+    }
+  ],
+  "first_hit": {
+    "order": 4,
+    "degree": 9,
+    "nullity": 1
+  }
+}

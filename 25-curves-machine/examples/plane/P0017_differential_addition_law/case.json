@@ -1,0 +1,30 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0017",
+  "slug": "differential_addition_law",
+  "display_name": "Differential Addition-Law Study",
+  "aliases": [
+    "edwards_quartic_addition"
+  ],
+  "domain": "plane",
+  "status": "partial_verified_study",
+  "summary": "Cubic and Edwards-quartic differential addition-law experiments and verification records.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Addition-law checks",
+      "cwd": "examples/plane/P0017_differential_addition_law/scripts/runner",
+      "command": "bash run_all.sh",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "examples/plane/P0017_differential_addition_law/scripts/runner/quartic_search_pseudocode.txt"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/plane_curves/search_analyze/differential_addition_law"
+  ]
+}

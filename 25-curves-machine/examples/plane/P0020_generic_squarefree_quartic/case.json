@@ -1,0 +1,38 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0020",
+  "slug": "generic_squarefree_quartic",
+  "display_name": "Generic Squarefree Quartic Coverage",
+  "aliases": [
+    "generic_asymmetric_q2"
+  ],
+  "domain": "plane",
+  "status": "modular_order6_partial",
+  "summary": "Coverage record for generic squarefree quartics: lower orders excluded at declared bounds and order six found modularly.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed coverage check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py P0020",
+      "cost": "normal"
+    },
+    {
+      "label": "Recompute Q2 universal bounds",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/plane/P0020_generic_squarefree_quartic/runs/replay_output && python3 algorithms/src/core/quartic_universal_bounds.py ../../examples/plane/P0007_q2_generic/results/model.json --output ../../examples/plane/P0020_generic_squarefree_quartic/runs/replay_output/q2_universal_bounds.json",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ANY_QUARTIC_REDUCTIVE_ALGORITHM.md",
+    "pseudo/sphere/ALG-004_FINITE_SUPPORT_EXHAUSTIVENESS.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/bounds",
+    "branches/worktrees/sphere_curves/data/examples/quartic_order6"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0008",
+  "slug": "dihedral_comparison",
+  "display_name": "Dihedral Sphere Comparison",
+  "aliases": [
+    "dihedral_comparison"
+  ],
+  "domain": "sphere",
+  "status": "verified_study",
+  "summary": "Filed sphere calculation/study from the verified sphere branch.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed study check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py S0008",
+      "cost": "normal"
+    },
+    {
+      "label": "Full deductive comparison",
+      "cwd": "code/sphere",
+      "command": "python3 algorithms/scripts/replay_dihedral_sphere_comparison.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-009_DIHEDRAL_ODE_SPHERE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/dihedral_sphere_comparison.json"
+  ]
+}

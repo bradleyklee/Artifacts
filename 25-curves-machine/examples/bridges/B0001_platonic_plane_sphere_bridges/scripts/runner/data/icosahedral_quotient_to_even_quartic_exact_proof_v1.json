@@ -1,0 +1,26 @@
+{
+  "status": "quotient_level_birational_map_closed",
+  "identity": "12*y^2=-(x^2-a^2)*(x^2-b^2)",
+  "relations": {
+    "cubic": "S^2=-(R-e1)(R-e2)(R-e3)",
+    "cross_ratio": "k^2=(e3-e1)/(e3-e2)",
+    "a_b": "a=b*(1+k)/(1-k)",
+    "D": "(1-k)R-(e1-k e2)",
+    "x": "b*((1+k)R-(e1+k e2))/D",
+    "y": "b*(a-b)*(e2-e1)/(sqrt(3)*sqrt(e3-e2))*S/D^2"
+  },
+  "verification": "exact symbolic zero",
+  "solved": [
+    "beta_to_z_to_alpha",
+    "Tschirnhaus_branchpoint_map",
+    "edge_D2_cross_ratio",
+    "quotient_cubic_to_even_quartic",
+    "even_quartic_to_triangle_rectangle"
+  ],
+  "open": [
+    "explicit sphere invariant substitution",
+    "Lie_Poisson differential",
+    "global physical cycle",
+    "face_and_vertex branches"
+  ]
+}

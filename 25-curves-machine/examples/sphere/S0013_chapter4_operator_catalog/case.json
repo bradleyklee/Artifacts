@@ -1,0 +1,31 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0013",
+  "slug": "chapter4_operator_catalog",
+  "display_name": "Chapter 4 Sphere Operator Catalog",
+  "aliases": [
+    "chapter4_operator_catalog"
+  ],
+  "domain": "sphere",
+  "status": "transcribed_verified",
+  "summary": "Filed sphere calculation/study from the verified sphere branch.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Asymmetric regression replay",
+      "cwd": "code/sphere",
+      "command": "python3 algorithms/scripts/replay_even_sphere_asymmetric.py",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-007_SPHERE_CURVE_BRANCH.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/chapter4_operator_catalog.json"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C01",
+  "slug": "sphere_models",
+  "name": "Sphere-side models",
+  "kind": "sphere_cartesian",
+  "variables": [
+    "Jx",
+    "Jy",
+    "Jz"
+  ],
+  "constraints": [],
+  "notes": ""
+}

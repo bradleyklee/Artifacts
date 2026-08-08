@@ -1,0 +1,18 @@
+{
+  "example_id": "simple_cubic_factor",
+  "order": 2,
+  "degree": 2,
+  "coefficients": [
+    {
+      "0": "3/16"
+    },
+    {
+      "0": "-25/8",
+      "1": "2"
+    },
+    {
+      "1": "-25/8",
+      "2": "1"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0001",
+  "slug": "triangle_square",
+  "display_name": "Triangle-Square",
+  "aliases": [
+    "plane.triangle_square"
+  ],
+  "domain": "plane",
+  "status": "exact_certificate",
+  "summary": "Baseline exact order-two plane-curve example retained as a cross-method regression case.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Lairez-port triangle-square replay",
+      "cwd": "code/comparisons/lairez",
+      "command": "python3 lairez_port.py cases/triangle_square.json --max-order 5 --json-output /tmp/triangle_square_lairez.json",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-001_INDUCTIVE_SERIES_DISCOVERY.md",
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md",
+    "pseudo/comparisons/lairez/PSEUDOCODE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/sphere_curves/data/examples/triangle_square",
+    "backends/pierre_comparison/cases/triangle_square.json"
+  ]
+}

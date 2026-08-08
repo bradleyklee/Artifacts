@@ -1,0 +1,14 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C01",
+  "slug": "even_quartic",
+  "name": "Even quartic Cartesian model",
+  "kind": "plane_cartesian_family",
+  "variables": [
+    "p",
+    "q"
+  ],
+  "constraints": [],
+  "notes": "",
+  "global": true
+}

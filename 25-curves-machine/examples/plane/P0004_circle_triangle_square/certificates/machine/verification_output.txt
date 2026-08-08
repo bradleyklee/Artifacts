@@ -1,0 +1,3 @@
+QUANTIZED LEVELS PASS (11 real-action levels; IP energies tangent-matched)
+TANGENT MATCH PASS (energy preserved; shared turning-point tangent)
+Prior 13 proof-level checks unchanged from standardized v19 payload.

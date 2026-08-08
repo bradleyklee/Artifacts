@@ -1,0 +1,37 @@
+{
+  "example_id": "simple_even_quartic",
+  "status": "EXACT_REDUCTIVE_PASS",
+  "order": 2,
+  "q_bound": 5,
+  "rows": 22,
+  "exact_columns": 12,
+  "combined_rank": 14,
+  "nullspace_rows": 1,
+  "build_seconds": 0.13670897483825684,
+  "verify_seconds": 0.0036573410034179688,
+  "operator_coefficients": [
+    "1",
+    "8*alpha + 4",
+    "4*alpha**2 + 4*alpha"
+  ],
+  "operator_factored": [
+    "1",
+    "4*(2*alpha + 1)",
+    "4*alpha*(alpha + 1)"
+  ],
+  "operator_degrees": [
+    0,
+    1,
+    2
+  ],
+  "primitive_nonzero_blocks": 6,
+  "primitive_expanded_terms": 9,
+  "primitive_coefficients": {
+    "p^0 q^1": "16*alpha + 8",
+    "p^0 q^3": "alpha - 6",
+    "p^0 q^5": "1",
+    "p^2 q^1": "2*alpha - 10",
+    "p^2 q^3": "7/2",
+    "p^2 q^5": "-1/4"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "example_id": "mechanical_rotated_02",
+  "category": "mechanical_rotated",
+  "model_path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/mechanical_rotated_02.json",
+  "status": "PASS",
+  "quartic_infinity": {
+    "p4_nonzero": true,
+    "discriminant": "0",
+    "squarefree_at_infinity": false
+  },
+  "inductive": [
+    {
+      "example_id": "mechanical_rotated_02",
+      "prime": 65521,
+      "nterms": 270,
+      "max_order": 6,
+      "degree_cap": 35,
+      "records": [
+        {
+          "order": 1,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            269,
+            72
+          ],
+          "seconds_cap": 0.010001659393310547
+        },
+        {
+          "order": 2,
+          "degree_cap": 35,
+          "cap_nullity": 32,
+          "shape": [
+            268,
+            108
+          ],
+          "seconds_cap": 0.01514434814453125,
+          "first_degree": 4,
+          "first_nullity": 1,
+          "first_shape": [
+            268,
+            15
+          ]
+        }
+      ],
+      "first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mechanical_rotated_02",
+      "prime": 65497,
+      "nterms": 270,
+      "max_order": 6,
+      "degree_cap": 35,
+      "records": [
+        {
+          "order": 1,
+          "degree_cap": 35,
+          "cap_nullity": 0,
+          "shape": [
+            269,
+            72
+          ],
+          "seconds_cap": 0.010207653045654297
+        },
+        {
+          "order": 2,
+          "degree_cap": 35,
+          "cap_nullity": 32,
+          "shape": [
+            268,
+            108
+          ],
+          "seconds_cap": 0.015210151672363281,
+          "first_degree": 4,
+          "first_nullity": 1,
+          "first_shape": [
+            268,
+            15
+          ]
+        }
+      ],
+      "first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    }
+  ],
+  "inductive_agreement": true,
+  "first_hit": {
+    "order": 2,
+    "degree": 4,
+    "nullity": 1
+  },
+  "deductive_bound_status": "DEGENERATE_INFINITY_EMPIRICAL_ONLY",
+  "reductive": [
+    {
+      "prime": 65521,
+      "alpha": 7,
+      "records": [
+        {
+          "order": 1,
+          "bound": 9,
+          "rows": 46,
+          "source_columns": 34,
+          "rank_C": 33,
+          "rank_CW": 35,
+          "relation_dimension": 0,
+          "seconds": 0.12083554267883301,
+          "bound_status": "EMPIRICAL_NOT_PROVED"
+        },
+        {
+          "order": 2,
+          "bound": 15,
+          "rows": 70,
+          "source_columns": 58,
+          "rank_C": 57,
+          "rank_CW": 59,
+          "relation_dimension": 1,
+          "seconds": 0.28015780448913574,
+          "bound_status": "EMPIRICAL_NOT_PROVED"
+        }
+      ],
+      "first_hit": {
+        "order": 2,
+        "relation_dimension": 1
+      }
+    },
+    {
+      "prime": 65497,
+      "alpha": 11,
+      "records": [
+        {
+          "order": 1,
+          "bound": 9,
+          "rows": 46,
+          "source_columns": 34,
+          "rank_C": 33,
+          "rank_CW": 35,
+          "relation_dimension": 0,
+          "seconds": 0.12090182304382324,
+          "bound_status": "EMPIRICAL_NOT_PROVED"
+        },
+        {
+          "order": 2,
+          "bound": 15,
+          "rows": 70,
+          "source_columns": 58,
+          "rank_C": 57,
+          "rank_CW": 59,
+          "relation_dimension": 1,
+          "seconds": 0.27031469345092773,
+          "bound_status": "EMPIRICAL_NOT_PROVED"
+        }
+      ],
+      "first_hit": {
+        "order": 2,
+        "relation_dimension": 1
+      }
+    }
+  ],
+  "reductive_agreement": true,
+  "reductive_first_hit": {
+    "order": 2,
+    "relation_dimension": 1
+  },
+  "mode_agreement": true,
+  "seconds_total": 4.925618410110474
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "period-certificate-extended-comparison-v1",
+  "date": "2026-08-02",
+  "research_owner": "Bradley Klee",
+  "same_machine_single_threaded": true,
+  "cases": [
+    {"case":"square_only","degree":4,"order":2,"lairez_port_total_seconds":[1.5803,1.5861,1.7157],"lairez_median":1.5861,"lairez_certificate_assembly_seconds":[0.3104],"lairez_certificate_verified":true,"klee_total_seconds":[3.0233,2.9068,2.9728],"klee_median":2.9728,"hybrid_reconstruction_seconds":[0.6708],"operators_equal":true,"klee_primitive_terms":17},
+    {"case":"triangle_square","degree":4,"order":2,"lairez_port_total_seconds":[2.5845,2.3773,2.5716],"lairez_median":2.5716,"lairez_certificate_run_reduction_seconds":[2.7024],"lairez_certificate_assembly_seconds":[2.4121],"lairez_certificate_verified":true,"klee_fixed_support_total_seconds":[10.1564,9.9722,9.6868],"klee_fixed_support_median":9.9722,"klee_bounded_order_first_seconds":[23.2369],"hybrid_reconstruction_seconds":[8.1576,8.5329],"hybrid_equals_stored_primitive":true,"operators_equal":true,"klee_primitive_terms":71},
+    {"case":"hexagon_only","degree":6,"order":4,"lairez_port_total_seconds":[32.0131],"klee_weighted_bound_29":"NO_RELATION","klee_weighted_bound_35_seconds":[112.6311],"operators_equal":true,"klee_primitive_terms":120},
+    {"case":"square_hexagon","degree":6,"order":4,"lairez_port_total_seconds":[160.6270],"lairez_certificate_tracking_reduction_seconds":[157.7118],"lairez_expanded_certificate_total_timeout_seconds":360,"klee_total_seconds":[61.11,64.74,60.92],"klee_median":61.11,"operators_equal":true,"klee_primitive_terms":514},
+    {"case":"triangle_hexagon","degree":6,"status":"BOUNDED_STOP","lairez_derivative_2_seconds":49.8875,"lairez_derivative_3_seconds":83.8474,"note":"stopped during derivative 4; no ranking"}
+  ]
+}

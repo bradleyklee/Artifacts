@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "case_record.schema.json",
+  "title": "Geometry case record",
+  "type": "object",
+  "required": [
+    "case_id",
+    "name",
+    "geometry_domain",
+    "model",
+    "parameter_convention",
+    "status"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "geometry_domain": {
+      "type": "string"
+    },
+    "model": {
+      "type": "object"
+    },
+    "parameter_convention": {
+      "type": "object"
+    },
+    "symmetries": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "branch_origins": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "status": {
+      "enum": [
+        "registered",
+        "data_generation",
+        "pattern_candidate",
+        "deductive_reduction",
+        "raw_certificate",
+        "crystalline_success",
+        "pretty_certificate",
+        "regression_covered",
+        "bounded_failure",
+        "method_gap",
+        "timeout",
+        "memory_overflow",
+        "bug",
+        "environment_blocker"
+      ]
+    },
+    "raw_data_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "algorithm_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "certificate_refs": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

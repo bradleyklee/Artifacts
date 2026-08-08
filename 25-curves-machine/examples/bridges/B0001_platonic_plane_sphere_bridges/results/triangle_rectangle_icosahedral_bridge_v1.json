@@ -1,0 +1,47 @@
+{
+  "status": "exact_genus3_intermediate_bridge",
+  "same_tetrahedral_coordinates": {
+    "P": "X^2+Y^2+Z^2",
+    "A": "X^2Y^2+Y^2Z^2+Z^2X^2",
+    "r": "XYZ",
+    "s": "(X^2-Y^2)(Y^2-Z^2)(Z^2-X^2)"
+  },
+  "icosahedral_hamiltonian": "Q_I=(5/2)P*A-(55/2)r^2+(5*sqrt(5)/2)s",
+  "A4_quotient": {
+    "equation": "125*A^3-25*A^2-5*A*h-700*A*r^2+h^2+55*h*r^2+1600*r^4+125*r^2=0",
+    "generic_genus": 3,
+    "subgroup_index": 5
+  },
+  "map_to_235II": {
+    "R": "5*(4*A-1)*(-20*A+3*h+320*r^2)",
+    "S": "(8*sqrt(5)/5)*r*(-24000*A^3+14800*A^2-540*A*h-25600*A*r^2-2500*A+33*h^2+5440*h*r^2+50*h+204800*r^4+125)",
+    "degree": 5,
+    "time_form": "dt=-dR/(10*S)"
+  },
+  "D5_quotient": {
+    "equation": "Y^2=u*(4*u*(1-u)^5-(11*u^3-15*u^2+5*u-h)^2)",
+    "generic_genus": 3
+  },
+  "local_orders": {
+    "triangle_rectangle_alpha_0": 2,
+    "icosahedral_C2_h_0": 2,
+    "icosahedral_C3_h_minus_5_over_27": 3,
+    "icosahedral_C5_h_1": 5
+  },
+  "direct_equal_j": {
+    "irreducible": true,
+    "bidegree_alpha_h": [
+      6,
+      10
+    ],
+    "rational_component": false
+  },
+  "next": [
+    "Prym_decomposition",
+    "special_energy_splitting",
+    "small_degree_isogenies_to_235II",
+    "C3_C5_cycle_tracking",
+    "D3_subgroup_quotient",
+    "free_mu_235_ramification_search"
+  ]
+}

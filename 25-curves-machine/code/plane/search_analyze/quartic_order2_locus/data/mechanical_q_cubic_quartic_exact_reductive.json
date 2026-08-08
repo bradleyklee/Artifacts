@@ -1,0 +1,38 @@
+{
+  "example_id": "mechanical_q_cubic_quartic",
+  "status": "EXACT_REDUCTIVE_PASS",
+  "order": 2,
+  "q_bound": 6,
+  "rows": 19,
+  "exact_columns": 14,
+  "combined_rank": 15,
+  "nullspace_rows": 2,
+  "build_seconds": 0.042238473892211914,
+  "verify_seconds": 0.002306222915649414,
+  "operator_coefficients": [
+    "42960000*alpha**2 + 163868418*alpha + 82641195",
+    "458240000*alpha**3 + 1812496952*alpha**2 + 2046020088*alpha + 1186642800",
+    "229120000*alpha**4 + 979216952*alpha**3 + 1675572444*alpha**2 + 1186642800*alpha"
+  ],
+  "operator_factored": [
+    "3*(14320000*alpha**2 + 54622806*alpha + 27547065)",
+    "8*(57280000*alpha**3 + 226562119*alpha**2 + 255752511*alpha + 148330350)",
+    "4*alpha*(358*alpha + 651)*(160000*alpha**2 + 392861*alpha + 455700)"
+  ],
+  "operator_degrees": [
+    2,
+    3,
+    4
+  ],
+  "primitive_nonzero_blocks": 7,
+  "primitive_expanded_terms": 21,
+  "primitive_coefficients": {
+    "p^0 q^0": "-40096000*alpha**3 - 886609920*alpha**2 + 474657120*alpha",
+    "p^0 q^1": "-114560000*alpha**3 - 63738752*alpha**2 + 2530483872*alpha + 2373285600",
+    "p^0 q^2": "60144000*alpha**2 + 1329914880*alpha - 711985680",
+    "p^0 q^3": "470268800*alpha**2 + 1851173184*alpha + 457887360",
+    "p^0 q^4": "85920000*alpha**2 + 2087553888*alpha/5 - 533934576",
+    "p^0 q^5": "343680000*alpha**2/7 + 204058368*alpha - 36247680",
+    "p^0 q^6": "7990560*alpha - 62235600"
+  }
+}

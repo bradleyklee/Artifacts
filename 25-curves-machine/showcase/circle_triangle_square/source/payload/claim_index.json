@@ -1,0 +1,113 @@
+{
+  "certificate": "circle_triangle_square_periods_v19_source_standardized",
+  "visible_rows": [
+    {
+      "row": "Figure (a): action-quantized cycles",
+      "payload_paths": [
+        "figure_quantization"
+      ],
+      "checks": [
+        "figure_midpoint_action_quantization"
+      ]
+    },
+    {
+      "row": "Curve",
+      "payload_paths": [
+        "curve.hamiltonian",
+        "curve.rho"
+      ],
+      "checks": [
+        "curve_and_rho"
+      ]
+    },
+    {
+      "row": "Period form",
+      "payload_paths": [
+        "periods.period_form"
+      ],
+      "checks": [
+        "exact_differential_certificate"
+      ]
+    },
+    {
+      "row": "Real period",
+      "payload_paths": [
+        "periods.real"
+      ],
+      "checks": [
+        "real_and_complex_integer_series",
+        "scaled_ode_series_checks"
+      ]
+    },
+    {
+      "row": "Complex period",
+      "payload_paths": [
+        "periods.complex"
+      ],
+      "checks": [
+        "wick_center_transform",
+        "center_normalized_local_solution",
+        "harmonic_frequency_and_period",
+        "connection_across_apparent_singularity",
+        "full_green_cycle_quadrature"
+      ]
+    },
+    {
+      "row": "Abel's identity",
+      "payload_paths": [
+        "abel_identity"
+      ],
+      "checks": [
+        "abel_identity"
+      ]
+    },
+    {
+      "row": "Annihilator",
+      "payload_paths": [
+        "curve.annihilator"
+      ],
+      "checks": [
+        "annihilator_factorization",
+        "scaled_ode_series_checks"
+      ]
+    },
+    {
+      "row": "Factorization",
+      "payload_paths": [
+        "curve.factorization"
+      ],
+      "checks": [
+        "annihilator_factorization"
+      ]
+    },
+    {
+      "row": "Certificate",
+      "payload_paths": [
+        "curve.certificate"
+      ],
+      "checks": [
+        "exact_differential_certificate"
+      ]
+    },
+    {
+      "row": "Numerator coefficients",
+      "payload_paths": [
+        "curve.certificate"
+      ],
+      "checks": [
+        "exact_differential_certificate"
+      ]
+    },
+    {
+      "row": "Series",
+      "payload_paths": [
+        "periods.real",
+        "periods.complex"
+      ],
+      "checks": [
+        "real_and_complex_integer_series",
+        "center_normalized_local_solution"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "formula": {
+    "genus": "d^2-d+1",
+    "order_ceiling": "2d^2-2d+2"
+  },
+  "assumptions": [
+    "H restricted to X+Y+Z=L2 is a smooth degree-d plane curve",
+    "intersections with X=0,Y=0,Z=0 and infinity are transverse",
+    "period differential represents a second-kind/compact de Rham class",
+    "special symmetry or singularity may lower, never raise, the generic rank"
+  ],
+  "records": [
+    {
+      "degree_in_squared_variables": 1,
+      "degree_in_J": 2,
+      "base_plane_curve_genus": 0,
+      "generic_simple_branch_points": 4,
+      "even_quotient_curve_genus": 1,
+      "gauss_manin_rank": 2,
+      "generic_period_ode_order_ceiling": 2
+    },
+    {
+      "degree_in_squared_variables": 2,
+      "degree_in_J": 4,
+      "base_plane_curve_genus": 0,
+      "generic_simple_branch_points": 8,
+      "even_quotient_curve_genus": 3,
+      "gauss_manin_rank": 6,
+      "generic_period_ode_order_ceiling": 6
+    },
+    {
+      "degree_in_squared_variables": 3,
+      "degree_in_J": 6,
+      "base_plane_curve_genus": 1,
+      "generic_simple_branch_points": 12,
+      "even_quotient_curve_genus": 7,
+      "gauss_manin_rank": 14,
+      "generic_period_ode_order_ceiling": 14
+    },
+    {
+      "degree_in_squared_variables": 4,
+      "degree_in_J": 8,
+      "base_plane_curve_genus": 3,
+      "generic_simple_branch_points": 16,
+      "even_quotient_curve_genus": 13,
+      "gauss_manin_rank": 26,
+      "generic_period_ode_order_ceiling": 26
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+A5 = B1 o A4: PASS (common denominator degree 8)
+A6 = B2 o A4: PASS (common denominator degree 16)
+A8 = B4 o A4: PASS (common denominator degree 32)
+A12 = B8 o A4: PASS (common denominator degree 64)
+ORE_RELATIONS_PASS

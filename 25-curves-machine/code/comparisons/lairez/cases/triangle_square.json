@@ -1,0 +1,11 @@
+{
+  "name": "triangle_square",
+  "description": "circle + triangle + square plane-curve showcase",
+  "variables": ["p", "q"],
+  "parameter": "alpha",
+  "energy_E_equals_2H": "p^2 + q^2 + q^3 - 3*p^2*q + (p^4 - 6*p^2*q^2 + q^4)/4",
+  "known_operator_order": 2,
+  "known_leading_coefficient": "alpha*(alpha+6)*(4*alpha-1)*(8*alpha-1)*(17*alpha-3)",
+  "our_primitive_denominator": "rho^3, rho=(2H)_p=2H_p",
+  "lairez_input": "2/(E-alpha)"
+}

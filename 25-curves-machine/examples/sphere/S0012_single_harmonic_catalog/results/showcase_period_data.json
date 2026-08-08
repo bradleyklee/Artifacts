@@ -1,0 +1,44 @@
+{
+  "method": "Gauss-Legendre integration on the polar u-branch, followed by local beta-series fitting; exact normalized coefficients cross-checked from the Chapter 4 operators",
+  "energy_convention": "alpha=H",
+  "models": {
+    "asymmetric_1_2_5": {
+      "critical_energy": 5,
+      "variable": "beta=5-alpha",
+      "period_constant": "pi/(2*sqrt(3))",
+      "exact_coefficients_divided_by_period_constant": [
+        "1", "7/48", "33/1024", "3535/442368",
+        "713545/339738624", "345989/603979776",
+        "55822921/347892350976", "766124359/16698832846848",
+        "76015924985/5699868278390784"
+      ],
+      "quadrature_fit_coefficients": [
+        0.9068996821171141, 0.1322562036408831, 0.029226259359454634,
+        0.007247109853149188, 0.0019047697240685312,
+        0.0005192580772578887, 0.0001468598842836768,
+        0.000037561746553942555, 0.00001850045491919426
+      ],
+      "heldout_max_relative_residual": 7.34e-16
+    },
+    "octahedral": {
+      "critical_energy": 2,
+      "variable": "beta=2-alpha",
+      "period_constant": "pi/4",
+      "exact_coefficients_divided_by_period_constant": [
+        "1", "9/16", "405/1024", "4941/16384",
+        "1009665/4194304", "13303521/67108864",
+        "717823701/4294967296", "9866202165/68719476736",
+        "8814329319609/70368744177664"
+      ],
+      "quadrature_fit_coefficients": [
+        0.7853981634064195, 0.44178646465795995, 0.310631297193775,
+        0.23684884858123398, 0.18922176368789753,
+        0.1537014883626416, 0.14622866693331735,
+        0.04807065044689907, 0.23944592015207625
+      ],
+      "heldout_max_relative_residual": 8.57e-13,
+      "note": "high fitted coefficients are conditioning-sensitive; exact normalized coefficients are authoritative"
+    }
+  }
+}
+

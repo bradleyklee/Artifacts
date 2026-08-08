@@ -1,0 +1,82 @@
+{
+  "status": "relation_detected_operator_reconstruction_blocked",
+  "model": "z2",
+  "even_power_substitution": true,
+  "reduction_degree": 7,
+  "requested_max_order": 6,
+  "columns": [
+    {
+      "order": 0,
+      "seconds": 0.7852032219998364,
+      "matrix_shape": [
+        6,
+        1
+      ],
+      "rank": 1,
+      "nullity": 0
+    },
+    {
+      "order": 1,
+      "seconds": 0.95651842100051,
+      "matrix_shape": [
+        6,
+        2
+      ],
+      "rank": 2,
+      "nullity": 0
+    },
+    {
+      "order": 2,
+      "seconds": 1.2393579979998322,
+      "matrix_shape": [
+        6,
+        3
+      ],
+      "rank": 3,
+      "nullity": 0
+    },
+    {
+      "order": 3,
+      "seconds": 2.010268856998664,
+      "matrix_shape": [
+        6,
+        4
+      ],
+      "rank": 4,
+      "nullity": 0
+    },
+    {
+      "order": 4,
+      "seconds": 2.934065474999443,
+      "matrix_shape": [
+        6,
+        5
+      ],
+      "rank": 5,
+      "nullity": 0
+    },
+    {
+      "order": 5,
+      "seconds": 4.110302224999032,
+      "matrix_shape": [
+        6,
+        6
+      ],
+      "rank": 6,
+      "nullity": 0
+    },
+    {
+      "order": 6,
+      "seconds": 6.44152365699847,
+      "matrix_shape": [
+        6,
+        7
+      ],
+      "rank": 6,
+      "nullity": 1
+    }
+  ],
+  "blocked_during_order": 6,
+  "first_relation_order": 6,
+  "blocker": "exact null-vector normalization exceeded the 240-second process cap after exact ranks detected the one-dimensional relation"
+}

@@ -1,0 +1,39 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0006",
+  "slug": "icosahedral_plus_z",
+  "display_name": "Icosahedral Plus Jz",
+  "aliases": [
+    "icosahedral_perturbation_z"
+  ],
+  "domain": "sphere",
+  "status": "blocked_partial",
+  "summary": "Odd perturbation of the normalized icosahedral model; completed data retained at the external time limit.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed perturbation check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py S0006",
+      "cost": "normal"
+    },
+    {
+      "label": "Perturbation rerun",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/sphere/S0006_icosahedral_plus_z/runs/replay_output/examples/sphere_curves && CURVES_MACHINE_DATA_ROOT=../../examples/sphere/S0006_icosahedral_plus_z/runs/replay_output python3 algorithms/scripts/run_icosahedral_perturbation.py z",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-016_PERTURB_AND_RECORD.md"
+  ],
+  "related_cases": [
+    "S0005"
+  ],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/icosahedral_perturbation_z.json"
+  ]
+}

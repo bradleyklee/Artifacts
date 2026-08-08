@@ -1,0 +1,66 @@
+{
+  "example_id": "simple_cubic_factor",
+  "monomials": {
+    "3": [
+      [
+        3,
+        0,
+        "1/5"
+      ],
+      [
+        2,
+        1,
+        "-1/5"
+      ],
+      [
+        1,
+        2,
+        "-1/5"
+      ],
+      [
+        0,
+        3,
+        "1/5"
+      ]
+    ],
+    "4": []
+  },
+  "notes": "(p+q)(p-q)^2/5 cubic perturbation",
+  "modes": {},
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 3,
+      "coefficient": "1/5"
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "coefficient": "-1/5"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "-1/5"
+    },
+    {
+      "p": 3,
+      "q": 0,
+      "coefficient": "1/5"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(p,q)",
+    "(p,q)->(q,p)"
+  ]
+}

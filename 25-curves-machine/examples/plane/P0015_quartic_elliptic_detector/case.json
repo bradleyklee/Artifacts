@@ -1,0 +1,31 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0015",
+  "slug": "quartic_elliptic_detector",
+  "display_name": "Quartic Elliptic Detector Study",
+  "aliases": [
+    "even_quartic_klein"
+  ],
+  "domain": "plane",
+  "status": "verified_study",
+  "summary": "Regression study for detecting elliptic even-quartic models and comparing exact/modular series.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Elliptic detector regression",
+      "cwd": "examples/plane/P0015_quartic_elliptic_detector/scripts/runner",
+      "command": "python3 even_quartic_klein.py",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/plane/PLANE_CURVE_ODE_PSEUDOCODE_V0_2.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "backends/plane_curves/search_analyze/quartic_elliptic_detector"
+  ]
+}

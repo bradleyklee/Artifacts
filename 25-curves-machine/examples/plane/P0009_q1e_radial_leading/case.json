@@ -1,0 +1,37 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0009",
+  "slug": "q1e_radial_leading",
+  "display_name": "Q1e Radial-Leading Quartic",
+  "aliases": [
+    "q1e_exhaustive_certificate"
+  ],
+  "domain": "plane",
+  "status": "exact_certificate",
+  "summary": "Curated exact reductive example imported from the mixed quartic factory corpus.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed exact-record check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py P0009",
+      "cost": "normal"
+    },
+    {
+      "label": "Q1e exhaustive reconstruction",
+      "cwd": "code/plane/search_analyze/semi_random_quartics/src",
+      "command": "python3 q1e_exhaustive_certificate.py",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-001_INDUCTIVE_SERIES_DISCOVERY.md",
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/quartic_order4/q1e_exhaustive_certificate.json"
+  ]
+}

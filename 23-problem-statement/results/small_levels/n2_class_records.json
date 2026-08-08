@@ -1,0 +1,128 @@
+[
+  {
+    "tree": "⟨▪▪□□⟩",
+    "leaf_order_zero_based": [
+      0,
+      1
+    ],
+    "depth": 1,
+    "inflation": 1,
+    "grid_width": 2,
+    "taxicab_length": 4,
+    "normalized_value": 2.0,
+    "base_label_grid": [
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "chosen_xy": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ]
+    ],
+    "segments_xy": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "representative_index": 0
+  },
+  {
+    "tree": "⟨▪□▪□⟩",
+    "leaf_order_zero_based": [
+      0,
+      1
+    ],
+    "depth": 1,
+    "inflation": 1,
+    "grid_width": 2,
+    "taxicab_length": 4,
+    "normalized_value": 2.0,
+    "base_label_grid": [
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        2
+      ]
+    ],
+    "chosen_xy": [
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "segments_xy": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "representative_index": 1
+  }
+]

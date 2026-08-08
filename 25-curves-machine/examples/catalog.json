@@ -1,0 +1,365 @@
+{
+  "format": "curves-machine-catalog-v1",
+  "cases": [
+    {
+      "case_id": "P0001",
+      "slug": "triangle_square",
+      "display_name": "Triangle-Square",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0001_triangle_square",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0002",
+      "slug": "square_hexagon",
+      "display_name": "Square-Hexagon",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0002_square_hexagon",
+      "representation_count": 1,
+      "showcase": "showcase/square_hexagon"
+    },
+    {
+      "case_id": "P0003",
+      "slug": "triangle_rectangle",
+      "display_name": "Triangle-Rectangle",
+      "domain": "plane",
+      "status": "exact_certificate_showcase",
+      "path": "examples/plane/P0003_triangle_rectangle",
+      "representation_count": 3,
+      "showcase": "showcase/triangle_rectangle"
+    },
+    {
+      "case_id": "P0004",
+      "slug": "circle_triangle_square",
+      "display_name": "Circle-Triangle-Square",
+      "domain": "plane",
+      "status": "exact_certificate_showcase",
+      "path": "examples/plane/P0004_circle_triangle_square",
+      "representation_count": 2,
+      "showcase": "showcase/circle_triangle_square"
+    },
+    {
+      "case_id": "P0005",
+      "slug": "free_c1_c2",
+      "display_name": "Free c1,c2 Triangle-Rectangle Family",
+      "domain": "plane",
+      "status": "symbolic_operator",
+      "path": "examples/plane/P0005_free_c1_c2",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0006",
+      "slug": "general_cubic_symbolic",
+      "display_name": "General Cubic Symbolic Family",
+      "domain": "plane",
+      "status": "exact_symbolic_operator",
+      "path": "examples/plane/P0006_general_cubic_symbolic",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0007",
+      "slug": "q2_generic",
+      "display_name": "Generic Asymmetric Q2 Quartic",
+      "domain": "plane",
+      "status": "exact_order6_certificate",
+      "path": "examples/plane/P0007_q2_generic",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0008",
+      "slug": "q1b_nonradial",
+      "display_name": "Q1b Nonradial Quartic",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0008_q1b_nonradial",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0009",
+      "slug": "q1e_radial_leading",
+      "display_name": "Q1e Radial-Leading Quartic",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0009_q1e_radial_leading",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0010",
+      "slug": "simple_cubic_factor",
+      "display_name": "Simple Cubic-Factor Model",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0010_simple_cubic_factor",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0011",
+      "slug": "simple_even_quartic",
+      "display_name": "Simple Even Quartic",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0011_simple_even_quartic",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0012",
+      "slug": "mechanical_rotated_01",
+      "display_name": "Mechanical Rotated 01",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0012_mechanical_rotated_01",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0013",
+      "slug": "mechanical_rotated_02",
+      "display_name": "Mechanical Rotated 02",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0013_mechanical_rotated_02",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0014",
+      "slug": "mechanical_rotated_03",
+      "display_name": "Mechanical Rotated 03",
+      "domain": "plane",
+      "status": "exact_certificate",
+      "path": "examples/plane/P0014_mechanical_rotated_03",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0015",
+      "slug": "quartic_elliptic_detector",
+      "display_name": "Quartic Elliptic Detector Study",
+      "domain": "plane",
+      "status": "verified_study",
+      "path": "examples/plane/P0015_quartic_elliptic_detector",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "P0016",
+      "slug": "two_node_genus1",
+      "display_name": "Two-Node Genus-One Annihilator",
+      "domain": "plane",
+      "status": "verified_operator",
+      "path": "examples/plane/P0016_two_node_genus1",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0017",
+      "slug": "differential_addition_law",
+      "display_name": "Differential Addition-Law Study",
+      "domain": "plane",
+      "status": "partial_verified_study",
+      "path": "examples/plane/P0017_differential_addition_law",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0018",
+      "slug": "quartic_addition_decision",
+      "display_name": "Quartic Addition-Law Decision Study",
+      "domain": "plane",
+      "status": "verified_study",
+      "path": "examples/plane/P0018_quartic_addition_decision",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0019",
+      "slug": "weird_quintic_boundary",
+      "display_name": "Weird Quintic Boundary Case",
+      "domain": "plane",
+      "status": "inductive_only_blocked",
+      "path": "examples/plane/P0019_weird_quintic_boundary",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "P0020",
+      "slug": "generic_squarefree_quartic",
+      "display_name": "Generic Squarefree Quartic Coverage",
+      "domain": "plane",
+      "status": "modular_order6_partial",
+      "path": "examples/plane/P0020_generic_squarefree_quartic",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "S0001",
+      "slug": "asymmetric_1_2_5",
+      "display_name": "Asymmetric Top 1-2-5",
+      "domain": "sphere",
+      "status": "exact_certificate",
+      "path": "examples/sphere/S0001_asymmetric_1_2_5",
+      "representation_count": 3,
+      "showcase": null
+    },
+    {
+      "case_id": "S0002",
+      "slug": "reflection_xy",
+      "display_name": "Reflection-XY Sphere Quartic",
+      "domain": "sphere",
+      "status": "exact_order4_certificate",
+      "path": "examples/sphere/S0002_reflection_xy",
+      "representation_count": 3,
+      "showcase": null
+    },
+    {
+      "case_id": "S0003",
+      "slug": "tetrahedral",
+      "display_name": "Tetrahedral Sphere Model",
+      "domain": "sphere",
+      "status": "exact_certificate",
+      "path": "examples/sphere/S0003_tetrahedral",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0004",
+      "slug": "octahedral",
+      "display_name": "Octahedral Sphere Model",
+      "domain": "sphere",
+      "status": "exact_multi_chart_certificate",
+      "path": "examples/sphere/S0004_octahedral",
+      "representation_count": 3,
+      "showcase": null
+    },
+    {
+      "case_id": "S0005",
+      "slug": "icosahedral",
+      "display_name": "Normalized Icosahedral Sphere Model",
+      "domain": "sphere",
+      "status": "exact_certificate",
+      "path": "examples/sphere/S0005_icosahedral",
+      "representation_count": 3,
+      "showcase": null
+    },
+    {
+      "case_id": "S0006",
+      "slug": "icosahedral_plus_z",
+      "display_name": "Icosahedral Plus Jz",
+      "domain": "sphere",
+      "status": "blocked_partial",
+      "path": "examples/sphere/S0006_icosahedral_plus_z",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0007",
+      "slug": "icosahedral_plus_z2",
+      "display_name": "Icosahedral Plus Jz^2",
+      "domain": "sphere",
+      "status": "order6_relation_partial",
+      "path": "examples/sphere/S0007_icosahedral_plus_z2",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0008",
+      "slug": "dihedral_comparison",
+      "display_name": "Dihedral Sphere Comparison",
+      "domain": "sphere",
+      "status": "verified_study",
+      "path": "examples/sphere/S0008_dihedral_comparison",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0009",
+      "slug": "even_sphere_refinement",
+      "display_name": "Even Sphere Refinement Study",
+      "domain": "sphere",
+      "status": "data_study",
+      "path": "examples/sphere/S0009_even_sphere_refinement",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0010",
+      "slug": "physics_generating",
+      "display_name": "Physics Generating-Sphere Study",
+      "domain": "sphere",
+      "status": "verified_study",
+      "path": "examples/sphere/S0010_physics_generating",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0011",
+      "slug": "watson_adapter",
+      "display_name": "Watson Physics Adapter",
+      "domain": "sphere",
+      "status": "verified_adapter",
+      "path": "examples/sphere/S0011_watson_adapter",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0012",
+      "slug": "single_harmonic_catalog",
+      "display_name": "Unrestricted Single-Harmonic Catalog",
+      "domain": "sphere",
+      "status": "benchmark_study",
+      "path": "examples/sphere/S0012_single_harmonic_catalog",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "S0013",
+      "slug": "chapter4_operator_catalog",
+      "display_name": "Chapter 4 Sphere Operator Catalog",
+      "domain": "sphere",
+      "status": "transcribed_verified",
+      "path": "examples/sphere/S0013_chapter4_operator_catalog",
+      "representation_count": 2,
+      "showcase": null
+    },
+    {
+      "case_id": "B0001",
+      "slug": "platonic_plane_sphere_bridges",
+      "display_name": "Platonic Plane-Sphere Bridge Corpus",
+      "domain": "bridges",
+      "status": "mixed_exact_numeric",
+      "path": "examples/bridges/B0001_platonic_plane_sphere_bridges",
+      "representation_count": 3,
+      "showcase": null
+    },
+    {
+      "case_id": "M0001",
+      "slug": "mixed_quartic_43",
+      "display_name": "Mixed Quartic 43-Model Benchmark",
+      "domain": "benchmarks",
+      "status": "43_of_43_mode_agreement",
+      "path": "examples/benchmarks/M0001_mixed_quartic_43",
+      "representation_count": 1,
+      "showcase": null
+    },
+    {
+      "case_id": "M0002",
+      "slug": "degree_and_support_bounds",
+      "display_name": "Degree and Support Bounds Corpus",
+      "domain": "benchmarks",
+      "status": "coverage_data",
+      "path": "examples/benchmarks/M0002_degree_and_support_bounds",
+      "representation_count": 1,
+      "showcase": null
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"differential_operator_record.schema.json","title":"Differential operator","type":"object",
+  "required":["record_type","case_id","variable","coefficients_low_to_high","order","normalization","exactness","source_ref"],
+  "properties":{"record_type":{"const":"differential_operator"},"case_id":{"type":"string"},"variable":{"type":"string"},"coefficients_low_to_high":{"type":"array","items":{"type":"string"}},"order":{"type":"integer","minimum":0},"coefficient_degrees":{"type":"array","items":{"type":"integer"}},"normalization":{"type":"object"},"exactness":{"enum":["exact","modular","numerical"]},"source_ref":{"type":"string"}},"additionalProperties":true
+}

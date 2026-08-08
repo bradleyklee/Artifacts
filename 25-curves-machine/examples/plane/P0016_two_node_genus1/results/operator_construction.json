@@ -1,0 +1,39 @@
+{
+  "family": "a*p**2 + b*p*q + beta*p**2*q + c*q**2 + d*p + e*q + gamma*p*q**2 + h + k*p**2*q**2",
+  "quadratic_in_q": {
+    "A": "c + gamma*p + k*p**2",
+    "B": "b*p + beta*p**2 + e",
+    "C": "a*p**2 - alpha + d*p + h"
+  },
+  "binary_quartic_coefficients": {
+    "A4": "-4*a*k + beta**2",
+    "B3": "-4*a*gamma + 2*b*beta - 4*d*k",
+    "C2": "-4*a*c + 4*alpha*k + b**2 + 2*beta*e - 4*d*gamma - 4*h*k",
+    "D1": "4*alpha*gamma + 2*b*e - 4*c*d - 4*gamma*h",
+    "E0": "4*alpha*c - 4*c*h + e**2"
+  },
+  "invariants": {
+    "I": "12*A4*E0 - 3*B3*D1 + C2^2",
+    "Jb": "72*A4*C2*E0 + 9*B3*C2*D1 - 27*A4*D1^2 - 27*B3^2*E0 - 2*C2^3",
+    "c4": "4*I",
+    "c6": "4*Jb",
+    "Delta": "c4^3-c6^2",
+    "G": "2*c4*c6_prime-3*c6*c4_prime"
+  },
+  "operator": {
+    "P2": "144*Delta*G",
+    "P1": "144*(Delta_prime*G-Delta*G_prime)",
+    "P0": "12*(Delta_double_prime*G-Delta_prime*G_prime)-9*G*c4*c4_prime^2+4*G*c6_prime^2"
+  },
+  "generic_degrees": {
+    "I": 2,
+    "Jb": 3,
+    "Delta": 5,
+    "G": 3,
+    "P0_P1_P2_reduced": [
+      6,
+      7,
+      8
+    ]
+  }
+}

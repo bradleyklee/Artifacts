@@ -1,0 +1,16 @@
+{
+  "curve": "x^2 + y^2 - 1 - d*x^2*y^2",
+  "identity": [
+    "0",
+    "1"
+  ],
+  "invariant_differential": "dx/(2*y*(1-d*x^2))",
+  "x_sum": "(x1*y2 + x2*y1)/(d*x1*x2*y1*y2 + 1)",
+  "y_sum": "(x1*x2 - y1*y2)/(d*x1*x2*y1*y2 - 1)",
+  "x_double": "2*x1*y1/(d*x1**2*y1**2 + 1)",
+  "y_double": "(x1 - y1)*(x1 + y1)/(d*x1**2*y1**2 - 1)",
+  "curve_closure_remainder": "0",
+  "differential_residual_1_remainder": "0",
+  "differential_residual_2_remainder": "0",
+  "status": "PASS"
+}

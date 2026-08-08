@@ -1,0 +1,31 @@
+{
+  "packet_id": "semi_random_quartics_2026-08-02",
+  "convention": {"E": "2H", "rho": "dE/dp", "omega": "2*dq/rho = dq/H_p"},
+  "results": [
+    {
+      "id": "q1e",
+      "status": "exact exhaustive certificate",
+      "operator": {"order": 4, "degree": 11},
+      "reduction": {"rows": 44, "exact_columns": 36, "rank_C": 36, "rank_CW": 40, "relation_dimension": 1},
+      "primitive": {"denominator_power": 7, "blocks": 36, "expanded_terms": 349, "max_source_weight": 18},
+      "primary_file": "data/q1e_exhaustive_certificate.json"
+    },
+    {
+      "id": "q1b",
+      "status": "exact operator and exact differential certificate; lower-order exhaustiveness not yet fully characteristic-zero",
+      "operator": {"order": 4, "degree": 14},
+      "reduction": {"rows": 50, "exact_columns": 42, "rank_C": 42, "rank_CW": 46, "relation_dimension": 1},
+      "primitive": {"denominator_power": 7, "blocks": 42, "expanded_terms": 523, "max_source_weight": 21},
+      "primary_file": "data/q1b_exact_backsolve.json"
+    },
+    {
+      "id": "q2_generic_no_reflection",
+      "status": "two-prime modular operator and reductive closure",
+      "operator": {"order": 6, "degree": 31},
+      "reduction": {"rows": 158, "exact_columns": 132, "rank_C": 132, "rank_CW": 138, "relation_dimension": 1},
+      "heldout_equations_per_prime": 80,
+      "exact_operator_reconstructed": false
+    }
+  ],
+  "correction": "Q1 minimal box is order 4 degree 14; the earlier order 6 degree 8 result is a higher-order lower-degree presentation."
+}

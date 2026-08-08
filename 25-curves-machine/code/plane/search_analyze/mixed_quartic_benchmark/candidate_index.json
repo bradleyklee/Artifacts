@@ -1,0 +1,565 @@
+[
+  {
+    "example_id": "dense_generic_01",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_01.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_02",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_02.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_03",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_03.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_04",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_04.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_05",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_05.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_06",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_06.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_07",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_07.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_08",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_08.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_09",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_09.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_10",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_10.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_11",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_11.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_12",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_12.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_13",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_13.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_14",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_14.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_15",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_15.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_16",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_16.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_17",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_17.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_18",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_18.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_19",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_19.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "dense_generic_20",
+    "category": "dense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/dense_generic_20.json",
+    "notes": "all cubic and quartic monomials nonzero",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "semidense_generic_01",
+    "category": "semidense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/semidense_generic_01.json",
+    "notes": "broad nonsymmetric support control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 3,
+      "quartic": 4
+    }
+  },
+  {
+    "example_id": "semidense_generic_02",
+    "category": "semidense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/semidense_generic_02.json",
+    "notes": "broad nonsymmetric support control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 3,
+      "quartic": 4
+    }
+  },
+  {
+    "example_id": "semidense_generic_03",
+    "category": "semidense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/semidense_generic_03.json",
+    "notes": "broad nonsymmetric support control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 3,
+      "quartic": 4
+    }
+  },
+  {
+    "example_id": "semidense_generic_04",
+    "category": "semidense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/semidense_generic_04.json",
+    "notes": "broad nonsymmetric support control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 3,
+      "quartic": 4
+    }
+  },
+  {
+    "example_id": "semidense_generic_05",
+    "category": "semidense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/semidense_generic_05.json",
+    "notes": "broad nonsymmetric support control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 3,
+      "quartic": 4
+    }
+  },
+  {
+    "example_id": "semidense_generic_06",
+    "category": "semidense_generic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/semidense_generic_06.json",
+    "notes": "broad nonsymmetric support control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 3,
+      "quartic": 4
+    }
+  },
+  {
+    "example_id": "aligned_control_01",
+    "category": "aligned_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/aligned_control_01.json",
+    "notes": "common or intended hidden reflection",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 2,
+      "quartic": 3
+    }
+  },
+  {
+    "example_id": "aligned_control_02",
+    "category": "aligned_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/aligned_control_02.json",
+    "notes": "common or intended hidden reflection",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 2,
+      "quartic": 3
+    }
+  },
+  {
+    "example_id": "aligned_control_03",
+    "category": "aligned_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/aligned_control_03.json",
+    "notes": "common or intended hidden reflection",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 2,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "aligned_control_04",
+    "category": "aligned_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/aligned_control_04.json",
+    "notes": "common or intended hidden reflection",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "chiral_control_01",
+    "category": "chiral_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/chiral_control_01.json",
+    "notes": "phase-mismatched triangle-square mixture",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 2,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "chiral_control_02",
+    "category": "chiral_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/chiral_control_02.json",
+    "notes": "phase-mismatched triangle-square mixture",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,-q)",
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 2,
+      "quartic": 3
+    }
+  },
+  {
+    "example_id": "chiral_control_03",
+    "category": "chiral_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/chiral_control_03.json",
+    "notes": "phase-mismatched triangle-square mixture",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "chiral_control_04",
+    "category": "chiral_harmonic",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/chiral_control_04.json",
+    "notes": "phase-mismatched triangle-square mixture",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "cubic_radial_01",
+    "category": "cubic_plus_radial",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/cubic_radial_01.json",
+    "notes": "dense cubic plus radial quartic",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 3
+    }
+  },
+  {
+    "example_id": "cubic_radial_02",
+    "category": "cubic_plus_radial",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/cubic_radial_02.json",
+    "notes": "dense cubic plus radial quartic",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 3
+    }
+  },
+  {
+    "example_id": "cubic_radial_03",
+    "category": "cubic_plus_radial",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/cubic_radial_03.json",
+    "notes": "dense cubic plus radial quartic",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 3
+    }
+  },
+  {
+    "example_id": "mechanical_rotated_01",
+    "category": "mechanical_rotated",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/mechanical_rotated_01.json",
+    "notes": "cubic and quartic depend on one rational linear coordinate",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)",
+      "(p,q)->(q,p)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "mechanical_rotated_02",
+    "category": "mechanical_rotated",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/mechanical_rotated_02.json",
+    "notes": "cubic and quartic depend on one rational linear coordinate",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "mechanical_rotated_03",
+    "category": "mechanical_rotated",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/mechanical_rotated_03.json",
+    "notes": "cubic and quartic depend on one rational linear coordinate",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 4,
+      "quartic": 5
+    }
+  },
+  {
+    "example_id": "separable_control_01",
+    "category": "separable",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/separable_control_01.json",
+    "notes": "two-coordinate nonlinear control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 2,
+      "quartic": 2
+    }
+  },
+  {
+    "example_id": "separable_control_02",
+    "category": "separable",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/separable_control_02.json",
+    "notes": "two-coordinate nonlinear control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 2,
+      "quartic": 2
+    }
+  },
+  {
+    "example_id": "near-separable_control_03",
+    "category": "near-separable",
+    "path": "/mnt/data/quartic_mixed_benchmark_2026-08-02/models/near-separable_control_03.json",
+    "notes": "two-coordinate nonlinear control",
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ],
+    "support_counts": {
+      "cubic": 3,
+      "quartic": 3
+    }
+  }
+]

@@ -1,0 +1,202 @@
+{
+  "order_search": [
+    {
+      "order": 1,
+      "status": "no_relation_in_tested_source_filtration",
+      "exhaustiveness": "bounded_only",
+      "primitive_q_bound": 16,
+      "source_dimension": 34,
+      "ambient_rows": 46,
+      "derivative_columns": 2,
+      "rank_C": 34,
+      "rank_CW": 36,
+      "reduced_derivative_rank": 2,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "status": "first_exact_relation",
+      "exhaustiveness": "exact_for_declared_source_space",
+      "primitive_q_bound": 9,
+      "source_dimension": 20,
+      "ambient_rows": 32,
+      "derivative_columns": 3,
+      "rank_C": 20,
+      "rank_CW": 22,
+      "quotient_dimension": 12,
+      "reduced_derivative_rank": 2,
+      "relation_dimension": 1
+    }
+  ],
+  "successful_order": 2,
+  "source_basis_policy": "even p-sector: p in {0,2}, q=0..9",
+  "matrix_dimensions": {
+    "C": [
+      32,
+      20
+    ],
+    "W": [
+      32,
+      3
+    ],
+    "combined_CW": [
+      32,
+      23
+    ],
+    "R": [
+      12,
+      3
+    ]
+  },
+  "ranks": {
+    "C": 20,
+    "combined_CW": 22,
+    "quotient_dimension": 12,
+    "R": 2,
+    "nullity_R": 1
+  },
+  "pivot_rows": [
+    [
+      0,
+      16
+    ],
+    [
+      0,
+      15
+    ],
+    [
+      0,
+      13
+    ],
+    [
+      0,
+      12
+    ],
+    [
+      2,
+      11
+    ],
+    [
+      0,
+      11
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      0,
+      10
+    ],
+    [
+      2,
+      9
+    ],
+    [
+      0,
+      9
+    ],
+    [
+      2,
+      8
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      0,
+      7
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      0,
+      6
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "quotient_rows": [
+    [
+      2,
+      14
+    ],
+    [
+      0,
+      14
+    ],
+    [
+      2,
+      13
+    ],
+    [
+      2,
+      12
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      0,
+      0
+    ]
+  ],
+  "pivot_block_determinant": "-7721907949886471405568000*(3648*alpha**4 + 20368*alpha**3 + 56353*alpha**2 - 17874*alpha + 1539)",
+  "raw_matrix_file": "raw/rectangular_matrices.json",
+  "full_support_trace_file": "raw/reduction_support_trace.json",
+  "checks": {
+    "no_period_series_input_to_reductive_derivation": true,
+    "no_candidate_operator_input": true,
+    "operator_recovered_from_nullspace": true,
+    "primitive_recovered_from_same_solve": true,
+    "literal_identity_mod_E_minus_alpha": true,
+    "raw_unreduced_difference_is_zero": false,
+    "curve_reduced_difference_is_zero": true
+  }
+}

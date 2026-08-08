@@ -1,0 +1,42 @@
+{
+  "example_id": "cubic_linear_cube",
+  "status": "EXACT_REDUCTIVE_PASS",
+  "order": 2,
+  "q_bound": 3,
+  "rows": 21,
+  "exact_columns": 12,
+  "combined_rank": 14,
+  "nullspace_rows": 1,
+  "build_seconds": 0.16639971733093262,
+  "verify_seconds": 0.009372472763061523,
+  "operator_coefficients": [
+    "15",
+    "216*alpha - 50",
+    "108*alpha**2 - 50*alpha"
+  ],
+  "operator_factored": [
+    "15",
+    "2*(108*alpha - 25)",
+    "2*alpha*(54*alpha - 25)"
+  ],
+  "operator_degrees": [
+    0,
+    1,
+    2
+  ],
+  "primitive_nonzero_blocks": 11,
+  "primitive_expanded_terms": 16,
+  "primitive_coefficients": {
+    "p^0 q^0": "-243*alpha**2/2 + 345*alpha/2",
+    "p^0 q^1": "477*alpha/2 - 100",
+    "p^0 q^2": "1134*alpha/5 - 445/2",
+    "p^0 q^3": "-63",
+    "p^1 q^0": "-333*alpha/2",
+    "p^1 q^1": "-243*alpha - 60",
+    "p^1 q^2": "39",
+    "p^1 q^3": "162",
+    "p^2 q^0": "81*alpha/5 - 445/2",
+    "p^2 q^1": "-528",
+    "p^2 q^2": "-324"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "example_id": "generic_cubic_all_A",
+  "monomials": {
+    "3": [
+      [
+        3,
+        0,
+        "1/7"
+      ],
+      [
+        2,
+        1,
+        "1/9"
+      ],
+      [
+        1,
+        2,
+        "-1/11"
+      ],
+      [
+        0,
+        3,
+        "1/13"
+      ]
+    ],
+    "4": []
+  },
+  "notes": "generic homogeneous cubic perturbation",
+  "modes": {},
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 3,
+      "coefficient": "1/13"
+    },
+    {
+      "p": 1,
+      "q": 2,
+      "coefficient": "-1/11"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "1/9"
+    },
+    {
+      "p": 3,
+      "q": 0,
+      "coefficient": "1/7"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(p,q)"
+  ]
+}

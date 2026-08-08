@@ -1,0 +1,66 @@
+{
+  "example_id": "generic_cubic_all_A",
+  "prime": 65521,
+  "alpha": 7,
+  "p_degrees": [
+    0,
+    1,
+    2
+  ],
+  "records": [
+    {
+      "order": 2,
+      "q_bound": 0,
+      "rows": 24,
+      "exact_columns": 3,
+      "rank_C": 3,
+      "rank_CW": 6,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 1,
+      "rows": 24,
+      "exact_columns": 6,
+      "rank_C": 6,
+      "rank_CW": 9,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 2,
+      "rows": 24,
+      "exact_columns": 9,
+      "rank_C": 9,
+      "rank_CW": 12,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 3,
+      "rows": 24,
+      "exact_columns": 12,
+      "rank_C": 12,
+      "rank_CW": 15,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 4,
+      "rows": 24,
+      "exact_columns": 15,
+      "rank_C": 15,
+      "rank_CW": 18,
+      "relation_dimension": 0
+    },
+    {
+      "order": 2,
+      "q_bound": 5,
+      "rows": 30,
+      "exact_columns": 18,
+      "rank_C": 18,
+      "rank_CW": 20,
+      "relation_dimension": 1
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "square_hexagon",
+  "description": "square + hexagon plane-curve showcase",
+  "variables": ["p", "q"],
+  "parameter": "alpha",
+  "energy_E_equals_2H": "p^2 + q^2 - 2*p^2*q^2 + p^2*(p^2-3*q^2)^2/4",
+  "known_operator_order": 4,
+  "known_leading_coefficient": "8*alpha*(27*alpha^2+16)*(486*alpha^3-792*alpha^2+632*alpha-197)*S8(alpha)",
+  "our_primitive_denominator": "rho^7, rho=(2H)_p=2H_p",
+  "lairez_input": "2/(E-alpha)"
+}

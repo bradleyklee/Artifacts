@@ -1,0 +1,303 @@
+{
+  "format": "algorithm-feature-matrix-v1",
+  "features": [
+    "repeated_parameter_differentiation",
+    "exact_derivative_reduction",
+    "nullspace_relation",
+    "operator_output",
+    "primitive_output",
+    "modular_mode",
+    "numerical_mode",
+    "finite_support_bound",
+    "stage_timing",
+    "external_cas_dependency"
+  ],
+  "rows": [
+    {
+      "algorithm_id": "ALG-INDUCTIVE-SERIES-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": true,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-REDUCTIVE-NULLSPACE-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-EXPLICIT-QUOTIENT-AUDIT-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-FINITE-SUPPORT-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": true,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-PRIMITIVE-VERIFY-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-GUVJ-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-GENERAL-MU-ELLIPTIC-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-QUARTIC-BOUNDS-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": true,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-MODULAR-REDUCTION-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": true,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-SPHERE-BRANCH-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": true,
+        "numerical_mode": true,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-DIHEDRAL-SPHERE-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-EVEN-SPHERE-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": true,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-ICOSAHEDRAL-REDUCE-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-PERTURB-RECORD-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": false,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": true,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": true,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-LAIREZ-ADAPTER-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": true,
+        "external_cas_dependency": true
+      }
+    },
+    {
+      "algorithm_id": "ALG-LAIREZ-PORT-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": true,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-LAIREZ-CERT-TRANSPORT-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": true,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-HYBRID-PRIMITIVE-001",
+      "features": {
+        "repeated_parameter_differentiation": true,
+        "exact_derivative_reduction": true,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": true,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": true,
+        "external_cas_dependency": false
+      }
+    },
+    {
+      "algorithm_id": "ALG-FREE-COEFFICIENT-PROFILE-001",
+      "features": {
+        "repeated_parameter_differentiation": false,
+        "exact_derivative_reduction": false,
+        "nullspace_relation": true,
+        "operator_output": true,
+        "primitive_output": false,
+        "modular_mode": false,
+        "numerical_mode": false,
+        "finite_support_bound": false,
+        "stage_timing": false,
+        "external_cas_dependency": false
+      }
+    }
+  ],
+  "note": "Boolean structural matrix; no opaque similarity score."
+}

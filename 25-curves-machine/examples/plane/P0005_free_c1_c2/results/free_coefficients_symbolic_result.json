@@ -1,0 +1,43 @@
+{
+  "case": "elliptic_free_coefficients",
+  "degree": 4,
+  "free_parameters": [
+    "c1",
+    "c2"
+  ],
+  "order": 2,
+  "operator": [
+    "-6*(-41472*alpha**4*c1**4*c2**5 + 442368*alpha**4*c1**2*c2**6 - 1179648*alpha**4*c2**7 + 1944*alpha**3*c1**8*c2**2 - 10368*alpha**3*c1**6*c2**3 - 72576*alpha**3*c1**4*c2**4 + 528384*alpha**3*c1**2*c2**5 - 753664*alpha**3*c2**6 + 729*alpha**2*c1**10 - 12636*alpha**2*c1**8*c2 + 81360*alpha**2*c1**6*c2**2 - 239040*alpha**2*c1**4*c2**3 + 319488*alpha**2*c1**2*c2**4 - 172032*alpha**2*c2**5 - 216*alpha*c1**8 + 3168*alpha*c1**6*c2 - 16128*alpha*c1**4*c2**2 + 32256*alpha*c1**2*c2**3 - 18432*alpha*c2**4 + 16*c1**6 - 192*c1**4*c2 + 768*c1**2*c2**2 - 1024*c2**3)",
+    "-2*(-995328*alpha**5*c1**4*c2**5 + 10616832*alpha**5*c1**2*c2**6 - 28311552*alpha**5*c2**7 - 52488*alpha**4*c1**8*c2**2 + 1119744*alpha**4*c1**6*c2**3 - 8087040*alpha**4*c1**4*c2**4 + 23298048*alpha**4*c1**2*c2**5 - 21626880*alpha**4*c2**6 + 19683*alpha**3*c1**10 - 341172*alpha**3*c1**8*c2 + 2239488*alpha**3*c1**6*c2**2 - 6925824*alpha**3*c1**4*c2**3 + 10211328*alpha**3*c1**2*c2**4 - 6160384*alpha**3*c2**5 - 7290*alpha**2*c1**8 + 104976*alpha**2*c1**6*c2 - 538848*alpha**2*c1**4*c2**2 + 1142784*alpha**2*c1**2*c2**3 - 802816*alpha**2*c2**4 + 864*alpha*c1**6 - 9792*alpha*c1**4*c2 + 36608*alpha*c1**2*c2**2 - 45056*alpha*c2**3 - 32*c1**4 + 256*c1**2*c2 - 512*c2**2)",
+    "-alpha*(27*alpha*c1**2 - 144*alpha*c2 - 4)*(256*alpha**2*c2**3 + 27*alpha*c1**4 - 144*alpha*c1**2*c2 + 128*alpha*c2**2 - 4*c1**2 + 16*c2)*(-144*alpha**2*c1**2*c2**2 + 768*alpha**2*c2**3 + 27*alpha*c1**4 - 180*alpha*c1**2*c2 + 256*alpha*c2**2 - 4*c1**2 + 16*c2)"
+  ],
+  "setup_seconds": 0.12581349699939892,
+  "reduction_seconds": 125.16578925199974,
+  "profile_stats": {
+    "6": {
+      "ambient_rows": 55,
+      "source_columns": 84,
+      "rank": 53,
+      "pivot_rows": 53,
+      "pivot_columns": 53,
+      "evaluation_point": {
+        "alpha": 101,
+        "c1": 103,
+        "c2": 107
+      }
+    },
+    "2": {
+      "ambient_rows": 21,
+      "source_columns": 18,
+      "rank": 18,
+      "pivot_rows": 18,
+      "pivot_columns": 18,
+      "evaluation_point": {
+        "alpha": 101,
+        "c1": 103,
+        "c2": 107
+      }
+    }
+  },
+  "certificate_requested": false
+}

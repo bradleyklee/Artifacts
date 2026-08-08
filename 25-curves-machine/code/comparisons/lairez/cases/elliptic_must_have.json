@@ -1,0 +1,15 @@
+{
+  "name": "elliptic_must_have",
+  "description": "priority elliptic model alpha=2H_ell",
+  "variables": ["p", "q"],
+  "parameter": "alpha",
+  "energy_E_equals_2H": "p^2 + q^2 + (q^3 - 3*p^2*q) + (q^2 - 3*p^2)^2/4",
+  "model_notation": "alpha=2H_ell",
+  "klee_config": {
+    "order": 2,
+    "q_degree": 9,
+    "p_degrees": [0, 2],
+    "support": "rectangular"
+  },
+  "lairez_input": "2/(E-alpha)"
+}

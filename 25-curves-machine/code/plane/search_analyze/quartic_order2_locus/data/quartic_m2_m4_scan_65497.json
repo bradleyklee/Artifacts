@@ -1,0 +1,40 @@
+{
+  "example_id": "quartic_m2_m4",
+  "prime": 65497,
+  "nterms": 165,
+  "max_order": 4,
+  "degree_cap": 20,
+  "records": [
+    {
+      "order": 1,
+      "degree_cap": 20,
+      "cap_nullity": 0,
+      "shape": [
+        164,
+        42
+      ],
+      "seconds_cap": 0.0037376880645751953
+    },
+    {
+      "order": 2,
+      "degree_cap": 20,
+      "cap_nullity": 16,
+      "shape": [
+        163,
+        63
+      ],
+      "seconds_cap": 0.005262136459350586,
+      "first_degree": 5,
+      "first_nullity": 1,
+      "first_shape": [
+        163,
+        18
+      ]
+    }
+  ],
+  "first_hit": {
+    "order": 2,
+    "degree": 5,
+    "nullity": 1
+  }
+}

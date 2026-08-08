@@ -1,0 +1,18 @@
+{
+  "example_id": "simple_even_quartic",
+  "order": 2,
+  "degree": 2,
+  "coefficients": [
+    {
+      "0": "1/4"
+    },
+    {
+      "0": "1",
+      "1": "2"
+    },
+    {
+      "1": "1",
+      "2": "1"
+    }
+  ]
+}

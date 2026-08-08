@@ -1,0 +1,137 @@
+{
+  "schema": "triangle-rectangle-genus-one-period-certificate/1.11",
+  "title": "Triangle-Rectangle Genus-One Periods Certificate",
+  "normalization": {
+    "convention": "alpha=2H",
+    "phase_dilation": "p_new=2*p_old, q_new=2*q_old",
+    "energy_dilation": "alpha_new=4*alpha_old",
+    "interval": "0<=alpha<1",
+    "guard": "F_new(p,q)=4*F_old(p/2,q/2)"
+  },
+  "curve": {
+    "equation": "alpha=p^2+q^2+(q^3-3*p^2*q)/2+(q^2-3*p^2)^2/16",
+    "mu_family": "F_mu=p^2+q^2+(q^3-3*p^2*q)/2+mu*(q^2-3*p^2)^2",
+    "distinguished_mu": "mu=1/16",
+    "reflection": "q->-4-q",
+    "reflection_defect": "-(16*mu-1)*(q+2)*(3*p^2-q^2-4*q-8)",
+    "rho": "p*(9*p^2-3*(q+2)^2+20)/4",
+    "period_form": "omega=2*dq/rho=dq/H_p"
+  },
+  "critical_points": {
+    "real_well_1": {
+      "point": [
+        "0",
+        "0"
+      ],
+      "alpha": "0"
+    },
+    "real_well_2": {
+      "point": [
+        "0",
+        "-4"
+      ],
+      "alpha": "0"
+    },
+    "barrier_center": {
+      "point": [
+        "0",
+        "-2"
+      ],
+      "alpha": "1",
+      "hessian_determinant": "-5",
+      "p_wick_expansion": "1+(9*U^4+6*U^2*Q^2-40*U^2+Q^4-8*Q^2)/16",
+      "harmonic_frequency_for_H": "sqrt(5)/2"
+    }
+  },
+  "operator": {
+    "convention": "A_alpha=P0+P1*d_alpha+P2*d_alpha^2",
+    "P0": "3*alpha*(9*alpha-64)/4",
+    "P1": "54*alpha^3-195*alpha^2-112*alpha+128",
+    "P2": "alpha*(alpha-1)*(3*alpha-8)*(9*alpha+16)",
+    "self_adjoint": "P1=P2'-6*P2/(3*alpha-8)"
+  },
+  "abel_identity": "alpha*(alpha-1)*(9*alpha+16)/(3*alpha-8)*(T2*T1'-T1*T2')=sqrt(5)/pi",
+  "certificate": {
+    "identity": "A_alpha(omega)=dXi",
+    "shift": "x=q+2",
+    "primitive": "Xi=V/(8*rho^3)",
+    "V": "x*[27*a^3*(9*p^2-3*x^2+80)+3*a^2*(189*p^2*x^2-270*p^2-27*x^4+126*x^2+280)+2*a*(-27*p^2*x^4-648*p^2*x^2+4008*p^2+9*x^6-156*x^4+456*x^2+1120)+8*(3*x^2-16)*(-9*p^2*x^2+108*p^2+3*x^4-32*x^2+80)]"
+  },
+  "periods": {
+    "T1": {
+      "cycle": "real oval around (0,0); reflected oval around (0,-4)",
+      "normalization": "T1(0)=1",
+      "series": "T1(16*x)=1+24*x^2+120*x^3+2520*x^4+..."
+    },
+    "T2": {
+      "cycle": "p-Wick oval around (0,-2)",
+      "definition": "sqrt(5)/(4*pi)*integral(i*omega)",
+      "normalization": "T2(1)=1",
+      "series": "T2(1-400*x)=1+132*x+29220*x^2+7816080*x^3+..."
+    }
+  },
+  "hypergeometric": {
+    "D": "(16+9*alpha^2)^(1/4)",
+    "X": "-108*alpha^2*(alpha-1)*(9*alpha+16)^2/(16+9*alpha^2)^3",
+    "sigma": "(3*alpha+2)*(32-48*alpha-9*alpha^2)/(16+9*alpha^2)^(3/2)",
+    "sigma_identity": "sigma^2=1-X",
+    "z4": "alpha*(9*alpha+16)/(3*alpha+2)^2",
+    "endpoint": "z4(1)=1",
+    "basis_psi0": "2*sqrt(pi)/(D*Gamma(11/12)*Gamma(7/12))*2F1(1/12,5/12;1/2;1-X)",
+    "basis_psi1": "-4*sqrt(pi)*sigma/(D*Gamma(1/12)*Gamma(5/12))*2F1(11/12,7/12;3/2;1-X)",
+    "period_superposition": "T1=psi0+psi1; T2=sqrt(5)/2*(psi0-psi1)",
+    "D2": "(25-18*beta+9*beta^2)^(1/4), beta=1-alpha",
+    "X2": "108*beta*(1-beta)^2*(25-9*beta)^2/(25-18*beta+9*beta^2)^3",
+    "local_periods": "T1=2/D*2F1(1/12,5/12;1;X); T2(1-beta)=sqrt(5)/D2*2F1(1/12,5/12;1;X2)"
+  },
+  "elliptic_normalization": {
+    "coordinates": "u=(q-sqrt(3)*p)/2; v=(q+sqrt(3)*p)/2; x=u+1",
+    "inverse": "q=x-1+(y-B)/(2A); p=((y-B)/(2A)-(x-1))/sqrt(3)",
+    "quartic": "12*y^2=-x^4+(2+3*alpha)*x^2+alpha-1",
+    "quartic_discriminant": "-16*alpha^2*(alpha-1)*(9*alpha+16)^2",
+    "finite_singular_fibers": [
+      "0",
+      "1",
+      "-16/9"
+    ],
+    "apparent_operator_singularity": "alpha=8/3",
+    "differential": "omega=dx/(sqrt(3)*y)"
+  },
+  "jacobi_legendre": {
+    "a2_b2": "(2+3*alpha +/- sqrt(alpha*(16+9*alpha)))/2",
+    "m": "(3*alpha+2-2*sqrt(1-alpha))/(3*alpha+2+2*sqrt(1-alpha))",
+    "curve": "V^2=U*(U-1)*(U-m)",
+    "period": "T1=4*K(k)/(pi*(a+b))"
+  },
+  "modular": {
+    "tau": "i*K(k_prime)/K(k)",
+    "X": "1728/j=27*m^2*(1-m)^2/(4*(1-m+m^2)^3)",
+    "fourth_power": "E4(tau)=(1+9*alpha^2/16)*T1^4",
+    "algebraic_factor": "(a+b)^4*(1-m+m^2)=16+9*alpha^2",
+    "ramanujan": "E4(tau)=(2*K(k)/pi)^4*(1-k^2*k_prime^2)",
+    "E4_alpha_definition": "mathcal_E4(alpha)=(1+9*alpha^2/16)^(1/4)*T1(alpha)",
+    "j_line_operator": "L_X=X*(1-X)*d_X^2+(1-3*X/2)*d_X-5/144",
+    "j_line_solution": "mathcal_E4=D*T1/2=2F1(1/12,5/12;1;X), L_X(mathcal_E4)=0, mathcal_E4(0)=1",
+    "modular_identification": "Ramanujan differential equations give L_X(E4^(1/4))=0 and E4(i*infinity)^(1/4)=1",
+    "nome": "q=exp(pi*i*tau)=exp(-pi*K(k_prime)/K(k)); q^(2r)=exp(2*pi*i*r*tau)"
+  },
+  "figure_quantization": {
+    "centers": [
+      "(0,0)",
+      "(0,-4)",
+      "Wick (0,-2)"
+    ],
+    "energy_axis": "0 to 1",
+    "level_count": 11,
+    "rule": "f_n=(n+1/2)/L",
+    "table": "quantized_levels_for_figure.csv"
+  },
+  "verification": {
+    "command": "python3 verify_certificate.py",
+    "proof_level_check_count": 35,
+    "status": "PASS",
+    "results": "verification_results.json",
+    "solution_basis_audit": "solution_basis_audit.json",
+    "continued_root_audit": "continued_eisenstein_root_check.json"
+  }
+}

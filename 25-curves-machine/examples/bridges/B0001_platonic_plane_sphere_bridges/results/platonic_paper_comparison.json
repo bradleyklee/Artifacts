@@ -1,0 +1,24 @@
+{
+  "sphere_energy_relation": {
+    "paper_coordinate": "q = Jx^2*Jy^2 + Jy^2*Jz^2 + Jz^2*Jx^2 on Jx^2+Jy^2+Jz^2=1",
+    "dissertation_coordinate": "alpha = 2 - 4*q",
+    "A318245_coordinate": "x4 = 3*q/16",
+    "A186375_coordinate": "x3 = (1-3*q)/4"
+  },
+  "K_parameters": {
+    "s": "sqrt(1-3*q)",
+    "O4": "(1-s)^2*(1+2*s)/(4*s^3)",
+    "O3": "4*s^3/((1-s)^2*(1+2*s))",
+    "relation": "m_O3*m_O4 = 1"
+  },
+  "surface_layers": {
+    "full_sphere_curve": "genus 9 in the generic octahedral case",
+    "rotation_quotient": "234III elliptic surface",
+    "laurent_plane_companion": "126III, degree-2 isogenous to 234III"
+  },
+  "family_j_degrees": {
+    "triangle_rectangle": 6,
+    "octahedral_234III": 9,
+    "octahedral_126III": 9
+  }
+}

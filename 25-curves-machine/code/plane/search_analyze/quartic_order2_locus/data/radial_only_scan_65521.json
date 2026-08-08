@@ -1,0 +1,30 @@
+{
+  "example_id": "radial_only",
+  "prime": 65521,
+  "nterms": 165,
+  "max_order": 4,
+  "degree_cap": 20,
+  "records": [
+    {
+      "order": 1,
+      "degree_cap": 20,
+      "cap_nullity": 20,
+      "shape": [
+        164,
+        42
+      ],
+      "seconds_cap": 0.003063201904296875,
+      "first_degree": 1,
+      "first_nullity": 1,
+      "first_shape": [
+        164,
+        4
+      ]
+    }
+  ],
+  "first_hit": {
+    "order": 1,
+    "degree": 1,
+    "nullity": 1
+  }
+}

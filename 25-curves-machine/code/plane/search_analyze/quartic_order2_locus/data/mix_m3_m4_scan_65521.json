@@ -1,0 +1,60 @@
+{
+  "example_id": "mix_m3_m4",
+  "prime": 65521,
+  "nterms": 200,
+  "max_order": 6,
+  "degree_cap": 35,
+  "records": [
+    {
+      "order": 1,
+      "degree_cap": 35,
+      "cap_nullity": 0,
+      "shape": [
+        199,
+        72
+      ],
+      "seconds_cap": 0.007829904556274414
+    },
+    {
+      "order": 2,
+      "degree_cap": 35,
+      "cap_nullity": 0,
+      "shape": [
+        198,
+        108
+      ],
+      "seconds_cap": 0.012868881225585938
+    },
+    {
+      "order": 3,
+      "degree_cap": 35,
+      "cap_nullity": 0,
+      "shape": [
+        197,
+        144
+      ],
+      "seconds_cap": 0.019310712814331055
+    },
+    {
+      "order": 4,
+      "degree_cap": 35,
+      "cap_nullity": 22,
+      "shape": [
+        196,
+        180
+      ],
+      "seconds_cap": 0.025217533111572266,
+      "first_degree": 14,
+      "first_nullity": 1,
+      "first_shape": [
+        196,
+        75
+      ]
+    }
+  ],
+  "first_hit": {
+    "order": 4,
+    "degree": 14,
+    "nullity": 1
+  }
+}

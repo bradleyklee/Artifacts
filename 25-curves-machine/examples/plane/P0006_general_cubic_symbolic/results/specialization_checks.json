@@ -1,0 +1,47 @@
+[
+  {
+    "example": "cubic_three_lines",
+    "match": true,
+    "ratio": "20736/6103515625",
+    "universal_degrees": [
+      2,
+      3,
+      4
+    ],
+    "archive_degrees": [
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "example": "generic_cubic_all_A",
+    "match": true,
+    "ratio": "-2143294229918893390749735296/5712048258522576684397919308522449",
+    "universal_degrees": [
+      4,
+      5,
+      6
+    ],
+    "archive_degrees": [
+      4,
+      5,
+      6
+    ]
+  },
+  {
+    "example": "simple_cubic_factor",
+    "match": true,
+    "ratio": "1048576/9765625",
+    "universal_degrees": [
+      0,
+      1,
+      2
+    ],
+    "archive_degrees": [
+      0,
+      1,
+      2
+    ]
+  }
+]

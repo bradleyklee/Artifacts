@@ -1,0 +1,32 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0004",
+  "slug": "circle_triangle_square",
+  "display_name": "Circle-Triangle-Square",
+  "aliases": [
+    "circle_triangle_square_showcase"
+  ],
+  "domain": "plane",
+  "status": "exact_certificate_showcase",
+  "summary": "One-page human certificate with exact differential checks, period data, Abel identity, and code-generated geometry.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Certificate verifier",
+      "cwd": "showcase/circle_triangle_square/source/payload",
+      "command": "python3 verify_certificate.py",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/plane/PLANE_CURVE_ODE_PSEUDOCODE_V0_2.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "certificates/raw/circle_triangle_square",
+    "certificates/pretty/circle_triangle_square"
+  ]
+}

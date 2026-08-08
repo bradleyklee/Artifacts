@@ -1,0 +1,21 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"model_record.schema.json",
+  "title":"Canonical Hamiltonian/model input",
+  "type":"object",
+  "required":["record_type","case_id","branch_origin","geometry_domain","energy_variable","model_expression","coordinate_chart","parameter_convention","normalization","source_refs"],
+  "properties":{
+    "record_type":{"const":"model"},
+    "case_id":{"type":"string"},
+    "branch_origin":{"type":"string"},
+    "geometry_domain":{"enum":["plane_polynomial_curve","plane_polynomial_family","sphere_curve","sphere_curve_perturbation"]},
+    "energy_variable":{"type":"string"},
+    "model_expression":{"type":"string"},
+    "coordinate_chart":{"type":"object","required":["variables","description"]},
+    "parameter_convention":{"type":"object"},
+    "normalization":{"type":"object"},
+    "symmetries":{"type":"array","items":{"type":"string"}},
+    "source_refs":{"type":"array","items":{"type":"string"},"minItems":1}
+  },
+  "additionalProperties":true
+}

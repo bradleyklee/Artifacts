@@ -1,0 +1,46 @@
+{
+  "example_id": "cubic_three_lines",
+  "monomials": {
+    "3": [
+      [
+        0,
+        3,
+        "-1/5"
+      ],
+      [
+        2,
+        1,
+        "1/5"
+      ]
+    ],
+    "4": []
+  },
+  "notes": "q(p-q)(p+q) cubic perturbation",
+  "modes": {},
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 3,
+      "coefficient": "-1/5"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "1/5"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(-p,q)",
+    "(p,q)->(p,q)"
+  ]
+}

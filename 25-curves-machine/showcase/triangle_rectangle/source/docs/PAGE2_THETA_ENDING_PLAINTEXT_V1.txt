@@ -1,0 +1,97 @@
+REVISED ENDING FOR PAGE 2
+Triangle-Rectangle certificate
+
+Use this after the common period has been transformed to Legendre form.
+
+7. LEGENDRE PERIOD AND THETA CONSTANTS
+
+For the Legendre parameter m = k^2,
+
+  F(1/2,1/2;1;m) = 2 K(k)/pi.
+
+The standard theta relation is
+
+  K(k) = (pi/2) theta3(tau)^2,
+
+so
+
+  theta3(tau)^8 = (2 K(k)/pi)^4.
+
+Also,
+
+  k^2  = theta2(tau)^4 / theta3(tau)^4,
+  k'^2 = theta4(tau)^4 / theta3(tau)^4.
+
+Jacobi's quartic identity is
+
+  theta3(tau)^4
+    = theta2(tau)^4 + theta4(tau)^4.
+
+After division by theta3(tau)^4, this gives
+
+  k^2 + k'^2 = 1.
+
+
+8. RAMANUJAN'S E4-K^4 IDENTITY
+
+The classical theta formula for E4 is
+
+  E4(tau)
+    = 1/2 * (
+        theta2(tau)^8
+        + theta3(tau)^8
+        + theta4(tau)^8
+      ).
+
+Divide by theta3(tau)^8:
+
+  E4(tau) / theta3(tau)^8
+    = 1/2 * (k^4 + 1 + k'^4).
+
+Using
+
+  k^2 + k'^2 = 1,
+
+we obtain
+
+  k^4 + k'^4
+    = (k^2 + k'^2)^2 - 2 k^2 k'^2
+    = 1 - 2 k^2 k'^2.
+
+Therefore
+
+  1/2 * (k^4 + 1 + k'^4)
+    = 1 - k^2 k'^2.
+
+Since
+
+  theta3(tau)^8 = (2 K(k)/pi)^4,
+
+it follows that
+
+  E4(tau)
+    = (2 K(k)/pi)^4
+      * (1 - k^2 k'^2).
+
+This is Ramanujan's recorded E4-K^4 identity.
+
+
+PAGE-2 PROOF FLOW
+
+  rectangle-triangle Hamiltonian
+    -> unique symmetric value mu = 1/4
+    -> even quartic
+    -> signature-4 period
+    -> Legendre period
+    -> theta constants
+    -> Jacobi's quartic identity
+    -> Ramanujan's E4-K^4 identity.
+
+The heavy algebra is confined to the birational transforms and parameter
+pullbacks. The final E4-K^4 step is only the three classical identities
+
+  K = (pi/2) theta3^2,
+
+  E4 = 1/2 * (theta2^8 + theta3^8 + theta4^8),
+
+  theta3^4 = theta2^4 + theta4^4.

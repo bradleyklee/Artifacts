@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"recurrence_record.schema.json","title":"Coefficient recurrence","type":"object",
+  "required":["record_type","case_id","index_variable","shift_coefficients","order","normalization","verification"],
+  "properties":{"record_type":{"const":"recurrence"},"case_id":{"type":"string"},"index_variable":{"type":"string"},"shift_coefficients":{"type":"array","items":{"type":"string"}},"order":{"type":"integer","minimum":0},"normalization":{"type":"object"},"verification":{"type":"object"}},"additionalProperties":true
+}

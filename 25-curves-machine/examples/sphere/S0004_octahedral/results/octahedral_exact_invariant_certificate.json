@@ -1,0 +1,31 @@
+{
+  "model": "H=2*(X^2+Y^2+Z^2) on X+Y+Z=1",
+  "energy_convention": "alpha=H",
+  "invariant_chart": {
+    "u": "Jz^2",
+    "t": "v*(1-v), v=cos(phi)^2",
+    "w_relation": "w^2=u*t*(1-4*t)",
+    "fiber": "4*(1-t)*u^2+4*(2*t-1)*u+2-4*t-alpha",
+    "period_differential": "-dt/(4*w*H_u)"
+  },
+  "method_note": "reflection quotient v -> 1-v taken before reductive nullspace search; does not reuse the DihedralToODE certificate ansatz",
+  "search": {
+    "order": 2,
+    "operator_alpha_degree": 3,
+    "primitive_u_degree": 1,
+    "primitive_t_degree": 6,
+    "primitive_alpha_degree": 3,
+    "matrix_shape": [133,68],
+    "nullity": 1
+  },
+  "operator_coefficients_low_to_high": [
+    "3*(5*alpha-6)/256",
+    "(9*alpha^2-22*alpha+12)/48",
+    "(alpha-2)*(alpha-1)*(3*alpha-2)/48"
+  ],
+  "dissertation_operator_common_scale": "-1/768",
+  "primitive": "-t^2*(4*t-1)^2*(6*alpha*t*u-6*alpha*t-6*alpha*u+5*alpha-12*t*u+12*t+12*u-6)/(6144*w^3*(2*t*u-2*t-2*u+1)^3)",
+  "exact_quotient_residual": "0",
+  "status": "exact reconstructed invariant-chart certificate"
+}
+

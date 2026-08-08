@@ -1,0 +1,47 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "S0007",
+  "slug": "icosahedral_plus_z2",
+  "display_name": "Icosahedral Plus Jz^2",
+  "aliases": [
+    "sphere.icosahedral_plus_jz2",
+    "icosahedral_perturbation_z2"
+  ],
+  "domain": "sphere",
+  "status": "order6_relation_partial",
+  "summary": "Even perturbation with first exact rank dependence at order six; operator normalization and primitive reconstruction remain open.",
+  "representations": [
+    "C01",
+    "C02"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed perturbation check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py S0007",
+      "cost": "normal"
+    },
+    {
+      "label": "Perturbation rerun",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/sphere/S0007_icosahedral_plus_z2/runs/replay_output/examples/sphere_curves && CURVES_MACHINE_DATA_ROOT=../../examples/sphere/S0007_icosahedral_plus_z2/runs/replay_output python3 algorithms/scripts/run_icosahedral_perturbation.py z2",
+      "cost": "long"
+    },
+    {
+      "label": "Column screen",
+      "cwd": "code/sphere",
+      "command": "mkdir -p ../../examples/sphere/S0007_icosahedral_plus_z2/runs/replay_output/examples/sphere_curves && CURVES_MACHINE_DATA_ROOT=../../examples/sphere/S0007_icosahedral_plus_z2/runs/replay_output python3 algorithms/scripts/screen_icosahedral_columns.py z2 --max-order 6",
+      "cost": "long"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-016_PERTURB_AND_RECORD.md"
+  ],
+  "related_cases": [
+    "S0005"
+  ],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/icosahedral_perturbation_z2.json",
+    "branches/worktrees/sphere_curves/data/examples/sphere_curves/icosahedral_perturbation_z2_columns.json"
+  ]
+}

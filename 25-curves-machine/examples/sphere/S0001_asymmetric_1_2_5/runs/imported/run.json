@@ -1,0 +1,6 @@
+{
+  "run_id": "imported",
+  "case_id": "S0001",
+  "status": "exact_certificate",
+  "note": "Imported from the verified 25-curves-machine snapshot. Original paths are in case.json and migration_ledger.json."
+}

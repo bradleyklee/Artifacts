@@ -1,0 +1,14 @@
+## Acceptance tests run 2026-08-03
+
+### Tschirnhaus map
+PASS exact quadratic Tschirnhaus map
+R = -(4782969*beta**10*z**2 - 14880348*beta**10*z + 11337408*beta**10 + 67315860*beta**9*z**2 + 56293380*beta**9*z - 68103180*beta**9 + 261390240*beta**8*z**2 - 134150580*beta**8*z + 82741500*beta**8 + 178974360*beta**7*z**2 + 51176880*beta**7*z - 47013300*beta**7 + 75598470*beta**6*z**2 - 14734840*beta**6*z + 5259180*beta**6 + 14745456*beta**5*z**2 - 13296552*beta**5*z + 10224004*beta**5 + 1384020*beta**4*z**2 + 1347960*beta**4*z - 1908620*beta**4 - 196920*beta**3*z**2 + 1042480*beta**3*z - 845820*beta**3 - 15255*beta**2*z**2 + 92820*beta**2*z - 79580*beta**2 + 540*beta*z**2 - 60*beta*z - 200*beta + 36*z**2 - 4*z)/(4*(135*beta**3 + 115*beta**2 + 5*beta + 1)*(729*beta**5 + 5130*beta**4 + 1870*beta**3 + 480*beta**2 - 15*beta - 2))
+
+### Generic cubic-to-even-quartic proof
+PASS exact generic cubic-to-even-quartic identity
+
+### Certificate quartic-to-Hamiltonian proof
+PASS direct native tower
+F_icosahedral = 531441*beta**10*z**3 - 2125764*beta**10*z**2 + 2834352*beta**10*z - 1259712*beta**10 + 7479540*beta**9*z**3 - 393660*beta**9*z**2 - 12597120*beta**9*z + 5598720*beta**9 + 29043360*beta**8*z**3 - 40721940*beta**8*z**2 + 20761920*beta**8*z - 9227520*beta**8 + 19886040*beta**7*z**3 - 11990160*beta**7*z**2 - 14037120*beta**7*z + 6238720*beta**7 + 8399830*beta**6*z**3 - 9103720*beta**6*z**2 + 1251360*beta**6*z - 556160*beta**6 + 1638384*beta**5*z**3 - 2933736*beta**5*z**2 + 2302848*beta**5*z - 1023488*beta**5 + 153780*beta**4*z**3 + 13080*beta**4*z**2 - 296640*beta**4*z + 131840*beta**4 - 21880*beta**3*z**3 + 135280*beta**3*z**2 - 201600*beta**3*z + 89600*beta**3 - 1695*beta**2*z**3 + 11820*beta**2*z**2 - 18000*beta**2*z + 8000*beta**2 + 60*beta*z**3 - 60*beta*z**2 + 4*z**3 - 4*z**2
+G_triangle_rectangle = 36*alpha**2*z - 36*alpha**2 + 12*alpha*z - 16*alpha + z
+(2H-alpha)/quartic = 1/(4*(3*x**2 + 1))

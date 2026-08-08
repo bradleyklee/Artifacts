@@ -1,0 +1,28 @@
+{
+  "target_ode": {
+    "P2": "alpha*(3*alpha - 2)*(4*alpha - 1)*(9*alpha + 4)",
+    "P1": "216*alpha**3 - 195*alpha**2 - 28*alpha + 8",
+    "P0": "3*alpha*(9*alpha - 16)"
+  },
+  "signature_4_form": {
+    "formula": "T=(1+6*alpha)^(-1/2)*2F1(1/4,3/4;1;s4)",
+    "s4": "4*alpha*(9*alpha + 4)/(6*alpha + 1)**2",
+    "pullback_coefficient_of_y": "0",
+    "pullback_coefficient_of_y_x": "0"
+  },
+  "j_line_form": {
+    "formula": "T=(1+9*alpha^2)^(-1/4)*2F1(1/12,5/12;1;chi)",
+    "chi": "-27*alpha**2*(4*alpha - 1)*(9*alpha + 4)**2/(4*(9*alpha**2 + 1)**3)",
+    "j": "-256*(9*alpha**2 + 1)**3/(alpha**2*(4*alpha - 1)*(9*alpha + 4)**2)",
+    "pullback_coefficient_of_y": "0",
+    "pullback_coefficient_of_y_x": "0"
+  },
+  "branch_parameters": {
+    "r_plus": "6*alpha + 2*sqrt(alpha*(9*alpha + 4)) + 1",
+    "r_minus": "6*alpha - 2*sqrt(alpha*(9*alpha + 4)) + 1",
+    "legendre_lambda": "(6*alpha - sqrt(1 - 4*alpha) + 1)/(6*alpha + sqrt(1 - 4*alpha) + 1)",
+    "direct_jacobi_modulus_m": "4*sqrt(alpha*(9*alpha + 4))/(6*alpha + 2*sqrt(9*alpha**2 + 4*alpha) + 1)",
+    "signature_4_parameter_from_m": "4*alpha*(9*alpha + 4)/(6*alpha + 1)**2",
+    "chi_from_legendre_lambda": "-27*(4*alpha - 1)*(6*alpha - sqrt(1 - 4*alpha) + 1)**2*(6*alpha + sqrt(1 - 4*alpha) + 1)**2/(64*(9*alpha**2 + 1)**3)"
+  }
+}

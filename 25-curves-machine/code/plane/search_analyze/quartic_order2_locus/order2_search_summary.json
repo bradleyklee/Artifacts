@@ -1,0 +1,487 @@
+{
+  "status": "ORDER2_LOCUS_SEARCH_PASS",
+  "tested_two_prime_models": 28,
+  "first_hit_counts": {
+    "4": 7,
+    "2": 19,
+    "1": 1,
+    "none": 1
+  },
+  "two_prime_results": [
+    {
+      "example_id": "cube_linear_q_plus_radial",
+      "prime_65521_first_hit": {
+        "order": 4,
+        "degree": 9,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 4,
+        "degree": 9,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "cubic_linear_cube",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 2,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 2,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "cubic_m1_m3",
+      "prime_65521_first_hit": {
+        "order": 4,
+        "degree": 11,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 4,
+        "degree": 11,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "cubic_three_lines",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "even_quartic_generic_A",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 7,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 7,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "even_quartic_generic_B",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 7,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 7,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "factor_cubic_q_p2_plus_radial",
+      "prime_65521_first_hit": {
+        "order": 4,
+        "degree": 9,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 4,
+        "degree": 9,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "generic_cubic_all_A",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 6,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 6,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "generic_cubic_all_B",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 6,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 6,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m1_cubic_axis",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m1_cubic_rotated",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m2_quartic_axis",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m2_quartic_rotated",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m3_cubic_axis",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m3_cubic_rotated",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m4_quartic_axis",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "m4_quartic_rotated",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 3,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mechanical_q_cubic_only",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 2,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 2,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mechanical_q_cubic_quartic",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mechanical_q_quartic_only",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 2,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 2,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mechanical_rotated_3_4",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 4,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mix_m1_m2",
+      "prime_65521_first_hit": {
+        "order": 4,
+        "degree": 8,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 4,
+        "degree": 8,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mix_m1_m4",
+      "prime_65521_first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mix_m3_m2",
+      "prime_65521_first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "mix_m3_m4",
+      "prime_65521_first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 4,
+        "degree": 14,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "quartic_m2_m4",
+      "prime_65521_first_hit": {
+        "order": 2,
+        "degree": 5,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 2,
+        "degree": 5,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "radial_only",
+      "prime_65521_first_hit": {
+        "order": 1,
+        "degree": 1,
+        "nullity": 1
+      },
+      "prime_65497_first_hit": {
+        "order": 1,
+        "degree": 1,
+        "nullity": 1
+      }
+    },
+    {
+      "example_id": "sum_separable_both",
+      "prime_65521_first_hit": null,
+      "prime_65497_first_hit": null
+    }
+  ],
+  "exact_reductive_certificates": [
+    {
+      "example_id": "simple_cubic_factor",
+      "status": "EXACT_REDUCTIVE_PASS",
+      "order": 2,
+      "q_bound": 5,
+      "rows": 30,
+      "exact_columns": 18,
+      "combined_rank": 20,
+      "operator_coefficients": [
+        "3",
+        "32*alpha - 50",
+        "16*alpha**2 - 50*alpha"
+      ],
+      "operator_degrees": [
+        0,
+        1,
+        2
+      ],
+      "primitive_nonzero_blocks": 15,
+      "primitive_expanded_terms": 18
+    },
+    {
+      "example_id": "simple_even_quartic",
+      "status": "EXACT_REDUCTIVE_PASS",
+      "order": 2,
+      "q_bound": 5,
+      "rows": 22,
+      "exact_columns": 12,
+      "combined_rank": 14,
+      "operator_coefficients": [
+        "1",
+        "8*alpha + 4",
+        "4*alpha**2 + 4*alpha"
+      ],
+      "operator_degrees": [
+        0,
+        1,
+        2
+      ],
+      "primitive_nonzero_blocks": 6,
+      "primitive_expanded_terms": 9
+    },
+    {
+      "example_id": "mechanical_q_cubic_quartic",
+      "status": "EXACT_REDUCTIVE_PASS",
+      "order": 2,
+      "q_bound": 6,
+      "rows": 19,
+      "exact_columns": 14,
+      "combined_rank": 15,
+      "operator_coefficients": [
+        "42960000*alpha**2 + 163868418*alpha + 82641195",
+        "458240000*alpha**3 + 1812496952*alpha**2 + 2046020088*alpha + 1186642800",
+        "229120000*alpha**4 + 979216952*alpha**3 + 1675572444*alpha**2 + 1186642800*alpha"
+      ],
+      "operator_degrees": [
+        2,
+        3,
+        4
+      ],
+      "primitive_nonzero_blocks": 7,
+      "primitive_expanded_terms": 21
+    },
+    {
+      "example_id": "generic_cubic_all_A",
+      "status": "EXACT_REDUCTIVE_PASS",
+      "order": 2,
+      "q_bound": 5,
+      "rows": 30,
+      "exact_columns": 18,
+      "combined_rank": 20,
+      "operator_coefficients": [
+        "100466917027448127691393842*alpha**4 + 20388884949970053124404197584*alpha**3 - 918258376809184113745698792444*alpha**2 + 11763469214998706354582235884400*alpha - 51658794417209877157144354470000",
+        "904202253247033149222544578*alpha**5 + 67349399274557818326600386924*alpha**4 - 6392264152722926485888073637840*alpha**3 + 126509492084743076901078856986144*alpha**2 - 930093558330015506418283866974400*alpha + 1921873744381269116707663113720000",
+        "452101126623516574611272289*alpha**6 + 556787415744606038461420268*alpha**5 - 2265096905224041840972651079548*alpha**4 + 66044460890381554959045030579744*alpha**3 - 631690855593983819507675583381600*alpha**2 + 1921873744381269116707663113720000*alpha"
+      ],
+      "operator_degrees": [
+        4,
+        5,
+        6
+      ],
+      "primitive_nonzero_blocks": 17,
+      "primitive_expanded_terms": 82
+    },
+    {
+      "example_id": "cubic_linear_cube",
+      "status": "EXACT_REDUCTIVE_PASS",
+      "order": 2,
+      "q_bound": 3,
+      "rows": 21,
+      "exact_columns": 12,
+      "combined_rank": 14,
+      "operator_coefficients": [
+        "15",
+        "216*alpha - 50",
+        "108*alpha**2 - 50*alpha"
+      ],
+      "operator_degrees": [
+        0,
+        1,
+        2
+      ],
+      "primitive_nonzero_blocks": 11,
+      "primitive_expanded_terms": 16
+    }
+  ],
+  "structural_order2_loci_supported_by_tests": [
+    "cubic-only Hamiltonians E=Q2+C3",
+    "even quartic Hamiltonians E=Q2+Q4",
+    "mechanical quartics after linear canonical rotation: E=P^2+V(Q), deg(V)<=4",
+    "one angular cubic frequency plus radial quartic",
+    "purely radial quartic (actually order 1)"
+  ],
+  "counterexamples": [
+    "generic mixtures of two cubic frequencies plus radial quartic rise to order 4",
+    "generic cross-degree angular mixtures rise to order 4 or 6",
+    "separable sum f(p)+g(q) with both sides cubic/quartic did not close through order 6, degree 35 in this scan"
+  ]
+}

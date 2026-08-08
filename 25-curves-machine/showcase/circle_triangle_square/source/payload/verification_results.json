@@ -1,0 +1,78 @@
+{
+  "certificate": "circle_triangle_square_periods_v19_source_standardized",
+  "check_count": 14,
+  "checks": [
+    {
+      "id": "figure_midpoint_action_quantization",
+      "kind": "numeric_replay",
+      "status": "pass"
+    },
+    {
+      "id": "curve_and_rho",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "annihilator_factorization",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "exact_differential_certificate",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "critical_points_and_energies",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "wick_center_transform",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "real_and_complex_integer_series",
+      "kind": "exact_recurrence",
+      "status": "pass"
+    },
+    {
+      "id": "scaled_ode_series_checks",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "abel_identity",
+      "kind": "high_precision",
+      "status": "pass"
+    },
+    {
+      "id": "center_normalized_local_solution",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "harmonic_frequency_and_period",
+      "kind": "exact_symbolic",
+      "status": "pass"
+    },
+    {
+      "id": "connection_across_apparent_singularity",
+      "kind": "high_precision",
+      "status": "pass"
+    },
+    {
+      "id": "full_green_cycle_quadrature",
+      "kind": "high_precision",
+      "status": "pass"
+    },
+    {
+      "description": "Only real actions are quantized; complex energies equal the paired real energies and contours are tangent at shared turning points.",
+      "name": "tangent_matched_complex_energies",
+      "status": "PASS"
+    }
+  ],
+  "proof_level_check_count": 13,
+  "status": "pass"
+}

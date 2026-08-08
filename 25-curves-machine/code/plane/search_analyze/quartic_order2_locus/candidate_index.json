@@ -1,0 +1,318 @@
+[
+  {
+    "example_id": "m1_cubic_axis",
+    "notes": "single angular frequency m=1 plus radial quartic",
+    "modes": {
+      "L3q": "1/5",
+      "R4": "1/11"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "m1_cubic_rotated",
+    "notes": "rotated m=1 cubic plus radial quartic",
+    "modes": {
+      "L3q": "1/7",
+      "L3p": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "m3_cubic_axis",
+    "notes": "single angular frequency m=3 plus radial quartic",
+    "modes": {
+      "C3": "1/5",
+      "R4": "1/11"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "m3_cubic_rotated",
+    "notes": "rotated m=3 cubic plus radial quartic",
+    "modes": {
+      "C3": "1/7",
+      "S3": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "m2_quartic_axis",
+    "notes": "single angular frequency m=2 plus radial quartic",
+    "modes": {
+      "Q2R2": "1/7",
+      "R4": "1/11"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,-q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "m2_quartic_rotated",
+    "notes": "rotated m=2 quartic plus radial quartic",
+    "modes": {
+      "Q2R2": "1/7",
+      "PQR2": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "m4_quartic_axis",
+    "notes": "single angular frequency m=4 plus radial quartic",
+    "modes": {
+      "C4": "1/7",
+      "R4": "1/11"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,-q)",
+      "(p,q)->(p,q)",
+      "(p,q)->(-q,-p)",
+      "(p,q)->(-q,p)",
+      "(p,q)->(q,-p)",
+      "(p,q)->(q,p)"
+    ]
+  },
+  {
+    "example_id": "m4_quartic_rotated",
+    "notes": "rotated m=4 quartic plus radial quartic",
+    "modes": {
+      "C4": "1/7",
+      "S4": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(p,q)",
+      "(p,q)->(-q,p)",
+      "(p,q)->(q,-p)"
+    ]
+  },
+  {
+    "example_id": "radial_only",
+    "notes": "pure radial quartic",
+    "modes": {
+      "R4": "1/7"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,-q)",
+      "(p,q)->(p,q)",
+      "(p,q)->(-q,-p)",
+      "(p,q)->(-q,p)",
+      "(p,q)->(q,-p)",
+      "(p,q)->(q,p)"
+    ]
+  },
+  {
+    "example_id": "cubic_m1_m3",
+    "notes": "two cubic frequencies m=1 and m=3",
+    "modes": {
+      "L3q": "1/7",
+      "C3": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "quartic_m2_m4",
+    "notes": "two quartic frequencies m=2 and m=4",
+    "modes": {
+      "Q2R2": "1/7",
+      "C4": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,-q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mix_m1_m2",
+    "notes": "two frequencies m=1 and m=2",
+    "modes": {
+      "L3q": "1/7",
+      "Q2R2": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mix_m1_m4",
+    "notes": "two frequencies m=1 and m=4",
+    "modes": {
+      "L3q": "1/7",
+      "C4": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mix_m3_m2",
+    "notes": "two frequencies m=3 and m=2",
+    "modes": {
+      "C3": "1/7",
+      "Q2R2": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mix_m3_m4",
+    "notes": "two frequencies m=3 and m=4",
+    "modes": {
+      "C3": "1/7",
+      "C4": "1/9",
+      "R4": "1/13"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "even_quartic_generic_A",
+    "notes": "generic homogeneous quartic perturbation; central inversion only",
+    "modes": {
+      "R4": "1/11",
+      "Q2R2": "1/7",
+      "PQR2": "1/13",
+      "C4": "1/9",
+      "S4": "1/17"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "even_quartic_generic_B",
+    "notes": "second generic homogeneous quartic perturbation",
+    "modes": {
+      "R4": "2/13",
+      "Q2R2": "-1/8",
+      "PQR2": "1/10",
+      "C4": "1/15",
+      "S4": "-1/19"
+    },
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mechanical_q_cubic_quartic",
+    "notes": "p^2+q^2+a q^3+b q^4",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mechanical_q_cubic_only",
+    "notes": "p^2+q^2+a q^3",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mechanical_q_quartic_only",
+    "notes": "p^2+q^2+b q^4",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,-q)",
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,-q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "mechanical_rotated_3_4",
+    "notes": "rotated one-coordinate cubic+quartic potential",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "cube_linear_q_plus_radial",
+    "notes": "q^3 plus radial quartic",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "factor_cubic_q_p2_plus_radial",
+    "notes": "p^2 q plus radial quartic",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "sum_separable_both",
+    "notes": "f(p)+g(q) with both cubic and quartic",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)"
+    ]
+  },
+  {
+    "example_id": "cubic_linear_cube",
+    "notes": "(p+q)^3 perturbation",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(p,q)",
+      "(p,q)->(q,p)"
+    ]
+  },
+  {
+    "example_id": "cubic_three_lines",
+    "notes": "q(p-q)(p+q) cubic perturbation",
+    "modes": {},
+    "signed_coordinate_symmetries": [
+      "(p,q)->(-p,q)",
+      "(p,q)->(p,q)"
+    ]
+  }
+]

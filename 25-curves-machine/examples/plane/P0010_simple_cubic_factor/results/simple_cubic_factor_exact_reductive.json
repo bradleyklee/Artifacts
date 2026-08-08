@@ -1,0 +1,46 @@
+{
+  "example_id": "simple_cubic_factor",
+  "status": "EXACT_REDUCTIVE_PASS",
+  "order": 2,
+  "q_bound": 5,
+  "rows": 30,
+  "exact_columns": 18,
+  "combined_rank": 20,
+  "nullspace_rows": 1,
+  "build_seconds": 0.5839240550994873,
+  "verify_seconds": 0.008340597152709961,
+  "operator_coefficients": [
+    "3",
+    "32*alpha - 50",
+    "16*alpha**2 - 50*alpha"
+  ],
+  "operator_factored": [
+    "3",
+    "2*(16*alpha - 25)",
+    "2*alpha*(8*alpha - 25)"
+  ],
+  "operator_degrees": [
+    0,
+    1,
+    2
+  ],
+  "primitive_nonzero_blocks": 15,
+  "primitive_expanded_terms": 18,
+  "primitive_coefficients": {
+    "p^0 q^0": "-20*alpha",
+    "p^0 q^1": "4*alpha - 100",
+    "p^0 q^2": "50 - alpha",
+    "p^0 q^3": "26",
+    "p^0 q^4": "-6/5",
+    "p^0 q^5": "-24/25",
+    "p^1 q^0": "-12*alpha",
+    "p^1 q^1": "-60",
+    "p^1 q^2": "16",
+    "p^1 q^3": "24",
+    "p^1 q^4": "48/25",
+    "p^2 q^0": "10 - 3*alpha",
+    "p^2 q^1": "-26",
+    "p^2 q^2": "54/5",
+    "p^2 q^3": "-24/25"
+  }
+}

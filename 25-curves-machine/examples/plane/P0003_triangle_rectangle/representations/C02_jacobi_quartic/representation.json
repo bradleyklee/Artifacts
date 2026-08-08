@@ -1,0 +1,13 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C02",
+  "slug": "jacobi_quartic",
+  "name": "Jacobi quartic model",
+  "kind": "birational_model",
+  "variables": [
+    "x",
+    "y"
+  ],
+  "constraints": [],
+  "notes": "Recorded by the current human certificate transformation chain."
+}

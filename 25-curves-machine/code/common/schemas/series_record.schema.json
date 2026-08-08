@@ -1,0 +1,5 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema","$id":"series_record.schema.json","title":"Period series output","type":"object",
+  "required":["record_type","case_id","expansion_variable","coefficients","exactness","normalization","source_ref"],
+  "properties":{"record_type":{"const":"period_series"},"case_id":{"type":"string"},"expansion_variable":{"type":"string"},"center":{"type":["string","number"]},"coefficients":{"type":"array","items":{"type":"string"}},"exactness":{"enum":["exact","modular","numerical"]},"normalization":{"type":"object"},"source_ref":{"type":"string"}},"additionalProperties":true
+}

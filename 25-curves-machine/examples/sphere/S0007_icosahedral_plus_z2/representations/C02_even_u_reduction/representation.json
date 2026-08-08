@@ -1,0 +1,13 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C02",
+  "slug": "even_u_reduction",
+  "name": "Even-power reduction",
+  "kind": "quotient_coordinates",
+  "variables": [
+    "u"
+  ],
+  "constraints": [],
+  "notes": "u=lambda^2",
+  "global": false
+}

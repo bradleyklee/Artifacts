@@ -1,0 +1,17 @@
+{
+  "format": "curves-machine-representation-v1",
+  "representation_id": "C03",
+  "slug": "action_angle_chart",
+  "name": "Action-angle quotient chart",
+  "kind": "action_angle",
+  "variables": [
+    "u",
+    "v",
+    "y"
+  ],
+  "constraints": [
+    "y^2=u*v*(1-v)"
+  ],
+  "notes": "",
+  "global": false
+}

@@ -1,0 +1,67 @@
+{
+  "example_id": "factor_cubic_q_p2_plus_radial",
+  "monomials": {
+    "3": [
+      [
+        2,
+        1,
+        "1/5"
+      ]
+    ],
+    "4": [
+      [
+        0,
+        4,
+        "1/13"
+      ],
+      [
+        2,
+        2,
+        "2/13"
+      ],
+      [
+        4,
+        0,
+        "1/13"
+      ]
+    ]
+  },
+  "notes": "p^2 q plus radial quartic",
+  "modes": {},
+  "E_terms": [
+    {
+      "p": 0,
+      "q": 2,
+      "coefficient": "1"
+    },
+    {
+      "p": 0,
+      "q": 4,
+      "coefficient": "1/13"
+    },
+    {
+      "p": 2,
+      "q": 0,
+      "coefficient": "1"
+    },
+    {
+      "p": 2,
+      "q": 1,
+      "coefficient": "1/5"
+    },
+    {
+      "p": 2,
+      "q": 2,
+      "coefficient": "2/13"
+    },
+    {
+      "p": 4,
+      "q": 0,
+      "coefficient": "1/13"
+    }
+  ],
+  "signed_coordinate_symmetries": [
+    "(p,q)->(-p,q)",
+    "(p,q)->(p,q)"
+  ]
+}

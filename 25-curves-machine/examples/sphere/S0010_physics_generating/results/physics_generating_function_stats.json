@@ -1,0 +1,94 @@
+{
+  "reference": "Tyuterev, J. Mol. Spectrosc. 151 (1992), 97-129, Eqs. 35-38",
+  "physics_convention": "fixed J^2=L2; canonical pair (Jz,phi); energy=H",
+  "G": "2/kappa*(sqrt(1+kappa*Jz^2)-1)",
+  "G_taylor_through_Jz10": "7*kappa**4*p**10/128 - 5*kappa**3*p**8/64 + kappa**2*p**6/8 - kappa*p**4/4 + p**2",
+  "watson_dictionary": {
+    "b_equals": "Bz^(J)",
+    "kappa_equals": "4*DeltaK^(J)/Bz^(J)",
+    "bG_series": "14*DeltaK**4*p**10/b**3 - 5*DeltaK**3*p**8/b**2 + 2*DeltaK**2*p**6/b - DeltaK*p**4 + b*p**2"
+  },
+  "even_prism_family": [
+    {
+      "m": 2,
+      "symmetry": "D_2",
+      "h2_degree_p": 2,
+      "rho_numerator_degree_p": 3,
+      "turning_resultant_degree_p": 8,
+      "turning_resultant_degree_energy": 4,
+      "constraint_residual": "0"
+    },
+    {
+      "m": 4,
+      "symmetry": "D_4",
+      "h2_degree_p": 4,
+      "rho_numerator_degree_p": 5,
+      "turning_resultant_degree_p": 16,
+      "turning_resultant_degree_energy": 4,
+      "constraint_residual": "0"
+    },
+    {
+      "m": 6,
+      "symmetry": "D_6",
+      "h2_degree_p": 6,
+      "rho_numerator_degree_p": 7,
+      "turning_resultant_degree_p": 24,
+      "turning_resultant_degree_energy": 4,
+      "constraint_residual": "0"
+    },
+    {
+      "m": 8,
+      "symmetry": "D_8",
+      "h2_degree_p": 8,
+      "rho_numerator_degree_p": 9,
+      "turning_resultant_degree_p": 32,
+      "turning_resultant_degree_energy": 4,
+      "constraint_residual": "0"
+    }
+  ],
+  "flattened_octahedral": {
+    "axis": "octahedral fourfold z axis",
+    "residual_symmetry": "D_4",
+    "h1": "7*p**4/2 - 3*p**2 + 4*s/5 + 7/10",
+    "h2": "p**4/2 - p**2 + 1/2",
+    "turning_resultant_degree_p": 16,
+    "rigid_limit_added_term": "b*Jz^2"
+  },
+  "order2_certificate_search": {
+    "operator_energy_degree": 5,
+    "numerator_energy_degree": 5,
+    "completed_shells": [
+      {
+        "numerator_p_degree": 0,
+        "matrix_shape": [
+          123,
+          30
+        ],
+        "status": "incomplete",
+        "seconds": 28.12
+      },
+      {
+        "numerator_p_degree": 1,
+        "matrix_shape": [
+          220,
+          42
+        ],
+        "status": "incomplete",
+        "seconds": 36.22
+      },
+      {
+        "numerator_p_degree": 2,
+        "matrix_shape": [
+          220,
+          54
+        ],
+        "status": "incomplete",
+        "seconds": 54.59
+      }
+    ],
+    "status": "blocked",
+    "next_numerator_p_degree": 3,
+    "note": "resource boundary, not a no-relation claim"
+  },
+  "odd_m": "rejected by the present even-component branch"
+}

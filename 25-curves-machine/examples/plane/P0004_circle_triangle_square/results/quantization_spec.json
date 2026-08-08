@@ -1,0 +1,15 @@
+{
+  "schema": "period-figure-tangent-matched-action-quantization/1.1",
+  "level_count": 11,
+  "index_range": "n=0,...,L-1",
+  "fraction": "f_n=(n+1/2)/L",
+  "action_definition": "I_real(E)=Area(C_E^real)/(2*pi)",
+  "normalization": "Only the real branch is normalized by its bounding separatrix action.",
+  "abel_wick_matching": {
+    "substitution": "p=iP",
+    "energy_rule": "E_ip=E_real",
+    "tangency": "paired contours share turning points and tangent lines"
+  },
+  "generator": "generate_quantized_levels.py",
+  "checked_table": "quantized_levels_for_figure.csv"
+}

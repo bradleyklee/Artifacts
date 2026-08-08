@@ -1,0 +1,31 @@
+{
+  "format": "curves-machine-case-v1",
+  "case_id": "P0019",
+  "slug": "weird_quintic_boundary",
+  "display_name": "Weird Quintic Boundary Case",
+  "aliases": [
+    "weird_quintic_p_even"
+  ],
+  "domain": "plane",
+  "status": "inductive_only_blocked",
+  "summary": "Quintic boundary case with modular holdout and bounded reductive search; exact reconstruction remains open.",
+  "representations": [
+    "C01"
+  ],
+  "replay_commands": [
+    {
+      "label": "Filed study check",
+      "cwd": ".",
+      "command": "python3 code/tools/verify_filed_case.py P0019",
+      "cost": "normal"
+    }
+  ],
+  "pseudocode_refs": [
+    "pseudo/sphere/ALG-001_INDUCTIVE_SERIES_DISCOVERY.md",
+    "pseudo/sphere/ALG-002_REDUCTIVE_NULLSPACE_CERTIFICATE.md"
+  ],
+  "related_cases": [],
+  "source_paths": [
+    "branches/worktrees/sphere_curves/data/examples/quintic_boundary"
+  ]
+}

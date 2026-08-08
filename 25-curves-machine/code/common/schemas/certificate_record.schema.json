@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "certificate_record.schema.json",
+  "title": "Raw certificate record",
+  "type": "object",
+  "required": [
+    "certificate_id",
+    "case_id",
+    "claim_type",
+    "operator",
+    "verification",
+    "status"
+  ],
+  "properties": {
+    "certificate_id": {
+      "type": "string"
+    },
+    "case_id": {
+      "type": "string"
+    },
+    "claim_type": {
+      "enum": [
+        "exact_identity",
+        "bounded_exclusion",
+        "relation_only",
+        "computational_limit",
+        "normalization_equivalence"
+      ]
+    },
+    "operator": {},
+    "primitive": {},
+    "reduction_data": {},
+    "verification": {
+      "type": "object"
+    },
+    "status": {
+      "enum": [
+        "partial",
+        "verified",
+        "crystalline",
+        "pretty_released",
+        "failed_verification"
+      ]
+    },
+    "failure_ref": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "provenance": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": true
+}

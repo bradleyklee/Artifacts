@@ -1,0 +1,12 @@
+{
+  "status": "blocked_external_time_limit",
+  "base": "normalized icosahedral sextic",
+  "perturbation": "z",
+  "addition": "lambda",
+  "h1": "11*lambda**6 - 15*lambda**4 + 5*lambda**2 + lambda",
+  "h2_squared": "4*lambda**2*(1 - lambda**2)**5",
+  "eliminated_P": "-25*alpha**2 + 550*alpha*x**6 - 750*alpha*x**4 + 250*alpha*x**2 + 50*alpha*x - 3125*x**12 + 8750*x**10 - 9375*x**8 - 550*x**7 + 4750*x**6 + 750*x**5 - 1125*x**4 - 250*x**3 + 75*x**2",
+  "P_degree_lambda": 12,
+  "completed_order_tests": [],
+  "blocker": "process stopped during the next requested order; completed tests retained"
+}

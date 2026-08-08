@@ -1,0 +1,7 @@
+sympy==1.14.0
+numpy
+matplotlib
+mpmath
+pypdf
+jsonschema
+psutil

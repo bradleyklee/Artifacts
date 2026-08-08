@@ -1,0 +1,52 @@
+{
+  "schema": "wide-plane-curve-regime-v1",
+  "date": "2026-08-02",
+  "research_owner": "Bradley Klee",
+  "priority_elliptic": {
+    "energy": "p^2+q^2+(q^3-3*p^2*q)+(q^2-3*p^2)^2/4",
+    "order": 2,
+    "operators_equal": true,
+    "lairez_reduction_seconds": 1.9663,
+    "lairez_certificate_assembly_seconds": 1.1325,
+    "lairez_certificate_residual_zero": true,
+    "klee_total_seconds": 7.6540,
+    "klee_primitive_terms": 43,
+    "klee_quotient_dimension": 8,
+    "klee_identity_verified": true
+  },
+  "free_coefficient_family": {
+    "energy": "p^2+q^2+c1*(q^3-3*p^2*q)+c2*(q^2-3*p^2)^2",
+    "coefficient_field": "Q(c1,c2,alpha)",
+    "symbolic_order": 2,
+    "symbolic_reduction_seconds": 125.1658,
+    "large_profile_shape": [53, 53],
+    "large_solve_seconds": 103.7524,
+    "operator_expanded_term_counts": [23, 26, 26],
+    "operator_alpha_degrees": [4, 5, 6],
+    "fresh_exact_specializations_verified": 3,
+    "generic_probe_klee_primitive_terms": 71,
+    "must_have_klee_primitive_terms": 43
+  },
+  "harmonic_mixed_quartic_grid": {
+    "raw_cases": 9,
+    "scaling_classes": 7,
+    "order_four_cases": 8,
+    "order_two_cases": 1,
+    "tested_order_two_tau": "4",
+    "generic_lairez_reduction_median_seconds": 88.7701,
+    "generic_lairez_reduction_range_seconds": [87.3733, 95.6530],
+    "duplicate_tau_scaling_checks": 2,
+    "duplicate_tau_scaling_checks_passed": 2,
+    "klee_tau_2_support_failures_q_degree": [17, 19, 20],
+    "klee_tau_2_first_tested_success_q_degree": 21,
+    "klee_tau_2_total_seconds": 133.2620,
+    "klee_tau_2_primitive_terms": 487,
+    "operators_equal_at_tau_2": true
+    ,
+    "klee_tau_32_total_seconds": 144.5339,
+    "klee_tau_32_primitive_terms": 487,
+    "klee_tau_32_matrix_shape": [56, 44],
+    "lairez_tau_32_reduction_seconds": 95.6530,
+    "operators_equal_at_tau_32": true
+  }
+}
