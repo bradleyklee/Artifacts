@@ -1,0 +1,16 @@
+REPRODUCIBILITY STATUS: PASS
+
+Exact symbolic verifier:
+- restricted forms, time form, action and period: PASS
+- energy-native cubic and second-order ODE: PASS
+- direct Gauss pullback x=27E/4: PASS
+- negative local branch sign and hypergeometric series: PASS
+- A244038 integral uniformizer, terms and recurrence: PASS
+- numerical constrained-flow and action audits: PASS
+- eight diagrams, three strict crossings each: PASS
+
+Numerical maxima:
+- constrained-flow relative error: 8.279817220464269e-11
+- action-derivative relative error: 1.3101278341554171e-08
+
+Visual regression against the preceding v4 PDF render: 0 changed pages.

@@ -1,0 +1,6 @@
+PDF: /mnt/data/trefoil_symplectic_period_artifact/dist/trefoil_symplectic_period_certificate.pdf
+Pages: 1
+Encrypted: False
+Openable (PyMuPDF): True
+Likely scanned: False
+XFA present: False

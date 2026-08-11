@@ -1,0 +1,11 @@
+{
+  "artifact": "trefoil-symplectic-period-certificate",
+  "version": "v4-extraction-2026-08-11",
+  "primary_pdf": "dist/trefoil_symplectic_period_certificate.pdf",
+  "latex_source": "src/trefoil_certificate.tex",
+  "exact_verifier": "src/verify_trefoil.py",
+  "numerical_audit": "src/numerical_audit.py",
+  "figure_generator": "src/make_figures.py",
+  "payload": "src/trefoil_period_payload.json",
+  "oeis": "A244038"
+}

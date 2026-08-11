@@ -1,0 +1,80 @@
+{
+  "method_period": "finite-difference tangent plane + ambient omega_0 constrained Hamiltonian solve + theta quadrature",
+  "method_action": "polygonal integral of lambda_0 on K_E + centered finite difference in E",
+  "records": [
+    {
+      "E": 0.0001,
+      "u": 0.009950615177038501,
+      "T_closed": 6.329386875448284,
+      "T_constrained_numeric": 6.329386875952559,
+      "relerr_constrained": 7.967198940868763e-11,
+      "dA_dE_polygon_numeric": 6.329386827218057,
+      "relerr_action_derivative": 7.620047229287986e-09
+    },
+    {
+      "E": 0.001,
+      "u": 0.03114159461746758,
+      "T_closed": 6.423387437620503,
+      "T_constrained_numeric": 6.4233874381413,
+      "relerr_constrained": 8.107820742950377e-11,
+      "dA_dE_polygon_numeric": 6.423387384057317,
+      "relerr_action_derivative": 8.338775653036764e-09
+    },
+    {
+      "E": 0.01,
+      "u": 0.09554013565876501,
+      "T_closed": 6.676973695570796,
+      "T_constrained_numeric": 6.67697369612207,
+      "relerr_constrained": 8.256340649158828e-11,
+      "dA_dE_polygon_numeric": 6.676973637737004,
+      "relerr_action_derivative": 8.661677372792646e-09
+    },
+    {
+      "E": 0.05,
+      "u": 0.20380158045608393,
+      "T_closed": 7.0187222438422925,
+      "T_constrained_numeric": 7.018722244419877,
+      "relerr_constrained": 8.229193044283246e-11,
+      "dA_dE_polygon_numeric": 7.018722171819868,
+      "relerr_action_derivative": 1.026147238295197e-08
+    },
+    {
+      "E": 0.1,
+      "u": 0.27955688985066773,
+      "T_closed": 7.211352721070407,
+      "T_constrained_numeric": 7.2113527216674935,
+      "relerr_constrained": 8.279817220464269e-11,
+      "dA_dE_polygon_numeric": 7.211352643782253,
+      "relerr_action_derivative": 1.0717566681906474e-08
+    },
+    {
+      "E": 0.14814814814814814,
+      "u": 0.33333333333333326,
+      "T_closed": 7.330382858376183,
+      "T_constrained_numeric": 7.330382858980423,
+      "relerr_constrained": 8.242955724057795e-11,
+      "dA_dE_polygon_numeric": 7.330382776332689,
+      "relerr_action_derivative": 1.1192252214050107e-08
+    },
+    {
+      "E": 0.2,
+      "u": 0.3806094576725636,
+      "T_closed": 7.424928013159206,
+      "T_constrained_numeric": 7.424928013765131,
+      "relerr_constrained": 8.160686363667912e-11,
+      "dA_dE_polygon_numeric": 7.424927926436008,
+      "relerr_action_derivative": 1.1680005160781216e-08
+    },
+    {
+      "E": 1.0,
+      "u": 0.7548776662466927,
+      "T_closed": 7.951454157985915,
+      "T_constrained_numeric": 7.951454158636884,
+      "relerr_constrained": 8.186792547666815e-11,
+      "dA_dE_polygon_numeric": 7.951454053811701,
+      "relerr_action_derivative": 1.3101278341554171e-08
+    }
+  ],
+  "max_relerr_constrained": 8.279817220464269e-11,
+  "max_relerr_action_derivative": 1.3101278341554171e-08
+}

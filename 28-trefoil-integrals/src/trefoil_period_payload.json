@@ -1,0 +1,67 @@
+{
+  "schema": "trefoil-symplectic-period-certificate/v4",
+  "title": "Trefoil Symplectic-Period Certificate",
+  "model": {
+    "ambient": "C^2 with omega0=(i/2)(dz^dbar(z)+dw^dbar(w))",
+    "curve": "z^2-w^3=0",
+    "hamiltonian": "H=|z|^2+|w|^2",
+    "energy_knot": "K_E=C intersect H^{-1}(E), E>0",
+    "parametrization": "z=s^3, w=s^2, s=sqrt(u)*exp(i theta)",
+    "energy_relation": "E=u^3+u^2=u^2(u+1)"
+  },
+  "restricted_symplectic_data": {
+    "lambda_C": "(1/2)(3u^3+2u^2)dtheta",
+    "omega_C": "(1/2)(9u^2+4u)du^dtheta",
+    "dh": "(3u^2+2u)du",
+    "time_form_eta": "(9u+4)/(2(3u+2)) dtheta",
+    "convention": "i_X omega_C=-dh and eta(X)=1",
+    "period": "T(E)=pi*(9u+4)/(3u+2)",
+    "action": "A(E)=pi*(3u^3+2u^2), dA/dE=T(E)"
+  },
+  "energy_native_period_function": {
+    "Phi": "Phi(E)=3-T(E)/pi=2/(3u+2)",
+    "u_from_Phi": "u=2(1-Phi)/(3Phi)",
+    "algebraic_equation": "(4-27E)Phi^3-12Phi+8=0",
+    "dPhi_dE": "-6/(u(3u+2)^3)",
+    "d2Phi_dE2": "12(6u+1)/(u^3(3u+2)^5)",
+    "linear_ode": "E(27E-4)Phi''+2(27E-1)Phi'+6Phi=0"
+  },
+  "gauss_form": {
+    "x": "27E/4",
+    "ode": "x(1-x)y''+(1/2-2x)y'-(2/9)y=0",
+    "parameters": ["1/3", "2/3", "1/2"],
+    "solution": "2F1(1/3,2/3;1/2;x)-(3/2)sqrt(E)*2F1(5/6,7/6;3/2;x)",
+    "sign_check": "minus sign is forced by Phi(E)=2/(3u+2)<1 for E>0 and Phi(E)=1-(3/2)sqrt(E)+O(E)"
+  },
+  "integer_uniformizer": {
+    "q": "sqrt(E)/4",
+    "G": "G(q)=Phi(16q^2)",
+    "series": "G(q)=sum_{n>=0}(-1)^n a_n q^n",
+    "a_n": "4^n*binomial(3n/2,n)",
+    "integrality_witness": "a_n=[x^n]((1-x)(1-2x))^(-n-1)",
+    "first_terms_unsigned": [1,6,48,420,3840,36036,344064,3325608,32440320,318704100,3148873728],
+    "first_terms_signed": [1,-6,48,-420,3840,-36036,344064,-3325608,32440320,-318704100,3148873728],
+    "recurrence": "(n+1)(n+2)a_{n+2}=12(3n+4)(3n+2)a_n",
+    "oeis": "A244038"
+  },
+  "ode_singularity": {
+    "E_star": "4/27",
+    "u_at_E_star": "1/3",
+    "meaning": "first positive singular point of the E-ODE; not a knot-type transition"
+  },
+  "drawing": {
+    "source": "computed from the exact parametrization and stereographic projection",
+    "crossing_convention": "short green segment on under branch, then short red segment on over branch, both centered at exact screen crossing; red is always drawn over green",
+    "crossing_data_attachment": "crossing_family_view2.json"
+  },
+  "numerical_audit": {
+    "attachment": "numerical_audit.json",
+    "script": "numerical_audit.py",
+    "period_method": "finite-difference tangent plane + ambient symplectic constrained-flow solve + quadrature on K_E in R^4",
+    "action_method": "polygonal line integral of lambda_0 + centered E-difference"
+  },
+  "verification": {
+    "script": "verify_trefoil.py",
+    "figure_script": "make_figures.py"
+  }
+}
