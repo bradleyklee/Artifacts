@@ -275,7 +275,14 @@ use, dimensions, and check values, and validates the result by default.
 The fast and direct methods have been tested through q=9, with the 
 full q=9 direct run passing all 281 checks.
 
-## 23. PLACEHOLDER
+## 23. paths-problem
+
+An exact, restartable extraction for the (P^4) quadtree problem. It regenerates
+the exact level 1--4 reports and carries a checkpointed MILP search into level
+5, with labeled brace-coded quadtrees and staged retries of unresolved classes.
+Level 5 remains incomplete: the artifact records a verified lower bound and
+reproducible search state, not a finished fifth term.
+
 
 ## 24. jupyter-testing
 
@@ -287,3 +294,36 @@ browser-based launch. The use case is an oddity from twitter, that was
 given out as a counter-example to the Jacobian conjecture. 
 
 
+## 25. curves-machine
+
+A working factory for exact and experimental period calculations on plane and
+sphere curves. Examples retain stable IDs, coordinate representations,
+provenance, replay commands, results, and machine certificates, while selected
+cases can be promoted to human-readable showcase certificates without losing
+their underlying computational record.
+
+## 26. herfurtner-miranda
+
+A validated dataset and exact certificate framework for the Miranda--Herfurtner
+four-fibre classification. It regenerates the 56 nonconstant-(J) targets and
+checks retained plane Hamiltonians using independent Hamiltonian, Laurent,
+annihilator, recurrence, coefficient, and residual-zero tests. Bounded searches
+for additional plane and Laurent presentations remain explicitly exploratory.
+
+## 27. laurent-polynomials
+
+An exact certificate tool for periods of bivariate Laurent polynomials
+(A_n=[F(x,y)^n]_0). It derives differential operators together with explicit
+(G,U,V,J) exact-differential certificates, recurrences, constant terms, and
+machine-checkable JSON records, with separate replay and full-recomputation
+paths for the canonical examples.
+
+## 28. trefoil-integrals
+
+A self-contained certificate for the symplectic period of the trefoil family
+({z^2=w^3}\cap H^{-1}(E)). Restricting the standard symplectic structure
+gives an elementary exact period whose transformed branch satisfies an
+algebraic equation and a Gauss-hypergeometric ODE, with integral coefficients
+identified with OEIS A244038. Exact symbolic checks, independent numerical
+audits, and computed 3-D knot diagrams with certified crossing data accompany
+the result.
