@@ -1,0 +1,682 @@
+% !TeX program = xelatex
+\documentclass[11pt,fleqn]{article}
+\usepackage[letterpaper,margin=0.92in]{geometry}
+\usepackage{fontspec}
+\IfFontExistsTF{TeX Gyre Pagella}
+  {\setmainfont{TeX Gyre Pagella}}
+  {\setmainfont{TeXGyrePagella}}
+\IfFontExistsTF{TeX Gyre Heros}
+  {\setsansfont{TeX Gyre Heros}}
+  {\setsansfont{TeXGyreHeros}}
+\setmonofont{DejaVu Sans Mono}
+\usepackage{eulervm}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,mathtools,amsthm}
+\usepackage{xcolor,hyperref,booktabs,array,enumitem,fancyhdr}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue!55!black,citecolor=black}
+\setlength{\parindent}{1.2em}
+\setlength{\parskip}{0pt}
+\setlength{\mathindent}{1.7em}
+\setlist{nosep,leftmargin=1.6em}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small Elliptic Laurent periods and A216584}
+\fancyhead[R]{\small Bradley Klee}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.25pt}
+\renewcommand{\footrulewidth}{0pt}
+\allowdisplaybreaks
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newcommand{\Dx}{D_x}
+\newcommand{\Dy}{D_y}
+
+\title{\vspace{-2.1em}\textbf{Elliptic Laurent periods and A216584}\\[0.3em]
+\large with recipes for reduction certificates}
+\author{Bradley Klee, \quad Mech.An.ika Sol (Open AI)}
+\date{August 8, 2026}
+
+\raggedbottom
+\begin{document}
+\maketitle
+
+\begin{abstract}
+The sequence $a(n)=C_n\;T_n$ where $C_n = [(x+2+x^{-1})^n]_0$ and $T_n = [(y+1+y^{-1})^n]_0$  
+gives the product of central binomial coefficients $C_n$ with central trinomial coefficients
+$T_n$. The generating function $A(s)=\sum_{n\ge0}a_ns^n$ is also the period function of an
+elliptic surface. The ODE constraining $A(s)$ derives from reduction analysis of the 
+period integrand and as well from the definition of $C_n$ and $T_n$ as constant terms
+of Laurent polynomials. Two approaches yield distinct certificates. 
+\end{abstract}
+
+\begin{theorem}[]\label{thm:main}
+The sequence $a(n)$ and its generating function $A(s)$ satisfy all of the following:
+\begin{enumerate}[label=\textnormal{(\arabic*)},leftmargin=2.2em,itemsep=0.22em,topsep=0.2em]
+\item For $G(x,y)=(x+2+x^{-1})(1+y+y^{-1})$,
+\[
+ a_n=[G(x,y)^n]_0,\qquad
+ A(s)=\left[\frac{1}{1-sG(x,y)}\right]_0.
+\]
+
+\item Given the elliptic curve $E_s= \{ \; (u,v) : v^2=u^3+(1-4s)u^2+16s^2u \; \}$ then 
+\[
+ % is k = 1? 
+ A(s)=c_\gamma^{-1} T_\gamma(k s) \qquad \text{where} \qquad 
+ T(s) = \oint_{\gamma} \frac{du}{v} = \frac{du}{\sqrt{u^3+(1-4s)u^2+16s^2u}}
+\]
+and $T(s)$ is both an elliptic integral and the period of $E_s$. 
+
+\item The terms $a(n)$ satisfy a p-recurrence: 
+\[
+ n^2a_n=2(2n-1)^2a_{n-1}
+       +12(2n-1)(2n-3)a_{n-2}\qquad(n\ge2),
+\]
+and the generating function satisfies an ordinary differential equation: 
+\[
+L \circ A(s) =  s(1-12s)(1+4s)A''+(1-16s-144s^2)A'-(2+36s)A=0.
+\]
+
+\item Approaches (1) and (2) arrive at the result (3) through distinct certificates
+\[
+ L\circ \!\left(\frac{du}{\sqrt P}\right)
+   =d_u\!\left(\frac{R}{P^{3/2}}\right),\qquad
+ L\circ \!\left(\frac1\rho\right)
+   =D_x\!\left(\frac{\Xi_x}{\rho^2}\right)
+    +D_y\!\left(\frac{\Xi_y}{\rho^2}\right),
+\]
+where $\rho = 1-sG$, $D_x=x\partial_x$ and $D_y=y\partial_y$, and numerators are 
+easier for machines to read. The exact finite certificate data are recorded in the 
+embedded JSON certificates designed for automatic checking.
+\end{enumerate}
+The initial values are
+\[
+1,2,18,140,1330,12852,130284,1348776,\ldots
+\]
+\end{theorem}
+
+\clearpage
+
+\section{A216584 as curve geometry}
+
+\subsection*{Curve certificate and recurrence}
+Set
+\[
+ L=s(1-12s)(1+4s)\partial_s^2
+ +(1-16s-144s^2)\partial_s-(2+36s).
+\]
+Direct differentiation of \(P^{-1/2}\) gives the exact identity
+\begin{equation}\label{eq:curve-cert}
+ L\!\left(\frac{du}{\sqrt P}\right)
+ =d_u\!\left(\frac{R(u,s)}{P^{3/2}}\right),
+\end{equation}
+where
+\begin{equation}\label{eq:Rcurve}
+\begin{aligned}
+ R(u,s)=4u^2\bigl(&96s^3-48s^2u-16s^2+18su^2+24su+8s\\
+                 &{}+u^2+u\bigr).
+\end{aligned}
+\end{equation}
+After clearing \(P^{5/2}\), both sides of \eqref{eq:curve-cert} have
+identical polynomial numerator.  Hence every closed period of \(E_s\) satisfies \(L\Pi=0\).
+
+Substitution of \(A(s)=\sum a_ns^n\) into the differential equation in
+Theorem~\ref{thm:main}(3) gives the recurrence.  With \(a_0=1\) and \(a_1=2\), it begins
+\[
+ 1,2,18,140,1330,12852,130284,1348776,\ldots .
+\]
+
+\subsection*{Product factorization and Bala's diagonal}
+The central trinomial coefficients satisfy
+\[
+ nT_n=(2n-1)T_{n-1}+3(n-1)T_{n-2},
+\]
+while
+\[
+ \frac{\binom{2n}{n}}{\binom{2n-2}{n-1}}
+ =\frac{2(2n-1)}{n}.
+\]
+Their product therefore satisfies Theorem~\ref{thm:main}(3); the initial values
+identify
+\begin{equation}\label{eq:hadamard}
+ a_n=\binom{2n}{n}T_n.
+\end{equation}
+The factorization $G$ makes this identity literal at the Laurent
+level:
+\[
+ [G^n]_0
+ =[(x+2+x^{-1})^n]_0\,
+  [(1+y+y^{-1})^n]_0
+ =\binom{2n}{n}T_n.
+\]
+
+Peter Bala recorded on OEIS the diagonal representation
+\begin{equation}\label{eq:bala}
+ a_n=[X^nY^n]\bigl(1+(X+Y)^2+(X+Y)^4\bigr)^n.
+\end{equation}
+To see the same factorization directly, write
+\[
+ (1+z+z^2)^n=\sum_k c_{n,k}z^k.
+\]
+In \eqref{eq:bala}, only \(k=n\) can contribute to total bidegree
+\((n,n)\).  Hence
+\[
+ [X^nY^n](\cdots)^n
+ =c_{n,n}[X^nY^n](X+Y)^{2n}
+ =T_n\binom{2n}{n}.
+\]
+Thus $G$ is a factorized constant-term form of the same known
+product structure.
+
+\subsection*{The Laurent pencil and the elliptic curve}
+The level equation \(1-sG=0\) is
+\begin{equation}\label{eq:G-pencil}
+ s(x+1)^2(y^2+y+1)-xy=0.
+\end{equation}
+Define
+\begin{equation}\label{eq:G-to-E}
+ u=-4sy,
+ \qquad
+ v=4sy\,\frac{x-1}{x+1}.
+\end{equation}
+A direct substitution gives
+\[
+ v^2-u^3-(1-4s)u^2-16s^2u
+ =\frac{64s^2y}{(x+1)^2}
+ \bigl(s(x+1)^2(y^2+y+1)-xy\bigr).
+\]
+Thus \eqref{eq:G-to-E} maps the Laurent pencil birationally to $E_s$;
+away from the exceptional divisors the inverse is
+\begin{equation}\label{eq:E-to-G}
+ y=-\frac{u}{4s},
+ \qquad
+ x=\frac{u-v}{u+v}.
+\end{equation}
+The period differential is preserved as well.  If
+\(Q=s(x+1)^2(y^2+y+1)-xy\), then
+\[
+ \frac{dx/x\wedge dy/y}{1-sG}=-\frac{dx\wedge dy}{Q}.
+\]
+On \(Q=0\),
+\[
+ Q_x=y\frac{x-1}{x+1},
+\]
+and therefore
+\begin{equation}\label{eq:residue-map}
+ \operatorname{Res}_{Q=0}\frac{dx/x\wedge dy/y}{1-sG}
+ =-\frac{dy}{Q_x}
+ =\frac{du}{v}.
+\end{equation}
+This proves the period identity in Theorem~\ref{thm:main}(2) directly, not merely
+by comparison of differential equations.
+
+For orientation, the discriminant of $E_s$ is
+\[
+ -4096s^4(1+4s)(12s-1).
+\]
+The minimal rational elliptic surface has fibres
+\(I_4,I_1,I_1,I_0^*\) at \(0,-1/4,1/12,\infty\), respectively.  The visible
+2-torsion point \((0,0)\) gives the 2-isogenous companion
+\[
+ v^2=u^3+(8s-2)u^2+(1-12s)(1+4s)u,
+\]
+whose exact differential-equation certificate is included in the accompanying
+verification file; it has the same differential operator as Theorem~\ref{thm:main}(3).
+
+The same second-order equation also controls the other local periods of this
+surface.  In particular, with
+\[
+ H(z)={}_2F_1\!\left(\frac12,\frac12;1;z\right),
+\]
+one may take local solutions
+\[
+ \Pi_{1/12}(q)=\sqrt{1+q/3}\,H(q),
+ \qquad q=\frac{1-12s}{1+4s},
+\]
+and
+\[
+ \Pi_{-1/4}(r)=\sqrt{1-4r}\,H(r),
+ \qquad r=\frac{1+4s}{16s}.
+\]
+The A216584 branch is the analytic solution normalized at \(s=0\); the
+second local solution there is logarithmic.
+
+\section{The Laurent--ODE first approach}
+
+We now forget the curve, the termwise product factorization, and the known recurrence,
+and start only from \(G\).  Write
+\[
+ \rho=1-sG(x,y),
+ \qquad
+ \Phi(s)=\left[\frac1\rho\right]_0.
+\]
+Equivalently,
+\begin{equation}\label{eq:torus-period}
+ \Phi(s)=\frac{1}{(2\pi i)^2}
+ \oint\!\oint
+ \frac{dx}{x}\frac{dy}{y}\frac1\rho .
+\end{equation}
+Let \(\theta=s\partial_s\).  Successive differentiated integrands are
+\[
+ \frac1\rho,
+ \qquad
+ \theta\frac1\rho=\frac{sG}{\rho^2},
+ \qquad
+ \theta^2\frac1\rho
+ =\frac{sG}{\rho^2}+\frac{2s^2G^2}{\rho^3}.
+\]
+The reduction asks whether these classes become linearly dependent modulo
+\(\Dx\)- and \(\Dy\)-divergences.
+
+For this input one may take
+\[
+ B=\{x^iy^j:-2\le i,j\le2\},
+ \qquad
+ C=\{x^ky^\ell:-3\le k,\ell\le3\}.
+\]
+Thus \(|B|=25\) and \(|C|=49\).  Here the basis-enlargement parameter is
+\(d=2\): explicitly,
+\[
+ B=(2\,\operatorname{conv}(\{0\}\cup\operatorname{supp}G))\cap\mathbb Z^2
+   =[-2,2]^2\cap\mathbb Z^2.
+\]
+Since \(\operatorname{supp}G=[-1,1]^2\cap\mathbb Z^2\), multiplication by
+\(\rho=1-sG\) enlarges the exponent region by one unit in each direction,
+so
+\[
+ C=[-3,3]^2\cap\mathbb Z^2.
+\]
+This \(d\) is a support bound and is independent of the pole-order parameter
+below.  No support outside \(C\) can occur in the linear system for this
+chosen ansatz.
+
+The matrices are large only in dimension; their entries are given by a small
+fixed pattern of exponent shifts.  Write
+\[
+ f_{r,q}=[x^ry^q]G,
+\]
+with \(f_{r,q}=0\) outside \(\{-1,0,1\}^2\).  For
+\(\alpha=(k,\ell)\in C\) and \(\beta=(i,j)\in B\), the three \(25\)-column
+blocks of \(G\) are
+\begin{equation}\label{eq:G-entries}
+\begin{aligned}
+ G^{(0)}_{\alpha,\beta}
+   &=\delta_{\alpha,\beta}-s f_{k-i,\ell-j},\\
+ G^{(x)}_{\alpha,\beta}
+   &=s(k-i)f_{k-i,\ell-j},\\
+ G^{(y)}_{\alpha,\beta}
+   &=s(\ell-j)f_{k-i,\ell-j}.
+\end{aligned}
+\end{equation}
+Hence every column of the first block has at most nine nonzero entries and
+every column of either derivative block has at most six.  In all,
+\[
+ G:49\times75,\qquad \#\operatorname{nz}(G)=525,
+\]
+so only \(14.3\%\) of its entries are nonzero.  The divergence matrix is even
+simpler: for \(\beta=(i,j)\),
+\begin{equation}\label{eq:J-entries}
+ J^{(x)}_{\beta,\gamma}=i\,\delta_{\beta,\gamma},
+ \qquad
+ J^{(y)}_{\beta,\gamma}=j\,\delta_{\beta,\gamma}.
+\end{equation}
+Thus \(J:25\times50\) has only 40 nonzero entries.  Because a second
+\(s\)-derivative produces a numerator over \(\rho^3\), only one pole-lowering
+step is needed, with pole-order parameter \(r=2\).  The complete fixed
+order-two system is
+\[
+ \begin{pmatrix}
+   G&0&0\\
+   I_{25}&-J/2&-[\rho]_B&-[G]_B
+ \end{pmatrix}
+ \begin{pmatrix}U\\V_x\\V_y\\\alpha\\\beta\end{pmatrix}
+ =
+ \begin{pmatrix}E[G^2]_B\\0\end{pmatrix}.
+\]
+It has size \(74\times77\) and only 608 nonzero entries (\(10.7\%\)).
+
+For this example the rational reconstruction is also finitely bounded.  The
+chosen exact solution has numerator degree at most 3 and denominator degree at
+most 4, hence total degree at most 7.  Total-degree caps 5 and 6 fail, whereas
+7 succeeds and passes complete symbolic replay.  Accordingly the fixed
+reconstruction used below takes eight regular integer values to determine the
+rational functions and three further values, not used in that determination,
+as independent checks.  After interpolation every
+entry is substituted back into the original \(74\times77\) system over
+\(\mathbb Q(s)\); the certificate does not rest on the sampled equations.
+
+The resulting differential relation is
+\begin{equation}\label{eq:theta-op}
+  A_\theta=
+ \theta^2-2s(2\theta+1)^2
+ -12s^2(2\theta+1)(2\theta+3).
+\end{equation}
+In ordinary derivatives, \eqref{eq:theta-op} is exactly
+Theorem~\ref{thm:main}(3).
+
+The same solve returns the certificate rather than requiring a second
+calculation.  There are Laurent polynomials \(\Xi_x,\Xi_y\), supported on the
+25 exponent pairs of \(B\), such that
+\begin{equation}\label{eq:Xi-identity}
+ A\!\left(\frac1\rho\right)
+ =\Dx\!\left(\frac{\Xi_x}{\rho^2}\right)
+ +\Dy\!\left(\frac{\Xi_y}{\rho^2}\right),
+\end{equation}
+where
+\[
+ A=(-48s^3-8s^2+s)\partial_s^2
+   +(-144s^2-16s+1)\partial_s-(36s+2).
+\]
+This is the same operator as Theorem~\ref{thm:main}(3).  The exact sparse
+coefficients of \(\Xi_x,\Xi_y\), together with the ordered bases and matrices,
+are stored in
+\path{examples/public/low_support/certificates/A216584_G_guvj.json}.
+The publication replay checks, by coefficient comparison,
+\[
+ \begin{aligned}
+ GUVJ&=0, & Xp&=0,\\
+ A(1/\rho)-\Dx(\Xi_x/\rho^2)-\Dy(\Xi_y/\rho^2)&=0.
+ \end{aligned}
+\]
+It also regenerates the coefficients and verifies Theorem~\ref{thm:main}(3).
+All five exact checks pass.  No finite-term fit is used to obtain
+\eqref{eq:theta-op}.
+
+Thus the curve calculation of Section~1 and the Laurent reduction of this
+section meet at the same certified differential equation by independent
+routes.
+
+\section{Formal reductions}
+
+The preceding calculation generalizes.  Let
+\(F\in K[x^{\pm1},y^{\pm1}]\), write
+\[
+ \rho=1-tF,
+ \qquad
+ \Dx=x\frac{\partial}{\partial x},
+ \qquad
+ \Dy=y\frac{\partial}{\partial y},
+\]
+and consider
+\[
+ \Phi_F(t)=\left[\frac1\rho\right]_0.
+\]
+The constant term of either \(\Dx(R)\) or \(\Dy(R)\) is zero.  Hence an
+identity
+\begin{equation}\label{eq:general-cert}
+ A\!\left(\frac1\rho\right)=\Dx(\Xi_x)+\Dy(\Xi_y)
+\end{equation}
+proves \(A\Phi_F=0\).
+
+Fix a pole order \(r\).  If Laurent polynomials \(w,a,b_x,b_y\) satisfy
+\begin{equation}\label{eq:split}
+ w=\rho a-\Dx(\rho)b_x-\Dy(\rho)b_y,
+\end{equation}
+then
+\begin{equation}\label{eq:lower}
+ \frac{w}{\rho^{r+1}}
+ =\frac{a-r^{-1}(\Dx b_x+\Dy b_y)}{\rho^r}
+ +\Dx\!\left(\frac{b_x}{r\rho^r}\right)
+ +\Dy\!\left(\frac{b_y}{r\rho^r}\right).
+\end{equation}
+This is the elementary pole-lowering identity behind the calculation.
+
+Let \(P=\operatorname{conv}(\{0\}\cup\operatorname{supp}F)\).  Choose an
+integer basis-enlargement parameter \(d\ge1\) and take
+\[
+ B_d=(dP)\cap\mathbb Z^2.
+\]
+Let \(C_d\) be the union of \(B_d\) with all translates
+\(B_d+u\), \(u\in\operatorname{supp}F\).  These are explicit finite exponent
+bounds: if \(a,b_x,b_y\) are supported in \(B_d\), every coefficient equation
+in \eqref{eq:split} lies in \(C_d\).  The parameter \(d\) controls only this
+support ansatz; it is distinct from the pole order \(r\) in
+\eqref{eq:lower}.  A successful exact replay proves that the selected bound is
+sufficient for that certificate.  We make no claim here that a fixed \(d\)
+works for every Laurent polynomial.
+
+Let \(B=(b_1,\ldots,b_N)\) be the ordered monomial basis associated with
+\(B_d\), and let \(C\) be the ordered monomial basis associated with \(C_d\).
+The coefficient matrix
+\[
+ G\in K(t)^{M\times3N}
+\]
+represents the map
+\[
+ (a,b_x,b_y)\longmapsto
+ \rho a-\Dx(\rho)b_x-\Dy(\rho)b_y.
+\]
+If \(E\) includes the \(B\)-space into the \(C\)-space, exact solution of
+\begin{equation}\label{eq:GUV}
+ G\begin{pmatrix}U\\V_x\\V_y\end{pmatrix}=E
+\end{equation}
+produces both the reduced part and the divergence data.  The matrix
+\[
+ J: (b_x,b_y)\longmapsto \Dx(b_x)+\Dy(b_y)
+\]
+then gives the one-step reduction
+\begin{equation}\label{eq:lower-matrix}
+ \operatorname{Lower}_r=U-\frac1rJ
+ \begin{pmatrix}V_x\\V_y\end{pmatrix}.
+\end{equation}
+Linear dependence among finitely many reduced derivative columns gives the
+differential operator \(A\); the same linear combination of the stored \(V\)-data gives
+the exact certificate \(\Xi\).  The basis-enlargement parameter is independent
+of the pole order \(r\); the implementation records both explicitly.
+
+For comparison, the bounded low-support search that led back to A216584 also
+produced the following small certified OEIS hits:
+\begin{center}
+\small
+\begin{tabular}{p{0.15\textwidth}p{0.48\textwidth}p{0.12\textwidth}p{0.12\textwidth}}
+\toprule
+OEIS & Laurent polynomial & order & exact certificate\\
+\midrule
+A002894 & \(x^2+xy+(xy)^{-1}+x^{-2}\) & 2 & yes\\
+A006480 & \(xy+x/y+x^{-2}\) & 2 & yes\\
+A216584 & \((x+2+x^{-1})(1+y+y^{-1})\) & 2 & yes\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first two are retained as regression cases rather than developed here.
+The same bounded search also produces additional period fingerprints with no
+OEIS identification in the initial lookup; those are candidates for later
+geometric study, not claims of new sequences in this paper.
+
+\section{A bounded replay for A216584}\label{sec:pseudocode}
+
+The general theory above admits many implementation choices.  For the main
+example we remove those choices.  The following pseudocode is a specification
+of one finite calculation, not a heuristic search procedure.  It fixes the
+support enlargement, differential order, pole order, interpolation bound, and
+validation count in advance.  An independent implementation therefore has no
+operator-order search or basis search to reproduce.
+
+\begingroup
+\fontsize{9.25}{10.65}\selectfont
+\begin{enumerate}[label=\texttt{\arabic*.},leftmargin=2.7em,itemsep=0.25em,topsep=0pt]
+\item Set
+\[
+ F=(x+2+x^{-1})(1+y+y^{-1}),\qquad \rho=1-sF,
+\]
+and use exact rational arithmetic throughout.
+
+\item Fix the support enlargement \(d=2\).  Order lexicographically
+\[
+ B=[-2,2]^2\cap\mathbb Z^2,\qquad
+ C=[-3,3]^2\cap\mathbb Z^2.
+\]
+Thus \(|B|=25\), \(|C|=49\).  Store a Laurent polynomial as its coefficient
+vector on one of these ordered sets.
+
+\item Build \(G\in\mathbb Q(s)^{49\times75}\) from
+\[
+ (a,b_x,b_y)\longmapsto \rho a-\Dx(\rho)b_x-\Dy(\rho)b_y
+\]
+using the entry formulas \eqref{eq:G-entries}.  Build the inclusion matrix
+\(E\in\mathbb Q^{49\times25}\) and
+\(J\in\mathbb Q^{25\times50}\) from \eqref{eq:J-entries}.  Check
+\[
+ \#\operatorname{nz}(G)=525,\qquad
+ \#\operatorname{nz}(J)=40.
+\]
+
+\item Form the \(B\)-coordinate columns \(f=[F]_B\),
+\(f_2=[F^2]_B\), and \(r_0=[\rho]_B\).  Fix differential order two and pole
+order two.  Assemble
+\[
+ M=
+ \begin{pmatrix}
+   G&0&0\\
+   I_{25}&-J/2&-r_0&-f
+ \end{pmatrix},\qquad
+ b=\begin{pmatrix}Ef_2\\0\end{pmatrix}.
+\]
+Check \(M\) has shape \(74\times77\) and 608 nonzero entries.  The unknown is
+\(z=(U,V_x,V_y,\alpha,\beta)^T\).
+
+\item At the first regular positive integer value of \(s\), determine pivot
+columns and an equal number of independent rows.  Keep that square pivot block
+fixed at every later sample.  Set all free variables to zero.
+
+\item Fix the rational reconstruction bound
+\[
+ \deg(\text{numerator})+\deg(\text{denominator})\le7.
+\]
+Solve the fixed square block exactly at regular integer values of \(s\).  Use
+eight values to determine the rational functions and three additional regular
+values only as checks.  For each pivot variable reconstruct the least-total-
+degree rational function satisfying the first eight values and reject it unless
+it also satisfies all three check values.
+
+\item Reassemble the symbolic vector \(z\in\mathbb Q(s)^{77}\) and require the
+full exact identity
+\[
+ Mz=b.
+\]
+This symbolic replay, not interpolation, is the proof of the reconstructed
+solution.  Split \(z\) into \(U,V_x,V_y,\alpha,\beta\).
+
+\item Verify separately
+\[
+ G\begin{pmatrix}U\\V_x\\V_y\end{pmatrix}=Ef_2,
+ \qquad
+ U-\frac12J\begin{pmatrix}V_x\\V_y\end{pmatrix}
+   =\alpha r_0+\beta f.
+\]
+These are the \(G,U,V,J\) reduction and the single pole-lowering closure.
+
+\item Form
+\[
+ X=\begin{pmatrix}1&0&2\alpha\\0&1&2\beta\end{pmatrix}.
+\]
+Take the primitive polynomial kernel vector
+\(p=(p_0,p_1,p_2)^T\), normalized by denominator clearing, polynomial-gcd
+removal, integer-content removal, and sign fixing.  Set
+\[
+ A=p_0+p_1\partial_s+p_2\partial_s^2.
+\]
+
+\item Set \(V=(V_x,V_y)^T\) and \(\Xi=p_2V\).  Verify the cleared coefficient
+identity equivalent to
+\[
+ A(1/\rho)
+ =\Dx(\Xi_x/\rho^2)+\Dy(\Xi_y/\rho^2).
+\]
+Require every coefficient in the ordered Laurent basis to vanish exactly.
+
+\item Convert \(A\) to \(\theta=s\partial_s\) form and obtain the recurrence by
+replacing each \(s^kQ_k(\theta)\) with
+\(Q_k(n-k)a_{n-k}\).  The result must be Theorem~\ref{thm:main}(3).
+
+\item Generate twelve constant terms by exact lattice convolution, replay the
+recurrence on every available index, and independently compute the first five
+constant terms by direct expansion.  Require both lists to agree.
+
+\item Serialize \(B,C,G,J,U,V_x,V_y,\alpha,\beta,A,\Xi\), the recurrence,
+and the term checks.  A verifier must rebuild the coefficient identities from
+these data rather than trust stored pass flags.
+\end{enumerate}
+\endgroup
+
+For the exact solution produced by this replay, the largest numerator degree is
+3 and the largest denominator degree is 4.  The degree-7 reconstruction bound
+is therefore attained; repeating the same reconstruction with caps 5 or 6
+fails, while cap 7 succeeds and the resulting functions pass the full symbolic
+system.  These numerical degree bounds concern reconstruction in \(s\); they
+are separate from both the exponent bound \(d=2\) and the pole order \(r=2\).
+
+The accompanying implementation exposes the same calculation through
+\begin{verbatim}
+python3 code/guvj/guvj_period_factory.py \
+  --F "(x + 2 + 1/x)*(1 + y + 1/y)" \
+  --model A216584_G \
+  --dilation 2 \
+  --max-total-degree 7 \
+  --output examples/public/low_support/certificates/A216584_G_guvj.json
+
+python3 code/public/verify_a216584_geometry.py
+\end{verbatim}
+The first command builds the Laurent certificate.  The second independently
+checks the elliptic differential identity, recurrence, termwise product, Bala
+diagonal formula, birational map, residue differential, and agreement with the
+stored constant terms.  The paper deliberately specifies only the A216584
+instance in algorithmic detail; Section~3 gives the general reduction from
+which it is obtained.
+
+\section*{Computational disclosure}
+The symbolic calculations and certificate replays in this paper were performed
+with the accompanying Python/SymPy implementation.  OpenAI language models
+were used during development for mathematical exploration, code assistance,
+testing, and editorial work.  Claims in the paper do not rely on uncheckable
+model output: the asserted differential identities, recurrences, birational
+maps, and Laurent reductions are represented by exact symbolic identities or
+machine-readable certificates that can be replayed independently.
+
+\begin{thebibliography}{9}
+
+\bibitem{A216584}
+OEIS Foundation Inc., \emph{The On-Line Encyclopedia of Integer Sequences},
+A216584.  The entry includes the product formula of Paul D. Hanna, Peter
+Bala's diagonal formula (2020), and Mark van Hoeij's hypergeometric generating
+function (2025).
+
+\bibitem{A002894}
+OEIS Foundation Inc., \emph{The On-Line Encyclopedia of Integer Sequences},
+A002894.
+
+\bibitem{A006480}
+OEIS Foundation Inc., \emph{The On-Line Encyclopedia of Integer Sequences},
+A006480.
+
+\bibitem{Klee}
+B. J. Klee,
+\emph{An Update on the Computational Theory of Hamiltonian Period Functions},
+Ph.D. dissertation, University of Arkansas, Fayetteville, 2020, especially
+Chapter~3.
+
+\bibitem{BDS}
+A. Bostan, L. Dumont, and B. Salvy,
+``Algebraic Diagonals and Walks: Algorithms, Bounds, Complexity,''
+\emph{Journal of Symbolic Computation} 83 (2017), 68--92.
+
+\bibitem{BCChL}
+A. Bostan, S. Chen, F. Chyzak, and Z. Li,
+``Complexity of creative telescoping for bivariate rational functions,''
+\emph{Proceedings of ISSAC 2010}, 203--210.
+
+\bibitem{AZ}
+G. Almkvist and D. Zeilberger,
+``The method of differentiating under the integral sign,''
+\emph{Journal of Symbolic Computation} 10 (1990), 571--591.
+
+\bibitem{SymPy}
+A. Meurer et al.,
+``SymPy: symbolic computing in Python,''
+\emph{PeerJ Computer Science} 3 (2017), e103.
+
+\end{thebibliography}
+
+
+\end{document}
