@@ -1,16 +1,22 @@
-REPRODUCIBILITY STATUS: PASS
+Trefoil symplectic-period artifact v2
+====================================
 
-Exact symbolic verifier:
-- restricted forms, time form, action and period: PASS
-- energy-native cubic and second-order ODE: PASS
-- direct Gauss pullback x=27E/4: PASS
-- negative local branch sign and hypergeometric series: PASS
-- A244038 integral uniformizer, terms and recurrence: PASS
-- numerical constrained-flow and action audits: PASS
-- eight diagrams, three strict crossings each: PASS
+PASS exact symbolic verifier
+PASS constrained Hamiltonian-flow quadrature
+PASS polygonal Liouville-action derivative audit
+PASS curved R4 radial-ring symplectic-area quadrature
+PASS numerical dA/dE recovery from curved areas
+PASS secondary flat-triangle R4 mesh convergence audit
+PASS eight computed trefoil diagrams with three strict crossings each
+PASS cyclic R3 comparison: implicit surface derivation by linear matching
+PASS cyclic R3 comparison: exact tangent scale and residue period
+PASS cyclic R3 comparison: algebraic relation and minimal order-1 ODE
+PASS cyclic R3 comparison: nonminimal order-2 factorization/certificate
+PASS cyclic R3 comparison: 80-digit direct quadrature
+PASS PDF preflight and render inspection
 
-Numerical maxima:
-- constrained-flow relative error: 8.279817220464269e-11
-- action-derivative relative error: 1.3101278341554171e-08
-
-Visual regression against the preceding v4 PDF render: 0 changed pages.
+Primary curved-area max relative error: 1.02e-11
+Primary curved-area dA/dE period max relative error: 8.21e-11
+Constrained-flow period max relative error: 8.28e-11
+Comparison-family direct quadrature: approximately 1e-76 to 1e-80 relative
+on the tested positive parameter values.

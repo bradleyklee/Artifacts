@@ -4,4 +4,6 @@ PASS: direct Gauss pullback x=27E/4
 PASS: negative local branch sign and hypergeometric series
 PASS: A244038 integral uniformizer, terms and recurrence
 PASS: numerical constrained-flow and action audits
+PASS: curved R4 ring-area quadrature and numerical dA/dE audit
+PASS: secondary flat-mesh convergence audit
 PASS: eight diagrams, three strict crossings each

@@ -1,101 +1,153 @@
-# Trefoil Symplectic-Period Certificate
+# Trefoil symplectic-period artifact v2
 
-Self-contained extraction of the one-page trefoil certificate, its exact
-symbolic verifier, independent numerical audit, and the code used to compute
-the knot-family drawings and crossing data.
+Version 2 of the reproducible trefoil-period extraction.  It contains the
+one-page certificate, exact SymPy verification, computed knot drawings,
+independent numerical Hamiltonian checks, high-precision curved-surface area
+quadrature, a secondary piecewise-flat mesh audit, and a separate real-space
+algebraic trefoil geometry reconstructed in Python/SymPy.
 
-## Mathematical object
+## Primary geometry
 
-The certificate studies
+The main certificate studies
 
-- `C = {z^2 = w^3} subset C^2`,
-- the standard symplectic form
-  `omega0 = (i/2)(dz ^ dbar(z) + dw ^ dbar(w))`,
-- `H = |z|^2 + |w|^2`, and
-- `K_E = C intersect H^{-1}(E)` for `E > 0`.
+```text
+C = {z^2=w^3} subset C^2,
+omega0 = (i/2)(dz ^ dbar(z) + dw ^ dbar(w)),
+H = |z|^2 + |w|^2,
+K_E = C intersect H^{-1}(E).
+```
 
-With `z=s^3`, `w=s^2`, `s=sqrt(u) exp(i theta)`, one has
-`E=u^3+u^2`.  Restricting the Liouville and symplectic forms to `C`
-gives the time form
+With
 
-`eta = (9u+4)/(2(3u+2)) dtheta`
+```text
+z=s^3, w=s^2, s=sqrt(u) exp(i theta),
+E=u^3+u^2,
+```
 
-and hence
+the exact period is
 
-`T(E) = pi (9u+4)/(3u+2)`.
+```text
+T(E) = pi (9u+4)/(3u+2).
+```
+
+The area-first formulation is
+
+```text
+A(E) = integral_{D_E} nu^*(omega0)
+     = pi(3u^3+2u^2),
+T(E) = dA/dE.
+```
+
+The singular cusp is handled on the normalization disk; the numerical curved
+quadrature never evaluates at the singular point itself.
 
 For
 
-`Phi(E) = 3 - T(E)/pi = 2/(3u+2)`,
+```text
+Phi(E)=3-T(E)/pi,
+```
 
-the exact algebraic and differential equations are
+the energy-native equations are
 
-`(4-27E) Phi^3 - 12 Phi + 8 = 0`,
+```text
+(4-27E) Phi^3 - 12 Phi + 8 = 0,
+E(27E-4) Phi'' + 2(27E-1) Phi' + 6 Phi = 0.
+```
 
-`E(27E-4) Phi'' + 2(27E-1) Phi' + 6 Phi = 0`.
+The value `E=4/27` is an algebraic/ODE branch value of the complexified
+covering, not a positive real knot bifurcation.  On the real branch `u>0`,
+`E(u)` and `T(u)` are smooth and strictly increasing.
 
-With `x=27E/4`, the latter is Gauss hypergeometric.  Only at the final
-series step do we use the local uniformizer `q=sqrt(E)/4`; then
+Only at the series stage is the local uniformizer
 
-`G(q)=Phi(16q^2)=sum (-1)^n a_n q^n`,
+```text
+q=sqrt(E)/4
+```
 
-`a_n = 4^n binom(3n/2,n)`,
+introduced.  It gives
 
-whose unsigned coefficients are OEIS A244038.
+```text
+Phi(16q^2)=Sum (-1)^n a(n) q^n,
+a(n)=4^n binom(3n/2,n),
+```
 
-## Reproducibility
+with unsigned coefficients OEIS A244038.
 
-From the package root:
+## Validation stack
+
+Run
 
 ```bash
 ./verify.sh
 ```
 
-runs the independent numerical audit and the exact SymPy checks.
+The verifier performs all of the following:
+
+1. exact SymPy checks of the restricted forms, action, period, cubic, ODE,
+   Gauss pullback, branch sign, integer expansion, and recurrence;
+2. constrained Hamiltonian-flow quadrature directly on the curves in R^4;
+3. polygonal Liouville-action differentiation;
+4. curved radial-ring integration of the ambient symplectic 2-form using
+   numerically estimated tangent vectors, without inserting the analytic
+   pullback density;
+5. numerical differentiation of those curved-surface areas back to the
+   period;
+6. a secondary piecewise-flat R^4 triangular-mesh convergence audit;
+7. crossing/depth verification for all computed knot drawings;
+8. the complete independent verification suite in
+   `geometries/cyclic_R3_trefoil/`.
+
+The curved-area audit currently agrees with the exact area at about `1e-11`
+relative and recovers the period from numerical `dA/dE` at about `1e-10`
+relative over the tested range.
+
+## Comparison geometry
+
+`geometries/cyclic_R3_trefoil/` is a standalone real-space comparison family.
+It begins only from
+
+```text
+x(phi)=k sin(phi)+sin(2phi),
+y(phi)=k cos(phi)-cos(2phi),
+z(phi)=sin(3phi),
+```
+
+and reconstructs its two implicit surfaces by Laurent substitution and linear
+coefficient matching.  No Groebner basis is used.  The exact period reduces to
+
+```text
+T(k)/pi = (1+k^2)/(k(1-k^2)^3 sqrt(k^2+4)),  0<k<1,
+```
+
+hence to the algebraic curve
+
+```text
+k^2(1-k^2)^6(k^2+4)(T/pi)^2-(1+k^2)^2=0.
+```
+
+Its actual period therefore has a minimal first-order linear ODE.  A valid
+nonminimal second-order operator, factorization, and rational differential
+certificate are also checked.  See that subfolder for the complete derivation.
+
+## Build
 
 ```bash
 ./build.sh
 ```
 
-regenerates the computed knot-family figure, crossing audit, numerical audit,
-verifies the mathematics, recompiles the one-page LaTeX certificate, and
-runs PDF preflight.  The final PDF is written to `dist/`.
-
-Python requirements are listed in `requirements.txt`.  The LaTeX build uses
-`pdflatex` with the packages declared in `src/trefoil_certificate.tex`.
+This regenerates figures, reruns every verifier, rebuilds the LaTeX certificate,
+runs PDF preflight, and rebuilds the comparison-family figures.
 
 ## File map
 
-- `dist/trefoil_symplectic_period_certificate.pdf` - final one-page certificate.
-- `print/trefoil_symplectic_period_certificate_300dpi.png` - print/render check.
-- `src/trefoil_certificate.tex` - complete LaTeX source.
-- `src/make_figures.py` - stereographic family, crossing detection, and
-  red-over-green segment rendering from computed coordinates.
-- `src/verify_trefoil.py` - exact SymPy checks of forms, period, cubic, ODE,
-  Gauss pullback, branch sign, integer coefficients, recurrence, and audits.
-- `src/numerical_audit.py` - independent numerical period test on the original
-  curves in R^4 plus an independent action-derivative test.
-- `src/trefoil_period_payload.json` - compact machine-readable exact payload.
-- `src/numerical_audit.json` - numerical results at eight energies.
-- `src/crossing_family_view2.json` - exact screen crossing/depth audit for the
-  eight displayed knot diagrams.
-- `src/trefoil_energy_family_view2.pdf/.png` - computed family figure.
-- `audit/verify.log` - exact verifier result.
-- `audit/preflight.txt` - PDF structural preflight.
-- `MANIFEST.sha256` - SHA-256 checksum manifest for the extraction.
-
-## Numerical audit thresholds in the certificate
-
-The constrained-flow quadrature on the original curves in R^4 agrees with the
-closed period to about `8.3e-11` relative over the eight tested energies.
-The independent polygonal action plus centered energy difference agrees to
-about `1.4e-8` relative.
-
-## Crossing convention
-
-Every displayed curve is computed from the exact parametrization, projected
-stereographically to R^3, then projected to a fixed screen.  At each screen
-crossing, the two computed R^3 depths decide over/under order.  A short green
-segment is drawn on the under branch first; a short red segment is drawn on
-the over branch last.  Thus red-over-green is a plotting convention backed by
-actual depth data, not a hand annotation.
+- `dist/trefoil_symplectic_period_certificate.pdf` - final certificate.
+- `src/trefoil_certificate.tex` - LaTeX source.
+- `src/verify_trefoil.py` - exact symbolic verifier.
+- `src/numerical_audit.py` - constrained-flow and action audit.
+- `src/curved_area_audit.py` - curved radial-ring symplectic-area audit.
+- `src/mesh_area_audit.py` - secondary flat-triangle convergence audit.
+- `src/make_figures.py` - computed knot-family and crossing figures.
+- `src/trefoil_period_payload.json` - exact machine-readable payload.
+- `geometries/cyclic_R3_trefoil/` - separate algebraic real-space trefoil
+  reconstruction and verification suite.
+- `MANIFEST.sha256` - checksums for the complete extraction.

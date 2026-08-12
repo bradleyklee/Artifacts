@@ -8,11 +8,11 @@ mkdir -p "$DIST" "$AUDIT" "$SRC/.mplconfig"
 
 cd "$SRC"
 python3 make_figures.py
-python3 numerical_audit.py | tee "$AUDIT/numerical_audit.log"
-python3 verify_trefoil.py | tee "$AUDIT/verify.log"
+cd "$ROOT"
+./verify.sh
+"$ROOT/geometries/cyclic_R3_trefoil/build.sh"
 
-# The source name inside the package is simplified, so build a temporary
-# LaTeX copy with the embedded-source filename adjusted accordingly.
+cd "$SRC"
 sed 's/{trefoil_certificate_v4.tex}/{trefoil_certificate.tex}/g' \
   trefoil_certificate.tex > trefoil_certificate_build.tex
 pdflatex -interaction=nonstopmode -halt-on-error trefoil_certificate_build.tex \
@@ -22,8 +22,10 @@ pdflatex -interaction=nonstopmode -halt-on-error trefoil_certificate_build.tex \
 cp trefoil_certificate_build.pdf "$DIST/trefoil_symplectic_period_certificate.pdf"
 rm -f trefoil_certificate_build.{aux,log,out,tex,pdf}
 
-python /home/oai/skills/pdfs/scripts/pdf_preflight.py \
-  "$DIST/trefoil_symplectic_period_certificate.pdf" \
-  > "$AUDIT/preflight.txt"
+if command -v pdfinfo >/dev/null 2>&1; then
+  pdfinfo "$DIST/trefoil_symplectic_period_certificate.pdf" > "$AUDIT/preflight.txt"
+else
+  echo "PDF built successfully; pdfinfo not installed." > "$AUDIT/preflight.txt"
+fi
 
 echo "Built: $DIST/trefoil_symplectic_period_certificate.pdf"

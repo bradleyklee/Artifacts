@@ -103,19 +103,23 @@ $a_0=1$, $a_1=6$. \quad Unsigned coefficients: \textbf{OEIS A244038}.\\[2pt]
 First terms &
 $1,\ 6,\ 48,\ 420,\ 3840,\ 36036,\ 344064,\ 3325608,\ 32440320,\ 318704100,\ldots$\\
 Numerical audit &
-On the original $K_E\subset\mathbb R^4$ at eight energies $10^{-4}\le E\le1$ (including $4/27$): constrained-flow quadrature agrees with $T(E)$ to $8.3\times10^{-11}$ relative; an independent polygonal $\oint\lambda_0$ plus centered $E$-difference gives $1.4\times10^{-8}$.\\
+Curved radial-ring quadrature on the actual surface in $\mathbb R^4$, using finite-difference tangents and no analytic pullback density, agrees with $A(E)$ to $1.1\times10^{-11}$ relative and recovers $T=dA/dE$ to $8.3\times10^{-11}$. Independent constrained-flow quadrature also agrees to $8.3\times10^{-11}$.\\
 \end{tabularx}
 
 \vspace{4pt}\hrule\vspace{4pt}
 
 \footnotesize
 \textbf{Embedded verification payload.}
-Attachments include JSON data, exact SymPy and numerical verifiers, crossing audit, figure code, and this source. They check the forms, cubic/ODE/Gauss pullback, branch sign, integer series/recurrence, numerical integrals, and all eight three-crossing projections. SHA-256: \texttt{a25dcacbb8100a31\ldots d4ea6b1afa5e23}.
+Attachments: exact verifier, constrained-flow audit, curved-area audit, flat-mesh audit, crossing data, figure code, JSON payload, and this LaTeX source.
 
 \embedfile[desc={Trefoil exact verification payload}]{trefoil_period_payload.json}
 \embedfile[desc={Trefoil exact SymPy verifier}]{verify_trefoil.py}
-\embedfile[desc={Trefoil independent numerical audit}]{numerical_audit.py}
-\embedfile[desc={Trefoil numerical audit output}]{numerical_audit.json}
+\embedfile[desc={Trefoil independent Hamiltonian numerical audit}]{numerical_audit.py}
+\embedfile[desc={Trefoil Hamiltonian numerical audit output}]{numerical_audit.json}
+\embedfile[desc={Trefoil curved radial-area audit}]{curved_area_audit.py}
+\embedfile[desc={Trefoil curved radial-area audit output}]{curved_area_audit.json}
+\embedfile[desc={Trefoil flat-mesh area audit}]{mesh_area_audit.py}
+\embedfile[desc={Trefoil flat-mesh area audit output}]{mesh_area_audit.json}
 \embedfile[desc={Trefoil crossing audit data}]{crossing_family_view2.json}
 \embedfile[desc={Trefoil figure generator}]{make_figures.py}
 \embedfile[desc={Trefoil certificate LaTeX source}]{trefoil_certificate_v4.tex}

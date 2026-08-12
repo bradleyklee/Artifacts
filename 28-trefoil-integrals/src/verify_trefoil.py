@@ -6,6 +6,8 @@ import sympy as sp
 HERE=Path(__file__).resolve().parent
 payload=json.loads((HERE/'trefoil_period_payload.json').read_text())
 audit=json.loads((HERE/'numerical_audit.json').read_text())
+curved=json.loads((HERE/'curved_area_audit.json').read_text())
+mesh=json.loads((HERE/'mesh_area_audit.json').read_text())
 cross=json.loads((HERE/'crossing_family_view2.json').read_text())
 
 u,E,Phi,q=sp.symbols('u E Phi q', positive=True)
@@ -67,6 +69,10 @@ assert sp.simplify(h.subs(u,sp.Rational(1,3))-sp.Rational(4,27))==0
 # Numerical and drawing audits.
 assert audit['max_relerr_constrained'] < 1e-8
 assert audit['max_relerr_action_derivative'] < 1e-6
+assert curved['max_area_relerr'] < 2e-10
+assert curved['max_period_relerr'] < 2e-9
+assert curved['analytic_pullback_density_used_in_quadrature'] is False
+assert mesh['status']=='PASS'
 assert len(cross['records'])==8
 for rec in cross['records']:
     assert rec['crossing_count']==3
@@ -79,4 +85,6 @@ print('PASS: direct Gauss pullback x=27E/4')
 print('PASS: negative local branch sign and hypergeometric series')
 print('PASS: A244038 integral uniformizer, terms and recurrence')
 print('PASS: numerical constrained-flow and action audits')
+print('PASS: curved R4 ring-area quadrature and numerical dA/dE audit')
+print('PASS: secondary flat-mesh convergence audit')
 print('PASS: eight diagrams, three strict crossings each')

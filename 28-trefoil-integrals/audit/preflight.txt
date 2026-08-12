@@ -1,4 +1,4 @@
-PDF: /mnt/data/trefoil_symplectic_period_artifact/dist/trefoil_symplectic_period_certificate.pdf
+PDF: /mnt/data/trefoil_symplectic_period_artifact_v2/dist/trefoil_symplectic_period_certificate.pdf
 Pages: 1
 Encrypted: False
 Openable (PyMuPDF): True

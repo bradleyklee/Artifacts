@@ -1,0 +1,6 @@
+PASS implicit surfaces and tangent field
+PASS residue period = pi*(1+k^2)/(k*(1-k^2)^3*sqrt(k^2+4))
+PASS algebraic relation and minimal order-1 ODE
+PASS nonminimal order-2 ODE, factorization, rational certificate
+PASS integral normalization and recurrence
+first coefficients: [1, 62, 2182, 61292, 1519942, 34823300, 755251868, 15733489048, 317810234438, 6265083472788]
