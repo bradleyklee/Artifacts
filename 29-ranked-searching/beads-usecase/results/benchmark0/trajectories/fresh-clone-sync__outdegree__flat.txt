@@ -1,0 +1,17 @@
+TASK: fresh-clone-sync
+PROMPT: A developer cloned the Git repository on a second machine but the Beads issues are absent. Establish the correct synchronization and bootstrap procedure without treating the export as the database.
+QUERY: "sync"
+ORDERING: outdegree
+POLICY: flat
+MATCHES: [mem:repo/docs/core-concepts/index mem:repo/docs/index mem:repo/docs/reference/troubleshooting mem:repo/docs/architecture/dolt mem:repo/docs/getting-started/quickstart mem:repo/docs/getting-started/sync-setup mem:repo/docs/recovery/database-corruption mem:repo/docs/recovery/merge-conflicts mem:repo/docs/core-concepts/sync-concepts mem:repo/docs/reference/worktrees]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/core-concepts/index knowledge=0% // next lexical match in static order
+STEP 2 recall           memory=mem:repo/docs/index knowledge=0% // next lexical match in static order
+STEP 3 recall           memory=mem:repo/docs/reference/troubleshooting knowledge=25% +[bootstrap] // next lexical match in static order
+STEP 4 recall           memory=mem:repo/docs/architecture/dolt knowledge=25% // next lexical match in static order
+STEP 5 recall           memory=mem:repo/docs/getting-started/quickstart knowledge=25% // next lexical match in static order
+STEP 6 recall           memory=mem:repo/docs/getting-started/sync-setup knowledge=100% +[dolt-ref pull jsonl-not-sync] // next lexical match in static order
+STEP 7 unblocked        memory=mem:repo/docs/getting-started/sync-setup knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=6 edges=0 summaries=10 summary_bytes=2617 no_gain_recalls=4

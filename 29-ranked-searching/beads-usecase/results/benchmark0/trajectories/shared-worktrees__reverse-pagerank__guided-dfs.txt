@@ -1,0 +1,14 @@
+TASK: shared-worktrees
+PROMPT: Several Git worktrees should operate on the same tracker state. Explain which Beads workspace they use and how cross-clone state moves.
+QUERY: "worktree"
+ORDERING: reverse-pagerank
+POLICY: guided-dfs
+MATCHES: [mem:repo/docs/getting-started/sync-setup mem:repo/docs/reference/worktrees]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/getting-started/sync-setup knowledge=33% +[dolt-sync] // lexical-match seed
+STEP 2 follow-reference mem:repo/docs/getting-started/sync-setup -> mem:repo/docs/reference/worktrees depth=1 guide=7 knowledge=33%
+STEP 3 recall           memory=mem:repo/docs/reference/worktrees knowledge=100% +[shared-workspace external-workspace] // reference-crawl body
+STEP 4 unblocked        memory=mem:repo/docs/reference/worktrees knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=2 edges=1 summaries=2 summary_bytes=530 no_gain_recalls=0

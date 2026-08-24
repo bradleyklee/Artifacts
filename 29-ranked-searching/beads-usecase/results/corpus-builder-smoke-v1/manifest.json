@@ -1,0 +1,14 @@
+{
+  "schema_version": "beads-memory-corpus-v1",
+  "source_repo": "https://github.com/gastownhall/beads",
+  "source_ref": "fixture-v1",
+  "scope": "docs",
+  "nodes": 18,
+  "unique_internal_edges": 49,
+  "citation_occurrences": 49,
+  "navigation_edges": 0,
+  "generated_cli_included": true,
+  "corpus_sha256": "0d57f6d2edc8dec82e218385291c15b29eb149f002f055b50aa003870ca1a6b1",
+  "graph_sha256": "9405289eedd0945dfe0787f4ae35f8622681ef0af7a1d54baa87fc880f5eb3bc",
+  "citation_table_sha256": "b143f4bae40dc45eab24f9e56c62e0da89dd20f3a4e07b39f6f29d13ad2f7b7c"
+}

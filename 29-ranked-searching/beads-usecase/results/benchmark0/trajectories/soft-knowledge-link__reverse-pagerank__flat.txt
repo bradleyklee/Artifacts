@@ -1,0 +1,11 @@
+TASK: soft-knowledge-link
+PROMPT: Connect two related beads for knowledge navigation without making either bead block the other. Choose the appropriate relationship semantics.
+QUERY: "related"
+ORDERING: reverse-pagerank
+POLICY: flat
+MATCHES: [mem:repo/docs/core-concepts/dependencies]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/core-concepts/dependencies knowledge=0% // next lexical match in static order
+
+RESULT success=false bodies=1 edges=0 summaries=1 summary_bytes=277 no_gain_recalls=1

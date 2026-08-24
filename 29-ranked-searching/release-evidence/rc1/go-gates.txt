@@ -1,0 +1,24 @@
+== implementation: go test ./... ==
+?   	verifiedskiplist/implementation/skiplist	[no test files]
+== implementation: go vet ./... ==
+
+== verification-suite: go test ./... ==
+?   	verifiedskiplist/verification/cmd/workloadbench	[no test files]
+ok  	verifiedskiplist/verification	(cached)
+== verification-suite: go vet ./... ==
+
+== beads-usecase: go test ./... ==
+ok  	verifiedskiplist/beads-usecase/benchmark	(cached)
+?   	verifiedskiplist/beads-usecase/cmd/benchmark0	[no test files]
+?   	verifiedskiplist/beads-usecase/cmd/corpusbuild	[no test files]
+?   	verifiedskiplist/beads-usecase/cmd/graphstats	[no test files]
+?   	verifiedskiplist/beads-usecase/cmd/memtrial	[no test files]
+?   	verifiedskiplist/beads-usecase/cmd/navigation	[no test files]
+ok  	verifiedskiplist/beads-usecase/corpus	(cached)
+?   	verifiedskiplist/beads-usecase/model	[no test files]
+ok  	verifiedskiplist/beads-usecase/crawl	(cached)
+ok  	verifiedskiplist/beads-usecase/discovery	(cached)
+ok  	verifiedskiplist/beads-usecase/graphstats	(cached)
+ok  	verifiedskiplist/beads-usecase/rank	(cached)
+== beads-usecase: go vet ./... ==
+

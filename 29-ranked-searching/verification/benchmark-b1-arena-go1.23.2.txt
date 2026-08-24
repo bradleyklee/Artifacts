@@ -1,0 +1,16 @@
+goos: linux
+goarch: amd64
+pkg: verifiedskiplist/verification
+cpu: AMD EPYC 9V74 80-Core Processor                
+BenchmarkBuildSkipList1000-5   	    2377	    515725 ns/op	  287511 B/op	    1909 allocs/op
+BenchmarkBuildSkipList1000-5   	    2401	    508629 ns/op	  287545 B/op	    1910 allocs/op
+BenchmarkBuildSkipList1000-5   	    2520	    502026 ns/op	  287537 B/op	    1910 allocs/op
+BenchmarkBuildSkipList1000-5   	    2220	    497076 ns/op	  287546 B/op	    1910 allocs/op
+BenchmarkBuildSkipList1000-5   	    2431	    490660 ns/op	  287524 B/op	    1910 allocs/op
+BenchmarkBuildMapSort1000-5    	   15868	     75596 ns/op	   41097 B/op	       6 allocs/op
+BenchmarkBuildMapSort1000-5    	   15327	     77170 ns/op	   41097 B/op	       6 allocs/op
+BenchmarkBuildMapSort1000-5    	   15313	     77911 ns/op	   41097 B/op	       6 allocs/op
+BenchmarkBuildMapSort1000-5    	   15891	     77554 ns/op	   41097 B/op	       6 allocs/op
+BenchmarkBuildMapSort1000-5    	   15441	     78769 ns/op	   41097 B/op	       6 allocs/op
+PASS
+ok  	verifiedskiplist/verification	16.201s

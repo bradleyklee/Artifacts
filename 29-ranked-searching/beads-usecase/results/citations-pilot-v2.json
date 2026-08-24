@@ -1,0 +1,492 @@
+[
+  {
+    "source_id": "mem:repo/docs/architecture/dolt",
+    "source_path": "docs/architecture/dolt.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/architecture/dolt",
+    "source_path": "docs/architecture/dolt.md",
+    "raw_target": "/getting-started/sync-setup",
+    "target_id": "mem:repo/docs/getting-started/sync-setup",
+    "target_path": "docs/getting-started/sync-setup",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/architecture/dolt",
+    "source_path": "docs/architecture/dolt.md",
+    "raw_target": "/reference/troubleshooting",
+    "target_id": "mem:repo/docs/reference/troubleshooting",
+    "target_path": "docs/reference/troubleshooting",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/cli-reference/doctor",
+    "source_path": "docs/cli-reference/doctor.md",
+    "raw_target": "/reference/troubleshooting",
+    "target_id": "mem:repo/docs/reference/troubleshooting",
+    "target_path": "docs/reference/troubleshooting",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/cli-reference/doctor",
+    "source_path": "docs/cli-reference/doctor.md",
+    "raw_target": "/recovery/database-corruption",
+    "target_id": "mem:repo/docs/recovery/database-corruption",
+    "target_path": "docs/recovery/database-corruption",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/cli-reference/ready",
+    "source_path": "docs/cli-reference/ready.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/cli-reference/ready",
+    "source_path": "docs/cli-reference/ready.md",
+    "raw_target": "/workflows/molecules",
+    "target_id": "mem:repo/docs/workflows/molecules",
+    "target_path": "docs/workflows/molecules",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/dependencies",
+    "source_path": "docs/core-concepts/dependencies.md",
+    "raw_target": "/cli-reference/ready",
+    "target_id": "mem:repo/docs/cli-reference/ready",
+    "target_path": "docs/cli-reference/ready",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/dependencies",
+    "source_path": "docs/core-concepts/dependencies.md",
+    "raw_target": "/recovery/circular-dependencies",
+    "target_id": "mem:repo/docs/recovery/circular-dependencies",
+    "target_path": "docs/recovery/circular-dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/dependencies",
+    "source_path": "docs/core-concepts/dependencies.md",
+    "raw_target": "/core-concepts/graph-links",
+    "target_id": "mem:repo/docs/core-concepts/graph-links",
+    "target_path": "docs/core-concepts/graph-links",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/graph-links",
+    "source_path": "docs/core-concepts/graph-links.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/index",
+    "source_path": "docs/core-concepts/index.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/index",
+    "source_path": "docs/core-concepts/index.md",
+    "raw_target": "/core-concepts/graph-links",
+    "target_id": "mem:repo/docs/core-concepts/graph-links",
+    "target_path": "docs/core-concepts/graph-links",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/index",
+    "source_path": "docs/core-concepts/index.md",
+    "raw_target": "/workflows/formulas",
+    "target_id": "mem:repo/docs/workflows/formulas",
+    "target_path": "docs/workflows/formulas",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/index",
+    "source_path": "docs/core-concepts/index.md",
+    "raw_target": "/workflows/molecules",
+    "target_id": "mem:repo/docs/workflows/molecules",
+    "target_path": "docs/workflows/molecules",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/index",
+    "source_path": "docs/core-concepts/index.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "source_path": "docs/core-concepts/sync-concepts.md",
+    "raw_target": "/getting-started/sync-setup",
+    "target_id": "mem:repo/docs/getting-started/sync-setup",
+    "target_path": "docs/getting-started/sync-setup",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "source_path": "docs/core-concepts/sync-concepts.md",
+    "raw_target": "/reference/troubleshooting",
+    "target_id": "mem:repo/docs/reference/troubleshooting",
+    "target_path": "docs/reference/troubleshooting",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/getting-started/quickstart",
+    "source_path": "docs/getting-started/quickstart.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/getting-started/quickstart",
+    "source_path": "docs/getting-started/quickstart.md",
+    "raw_target": "/cli-reference/ready",
+    "target_id": "mem:repo/docs/cli-reference/ready",
+    "target_path": "docs/cli-reference/ready",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/getting-started/quickstart",
+    "source_path": "docs/getting-started/quickstart.md",
+    "raw_target": "/getting-started/sync-setup",
+    "target_id": "mem:repo/docs/getting-started/sync-setup",
+    "target_path": "docs/getting-started/sync-setup",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/getting-started/sync-setup",
+    "source_path": "docs/getting-started/sync-setup.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/getting-started/sync-setup",
+    "source_path": "docs/getting-started/sync-setup.md",
+    "raw_target": "/reference/worktrees",
+    "target_id": "mem:repo/docs/reference/worktrees",
+    "target_path": "docs/reference/worktrees",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/getting-started/sync-setup",
+    "source_path": "docs/getting-started/sync-setup.md",
+    "raw_target": "/reference/troubleshooting",
+    "target_id": "mem:repo/docs/reference/troubleshooting",
+    "target_path": "docs/reference/troubleshooting",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/index",
+    "source_path": "docs/index.md",
+    "raw_target": "/core-concepts/index",
+    "target_id": "mem:repo/docs/core-concepts/index",
+    "target_path": "docs/core-concepts/index",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/index",
+    "source_path": "docs/index.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/index",
+    "source_path": "docs/index.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/index",
+    "source_path": "docs/index.md",
+    "raw_target": "/workflows/formulas",
+    "target_id": "mem:repo/docs/workflows/formulas",
+    "target_path": "docs/workflows/formulas",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/index",
+    "source_path": "docs/index.md",
+    "raw_target": "/workflows/molecules",
+    "target_id": "mem:repo/docs/workflows/molecules",
+    "target_path": "docs/workflows/molecules",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/integrations/codex",
+    "source_path": "docs/integrations/codex.md",
+    "raw_target": "/index",
+    "target_id": "mem:repo/docs/index",
+    "target_path": "docs/index",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/circular-dependencies",
+    "source_path": "docs/recovery/circular-dependencies.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/circular-dependencies",
+    "source_path": "docs/recovery/circular-dependencies.md",
+    "raw_target": "/cli-reference/ready",
+    "target_id": "mem:repo/docs/cli-reference/ready",
+    "target_path": "docs/cli-reference/ready",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/database-corruption",
+    "source_path": "docs/recovery/database-corruption.md",
+    "raw_target": "/cli-reference/doctor",
+    "target_id": "mem:repo/docs/cli-reference/doctor",
+    "target_path": "docs/cli-reference/doctor",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/database-corruption",
+    "source_path": "docs/recovery/database-corruption.md",
+    "raw_target": "/reference/troubleshooting",
+    "target_id": "mem:repo/docs/reference/troubleshooting",
+    "target_path": "docs/reference/troubleshooting",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/database-corruption",
+    "source_path": "docs/recovery/database-corruption.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/merge-conflicts",
+    "source_path": "docs/recovery/merge-conflicts.md",
+    "raw_target": "/cli-reference/doctor",
+    "target_id": "mem:repo/docs/cli-reference/doctor",
+    "target_path": "docs/cli-reference/doctor",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/merge-conflicts",
+    "source_path": "docs/recovery/merge-conflicts.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/recovery/merge-conflicts",
+    "source_path": "docs/recovery/merge-conflicts.md",
+    "raw_target": "/reference/troubleshooting",
+    "target_id": "mem:repo/docs/reference/troubleshooting",
+    "target_path": "docs/reference/troubleshooting",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/reference/troubleshooting",
+    "source_path": "docs/reference/troubleshooting.md",
+    "raw_target": "/cli-reference/doctor",
+    "target_id": "mem:repo/docs/cli-reference/doctor",
+    "target_path": "docs/cli-reference/doctor",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/reference/troubleshooting",
+    "source_path": "docs/reference/troubleshooting.md",
+    "raw_target": "/recovery/database-corruption",
+    "target_id": "mem:repo/docs/recovery/database-corruption",
+    "target_path": "docs/recovery/database-corruption",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/reference/troubleshooting",
+    "source_path": "docs/reference/troubleshooting.md",
+    "raw_target": "/recovery/merge-conflicts",
+    "target_id": "mem:repo/docs/recovery/merge-conflicts",
+    "target_path": "docs/recovery/merge-conflicts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/reference/troubleshooting",
+    "source_path": "docs/reference/troubleshooting.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/reference/worktrees",
+    "source_path": "docs/reference/worktrees.md",
+    "raw_target": "/core-concepts/sync-concepts",
+    "target_id": "mem:repo/docs/core-concepts/sync-concepts",
+    "target_path": "docs/core-concepts/sync-concepts",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/reference/worktrees",
+    "source_path": "docs/reference/worktrees.md",
+    "raw_target": "/getting-started/sync-setup",
+    "target_id": "mem:repo/docs/getting-started/sync-setup",
+    "target_path": "docs/getting-started/sync-setup",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/workflows/formulas",
+    "source_path": "docs/workflows/formulas.md",
+    "raw_target": "/workflows/molecules",
+    "target_id": "mem:repo/docs/workflows/molecules",
+    "target_path": "docs/workflows/molecules",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/workflows/formulas",
+    "source_path": "docs/workflows/formulas.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/workflows/molecules",
+    "source_path": "docs/workflows/molecules.md",
+    "raw_target": "/workflows/formulas",
+    "target_id": "mem:repo/docs/workflows/formulas",
+    "target_path": "docs/workflows/formulas",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/workflows/molecules",
+    "source_path": "docs/workflows/molecules.md",
+    "raw_target": "/core-concepts/dependencies",
+    "target_id": "mem:repo/docs/core-concepts/dependencies",
+    "target_path": "docs/core-concepts/dependencies",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  },
+  {
+    "source_id": "mem:repo/docs/workflows/molecules",
+    "source_path": "docs/workflows/molecules.md",
+    "raw_target": "/cli-reference/ready",
+    "target_id": "mem:repo/docs/cli-reference/ready",
+    "target_path": "docs/cli-reference/ready",
+    "kind": "markdown-link",
+    "internal": true,
+    "resolved": true
+  }
+]

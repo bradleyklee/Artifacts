@@ -1,0 +1,24 @@
+TASK: merge-conflict
+PROMPT: A Dolt pull reports conflicting issue state between clones. Diagnose, safely reconcile, verify, and publish the repaired tracker state.
+QUERY: "doctor"
+ORDERING: hits-authority
+POLICY: dfs
+MATCHES: [mem:repo/docs/reference/troubleshooting mem:repo/docs/cli-reference/doctor mem:repo/docs/recovery/database-corruption mem:repo/docs/recovery/merge-conflicts]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/reference/troubleshooting knowledge=25% +[backup] // lexical-match seed
+STEP 2 follow-reference mem:repo/docs/reference/troubleshooting -> mem:repo/docs/cli-reference/doctor depth=1 guide=0 knowledge=25%
+STEP 3 recall           memory=mem:repo/docs/cli-reference/doctor knowledge=25% // reference-crawl body
+STEP 4 follow-reference mem:repo/docs/cli-reference/doctor -> mem:repo/docs/recovery/database-corruption depth=2 guide=0 knowledge=25%
+STEP 5 recall           memory=mem:repo/docs/recovery/database-corruption knowledge=25% // reference-crawl body
+STEP 6 follow-reference mem:repo/docs/recovery/database-corruption -> mem:repo/docs/core-concepts/sync-concepts depth=3 guide=0 knowledge=25%
+STEP 7 recall           memory=mem:repo/docs/core-concepts/sync-concepts knowledge=50% +[publish] // reference-crawl body
+STEP 8 follow-reference mem:repo/docs/core-concepts/sync-concepts -> mem:repo/docs/getting-started/sync-setup depth=4 guide=0 knowledge=50%
+STEP 9 recall           memory=mem:repo/docs/getting-started/sync-setup knowledge=50% // reference-crawl body
+STEP 10 follow-reference mem:repo/docs/getting-started/sync-setup -> mem:repo/docs/reference/worktrees depth=5 guide=0 knowledge=50%
+STEP 11 recall           memory=mem:repo/docs/reference/worktrees knowledge=50% // reference-crawl body
+STEP 12 follow-reference mem:repo/docs/reference/troubleshooting -> mem:repo/docs/recovery/merge-conflicts depth=1 guide=0 knowledge=50%
+STEP 13 recall           memory=mem:repo/docs/recovery/merge-conflicts knowledge=100% +[preview fix] // reference-crawl body
+STEP 14 unblocked        memory=mem:repo/docs/recovery/merge-conflicts knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=7 edges=6 summaries=4 summary_bytes=1063 no_gain_recalls=4

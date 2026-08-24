@@ -1,0 +1,468 @@
+[
+  {
+    "id": "mem:docs/architecture/dolt",
+    "project_id": "beads-docs",
+    "title": "Dolt Backend for Beads",
+    "body": "Beads stores issue data in Dolt, providing versioned SQL state independent of normal Git source branches. Operational details depend on embedded, server, or proxied-server mode. Use Beads commands rather than improvising against internal database files. See [Sync Concepts](/core-concepts/sync-concepts), [Sync Setup](/getting-started/sync-setup), and [Troubleshooting](/reference/troubleshooting).",
+    "key": "architecture/dolt",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/getting-started/sync-setup",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/reference/troubleshooting",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/architecture/dolt.md",
+      "source_url": "https://beads.gascity.com/architecture/dolt",
+      "source_sha": "c387a131f921934308f2ce6ec5a81812efbac8239ed1f6d294de0e1b0bf4e728"
+    }
+  },
+  {
+    "id": "mem:docs/cli-reference/doctor",
+    "project_id": "beads-docs",
+    "title": "bd doctor",
+    "body": "`bd doctor` checks database/schema health, permissions, dependencies, hooks, metadata, and other integrity conditions. `--dry-run` previews repairs; `--fix` applies supported repairs; `--deep` validates graph integrity; `--agent --json` emits rich machine-readable diagnostics for an agent. Use specialized migration and server modes when relevant. See [Troubleshooting](/reference/troubleshooting) and [Database Corruption](/recovery/database-corruption).",
+    "key": "cli-reference/doctor",
+    "references": [
+      {
+        "target_id": "mem:docs/reference/troubleshooting",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/recovery/database-corruption",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/cli-reference/doctor.md",
+      "source_url": "https://beads.gascity.com/cli-reference/doctor",
+      "source_sha": "1f5536d4ae5c19b8f2eecfc7ec4288747f4042fc7b8b4cf9c6a2be41e1b1418a"
+    }
+  },
+  {
+    "id": "mem:docs/cli-reference/ready",
+    "project_id": "beads-docs",
+    "title": "bd ready",
+    "body": "`bd ready` uses blocker-aware semantics to find truly claimable work. It excludes in-progress, blocked, deferred, and hooked issues. `--explain` gives dependency-aware reasons; `--claim` atomically claims the first matching ready issue; `--mol` restricts to one molecule. See [Dependencies](/core-concepts/dependencies) and [Molecules](/workflows/molecules).",
+    "key": "cli-reference/ready",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/workflows/molecules",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/cli-reference/ready.md",
+      "source_url": "https://beads.gascity.com/cli-reference/ready",
+      "source_sha": "d834a31934abb036e571d9c7cdb9cc772a8c205a2d5d6bcb7b8568a93fb5ead4"
+    }
+  },
+  {
+    "id": "mem:docs/core-concepts/dependencies",
+    "project_id": "beads-docs",
+    "title": "Dependencies and Gates",
+    "body": "Use `bd dep add dependent blocker` when one issue needs another. `blocks`, `parent-child`, `conditional-blocks`, and `waits-for` can affect readiness; `related`, `tracks`, `discovered-from`, `caused-by`, `validates`, and `supersedes` are graph annotations. `bd ready` shows issues with no open blocking dependencies; `bd blocked` explains blocked work. Use `bd dep cycles` to detect cycles and `bd dep remove dependent blocker` to remove an edge. See [Ready](/cli-reference/ready), [Circular Dependencies](/recovery/circular-dependencies), and [Graph Links](/core-concepts/graph-links).",
+    "key": "core-concepts/dependencies",
+    "references": [
+      {
+        "target_id": "mem:docs/cli-reference/ready",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/recovery/circular-dependencies",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/graph-links",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/core-concepts/dependencies.md",
+      "source_url": "https://beads.gascity.com/core-concepts/dependencies",
+      "source_sha": "4de938eb6e5c09dcd3f3b879252787a4ce19c229d43a1cd57fec983e540ce5fb"
+    }
+  },
+  {
+    "id": "mem:docs/core-concepts/graph-links",
+    "project_id": "beads-docs",
+    "title": "Graph Links in Beads",
+    "body": "Graph links represent knowledge relationships beyond blocking dependencies. `relates-to` is a loose association, `replies-to` threads messages, `duplicate_of` identifies a canonical issue, and `superseded_by` forms version chains. These links are useful for knowledge graphs but do not make work ready or blocked. Use a specific relation when possible. See [Dependencies](/core-concepts/dependencies) for workflow-affecting edges.",
+    "key": "core-concepts/graph-links",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/core-concepts/graph-links.md",
+      "source_url": "https://beads.gascity.com/core-concepts/graph-links",
+      "source_sha": "c5448ac2b9ac2b144a7f4d0431e385995a64c37ac39b1f66c7c4e3f60d347fae"
+    }
+  },
+  {
+    "id": "mem:docs/core-concepts/index",
+    "project_id": "beads-docs",
+    "title": "How Beads Works",
+    "body": "Every unit of work is a bead in a persistent dependency graph. `bd ready` returns the claimable frontier: open beads with no active blockers. Blocking and non-blocking edge semantics are detailed in [Dependencies](/core-concepts/dependencies), while richer informational relations are in [Graph Links](/core-concepts/graph-links). Repeatable workflows move from [Formulas](/workflows/formulas) to [Molecules](/workflows/molecules). Cross-machine state moves through [Dolt sync](/core-concepts/sync-concepts).",
+    "key": "core-concepts/index",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/graph-links",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/workflows/formulas",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/workflows/molecules",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/core-concepts/index.md",
+      "source_url": "https://beads.gascity.com/core-concepts/index",
+      "source_sha": "6bdc35a3b81ead01a7903a7a93f445d6b19858b529cee3c8a54b854d526f7e94"
+    }
+  },
+  {
+    "id": "mem:docs/core-concepts/sync-concepts",
+    "project_id": "beads-docs",
+    "title": "Sync Concepts",
+    "body": "Beads issue data lives in Dolt. Cross-machine sync uses `bd dolt push` and `bd dolt pull`; a new clone uses `bd bootstrap` to obtain `refs/dolt/data`. `.beads/issues.jsonl` is for viewers, interchange, migration, and backup, not routine synchronization. If an older project has no remote, configure one from the machine with authoritative local Dolt state and push it. See [Sync Setup](/getting-started/sync-setup) and [Troubleshooting](/reference/troubleshooting).",
+    "key": "core-concepts/sync-concepts",
+    "references": [
+      {
+        "target_id": "mem:docs/getting-started/sync-setup",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/reference/troubleshooting",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/core-concepts/sync-concepts.md",
+      "source_url": "https://beads.gascity.com/core-concepts/sync-concepts",
+      "source_sha": "f98342612f6806ae3478e5734a1c7fffc43a4427f9617e4450503bcfe31df9f4"
+    }
+  },
+  {
+    "id": "mem:docs/getting-started/quickstart",
+    "project_id": "beads-docs",
+    "title": "Quick Start",
+    "body": "Initialize with `bd init`, create issues, connect work with dependencies, and query `bd ready` to find claimable tasks. The quick start introduces the common workflow but leaves detailed dependency and synchronization semantics to the dedicated guides. See [Dependencies](/core-concepts/dependencies), [Ready](/cli-reference/ready), and [Sync Setup](/getting-started/sync-setup).",
+    "key": "getting-started/quickstart",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/cli-reference/ready",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/getting-started/sync-setup",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/getting-started/quickstart.md",
+      "source_url": "https://beads.gascity.com/getting-started/quickstart",
+      "source_sha": "55fbdc422015b92823a59d77540abc1635b108d08e3edc30e6395ea7b79af890"
+    }
+  },
+  {
+    "id": "mem:docs/getting-started/sync-setup",
+    "project_id": "beads-docs",
+    "title": "Sync Setup Guide",
+    "body": "Initialize Beads once, verify or add the Dolt remote, and publish with `bd dolt push`. A normal `git clone` does not fetch `refs/dolt/data`; in a fresh clone run `bd bootstrap`. Day to day, use `bd dolt pull` and `bd dolt push`. Commit the Dolt working set before pulling, push before changing machines, and do not treat JSONL as sync. See [Sync Concepts](/core-concepts/sync-concepts), [Worktrees](/reference/worktrees), and [Troubleshooting](/reference/troubleshooting).",
+    "key": "getting-started/sync-setup",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/reference/worktrees",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/reference/troubleshooting",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/getting-started/sync-setup.md",
+      "source_url": "https://beads.gascity.com/getting-started/sync-setup",
+      "source_sha": "67d469996a57fbe427d66ff18aaa48cf8e8b5838587fc6884bf5a58ab24b7646"
+    }
+  },
+  {
+    "id": "mem:docs/index",
+    "project_id": "beads-docs",
+    "title": "Introduction",
+    "body": "Beads is a Dolt-powered issue tracker for AI-supervised coding workflows. The main concepts are the [work graph](/core-concepts/index), [dependencies](/core-concepts/dependencies), [sync](/core-concepts/sync-concepts), [formulas](/workflows/formulas), and [molecules](/workflows/molecules). Agents normally ask `bd ready` for work and push issue history with `bd dolt push`.",
+    "key": "index",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/index",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/workflows/formulas",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/workflows/molecules",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/index.md",
+      "source_url": "https://beads.gascity.com/index",
+      "source_sha": "7da1464f80226288ae6ca2a98a19a13b17ccc34e820a94ed8a4394bcadd7552e"
+    }
+  },
+  {
+    "id": "mem:docs/integrations/codex",
+    "project_id": "beads-docs",
+    "title": "Codex",
+    "body": "Use `bd setup codex` and `bd setup codex --check`. Project setup installs the Beads skill, managed `AGENTS.md` guidance, and native Codex hooks. SessionStart injects `bd prime`; compaction hooks detect context loss and schedule a refresh so the first prompt after compaction receives Beads context again. See [Introduction](/index).",
+    "key": "integrations/codex",
+    "references": [
+      {
+        "target_id": "mem:docs/index",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/integrations/codex.md",
+      "source_url": "https://beads.gascity.com/integrations/codex",
+      "source_sha": "420b0b9a6bb46c7d21ee7330b93dbd38195cf971f6e9e02dfc4d40ca4b60f49d"
+    }
+  },
+  {
+    "id": "mem:docs/recovery/circular-dependencies",
+    "project_id": "beads-docs",
+    "title": "Circular Dependencies",
+    "body": "Symptoms include circular-dependency errors, unexpected blocked work, or ready work disappearing. Inspect with `bd blocked`, `bd show`, and dependency traversal. Identify the least appropriate edge, remove it with `bd dep remove dependent blocker`, then verify with `bd blocked` and `bd ready`. Think in terms of “X needs Y” when adding edges. See [Dependencies](/core-concepts/dependencies) and [Ready](/cli-reference/ready).",
+    "key": "recovery/circular-dependencies",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/cli-reference/ready",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/recovery/circular-dependencies.md",
+      "source_url": "https://beads.gascity.com/recovery/circular-dependencies",
+      "source_sha": "006c4c9d539160b84e074d2346365e659ebabd2651302a687fc6552e3ff92fd6"
+    }
+  },
+  {
+    "id": "mem:docs/recovery/database-corruption",
+    "project_id": "beads-docs",
+    "title": "Database Corruption",
+    "body": "For persistent lock errors, missing issues, or inconsistent database state, inspect with `bd doctor` and the Dolt health commands. Stop the server before filesystem-level recovery, preserve a backup, preview repairs, then use the supported recovery path and verify with `bd doctor` and `bd list`. Do not casually delete Dolt internal files. See [Doctor](/cli-reference/doctor), [Troubleshooting](/reference/troubleshooting), and [Sync Concepts](/core-concepts/sync-concepts).",
+    "key": "recovery/database-corruption",
+    "references": [
+      {
+        "target_id": "mem:docs/cli-reference/doctor",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/reference/troubleshooting",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/recovery/database-corruption.md",
+      "source_url": "https://beads.gascity.com/recovery/database-corruption",
+      "source_sha": "9ee36c6f5674d388bbecc3cabcf25964c788686e73dd586364f1f36883fe55da"
+    }
+  },
+  {
+    "id": "mem:docs/recovery/merge-conflicts",
+    "project_id": "beads-docs",
+    "title": "Merge Conflicts",
+    "body": "When `bd dolt pull` reports conflicts or clones disagree, inspect database health with `bd doctor` and preview repairs with `bd doctor --dry-run`. Back up the local `.beads` state, reconcile with `bd doctor --fix`, verify the issue state, then `bd dolt push`. See [Doctor](/cli-reference/doctor), [Sync Concepts](/core-concepts/sync-concepts), and [Troubleshooting](/reference/troubleshooting).",
+    "key": "recovery/merge-conflicts",
+    "references": [
+      {
+        "target_id": "mem:docs/cli-reference/doctor",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/reference/troubleshooting",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/recovery/merge-conflicts.md",
+      "source_url": "https://beads.gascity.com/recovery/merge-conflicts",
+      "source_sha": "7fabf45fd72319e37956625fdd11d6575f8f9de12159a0275643289c2e316897"
+    }
+  },
+  {
+    "id": "mem:docs/reference/troubleshooting",
+    "project_id": "beads-docs",
+    "title": "Troubleshooting",
+    "body": "Troubleshooting starts by distinguishing installation, logical consistency, physical database damage, server selection, and synchronization failures. Prefer supported commands such as `bd doctor`, `bd dolt stop/start`, `bd bootstrap`, and backup/restore. Do not remove Dolt internal lock or journal files as an improvised repair. See [Doctor](/cli-reference/doctor), [Database Corruption](/recovery/database-corruption), [Merge Conflicts](/recovery/merge-conflicts), and [Sync Concepts](/core-concepts/sync-concepts).",
+    "key": "reference/troubleshooting",
+    "references": [
+      {
+        "target_id": "mem:docs/cli-reference/doctor",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/recovery/database-corruption",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/recovery/merge-conflicts",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/reference/troubleshooting.md",
+      "source_url": "https://beads.gascity.com/reference/troubleshooting",
+      "source_sha": "8c6467b8df01a2eb92f160352c39ee1a167d35c4837202f68bd8712ca8832645"
+    }
+  },
+  {
+    "id": "mem:docs/reference/worktrees",
+    "project_id": "beads-docs",
+    "title": "Git Worktrees Guide",
+    "body": "Normal Git worktrees in the same repository share the repository's `.beads` workspace. Issue changes live in Dolt and are independent of the current source branch. Cross-clone synchronization still uses `bd dolt pull` and `bd dolt push`. `BEADS_DIR` can point multiple code worktrees at an external Beads workspace. See [Sync Concepts](/core-concepts/sync-concepts) and [Sync Setup](/getting-started/sync-setup).",
+    "key": "reference/worktrees",
+    "references": [
+      {
+        "target_id": "mem:docs/core-concepts/sync-concepts",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/getting-started/sync-setup",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/reference/worktrees.md",
+      "source_url": "https://beads.gascity.com/reference/worktrees",
+      "source_sha": "91bffb18b73f1489e08acb82f12a5a6119370a7e98dec80cc3d7880c173e261b"
+    }
+  },
+  {
+    "id": "mem:docs/workflows/formulas",
+    "project_id": "beads-docs",
+    "title": "Formulas",
+    "body": "A formula declares repeatable workflow steps, variables, dependencies, gates, and optional aspects. TOML is preferred. `needs` expresses step dependencies. Use `bd cook` to compile a formula into a proto, then `bd mol pour` to instantiate persistent work. Formula files may live at project or user level. See [Molecules](/workflows/molecules) and [Dependencies](/core-concepts/dependencies).",
+    "key": "workflows/formulas",
+    "references": [
+      {
+        "target_id": "mem:docs/workflows/molecules",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/workflows/formulas.md",
+      "source_url": "https://beads.gascity.com/workflows/formulas",
+      "source_sha": "9d3a7a3860195e7ca2bf867458eccf9f0e38a3186113d9c7e3abcd57bd754d15"
+    }
+  },
+  {
+    "id": "mem:docs/workflows/molecules",
+    "project_id": "beads-docs",
+    "title": "Molecules",
+    "body": "A molecule is a work graph, usually an epic whose child steps are connected by dependencies. Children are parallel by default; only explicit dependencies impose sequence. Agents repeatedly query `bd ready --mol`, claim a step, do it, close it, and continue. Formulas can create reusable protos that are poured into molecules. See [Formulas](/workflows/formulas), [Dependencies](/core-concepts/dependencies), and [Ready](/cli-reference/ready).",
+    "key": "workflows/molecules",
+    "references": [
+      {
+        "target_id": "mem:docs/workflows/formulas",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/core-concepts/dependencies",
+        "kind": "imported-doc-link"
+      },
+      {
+        "target_id": "mem:docs/cli-reference/ready",
+        "kind": "imported-doc-link"
+      }
+    ],
+    "stored_provenance": {
+      "kind": "imported-documentation",
+      "source_path": "docs/workflows/molecules.md",
+      "source_url": "https://beads.gascity.com/workflows/molecules",
+      "source_sha": "d1d37f920b84f671f25c6feec3d366e2a77034ca39b029f6cd215d4ee81e027a"
+    }
+  }
+]

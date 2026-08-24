@@ -1,0 +1,749 @@
+[
+  {
+    "task_id": "ready-missing",
+    "ordering": "alphabetical",
+    "success_at": 6,
+    "first_essential": 2,
+    "essential_ranks": [
+      2,
+      6
+    ],
+    "summary_bytes_before_success": 1050,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "pagerank",
+    "success_at": 4,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      4
+    ],
+    "summary_bytes_before_success": 702,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "lexical",
+    "success_at": 5,
+    "first_essential": 3,
+    "essential_ranks": [
+      3,
+      5
+    ],
+    "summary_bytes_before_success": 870,
+    "order": [
+      "mem:docs/core-concepts/index",
+      "mem:docs/workflows/molecules",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "hybrid",
+    "success_at": 2,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      2
+    ],
+    "summary_bytes_before_success": 352,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/cli-reference/ready"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "alphabetical",
+    "success_at": 6,
+    "first_essential": 3,
+    "essential_ranks": [
+      3,
+      6
+    ],
+    "summary_bytes_before_success": 1050,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "pagerank",
+    "success_at": 10,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      10
+    ],
+    "summary_bytes_before_success": 1762,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "lexical",
+    "success_at": 4,
+    "first_essential": 3,
+    "essential_ranks": [
+      3,
+      4
+    ],
+    "summary_bytes_before_success": 706,
+    "order": [
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "hybrid",
+    "success_at": 4,
+    "first_essential": 2,
+    "essential_ranks": [
+      2,
+      4
+    ],
+    "summary_bytes_before_success": 706,
+    "order": [
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "alphabetical",
+    "success_at": 17,
+    "first_essential": 16,
+    "essential_ranks": [
+      16,
+      17
+    ],
+    "summary_bytes_before_success": 2981,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/architecture/dolt",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/core-concepts/index",
+      "mem:docs/index",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "pagerank",
+    "success_at": 6,
+    "first_essential": 3,
+    "essential_ranks": [
+      3,
+      6
+    ],
+    "summary_bytes_before_success": 1049,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "lexical",
+    "success_at": 3,
+    "first_essential": 2,
+    "essential_ranks": [
+      2,
+      3
+    ],
+    "summary_bytes_before_success": 531,
+    "order": [
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "hybrid",
+    "success_at": 4,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      4
+    ],
+    "summary_bytes_before_success": 707,
+    "order": [
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/reference/worktrees",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "alphabetical",
+    "success_at": 13,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      13
+    ],
+    "summary_bytes_before_success": 2288,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/architecture/dolt",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/core-concepts/index",
+      "mem:docs/index",
+      "mem:docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "pagerank",
+    "success_at": 11,
+    "first_essential": 7,
+    "essential_ranks": [
+      7,
+      11
+    ],
+    "summary_bytes_before_success": 1938,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "lexical",
+    "success_at": 16,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      16
+    ],
+    "summary_bytes_before_success": 2818,
+    "order": [
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/reference/worktrees",
+      "mem:docs/index",
+      "mem:docs/architecture/dolt",
+      "mem:docs/core-concepts/index",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/integrations/codex",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "hybrid",
+    "success_at": 14,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      14
+    ],
+    "summary_bytes_before_success": 2480,
+    "order": [
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/index",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/architecture/dolt",
+      "mem:docs/core-concepts/index",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "alphabetical",
+    "success_at": 18,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      5,
+      18
+    ],
+    "summary_bytes_before_success": 3157,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/architecture/dolt",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/core-concepts/index",
+      "mem:docs/index",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/reference/troubleshooting"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "pagerank",
+    "success_at": 8,
+    "first_essential": 2,
+    "essential_ranks": [
+      2,
+      7,
+      8
+    ],
+    "summary_bytes_before_success": 1399,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/recovery/database-corruption"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "lexical",
+    "success_at": 8,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      4,
+      8
+    ],
+    "summary_bytes_before_success": 1416,
+    "order": [
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/architecture/dolt",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/reference/worktrees",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "hybrid",
+    "success_at": 7,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      2,
+      7
+    ],
+    "summary_bytes_before_success": 1236,
+    "order": [
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/architecture/dolt",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "alphabetical",
+    "success_at": 14,
+    "first_essential": 8,
+    "essential_ranks": [
+      8,
+      14
+    ],
+    "summary_bytes_before_success": 2458,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/architecture/dolt",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/core-concepts/index",
+      "mem:docs/index",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/workflows/molecules"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "pagerank",
+    "success_at": 12,
+    "first_essential": 5,
+    "essential_ranks": [
+      5,
+      12
+    ],
+    "summary_bytes_before_success": 2107,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/workflows/formulas"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "lexical",
+    "success_at": 2,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      2
+    ],
+    "summary_bytes_before_success": 339,
+    "order": [
+      "mem:docs/workflows/molecules",
+      "mem:docs/workflows/formulas"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "hybrid",
+    "success_at": 2,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      2
+    ],
+    "summary_bytes_before_success": 339,
+    "order": [
+      "mem:docs/workflows/molecules",
+      "mem:docs/workflows/formulas"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "alphabetical",
+    "success_at": 10,
+    "first_essential": 10,
+    "essential_ranks": [
+      10
+    ],
+    "summary_bytes_before_success": 1763,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/architecture/dolt",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/graph-links"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "pagerank",
+    "success_at": 9,
+    "first_essential": 9,
+    "essential_ranks": [
+      9
+    ],
+    "summary_bytes_before_success": 1580,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/graph-links"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "lexical",
+    "success_at": 1,
+    "first_essential": 1,
+    "essential_ranks": [
+      1
+    ],
+    "summary_bytes_before_success": 181,
+    "order": [
+      "mem:docs/core-concepts/graph-links"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "hybrid",
+    "success_at": 1,
+    "first_essential": 1,
+    "essential_ranks": [
+      1
+    ],
+    "summary_bytes_before_success": 181,
+    "order": [
+      "mem:docs/core-concepts/graph-links"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "alphabetical",
+    "success_at": 16,
+    "first_essential": 9,
+    "essential_ranks": [
+      9,
+      16
+    ],
+    "summary_bytes_before_success": 2804,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/architecture/dolt",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/core-concepts/index",
+      "mem:docs/index",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "pagerank",
+    "success_at": 13,
+    "first_essential": 3,
+    "essential_ranks": [
+      3,
+      13
+    ],
+    "summary_bytes_before_success": 2287,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "lexical",
+    "success_at": 9,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      9
+    ],
+    "summary_bytes_before_success": 1585,
+    "order": [
+      "mem:docs/reference/worktrees",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/architecture/dolt",
+      "mem:docs/core-concepts/index",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/index",
+      "mem:docs/integrations/codex",
+      "mem:docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "hybrid",
+    "success_at": 4,
+    "first_essential": 1,
+    "essential_ranks": [
+      1,
+      4
+    ],
+    "summary_bytes_before_success": 714,
+    "order": [
+      "mem:docs/reference/worktrees",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "alphabetical",
+    "success_at": 4,
+    "first_essential": 4,
+    "essential_ranks": [
+      4
+    ],
+    "summary_bytes_before_success": 687,
+    "order": [
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "pagerank",
+    "success_at": 18,
+    "first_essential": 18,
+    "essential_ranks": [
+      18
+    ],
+    "summary_bytes_before_success": 3157,
+    "order": [
+      "mem:docs/core-concepts/dependencies",
+      "mem:docs/reference/troubleshooting",
+      "mem:docs/core-concepts/sync-concepts",
+      "mem:docs/cli-reference/ready",
+      "mem:docs/workflows/molecules",
+      "mem:docs/getting-started/sync-setup",
+      "mem:docs/cli-reference/doctor",
+      "mem:docs/recovery/database-corruption",
+      "mem:docs/core-concepts/graph-links",
+      "mem:docs/recovery/circular-dependencies",
+      "mem:docs/recovery/merge-conflicts",
+      "mem:docs/workflows/formulas",
+      "mem:docs/reference/worktrees",
+      "mem:docs/index",
+      "mem:docs/core-concepts/index",
+      "mem:docs/architecture/dolt",
+      "mem:docs/getting-started/quickstart",
+      "mem:docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "lexical",
+    "success_at": 1,
+    "first_essential": 1,
+    "essential_ranks": [
+      1
+    ],
+    "summary_bytes_before_success": 166,
+    "order": [
+      "mem:docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "hybrid",
+    "success_at": 1,
+    "first_essential": 1,
+    "essential_ranks": [
+      1
+    ],
+    "summary_bytes_before_success": 166,
+    "order": [
+      "mem:docs/integrations/codex"
+    ]
+  }
+]

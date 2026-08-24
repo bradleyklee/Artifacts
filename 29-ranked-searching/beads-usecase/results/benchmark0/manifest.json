@@ -1,0 +1,29 @@
+{
+  "corpus_sha256": "f36bd0c954cad84f46da8339cf1126bdfaa61c0addf6833ed1bb25df4c261a6b",
+  "graph_sha256": "1d66c7d2da8b903d142ba930cc6e961a162ab75e47ed65c343aa191d628add08",
+  "spec_sha256": "35c66402e951a3277134a41c69e5ec442bfd0d136f202b2d5c4704b5fe3ed8e0",
+  "corpus_nodes": 18,
+  "graph_edges": 49,
+  "rankers": [
+    "alphabetical",
+    "id",
+    "random-fixed",
+    "indegree",
+    "outdegree",
+    "pagerank",
+    "reverse-pagerank",
+    "hits-authority",
+    "hits-hub"
+  ],
+  "policies": [
+    "flat",
+    "dfs",
+    "bfs",
+    "shallow-guided",
+    "guided-dfs",
+    "guided-bfs"
+  ],
+  "matcher": "case-insensitive binary substring over key, aliases, title, body",
+  "return_mode": "all lexical matches; no pagination",
+  "agent_context": "You have a task and a memory search interface. Search returns compact summaries only. You may explicitly recall a memory body and may inspect/follow its outgoing references. Do not assume a referenced body until you recall it."
+}

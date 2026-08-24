@@ -1,0 +1,303 @@
+{
+  "nodes": 18,
+  "unique_internal_edges": 49,
+  "raw_citation_mentions": 49,
+  "resolved_internal_mentions": 49,
+  "unresolved_internal_links": 0,
+  "external_links": 0,
+  "isolates": 0,
+  "zero_in_degree": 3,
+  "zero_out_degree": 0,
+  "max_in_degree": 8,
+  "max_out_degree": 5,
+  "mean_in_degree": 2.7222222222222223,
+  "mean_out_degree": 2.7222222222222223,
+  "in_degree_gini": 0.4886621315192743,
+  "out_degree_gini": 0.2142857142857142,
+  "in_degree_histogram": [
+    {
+      "degree": 0,
+      "count": 3
+    },
+    {
+      "degree": 1,
+      "count": 5
+    },
+    {
+      "degree": 2,
+      "count": 2
+    },
+    {
+      "degree": 3,
+      "count": 2
+    },
+    {
+      "degree": 4,
+      "count": 3
+    },
+    {
+      "degree": 6,
+      "count": 1
+    },
+    {
+      "degree": 8,
+      "count": 2
+    }
+  ],
+  "out_degree_histogram": [
+    {
+      "degree": 1,
+      "count": 2
+    },
+    {
+      "degree": 2,
+      "count": 6
+    },
+    {
+      "degree": 3,
+      "count": 7
+    },
+    {
+      "degree": 4,
+      "count": 1
+    },
+    {
+      "degree": 5,
+      "count": 2
+    }
+  ],
+  "in_degree_powerlaw_diagnostic": {
+    "n": 10,
+    "xmin": 2,
+    "alpha": 2.037517300671391,
+    "ks": 0.21283489647502957,
+    "note": "diagnostic continuous-corrected MLE; compare alternatives before claiming power law"
+  },
+  "out_degree_powerlaw_diagnostic": {
+    "n": 16,
+    "xmin": 2,
+    "alpha": 2.6053139809262964,
+    "ks": 0.30736427920739195,
+    "note": "diagnostic continuous-corrected MLE; compare alternatives before claiming power law"
+  },
+  "top_by_in_degree": [
+    {
+      "id": "mem:repo/docs/core-concepts/dependencies",
+      "title": "Dependencies and Gates",
+      "in_degree": 8,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/core-concepts/sync-concepts",
+      "title": "Sync Concepts",
+      "in_degree": 8,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/reference/troubleshooting",
+      "title": "Troubleshooting",
+      "in_degree": 6,
+      "out_degree": 4
+    },
+    {
+      "id": "mem:repo/docs/getting-started/sync-setup",
+      "title": "Sync Setup Guide",
+      "in_degree": 4,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/workflows/molecules",
+      "title": "Molecules",
+      "in_degree": 4,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/cli-reference/ready",
+      "title": "bd ready",
+      "in_degree": 4,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/cli-reference/doctor",
+      "title": "bd doctor",
+      "in_degree": 3,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/workflows/formulas",
+      "title": "Formulas",
+      "in_degree": 3,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/recovery/database-corruption",
+      "title": "Database Corruption",
+      "in_degree": 2,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/core-concepts/graph-links",
+      "title": "Graph Links in Beads",
+      "in_degree": 2,
+      "out_degree": 1
+    },
+    {
+      "id": "mem:repo/docs/core-concepts/index",
+      "title": "How Beads Works",
+      "in_degree": 1,
+      "out_degree": 5
+    },
+    {
+      "id": "mem:repo/docs/index",
+      "title": "Introduction",
+      "in_degree": 1,
+      "out_degree": 5
+    },
+    {
+      "id": "mem:repo/docs/recovery/merge-conflicts",
+      "title": "Merge Conflicts",
+      "in_degree": 1,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/recovery/circular-dependencies",
+      "title": "Circular Dependencies",
+      "in_degree": 1,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/reference/worktrees",
+      "title": "Git Worktrees Guide",
+      "in_degree": 1,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/architecture/dolt",
+      "title": "Dolt Backend for Beads",
+      "in_degree": 0,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/getting-started/quickstart",
+      "title": "Quick Start",
+      "in_degree": 0,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/integrations/codex",
+      "title": "Codex",
+      "in_degree": 0,
+      "out_degree": 1
+    }
+  ],
+  "top_by_out_degree": [
+    {
+      "id": "mem:repo/docs/core-concepts/index",
+      "title": "How Beads Works",
+      "in_degree": 1,
+      "out_degree": 5
+    },
+    {
+      "id": "mem:repo/docs/index",
+      "title": "Introduction",
+      "in_degree": 1,
+      "out_degree": 5
+    },
+    {
+      "id": "mem:repo/docs/reference/troubleshooting",
+      "title": "Troubleshooting",
+      "in_degree": 6,
+      "out_degree": 4
+    },
+    {
+      "id": "mem:repo/docs/core-concepts/dependencies",
+      "title": "Dependencies and Gates",
+      "in_degree": 8,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/getting-started/sync-setup",
+      "title": "Sync Setup Guide",
+      "in_degree": 4,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/workflows/molecules",
+      "title": "Molecules",
+      "in_degree": 4,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/recovery/database-corruption",
+      "title": "Database Corruption",
+      "in_degree": 2,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/recovery/merge-conflicts",
+      "title": "Merge Conflicts",
+      "in_degree": 1,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/architecture/dolt",
+      "title": "Dolt Backend for Beads",
+      "in_degree": 0,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/getting-started/quickstart",
+      "title": "Quick Start",
+      "in_degree": 0,
+      "out_degree": 3
+    },
+    {
+      "id": "mem:repo/docs/core-concepts/sync-concepts",
+      "title": "Sync Concepts",
+      "in_degree": 8,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/cli-reference/ready",
+      "title": "bd ready",
+      "in_degree": 4,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/cli-reference/doctor",
+      "title": "bd doctor",
+      "in_degree": 3,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/workflows/formulas",
+      "title": "Formulas",
+      "in_degree": 3,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/recovery/circular-dependencies",
+      "title": "Circular Dependencies",
+      "in_degree": 1,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/reference/worktrees",
+      "title": "Git Worktrees Guide",
+      "in_degree": 1,
+      "out_degree": 2
+    },
+    {
+      "id": "mem:repo/docs/core-concepts/graph-links",
+      "title": "Graph Links in Beads",
+      "in_degree": 2,
+      "out_degree": 1
+    },
+    {
+      "id": "mem:repo/docs/integrations/codex",
+      "title": "Codex",
+      "in_degree": 0,
+      "out_degree": 1
+    }
+  ]
+}

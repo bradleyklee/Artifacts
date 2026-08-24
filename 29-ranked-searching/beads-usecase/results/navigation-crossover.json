@@ -1,0 +1,1432 @@
+{
+  "nodes": 18,
+  "edges": 49,
+  "node_metrics": [
+    {
+      "id": "mem:docs/architecture/dolt",
+      "title": "Dolt Backend for Beads",
+      "in_degree": 0,
+      "out_degree": 3,
+      "reachable_nodes": 7,
+      "reachability_fraction": 0.4117647058823529,
+      "mean_shortest_distance": 1.5714285714285714,
+      "pagerank": 0.008333333333333335,
+      "reverse_pagerank": 0.052764056082916906,
+      "hits_hub": 0.2667123056259857,
+      "hits_authority": 0
+    },
+    {
+      "id": "mem:docs/cli-reference/doctor",
+      "title": "bd doctor",
+      "in_degree": 3,
+      "out_degree": 2,
+      "reachable_nodes": 6,
+      "reachability_fraction": 0.35294117647058826,
+      "mean_shortest_distance": 2.1666666666666665,
+      "pagerank": 0.0627777664766099,
+      "reverse_pagerank": 0.05566273567715199,
+      "hits_hub": 0.09540194650427375,
+      "hits_authority": 0.1847455522626678
+    },
+    {
+      "id": "mem:docs/cli-reference/ready",
+      "title": "bd ready",
+      "in_degree": 4,
+      "out_degree": 2,
+      "reachable_nodes": 5,
+      "reachability_fraction": 0.29411764705882354,
+      "mean_shortest_distance": 1.6,
+      "pagerank": 0.0979978539838567,
+      "reverse_pagerank": 0.03283039512166576,
+      "hits_hub": 0.20315194986619267,
+      "hits_authority": 0.17227347511628235
+    },
+    {
+      "id": "mem:docs/core-concepts/dependencies",
+      "title": "Dependencies and Gates",
+      "in_degree": 8,
+      "out_degree": 3,
+      "reachable_nodes": 5,
+      "reachability_fraction": 0.29411764705882354,
+      "mean_shortest_distance": 1.6,
+      "pagerank": 0.15965974135543162,
+      "reverse_pagerank": 0.0614828138047166,
+      "hits_hub": 0.07949635366999376,
+      "hits_authority": 0.502687424817718
+    },
+    {
+      "id": "mem:docs/core-concepts/graph-links",
+      "title": "Graph Links in Beads",
+      "in_degree": 2,
+      "out_degree": 1,
+      "reachable_nodes": 5,
+      "reachability_fraction": 0.29411764705882354,
+      "mean_shortest_distance": 2.4,
+      "pagerank": 0.055432468384038945,
+      "reverse_pagerank": 0.02422369832495072,
+      "hits_hub": 0.12422887493315549,
+      "hits_authority": 0.12975960969082218
+    },
+    {
+      "id": "mem:docs/core-concepts/index",
+      "title": "How Beads Works",
+      "in_degree": 1,
+      "out_degree": 5,
+      "reachable_nodes": 13,
+      "reachability_fraction": 0.7647058823529411,
+      "mean_shortest_distance": 1.9230769230769231,
+      "pagerank": 0.010954166666666668,
+      "reverse_pagerank": 0.05749514639429595,
+      "hits_hub": 0.4455709792865031,
+      "hits_authority": 0.10883584151840282
+    },
+    {
+      "id": "mem:docs/core-concepts/sync-concepts",
+      "title": "Sync Concepts",
+      "in_degree": 8,
+      "out_degree": 2,
+      "reachable_nodes": 6,
+      "reachability_fraction": 0.35294117647058826,
+      "mean_shortest_distance": 1.6666666666666667,
+      "pagerank": 0.1003610800610173,
+      "reverse_pagerank": 0.04769632188286274,
+      "hits_hub": 0.12483889237769638,
+      "hits_authority": 0.5740853789731956
+    },
+    {
+      "id": "mem:docs/getting-started/quickstart",
+      "title": "Quick Start",
+      "in_degree": 0,
+      "out_degree": 3,
+      "reachable_nodes": 13,
+      "reachability_fraction": 0.7647058823529411,
+      "mean_shortest_distance": 2.076923076923077,
+      "pagerank": 0.008333333333333335,
+      "reverse_pagerank": 0.0460500036944386,
+      "hits_hub": 0.21551807443990165,
+      "hits_authority": 0
+    },
+    {
+      "id": "mem:docs/getting-started/sync-setup",
+      "title": "Sync Setup Guide",
+      "in_degree": 4,
+      "out_degree": 3,
+      "reachable_nodes": 6,
+      "reachability_fraction": 0.35294117647058826,
+      "mean_shortest_distance": 1.5,
+      "pagerank": 0.06736221458814352,
+      "reverse_pagerank": 0.0698816301465125,
+      "hits_hub": 0.23217667805863879,
+      "hits_authority": 0.1971248039511156
+    },
+    {
+      "id": "mem:docs/index",
+      "title": "Introduction",
+      "in_degree": 1,
+      "out_degree": 5,
+      "reachable_nodes": 14,
+      "reachability_fraction": 0.8235294117647058,
+      "mean_shortest_distance": 1.9285714285714286,
+      "pagerank": 0.015416666666666669,
+      "reverse_pagerank": 0.09607094904134346,
+      "hits_hub": 0.44040009962862475,
+      "hits_authority": 6.572529470504599e-62
+    },
+    {
+      "id": "mem:docs/integrations/codex",
+      "title": "Codex",
+      "in_degree": 0,
+      "out_degree": 1,
+      "reachable_nodes": 15,
+      "reachability_fraction": 0.8823529411764706,
+      "mean_shortest_distance": 2.8,
+      "pagerank": 0.008333333333333335,
+      "reverse_pagerank": 0.0993514560433415,
+      "hits_hub": 5.2000756025975975e-62,
+      "hits_authority": 0
+    },
+    {
+      "id": "mem:docs/recovery/circular-dependencies",
+      "title": "Circular Dependencies",
+      "in_degree": 1,
+      "out_degree": 2,
+      "reachable_nodes": 5,
+      "reachability_fraction": 0.29411764705882354,
+      "mean_shortest_distance": 1.8,
+      "pagerank": 0.053570260050705615,
+      "reverse_pagerank": 0.031200157288304695,
+      "hits_hub": 0.16680272686822395,
+      "hits_authority": 0.01964589144310955
+    },
+    {
+      "id": "mem:docs/recovery/database-corruption",
+      "title": "Database Corruption",
+      "in_degree": 2,
+      "out_degree": 3,
+      "reachable_nodes": 6,
+      "reachability_fraction": 0.35294117647058826,
+      "mean_shortest_distance": 1.6666666666666667,
+      "pagerank": 0.06192625953769843,
+      "reverse_pagerank": 0.05368531811864274,
+      "hits_hub": 0.2636530277678373,
+      "hits_authority": 0.07800932035496445
+    },
+    {
+      "id": "mem:docs/recovery/merge-conflicts",
+      "title": "Merge Conflicts",
+      "in_degree": 1,
+      "out_degree": 3,
+      "reachable_nodes": 6,
+      "reachability_fraction": 0.35294117647058826,
+      "mean_shortest_distance": 1.6666666666666667,
+      "pagerank": 0.03524570878513923,
+      "reverse_pagerank": 0.05368531811864274,
+      "hits_hub": 0.26365302776783733,
+      "hits_authority": 0.05443268824133987
+    },
+    {
+      "id": "mem:docs/reference/troubleshooting",
+      "title": "Troubleshooting",
+      "in_degree": 6,
+      "out_degree": 4,
+      "reachable_nodes": 6,
+      "reachability_fraction": 0.35294117647058826,
+      "mean_shortest_distance": 1.5,
+      "pagerank": 0.12664647271438068,
+      "reverse_pagerank": 0.10697877260138297,
+      "hits_hub": 0.22025980584887553,
+      "hits_authority": 0.3080310331911264
+    },
+    {
+      "id": "mem:docs/reference/worktrees",
+      "title": "Git Worktrees Guide",
+      "in_degree": 1,
+      "out_degree": 2,
+      "reachable_nodes": 6,
+      "reachability_fraction": 0.35294117647058826,
+      "mean_shortest_distance": 2.1666666666666665,
+      "pagerank": 0.027419294133307334,
+      "reverse_pagerank": 0.037608729964387654,
+      "hits_hub": 0.190588760819967,
+      "hits_authority": 0.057377698509277285
+    },
+    {
+      "id": "mem:docs/workflows/formulas",
+      "title": "Formulas",
+      "in_degree": 3,
+      "out_degree": 2,
+      "reachable_nodes": 5,
+      "reachability_fraction": 0.29411764705882354,
+      "mean_shortest_distance": 1.6,
+      "pagerank": 0.0321154973004901,
+      "reverse_pagerank": 0.03283039512166576,
+      "hits_hub": 0.20315194986619267,
+      "hits_authority": 0.27709440791331613
+    },
+    {
+      "id": "mem:docs/workflows/molecules",
+      "title": "Molecules",
+      "in_degree": 4,
+      "out_degree": 3,
+      "reachable_nodes": 5,
+      "reachability_fraction": 0.29411764705882354,
+      "mean_shortest_distance": 1.4,
+      "pagerank": 0.0681145492958474,
+      "reverse_pagerank": 0.04050210257277666,
+      "hits_hub": 0.23528091996932565,
+      "hits_authority": 0.3193592256019758
+    }
+  ],
+  "budget_results": [
+    {
+      "guidance": 0,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": 0.27211620976903217
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": -0.08785530888973216
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.037209307294474796
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.07981740561070681
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": 0.24976861131006184
+        }
+      ]
+    },
+    {
+      "guidance": 0,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.24016576015469251
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.02326783867631851
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.08324715615305067
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": -0.0054325622843658305
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.31709711205120295
+        }
+      ]
+    },
+    {
+      "guidance": 0,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6344566189217088
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5849628291782818
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.4438771746454866
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.46180189656224546
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5856721754290122
+        }
+      ]
+    },
+    {
+      "guidance": 0.01,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.061013574138160935
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.35020679844213803
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.32128116317258093
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.42004616445169424
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.02622265740229312
+        }
+      ]
+    },
+    {
+      "guidance": 0.01,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5628563426401274
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.42428946234394177
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.44702848346834306
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.37465312837678705
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.557256859687575
+        }
+      ]
+    },
+    {
+      "guidance": 0.01,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6344566189217088
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5849628291782818
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.4438771746454866
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.46180189656224546
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5856721754290122
+        }
+      ]
+    },
+    {
+      "guidance": 0.02,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.16451132073489017
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5348837923580751
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.46253236150770755
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.5467763772107602
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.11019203440149787
+        }
+      ]
+    },
+    {
+      "guidance": 0.02,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5463017443271825
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5731266915218409
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.40981917617386826
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.4159192700530709
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5367926247272968
+        }
+      ]
+    },
+    {
+      "guidance": 0.02,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6322838222815659
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5914744747721031
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.4417066261142128
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.46180189656224546
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5856721754290122
+        }
+      ]
+    },
+    {
+      "guidance": 0.05,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.3753886002059732
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5547523621340062
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.5774796469886583
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.5980502238059006
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.3136229825314257
+        }
+      ]
+    },
+    {
+      "guidance": 0.05,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5698047347479098
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5640498877563639
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.36157044086946405
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3462396032560477
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5192086165654037
+        }
+      ]
+    },
+    {
+      "guidance": 0.05,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6322838222815659
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.6131799600848409
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.42217168933274885
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.43785661303679574
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5856721754290122
+        }
+      ]
+    },
+    {
+      "guidance": 0.1,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.38779814070865004
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5774796469886583
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.6188019830880256
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.6490635822793621
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.3293565769728016
+        }
+      ]
+    },
+    {
+      "guidance": 0.1,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.557395194245233
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5836779974035634
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.37500020010175844
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3690328059782327
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5003283032357527
+        }
+      ]
+    },
+    {
+      "guidance": 0.1,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6366294155618516
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.621862154209936
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3852723643010947
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.40136856195039605
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5944875609481695
+        }
+      ]
+    },
+    {
+      "guidance": 0.15,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.44570932972114174
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5661160045613323
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.6033061070507629
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.6089041298640839
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.3786551728891126
+        }
+      ]
+    },
+    {
+      "guidance": 0.15,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5884190455019249
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5650829461588481
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.4183886530060941
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.4037653053644193
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5160618976771285
+        }
+      ]
+    },
+    {
+      "guidance": 0.15,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6366294155618516
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.621862154209936
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3852723643010947
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.40136856195039605
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5944875609481695
+        }
+      ]
+    },
+    {
+      "guidance": 0.2,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.4552514536059854
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5493540785281488
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.5948321207769512
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.5880425188870441
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.3909193601386472
+        }
+      ]
+    },
+    {
+      "guidance": 0.2,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5884190455019249
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5650829461588481
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.4183886530060941
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.4037653053644193
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5160618976771285
+        }
+      ]
+    },
+    {
+      "guidance": 0.2,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6366294155618516
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.621862154209936
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3852723643010947
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.40136856195039605
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5944875609481695
+        }
+      ]
+    },
+    {
+      "guidance": 0.25,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.47466492422738765
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5557854205364905
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.5847110558060475
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.5806839741128073
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.3891442358500299
+        }
+      ]
+    },
+    {
+      "guidance": 0.25,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5863507887514788
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5681821213663006
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3946283097489579
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.38965522748878095
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5118662724927616
+        }
+      ]
+    },
+    {
+      "guidance": 0.25,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6366294155618516
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.621862154209936
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3852723643010947
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.40136856195039605
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5944875609481695
+        }
+      ]
+    },
+    {
+      "guidance": 0.35,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.44570932972114174
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5898763478184685
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.5712812965737532
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.5947940519884456
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.3482368903024526
+        }
+      ]
+    },
+    {
+      "guidance": 0.35,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5925555590028172
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.570248238171269
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.36157044086946405
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.35492272810259434
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5202575228614955
+        }
+      ]
+    },
+    {
+      "guidance": 0.35,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6431478054822801
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.6240327027412097
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3505435878007143
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3648805108639964
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.6033029464673267
+        }
+      ]
+    },
+    {
+      "guidance": 0.5,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.45605061347337245
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5630168293538798
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.5609507125489114
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.563317724419714
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.3492857965985443
+        }
+      ]
+    },
+    {
+      "guidance": 0.5,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.5863507887514788
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5950416398308894
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.39049607613902115
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.41244843021096594
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5003283032357527
+        }
+      ]
+    },
+    {
+      "guidance": 0.5,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6431478054822801
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.6240327027412097
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3505435878007143
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3648805108639964
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.6033029464673267
+        }
+      ]
+    },
+    {
+      "guidance": 0.75,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.4767331809778338
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.5433887197066802
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.5785127053911425
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.563317724419714
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.373410641408654
+        }
+      ]
+    },
+    {
+      "guidance": 0.75,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.619442896758617
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.6012399902457946
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3533059736495906
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3744597590073243
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.5349422110067796
+        }
+      ]
+    },
+    {
+      "guidance": 0.75,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6431478054822801
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.6240327027412097
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3505435878007143
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3648805108639964
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.6033029464673267
+        }
+      ]
+    },
+    {
+      "guidance": 1,
+      "body_read_budget": 3,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.4458435145317408
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.44749804745705174
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.5776215931715136
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.5385248428852232
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.32707691451006965
+        }
+      ]
+    },
+    {
+      "guidance": 1,
+      "body_read_budget": 5,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6456884109879213
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.6178730213008706
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3420562420206929
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3588135210169496
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.6080570118051714
+        }
+      ]
+    },
+    {
+      "guidance": 1,
+      "body_read_budget": 10,
+      "trials_per_pair": 2048,
+      "correlations": [
+        {
+          "prior": "pagerank",
+          "metric": "success_probability",
+          "spearman": -0.6456884109879213
+        },
+        {
+          "prior": "reverse-pagerank",
+          "metric": "success_probability",
+          "spearman": 0.6178730213008706
+        },
+        {
+          "prior": "hits-hub",
+          "metric": "success_probability",
+          "spearman": 0.3420562420206929
+        },
+        {
+          "prior": "outdegree",
+          "metric": "success_probability",
+          "spearman": 0.3588135210169496
+        },
+        {
+          "prior": "indegree",
+          "metric": "success_probability",
+          "spearman": -0.6080570118051714
+        }
+      ]
+    }
+  ],
+  "degree_bands": [
+    {
+      "out_degree": 1,
+      "nodes": 2,
+      "mean_reachability": 0.5882352941176471,
+      "unguided_success_budget_3": 0.11737419577205882,
+      "guided_success_budget_3": 0.2647058823529412
+    },
+    {
+      "out_degree": 2,
+      "nodes": 6,
+      "mean_reachability": 0.3235294117647059,
+      "unguided_success_budget_3": 0.11789598651960782,
+      "guided_success_budget_3": 0.2647058823529412
+    },
+    {
+      "out_degree": 3,
+      "nodes": 7,
+      "mean_reachability": 0.4033613445378151,
+      "unguided_success_budget_3": 0.11730238970588236,
+      "guided_success_budget_3": 0.3445378151260504
+    },
+    {
+      "out_degree": 4,
+      "nodes": 1,
+      "mean_reachability": 0.35294117647058826,
+      "unguided_success_budget_3": 0.11968635110294118,
+      "guided_success_budget_3": 0.29411764705882354
+    },
+    {
+      "out_degree": 5,
+      "nodes": 2,
+      "mean_reachability": 0.7941176470588235,
+      "unguided_success_budget_3": 0.1176901424632353,
+      "guided_success_budget_3": 0.5588235294117647
+    }
+  ],
+  "note": "guidance is an abstract shortest-path edge-choice skill parameter; it brackets branching cost and is not presented as an LLM measurement"
+}

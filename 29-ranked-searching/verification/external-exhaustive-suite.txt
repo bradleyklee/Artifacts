@@ -1,0 +1,20 @@
+=== RUN   TestAllDeletionOrdersThrough8FromEveryFullShape
+    exhaustive_ops_test.go:58: n=1 full_shapes=1 deletion_orders=1 validated_steps=1 PASS
+    exhaustive_ops_test.go:58: n=2 full_shapes=1 deletion_orders=2 validated_steps=4 PASS
+    exhaustive_ops_test.go:58: n=3 full_shapes=1 deletion_orders=6 validated_steps=18 PASS
+    exhaustive_ops_test.go:58: n=4 full_shapes=2 deletion_orders=48 validated_steps=192 PASS
+    exhaustive_ops_test.go:58: n=5 full_shapes=2 deletion_orders=240 validated_steps=1200 PASS
+    exhaustive_ops_test.go:58: n=6 full_shapes=3 deletion_orders=2160 validated_steps=12960 PASS
+    exhaustive_ops_test.go:58: n=7 full_shapes=4 deletion_orders=20160 validated_steps=141120 PASS
+    exhaustive_ops_test.go:58: n=8 full_shapes=5 deletion_orders=201600 validated_steps=1612800 PASS
+--- PASS: TestAllDeletionOrdersThrough8FromEveryFullShape (11.13s)
+=== RUN   TestExhaustiveFixedUniverseMixedGraph
+    exhaustive_ops_test.go:105: universe=12 states=14280 transitions=342720 max_depth=3 branches=map[D1_MERGE:17198 D1_RECURSE:33618 D2_MERGE_LEFT:15212 D2_MERGE_RIGHT:17380 D2_RECURSE_LEFT:20436 D2_RECURSE_RIGHT:29234 D2_TOP:26512 D3_SHIFT_RIGHT:26416 D4_LOCAL:47216 D5_LOCAL:49650] PASS
+--- PASS: TestExhaustiveFixedUniverseMixedGraph (5.00s)
+=== RUN   TestExhaustiveMixedKeyValueGraph
+    exhaustive_ops_test.go:163: keys=5 values=4 states=23261 transitions=581525 branches=map[D1_MERGE:21000 D1_RECURSE:73200 D2_MERGE_LEFT:21000 D2_MERGE_RIGHT:21000 D2_RECURSE_LEFT:39600 D2_RECURSE_RIGHT:73200 D2_TOP:18100 D3_SHIFT_RIGHT:54600 D4_LOCAL:177400 D5_LOCAL:211000] PASS
+--- PASS: TestExhaustiveMixedKeyValueGraph (6.33s)
+PASS
+ok  	verifiedskiplist/verification	22.465s
+
+ELAPSED 22.62 sec MAXRSS 146052 KB

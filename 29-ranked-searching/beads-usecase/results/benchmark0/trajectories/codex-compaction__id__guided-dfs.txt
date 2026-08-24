@@ -1,0 +1,12 @@
+TASK: codex-compaction
+PROMPT: Configure Codex so Beads context survives session startup and is refreshed after context compaction instead of silently disappearing.
+QUERY: "context"
+ORDERING: id
+POLICY: guided-dfs
+MATCHES: [mem:repo/docs/integrations/codex]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/integrations/codex knowledge=100% +[setup session-start prime compaction-refresh] // lexical-match seed
+STEP 2 unblocked        memory=mem:repo/docs/integrations/codex knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=1 edges=0 summaries=1 summary_bytes=244 no_gain_recalls=0

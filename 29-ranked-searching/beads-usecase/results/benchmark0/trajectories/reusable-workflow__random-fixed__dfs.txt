@@ -1,0 +1,22 @@
+TASK: reusable-workflow
+PROMPT: Turn a repeatable multi-step engineering process into a reusable template and instantiate it as live dependency-ordered work for agents.
+QUERY: "workflow"
+ORDERING: random-fixed
+POLICY: dfs
+MATCHES: [mem:repo/docs/cli-reference/ready mem:repo/docs/index mem:repo/docs/getting-started/quickstart mem:repo/docs/core-concepts/index mem:repo/docs/workflows/formulas mem:repo/docs/core-concepts/graph-links mem:repo/docs/workflows/molecules]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/cli-reference/ready knowledge=0% // lexical-match seed
+STEP 2 follow-reference mem:repo/docs/cli-reference/ready -> mem:repo/docs/core-concepts/dependencies depth=1 guide=0 knowledge=0%
+STEP 3 recall           memory=mem:repo/docs/core-concepts/dependencies knowledge=0% // reference-crawl body
+STEP 4 follow-reference mem:repo/docs/core-concepts/dependencies -> mem:repo/docs/recovery/circular-dependencies depth=2 guide=0 knowledge=0%
+STEP 5 recall           memory=mem:repo/docs/recovery/circular-dependencies knowledge=0% // reference-crawl body
+STEP 6 follow-reference mem:repo/docs/core-concepts/dependencies -> mem:repo/docs/core-concepts/graph-links depth=2 guide=0 knowledge=0%
+STEP 7 recall           memory=mem:repo/docs/core-concepts/graph-links knowledge=0% // reference-crawl body
+STEP 8 follow-reference mem:repo/docs/cli-reference/ready -> mem:repo/docs/workflows/molecules depth=1 guide=0 knowledge=0%
+STEP 9 recall           memory=mem:repo/docs/workflows/molecules knowledge=50% +[parallel-default ready-mol] // reference-crawl body
+STEP 10 follow-reference mem:repo/docs/workflows/molecules -> mem:repo/docs/workflows/formulas depth=2 guide=0 knowledge=50%
+STEP 11 recall           memory=mem:repo/docs/workflows/formulas knowledge=100% +[cook pour] // reference-crawl body
+STEP 12 unblocked        memory=mem:repo/docs/workflows/formulas knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=6 edges=5 summaries=7 summary_bytes=1764 no_gain_recalls=4

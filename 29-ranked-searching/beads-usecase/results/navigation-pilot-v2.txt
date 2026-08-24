@@ -1,0 +1,13 @@
+nodes=18 edges=49
+guidance=0.00 budget=3 pagerank=+0.271 reverse-pagerank=-0.070 hits-hub=-0.311 outdegree=-0.311
+guidance=0.01 budget=3 pagerank=+0.006 reverse-pagerank=+0.290 hits-hub=+0.070 outdegree=+0.150
+guidance=0.02 budget=3 pagerank=-0.216 reverse-pagerank=+0.542 hits-hub=+0.396 outdegree=+0.472
+guidance=0.05 budget=3 pagerank=-0.397 reverse-pagerank=+0.532 hits-hub=+0.527 outdegree=+0.570
+guidance=0.10 budget=3 pagerank=-0.452 reverse-pagerank=+0.587 hits-hub=+0.531 outdegree=+0.572
+guidance=0.15 budget=3 pagerank=-0.474 reverse-pagerank=+0.554 hits-hub=+0.568 outdegree=+0.574
+guidance=0.20 budget=3 pagerank=-0.483 reverse-pagerank=+0.541 hits-hub=+0.572 outdegree=+0.567
+guidance=0.25 budget=3 pagerank=-0.485 reverse-pagerank=+0.521 hits-hub=+0.560 outdegree=+0.544
+guidance=0.35 budget=3 pagerank=-0.448 reverse-pagerank=+0.569 hits-hub=+0.559 outdegree=+0.572
+guidance=0.50 budget=3 pagerank=-0.475 reverse-pagerank=+0.538 hits-hub=+0.569 outdegree=+0.549
+guidance=0.75 budget=3 pagerank=-0.475 reverse-pagerank=+0.538 hits-hub=+0.569 outdegree=+0.549
+guidance=1.00 budget=3 pagerank=-0.446 reverse-pagerank=+0.447 hits-hub=+0.578 outdegree=+0.539

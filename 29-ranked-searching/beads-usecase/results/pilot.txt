@@ -1,0 +1,55 @@
+corpus trial: 9 tasks
+
+ready-missing (easy)
+  alphabetical success@6   first@2   summary-bytes=1050 ranks=[2 6]
+  pagerank     success@4   first@1   summary-bytes=702 ranks=[1 4]
+  lexical      success@5   first@3   summary-bytes=870 ranks=[3 5]
+  hybrid       success@2   first@1   summary-bytes=352 ranks=[1 2]
+
+cycle-recovery (medium)
+  alphabetical success@6   first@3   summary-bytes=1050 ranks=[3 6]
+  pagerank     success@10  first@1   summary-bytes=1762 ranks=[1 10]
+  lexical      success@4   first@3   summary-bytes=706 ranks=[3 4]
+  hybrid       success@4   first@2   summary-bytes=706 ranks=[2 4]
+
+fresh-clone-sync (medium)
+  alphabetical success@17  first@16  summary-bytes=2981 ranks=[16 17]
+  pagerank     success@6   first@3   summary-bytes=1049 ranks=[3 6]
+  lexical      success@3   first@2   summary-bytes=531 ranks=[2 3]
+  hybrid       success@4   first@1   summary-bytes=707 ranks=[1 4]
+
+merge-conflict (medium)
+  alphabetical success@13  first@1   summary-bytes=2288 ranks=[1 13]
+  pagerank     success@11  first@7   summary-bytes=1938 ranks=[7 11]
+  lexical      success@16  first@1   summary-bytes=2818 ranks=[1 16]
+  hybrid       success@14  first@1   summary-bytes=2480 ranks=[1 14]
+
+corrupt-db (hard)
+  alphabetical success@18  first@1   summary-bytes=3157 ranks=[1 5 18]
+  pagerank     success@8   first@2   summary-bytes=1399 ranks=[2 7 8]
+  lexical      success@8   first@1   summary-bytes=1416 ranks=[1 4 8]
+  hybrid       success@7   first@1   summary-bytes=1236 ranks=[1 2 7]
+
+reusable-workflow (medium)
+  alphabetical success@14  first@8   summary-bytes=2458 ranks=[8 14]
+  pagerank     success@12  first@5   summary-bytes=2107 ranks=[5 12]
+  lexical      success@2   first@1   summary-bytes=339 ranks=[1 2]
+  hybrid       success@2   first@1   summary-bytes=339 ranks=[1 2]
+
+soft-knowledge-link (easy)
+  alphabetical success@10  first@10  summary-bytes=1763 ranks=[10]
+  pagerank     success@9   first@9   summary-bytes=1580 ranks=[9]
+  lexical      success@1   first@1   summary-bytes=181 ranks=[1]
+  hybrid       success@1   first@1   summary-bytes=181 ranks=[1]
+
+shared-worktrees (medium)
+  alphabetical success@16  first@9   summary-bytes=2804 ranks=[9 16]
+  pagerank     success@13  first@3   summary-bytes=2287 ranks=[3 13]
+  lexical      success@9   first@1   summary-bytes=1585 ranks=[1 9]
+  hybrid       success@4   first@1   summary-bytes=714 ranks=[1 4]
+
+codex-compaction (hard)
+  alphabetical success@4   first@4   summary-bytes=687 ranks=[4]
+  pagerank     success@18  first@18  summary-bytes=3157 ranks=[18]
+  lexical      success@1   first@1   summary-bytes=166 ranks=[1]
+  hybrid       success@1   first@1   summary-bytes=166 ranks=[1]

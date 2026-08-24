@@ -1,0 +1,18 @@
+TASK: merge-conflict
+PROMPT: A Dolt pull reports conflicting issue state between clones. Diagnose, safely reconcile, verify, and publish the repaired tracker state.
+QUERY: "doctor"
+ORDERING: outdegree
+POLICY: bfs
+MATCHES: [mem:repo/docs/reference/troubleshooting mem:repo/docs/recovery/database-corruption mem:repo/docs/recovery/merge-conflicts mem:repo/docs/cli-reference/doctor]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/reference/troubleshooting knowledge=25% +[backup] // lexical-match seed
+STEP 2 follow-reference mem:repo/docs/reference/troubleshooting -> mem:repo/docs/cli-reference/doctor depth=1 guide=0 knowledge=25%
+STEP 3 recall           memory=mem:repo/docs/cli-reference/doctor knowledge=25% // reference-crawl body
+STEP 4 follow-reference mem:repo/docs/reference/troubleshooting -> mem:repo/docs/recovery/database-corruption depth=1 guide=0 knowledge=25%
+STEP 5 recall           memory=mem:repo/docs/recovery/database-corruption knowledge=25% // reference-crawl body
+STEP 6 follow-reference mem:repo/docs/reference/troubleshooting -> mem:repo/docs/recovery/merge-conflicts depth=1 guide=0 knowledge=25%
+STEP 7 recall           memory=mem:repo/docs/recovery/merge-conflicts knowledge=100% +[preview fix publish] // reference-crawl body
+STEP 8 unblocked        memory=mem:repo/docs/recovery/merge-conflicts knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=4 edges=3 summaries=4 summary_bytes=1063 no_gain_recalls=2

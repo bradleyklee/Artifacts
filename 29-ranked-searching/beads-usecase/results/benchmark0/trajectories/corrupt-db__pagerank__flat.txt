@@ -1,0 +1,14 @@
+TASK: corrupt-db
+PROMPT: Beads reports persistent database lock or integrity errors and issue state looks inconsistent. Recover without destroying the only good copy.
+QUERY: "database"
+ORDERING: pagerank
+POLICY: flat
+MATCHES: [mem:repo/docs/reference/troubleshooting mem:repo/docs/cli-reference/doctor mem:repo/docs/recovery/database-corruption mem:repo/docs/recovery/merge-conflicts mem:repo/docs/architecture/dolt]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/reference/troubleshooting knowledge=60% +[doctor backup no-delete] // next lexical match in static order
+STEP 2 recall           memory=mem:repo/docs/cli-reference/doctor knowledge=60% // next lexical match in static order
+STEP 3 recall           memory=mem:repo/docs/recovery/database-corruption knowledge=100% +[stop-server verify] // next lexical match in static order
+STEP 4 unblocked        memory=mem:repo/docs/recovery/database-corruption knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=3 edges=0 summaries=5 summary_bytes=1322 no_gain_recalls=1

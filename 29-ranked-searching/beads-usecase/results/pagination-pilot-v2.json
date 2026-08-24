@@ -1,0 +1,1731 @@
+[
+  {
+    "task_id": "ready-missing",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 6,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 809,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/recovery/circular-dependencies",
+      "mem:repo/docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2
+    ],
+    "records_scanned": 5,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 798,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      6
+    ],
+    "records_scanned": 14,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1545,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2
+    ],
+    "records_scanned": 6,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 775,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/molecules"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      6
+    ],
+    "records_scanned": 12,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1522,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/cli-reference/ready"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2
+    ],
+    "records_scanned": 5,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 775,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/molecules"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      6
+    ],
+    "records_scanned": 15,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1522,
+    "matched_ids": [
+      "mem:repo/docs/index",
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/cli-reference/ready"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 8,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 775,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/cli-reference/ready"
+    ]
+  },
+  {
+    "task_id": "ready-missing",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 8,
+    "success_page": 3,
+    "first_essential_match": 5,
+    "essential_match_ranks": [
+      5,
+      8
+    ],
+    "records_scanned": 18,
+    "matches_returned": 8,
+    "summary_bytes_before_success": 2079,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/recovery/circular-dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      3
+    ],
+    "records_scanned": 6,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 810,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/recovery/circular-dependencies",
+      "mem:repo/docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1083,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1083,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1083,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 14,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 810,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1083,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 17,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 810,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1083,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/recovery/circular-dependencies"
+    ]
+  },
+  {
+    "task_id": "cycle-recovery",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1083,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/recovery/circular-dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 9,
+    "success_page": 3,
+    "first_essential_match": 8,
+    "essential_match_ranks": [
+      8,
+      9
+    ],
+    "records_scanned": 17,
+    "matches_returned": 9,
+    "summary_bytes_before_success": 2349,
+    "matched_ids": [
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/reference/worktrees",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      5
+    ],
+    "records_scanned": 10,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1545,
+    "matched_ids": [
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/index"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 9,
+    "success_page": 3,
+    "first_essential_match": 5,
+    "essential_match_ranks": [
+      5,
+      9
+    ],
+    "records_scanned": 15,
+    "matches_returned": 9,
+    "summary_bytes_before_success": 2351,
+    "matched_ids": [
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/reference/worktrees",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 5,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 807,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 9,
+    "success_page": 3,
+    "first_essential_match": 6,
+    "essential_match_ranks": [
+      6,
+      9
+    ],
+    "records_scanned": 13,
+    "matches_returned": 9,
+    "summary_bytes_before_success": 2357,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      3
+    ],
+    "records_scanned": 6,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 807,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 9,
+    "success_page": 3,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      8
+    ],
+    "records_scanned": 12,
+    "matches_returned": 9,
+    "summary_bytes_before_success": 2357,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/index",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/quickstart"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 6,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 807,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "fresh-clone-sync",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 10,
+    "success_page": 4,
+    "first_essential_match": 6,
+    "essential_match_ranks": [
+      6,
+      10
+    ],
+    "records_scanned": 18,
+    "matches_returned": 10,
+    "summary_bytes_before_success": 2617,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/reference/worktrees",
+      "mem:repo/docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 13,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 795,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      3
+    ],
+    "records_scanned": 14,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 795,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1063,
+    "matched_ids": [
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1063,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1063,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1063,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1063,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1063,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts"
+    ]
+  },
+  {
+    "task_id": "merge-conflict",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 4,
+    "success_page": 2,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      4
+    ],
+    "records_scanned": 18,
+    "matches_returned": 4,
+    "summary_bytes_before_success": 1063,
+    "matched_ids": [
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 18,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/reference/troubleshooting"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 15,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/reference/troubleshooting"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 6,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/reference/troubleshooting"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 10,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 11,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 8,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 8,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 11,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor",
+      "mem:repo/docs/recovery/database-corruption"
+    ]
+  },
+  {
+    "task_id": "corrupt-db",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2,
+      3
+    ],
+    "records_scanned": 16,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 797,
+    "matched_ids": [
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/cli-reference/doctor"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      6
+    ],
+    "records_scanned": 14,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1498,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/formulas",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/workflows/molecules"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 7,
+    "success_page": 3,
+    "first_essential_match": 6,
+    "essential_match_ranks": [
+      6,
+      7
+    ],
+    "records_scanned": 18,
+    "matches_returned": 7,
+    "summary_bytes_before_success": 1764,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/index",
+      "mem:repo/docs/workflows/formulas",
+      "mem:repo/docs/workflows/molecules"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 7,
+    "success_page": 3,
+    "first_essential_match": 5,
+    "essential_match_ranks": [
+      5,
+      7
+    ],
+    "records_scanned": 18,
+    "matches_returned": 7,
+    "summary_bytes_before_success": 1764,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/workflows/formulas",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/workflows/molecules"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      3
+    ],
+    "records_scanned": 8,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 744,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/workflows/formulas"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 4,
+    "essential_match_ranks": [
+      4,
+      6
+    ],
+    "records_scanned": 16,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1491,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/formulas"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      4
+    ],
+    "records_scanned": 15,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1498,
+    "matched_ids": [
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/workflows/formulas",
+      "mem:repo/docs/index",
+      "mem:repo/docs/core-concepts/index"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 4,
+    "essential_match_ranks": [
+      4,
+      6
+    ],
+    "records_scanned": 16,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1491,
+    "matched_ids": [
+      "mem:repo/docs/index",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/formulas"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      2
+    ],
+    "records_scanned": 8,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 744,
+    "matched_ids": [
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/workflows/formulas",
+      "mem:repo/docs/cli-reference/ready"
+    ]
+  },
+  {
+    "task_id": "reusable-workflow",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      6
+    ],
+    "records_scanned": 11,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1491,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/workflows/molecules",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/cli-reference/ready",
+      "mem:repo/docs/workflows/formulas"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2
+    ],
+    "records_scanned": 11,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/index"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2
+    ],
+    "records_scanned": 6,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/index"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2
+    ],
+    "records_scanned": 14,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2
+    ],
+    "records_scanned": 11,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/index"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3
+    ],
+    "records_scanned": 17,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2
+    ],
+    "records_scanned": 15,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/index"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3
+    ],
+    "records_scanned": 18,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/core-concepts/graph-links"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2
+    ],
+    "records_scanned": 10,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/dependencies",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/index"
+    ]
+  },
+  {
+    "task_id": "soft-knowledge-link",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 3,
+    "success_page": 1,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2
+    ],
+    "records_scanned": 17,
+    "matches_returned": 3,
+    "summary_bytes_before_success": 805,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/core-concepts/graph-links",
+      "mem:repo/docs/core-concepts/dependencies"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 9,
+    "success_page": 3,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      8
+    ],
+    "records_scanned": 17,
+    "matches_returned": 9,
+    "summary_bytes_before_success": 2349,
+    "matched_ids": [
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/reference/worktrees",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/sync-setup"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 10,
+    "success_page": 4,
+    "first_essential_match": 3,
+    "essential_match_ranks": [
+      3,
+      10
+    ],
+    "records_scanned": 18,
+    "matches_returned": 10,
+    "summary_bytes_before_success": 2617,
+    "matched_ids": [
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/index",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/reference/worktrees"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 9,
+    "success_page": 3,
+    "first_essential_match": 6,
+    "essential_match_ranks": [
+      6,
+      9
+    ],
+    "records_scanned": 15,
+    "matches_returned": 9,
+    "summary_bytes_before_success": 2351,
+    "matched_ids": [
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/index",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/reference/worktrees",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 9,
+    "success_page": 3,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      8
+    ],
+    "records_scanned": 16,
+    "matches_returned": 9,
+    "summary_bytes_before_success": 2351,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/reference/worktrees",
+      "mem:repo/docs/architecture/dolt"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 10,
+    "success_page": 4,
+    "first_essential_match": 9,
+    "essential_match_ranks": [
+      9,
+      10
+    ],
+    "records_scanned": 18,
+    "matches_returned": 10,
+    "summary_bytes_before_success": 2617,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/reference/worktrees"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 2,
+    "essential_match_ranks": [
+      2,
+      6
+    ],
+    "records_scanned": 13,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1611,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/reference/worktrees"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 10,
+    "success_page": 4,
+    "first_essential_match": 8,
+    "essential_match_ranks": [
+      8,
+      10
+    ],
+    "records_scanned": 18,
+    "matches_returned": 10,
+    "summary_bytes_before_success": 2617,
+    "matched_ids": [
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/index",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/reference/worktrees"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 6,
+    "success_page": 2,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1,
+      6
+    ],
+    "records_scanned": 12,
+    "matches_returned": 6,
+    "summary_bytes_before_success": 1601,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/sync-concepts",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/reference/worktrees"
+    ]
+  },
+  {
+    "task_id": "shared-worktrees",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 10,
+    "success_page": 4,
+    "first_essential_match": 9,
+    "essential_match_ranks": [
+      9,
+      10
+    ],
+    "records_scanned": 18,
+    "matches_returned": 10,
+    "summary_bytes_before_success": 2617,
+    "matched_ids": [
+      "mem:repo/docs/core-concepts/index",
+      "mem:repo/docs/index",
+      "mem:repo/docs/architecture/dolt",
+      "mem:repo/docs/recovery/merge-conflicts",
+      "mem:repo/docs/recovery/database-corruption",
+      "mem:repo/docs/getting-started/sync-setup",
+      "mem:repo/docs/reference/troubleshooting",
+      "mem:repo/docs/getting-started/quickstart",
+      "mem:repo/docs/reference/worktrees",
+      "mem:repo/docs/core-concepts/sync-concepts"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "alphabetical",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "id",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "random-fixed",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "indegree",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "outdegree",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "pagerank",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "reverse-pagerank",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "hits-authority",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  },
+  {
+    "task_id": "codex-compaction",
+    "ordering": "hits-hub",
+    "page_size": 3,
+    "success_at_match": 1,
+    "success_page": 1,
+    "first_essential_match": 1,
+    "essential_match_ranks": [
+      1
+    ],
+    "records_scanned": 18,
+    "matches_returned": 1,
+    "summary_bytes_before_success": 243,
+    "matched_ids": [
+      "mem:repo/docs/integrations/codex"
+    ]
+  }
+]

@@ -1,0 +1,17 @@
+TASK: ready-missing
+PROMPT: An open task never appears among work the agent can claim. Determine how to inspect why it is not ready and what dependency semantics matter.
+QUERY: "ready"
+ORDERING: reverse-pagerank
+POLICY: flat
+MATCHES: [mem:repo/docs/index mem:repo/docs/core-concepts/dependencies mem:repo/docs/core-concepts/index mem:repo/docs/getting-started/quickstart mem:repo/docs/workflows/molecules mem:repo/docs/cli-reference/ready mem:repo/docs/recovery/circular-dependencies mem:repo/docs/core-concepts/graph-links]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/index knowledge=33% +[ready-command] // next lexical match in static order
+STEP 2 recall           memory=mem:repo/docs/core-concepts/dependencies knowledge=67% +[blocking-semantics] // next lexical match in static order
+STEP 3 recall           memory=mem:repo/docs/core-concepts/index knowledge=67% // next lexical match in static order
+STEP 4 recall           memory=mem:repo/docs/getting-started/quickstart knowledge=67% // next lexical match in static order
+STEP 5 recall           memory=mem:repo/docs/workflows/molecules knowledge=67% // next lexical match in static order
+STEP 6 recall           memory=mem:repo/docs/cli-reference/ready knowledge=100% +[explain-mode] // next lexical match in static order
+STEP 7 unblocked        memory=mem:repo/docs/cli-reference/ready knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=6 edges=0 summaries=8 summary_bytes=2079 no_gain_recalls=3

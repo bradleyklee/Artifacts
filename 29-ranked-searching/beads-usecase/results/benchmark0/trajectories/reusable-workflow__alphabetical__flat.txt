@@ -1,0 +1,17 @@
+TASK: reusable-workflow
+PROMPT: Turn a repeatable multi-step engineering process into a reusable template and instantiate it as live dependency-ordered work for agents.
+QUERY: "workflow"
+ORDERING: alphabetical
+POLICY: flat
+MATCHES: [mem:repo/docs/cli-reference/ready mem:repo/docs/workflows/formulas mem:repo/docs/core-concepts/graph-links mem:repo/docs/core-concepts/index mem:repo/docs/index mem:repo/docs/workflows/molecules mem:repo/docs/getting-started/quickstart]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/cli-reference/ready knowledge=0% // next lexical match in static order
+STEP 2 recall           memory=mem:repo/docs/workflows/formulas knowledge=50% +[cook pour] // next lexical match in static order
+STEP 3 recall           memory=mem:repo/docs/core-concepts/graph-links knowledge=50% // next lexical match in static order
+STEP 4 recall           memory=mem:repo/docs/core-concepts/index knowledge=50% // next lexical match in static order
+STEP 5 recall           memory=mem:repo/docs/index knowledge=50% // next lexical match in static order
+STEP 6 recall           memory=mem:repo/docs/workflows/molecules knowledge=100% +[parallel-default ready-mol] // next lexical match in static order
+STEP 7 unblocked        memory=mem:repo/docs/workflows/molecules knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=6 edges=0 summaries=7 summary_bytes=1764 no_gain_recalls=4

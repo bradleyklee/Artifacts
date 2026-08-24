@@ -1,0 +1,68 @@
+go=go1.23.2 cpu=5
+times are medians; insert/update are ns per operation; pop is total drain and ns/item
+
+N       insert_map   insert_skip  x        update_map   update_skip  x       
+10      25ns         887ns        35.5     9ns          1.327µs      147.4   
+100     26ns         826ns        31.8     12ns         2.143µs      178.6   
+1000    27ns         1.234µs      45.7     9ns          2.273µs      252.6   
+10000   33ns         1.999µs      60.6     36ns         3.536µs      98.2    
+
+single top-page request: skip list pops K directly; map collects+sorts then pops K
+page=1
+N       skip_page        map_sort_page    map/skip  
+10      611ns            862ns            1.4       
+100     481ns            10.025µs         20.8      
+1000    922ns            136.262µs        147.8     
+10000   2.083µs          1.596985ms       766.7     
+
+page=10
+N       skip_page        map_sort_page    map/skip  
+10      5.158µs          1.122µs          0.2       
+100     7.21µs           10.356µs         1.4       
+1000    9.685µs          139.156µs        14.4      
+10000   12.378µs         1.506525ms       121.7     
+
+page=100
+N       skip_page        map_sort_page    map/skip  
+100     55.983µs         12.598µs         0.2       
+1000    68.912µs         139.697µs        2.0       
+10000   84.055µs         1.585983ms       18.9      
+
+mixed workload: Q rank updates, then pop top 10
+N       Q       skip             map+sort         map/skip  
+100     0       6.82µs           10.045µs         1.47      
+100     1       8.924µs          10.535µs         1.18      
+100     10      27.731µs         10.446µs         0.38      
+100     100     210.643µs        12.168µs         0.06      
+1000    0       8.753µs          149.632µs        17.09     
+1000    1       12.088µs         133.388µs        11.03     
+1000    10      36.515µs         134.34µs         3.68      
+1000    100     236.531µs        136.933µs        0.58      
+1000    1000    2.274525ms       148.861µs        0.07      
+10000   0       11.538µs         1.558413ms       135.07    
+10000   1       18.768µs         1.505374ms       80.21     
+10000   10      59.679µs         1.513225ms       25.36     
+10000   100     378.342µs        1.613314ms       4.26      
+10000   1000    3.276192ms       1.556259ms       0.48      
+
+full drain / continuation policies
+page=1
+N       skip_drain       map_snapshot     map_resort       skip/item  snap/item 
+10      5.739µs          1.202µs          4.998µs          573ns      120ns     
+100     59.558µs         12.459µs         451.07µs         595ns      124ns     
+1000    583.936µs        151.134µs        60.759136ms      583ns      151ns     
+10000   6.862944ms       1.817166ms       (omitted)        686ns      181ns     
+
+page=10
+N       skip_drain       map_snapshot     map_resort       skip/item  snap/item 
+10      5.959µs          1.272µs          1.212µs          595ns      127ns     
+100     56.744µs         12.559µs         55.192µs         567ns      125ns     
+1000    589.805µs        152.066µs        6.076397ms       589ns      152ns     
+10000   6.970494ms       1.941531ms       795.045473ms     697ns      194ns     
+
+page=100
+N       skip_drain       map_snapshot     map_resort       skip/item  snap/item 
+100     58.637µs         13.139µs         12.579µs         586ns      131ns     
+1000    721.491µs        159.657µs        722.772µs        721ns      159ns     
+10000   7.18338ms        1.814893ms       78.839241ms      718ns      181ns     
+

@@ -1,0 +1,108 @@
+[
+  {
+    "id": "ready-missing",
+    "difficulty": "easy",
+    "prompt": "An open task never appears among work the agent can claim. Determine how to inspect why it is not ready and what dependency semantics matter.",
+    "search": "ready",
+    "checkpoints": [
+      {"id":"ready-command","description":"identify the ready-work command","evidence_any":["`bd ready`","bd ready"]},
+      {"id":"explain-mode","description":"discover dependency-aware explanation mode","evidence_any":["`--explain`","--explain"]},
+      {"id":"blocking-semantics","description":"understand that active blocking dependencies control readiness","evidence_any":["blocking dependencies","active blockers"]}
+    ]
+  },
+  {
+    "id": "cycle-recovery",
+    "difficulty": "medium",
+    "prompt": "Several tasks unexpectedly remain blocked after dependency edits and a cycle may have been introduced. Find the safe procedure to diagnose and break the cycle.",
+    "search": "blocked",
+    "checkpoints": [
+      {"id":"inspect-blocked","description":"inspect blocked work","evidence_any":["`bd blocked`","bd blocked"]},
+      {"id":"remove-edge","description":"remove the offending dependency edge","evidence_any":["`bd dep remove","bd dep remove"]},
+      {"id":"verify-ready","description":"verify readiness after repair","evidence_any":["`bd ready`","bd ready"]},
+      {"id":"direction-model","description":"reason about dependency direction as needs","evidence_any":["X needs Y","“X needs Y”","\"X needs Y\""]}
+    ]
+  },
+  {
+    "id": "fresh-clone-sync",
+    "difficulty": "medium",
+    "prompt": "A developer cloned the Git repository on a second machine but the Beads issues are absent. Establish the correct synchronization and bootstrap procedure without treating the export as the database.",
+    "search": "sync",
+    "checkpoints": [
+      {"id":"bootstrap","description":"bootstrap the Dolt data in a fresh clone","evidence_any":["`bd bootstrap`","bd bootstrap"]},
+      {"id":"dolt-ref","description":"recognize refs/dolt/data as the issue-history ref","evidence_any":["`refs/dolt/data`","refs/dolt/data"]},
+      {"id":"pull","description":"use Dolt pull for routine synchronization","evidence_any":["`bd dolt pull`","bd dolt pull"]},
+      {"id":"jsonl-not-sync","description":"do not use JSONL as routine synchronization","evidence_any":["do not treat JSONL as sync","not routine synchronization"]}
+    ]
+  },
+  {
+    "id": "merge-conflict",
+    "difficulty": "medium",
+    "prompt": "A Dolt pull reports conflicting issue state between clones. Diagnose, safely reconcile, verify, and publish the repaired tracker state.",
+    "search": "doctor",
+    "checkpoints": [
+      {"id":"preview","description":"preview repairs before mutation","evidence_any":["`bd doctor --dry-run`","bd doctor --dry-run"]},
+      {"id":"fix","description":"use the supported reconciliation path","evidence_any":["`bd doctor --fix`","bd doctor --fix"]},
+      {"id":"backup","description":"preserve local state before repair","evidence_any":["Back up","backup"]},
+      {"id":"publish","description":"push the repaired tracker state","evidence_any":["`bd dolt push`","bd dolt push"]}
+    ]
+  },
+  {
+    "id": "corrupt-db",
+    "difficulty": "hard",
+    "prompt": "Beads reports persistent database lock or integrity errors and issue state looks inconsistent. Recover without destroying the only good copy.",
+    "search": "database",
+    "checkpoints": [
+      {"id":"doctor","description":"inspect database health with doctor","evidence_any":["`bd doctor`","bd doctor"]},
+      {"id":"stop-server","description":"stop the server before filesystem-level recovery","evidence_any":["Stop the server","stop the server"]},
+      {"id":"backup","description":"preserve a backup before recovery","evidence_any":["preserve a backup","backup"]},
+      {"id":"no-delete","description":"do not delete Dolt internals as an improvised fix","evidence_any":["Do not casually delete Dolt internal files","Do not remove Dolt internal"]},
+      {"id":"verify","description":"verify recovered state","evidence_any":["`bd list`","bd list"]}
+    ]
+  },
+  {
+    "id": "reusable-workflow",
+    "difficulty": "medium",
+    "prompt": "Turn a repeatable multi-step engineering process into a reusable template and instantiate it as live dependency-ordered work for agents.",
+    "search": "workflow",
+    "checkpoints": [
+      {"id":"cook","description":"compile the formula into a proto","evidence_any":["`bd cook`","bd cook"]},
+      {"id":"pour","description":"instantiate persistent work","evidence_any":["`bd mol pour`","bd mol pour"]},
+      {"id":"parallel-default","description":"know molecule children are parallel unless dependencies impose sequence","evidence_any":["Children are parallel by default","children are parallel by default"]},
+      {"id":"ready-mol","description":"query ready work within the molecule","evidence_any":["`bd ready --mol`","bd ready --mol"]}
+    ]
+  },
+  {
+    "id": "soft-knowledge-link",
+    "difficulty": "easy",
+    "prompt": "Connect two related beads for knowledge navigation without making either bead block the other. Choose the appropriate relationship semantics.",
+    "search": "related",
+    "checkpoints": [
+      {"id":"relation","description":"use a non-blocking related relation","evidence_any":["`relates-to`","relates-to"]},
+      {"id":"knowledge-graph","description":"understand the relation as knowledge-graph navigation","evidence_any":["knowledge graphs","knowledge relationships"]},
+      {"id":"nonblocking","description":"confirm that the relation does not affect readiness","evidence_any":["do not make work ready or blocked","non-blocking"]}
+    ]
+  },
+  {
+    "id": "shared-worktrees",
+    "difficulty": "medium",
+    "prompt": "Several Git worktrees should operate on the same tracker state. Explain which Beads workspace they use and how cross-clone state moves.",
+    "search": "worktree",
+    "checkpoints": [
+      {"id":"shared-workspace","description":"same-repository worktrees share one .beads workspace","evidence_any":["share the repository's `.beads` workspace","share the repository’s `.beads` workspace"]},
+      {"id":"dolt-sync","description":"cross-clone movement still uses Dolt pull/push","evidence_any":["`bd dolt pull`","bd dolt pull"]},
+      {"id":"external-workspace","description":"BEADS_DIR can select an external shared workspace","evidence_any":["`BEADS_DIR`","BEADS_DIR"]}
+    ]
+  },
+  {
+    "id": "codex-compaction",
+    "difficulty": "hard",
+    "prompt": "Configure Codex so Beads context survives session startup and is refreshed after context compaction instead of silently disappearing.",
+    "search": "context",
+    "checkpoints": [
+      {"id":"setup","description":"install/check Codex integration","evidence_any":["`bd setup codex`","bd setup codex"]},
+      {"id":"session-start","description":"know SessionStart primes Beads context","evidence_any":["SessionStart injects `bd prime`","SessionStart"]},
+      {"id":"prime","description":"identify bd prime as the injected Beads context","evidence_any":["`bd prime`","bd prime"]},
+      {"id":"compaction-refresh","description":"know compaction schedules context refresh","evidence_any":["compaction hooks detect context loss and schedule a refresh","first prompt after compaction receives Beads context again"]}
+    ]
+  }
+]

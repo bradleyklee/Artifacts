@@ -1,0 +1,20 @@
+TASK: fresh-clone-sync
+PROMPT: A developer cloned the Git repository on a second machine but the Beads issues are absent. Establish the correct synchronization and bootstrap procedure without treating the export as the database.
+QUERY: "sync"
+ORDERING: random-fixed
+POLICY: dfs
+MATCHES: [mem:repo/docs/recovery/database-corruption mem:repo/docs/index mem:repo/docs/getting-started/quickstart mem:repo/docs/reference/troubleshooting mem:repo/docs/getting-started/sync-setup mem:repo/docs/reference/worktrees mem:repo/docs/core-concepts/index mem:repo/docs/architecture/dolt mem:repo/docs/core-concepts/sync-concepts mem:repo/docs/recovery/merge-conflicts]
+
+STEP 0 initial          knowledge=0% // task + benchmark search instructions only
+STEP 1 recall           memory=mem:repo/docs/recovery/database-corruption knowledge=0% // lexical-match seed
+STEP 2 follow-reference mem:repo/docs/recovery/database-corruption -> mem:repo/docs/cli-reference/doctor depth=1 guide=0 knowledge=0%
+STEP 3 recall           memory=mem:repo/docs/cli-reference/doctor knowledge=0% // reference-crawl body
+STEP 4 follow-reference mem:repo/docs/cli-reference/doctor -> mem:repo/docs/reference/troubleshooting depth=2 guide=0 knowledge=0%
+STEP 5 recall           memory=mem:repo/docs/reference/troubleshooting knowledge=25% +[bootstrap] // reference-crawl body
+STEP 6 follow-reference mem:repo/docs/reference/troubleshooting -> mem:repo/docs/recovery/merge-conflicts depth=3 guide=0 knowledge=25%
+STEP 7 recall           memory=mem:repo/docs/recovery/merge-conflicts knowledge=50% +[pull] // reference-crawl body
+STEP 8 follow-reference mem:repo/docs/recovery/merge-conflicts -> mem:repo/docs/core-concepts/sync-concepts depth=4 guide=0 knowledge=50%
+STEP 9 recall           memory=mem:repo/docs/core-concepts/sync-concepts knowledge=100% +[dolt-ref jsonl-not-sync] // reference-crawl body
+STEP 10 unblocked        memory=mem:repo/docs/core-concepts/sync-concepts knowledge=100% // all pre-registered knowledge checkpoints resolved
+
+RESULT success=true bodies=5 edges=4 summaries=10 summary_bytes=2617 no_gain_recalls=2

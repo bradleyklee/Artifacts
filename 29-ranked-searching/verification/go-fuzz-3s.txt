@@ -1,0 +1,6 @@
+fuzz: elapsed: 0s, gathering baseline coverage: 0/75 completed
+fuzz: elapsed: 0s, gathering baseline coverage: 75/75 completed, now fuzzing with 5 workers
+fuzz: elapsed: 3s, execs: 44189 (14726/sec), new interesting: 9 (total: 84)
+fuzz: elapsed: 4s, execs: 44189 (0/sec), new interesting: 9 (total: 84)
+PASS
+ok  	verifiedskiplist/skiplist	4.027s

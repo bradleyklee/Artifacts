@@ -327,3 +327,17 @@ algebraic equation and a Gauss-hypergeometric ODE, with integral coefficients
 identified with OEIS A244038. Exact symbolic checks, independent numerical
 audits, and computed 3-D knot diagrams with certified crossing data accompany
 the result.
+
+## 29. ranked-searching
+
+This artifact implements and verifies a deterministic 1–2 skip list in Go,
+then applies it as a ranked secondary index for a Memory Beads retrieval
+system. Memories are stored by identity in a Go map while the skip list
+maintains a query-independent structural ordering. Retrieval mechanically
+scans that order, applies a binary lexical relevance filter, returns compact
+matches, and leaves higher-level recall and reference crawling to the agent.
+The repository includes exhaustive structural verification, theory connecting
+the skip list to complete ordered 2–3 trees, measured optimization results,
+and a benchmark framework for studying the joint optimization of cheap
+Beads-side pre-ordering and agent-side search policy using token and context
+cost to objective task unblocking as the primary outcome.
