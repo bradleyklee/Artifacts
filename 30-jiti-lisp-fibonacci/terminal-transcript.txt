@@ -1,0 +1,287 @@
+bash-5.2$ ./image-repl --store pilot-workspace
+╭─────────────────────── ✨ jiti ────────────────────────╮
+│ demo  ·  recovered                                     │
+│ Model      gpt-6-luna                                  │
+│ Workspace  /work/repo/projects/jiti/pilot-workspace/   │
+│                                                        │
+│ Prompt to build. Compose to execute. /help to explore. │
+╰────────────────────────────────────────────────────────╯
+chat › /help
+                                    Commands                                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Command                      ┃ Purpose                                       ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ /help                        │ Show commands and editing keys                │
+│ /mode chat|lisp              │ Switch between prompting and Lisp             │
+│ /status                      │ Inspect worker state, checks, and live        │
+│                              │ restarts                                      │
+│ /history                     │ List accepted application revisions           │
+│ /operations                  │ List recent attempts and outcomes             │
+│ /functions [OFFSET]          │ Discover available functions                  │
+│ /describe NAME [--offset N]  │ Inspect a bounded source page; repeat with    │
+│                              │ the next offset to continue                   │
+│ /develop FORM                │ Add or redefine functionality                 │
+│ /execute FORM                │ Execute existing functionality                │
+│ /preview FORM                │ Execute and restore managed state             │
+│ /chat TEXT                   │ Send a prompt from either mode                │
+│ /model [NAME]                │ Inspect or select the model                   │
+│ /compact                     │ Compact conversation memory and preserve the  │
+│                              │ live worker                                   │
+│ /context                     │ Show context usage or explicitly forget       │
+│                              │ conversation memory                           │
+│ /rollback ID|NUMBER|previous │ Restore a revision and preserve history       │
+│ /abort                       │ Abort a paused attempt and restore its        │
+│                              │ checkpoint                                    │
+│ /quit                        │ Close the application worker                  │
+└──────────────────────────────┴───────────────────────────────────────────────┘
+╭────────────────────────────────── Editing ───────────────────────────────────╮
+│ Arrows edit; Up/Down recall complete submissions at buffer boundaries.       │
+│ Enter submits complete input. Alt+Enter (or Esc, Enter) inserts a newline.   │
+│ Ctrl+C clears input. Ctrl+D exits an empty buffer.                           │
+│ Paste never submits. Input history is saved privately per workspace.         │
+│ /history lists revisions; /abort restores a paused attempt.                  │
+│ Preview restores managed effects, not external I/O.                          │
+╰──────────────────────────────────────────────────────────────────────────────╯
+chat › /functions
+                            Functions · 3 available                             
+┏━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Name             ┃ Arguments                   ┃ Documentation               ┃
+┡━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ COUNTER          │ NIL                         │                             │
+│ FIBONACCI        │ (WORLD-G182::N)             │ Return the nth Fibonacci    │
+│                  │                             │ number exactly using fast   │
+│                  │                             │ doubling. N must be a       │
+│                  │                             │ nonnegative integer.        │
+│ FIBONACCI-DEPICT │ (WORLD-G182::N &KEY         │ Print F(0)..F(N) and        │
+│                  │ WORLD-G182::SEED (STREAM    │ randomized connected        │
+│                  │ *STANDARD-OUTPUT*))         │ polyominoes in a            │
+│                  │                             │ minimum-area lattice        │
+│                  │                             │ square. SEED is an optional │
+│                  │                             │ reproducible integer seed.  │
+│                  │                             │ Return grid, areas and      │
+│                  │                             │ side. Zero has no cells;    │
+│                  │                             │ unused cells are dots.      │
+└──────────────────┴─────────────────────────────┴─────────────────────────────┘
+chat › /execute (fibonacci 4)
+✓ Executed · no new revision
+3
+chat › /execute (fibonacci 5)
+✓ Executed · no new revision
+5
+chat › /execute (fibonacci 6)
+✓ Executed · no new revision
+8
+chat › /execute (fibonacci-depict 6)
+✓ Executed · no new revision
+#2A((1 4 NIL NIL NIL) (4 4 6 NIL NIL) (2 5 6 6 6) (5 5 6 6 6) (5 5 3 3 6))
+(0 1 1 2 3 5 8)
+5
+chat › /execute (with-output-to-string (stream)  (fibonacci-depict 6 :stream stream))
+✓ Executed · no new revision
+"F(0)=0
+F(1)=1
+F(2)=1
+F(3)=2
+F(4)=3
+F(5)=5
+F(6)=8
+Square: 5x5, occupied area 20, unused area 5. Labels are term indices; F(0) is 
+empty.
++--+--+--+--+--+
+|5  5 |3  3 |2 |
++  +--+--+--+--+
+|5 |.  .  . |1 |
++  +--+     +--+
+|5  5 |.  . |6 |
++--+--+--+--+  +
+|6  6  6  6  6 |
++--+--+--+     +
+|4  4  4 |6  6 |
++--+--+--+--+--+
+"
+chat › /execute (with-output-to-string (stream)  (fibonacci-depict 6 :stream stream))
+✓ Executed · no new revision
+"F(0)=0
+F(1)=1
+F(2)=1
+F(3)=2
+F(4)=3
+F(5)=5
+F(6)=8
+Square: 5x5, occupied area 20, unused area 5. Labels are term indices; F(0) is 
+empty.
++--+--+--+--+--+
+|6  6 |.  . |3 |
++  +--+     +  +
+|6 |.  .  . |3 |
++  +--+--+--+--+
+|6  6 |1 |5 |2 |
++     +--+  +--+
+|6  6 |4 |5  5 |
++  +--+  +     +
+|6 |4  4 |5  5 |
++--+--+--+--+--+
+"
+chat › /describe fibonacci
+FIBONACCI (WORLD-G182::N)
+Return the nth Fibonacci number exactly using fast doubling. N must be a 
+nonnegative integer.
+(DEFUN FIBONACCI (N)
+  "Return the nth Fibonacci number exactly using fast doubling. N must be a 
+nonnegative integer."
+  (CHECK-TYPE N (INTEGER 0 *))
+  (LET ((A 0) (B 1))
+    (LOOP FOR BIT DOWNFROM (1- (INTEGER-LENGTH N)) TO 0
+          DO (LET* ((C (* A (- (* 2 B) A))) (D (+ (* A A) (* B B))))
+               (IF (LOGBITP BIT N)
+                   (SETF A D
+                         B (+ C D))
+                   (SETF A C
+                         B D))))
+    A))
+Source characters [0, 465) of 465
+chat › /describe fibonacci-depict
+FIBONACCI-DEPICT (WORLD-G182::N &KEY WORLD-G182::SEED (STREAM 
+*STANDARD-OUTPUT*))
+Print F(0)..F(N) and randomized connected polyominoes in a minimum-area lattice 
+square. SEED is an optional reproducible integer seed. Return grid, areas and 
+side. Zero has no cells; unused cells are dots.
+(DEFUN FIBONACCI-DEPICT (N &KEY SEED (STREAM *STANDARD-OUTPUT*))
+  "Print F(0)..F(N) and randomized connected polyominoes in a minimum-area 
+lattice square. SEED is an optional reproducible integer seed. Return grid, 
+areas and side. Zero has no cells; unused cells are dots."
+  (CHECK-TYPE N (INTEGER 0 *))
+  (WHEN SEED (CHECK-TYPE SEED INTEGER))
+  (LET* ((AREAS
+          (LOOP FOR I FROM 0 TO N
+                COLLECT (FIBONACCI I)))
+         (TOTAL (REDUCE #'+ AREAS))
+         (SIDE (ISQRT TOTAL))
+         (RNG (MOD (OR SEED (RANDOM 4294967296)) 4294967296)))
+    (WHEN (< (* SIDE SIDE) TOTAL) (INCF SIDE))
+    (LET* ((COUNT (* SIDE SIDE))
+           (PATH (MAKE-ARRAY COUNT))
+           (GRID (MAKE-ARRAY (LIST SIDE SIDE) :INITIAL-ELEMENT NIL))
+           (ORDER
+            (COERCE
+             (LOOP FOR I FROM 1 TO N
+                   COLLECT I)
+             'VECTOR))
+           (WIDTH (MAX 3 (+ 2 (LENGTH (WRITE-TO-STRING N)))))
+           (CANVAS
+            (MAKE-ARRAY (LIST (1+ (* 2 SIDE)) (1+ (* WIDTH SIDE)))
+                        :INITIAL-ELEMENT #\Space)))
+      (LABELS ((PICK (BOUND)
+                 (SETF RNG (MOD (+ (* RNG 1664525) 1013904223) 4294967296))
+                 (FLOOR (* RNG BOUND) 4294967296))
+               (ADJACENT (A B)
+                 (= 1
+                    (+ (ABS (- (FLOOR A SIDE) (FLOOR B SIDE)))
+                       (ABS (- (MOD A SIDE) (MOD B SIDE)))))))
+        (LOOP FOR R BELOW SIDE
+              DO (LOOP FOR C BELOW SIDE
+                       FOR K FROM (* R SIDE)
+                       DO (SETF (AREF PATH K)
+                                  (+ (* R SIDE)
+                                     (IF (EVENP R)
+                                         C
+                                         (- SIDE C 1))))))
+        (WHEN (> COUNT 1)
+          (LOOP REPEAT (* 20 COUNT)
+                DO (WHEN (ZEROP (PICK 2))
+                     (SETF PATH (REVERSE PATH))) (LET* ((END (AREF PATH 0))
+                                                        (NEIGHBORS
+                                                         (LOOP FOR K FROM 2 
+BELOW
+                                                               COUNT
+                                                               WHEN (ADJACENT
+                                                                     END
+                                                                     (AREF PATH
+                                                                           K))
+                                                               COLLECT K)))
+                                                   (WHEN NEIGHBORS
+                                                     (LET ((K
+                                                            (NTH
+                                                             (PICK
+                                                              (LENGTH
+                                                               NEIGHBORS))
+                                                             NEIGHBORS)))
+                                                       (LOOP FOR A FROM 0 BELOW 
+(FLOOR
+                                                                                
+ K
+                                                                                
+ 2)
+                                                             FOR B DOWNFROM (1-
+                                                                             K)
+                                                             DO (ROTATEF
+                                                                 (AREF PATH A)
+                                                                 (AREF PATH
+                                                                       B))))))))
+        (LOOP FOR I DOWNFROM (1- (LENGTH ORDER)) ABOVE 0
+              DO (ROTATEF (AREF ORDER I) (AREF ORDER (PICK (1+ I)))))
+        (LET ((CURSOR 0))
+          (LOOP FOR LABEL ACROSS ORDER
+                DO (LOOP REPEAT (NTH LABEL AREAS)
+                         DO (LET ((CELL (AREF PATH CURSOR)))
+                             
+Source characters [0, 4096) of 6544
+Continue: /describe FIBONACCI-DEPICT --offset 4096
+chat › /describe fibonacci-depict --offset 4096
+FIBONACCI-DEPICT (WORLD-G182::N &KEY WORLD-G182::SEED (STREAM 
+*STANDARD-OUTPUT*))
+Print F(0)..F(N) and randomized connected polyominoes in a minimum-area lattice 
+square. SEED is an optional reproducible integer seed. Return grid, areas and 
+side. Zero has no cells; unused cells are dots.
+ (SETF (AREF GRID (FLOOR CELL SIDE)
+                                          (MOD CELL SIDE))
+                                      LABEL)
+                              (INCF CURSOR))))))
+      (LABELS ((OWNER (R C)
+                 (IF (AND (<= 0 R) (< R SIDE) (<= 0 C) (< C SIDE))
+                     (AREF GRID R C)
+                     :OUTSIDE))
+               (HORIZONTAL (R C)
+                 (LET ((Y (* 2 R)) (X (* WIDTH C)))
+                   (SETF (AREF CANVAS Y X) #\PLUS_SIGN
+                         (AREF CANVAS Y (+ X WIDTH)) #\PLUS_SIGN)
+                   (LOOP FOR DX FROM 1 BELOW WIDTH
+                         DO (SETF (AREF CANVAS Y (+ X DX)) #\HYPHEN-MINUS))))
+               (VERTICAL (R C)
+                 (LET ((Y (* 2 R)) (X (* WIDTH C)))
+                   (SETF (AREF CANVAS Y X) #\PLUS_SIGN
+                         (AREF CANVAS (+ Y 2) X) #\PLUS_SIGN
+                         (AREF CANVAS (1+ Y) X) #\VERTICAL_LINE))))
+        (LOOP FOR R FROM 0 TO SIDE
+              DO (LOOP FOR C BELOW SIDE
+                       WHEN (NOT (EQL (OWNER (1- R) C) (OWNER R C)))
+                       DO (HORIZONTAL R C)))
+        (LOOP FOR R BELOW SIDE
+              DO (LOOP FOR C FROM 0 TO SIDE
+                       WHEN (NOT (EQL (OWNER R (1- C)) (OWNER R C)))
+                       DO (VERTICAL R C)))
+        (LOOP FOR R BELOW SIDE
+              DO (LOOP FOR C BELOW SIDE
+                       DO (LET* ((LABEL (AREF GRID R C))
+                                 (TEXT
+                                  (IF LABEL
+                                      (WRITE-TO-STRING LABEL)
+                                      ".")))
+                            (LOOP FOR CH ACROSS TEXT
+                                  FOR DX FROM 1
+                                  DO (SETF (AREF CANVAS (1+ (* 2 R))
+                                                 (+ (* WIDTH C) DX))
+                                             CH))))))
+      (LOOP FOR AREA IN AREAS
+            FOR I FROM 0
+            DO (FORMAT STREAM "F(~D)=~D~%" I AREA))
+      (FORMAT STREAM
+              "Square: ~Dx~D, occupied area ~D, unused area ~D. Labels are term 
+indices; F(0) is empty.~%"
+              SIDE SIDE TOTAL (- COUNT TOTAL))
+      (LOOP FOR R BELOW (ARRAY-DIMENSION CANVAS 0)
+            DO (LOOP FOR C BELOW (ARRAY-DIMENSION CANVAS 1)
+                     DO (WRITE-CHAR (AREF CANVAS R C) STREAM)) (TERPRI STREAM))
+      (VALUES GRID AREAS SIDE))))
+Source characters [4096, 6544) of 6544
+chat › 

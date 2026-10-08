@@ -341,3 +341,15 @@ the skip list to complete ordered 2–3 trees, measured optimization results,
 and a benchmark framework for studying the joint optimization of cheap
 Beads-side pre-ordering and agent-side search policy using token and context
 cost to objective task unblocking as the primary outcome.
+
+## 30. jiti-lisp-fibonacci
+
+A preserved JITI/Common Lisp terminal experiment exploring conversational code
+inspection and Fibonacci-themed geometry. The session demonstrates exact
+fast-doubling Fibonacci calculations, paginated source introspection, and
+randomized connected polyomino packing, but it does **not** yet reproduce the
+earlier Braille Fibonacci spiral or establish uniform sampling of valid
+packings. The artifact records the full terminal transcript, identifies missing 
+geometric and statistical guarantees, and outlines independent verification 
+and a Lisp reimplementation of the Fibonacci-square/Braille construction in
+Werketron-Artifacts 01-Spirale-Fibonacci.
