@@ -1,0 +1,42 @@
+{
+  "artifact": "Quine Machine merged research extraction",
+  "date": "2026-11-08",
+  "layout": "functional directories, no version directories",
+  "milestones": [
+    "six-step bare quine",
+    "v13 SAME 6x6",
+    "v19 reference",
+    "v20 Scott-tag Fibonacci controller"
+  ],
+  "limitations": [
+    "v13 SAME and v20 controller are not a single raw-quine-clock-driven lambda computation"
+  ],
+  "components": [
+    "README.md",
+    "docs/EXPORT_INDEX.txt",
+    "docs/INFOGRAPHIC_FACT_SHEET.md",
+    "docs/SAME_NOTES.txt",
+    "docs/VERBATIM_TRACE_EXCERPT.txt",
+    "docs/same_quotations.json",
+    "example_trace/beta_history.jsonl",
+    "example_trace/events.jsonl",
+    "example_trace/measurements.csv",
+    "example_trace/readable_trace.txt",
+    "example_trace/same_results.csv",
+    "example_trace/same_run.log",
+    "example_trace/summary.json",
+    "graphs/bare_quine_cycle.dot",
+    "graphs/bare_quine_cycle.png",
+    "graphs/bare_quine_cycle.svg",
+    "graphs/cost_by_phase.svg",
+    "graphs/live_controller_cycle.dot",
+    "graphs/live_controller_cycle.png",
+    "graphs/live_controller_cycle.svg",
+    "lambda_runtime.py",
+    "release.py",
+    "run_output.txt",
+    "same_v13.py",
+    "test_release.py",
+    "v19_reference.py"
+  ]
+}

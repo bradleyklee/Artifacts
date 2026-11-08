@@ -1,0 +1,13 @@
+Decoded labels from observed Q4 identity-redex contractions.
+Not literal E identifiers in the raw prefix trace; the observer names the redex.
+
+cycle 01 : E((1,1)) -> (1,1)  [identity redex at local beta 12]
+cycle 02 : E((1,2)) -> (1,2)  [identity redex at local beta 12]
+cycle 03 : E((2,3)) -> (2,3)  [identity redex at local beta 12]
+cycle 04 : E((3,5)) -> (3,5)  [identity redex at local beta 12]
+cycle 05 : E((5,8)) -> (5,8)  [identity redex at local beta 12]
+cycle 06 : E((8,13)) -> (8,13)  [identity redex at local beta 12]
+cycle 07 : E((13,21)) -> (13,21)  [identity redex at local beta 12]
+cycle 08 : E((21,34)) -> (21,34)  [identity redex at local beta 12]
+cycle 09 : E((34,55)) -> (34,55)  [identity redex at local beta 12]
+cycle 10 : E((55,89)) -> (55,89)  [identity redex at local beta 12]

@@ -1,0 +1,32 @@
+QUINE SAME v13 -- executable lambda-syntax and distance comparison
+
+Run: python run.py
+No dependencies beyond Python 3 standard library.
+
+The six canonical terms Q0..Q5 are derived by actual beta-reduction
+from Q0=Delta G, and are quoted as Scott-encoded lists of their full
+prefix de Bruijn syntax (symbols A, L, 0). SAME is a closed untyped
+lambda term that recursively tests exact symbol-by-symbol equality
+against six canonical quotations AND tests Scott-natural distance.
+
+Distance-to-Q0 under the prescribed clock reduction:
+ Q0:0 Q1:5 Q2:4 Q3:3 Q4:2 Q5:1
+
+All 36 combinations are reduced to Church TRUE/FALSE with the
+leftmost-outermost, under-lambda beta reducer. run.py records exact
+measured reduction counts in results.csv, and the canonical quotations
+in states.json. The test runner supplies quoted input data and asserts
+outputs, but does not compute SAME's answer.
+
+IMPORTANT LIMITATIONS:
+- This establishes the correctness of SAME on the finite canonical
+  domain of the six supplied state quotations and distances, not on
+  arbitrary lambda syntax.
+- Quotations are prepared from concrete clock states in Python by
+  the test harness. There is NOT YET a single closed lambda controller
+  that obtains its current actual unquoted quine state autonomously.
+- There is not yet a constructive, cost-accounted integrated loop
+  combining the six actual clock beta reductions, SAME, Fibonacci
+  improvement, and transient export.
+- Measured reduction cost depends on exact representation, evaluator,
+  and evaluation strategy; no universal symbolic cost bound is proved.

@@ -1,0 +1,82 @@
+Quine Fibonacci release candidate; E(P) denotes a real λ identity redex.
+NOTICE: live clock is Scott-encoded; original raw Q six-β clock verified separately.
+cycle 01 Q0->Q1: β[13] product=(0,1) time=0.001062s
+cycle 01 Q1->Q2: β[11] product=(0,1) time=0.000683s
+cycle 01 Q2->Q3: β[23] product=(1,1) time=0.001129s
+cycle 01 Q3->Q4: β[11] product=(1,1) time=0.000601s
+  E(P) = E((1,1)) -> (1,1)  [actual beta step 12 in transition]
+cycle 01 Q4->Q5: β[12] product=(1,1) time=0.000614s
+cycle 01 Q5->Q0: β[11] product=(1,1) time=0.000590s
+completed cycle 1, exported (1,1)
+cycle 02 Q0->Q1: β[11] product=(1,1) time=0.000645s
+cycle 02 Q1->Q2: β[11] product=(1,1) time=0.000755s
+cycle 02 Q2->Q3: β[23] product=(1,2) time=0.001247s
+cycle 02 Q3->Q4: β[11] product=(1,2) time=0.000600s
+  E(P) = E((1,2)) -> (1,2)  [actual beta step 12 in transition]
+cycle 02 Q4->Q5: β[12] product=(1,2) time=0.000623s
+cycle 02 Q5->Q0: β[11] product=(1,2) time=0.000599s
+completed cycle 2, exported (1,2)
+cycle 03 Q0->Q1: β[11] product=(1,2) time=0.000644s
+cycle 03 Q1->Q2: β[11] product=(1,2) time=0.000616s
+cycle 03 Q2->Q3: β[23] product=(2,3) time=0.001487s
+cycle 03 Q3->Q4: β[11] product=(2,3) time=0.000634s
+  E(P) = E((2,3)) -> (2,3)  [actual beta step 12 in transition]
+cycle 03 Q4->Q5: β[12] product=(2,3) time=0.000667s
+cycle 03 Q5->Q0: β[11] product=(2,3) time=0.000859s
+completed cycle 3, exported (2,3)
+cycle 04 Q0->Q1: β[11] product=(2,3) time=0.000653s
+cycle 04 Q1->Q2: β[11] product=(2,3) time=0.000656s
+cycle 04 Q2->Q3: β[23] product=(3,5) time=0.001549s
+cycle 04 Q3->Q4: β[11] product=(3,5) time=0.000699s
+  E(P) = E((3,5)) -> (3,5)  [actual beta step 12 in transition]
+cycle 04 Q4->Q5: β[12] product=(3,5) time=0.000705s
+cycle 04 Q5->Q0: β[11] product=(3,5) time=0.000652s
+completed cycle 4, exported (3,5)
+cycle 05 Q0->Q1: β[11] product=(3,5) time=0.000707s
+cycle 05 Q1->Q2: β[11] product=(3,5) time=0.000700s
+cycle 05 Q2->Q3: β[23] product=(5,8) time=0.001675s
+cycle 05 Q3->Q4: β[11] product=(5,8) time=0.000697s
+  E(P) = E((5,8)) -> (5,8)  [actual beta step 12 in transition]
+cycle 05 Q4->Q5: β[12] product=(5,8) time=0.000767s
+cycle 05 Q5->Q0: β[11] product=(5,8) time=0.000705s
+completed cycle 5, exported (5,8)
+cycle 06 Q0->Q1: β[11] product=(5,8) time=0.000752s
+cycle 06 Q1->Q2: β[11] product=(5,8) time=0.000831s
+cycle 06 Q2->Q3: β[23] product=(8,13) time=0.001719s
+cycle 06 Q3->Q4: β[11] product=(8,13) time=0.000805s
+  E(P) = E((8,13)) -> (8,13)  [actual beta step 12 in transition]
+cycle 06 Q4->Q5: β[12] product=(8,13) time=0.000869s
+cycle 06 Q5->Q0: β[11] product=(8,13) time=0.000773s
+completed cycle 6, exported (8,13)
+cycle 07 Q0->Q1: β[11] product=(8,13) time=0.001063s
+cycle 07 Q1->Q2: β[11] product=(8,13) time=0.000852s
+cycle 07 Q2->Q3: β[23] product=(13,21) time=0.001747s
+cycle 07 Q3->Q4: β[11] product=(13,21) time=0.000919s
+  E(P) = E((13,21)) -> (13,21)  [actual beta step 12 in transition]
+cycle 07 Q4->Q5: β[12] product=(13,21) time=0.001236s
+cycle 07 Q5->Q0: β[11] product=(13,21) time=0.000882s
+completed cycle 7, exported (13,21)
+cycle 08 Q0->Q1: β[11] product=(13,21) time=0.000957s
+cycle 08 Q1->Q2: β[11] product=(13,21) time=0.000906s
+cycle 08 Q2->Q3: β[23] product=(21,34) time=0.002544s
+cycle 08 Q3->Q4: β[11] product=(21,34) time=0.001097s
+  E(P) = E((21,34)) -> (21,34)  [actual beta step 12 in transition]
+cycle 08 Q4->Q5: β[12] product=(21,34) time=0.001230s
+cycle 08 Q5->Q0: β[11] product=(21,34) time=0.001198s
+completed cycle 8, exported (21,34)
+cycle 09 Q0->Q1: β[11] product=(21,34) time=0.001116s
+cycle 09 Q1->Q2: β[11] product=(21,34) time=0.001121s
+cycle 09 Q2->Q3: β[23] product=(34,55) time=0.003028s
+cycle 09 Q3->Q4: β[11] product=(34,55) time=0.001420s
+  E(P) = E((34,55)) -> (34,55)  [actual beta step 12 in transition]
+cycle 09 Q4->Q5: β[12] product=(34,55) time=0.001739s
+cycle 09 Q5->Q0: β[11] product=(34,55) time=0.001427s
+completed cycle 9, exported (34,55)
+cycle 10 Q0->Q1: β[11] product=(34,55) time=0.001617s
+cycle 10 Q1->Q2: β[11] product=(34,55) time=0.001432s
+cycle 10 Q2->Q3: β[23] product=(55,89) time=0.004254s
+cycle 10 Q3->Q4: β[11] product=(55,89) time=0.002289s
+  E(P) = E((55,89)) -> (55,89)  [actual beta step 12 in transition]
+cycle 10 Q4->Q5: β[12] product=(55,89) time=0.002207s
+cycle 10 Q5->Q0: β[11] product=(55,89) time=0.001892s
+completed cycle 10, exported (55,89)

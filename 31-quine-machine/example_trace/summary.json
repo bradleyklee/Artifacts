@@ -1,0 +1,34 @@
+{
+  "cycles": 10,
+  "exports": 10,
+  "dispatch_beta": 792,
+  "dispatch_beta_by_phase": {
+    "0": [
+      11,
+      13
+    ],
+    "1": [
+      11
+    ],
+    "2": [
+      23
+    ],
+    "3": [
+      11
+    ],
+    "4": [
+      12
+    ],
+    "5": [
+      11
+    ]
+  },
+  "seconds_total": 0.09784,
+  "max_rss_kib": 96528,
+  "raw_clock_distinct_states": 6,
+  "raw_clock_exact_return_beta": 6,
+  "raw_clock_coupled_to_controller": false,
+  "export_redex_observed": true,
+  "full_beta_recorded": true,
+  "readout_and_normalization_beta_excluded_from_dispatch_cost": true
+}

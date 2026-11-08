@@ -1,0 +1,7 @@
+digraph G {
+ graph [layout=dot, rankdir=LR, bgcolor="white", pad="0.3", label="v20 live controller: Scott-encoded phases (NOT raw-Q reductions)", labelloc=t, fontsize=18,fontname="DejaVu Sans"];
+ node [shape=box,style="rounded,filled",fontname="DejaVu Sans",fontsize=12,color="#7665A4", fillcolor="#F4F0FF"];
+ edge [color="#7653A6",fontname="DejaVu Sans"];
+ S0 [label="Phase 0 / pass-through\n11 β steady (13 first)"];S1 [label="Phase 1 / pass-through\n11 β"];S2 [label="Phase 2 / STEP(P)\n23 β", fillcolor="#E4F4DE"];S3 [label="Phase 3 / pass-through\n11 β"];S4 [label="Phase 4 / E(P) identity redex\n12 β",fillcolor="#FCE7DC"];S5 [label="Phase 5 / pass-through\n11 β"];
+ S0->S1->S2->S3->S4->S5->S0;
+}

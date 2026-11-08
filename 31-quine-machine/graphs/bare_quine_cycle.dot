@@ -1,0 +1,7 @@
+digraph G {
+ graph [layout=dot, rankdir=LR, bgcolor="white", pad="0.3", label="Bare quine: independently verified exact six-beta cycle", labelloc=t, fontsize=18, fontname="DejaVu Sans"];
+ node [shape=box, style="rounded,filled", fillcolor="#EEE8FF", color="#7253A7", fontname="DejaVu Sans", fontsize=13];
+ edge [color="#7253A7",fontname="DejaVu Sans",label="β", fontsize=11];
+ Q0 [label="Q0 = Δ G"]; Q1 [label="Q1 = G G"]; Q2 [label="Q2 = (G H) G"]; Q3 [label="Q3 = ((H H) H) G"]; Q4 [label="Q4 = (Δ H) G"]; Q5 [label="Q5 = (H H) G"];
+ Q0->Q1->Q2->Q3->Q4->Q5->Q0;
+}

@@ -1,0 +1,10 @@
+{"kind": "export", "cycle": 1, "beta_in_dispatch": 12, "pair": [1, 1], "redex_path": "bx"}
+{"kind": "export", "cycle": 2, "beta_in_dispatch": 12, "pair": [1, 2], "redex_path": "bx"}
+{"kind": "export", "cycle": 3, "beta_in_dispatch": 12, "pair": [2, 3], "redex_path": "bx"}
+{"kind": "export", "cycle": 4, "beta_in_dispatch": 12, "pair": [3, 5], "redex_path": "bx"}
+{"kind": "export", "cycle": 5, "beta_in_dispatch": 12, "pair": [5, 8], "redex_path": "bx"}
+{"kind": "export", "cycle": 6, "beta_in_dispatch": 12, "pair": [8, 13], "redex_path": "bx"}
+{"kind": "export", "cycle": 7, "beta_in_dispatch": 12, "pair": [13, 21], "redex_path": "bx"}
+{"kind": "export", "cycle": 8, "beta_in_dispatch": 12, "pair": [21, 34], "redex_path": "bx"}
+{"kind": "export", "cycle": 9, "beta_in_dispatch": 12, "pair": [34, 55], "redex_path": "bx"}
+{"kind": "export", "cycle": 10, "beta_in_dispatch": 12, "pair": [55, 89], "redex_path": "bx"}

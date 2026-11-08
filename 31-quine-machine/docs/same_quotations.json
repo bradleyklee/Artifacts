@@ -1,0 +1,32 @@
+[
+  {
+    "state": "Q0",
+    "remaining": 0,
+    "prefix": "ALA00LAA0LLA000"
+  },
+  {
+    "state": "Q1",
+    "remaining": 5,
+    "prefix": "ALAA0LLA000LAA0LLA000"
+  },
+  {
+    "state": "Q2",
+    "remaining": 4,
+    "prefix": "AALAA0LLA000LLA00LAA0LLA000"
+  },
+  {
+    "state": "Q3",
+    "remaining": 3,
+    "prefix": "AAALLA00LLA00LLA00LAA0LLA000"
+  },
+  {
+    "state": "Q4",
+    "remaining": 2,
+    "prefix": "AALA00LLA00LAA0LLA000"
+  },
+  {
+    "state": "Q5",
+    "remaining": 1,
+    "prefix": "AALLA00LLA00LAA0LLA000"
+  }
+]
